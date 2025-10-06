@@ -1,0 +1,294 @@
+---
+sidebar: sidebar 
+permalink: rp-start-licenses.html 
+keywords: bluexp license, ransomware protection license, netapp console 
+summary: 通过设置许可开始使用 NeApp Ransomware Resilience。 
+---
+= 设置NetApp勒索软件恢复能力的许可
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+借助NetApp Ransomware Resilience，您可以使用不同的许可计划。
+
+要执行此任务，您需要组织管理员、文件夹或项目管理员角色。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解控制台访问角色"^] 。
+
+*许可证类型* 您可以使用以下许可证类型：
+
+* 注册 30 天免费试用。
+* 通过 Amazon Web Services (AWS) Marketplace、Google Cloud Marketplace 或 Azure Marketplace 购买即用即付 (PAYGO) 订阅。
+* 自带许可证 (BYOL)，即您从NetApp销售代表处获得的NetApp许可证文件 (NLF)。您可以使用许可证序列号在控制台中激活 BYOL。
+
+
+设置 BYOL 或购买 PAYGO 订阅后，您可以在控制台的许可证和订阅部分看到许可证。
+
+免费试用期结束或许可证或订阅到期后，您仍然可以在 Ransomware Resilience 中执行以下操作：
+
+* 查看工作负载和工作负载健康状况。
+* 删除任何资源，例如策略。
+* 运行在试用期间或许可证下创建的所有计划操作。
+
+
+
+
+== 其他许可证
+
+勒索软件恢复许可证不包括其他NetApp产品。即使您没有许可证，Ransomware Resilience 也可以使用NetApp Backup and Recovery。
+
+
+NOTE: 如果您同时拥有备份和恢复以及勒索软件恢复功能，则受这两种产品保护的任何公共数据将仅由勒索软件恢复功能计费。
+
+您可以使用Data Infrastructure Insights工作负载安全查看异常用户行为。这需要Data Infrastructure Insights工作负载安全的许可证，并且您需要在勒索软件恢复中启用它。有关数据基础设施洞察工作负载安全性的概述，请查看 https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["关于工作负载安全"^]
+
+
+TIP: 如果您没有Data Infrastructure Insights工作负载安全的许可证，并且没有在勒索软件恢复中启用它，您将看不到异常用户行为信息。
+
+
+
+== 使用 30 天免费试用版进行尝试
+
+您可以通过 30 天免费试用来尝试 Ransomware Resilience。您必须是控制台组织管理员才能开始免费试用。
+
+
+NOTE: 随着 2024 年 10 月的发布，Ransomware Resilience 的新部署现在有 30 天的免费试用期。此前，Ransomware Resilience 提供 90 天的免费试用。如果您已享受 90 天免费试用，则该优惠将持续 90 天。
+
+试用期间不实施任何容量限制。
+
+您可以随时获得许可证或订阅，并且在 30 天试用期结束之前不会向您收费。要在 30 天试用期后继续使用，您需要购买 BYOL 许可证或 PAYGO 订阅。
+
+在试用期间，您可以使用全部功能。
+
+.步骤
+. 访问 https://console.netapp.com/["控制台"^]。
+. 登录控制台。
+. 从NetApp控制台中，选择 *保护* > *勒索软件恢复*。
++
+如果这是您第一次登录此服务，则会出现登录页面。
+
++
+image:screen-landing.png["勒索软件恢复能力的登陆页面截图"]
+
+. 如果您尚未添加其他服务的连接器，请添加一个。
++
+要添加控制台代理，请参阅 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["了解控制台代理"^]。
+
+. 设置控制台代理后，在勒索软件恢复登录页面中，添加控制台代理的按钮将更改为发现工作负载的按钮。选择*通过发现工作负载开始*。
+. 要查看免费试用信息，请选择右上角的下拉选项。
+
+
+*试用结束后，获取订阅或许可*
+
+免费试用结束后，您可以通过其中一个市场进行订阅，也可以从NetApp购买许可证。
+
+如果您已经拥有 PAYGO 订阅，则免费试用结束后许可证将自动切换到订阅。
+
+<<通过 AWS Marketplace 订阅>> <<通过 Microsoft Azure Marketplace 订阅>> <<通过 Google Cloud Platform Marketplace 订阅>> <<自带许可证 (BYOL)>>
+
+
+
+== 通过 AWS Marketplace 订阅
+
+此过程提供了如何在 AWS Marketplace 中直接订阅的高级概述。
+
+.步骤
+. 在“勒索软件恢复”中，执行以下操作之一：
++
+** 如果您收到一条消息表明免费试用即将到期，请选择*查看付款方式*。
+** 如果您尚未开始试用，请选择右上角的*免费试用*通知，然后选择*查看付款方式*。
++
+image:screen-license-payment-methods3.png["勒索软件抵御付款方式页面"]
+
+
+
+. 在付款方式页面中，选择“订阅”*Amazon Web Services*。
+. 在 AWS Marketplace 中，选择 *查看购买选项*。
+. 使用 AWS Marketplace 订阅 * NetApp智能服务* 和 * 勒索软件恢复能力*。
+. 当您返回 Ransomware Resilience 时，会出现一条消息表明您已订阅。
++
+
+NOTE: 系统会向您发送一封电子邮件，其中包含 Ransomware Resilience 序列号，并表明您已在 AWS Marketplace 中订阅 Ransomware Resilience。
+
+. 返回勒索软件恢复付款方式页面。
+. 通过选择“添加许可证”将许可证添加到控制台。
++
+image:screen-license-dw-add-license.png["添加许可证页面的屏幕截图。"]
+
+. 在添加许可证页面中，选择*输入序列号*，输入发送给您的电子邮件中包含的序列号，然后选择*添加许可证*。
+. 要查看许可证详细信息，请从控制台左侧导航中选择“*管理*”>“*许可证和订阅*”。
++
+** 要查看订阅信息，请选择*订阅*。
+** 要查看 BYOL 许可证，请选择“数据服务许可证”。
++
+image:screen-dw-data-services-license.png["许可证和订阅的屏幕截图。"]
+
+
+
+. 返回勒索软件恢复能力。从控制台左侧导航中，选择*保护*>*勒索软件恢复*。
++
+出现一条消息，表明已添加许可证。
+
+
+
+
+
+== 通过 Microsoft Azure Marketplace 订阅
+
+此过程提供了如何在 Azure 市场中直接订阅的高级概述。
+
+.步骤
+. 在“勒索软件恢复”中，执行以下操作之一：
++
+** 如果您收到一条消息表明免费试用即将到期，请选择*查看付款方式*。
+** 如果您尚未开始试用，请选择右上角的*免费试用*通知，然后选择*查看付款方式*。
++
+image:screen-license-payment-methods3.png["勒索软件抵御付款方式页面"]
+
+
+
+. 在付款方式页面中，选择“订阅”*Microsoft Azure Marketplace*。
+. 在 Azure 市场中，选择“查看购买选项”。
+. 使用 Azure Marketplace 订阅 * NetApp Intelligent Services* 和 * Ransomware Resilience*。
+. 当您返回 Ransomware Resilience 时，会出现一条消息表明您已订阅。
++
+
+NOTE: 系统会向您发送一封电子邮件，其中包含 Ransomware Resilience 序列号，并表明已在 Azure 市场中订阅 Ransomware Resilience。
+
+. 返回勒索软件恢复付款方式页面。
+. 要添加许可证，请选择*添加许可证*。
++
+image:screen-license-dw-add-license.png["添加许可证页面的屏幕截图。"]
+
+. 在添加许可证页面中，选择*输入序列号*，然后输入发送给您的电子邮件中的序列号。选择*添加许可证*。
+. 要查看许可证和订阅中的许可证详细信息，请从控制台左侧导航中选择*治理* > *许可证和订阅*。
++
+** 要查看订阅信息，请选择*订阅*。
+** 要查看 BYOL 许可证，请选择“数据服务许可证”。
++
+image:screen-dw-data-services-license.png["数据服务许可证页面"]
+
+
+
+. 返回勒索软件恢复能力。从控制台左侧导航中，选择*保护*>*勒索软件恢复*。
++
+出现一条消息，表明已添加许可证。
+
+
+
+
+
+== 通过 Google Cloud Platform Marketplace 订阅
+
+此过程概述了如何在 Google Cloud Platform Marketplace 中直接订阅。
+
+.步骤
+. 在勒索软件恢复中，执行以下操作之一：
++
+** 如果您收到一条消息表明免费试用即将到期，请选择*查看付款方式*。
+** 如果您尚未开始试用，请选择右上角的*免费试用*通知，然后选择*查看付款方式*。
++
+image:screen-license-payment-methods3.png["勒索软件恢复付款方式页面的屏幕截图。"]
+
+
+
+. 在付款方式页面中，选择“订阅”Google Cloud Platform Marketplace*。
+. 在 Google Cloud Platform Marketplace 中，选择 *订阅*。
+. 使用 Google Cloud Platform Marketplace 订阅 * NetApp Intelligent Services * 和 * Ransomware Resilience *。image:screen-license-payments-gcp2.png["Google Cloud Marketplace 订阅页面的屏幕截图。"]
+. 当您返回 Ransomware Resilience 时，会出现一条消息表明您已订阅。
++
+
+NOTE: 系统会向您发送一封电子邮件，其中包含 Ransomware Resilience 序列号，并表明您已在 Google Cloud Platform Marketplace 中订阅了 Ransomware Resilience。
+
+. 返回勒索软件恢复付款方式页面。
+. 要将许可证添加到控制台，请选择“添加许可证”。
++
+image:screen-license-dw-add-license.png["添加许可证页面的屏幕截图。"]
+
+. 在添加许可证页面中，选择*输入序列号*。输入发送给您的电子邮件中的序列号。选择*添加许可证*。
+. 要查看许可证详细信息，请从控制台左侧导航中选择*治理*>*许可证和订阅*。
++
+** 要查看订阅信息，请选择*订阅*。
+** 要查看 BYOL 许可证，请选择“数据服务许可证”。
++
+image:screen-dw-data-services-license.png["许可证和订阅页面的屏幕截图。"]
+
+
+
+. 返回勒索软件恢复能力。从控制台左侧导航中，选择*保护*>*勒索软件恢复*。
++
+出现一条消息，表明已添加许可证。
+
+
+
+
+
+== 自带许可证 (BYOL)
+
+如果您想自带许可证 (BYOL)，则需要购买许可证，获取NetApp许可证文件 (NLF)，然后将许可证添加到控制台。
+
+*将您的许可证文件添加到控制台*
+
+从NetApp销售代表处购买勒索软件恢复许可证后，您可以通过输入勒索软件恢复序列号和NetApp支持站点 (NSS) 帐户信息来激活许可证。
+
+.开始之前
+您需要 Ransomware Resilience 序列号。从您的销售订单中找到此号码，或联系客户团队获取此信息。
+
+.步骤
+. 获得许可证后，返回 Ransomware Resilience。选择右上角的*查看付款方式*选项。或者，在免费试用即将到期的消息中，选择*订阅或购买许可证*。
+. 选择“添加许可证”转到控制台许可证和订阅页面。
+. 从“数据服务许可证”选项卡中，选择“添加许可证”。
++
+image:screen-license-dw-add-license.png["添加许可证页面的屏幕截图。"]
+
+. 在“添加许可证”页面中，输入序列号和NetApp支持站点帐户信息。
++
+** 如果您有控制台许可证序列号并知道您的 NSS 帐户，请选择 *输入序列号* 选项并输入该信息。
++
+如果您的NetApp支持站点帐户未从下拉列表中找到， https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["将 NSS 帐户添加到控制台"^] 。
+
+** 如果您有 zvondolr 许可证文件（在暗站安装时需要），请选择 *上传许可证文件* 选项并按照提示附加文件。
+
+
+. 选择*添加许可证*。
+
+
+.结果
+许可证和订阅页面显示 Ransomware Resilience 已获得许可证。
+
+
+
+== 控制台许可证到期后请更新
+
+如果您的许可期限即将到期，或者您的许可容量已达到限制，您将在勒索软件恢复 UI 中收到通知。您可以在勒索软件恢复许可证到期之前进行更新，这样您访问扫描数据的能力就不会受到干扰。
+
+
+TIP: 此消息也出现在许可证和订阅以及 https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#monitoring-operations-status-using-the-notification-center["通知设置"]。
+
+.步骤
+. 您可以发送电子邮件给支持人员以请求更新您的许可证。
++
+在您支付许可证费用并在NetApp支持站点注册后，控制台会自动更新许可证。数据服务许可证页面将在 5 到 10 分钟内反映更改。
+
+. 如果控制台无法自动更新许可证，则需要手动上传许可证文件。
++
+.. 您可以从NetApp支持站点获取许可证文件。
+.. 在控制台中，选择**管理** > **许可证和订阅**。
+.. 选择“*数据服务许可证*”选项卡，选择要更新的序列号的“*操作...*”图标，然后选择“*更新许可证*”。
+
+
+
+
+
+
+== 结束 PAYGO 订阅
+
+如果您想终止 PAYGO 订阅，您可以随时终止。
+
+.步骤
+. 在 Ransomware Resilience 中，在右上角选择许可证选项。
+. 选择*查看付款方式*。
+. 在下拉详细信息中，取消选中“当前付款方式过期后使用”框。
+. 选择*保存*。
+

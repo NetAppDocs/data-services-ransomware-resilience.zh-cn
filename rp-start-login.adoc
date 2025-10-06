@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: rp-start-login.html 
+keywords: bluexp login, ransomware protection, cyber attack, log in, access 
+summary: 通过NetApp控制台开始使用NetApp勒索软件恢复能力。 
+---
+= 访问NetApp勒索软件恢复能力
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+通过NetApp控制台登录NetApp Ransomware Resilience。
+
+要登录控制台，您可以使用您的NetApp支持站点凭据，也可以使用您的电子邮件和密码注册NetApp云登录。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["了解有关登录的更多信息"^] 。
+
+*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员、勒索软件恢复管理员或勒索软件恢复查看器角色。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服务的BlueXP访问角色"^] 。
+
+.步骤
+. 打开网络浏览器并转到link:https://console.netapp.com/["控制台"^]。
++
+出现控制台登录页面。
+
+. 登录控制台。
+. 从控制台左侧导航中，选择*保护*>*勒索软件恢复*。
++
+如果这是您第一次登录此服务，则会出现登录页面。
+
++
+
+NOTE: 如果您没有控制台代理或者它不是此服务的代理，则需要部署一个。link:rp-start-setup.html["了解如何设置控制台代理"] 。
+
++
+image:screen-landing.png["勒索软件恢复登陆页面的屏幕截图。"]
+
++
+否则，将出现勒索软件恢复力仪表板。
+
++
+image:screen-dashboard.png["勒索软件恢复力仪表板的屏幕截图"]
+
+. 如果您还没有这样做，请选择“发现工作负载”选项。
++
+请参阅link:rp-start-discover.html["发现工作负载"] 。
+
+

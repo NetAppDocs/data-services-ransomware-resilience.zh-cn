@@ -1,0 +1,32 @@
+= 模拟攻击并做出响应
+:allow-uri-read: 
+
+
+
+
+=== 模拟攻击并做出响应
+
+通过此版本，模拟勒索软件攻击来测试您对勒索软件警报的响应。此功能可帮助您通过测试警报通知、响应和恢复过程来了解在发生实际勒索软件攻击时您是否已做好准备。
+
+有关详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["进行勒索软件攻击准备演习"]。
+
+
+
+=== 发现过程的增强
+
+此版本包括对选择性发现和重新发现过程的增强：
+
+* 通过此版本，您可以发现添加到先前选择的工作环境中的新创建的工作负载。
+* 您还可以在此版本中选择_新_工作环境。此功能可帮助您保护添加到环境中的新工作负载。
+* 您可以在最初的发现过程中或在设置选项中执行这些发现过程。
+
+
+有关详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["发现先前选定的工作环境的新创建的工作负载"]和 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["使用“设置”选项配置功能"]。
+
+
+
+=== 检测到高度加密时发出警报
+
+在此版本中，即使没有高文件扩展名更改，您也可以在工作负载上检测到高加密时查看警报。此功能使用ONTAP自主勒索软件防护 (ARP) AI，可帮助您识别面临勒索软件攻击风险的工作负载。使用此功能并下载受影响文件的完整列表（无论扩展名是否更改）。
+
+有关详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["响应检测到的勒索软件警报"]。

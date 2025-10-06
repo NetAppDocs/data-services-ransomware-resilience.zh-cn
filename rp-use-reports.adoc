@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: rp-use-reports.html 
+keywords: ransomware protection, ransomware protection dashboard, detect ransomware attacks, recover from ransomware attack 
+summary: 使用NetApp Ransomware Resilience，您可以下载显示保护、警报和恢复详细信息的报告，并将其保存为 CSV 文件。 
+---
+= 在NetApp勒索软件恢复能力中下载报告
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以导出保护数据并下载显示攻击准备演习、保护、警报和恢复的详细信息的 CSV 或 JSON 文件。
+
+
+TIP: 在下载文件之前，您应该刷新数据，这也会刷新文件中出现的数据。
+
+*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员、勒索软件恢复管理员或勒索软件恢复查看器角色。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服务的BlueXP访问角色"^] 。
+
+*您可以下载哪些数据？*您可以从任何主菜单选项下载文件：
+
+* *保护*：包含所有工作负载的状态和详细信息，包括受保护和处于危险中的工作负载总数。
+* *警报*：包括所有警报的状态和详细信息，包括警报总数和自动快照。
+* *恢复*：包括所有需要恢复的工作负载的状态和详细信息，包括标记为“需要恢复”、“进行中”、“恢复失败”和“恢复成功”的工作负载总数。
+* *报告*：您可以从任何页面导出数据并下载文件。
++
+
+NOTE: 您只能从*报告*页面下载准备情况演习报告。
+
+
+
+如果您从保护、警报或恢复页面下载 CSV 或 JSON 文件，则数据仅显示该页面上的数据。
+
+CSV 或 JSON 文件包含所有控制台系统上所有工作负载的数据。
+
+.步骤
+. 从控制台左侧导航中，选择*保护*>*勒索软件恢复*。
++
+image:screen-dashboard.png["信息板页面"]
+
+. 从仪表板或其他页面，选择*刷新*image:button-refresh.png["刷新选项"]右上角的选项可刷新报告中显示的数据。
+. 执行以下操作之一：
++
+** 从页面上选择*下载*image:button-download.png["下载选项"]选项。
+** 从NetApp勒索软件恢复菜单中，选择 *报告*。
+
+
+. 如果您选择了“*报告*”选项，请选择一个预配置的文件名并选择“*下载*”。
++
+image:screen-reports.png["显示准备情况演练报告的报告页面"]
+
+

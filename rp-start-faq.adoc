@@ -1,0 +1,148 @@
+---
+sidebar: sidebar 
+permalink: rp-start-faq.html 
+keywords: ransomware protection faq, ransomware protection frequently asked questions 
+summary: 查找有关NetApp勒索软件恢复能力的常见问题的答案。 
+---
+= 关于NetApp勒索软件恢复能力的常见问题解答
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您只是想快速找到有关NetApp勒索软件恢复能力的问题的答案，那么此常见问题解答可以为您提供帮助。
+
+
+
+== 部署
+
+*您需要许可证才能使用 Ransomware Resilience 吗？*
+
+您可以使用以下许可证类型：
+
+* 注册 30 天免费试用。
+* 通过 Amazon Web Services (AWS) Marketplace、Google Cloud Marketplace 和 Microsoft Azure Marketplace 购买NetApp智能服务和勒索软件恢复的即用即付 (PAYGO) 订阅。
+* 自带许可证 (BYOL)，即您从NetApp销售代表处获得的NetApp许可证文件 (NLF)。您可以使用许可证序列号在控制台的许可证和订阅部分激活 BYOL。
+
+
+*如何启用勒索软件防御功能？*勒索软件恢复不需要任何支持。您可以从NetApp控制台访问勒索软件恢复功能。
+
+要开始使用，您需要注册或联系您的NetApp销售代表来试用此服务。然后，当您使用控制台代理时，它将包含适当的勒索软件恢复功能。
+
+要开始使用勒索软件恢复功能，请从其初始登录页面选择“开始发现工作负载”。
+
+*勒索软件恢复功能是否在标准、受限和私人模式下可用？*目前，勒索软件恢复仅在标准模式下可用。敬请关注。
+
+有关所有NetApp数据服务中这些模式的说明，请参阅 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["NetApp控制台部署模式"^]。
+
+
+
+== 使用权
+
+*勒索软件防御 URL 是什么？*在浏览器中输入 https://console.netapp.com/["https://console.netapp.com/ransomware-resilience"^]访问控制台。
+
+*如何处理访问权限？*https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服务的控制台访问角色"^] 。
+
+*什么设备分辨率最好？*勒索软件恢复的推荐设备分辨率为 1920x1080 或更高。
+
+*我应该使用哪种浏览器？*任何现代浏览器。
+
+
+
+== 与其他服务的交互
+
+*勒索软件恢复能力是否能够识别NetApp ONTAP中的保护设置？*是的，Ransomware Resilience 发现了在ONTAP中设置的快照计划。
+
+*如果您使用勒索软件恢复功能设置策略，那么将来是否只需在此服务中进行更改？*我们建议您根据勒索软件恢复能力进行策略更改。
+
+*勒索软件恢复能力如何与NetApp Backup and Recovery 和SnapCenter交互？*
+
+Ransomware Resilience 使用以下产品和服务：
+
+* 备份和恢复，用于发现和设置文件共享工作负载的快照和备份策略
+* SnapCenter或SnapCenter for VMware 用于发现和设置应用程序和 VM 工作负载的快照和备份策略。
+
+
+此外，Ransomware Resilience 使用备份和恢复以及SnapCenter / SnapCenter for VMware 来执行文件和工作负载一致的恢复。
+
+
+
+== 工作负载
+
+*工作量由什么组成？*工作负载是一个应用程序、一个虚拟机或一个文件共享。工作负载包括单个应用程序实例使用的所有卷。例如，部署在 ora3.host.com 上的 Oracle DB 实例可以分别使用 vol1 和 vol2 来存储其数据和日志。这些卷共同构成了 Oracle DB 实例的特定实例的工作负载。
+
+*勒索软件恢复能力如何确定工作负载数据的优先级？*数据优先级由所做的快照副本和计划的备份决定。
+
+工作负载优先级（关键、标准、重要）由已应用于与工作负载关联的每个卷的快照频率决定。
+
+link:rp-use-protect.html["了解工作负载优先级或重要性"] 。
+
+*勒索软件恢复能力支持哪些工作负载？*
+
+勒索软件恢复可以识别以下工作负载：Oracle、MySQL、文件共享、块存储、虚拟机和虚拟机数据存储。
+
+此外，如果您使用SnapCenter或SnapCenter for VMware，这些产品支持的所有工作负载也会在 Ransomware Resilience 中识别，并且 Ransomware Resilience 可以以工作负载一致的方式保护和恢复这些工作负载。
+
+*如何将数据与工作负载关联起来？*
+
+勒索软件恢复能力通过以下方式将数据与工作负载关联起来：
+
+* 勒索软件恢复能力发现卷和文件扩展名，并将它们与适当的工作负载关联起来。
+* 此外，如果您拥有SnapCenter或SnapCenter for VMware 并在备份和恢复中配置了工作负载，那么 Ransomware Resilience 会发现由SnapCenter和SnapCenter for VMware 管理的工作负载及其关联卷。
+
+
+*什么是“受保护的”工作负载？*在勒索软件恢复中，当启用主要检测策略时，工作负载将显示“受保护”状态。目前，这意味着 ARP 在与工作负载相关的所有卷上都启用。
+
+*什么是“有风险”的工作负载？*如果工作负载没有启用主要检测策略，那么即使启用了备份和快照策略，它仍然“处于危险之中”。
+
+*已添加新卷，但尚未出现* 如果您向环境中添加了新卷，请再次启动发现并应用保护策略来保护该新卷。
+
+
+
+== 保护策略
+
+*勒索软件恢复勒索软件策略是否与其他类型的工作负载策略共存？*目前，备份和恢复（云备份）支持每个卷一个备份策略。因此，备份和恢复以及勒索软件恢复共享备份策略。
+
+快照副本不受限制，可以从每个服务单独添加。
+
+*勒索软件防护策略需要哪些政策？*
+
+勒索软件防护策略需要以下政策：
+
+* 勒索软件检测政策
+* Snapshot 策略
+
+
+勒索软件抵御策略中不需要备份策略。
+
+*勒索软件恢复能力是否能够识别NetApp ONTAP中的保护设置？*
+
+是的，勒索软件恢复能力可以发现在ONTAP中设置的快照计划，以及是否在发现的工作负载的所有卷上启用了 ARP 和 FPolicy。您最初在仪表板中看到的信息是从其他NetApp解决方案和产品汇总而来的。
+
+*勒索软件恢复能力是否了解备份和恢复以及SnapCenter中已经制定的策略？*
+
+是的，如果您在备份和恢复或SnapCenter中管理工作负载，则这些产品管理的策略将被纳入勒索软件恢复能力。
+
+*您可以修改从NetApp Backup and Recovery 和/或SnapCenter继承的策略吗？*
+
+不可以，您无法从 Ransomware Resilience 修改由备份和恢复或SnapCenter管理的策略。您可以在“备份和恢复”或SnapCenter中管理对这些策略的任何更改。
+
+*如果ONTAP中存在策略（已在系统管理器中启用，例如 ARP、FPolicy 和快照），那么这些策略是否会在勒索软件恢复能力中发生变化？*
+
+不会。勒索软件恢复不会修改ONTAP中的任何现有检测策略（ARP、FPolicy 设置）。
+
+*注册勒索软件恢复功能后，如果在备份和恢复或SnapCenter中添加新策略会发生什么情况？*
+
+勒索软件恢复能力可识别在备份和恢复或SnapCenter中创建的任何新策略。
+
+*您可以从ONTAP更改策略吗？*
+
+是的，您可以在 Ransomware Resilience 中从ONTAP更改策略。您还可以在勒索软件恢复中创建新策略并将其应用于工作负载。此操作将用在勒索软件恢复中创建的策略替换现有的ONTAP策略。
+
+*您可以禁用策略吗？*
+
+您可以使用系统管理器 UI、API 或 CLI 在检测策略中禁用 ARP。
+
+您可以通过应用不包含 FPolicy 和备份策略的其他策略来禁用它们。

@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: rp-use-manage.html 
+keywords: ransomware protection workload name, ransomware protection 
+summary: 您可以通过更改工作负载名称来管理工作负载，而不是使用风险更大的默认名称。 
+---
+= 在NetApp勒索软件恢复中管理工作负载
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以通过更改工作负载名称来管理NetApp Ransomware Resilience 中的工作负载。使用默认名称可能会遭受勒索软件攻击。
+
+.步骤
+. 从勒索软件恢复菜单中，选择*保护*。
+. 选择一个工作负载，选择右侧的*操作*...图标，然后选择*编辑工作负载名称*。
+. 输入新的工作负载名称并选择*保存*。
+

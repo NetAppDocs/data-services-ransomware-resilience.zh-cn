@@ -1,0 +1,219 @@
+---
+sidebar: sidebar 
+permalink: concept-ransomware-resilience.html 
+keywords: artificial intelligence, personal data, personal information, sensitive, personal sensitive data, data sense, ransomware, ransomware protection, ransomware attack, detect, recover, cyberstorage, cyberattack, cybersecurity, protection, bluexp, netapp, role-based access control, rbac 
+summary: 勒索软件恢复能力使您能够查看有关网络安全的相关信息，并评估您的组织抵御网络攻击的能力。它还为您提供了警报和补救步骤的列表，以确保您的数据更加安全。 
+---
+= 了解NetApp勒索软件恢复能力
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+勒索软件攻击可以阻止对您数据的访问，攻击者可以要求赎金以换取数据发布或解密。据 IDC 称，勒索软件受害者遭受多次勒索软件攻击的情况并不少见。攻击可能会中断您对数据的访问，时间从一天到几周不等。
+
+NetApp勒索软件保护功能可保护您的数据免受勒索软件攻击。在勒索软件恢复能力中，可以对基于应用程序的工作负载提供保护，包括本地 NAS 存储（使用 NFS 和 CIFS 协议）和 SAN 存储（FC、iSCSI 和 NVMe）上的 Oracle、MySQL、VM 数据存储区和文件共享，以及适用于 Amazon Web Services 的Cloud Volumes ONTAP 、适用于 Google Cloud 的Cloud Volumes ONTAP 、适用于 Microsoft Azure 的Cloud Volumes ONTAP和NetApp Console 上的Amazon FSx for NetApp ONTAP 。您可以将数据备份到 Amazon Web Services、Google Cloud、Microsoft Azure 云存储和NetApp StorageGRID。
+
+
+
+== 数据层的勒索软件抵御能力
+
+您的安全态势通常包含多层防御，以防御一系列网络威胁。
+
+* *最外层*：这是使用防火墙、入侵检测系统和虚拟专用网络来保护网络边界的第一道防线。
+* *网络安全*：这一层建立在网络分段、流量监控和加密的基础上。
+* *身份安全*：使用身份验证方法、访问控制和身份管理来确保只有授权用户才能访问敏感资源。
+* *应用程序安全*：使用安全编码实践、安全测试和运行时应用程序自我保护来保护软件应用程序。
+* *数据安全*：通过数据保护、备份和恢复策略保护您的数据。勒索软件恢复力在此层上运行。
+
+
+image:concept-security-layer-diagram.png["安全层图"]
+
+
+
+== 勒索软件恢复能力可以做什么
+
+勒索软件恢复功能充分利用了多种NetApp技术，以便您的存储管理员、数据安全管理员或安全运营工程师可以实现以下目标：
+
+* *识别* NetApp控制台、项目和控制台代理中NetApp内部部署 NAS（NFS 或 CIFS）和 SAN（FC、iSCSI 和 NVMe）系统中所有基于应用程序、文件共享或 VMware 管理的工作负载。勒索软件弹性对数据优先级进行分类，并为您提供勒索软件弹性改进的建议。
+* 通过对数据启用备份、快照副本和勒索软件保护策略来*保护*您的工作负载。
+* *检测*可能是勒索软件攻击的异常。脚注：[尽管攻击可能未被发现，但我们的研究表明， NetApp技术已对某些基于文件加密的勒索软件攻击实现了高度检测。]
+* 通过自动启动锁定的防篡改NetApp ONTAP快照来*应对*潜在的勒索软件攻击，这样副本就不会被意外或恶意删除。您的备份数据将保持不变，并在源头和目标端受到端到端的保护，免受勒索软件攻击。
+* 通过协调多种NetApp技术来*恢复*您的工作负载，从而帮助加快工作负载的正常运行时间。您可以选择恢复特定的卷。勒索软件弹性提供有关最佳选项的建议。
+* *管理*：实施勒索软件保护策略并监控结果。
+
+
+image:diagram-rp-features-phases3.png["图表展示了勒索软件抵御攻击的策略，包括识别、保护、检测、响应和恢复"]
+
+
+
+== 使用勒索软件恢复能力的好处
+
+勒索软件恢复能力具有以下优势：
+
+* 发现工作负载及其现有的快照和备份计划，并对其相对重要性进行排序。
+* 评估您的勒索软件防护态势并将其显示在易于理解的仪表板中。
+* 根据发现和保护态势分析提供后续步骤的建议。
+* 一键访问即可应用 AI/ML 驱动的数据保护建议。
+* 保护顶级基于应用程序的工作负载中的数据，例如 MySQL、Oracle、VMware 数据存储和文件共享。
+* 使用人工智能技术实时检测针对主存储数据的勒索软件攻击。
+* 通过创建快照副本和启动有关异常活动的警报来启动自动操作以响应检测到的潜在攻击。
+* 应用精心策划的恢复以满足 RPO 政策。勒索软件恢复能力通过使用多种NetApp恢复服务（包括NetApp备份和恢复（以前称为云备份）和SnapCenter）来协调勒索软件事件的恢复。
+* 使用基于角色的访问控制 (RBAC) 来管理对功能和操作的访问。
+
+
+
+
+== 成本
+
+NetApp不会向您收取使用 Ransomware Resilience 试用版的费用。
+
+
+NOTE: 随着 2024 年 10 月的发布，Ransomware Resilience 的新部署提供了 30 天的免费试用。此前，Ransomware Resilience 提供了 90 天的免费试用。如果您已经注册了 90 天免费试用，则该试用有效期为 90 天。
+
+如果您同时拥有备份和恢复以及勒索软件恢复功能，则受这两种产品保护的任何公共数据仅由勒索软件恢复功能计费。
+
+购买许可证或 PayGo 订阅后，任何启用了勒索软件检测策略（自主勒索软件保护）（由勒索软件恢复力发现或设置）且至少有一个快照或备份策略的工作负载，勒索软件恢复力都会将其归类为“受保护”，并计入购买的容量或 PayGo 订阅。如果发现工作负载没有检测策略，即使它有备份或快照策略，也会被归类为“有风险”，并且不会计入购买的容量。
+
+90 天试用期结束后，受保护的工作负载将计入购买的容量或订阅。勒索软件恢复按每 GB 为与受保护工作负载相关的数据（在效率之前）收费。
+
+
+
+== 许可
+
+借助 Ransomware Resilience，您可以使用不同的许可计划，包括免费试用、即用即付订阅或自带许可证。
+
+勒索软件恢复需要NetApp ONTAP One 许可证。
+
+勒索软件恢复许可证不包括其他NetApp产品。即使您没有许可证，Ransomware Resilience 也可以使用备份和恢复。
+
+为了检测异常用户行为，Ransomware Resilience 使用NetApp Autonomous Ransomware Protection，这是ONTAP内的一种机器学习 (ML) 模型，可检测恶意文件活动。该模型包含在勒索软件恢复许可证中。您还可以使用Data Infrastructure Insights（以前称为Cloud Insights）工作负载安全（需要许可证）来调查用户行为并阻止特定用户的进一步活动。
+
+有关详细信息，请参阅link:rp-start-licenses.html["设置许可"] 。
+
+
+
+== NetApp控制台
+
+可通过NetApp控制台访问勒索软件恢复功能。
+
+NetApp控制台提供企业级跨本地和云环境的NetApp存储和数据服务的集中管理。需要控制台才能访问和使用NetApp数据服务。作为管理界面，它使您能够从一个界面管理许多存储资源。控制台管理员可以控制企业内所有系统的存储和服务的访问。
+
+您不需要许可证或订阅即可开始使用NetApp控制台，并且只有当您需要在云中部署控制台代理以确保与存储系统或NetApp数据服务的连接时才需要付费。但是，一些可从控制台访问的NetApp数据服务是需要许可或基于订阅的。
+
+详细了解link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html["NetApp控制台"^]。
+
+
+
+== 勒索软件恢复的工作原理
+
+Ransomware Resilience 使用NetApp Backup and Recovery 来发现和设置文件共享工作负载的快照和备份策略，使用SnapCenter或SnapCenter for VMware 来发现和设置应用程序和虚拟机工作负载的快照和备份策略。此外，Ransomware Resilience 使用备份和恢复以及SnapCenter / SnapCenter for VMware 来执行文件和工作负载一致的恢复。
+
+image:diagram-rp-architecture-preview3.png["勒索软件抵御能力架构图"]
+
+[cols="15,65a"]
+|===
+| 功能 | 描述 
+
+
+| *确认*  a| 
+* 查找连接到控制台的所有客户本地 NAS（NFS 和 CIFS 协议）、SAN（FC、iSCSI 和 NVMe）和Cloud Volumes ONTAP数据。
+* 从ONTAP和SnapCenter服务 API 中识别客户数据并将其与工作负载关联。详细了解 https://docs.netapp.com/us-en/ontap-family/["ONTAP"^]和 https://docs.netapp.com/us-en/snapcenter/index.html["SnapCenter软件"^]。
+* 发现每个卷的当前NetApp快照副本和备份策略的保护级别以及任何机上检测功能。然后，勒索软件恢复能力通过使用备份和恢复、 ONTAP服务和NetApp技术（例如自主勒索软件保护（ARP 或 ARP/AI，取决于您的ONTAP版本）、FPolicy、备份策略和快照策略）将此保护态势与工作负载相关联。详细了解 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索软件防护"^]， https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["NetApp备份和恢复"^] ， 和 https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^]。
+* 根据自动发现的保护级别为每个工作负载分配业务优先级，并根据工作负载的业务优先级推荐保护策略。工作负载优先级基于已应用于与工作负载相关的每个卷的快照频率。
+
+
+
+
+| *保护*  a| 
+* 通过将策略应用于每个已识别的工作负载，主动监控工作负载并协调备份和恢复、 SnapCenter和ONTAP API 的使用。
+
+
+
+
+| *探测*  a| 
+* 使用集成机器学习 (ML) 模型检测潜在攻击，该模型可检测潜在的异常加密和活动。
+* 提供双层检测，首先检测主存储中的潜在勒索软件攻击，然后通过获取额外的自动快照副本来创建最近的数据还原点，以响应异常活动。勒索软件恢复能力能够更深入地挖掘以更精确地识别潜在攻击，而不会影响主要工作负载的性能。
+* 使用ONTAP、自主勒索软件防护（ARP 或 ARP/AI，取决于您的ONTAP版本）、Data Infrastructure Insights（以前称为Cloud Insights）工作负载安全和 FPolicy 技术，确定攻击相关工作负载的特定可疑文件和映射。
+
+
+
+
+| *回应*  a| 
+* 显示相关数据，例如文件活动、用户活动和熵，以帮助您完成有关攻击的取证审查。
+* 使用NetApp技术和产品（例如ONTAP、自主勒索软件防护（ARP 或 ARP/AI，取决于您的ONTAP版本）和 FPolicy）启动快速快照副本。
+
+
+
+
+| *恢复*  a| 
+* 通过使用备份和恢复、 ONTAP、自主勒索软件防护（ARP 或 ARP/AI，取决于您的ONTAP版本）以及 FPolicy 技术和服务，确定最佳快照或备份并推荐最佳恢复点实际 (RPA)。
+* 协调包括虚拟机、文件共享、块存储和数据库在内的工作负载的恢复，并保持应用程序的一致性。
+
+
+
+
+| *治理*  a| 
+* 分配勒索软件保护策略
+* 帮助您监控结果。
+
+
+|===
+
+
+== 支持的备份目标、系统和工作负载数据源
+
+勒索软件恢复支持以下备份目标、系统和数据源：
+
+*支持的备份目标*
+
+* 亚马逊网络服务（AWS）S3
+* Google Cloud Platform
+* 微软 Azure Blob
+* NetAppStorageGRID
+
+
+*支持的系统*
+
+* 本地ONTAP NAS（使用 NFS 和 CIFS 协议），采用ONTAP版本 9.11.1 及更高版本
+* 本地ONTAP SAN（使用 FC、iSCSI 和 NVMe 协议），采用ONTAP版本 9.17.1 及更高版本
+* 适用于 AWS 的Cloud Volumes ONTAP 9.11.1 或更高版本（使用 NFS 和 CIFS 协议）
+* 适用于 Google Cloud Platform 的Cloud Volumes ONTAP 9.11.1 或更高版本（使用 NFS 和 CIFS 协议）
+* 适用于 Microsoft Azure 的Cloud Volumes ONTAP 9.12.1 或更高版本（使用 NFS 和 CIFS 协议）
+* 适用于 AWS、Google Cloud Platform 和 Microsoft Azure 的Cloud Volumes ONTAP 9.17.1 或更高版本（使用 FC、iSCSI 和 NVMe 协议）
+* Amazon FSx for NetApp ONTAP，使用自主勒索软件防护（ARP 而非 ARP/AI）
++
+
+NOTE: ARP/AI 需要ONTAP 9.16 或更高版本。
+
+
+
+
+NOTE: 不支持以下内容： FlexGroup卷、早于 9.11.1 的ONTAP版本、挂载点卷、挂载路径卷、离线卷和数据保护 (DP) 卷。
+
+*支持的工作负载数据源*
+
+勒索软件恢复能力可保护主数据卷上的以下基于应用程序的工作负载：
+
+* NetApp文件共享
+* 块存储
+* VMware 数据存储区
+* 数据库（MySQL 和 Oracle）
+* 更多内容即将推出
+
+
+此外，如果您使用SnapCenter或SnapCenter for VMware，则这些产品支持的所有工作负载也会在 Ransomware Resilience 中得到识别。勒索软件恢复能力可以以工作负载一致的方式保护和恢复这些内容。
+
+
+
+== 可能有助于您进行勒索软件防护的术语
+
+了解一些与勒索软件保护相关的术语可能会对您有所帮助。
+
+* *保护*：勒索软件恢复中的保护意味着确保使用保护策略定期在不同的安全域中进行快照和不可变备份。
+* *工作负载*：勒索软件恢复中的工作负载可以包括 MySQL 或 Oracle 数据库、VMware 数据存储区或文件共享。
+

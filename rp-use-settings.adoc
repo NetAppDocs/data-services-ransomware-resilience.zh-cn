@@ -1,0 +1,554 @@
+---
+sidebar: sidebar 
+permalink: rp-use-settings.html 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware settings, backup destination 
+summary: 您可以配置多个选项，包括备份目标、威胁检测以及与勒索软件恢复中的Data Infrastructure Insights工作负载安全的连接。 
+---
+= 在NetApp勒索软件恢复能力中配置保护设置
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以通过访问“设置”选项来配置备份目标、将数据发送到外部安全和事件管理 (SIEM) 系统、进行攻击准备演习、配置工作负载发现或配置与Data Infrastructure Insights工作负载安全的连接。
+
+*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服务的控制台访问角色"^] 。
+
+*您可以在“设置”页面做什么？*在“设置”页面中，您可以执行以下操作：
+
+* 通过进行准备演习来模拟勒索软件攻击，并对模拟勒索软件警报做出响应。有关详细信息，请参阅link:rp-start-simulate.html["进行勒索软件攻击准备演习"] 。
+* 配置工作负载发现。
+* 配置与Data Infrastructure Insights工作负载安全的连接，以查看勒索软件警报中的可疑用户信息。
+* 添加备份目的地。
+* 连接您的安全和事件管理系统 (SIEM) 以进行威胁分析和检测。启用威胁检测会自动将数据发送到您的 SIEM 进行威胁分析。
+
+
+
+
+== 直接访问设置页面
+
+您可以从顶部菜单附近的“操作”选项轻松访问“设置”页面。
+
+. 从勒索软件恢复能力中，选择垂直image:button-actions-vertical.png["垂直行动"]...右上角的选项。
+. 从下拉菜单中选择*设置*。
+
+
+
+
+== 模拟勒索软件攻击
+
+通过模拟对新创建的示例工作负载的勒索软件攻击来进行勒索软件准备演习。然后，调查模拟攻击并恢复样本工作负载。此功能可帮助您通过测试警报通知、响应和恢复过程来了解在发生实际勒索软件攻击时您是否已做好准备。您可以多次运行勒索软件准备演习。
+
+有关详细信息，请参阅link:rp-start-simulate.html["进行勒索软件攻击准备演习"]。
+
+
+
+== 配置工作负载发现
+
+您可以配置工作负载发现来自动发现环境中的新工作负载。
+
+. 在“设置”页面中，找到“*工作负载发现*”图块。
+. 在“*工作负载发现*”图块中，选择“发现工作负载*”。
++
+此页面显示之前未选择的系统的控制台代理、新可用的控制台代理和新可用的系统。此页面不显示之前选择的系统。
+
+. 选择您想要发现工作负载的控制台代理。
+. 查看系统列表。
+. 选中您想要发现工作负载的系统，或选择表格顶部的框以发现所有已发现工作负载环境中的工作负载。
+. 根据需要对其他系统执行此操作。
+. 选择“发现”以使勒索软件恢复功能自动发现所选控制台代理中的新工作负载。
+
+
+
+
+== 通过连接到Data Infrastructure Insights工作负载安全，查看可疑的异常用户行为
+
+在您可以查看 Ransomware Resilience 中疑似异常用户行为的详细信息之前，您需要配置与Data Infrastructure Insights工作负载安全系统的连接。
+
+
+
+=== 从Data Infrastructure Insights工作负载安全系统获取 API 访问令牌
+
+从Data Infrastructure Insights工作负载安全系统获取 API 访问令牌。
+
+. 登录Data Infrastructure Insights工作负载安全系统。
+. 从左侧导航中，选择*管理* > *API 访问*。
++
+image:../media/screen-alerts-ci-api-access-token.png["Data Infrastructure Insights工作负载安全中的“API 访问”页面"]
+
+. 创建 API 访问令牌或使用现有令牌。
+. 复制 API 访问令牌。
+
+
+
+
+=== 连接到Data Infrastructure Insights工作负载安全
+
+. 从勒索软件恢复设置菜单中，找到*工作负载安全连接*图块。
+. 选择*连接*。
+. 输入数据基础设施工作负载安全 UI 的 URL。
+. 输入提供对工作负载安全性的访问权限的 API 访问令牌。
+. 选择*连接*。
+
+
+
+
+== 添加备份目标
+
+勒索软件恢复能力可以识别尚未有任何备份的工作负载以及尚未分配任何备份目标的工作负载。
+
+为了保护这些工作负载，您应该添加备份目标。您可以选择以下备份目标之一：
+
+* NetAppStorageGRID
+* 亚马逊网络服务（AWS）
+* Google Cloud Platform
+* Microsoft Azure
+
+
+
+NOTE: Amazon FSx for NetApp ONTAP中的工作负载没有可用的备份目标。使用 FSx for ONTAP备份服务执行备份操作。
+
+您可以根据仪表板中的推荐操作或访问菜单上的“设置”选项来添加备份目标。
+
+
+
+=== 从仪表板的推荐操作访问备份目标选项
+
+仪表板提供了许多建议。一个建议可能是配置备份目标。
+
+.步骤
+. 在勒索软件恢复仪表板中，查看“推荐的操作”窗格。
++
+image:screen-dashboard.png["信息板页面"]
+
+. 从仪表板中，选择“准备<备份提供商>作为备份目标”的建议的*审查和修复*。
+. 根据备份提供商的指示继续操作。
+
+
+
+
+=== 添加StorageGRID作为备份目标
+
+要将NetApp StorageGRID设置为备份目标，请输入以下信息。
+
+.步骤
+. 在*设置 > 备份目标*页面中，选择*添加*。
+. 输入备份目标的名称。
++
+image:screen-settings-backup-destination.png["备份目标页面"]
+
+. 选择* StorageGRID*。
+. 选择每个设置旁边的向下箭头并输入或选择值：
++
+** *提供商设置*：
++
+*** 创建一个新的存储桶或自带存储桶来存储备份。
+*** StorageGRID网关节点完全限定域名、端口、 StorageGRID访问密钥和密钥凭证。
+
+
+** *网络*：选择 IP 空间。
++
+*** IP 空间是您要备份的卷所在的集群。此 IP 空间的集群间 LIF 必须具有出站互联网访问权限。
+
+
+
+
+. 选择“*添加*”。
+
+
+.结果
+新的备份目标将添加到备份目标列表中。
+
+image:screen-settings-backup-destinations-list2.png["备份目标页面的“设置”选项"]
+
+
+
+=== 添加 Amazon Web Services 作为备份目标
+
+要将 AWS 设置为备份目标，请输入以下信息。
+
+有关在控制台中管理 AWS 存储的详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html["管理您的 Amazon S3 存储桶"^]。
+
+.步骤
+. 在*设置 > 备份目标*页面中，选择*添加*。
+. 输入备份目标的名称。
++
+image:screen-settings-backup-destination.png["备份目标页面"]
+
+. 选择*Amazon Web Services*。
+. 选择每个设置旁边的向下箭头并输入或选择值：
++
+** *提供商设置*：
++
+*** 创建一个新的存储桶，如果控制台中已经存在存储桶，则选择一个现有存储桶，或者使用您自己的存储桶来存储备份。
+*** AWS 账户、区域、AWS 凭证的访问密钥和密钥
++
+https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["如果您想要自带存储桶，请参阅添加 S3 存储桶"^] 。
+
+
+
+** *加密*：如果您正在创建新的 S3 存储桶，请输入提供商提供给您的加密密钥信息。如果您选择现有存储桶，则加密信息已经可用。
++
+默认情况下，存储桶中的数据使用 AWS 管理的密钥加密。您可以继续使用 AWS 管理的密钥，也可以使用您自己的密钥管理数据的加密。
+
+** *网络*：选择 IP 空间以及是否使用私有端点。
++
+*** IP 空间是您要备份的卷所在的集群。此 IP 空间的集群间 LIF 必须具有出站互联网访问权限。
+*** 或者，选择是否使用您之前配置的 AWS 私有终端节点 (PrivateLink)。
++
+如果您想使用 AWS PrivateLink，请参阅 https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html["适用于 Amazon S3 的 AWS PrivateLink"^]。
+
+
+
+** *备份锁*：选择是否希望勒索软件恢复功能保护备份不被修改或删除。此选项使用NetApp DataLock 技术。每个备份将在保留期内锁定，或至少 30 天，再加上最多 14 天的缓冲期。
++
+
+CAUTION: 如果您现在配置备份锁定设置，则在配置备份目标后您将无法更改该设置。
+
++
+*** *治理模式*：特定用户（具有 s3:BypassGovernanceRetention 权限）可以在保留期内覆盖或删除受保护的文件。
+*** *合规模式*：用户在保留期内无法覆盖或删除受保护的备份文件。
+
+
+
+
+. 选择“*添加*”。
+
+
+.结果
+新的备份目标将添加到备份目标列表中。
+
+image:screen-settings-backup-destinations-list2.png["备份目标页面的“设置”选项"]
+
+
+
+=== 添加 Google Cloud Platform 作为备份目标
+
+要将 Google Cloud Platform (GCP) 设置为备份目标，请输入以下信息。
+
+有关在控制台中管理 GCP 存储的详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-install-options-google.html["Google Cloud 中的控制台代理安装选项"^]。
+
+.步骤
+. 在*设置 > 备份目标*页面中，选择*添加*。
+. 输入备份目标的名称。
++
+image:screen-settings-backup-destination-gcp.png["备份目标页面"]
+
+. 选择*Google Cloud Platform*。
+. 选择每个设置旁边的向下箭头并输入或选择值：
++
+** *提供商设置*：
++
+*** 创建一个新的存储桶。输入访问密钥和密钥。
+*** 输入或选择您的 Google Cloud Platform 项目和区域。
+
+
+** *加密*：如果您正在创建新的存储桶，请输入提供商提供给您的加密密钥信息。如果您选择现有存储桶，则加密信息已经可用。
++
+默认情况下，存储桶中的数据使用 Google 管理的密钥加密。您可以继续使用 Google 管理的密钥。
+
+** *网络*：选择 IP 空间以及是否使用私有端点。
++
+*** IP 空间是您要备份的卷所在的集群。此 IP 空间的集群间 LIF 必须具有出站互联网访问权限。
+*** 或者，选择是否使用您之前配置的 GCP 专用端点 (PrivateLink)。
+
+
+
+
+. 选择“*添加*”。
+
+
+.结果
+新的备份目标将添加到备份目标列表中。
+
+
+
+=== 添加 Microsoft Azure 作为备份目标
+
+要将 Azure 设置为备份目标，请输入以下信息。
+
+有关在控制台中管理 Azure 凭据和市场订阅的详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["管理 Azure 凭据和市场订阅"^]。
+
+.步骤
+. 在*设置 > 备份目标*页面中，选择*添加*。
+. 输入备份目标的名称。
++
+image:screen-settings-backup-destination.png["备份目标页面"]
+
+. 选择“*Azure*”。
+. 选择每个设置旁边的向下箭头并输入或选择值：
++
+** *提供商设置*：
++
+*** 创建一个新的存储帐户，如果控制台中已经存在，则选择一个现有的存储帐户，或者使用您自己的存储帐户来存储备份。
+*** Azure 凭据的 Azure 订阅、区域和资源组
++
+https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["如果您想自带存储帐户，请参阅添加 Azure Blob 存储帐户"^] 。
+
+
+
+** *加密*：如果您正在创建新的存储帐户，请输入提供商提供给您的加密密钥信息。如果您选择现有帐户，则加密信息已经可用。
++
+默认情况下，帐户中的数据使用 Microsoft 管理的密钥加密。您可以继续使用 Microsoft 管理的密钥，也可以使用您自己的密钥管理数据的加密。
+
+** *网络*：选择 IP 空间以及是否使用私有端点。
++
+*** IP 空间是您要备份的卷所在的集群。此 IP 空间的集群间 LIF 必须具有出站互联网访问权限。
+*** 或者，选择是否使用之前配置的 Azure 专用终结点。
++
+如果您想使用 Azure PrivateLink，请参阅 https://azure.microsoft.com/en-us/products/private-link/["Azure PrivateLink"^]。
+
+
+
+
+
+. 选择“*添加*”。
+
+
+.结果
+新的备份目标将添加到备份目标列表中。
+
+image:screen-settings-backup-destinations-list2.png["备份目标页面的“设置”选项"]
+
+
+
+== 连接到安全和事件管理系统 (SIEM) 进行威胁分析和检测
+
+您可以自动将数据发送到您的安全和事件管理系统 (SIEM) 进行威胁分析和检测。您可以选择 AWS Security Hub、Microsoft Sentinel 或 Splunk Cloud 作为您的 SIEM。
+
+在 Ransomware Resilience 中启用 SIEM 之前，您需要配置您的 SIEM 系统。
+
+.关于发送到 SIEM 的事件数据
+Ransomware Resilience 可以将以下事件数据发送到您的 SIEM 系统：
+
+* *语境*：
++
+** *os*：这是一个具有ONTAP值的常量。
+** *os_version*：系统上运行的ONTAP版本。
+** *connector_id*：管理系统的控制台代理的 ID。
+** *cluster_id*： ONTAP为系统报告的集群 ID。
+** *svm_name*：发现警报的 SVM 的名称。
+** *volume_name*：发现警报的卷的名称。
+** *volume_id*： ONTAP为系统报告的卷的 ID。
+
+
+* *事件*：
++
+** *incident_id*：勒索软件恢复力针对勒索软件恢复力中受到攻击的卷生成的事件 ID。
+** *alert_id*：勒索软件恢复能力为工作负载生成的 ID。
+** *严重性*：以下警报级别之一：“严重”、“高”、“中”、“低”。
+** *描述*：有关检测到的警报的详细信息，例如“在工作负载 arp_learning_mode_test_2630 上检测到潜在的勒索软件攻击”
+
+
+
+
+
+
+=== 配置 AWS Security Hub 进行威胁检测
+
+在 Ransomware Resilience 中启用 AWS Security Hub 之前，您需要在 AWS Security Hub 中执行以下高级步骤：
+
+* 在 AWS Security Hub 中设置权限。
+* 在 AWS Security Hub 中设置身份验证访问密钥和密钥。  （此处未提供这些步骤。）
+
+
+.在 AWS Security Hub 中设置权限的步骤
+. 转到 *AWS IAM 控制台*。
+. 选择*政策*。
+. 使用以下 JSON 格式的代码创建策略：
++
+[listing]
+----
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "NetAppSecurityHubFindings",
+      "Effect": "Allow",
+      "Action": [
+        "securityhub:BatchImportFindings",
+        "securityhub:BatchUpdateFindings"
+      ],
+      "Resource": [
+        "arn:aws:securityhub:*:*:product/*/default",
+        "arn:aws:securityhub:*:*:hub/default"
+      ]
+    }
+  ]
+}
+----
+
+
+
+
+=== 配置 Microsoft Sentinel 进行威胁检测
+
+在 Ransomware Resilience 中启用 Microsoft Sentinel 之前，您需要在 Microsoft Sentinel 中执行以下高级步骤：
+
+* *先决条件*
++
+** 启用 Microsoft Sentinel。
+** 在 Microsoft Sentinel 中创建自定义角色。
+
+
+* *登记*
++
+** 注册 Ransomware Resilience 以接收来自 Microsoft Sentinel 的事件。
+** 为注册创建一个秘密。
+
+
+* *权限*：为应用程序分配权限。
+* *身份验证*：输入应用程序的身份验证凭据。
+
+
+.启用 Microsoft Sentinel 的步骤
+. 转到 Microsoft Sentinel。
+. 创建*Log Analytics 工作区*。
+. 启用 Microsoft Sentinel 以使用您刚刚创建的 Log Analytics 工作区。
+
+
+.在 Microsoft Sentinel 中创建自定义角色的步骤
+. 转到 Microsoft Sentinel。
+. 选择*订阅* > *访问控制 (IAM)*。
+. 输入自定义角色名称。使用名称 *Ransomware Resilience Sentinel Configurator*。
+. 复制以下 JSON 并将其粘贴到 *JSON* 选项卡中。
++
+[listing]
+----
+{
+  "roleName": "Ransomware Resilience Sentinel Configurator",
+  "description": "",
+  "assignableScopes":["/subscriptions/{subscription_id}"],
+  "permissions": [
+
+  ]
+}
+----
+. 检查并保存您的设置。
+
+
+.注册勒索软件恢复能力以接收来自 Microsoft Sentinel 的事件的步骤
+. 转到 Microsoft Sentinel。
+. 选择 *Entra ID* > *应用程序* > *应用程序注册*。
+. 对于应用程序的*显示名称*，输入“*Ransomware Resilience*”。
+. 在*支持的帐户类型*字段中，选择*仅限此组织目录中的帐户*。
+. 选择将推送事件的*默认索引*。
+. 选择*审核*。
+. 选择*注册*来保存您的设置。
++
+注册后，Microsoft Entra 管理中心将显示应用程序概述窗格。
+
+
+
+.创建注册密钥的步骤
+. 转到 Microsoft Sentinel。
+. 选择*证书和机密* > *客户端机密* > *新客户端机密*。
+. 为您的应用程序机密添加描述。
+. 为秘密选择一个*到期日期*或指定自定义有效期。
++
+
+TIP: 客户端密钥的有效期限制为两年（24 个月）或更短。  Microsoft 建议您设置小于 12 个月的到期值。
+
+. 选择“*添加*”来创建您的秘密。
+. 记录身份验证步骤中使用的秘密。离开此页面后，该秘密将不再显示。
+
+
+.为应用程序分配权限的步骤
+. 转到 Microsoft Sentinel。
+. 选择*订阅* > *访问控制 (IAM)*。
+. 选择*添加* > *添加角色分配*。
+. 对于*特权管理员角色*字段，选择*勒索软件弹性哨兵配置器*。
++
+
+TIP: 这是您之前创建的自定义角色。
+
+. 选择“下一步”。
+. 在*分配访问权限*字段中，选择*用户、组或服务主体*。
+. 选择“*选择成员*”。然后，选择*Ransomware Resilience Sentinel Configurator*。
+. 选择“下一步”。
+. 在*用户可以做什么*字段中，选择*允许用户分配除特权管理员角色所有者、UAA、RBAC（推荐）之外的所有角色*。
+. 选择“下一步”。
+. 选择*审核并分配*来分配权限。
+
+
+.输入应用程序身份验证凭据的步骤
+. 转到 Microsoft Sentinel。
+. 输入凭证：
++
+.. 输入租户 ID、客户端应用程序 ID 和客户端应用程序密钥。
+.. 单击“*验证*”。
++
+
+NOTE: 认证成功后，会出现“已认证”的信息。
+
+
+
+. 输入应用程序的 Log Analytics 工作区详细信息。
++
+.. 选择订阅 ID、资源组和 Log Analytics 工作区。
+
+
+
+
+
+
+=== 配置 Splunk Cloud 进行威胁检测
+
+在 Ransomware Resilience 中启用 Splunk Cloud 之前，您需要在 Splunk Cloud 中执行以下高级步骤：
+
+* 在 Splunk Cloud 中启用 HTTP 事件收集器以通过 HTTP 或 HTTPS 从控制台接收事件数据。
+* 在 Splunk Cloud 中创建事件收集器令牌。
+
+
+.在 Splunk 中启用 HTTP 事件收集器的步骤
+. 转到 Splunk Cloud。
+. 选择*设置* > *数据输入*。
+. 选择 *HTTP 事件收集器* > *全局设置*。
+. 在所有令牌切换上，选择*已启用*。
+. 要让事件收集器通过 HTTPS 而不是 HTTP 进行监听和通信，请选择“启用 SSL”。
+. 在“HTTP 端口号”中输入 HTTP 事件收集器的端口。
+
+
+.在 Splunk 中创建事件收集器令牌的步骤
+. 转到 Splunk Cloud。
+. 选择*设置* > *添加数据*。
+. 选择*监控* > *HTTP 事件收集器*。
+. 输入令牌的名称并选择*下一步*。
+. 选择将推送事件的*默认索引*，然后选择*审核*。
+. 确认端点的所有设置正确，然后选择*提交*。
+. 复制令牌并将其粘贴到另一个文档中，以准备进行身份验证步骤。
+
+
+
+
+=== 在勒索软件防御中连接 SIEM
+
+启用 SIEM 会将勒索软件恢复数据发送到您的 SIEM 服务器以进行威胁分析和报告。
+
+.步骤
+. 从控制台菜单中，选择*保护*>*勒索软件恢复*。
+. 从勒索软件恢复菜单中，选择垂直image:button-actions-vertical.png["垂直行动"]...右上角的选项。
+. 选择“设置”。
++
+出现“设置”页面。
+
++
+image:screen-settings2.png["设置页面"]
+
+. 在“设置”页面中，选择 SIEM 连接图块中的“*连接*”。
++
+image:screen-settings-threat-detection-3options.png["启用威胁检测详细信息页面"]
+
+. 选择其中一个 SIEM 系统。
+. 输入您在 AWS Security Hub 或 Splunk Cloud 中配置的令牌和身份验证详细信息。
++
+
+NOTE: 您输入的信息取决于您选择的 SIEM。
+
+. 选择*启用*。
++
+设置页面显示“已连接”。
+
+

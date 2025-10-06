@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: rp-use-overview.html 
+keywords: ransomware protection, ransomware protection, detect ransomware attacks, recover from ransomware attack 
+summary: 使用NetApp Ransomware Resilience，您可以查看工作负载健康状况并保护工作负载。 
+---
+= 使用NetApp勒索软件恢复能力
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+借助NetApp Ransomware Resilience，您可以查看工作负载的健康状况并保护工作负载。
+
+* link:rp-start-discover.html["发现勒索软件恢复中的工作负载"] 。
+* link:rp-use-dashboard.html["从仪表板查看保护和工作负载健康状况"] 。
++
+** 审查并采取勒索软件保护建议。
+
+
+* link:rp-use-protect.html["保护工作负载"]：
++
+** 为工作负载分配勒索软件保护策略。
+** 加强应用程序保护以防止未来的勒索软件攻击。
+** 创建、更改或删除保护策略。
+
+
+* link:rp-use-alert.html["响应检测到的潜在勒索软件攻击"] 。
+* link:rp-use-recover.html["从攻击中恢复"]（事件消除后）。
+* link:rp-use-settings.html["配置保护设置"] 。
+

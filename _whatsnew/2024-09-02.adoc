@@ -1,0 +1,35 @@
+= 来自Digital Advisor的安全风险评估
+:allow-uri-read: 
+
+
+
+
+=== 来自Digital Advisor的安全风险评估
+
+BlueXP ransomware protection现在从NetApp Digital Advisor收集有关集群的高风险和严重安全风险的信息。如果发现任何风险， BlueXP ransomware protection会在仪表板的“推荐操作”窗格中提供建议：“修复集群 <name> 上的已知安全漏洞。”从仪表板上的建议中，单击“查看并修复”建议查看Digital Advisor和常见漏洞和暴露 (CVE) 文章以解决安全风险。如果存在多个安全风险，请查看Digital Advisor中的信息。
+
+参考 https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisor文档"^]。
+
+
+
+=== 备份到 Google Cloud Platform
+
+在此版本中，您可以将备份目标设置为 Google Cloud Platform 存储桶。以前，您只能将备份目标添加到NetApp StorageGRID、Amazon Web Services 和 Microsoft Azure。
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["了解有关配置BlueXP ransomware protection设置的更多信息"] 。
+
+
+
+=== 支持 Google Cloud Platform
+
+该服务现在支持适用于 Google Cloud Platform 的Cloud Volumes ONTAP进行存储保护。此前，该服务仅支持适用于 Amazon Web Services 和 Microsoft Azure 的Cloud Volumes ONTAP以及本地 NAS。
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["了解BlueXP ransomware protection以及支持的数据源、备份目标和工作环境"] 。
+
+
+
+=== 基于角色的访问控制
+
+您现在可以使用基于角色的访问控制 (RBAC) 限制对特定活动的访问。  BlueXP ransomware protection使用BlueXP的两个角色： BlueXP帐户管理员和非帐户管理员（查看者）。
+
+有关每个角色可以执行的操作的详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["基于角色的访问控制权限"]。

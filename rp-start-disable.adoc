@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: rp-start-disable.html 
+keywords: bluexp, ransomware protection, netapp, disable protection 
+summary: 如果您不再想使用NetApp Ransomware Resilience，您可以让许可证过期。 
+---
+= 禁用NetApp勒索软件恢复功能
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您不再想使用NetApp Ransomware Resilience，您可以让许可证过期。您还可以禁用不再使用的策略。
+
+
+
+== 禁用勒索软件防御
+
+订阅或许可证到期后，勒索软件恢复功能会自动禁用需要订阅或许可证的功能。
+
+有关许可证到期后仍可执行的操作的详细信息，请参阅link:rp-start-licenses.html["设置勒索软件恢复许可"]。
+
+
+
+== 禁用保护策略
+
+如果您想停止使用应用于工作负载的保护策略，您可以使用系统管理器、API 调用或 CLI 禁用它们。
+
+您可以通过应用不包含它们的其他策略来禁用勒索软件恢复中的 FPolicy 和备份策略。有关设置保护策略的说明，请参阅link:rp-use-protect.html["保护工作负载免受勒索软件攻击"]。
+
+
+TIP: 我们建议您不要禁用快照策略。

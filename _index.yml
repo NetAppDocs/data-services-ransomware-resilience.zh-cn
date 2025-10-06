@@ -1,0 +1,51 @@
+---
+indexpage:
+  title: NetApp勒索软件恢复能力文档
+  summary: NetApp Ransomware Resilience 是一种用于勒索软件保护、检测和恢复的编排服务。勒索软件恢复能力可保护NetApp Console
+    组织中本地 NAS 存储上的 Oracle、MySQL、VM 数据存储区和文件共享以及 Amazon Web Services 中的Cloud Volumes
+    ONTAP （使用 NFS 和 CIFS 协议）的基于应用程序的工作负载，并将数据备份到 Amazon Web Services (AWS) 云存储或NetApp
+    StorageGRID。
+  keywords: bluexp, ransomware, anti-ransomware, cyber attack, netapp, ontap, amazon
+    web services, aws, storagegrid, protection, resilience
+  lead: NetApp Ransomware Resilience 是一种用于勒索软件保护、检测和恢复的编排服务。勒索软件弹性保护跨控制台组织的内部 NAS
+    存储上的 Oracle、MySQL、VM 数据存储区和文件共享以及 Amazon Web Services 中的Cloud Volumes ONTAP （使用
+    NFS 和 CIFS 协议）的基于应用程序的工作负载，并将数据备份到 Amazon Web Services (AWS) 云存储或NetApp StorageGRID。
+  tiles:
+  - title: 开始使用
+    links:
+    - title: 了解勒索软件抵御能力
+      url: "/concept-ransomware-resilience.html"
+    - title: 勒索软件抵御能力的新功能
+      url: "/whats-new.html"
+    - title: 前提条件
+      url: "/rp-start-prerequisites.html"
+    - title: 快速启动
+      url: "/rp-start-quick-start.html"
+    - title: 配置备份目标并启用威胁检测
+      url: "/rp-use-settings.html"
+    - title: 模拟勒索软件攻击
+      url: "/rp-start-simulate.html"
+  - title: 使用勒索软件弹性
+    links:
+    - title: 使用勒索软件恢复概述
+      url: "/rp-use-overview.html"
+    - title: 发现工作负载
+      url: "/rp-start-discover.html"
+    - title: 使用仪表板查看工作负载健康状况
+      url: "/rp-use-dashboard.html"
+    - title: 保护工作负载
+      url: "/rp-use-protect.html"
+    - title: 使用NetApp数据分类扫描个人身份信息
+      url: "/rp-use-protect-classify.html"
+    - title: 响应检测到的警报
+      url: "/rp-use-alert.html"
+    - title: 从攻击中恢复
+      url: "/rp-use-recover.html"
+  - title: 博客和社区
+    links:
+    - title: NetApp控制台
+      url: https://www.netapp.com/console
+    - title: NetApp数据服务
+      url: https://www.netapp.com/data-services/
+    - title: NetApp 社区
+      url: https://community.netapp.com/

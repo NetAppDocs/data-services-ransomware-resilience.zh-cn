@@ -1,0 +1,121 @@
+---
+sidebar: sidebar 
+permalink: rp-use-protect-classify.html 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, cds, sensitive, pii, classification 
+summary: 使用NetApp数据分类来提高数据的安全性和隐私合规性，以确定您的数据是否包含个人身份信息或私人信息。 
+---
+= 使用勒索软件恢复中的NetApp数据分类扫描个人身份信息
+:allow-uri-read: 
+
+
+[role="lead"]
+在NetApp勒索软件恢复能力中，您可以使用NetApp数据分类来扫描和分类文件共享工作负载中的数据。对数据进行分类可以帮助您确定数据集是否包含个人身份信息 (PII)，这可能会增加安全风险。数据分类是控制台的核心组件，无需额外付费即可使用。
+
+link:https://docs.netapp.com/us-en/bluexp-classification/["数据分类"^]利用人工智能驱动的自然语言处理进行上下文数据分析和分类，为您的数据提供可操作的见解，以满足合规性要求、检测安全漏洞、优化成本并加速迁移。
+
+
+TIP: 此过程可以影响工作负载的重要性，以帮助确保您获得适当的保护。
+
+*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服务的控制台访问角色"^] 。
+
+
+
+== 通过数据分类识别隐私暴露
+
+在使用勒索软件恢复功能中的数据分类之前，您需要link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html["启用数据分类来扫描您的数据"^]。
+
+您可以在勒索软件恢复的保护页面内部署数据分类。按照程序识别隐私泄露。当您选择**识别暴露**时，如果您尚未部署数据分类，则会出现一个对话框，让您启用数据分类。
+
+image:classification-deploy.png["部署分类截图"]
+
+有关数据分类的更多信息，请参阅：
+
+* https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解数据分类"^]
+* https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["私人数据类别"^]
+* https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["调查组织中存储的数据"^]
+
+
+.开始之前
+如果您已link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html["部署数据分类"^]。数据分类作为控制台的一部分提供，无需额外付费，并且可以在本地或客户云中部署。
+
+.步骤
+. 从勒索软件恢复菜单中，选择*保护*。
+. 在“保护”页面的“工作负载”列中找到文件共享工作负载。
++
+image:screen-protection-sensitive-preview-column.png["保护页面显示隐私暴露栏"]
+
+. 要启用数据分类来扫描您的数据中的 PII，请在“隐私暴露”列中选择“识别暴露”。
+
+
+
+NOTE: 如果您尚未部署数据分类，选择“识别暴露”将打开一个对话框来部署数据分类。选择*部署*。部署数据分类后，您可以返回“保护”页面，然后选择“识别暴露”。
+
+.结果
+扫描可能需要几分钟，具体取决于文件的大小和数量。在扫描过程中，保护页面指示它正在识别文件并提供文件数量。扫描完成后，“隐私暴露”列将暴露级别评定为“低”、“中”或“高”。
+
+
+
+== 审查隐私暴露情况
+
+在对 PII 进行数据分类扫描后，评估风险。
+
+PII 数据分为以下三类：
+
+* *高*：超过 70% 的文件包含 PII
+* *中*：超过 30% 且少于 70% 的文件包含 PII
+* *低*：大于 0% 且小于 30% 的文件包含 PII
+
+
+.步骤
+. 从勒索软件恢复菜单中，选择*保护*。
+. 在“保护”页面中，在“工作负载”列中找到显示“隐私暴露”列中状态的文件共享工作负载。
++
+image:screen-protection-sensitive-preview-column.png["保护页面显示隐私暴露栏"]
+
+. 选择“工作负载”列中的工作负载链接即可查看工作负载详情。
++
+image:screen-protection-workload-details-privacy-exposure.png["显示隐私暴露图块的工作负载详细信息屏幕"]
+
+. 在“工作负载详细信息”页面中，查看“隐私暴露”图块中的详细信息。
+
+
+
+
+== 隐私暴露对工作负载重要性的影响
+
+隐私暴露的变化可能会影响工作负载的重要性。
+
+[cols="15,20a,20,20"]
+|===
+| 当隐私暴露时： | 从这次隐私曝光来看： | 对于此隐私暴露： | 那么，工作量重要性会这样做：。 
+
+
+| *减少*  a| 
+高、中或低
+| 中、低或无 | 保持不变 
+
+
+.3+| *增加*  a| 
+无
+| 低 | 保持标准 
+
+
+| 低  a| 
+中
+| 从标准到重要的变化 
+
+
+| 低或中  a| 
+高
+| 从标准或重要变为关键 
+|===
+
+
+== 了解更多信息
+
+有关数据分类的详细信息，请参阅数据分类文档：
+
+* https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解数据分类"^]
+* https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["私人数据类别"^]
+* https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["调查组织中存储的数据"^]
+

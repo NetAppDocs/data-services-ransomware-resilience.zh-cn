@@ -1,0 +1,31 @@
+= 准备演习报告
+:allow-uri-read: 
+
+
+
+
+=== 准备演习报告
+
+通过此版本，您可以查看勒索软件攻击准备演习报告。准备演练使您能够模拟对新创建的示例工作负载的勒索软件攻击。然后，调查模拟攻击并恢复样本工作负载。此功能可帮助您通过测试警报通知、响应和恢复过程来了解在发生实际勒索软件攻击时您是否已做好准备。
+
+有关详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["进行勒索软件攻击准备演习"]。
+
+
+
+=== 新的基于角色的访问控制角色和权限
+
+以前，您可以根据用户的职责为其分配角色和权限，这有助于您管理用户对BlueXP ransomware protection的访问。在此版本中，有两个特定于BlueXP ransomware protection的新角色具有更新的权限。新角色如下：
+
+* 勒索软件保护管理员
+* 勒索软件保护查看器
+
+
+有关权限的详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["BlueXP ransomware protection基于角色的功能访问"]。
+
+
+
+=== 付款改进
+
+此版本对支付流程进行了多项改进。
+
+有关详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["设置许可和付款选项"]。

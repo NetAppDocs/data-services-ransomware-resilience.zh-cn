@@ -1,0 +1,39 @@
+= 启用数据分类并扫描个人身份信息 (PII)
+:allow-uri-read: 
+
+
+
+
+=== 启用数据分类并扫描个人身份信息 (PII)
+
+在此版本中，您可以启用BlueXP classification（ BlueXP系列的核心组件）来扫描和分类文件共享工作负载中的数据。对数据进行分类可以帮助您识别数据是否包含个人信息或私人信息，这可能会增加安全风险。此过程还会影响工作负载的重要性，并帮助您确保使用适当的保护级别来保护工作负载。
+
+部署了BlueXP classification的客户通常可以在BlueXP ransomware protection中扫描 PII 数据。  BlueXP classification作为BlueXP平台的一部分提供，无需额外付费，并且可以在本地或客户云中部署。
+
+参考 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["配置BlueXP ransomware protection设置"]。
+
+要启动扫描，请在“保护”页面上，单击“隐私暴露”列中的“识别暴露”。
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html["使用BlueXP classification扫描个人身份敏感数据"] 。
+
+
+
+=== SIEM 与 Microsoft Sentinel 集成
+
+现在，您可以使用 Microsoft Sentinel 将数据发送到安全和事件管理系统 (SIEM) 以进行威胁分析和检测。以前，您可以选择 AWS Security Hub 或 Splunk Cloud 作为您的 SIEM。
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["了解有关配置BlueXP ransomware protection设置的更多信息"] 。
+
+
+
+=== 立即免费试用 30 天
+
+随着此版本的发布， BlueXP ransomware protection的新部署现在有 30 天的免费试用期。此前， BlueXP ransomware protection提供 90 天的免费试用。如果您已处于 90 天免费试用期，则该优惠将持续 90 天。
+
+
+
+=== 在文件级别恢复 Podman 的应用程序工作负载
+
+在文件级别恢复应用程序工作负载之前，您现在可以查看可能受到攻击影响的文件列表并确定要恢复的文件。以前，如果组织（以前是帐户）中的BlueXP连接器正在使用 Podman，则此功能将被禁用。它现在已为 Podman 启用。您可以让BlueXP ransomware protection选择要恢复的文件，您可以上传列出受警报影响的所有文件的 CSV 文件，或者您可以手动识别要恢复的文件。
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["了解有关从勒索软件攻击中恢复的更多信息"] 。

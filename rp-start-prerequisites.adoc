@@ -1,0 +1,99 @@
+---
+sidebar: sidebar 
+permalink: rp-start-prerequisites.html 
+keywords: bluexp ransomware protection, ransomware protection prerequisites, resilience 
+summary: 通过验证对您的环境、网络访问、登录和 Web 浏览器的支持，开始使用NetApp勒索软件恢复能力。 
+---
+= NetApp勒索软件恢复能力前提条件
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/get-started/
+
+
+[role="lead"]
+通过验证您的操作环境、登录、网络访问和 Web 浏览器的准备情况，开始使用NetApp勒索软件恢复能力。
+
+要使用勒索软件恢复能力，您需要满足先决条件。
+
+
+
+== 在NetApp控制台中
+
+* 具有组织管理员权限的NetApp控制台用户帐户，用于发现资源。
+* 一个控制台组织，其中至少有一个活动的控制台代理连接到本地ONTAP集群或者 AWS 或 Azure 中的Cloud Volumes ONTAP 。
+* 控制台代理必须具有 `cloudmanager-ransomware-protection`容器处于活动状态。
+* 至少一个具有NetApp本地ONTAP集群或 AWS 或 Azure 中的Cloud Volumes ONTAP 的控制台系统。勒索软件恢复支持 NAS（NFS 和 SMB）和 SAN（iSCSI、FC 和 NVMe）协议。
++
+** 支持具有ONTAP OS 版本 9.11.1 或更高版本的ONTAP或Cloud Volumes ONTAP集群。
++
+
+NOTE: 仅ONTAP 9.17.1 及更高版本支持 SAN 工作负载。
+
+** 如果您的本地ONTAP集群或 AWS 或 Azure 云中的Cloud Volumes ONTAP尚未在控制台中登录，则需要控制台代理。
++
+参考 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["了解如何配置控制台代理"]和 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["标准控制台要求"^]。
+
++
+
+NOTE: 如果您在单个控制台组织中拥有多个控制台代理，则勒索软件恢复功能将扫描除控制台 UI 中当前选择的代理之外的所有控制台代理中的ONTAP资源。
+
+
+
+
+
+
+
+== 在ONTAP 9.11.1 及更高版本中
+
+* 本地ONTAP实例上启用了ONTAP One 许可证。
+* NetApp Autonomous Ransomware Protection 许可证（由 Ransomware Resilience 使用）在本地ONTAP实例上启用，具体取决于您使用的ONTAP版本。参考 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索软件防护概述"^]。
++
+
+NOTE: 与预览版不同，Ransomware Resilience 的正式版包含NetApp Autonomous Ransomware Protection 技术的许可证。参考 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索软件防护概述"^]了解详情。
+
++
+有关更多许可详细信息，请参阅link:concept-ransomware-protection.html["了解勒索软件抵御能力"]。
+
+* 要应用保护配置（例如启用自主勒索软件保护等），勒索软件恢复能力需要ONTAP集群上的管理员权限。  ONTAP集群应该仅使用ONTAP集群管理员用户凭据进行加入。
+* 如果已使用非管理员用户凭据在控制台中登录ONTAP集群，则必须通过登录ONTAP集群来更新非管理员用户权限，如本页所述。
+
+
+
+
+== 用于数据备份
+
+* NetApp StorageGRID、AWS S3、Azure Blob 或 Google Cloud Platform 中用于备份目标的帐户以及设置的访问权限。
++
+请参阅 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["AWS、Azure 或 S3 权限列表"^]了解详情。
+
+* 不需要在系统上启用NetApp Backup and Recovery。
++
+勒索软件恢复力有助于通过设置选项配置备份目标。看link:rp-use-settings.html["配置设置"] 。
+
+
+
+
+
+== 更新ONTAP系统中的非管理员用户权限
+
+如果您需要更新特定系统的非管理员用户权限，请完成以下步骤。
+
+. 登录控制台并查找需要更新其ONTAP用户权限的系统。
+. 选择系统以查看详细信息。
+. 选择“查看其他信息”以显示用户名。
+. 使用管理员用户登录ONTAP集群 CLI。
+. 显示该用户的现有角色。进入：
++
+[listing]
+----
+security login show -user-or-group-name <username>
+----
+. 更改用户的角色。进入：
++
+[listing]
+----
+security login modify -user-or-group-name <username> -application console|http|ontapi|ssh|telnet -authentication-method password -role admin
+----
+. 返回勒索软件恢复 UI 来使用它。
+
