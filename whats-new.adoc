@@ -42,7 +42,7 @@ NetApp控制台提供企业级跨本地和云环境的存储和数据服务的�
 
 与存储层的 ARP 加密检测不同，勒索软件弹性 SaaS 服务通过收集 FPolicy 事件来检测用户行为异常。
 
-有关详细信息，请参阅link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.htm["启用可疑用户活动检测"]和link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior["查看异常用户行为"]。
+有关详细信息，请参阅link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["启用可疑用户活动检测"]和link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior["查看异常用户行为"]。
 
 
 
