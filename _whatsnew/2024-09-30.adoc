@@ -8,4 +8,4 @@
 
 在此版本中，您现在可以将文件共享分组，以便更轻松地保护您的数据资产。该服务可以同时保护组中的所有卷。以前，您需要单独保护每个卷。
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["了解有关在勒索软件保护策略中分组文件共享工作负载的更多信息"] 。
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["了解有关在勒索软件保护策略中分组文件共享工作负载的更多信息"] 。

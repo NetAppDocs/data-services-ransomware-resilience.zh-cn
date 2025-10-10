@@ -78,7 +78,7 @@ TIP: 如果您在“设置”页面的“勒索软件恢复”中配置了安全
 
 您可以从勒索软件恢复力仪表板或“警报”选项卡访问警报。
 
-*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员、勒索软件恢复管理员或勒索软件恢复查看器角色。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服务的BlueXP访问角色"^] 。
+*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员、勒索软件恢复管理员或勒索软件恢复查看器角色。 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服务的BlueXP访问角色"^] 。
 
 .步骤
 . 在勒索软件恢复力仪表板中，查看警报窗格。
@@ -107,7 +107,7 @@ image:screen-alerts.png["警报页面"]
 您可以接收勒索软件恢复警报的电子邮件通知。此功能可帮助您随时了解警报、警报的严重程度以及受影响的资源。
 
 
-TIP: 要订阅电子邮件通知，请参阅 https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings["设置电子邮件通知设置"^]。
+TIP: 要订阅电子邮件通知，请参阅 https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings["设置电子邮件通知设置"^]。
 
 . 在勒索软件恢复中，转到*设置*页面。
 . 在“通知”下，找到电子邮件通知设置。
@@ -117,7 +117,7 @@ TIP: 要订阅电子邮件通知，请参阅 https://docs.netapp.com/us-en/bluex
 
 当生成新警报时，您将收到电子邮件通知。
 
-*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员、勒索软件恢复管理员或勒索软件恢复查看器角色。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服务的BlueXP访问角色"^] 。
+*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员、勒索软件恢复管理员或勒索软件恢复查看器角色。 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服务的BlueXP访问角色"^] 。
 
 .步骤
 . 查看电子邮件。
@@ -140,30 +140,16 @@ TIP: 要订阅电子邮件通知，请参阅 https://docs.netapp.com/us-en/bluex
 
 == 检测恶意活动和异常用户行为
 
-查看“警报”选项卡，您可以识别是否存在恶意活动。
+查看“警报”选项卡，您可以识别是否存在恶意活动或异常用户行为。
 
-*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服务的控制台访问角色"^] 。
+您必须配置用户活动代理并启用具有用户行为检测的保护策略才能查看用户级别检测。启用用户行为检测后，*可疑用户*列会出现在警报仪表板中；未启用用户行为检测时则不会显示。要启用可疑用户检测，请参阅link:suspicious-user-activity.html["可疑的用户活动"]。
 
-*出现了哪些细节？*显示的详细信息取决于警报的触发方式：
 
-* 由ONTAP中的自主勒索软件防护功能触发。这可以根据卷中文件的行为检测恶意活动。
-* 由Data Infrastructure Insights工作负载安全触发。这需要Data Infrastructure Insights工作负载安全的许可证，并且您需要在勒索软件恢复中启用它。此功能可检测存储工作负载中的异常用户行为，并允许您阻止该用户进一步访问。
-+
-要在勒索软件恢复中启用工作负载安全，请转到*设置*页面并选择*工作负载安全连接*选项。
-
-+
-有关Data Infrastructure Insights工作负载安全性的概述，请查看 https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["关于工作负载安全"^]。
+NOTE: 如果您正在使用NetAppData Infrastructure Insights(DII) 工作负载安全，建议您使用相同的工作负载安全代理来实现勒索软件恢复。您不需要为勒索软件恢复能力部署单独的工作负载安全代理，但是，使用相同的工作负载安全代理需要勒索软件恢复能力控制台组织和 DII 存储工作负载安全租户之间建立配对关系。请联系您的客户代表以启用此配对。
 
 
 
-
-TIP: 如果您没有数据基础设施工作负载安全的许可证，并且没有在勒索软件恢复中启用它，那么您将看不到异常用户行为信息。
-
-当发生恶意活动时，会生成警报并自动拍摄快照。
-
-
-
-=== 仅查看来自 Autonomous Ransomware Protection 的恶意活动
+=== 查看恶意活动
 
 当自主勒索软件防护在勒索软件恢复中触发警报时，您可以查看以下详细信息：
 
@@ -189,44 +175,16 @@ image:screen-alerts-incidents3.png["警报事件页面"]
 
 
 
-=== 在Data Infrastructure Insights中查看异常用户行为工作负载安全
+=== 查看异常用户行为
 
-当Data Infrastructure Insights工作负载安全在勒索软件恢复中触发警报时，您可以直接在Data Infrastructure Insights工作负载安全中查看可疑用户、阻止用户并调查用户活动。
-
-
-TIP: 这些功能是对自主勒索软件防护所提供的详细信息的补充。
-
-.开始之前
-此选项需要Data Infrastructure Insights工作负载安全的许可证，并且您需要在勒索软件恢复中启用它。
-
-要在 Ransomware Resilience 中启用工作负载安全，请执行以下操作：
-
-. 转到*设置*页面。
-. 选择*工作负载安全连接*选项。
-+
-有关详细信息，请参阅link:rp-use-settings.html["配置勒索软件抵御能力设置"] 。
-
-
+如果您已配置可疑用户检测来查看异常用户行为，则可以查看用户级数据并阻止特定用户。要启用可疑用户设置，请参阅link:rp-use-settings.html["配置勒索软件抵御能力设置"]。
 
 .步骤
 . 从勒索软件恢复菜单中，选择*警报*。
 . 选择一个警报。
 . 查看警报中的事件。
-+
-image:screenshot-alerts.png["警报页面的屏幕截图。"]
+. 要阻止可疑用户进一步访问控制台监控的环境，请选择该用户名称下的“*阻止*”。
 
-. 要阻止可疑用户进一步访问控制台监控的环境，请选择“阻止用户”链接。
-. 研究警报或警报中的事件：
-+
-.. 要在Data Infrastructure Insights工作负载安全中进一步研究警报，请选择*调查工作负载安全*链接。
-.. 选择一个事件来查看该事件的详细信息。
-
-
-
-
-Data Infrastructure Insights工作负载安全在新选项卡中打开。
-
-+image:screen-alerts-incidents-diiws-diiwspage.png["调查工作负载安全性"]
 
 
 
@@ -234,7 +192,7 @@ Data Infrastructure Insights工作负载安全在新选项卡中打开。
 
 阻止攻击后，通知存储管理员数据已准备就绪，以便他们可以开始恢复。
 
-*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服务的控制台访问角色"^] 。
+*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服务的控制台访问角色"^] 。
 
 .步骤
 . 从勒索软件恢复菜单中，选择*警报*。
@@ -258,7 +216,7 @@ image:screen-alerts-incidents3.png["警报事件页面"]
 
 == 忽略不属于潜在攻击的事件
 
-审查事件后，您需要确定该事件是否是潜在的攻击。如果不满足前述条件，他们就可以被解雇。
+审查事件后，您需要确定该事件是否是潜在的攻击。如果它们不是真正的威胁，则可以将其驳回。
 
 您可以忽略误报或决定立即恢复数据。如果您忽略警报，勒索软件恢复功能会了解此行为，将其与正常操作关联，并且不会再次针对此类行为发出警报。
 
@@ -267,7 +225,7 @@ image:screen-alerts-incidents3.png["警报事件页面"]
 
 CAUTION: 如果您关闭警报，则无法将该状态改回任何其他状态，也无法撤消此更改。
 
-*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服务的控制台访问角色"^] 。
+*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服务的控制台访问角色"^] 。
 
 .步骤
 . 从勒索软件恢复菜单中，选择*警报*。
@@ -304,7 +262,7 @@ image:screen-alerts-status-edit.png["警报编辑状态页面"]
 
 在文件级别恢复应用程序工作负载之前，您可以查看受影响文件的列表。您可以访问警报页面下载受影响文件的列表。然后使用恢复页面上传列表并选择要恢复的文件。
 
-*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服务的控制台访问角色"^] 。
+*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服务的控制台访问角色"^] 。
 
 .步骤
 使用“警报”页面检索受影响文件的列表。

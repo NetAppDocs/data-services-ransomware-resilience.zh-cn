@@ -39,20 +39,20 @@ summary: 要使用勒索软件恢复能力，请执行几个步骤进行设置�
 === 准备 AWS 成为备份目标
 
 * 在 AWS 中设置一个帐户。
-* 配置 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["AWS 权限"^]在 AWS 中。
+* 配置 https://docs.netapp.com/us-en/console-setup-admin/reference-permissions.html["AWS 权限"^]在 AWS 中。
 
 
-有关在控制台中管理 AWS 存储的详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html["管理您的 Amazon S3 存储桶"^]。
+有关在控制台中管理 AWS 存储的详细信息，请参阅 https://docs.netapp.com/us-en/console-setup-admin/task-viewing-amazon-s3.html["管理您的 Amazon S3 存储桶"^]。
 
 
 
 === 准备 Azure 以成为备份目标
 
 * 在 Azure 中设置一个帐户。
-* 配置 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["Azure 权限"^]在 Azure 中。
+* 配置 https://docs.netapp.com/us-en/console-setup-admin/reference-permissions.html["Azure 权限"^]在 Azure 中。
 
 
-有关在控制台中管理 Azure 存储的详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-blob-storage/task-view-azure-blob-storage.html["管理 Azure 存储帐户"^]。
+有关在控制台中管理 Azure 存储的详细信息，请参阅 https://docs.netapp.com/us-en/storage-management-blob-storage/task-view-azure-blob-storage.html["管理 Azure 存储帐户"^]。
 
 
 
@@ -60,7 +60,7 @@ summary: 要使用勒索软件恢复能力，请执行几个步骤进行设置�
 
 下一步是设置控制台和勒索软件恢复能力。
 
-审查 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-standard-mode.html["标准模式的控制台要求"^]。
+审查 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-standard-mode.html["标准模式的控制台要求"^]。
 
 
 

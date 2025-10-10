@@ -11,32 +11,30 @@ summary: 使用NetApp数据分类来提高数据的安全性和隐私合规性�
 [role="lead"]
 在NetApp勒索软件恢复能力中，您可以使用NetApp数据分类来扫描和分类文件共享工作负载中的数据。对数据进行分类可以帮助您确定数据集是否包含个人身份信息 (PII)，这可能会增加安全风险。数据分类是控制台的核心组件，无需额外付费即可使用。
 
-link:https://docs.netapp.com/us-en/bluexp-classification/["数据分类"^]利用人工智能驱动的自然语言处理进行上下文数据分析和分类，为您的数据提供可操作的见解，以满足合规性要求、检测安全漏洞、优化成本并加速迁移。
+link:https://docs.netapp.com/us-en/data-services-data-classification/["数据分类"^]利用人工智能驱动的自然语言处理进行上下文数据分析和分类，为您的数据提供可操作的见解，以满足合规性要求、检测安全漏洞、优化成本并加速迁移。
 
 
 TIP: 此过程可以影响工作负载的重要性，以帮助确保您获得适当的保护。
 
-*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服务的控制台访问角色"^] 。
+*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服务的控制台访问角色"^] 。
 
 
 
 == 通过数据分类识别隐私暴露
 
-在使用勒索软件恢复功能中的数据分类之前，您需要link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html["启用数据分类来扫描您的数据"^]。
+在使用勒索软件恢复功能中的数据分类之前，您需要link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-cloud-compliance.html["启用数据分类来扫描您的数据"^]。
 
 您可以在勒索软件恢复的保护页面内部署数据分类。按照程序识别隐私泄露。当您选择**识别暴露**时，如果您尚未部署数据分类，则会出现一个对话框，让您启用数据分类。
 
-image:classification-deploy.png["部署分类截图"]
-
 有关数据分类的更多信息，请参阅：
 
-* https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解数据分类"^]
-* https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["私人数据类别"^]
-* https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["调查组织中存储的数据"^]
+* https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html["了解数据分类"^]
+* https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html["私人数据类别"^]
+* https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["调查组织中存储的数据"^]
 
 
 .开始之前
-如果您已link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html["部署数据分类"^]。数据分类作为控制台的一部分提供，无需额外付费，并且可以在本地或客户云中部署。
+如果您已link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-cloud-compliance.html["部署数据分类"^]。数据分类作为控制台的一部分提供，无需额外付费，并且可以在本地或客户云中部署。
 
 .步骤
 . 从勒索软件恢复菜单中，选择*保护*。
@@ -115,7 +113,7 @@ image:screen-protection-workload-details-privacy-exposure.png["显示隐私暴�
 
 有关数据分类的详细信息，请参阅数据分类文档：
 
-* https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解数据分类"^]
-* https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["私人数据类别"^]
-* https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["调查组织中存储的数据"^]
+* https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html["了解数据分类"^]
+* https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html["私人数据类别"^]
+* https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["调查组织中存储的数据"^]
 

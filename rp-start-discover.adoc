@@ -14,7 +14,7 @@ summary: 在发现过程中，勒索软件恢复力会分析所有控制台代�
 [role="lead"]
 在使用NetApp Ransomware Resilience 之前，它需要先发现数据。在发现过程中，勒索软件恢复力会分析组织内所有控制台代理和项目系统中的所有卷和文件。
 
-*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服务的控制台访问角色"^] 。
+*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服务的控制台访问角色"^] 。
 
 *勒索软件恢复能力发现了什么？*勒索软件恢复能力评估 MySQL 应用程序、Oracle 应用程序、VMware 数据存储区、文件共享和块存储。
 
@@ -55,7 +55,7 @@ NOTE: 如果您开始免费试用，*开始 30 天免费试用*按钮标签将�
 勒索软件恢复力可发现受支持和不受支持的系统。此过程可能需要几分钟。
 
 +
-image:screen-discover-workloads-unsupported.png["发现工作负载屏幕截图"]
+image:screen-discover-workloads.png["发现工作负载屏幕截图"]
 
 . 要发现特定控制台代理的工作负载，请选择要发现工作负载的控制台代理旁边的“选择系统”。
 . 选择您想要发现工作负载的系统。

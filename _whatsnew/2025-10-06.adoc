@@ -6,14 +6,39 @@
 
 === BlueXP ransomware protection现已升级NetApp勒索软件恢复能力
 
-BlueXP勒索软件复制已重命名为NetApp Ransomware Resilience。
+BlueXP ransomware protection服务已更名为NetApp Ransomware Resilience。
 
 
 
 === BlueXP现在是NetApp控制台
 
-BlueXP已重新命名并重新设计，以更好地反映其在管理数据基础设施中的作用。
-
 NetApp控制台提供企业级跨本地和云环境的存储和数据服务的集中管理，提供实时洞察、更快的工作流程和简化的管理。
 
-有关更改的详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-relnotes/index.html["NetApp控制台发行说明"]。
+有关更改的详细信息，请参阅 https://docs.netapp.com/us-en/console-relnotes/index.html["NetApp控制台发行说明"]。
+
+
+
+=== 数据泄露检测
+
+勒索软件恢复力包括一种新的检测机制，只需几个步骤即可激活，以检测异常用户读取作为数据泄露的早期指标。勒索软件弹性通过创建历史基线来收集和分析用户读取事件，该基线是根据过去数据得出的预期正常行为的概况。当新用户活动明显偏离既定规范（例如意外的阅读激增与可疑的阅读模式相结合）时，就会生成警报。勒索软件恢复力包括一个用于检测可疑读取模式的 AI 模型。
+
+与存储层的 ARP 加密检测不同，勒索软件弹性 SaaS 服务通过收集 FPolicy 事件来检测用户行为异常。
+
+有关详细信息，请参阅link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.htm["启用可疑用户活动检测"]和link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior["查看异常用户行为"]。
+
+
+
+==== 其他可疑用户活动检测
+
+除了数据泄露检测之外，勒索软件恢复能力还根据观察到的可疑用户活动检测以下警报类型：
+
+* **数据破坏 - 潜在攻击** - 当文件删除的数量超过历史标准时，会创建具有潜在攻击严重程度的警报。
+* **可疑用户行为 - 潜在攻击** - 当观察到类似于勒索软件攻击的读取、重命名和删除操作时，会创建严重程度为潜在攻击的警报
+* **可疑用户行为 - 警告** - 当文件活动（读取、删除、重命名等）的总数超过历史标准时，将创建严重程度为警告的警报
+
+
+
+
+==== 数据泄露检测的新用户角色
+
+为了管理可疑用户活动警报，Ransomware Resilience 引入了两个新角色，以提供对敏感数据（例如用户的文件活动）的细粒度访问。有关更多信息，请参阅link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["NetApp勒索软件恢复基于角色的访问"] 。

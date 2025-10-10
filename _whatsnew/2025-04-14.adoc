@@ -8,7 +8,7 @@
 
 通过此版本，您可以查看勒索软件攻击准备演习报告。准备演练使您能够模拟对新创建的示例工作负载的勒索软件攻击。然后，调查模拟攻击并恢复样本工作负载。此功能可帮助您通过测试警报通知、响应和恢复过程来了解在发生实际勒索软件攻击时您是否已做好准备。
 
-有关详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["进行勒索软件攻击准备演习"]。
+有关详细信息，请参阅 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-simulate.html["进行勒索软件攻击准备演习"]。
 
 
 
@@ -20,7 +20,7 @@
 * 勒索软件保护查看器
 
 
-有关权限的详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["BlueXP ransomware protection基于角色的功能访问"]。
+有关权限的详细信息，请参阅 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["BlueXP ransomware protection基于角色的功能访问"]。
 
 
 
@@ -28,4 +28,4 @@
 
 此版本对支付流程进行了多项改进。
 
-有关详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["设置许可和付款选项"]。
+有关详细信息，请参阅 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-licenses.html["设置许可和付款选项"]。

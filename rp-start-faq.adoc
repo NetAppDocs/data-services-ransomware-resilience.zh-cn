@@ -35,7 +35,7 @@ summary: 查找有关NetApp勒索软件恢复能力的常见问题的答案。
 
 *勒索软件恢复功能是否在标准、受限和私人模式下可用？*目前，勒索软件恢复仅在标准模式下可用。敬请关注。
 
-有关所有NetApp数据服务中这些模式的说明，请参阅 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["NetApp控制台部署模式"^]。
+有关所有NetApp数据服务中这些模式的说明，请参阅 https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["NetApp控制台部署模式"^]。
 
 
 
@@ -43,7 +43,7 @@ summary: 查找有关NetApp勒索软件恢复能力的常见问题的答案。
 
 *勒索软件防御 URL 是什么？*在浏览器中输入 https://console.netapp.com/["https://console.netapp.com/ransomware-resilience"^]访问控制台。
 
-*如何处理访问权限？*https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服务的控制台访问角色"^] 。
+*如何处理访问权限？*https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服务的控制台访问角色"^] 。
 
 *什么设备分辨率最好？*勒索软件恢复的推荐设备分辨率为 1920x1080 或更高。
 

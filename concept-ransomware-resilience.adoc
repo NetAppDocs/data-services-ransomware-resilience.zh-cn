@@ -91,7 +91,7 @@ NOTE: 随着 2024 年 10 月的发布，Ransomware Resilience 的新部署提供
 
 勒索软件恢复许可证不包括其他NetApp产品。即使您没有许可证，Ransomware Resilience 也可以使用备份和恢复。
 
-为了检测异常用户行为，Ransomware Resilience 使用NetApp Autonomous Ransomware Protection，这是ONTAP内的一种机器学习 (ML) 模型，可检测恶意文件活动。该模型包含在勒索软件恢复许可证中。您还可以使用Data Infrastructure Insights（以前称为Cloud Insights）工作负载安全（需要许可证）来调查用户行为并阻止特定用户的进一步活动。
+为了检测异常用户行为，Ransomware Resilience 使用NetApp Autonomous Ransomware Protection，这是ONTAP内的一种机器学习 (ML) 模型，可检测恶意文件活动。该模型包含在勒索软件恢复许可证中。
 
 有关详细信息，请参阅link:rp-start-licenses.html["设置许可"] 。
 
@@ -105,7 +105,7 @@ NetApp控制台提供企业级跨本地和云环境的NetApp存储和数据服�
 
 您不需要许可证或订阅即可开始使用NetApp控制台，并且只有当您需要在云中部署控制台代理以确保与存储系统或NetApp数据服务的连接时才需要付费。但是，一些可从控制台访问的NetApp数据服务是需要许可或基于订阅的。
 
-详细了解link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html["NetApp控制台"^]。
+详细了解link:https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html["NetApp控制台"^]。
 
 
 
@@ -123,7 +123,7 @@ image:diagram-rp-architecture-preview3.png["勒索软件抵御能力架构图"]
 | *确认*  a| 
 * 查找连接到控制台的所有客户本地 NAS（NFS 和 CIFS 协议）、SAN（FC、iSCSI 和 NVMe）和Cloud Volumes ONTAP数据。
 * 从ONTAP和SnapCenter服务 API 中识别客户数据并将其与工作负载关联。详细了解 https://docs.netapp.com/us-en/ontap-family/["ONTAP"^]和 https://docs.netapp.com/us-en/snapcenter/index.html["SnapCenter软件"^]。
-* 发现每个卷的当前NetApp快照副本和备份策略的保护级别以及任何机上检测功能。然后，勒索软件恢复能力通过使用备份和恢复、 ONTAP服务和NetApp技术（例如自主勒索软件保护（ARP 或 ARP/AI，取决于您的ONTAP版本）、FPolicy、备份策略和快照策略）将此保护态势与工作负载相关联。详细了解 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索软件防护"^]， https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["NetApp备份和恢复"^] ， 和 https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^]。
+* 发现每个卷的当前NetApp快照副本和备份策略的保护级别以及任何机上检测功能。然后，勒索软件恢复能力通过使用备份和恢复、 ONTAP服务和NetApp技术（例如自主勒索软件保护（ARP 或 ARP/AI，取决于您的ONTAP版本）、FPolicy、备份策略和快照策略）将此保护态势与工作负载相关联。详细了解 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索软件防护"^]， https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["NetApp备份和恢复"^] ， 和 https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^]。
 * 根据自动发现的保护级别为每个工作负载分配业务优先级，并根据工作负载的业务优先级推荐保护策略。工作负载优先级基于已应用于与工作负载相关的每个卷的快照频率。
 
 
@@ -138,7 +138,7 @@ image:diagram-rp-architecture-preview3.png["勒索软件抵御能力架构图"]
 | *探测*  a| 
 * 使用集成机器学习 (ML) 模型检测潜在攻击，该模型可检测潜在的异常加密和活动。
 * 提供双层检测，首先检测主存储中的潜在勒索软件攻击，然后通过获取额外的自动快照副本来创建最近的数据还原点，以响应异常活动。勒索软件恢复能力能够更深入地挖掘以更精确地识别潜在攻击，而不会影响主要工作负载的性能。
-* 使用ONTAP、自主勒索软件防护（ARP 或 ARP/AI，取决于您的ONTAP版本）、Data Infrastructure Insights（以前称为Cloud Insights）工作负载安全和 FPolicy 技术，确定攻击相关工作负载的特定可疑文件和映射。
+* 使用ONTAP、自主勒索软件防护（ARP 或 ARP/AI，取决于您的ONTAP版本）和 FPolicy 技术确定攻击相关工作负载的特定可疑文件和映射。
 
 
 

@@ -38,6 +38,8 @@ sidebar:
       url: "/rp-start-simulate.html"
     - title: 在“设置”中配置备份、威胁检测和攻击模拟
       url: "/rp-use-settings.html"
+    - title: 配置可疑用户活动检测
+      url: "/suspicious-user-activity.html"
   - title: 使用勒索软件弹性
     entries:
     - title: 使用勒索软件恢复概述

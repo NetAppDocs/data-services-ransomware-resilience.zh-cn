@@ -21,9 +21,9 @@ TIP: 无法在BlueXP中设置在 FSx for ONTAP上运行的工作负载的备份�
 * 警报事件展示了新的 FSx for ONTAP工作环境。
 
 
-有关详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["了解BlueXP ransomware protection和工作环境"]。
+有关详细信息，请参阅 https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["了解BlueXP ransomware protection和工作环境"]。
 
-有关受支持选项的信息，请参阅 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-limitations.html["BlueXP ransomware protection的局限性"]。
+有关受支持选项的信息，请参阅 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-limitations.html["BlueXP ransomware protection的局限性"]。
 
 
 
@@ -31,4 +31,4 @@ TIP: 无法在BlueXP中设置在 FSx for ONTAP上运行的工作负载的备份�
 
 您现在需要以下访问角色之一来查看、发现或管理BlueXP ransomware protection：组织管理员、文件夹或项目管理员、勒索软件保护管理员或勒索软件保护查看器。
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服务的BlueXP访问角色"^] 。
+https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服务的BlueXP访问角色"^] 。

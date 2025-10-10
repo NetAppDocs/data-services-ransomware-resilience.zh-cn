@@ -14,7 +14,7 @@ summary: 您可以通过在NetApp Ransomware Resilience 中为工作负载分配
 [role="lead"]
 您可以通过在NetApp Ransomware Resilience 中启用工作负载一致性保护或创建勒索软件保护策略来保护工作负载免受勒索软件攻击。
 
-*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服务的控制台访问角色"^] 。
+*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服务的控制台访问角色"^] 。
 
 
 
@@ -22,7 +22,7 @@ summary: 您可以通过在NetApp Ransomware Resilience 中为工作负载分配
 
 勒索软件保护策略包括_检测_和_保护_策略。
 
-* **检测策略**检测勒索软件威胁并选择性地阻止可疑文件扩展名。
+* **检测策略** 检测勒索软件威胁
 * **保护策略**包括快照和备份策略。保护策略中需要检测和快照策略。备份策略是可选的。
 +
 如果您使用其他NetApp产品来保护您的工作负载，勒索软件恢复能力会发现这些产品并提供以下选项：
@@ -35,7 +35,7 @@ summary: 您可以通过在NetApp Ransomware Resilience 中为工作负载分配
 
 
 
-TIP: 为了增强对数据资产的管理和保护，您可以创建link:#group-file-shares-for-easier-protection["群组文件共享"]通过一种策略来集体保护卷。
+TIP: 为了增强对数据资产的管理和保护，您可以创建link:#create-a-protection-group["群组文件共享"]通过一种策略来集体保护卷。
 
 
 
@@ -138,7 +138,10 @@ TIP: 当在勒索软件恢复中启用保护时，勒索软件检测策略状态
 
 *预定义检测策略* [[预定义]]
 
-您可以选择以下勒索软件恢复预定义策略之一，这些策略与工作负载重要性相一致：
+您可以选择以下勒索软件恢复预定义策略之一，这些策略与工作负载重要性相一致。
+
+
+NOTE: **加密用户扩展**策略是唯一支持可疑用户行为检测的预定义策略。
 
 [cols="10,15a,20,15,15,15"]
 |===
@@ -203,6 +206,26 @@ TIP: 当在勒索软件恢复中启用保护时，勒索软件检测策略状态
 | 每月  a| 
 每 30 天
 | 60 | 2 | 93 
+
+
+.4+| *加密用户扩展*  a| 
+每刻钟
+| 每30分钟 | 3 | 72 | 93 
+
+
+| 每日  a| 
+每 1 天
+| 14 | 14 | 93 
+
+
+| 每周  a| 
+每 1 周
+| 35 | 5 | 93 
+
+
+| 每月  a| 
+每 30 天
+| 60 | 2 | 93 
 |===
 
 
@@ -216,8 +239,8 @@ TIP: 当在勒索软件恢复中启用保护时，勒索软件检测策略状态
 
 要了解如何使用备份和恢复注册适用于 VMware vSphere 的SnapCenter或SnapCenter Plug-in for VMware vSphere，请参阅以下信息：
 
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-register-snapcenter-server.html["注册SnapCenter服务器软件"^]
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-register-snapCenter-plug-in-for-vmware-vsphere.html["SnapCenter Plug-in for VMware vSphere"^]
+* https://docs.netapp.com/us-en/data-services-backup-recovery/task-register-snapcenter-server.html["注册SnapCenter服务器软件"^]
+* https://docs.netapp.com/us-en/data-services-backup-recovery/task-register-snapCenter-plug-in-for-vmware-vsphere.html["SnapCenter Plug-in for VMware vSphere"^]
 
 
 .步骤
@@ -266,7 +289,7 @@ TIP: 当在勒索软件恢复中启用保护时，勒索软件检测策略状态
 检测策略不会改变其他产品中管理的策略。
 
 +
-如果已在其他服务中激活了自主勒索软件保护和 FPolicy 保护，则检测策略将启用它们。详细了解link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索软件防护"^]，link:https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["备份和恢复"^] ， 和link:https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^]。
+如果已在其他服务中激活了自主勒索软件保护和 FPolicy 保护，则检测策略将启用它们。详细了解link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索软件防护"^]，link:https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["备份和恢复"^] ， 和link:https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^]。
 
 
 
@@ -287,9 +310,6 @@ TIP: 当在勒索软件恢复中启用保护时，勒索软件检测策略状态
 image:screen-protection.png["管理策略页面"]
 
 . 在“保护”页面中，选择一个工作负载，然后选择“*保护*”。
-+
-image:screen-protection-strategy-list.png["管理策略"]
-
 . 在勒索软件防护策略页面中，选择*添加*。
 +
 image:screen-protection-strategy-add.png["添加显示快照部分的策略页面"]
@@ -361,9 +381,14 @@ image:screen-protection.png["管理策略页面"]
 . 勒索软件恢复能力检测是否存在活动的SnapCenter或备份和恢复策略。
 . 要保留现有的备份和恢复或SnapCenter策略并仅应用_检测_策略，请取消选中**替换现有策略**框。
 . 要查看SnapCenter策略的详细信息，请选择*向下箭头*。
+. 选择您想要的检测设置：*加密检测* *可疑用户行为检测* *阻止可疑文件扩展名*
+. 选择**下一步**。
+. 如果您选择“可疑用户行为检测”作为检测设置，请选择“用户活动代理”或link:suspicious-user-activity.html#add-a-user-activity-agent["或创建一个"]。
 +
-选择检测策略，然后选择**保护**。
+用户活动代理托管新的数据收集器。  Ransomware Resilience 自动创建数据收集器，将用户活动事件传输到 Ransomware Resilience 以检测异常用户行为。
 
+. 选择**下一步**。
+. 审查您的选择。选择**创建**来激活检测。
 . 在“保护”页面上，查看**检测状态**以确认检测处于活动状态。
 
 
@@ -382,6 +407,10 @@ image:screen-protection.png["管理策略页面"]
 . 勒索软件恢复能力检测是否存在现有的活动备份和恢复或SnapCenter策略。要替换现有的备份和恢复或SnapCenter策略，请选中“替换现有策略”框。当您选中该框时，勒索软件恢复力会用检测策略替换检测策略列表。
 . 选择保护策略。如果不存在保护策略，请选择**添加**来创建新策略。有关创建策略的信息，请参阅<<steps,创建保护策略>>。选择**下一步**。
 . 选择备份目标或创建一个新的备份目标。选择**下一步**。
++
+.. 如果您的保护策略包括用户行为检测，请在您的环境中选择一个用户活动代理来托管新的数据收集器。  Ransomware Resilience 自动创建数据收集器，将用户活动事件传输到 Ransomware Resilience 以检测异常用户行为。
+
+
 . 查看新的保护策略，然后选择**保护**来应用它。
 . 在“保护”页面上，查看**检测状态**以确认检测处于活动状态。
 
@@ -403,11 +432,11 @@ image:screen-protection.png["管理策略页面"]
 
 
 
-== 分组文件共享，更易于保护
+== 创建保护组
 
 将文件共享分组到保护组中可以更轻松地保护您的数据资产。勒索软件恢复能力可以同时保护组中的所有卷，而不是单独保护每个卷。
 
-您可以创建组，而不管其保护状态如何（即不受保护的组和受保护的组）。当您将保护策略添加到保护组时，新的保护策略将替换任何现有策略，包括由SnapCenter和NetApp Backup and Recovery 管理的策略。
+您可以创建组，而不管其保护状态如何（即未受保护的组和受保护的组）。当您将保护策略添加到保护组时，新的保护策略将替换任何现有策略，包括由SnapCenter和NetApp Backup and Recovery管理的策略。
 
 .步骤
 . 从勒索软件恢复菜单中，选择*保护*。
@@ -432,10 +461,14 @@ TIP: 要查看有关工作负载的更多详细信息，请滚动到右侧。
 +
 image:screen-protection-groups-policy.png["添加保护组 - 策略页面"]
 
-. 选择策略来管理该组的保护。
-. 选择“下一步”。
+. 选择策略来管理该组的保护。要确认，请选择“下一步”。
++
+.. 如果需要配置备份策略，请选择一个，然后选择**下一步**。
+.. 如果您的检测策略包括用户行为检测，请选择您想要使用的数据收集器，然后单击**下一步**。
+
+
 . 检查保护组的选择。
-. 选择“*添加*”。
+. 要完成保护组的创建，请选择“*添加*”。
 
 
 
@@ -502,7 +535,7 @@ image:screen-protection-groups-more-workloads.png["保护组详细信息页面"]
 
 您可以从策略列表中或在编辑特定策略时查看工作负载。
 
-.查看策略列表的步骤
+.查看策略的步骤
 . 从勒索软件恢复菜单中，选择*保护*。
 . 在“保护”页面中，选择“管理保护策略”。
 +
