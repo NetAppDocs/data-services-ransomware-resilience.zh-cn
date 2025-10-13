@@ -14,7 +14,7 @@ summary: 您可以在设置页面中配置多个选项，包括备份目标和�
 [role="lead"]
 您可以通过访问*设置*选项来配置备份目标、将数据发送到外部安全和事件管理 (SIEM) 系统、进行攻击准备演习、配置工作负载发现或配置可疑用户活动检测。
 
-*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服务的控制台访问角色"^] 。
+*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^] 。
 
 *您可以在“设置”页面做什么？*在“设置”页面中，您可以执行以下操作：
 

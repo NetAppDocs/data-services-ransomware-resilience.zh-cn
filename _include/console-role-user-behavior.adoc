@@ -2,4 +2,4 @@
 :allow-uri-read: 
 
 
-*所需的控制台角色* 要执行此任务，您需要勒索软件恢复用户行为管理员角色。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服务的控制台访问角色"^] 。
+*所需的控制台角色* 要执行此任务，您需要勒索软件恢复用户行为管理员角色。您无法使用 Ransomware Resilience 管理员角色执行此任务。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^] 。

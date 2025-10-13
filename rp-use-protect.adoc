@@ -14,7 +14,7 @@ summary: 您可以通过在NetApp Ransomware Resilience 中为工作负载分配
 [role="lead"]
 您可以通过在NetApp Ransomware Resilience 中启用工作负载一致性保护或创建勒索软件保护策略来保护工作负载免受勒索软件攻击。
 
-*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服务的控制台访问角色"^] 。
+*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^] 。
 
 
 

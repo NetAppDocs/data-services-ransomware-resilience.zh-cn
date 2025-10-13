@@ -1800,9 +1800,6 @@
   <block id="f8a7dc43864435cb9b522a28b586e556" category="sidebar">从勒索软件攻击中恢复</block>
   <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">常见问题解答</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知识和支持</block>
-  <block id="d1b55f5f1fa56ec4203bc496f8d5ae0a" category="paragraph">*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员、勒索软件恢复管理员或勒索软件恢复查看器角色。<block ref="51ffd1668f46b7e360e102a30faa6c5f" category="inline-link-rx"></block> 。</block>
-  <block id="f4deedd842ba0d6030bcfc6f8297d06a" category="paragraph">*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。<block ref="b8bf795c21c8bcdf6af09fd1f4de58b8" category="inline-link-macro-rx"></block> 。</block>
-  <block id="8b37e5b51ed96f5c46949a0dbdc5d195" category="paragraph">*所需的控制台角色* 要执行此任务，您需要勒索软件恢复用户行为管理员角色。<block ref="c63b2c8d20974c1834bc75207be469f3" category="inline-link-macro-rx"></block> 。</block>
   <block id="a54b344e834fd0b16ead656bdeef0a91" category="paragraph"><block ref="e97e75c9449e5f1b8a8a75ebff67b7c3" category="inline-link-rx"></block> 。</block>
   <block id="b6e5a2afe0652e635d34c755069996c1" category="paragraph"><block ref="df4243c8490e7ac0935cb3c37b5c0dd3" category="inline-link-rx"></block> 。</block>
   <block id="77828430fb1afe32722790a173c51e53" category="paragraph">有关每个角色可以执行的操作的详细信息，请参阅<block ref="5ed990007d3942ee85d552217fd4b2da" category="inline-link-rx"></block>。</block>
@@ -1836,8 +1833,6 @@
   <block id="9f149be55d2ace2f4ef86d2125660c4c" category="list-text">**数据破坏 - 潜在攻击** - 当文件删除的数量超过历史标准时，会创建具有潜在攻击严重程度的警报。</block>
   <block id="b3917e47f33bfc92b2d66abb2a71397c" category="list-text">**可疑用户行为 - 潜在攻击** - 当观察到类似于勒索软件攻击的读取、重命名和删除操作时，会创建严重程度为潜在攻击的警报</block>
   <block id="a3e76fe95cb3298fc3fb711993e170f1" category="list-text">**可疑用户行为 - 警告** - 当文件活动（读取、删除、重命名等）的总数超过历史标准时，将创建严重程度为警告的警报</block>
-  <block id="b0ba200b30bf16fc357a806132791b75" category="section-title">数据泄露检测的新用户角色</block>
-  <block id="badd5c45c49e20368873307ff9e6ffc0" category="paragraph">为了管理可疑用户活动警报，Ransomware Resilience 引入了两个新角色，以提供对敏感数据（例如用户的文件活动）的细粒度访问。有关更多信息，请参阅<block ref="acee2fdb33125bc970e8c80226d5f58c" category="inline-link-macro-rx"></block> 。</block>
   <block id="d0f71eee61b39f3ffe00d85759351067" category="paragraph">为了检测异常用户行为，Ransomware Resilience 使用NetApp Autonomous Ransomware Protection，这是ONTAP内的一种机器学习 (ML) 模型，可检测恶意文件活动。该模型包含在勒索软件恢复许可证中。</block>
   <block id="a139b69cf2c6a37377eea224685da3f6" category="paragraph">详细了解<block ref="6d844886de4fe963e1e4b97f495f829d" category="inline-link-macro-rx"></block>。</block>
   <block id="f2abd20c3ee58c54298223da2df91335" category="list-text">发现每个卷的当前NetApp快照副本和备份策略的保护级别以及任何机上检测功能。然后，勒索软件恢复能力通过使用备份和恢复、 ONTAP服务和NetApp技术（例如自主勒索软件保护（ARP 或 ARP/AI，取决于您的ONTAP版本）、FPolicy、备份策略和快照策略）将此保护态势与工作负载相关联。详细了解<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="inline-link-rx"></block>，<block ref="2b1b7f994c6938347657a18d8edc7db7" category="inline-link-rx"></block> ， 和<block ref="591ebe16737e602cc342b68e859c040e" category="inline-link-rx"></block>。</block>
@@ -2031,4 +2026,14 @@
   <block id="0c59fa3b4bea70fe5377775600bed707" category="sidebar">NetApp Ransomware Resilience可保护、检测并支持从本地和云存储中的勒索软件威胁中恢复应用程序工作负载和文件共享。  Ransomware Resilience 支持 Oracle、MySQL、VM 数据存储和 NAS 存储等平台，可实现安全备份和恢复，帮助组织保护关键数据并保持业务连续性。</block>
   <block id="e65f6e4b1867bfedf08120cb1ab99c24" category="sidebar">配置可疑用户活动检测</block>
   <block id="75ae81fb1b2b27cbdbd5ba2b48014fe5" category="paragraph">有关详细信息，请参阅<block ref="4fc0d3ac39798f24cded583e594e4abe" category="inline-link-macro-rx"></block>和<block ref="f451eade5eddedc7b8e2af13d9e54fd3" category="inline-link-macro-rx"></block>。</block>
+  <block id="fc873becb3d197af9044ddf128631756" category="inline-link-macro">了解NetApp Console的勒索软件恢复角色</block>
+  <block id="ffc546c33a9583234d58a821767e1895" category="paragraph">*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员、勒索软件恢复管理员或勒索软件恢复查看器角色。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block> 。</block>
+  <block id="abd422919398ff257d563d8b5c5699c0" category="paragraph">*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block> 。</block>
+  <block id="a0bc9be88b94133627ac97e11a259c1c" category="paragraph">*所需的控制台角色* 要执行此任务，您需要勒索软件恢复用户行为管理员角色。您无法使用 Ransomware Resilience 管理员角色执行此任务。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block> 。</block>
+  <block id="3d2aadf85980b84588fa5209f5a19682" category="inline-link-macro">勒索软件恢复用户行为管理员和勒索软件恢复用户行为查看器</block>
+  <block id="44c4a9a3d8fb9c475fdab3218cabf517" category="admonition">您必须使用新的<block ref="150c4a59c5fb1f39f9eda4670f9c992c" category="inline-link-macro-rx"></block>角色来访问可疑用户行为检测设置。</block>
+  <block id="f3bb9521072178132b6de817bd448616" category="section-title">用于数据泄露检测的新用户角色</block>
+  <block id="7584e1f8b83860064449cf13924e3d4a" category="paragraph">为了管理可疑用户活动警报，Ransomware Resilience 为控制台组织管理员引入了两个新角色，以授予对可疑用户活动检测的访问权限：Ransomware Resilience 用户行为管理员和 Ransomware Resilience 用户行为查看器。</block>
+  <block id="2d5c784e8595b475f03f62e102d55828" category="paragraph">您必须是用户行为管理员才能配置可疑用户行为设置。勒索软件恢复管理员角色不支持配置可疑用户行为设置。</block>
+  <block id="eab6dcf0426537b3bdfc0895e79881d8" category="paragraph">有关更多信息，请参阅<block ref="cd66090adbbec1fbcb8578d25dadb581" category="inline-link-macro-rx"></block> 。</block>
 </blocks>

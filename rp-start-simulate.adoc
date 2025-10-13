@@ -32,7 +32,7 @@ TIP: 您的实际工作量数据不会受到影响。
 * 如果您输入不同的测试工作负载名称
 
 
-*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服务的控制台访问角色"^] 。
+*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^] 。
 
 .步骤
 . 从NetApp勒索软件恢复菜单中，选择右上角的 *运行准备演练* 按钮。
@@ -67,7 +67,7 @@ TIP: 您可以稍后使用“设置”页面编辑准备演练配置。
 
 配置准备情况演练后，即可开始演练。
 
-*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服务的控制台访问角色"^] 。
+*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^] 。
 
 当您开始准备演习时，勒索软件恢复力会跳过学习模式并以主动模式开始演习。工作负载的检测状态为“活动”。
 
@@ -96,7 +96,7 @@ NOTE: 演习开始后，您无法编辑准备演习配置。您可以重置它�
 
 通过响应准备演习警报来测试您的准备情况。
 
-*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服务的控制台访问角色"^] 。
+*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^] 。
 
 .步骤
 . 从勒索软件恢复菜单中，选择*警报*。
@@ -141,7 +141,7 @@ image:screen-alerts-readiness-incidents2.png["显示准备演习警报的事件�
 
 审查准备情况演习警报后，如有必要，恢复测试工作量。
 
-*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服务的控制台访问角色"^] 。
+*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^] 。
 
 .步骤
 . 返回警报详细信息页面。
@@ -202,7 +202,7 @@ IMPORTANT: 解除攻击后，您将无法将其改回。如果您解除工作负
 
 准备演习完成后，您可能需要查看并保存演习报告。
 
-*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员、勒索软件恢复管理员或勒索软件恢复查看器角色。 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服务的BlueXP访问角色"^] 。
+*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员、勒索软件恢复管理员或勒索软件恢复查看器角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^] 。
 
 .步骤
 . 从勒索软件恢复菜单中，选择*报告*。
