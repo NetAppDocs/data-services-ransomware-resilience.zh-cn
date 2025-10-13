@@ -4,7 +4,7 @@ permalink: rp-use-overview.html
 keywords: ransomware protection, ransomware protection, detect ransomware attacks, recover from ransomware attack 
 summary: 使用NetApp Ransomware Resilience，您可以查看工作负载健康状况并保护工作负载。 
 ---
-= 使用NetApp勒索软件恢复能力
+= 使用NetApp Ransomware Resilience
 :hardbreaks:
 :allow-uri-read: 
 :icons: font

@@ -4,7 +4,7 @@ permalink: rp-use-settings.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware settings, backup destination 
 summary: 您可以在设置页面中配置多个选项，包括备份目标和威胁检测。 
 ---
-= 在NetApp勒索软件恢复能力中配置保护设置
+= 在NetApp Ransomware Resilience中配置保护设置
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -409,7 +409,7 @@ Ransomware Resilience 可以将以下事件数据发送到您的 SIEM 系统：
 . 转到 Microsoft Sentinel。
 . 选择 *Entra ID* > *应用程序* > *应用程序注册*。
 . 对于应用程序的*显示名称*，输入“*Ransomware Resilience*”。
-. 在*支持的帐户类型*字段中，选择*仅限此组织目录中的帐户*。
+. 在 *支持的帐户类型* 字段中，选择 *仅限此组织目录中的帐户*。
 . 选择将推送事件的*默认索引*。
 . 选择*审核*。
 . 选择*注册*来保存您的设置。

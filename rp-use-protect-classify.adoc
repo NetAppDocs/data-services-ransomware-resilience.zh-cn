@@ -2,14 +2,14 @@
 sidebar: sidebar 
 permalink: rp-use-protect-classify.html 
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, cds, sensitive, pii, classification 
-summary: 使用NetApp数据分类来提高数据的安全性和隐私合规性，以确定您的数据是否包含个人身份信息或私人信息。 
+summary: 使用NetApp Data Classification来提高数据的安全性和隐私合规性，以确定您的数据是否包含个人身份信息或私人信息。 
 ---
-= 使用勒索软件恢复中的NetApp数据分类扫描个人身份信息
+= 使用勒索软件恢复中的NetApp Data Classification扫描个人身份信息
 :allow-uri-read: 
 
 
 [role="lead"]
-在NetApp勒索软件恢复能力中，您可以使用NetApp数据分类来扫描和分类文件共享工作负载中的数据。对数据进行分类可以帮助您确定数据集是否包含个人身份信息 (PII)，这可能会增加安全风险。数据分类是控制台的核心组件，无需额外付费即可使用。
+在NetApp Ransomware Resilience中，您可以使用NetApp Data Classification来扫描和分类文件共享工作负载中的数据。对数据进行分类可以帮助您确定数据集是否包含个人身份信息 (PII)，这可能会增加安全风险。数据分类是控制台的核心组件，无需额外付费即可使用。
 
 link:https://docs.netapp.com/us-en/data-services-data-classification/["数据分类"^]利用人工智能驱动的自然语言处理进行上下文数据分析和分类，为您的数据提供可操作的见解，以满足合规性要求、检测安全漏洞、优化成本并加速迁移。
 

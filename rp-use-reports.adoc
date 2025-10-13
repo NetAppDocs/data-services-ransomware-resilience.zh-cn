@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: rp-use-reports.html 
 keywords: ransomware protection, ransomware protection dashboard, detect ransomware attacks, recover from ransomware attack 
-summary: 使用NetApp Ransomware Resilience，您可以下载显示保护、警报和恢复详细信息的报告，并将其保存为 CSV 文件。 
+summary: 使用NetApp Ransomware Resilience，您可以下载显示保护、警报和恢复详细信息的报告并将其保存为 CSV 文件。 
 ---
-= 在NetApp勒索软件恢复能力中下载报告
+= 在NetApp Ransomware Resilience中下载报告
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -44,7 +44,7 @@ image:screen-dashboard.png["信息板页面"]
 . 执行以下操作之一：
 +
 ** 从页面上选择*下载*image:button-download.png["下载选项"]选项。
-** 从NetApp勒索软件恢复菜单中，选择 *报告*。
+** 从NetApp Ransomware Resilience菜单中，选择 *报告*。
 
 
 . 如果您选择了“*报告*”选项，请选择一个预配置的文件名并选择“*下载*”。

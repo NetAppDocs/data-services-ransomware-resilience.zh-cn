@@ -4,7 +4,7 @@ permalink: rp-start-disable.html
 keywords: bluexp, ransomware protection, netapp, disable protection 
 summary: 如果您不再想使用NetApp Ransomware Resilience，您可以让许可证过期。 
 ---
-= 禁用NetApp勒索软件恢复功能
+= 禁用NetApp Ransomware Resilience
 :hardbreaks:
 :allow-uri-read: 
 :icons: font

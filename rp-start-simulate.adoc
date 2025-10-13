@@ -4,7 +4,7 @@ permalink: rp-start-simulate.html
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert, simulate, readiness drill, practice, ransomware attack, ransomware attack response, ransomware attack readiness drill 
 summary: 通过模拟对新创建的示例工作负载的勒索软件攻击来进行勒索软件准备演习。然后，调查模拟攻击并恢复样本工作负载。您可以多次运行勒索软件准备演习。 
 ---
-= 在NetApp Ransomware Resilience 中进行勒索软件攻击准备演练
+= 在NetApp Ransomware Resilience中进行勒索软件攻击准备演练
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -35,7 +35,7 @@ TIP: 您的实际工作量数据不会受到影响。
 *所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^] 。
 
 .步骤
-. 从NetApp勒索软件恢复菜单中，选择右上角的 *运行准备演练* 按钮。
+. 从NetApp Ransomware Resilience菜单中，选择右上角的 *运行准备演练* 按钮。
 +
 image:screen-dashboard.png["显示“运行准备情况演练”按钮的仪表板页面"]
 

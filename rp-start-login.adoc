@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: rp-start-login.html 
 keywords: bluexp login, ransomware protection, cyber attack, log in, access 
-summary: 通过NetApp控制台开始使用NetApp勒索软件恢复能力。 
+summary: 通过NetApp Console开始使用NetApp Ransomware Resilience。 
 ---
-= 访问NetApp勒索软件恢复能力
+= 访问NetApp Ransomware Resilience
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: 通过NetApp控制台开始使用NetApp勒索软件恢复能力。
 
 
 [role="lead"]
-通过NetApp控制台登录NetApp Ransomware Resilience。
+通过NetApp Console登录到NetApp Ransomware Resilience 。
 
 要登录控制台，您可以使用您的NetApp支持站点凭据，也可以使用您的电子邮件和密码注册NetApp云登录。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["了解有关登录的更多信息"^] 。
 

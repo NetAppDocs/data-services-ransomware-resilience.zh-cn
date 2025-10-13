@@ -4,7 +4,7 @@ permalink: rp-start-licenses.html
 keywords: bluexp license, ransomware protection license, netapp console 
 summary: 通过设置许可开始使用 NeApp Ransomware Resilience。 
 ---
-= 设置NetApp勒索软件恢复能力的许可
+= 设置NetApp Ransomware Resilience的许可
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -18,12 +18,12 @@ summary: 通过设置许可开始使用 NeApp Ransomware Resilience。
 
 *许可证类型* 您可以使用以下许可证类型：
 
-* 注册 30 天免费试用。
+* 注册即可获得 30 天免费试用。
 * 通过 Amazon Web Services (AWS) Marketplace、Google Cloud Marketplace 或 Azure Marketplace 购买即用即付 (PAYGO) 订阅。
 * 自带许可证 (BYOL)，即您从NetApp销售代表处获得的NetApp许可证文件 (NLF)。您可以使用许可证序列号在控制台中激活 BYOL。
 
 
-设置 BYOL 或购买 PAYGO 订阅后，您可以在控制台的许可证和订阅部分看到许可证。
+设置 BYOL 或购买 PAYGO 订阅后，您可以在控制台的Licenses and subscriptions部分看到许可证。
 
 免费试用期结束或许可证或订阅到期后，您仍然可以在 Ransomware Resilience 中执行以下操作：
 
@@ -36,7 +36,7 @@ summary: 通过设置许可开始使用 NeApp Ransomware Resilience。
 
 == 其他许可证
 
-勒索软件恢复许可证不包括其他NetApp产品。即使您没有许可证，Ransomware Resilience 也可以使用NetApp Backup and Recovery。
+勒索软件恢复许可证不包括其他NetApp产品。即使您没有许可证，Ransomware Resilience 也可以使用NetApp Backup and Recovery 。
 
 
 NOTE: 如果您同时拥有备份和恢复以及勒索软件恢复功能，则受这两种产品保护的任何公共数据将仅由勒索软件恢复功能计费。
@@ -59,7 +59,7 @@ NOTE: 随着 2024 年 10 月的发布，Ransomware Resilience 的新部署现在
 .步骤
 . 访问 https://console.netapp.com/["控制台"^]。
 . 登录控制台。
-. 从NetApp控制台中，选择 *保护* > *勒索软件恢复*。
+. 从NetApp Console中，选择“保护”>“勒索软件恢复能力”。
 +
 如果这是您第一次登录此服务，则会出现登录页面。
 
@@ -100,7 +100,7 @@ image:screen-license-payment-methods3.png["勒索软件抵御付款方式页面"
 
 . 在付款方式页面中，选择“订阅”*Amazon Web Services*。
 . 在 AWS Marketplace 中，选择 *查看购买选项*。
-. 使用 AWS Marketplace 订阅 * NetApp智能服务* 和 * 勒索软件恢复能力*。
+. 使用 AWS Marketplace 订阅 * NetApp Intelligent Services* 和 * 勒索软件恢复能力 *。
 . 当您返回 Ransomware Resilience 时，会出现一条消息表明您已订阅。
 +
 
@@ -112,7 +112,7 @@ NOTE: 系统会向您发送一封电子邮件，其中包含 Ransomware Resilien
 image:screen-license-dw-add-license.png["添加许可证页面的屏幕截图。"]
 
 . 在添加许可证页面中，选择*输入序列号*，输入发送给您的电子邮件中包含的序列号，然后选择*添加许可证*。
-. 要查看许可证详细信息，请从控制台左侧导航中选择“*管理*”>“*许可证和订阅*”。
+. 要查看许可证详细信息，请从控制台左侧导航中选择“*管理*”>“*Licenses and subscriptions*”。
 +
 ** 要查看订阅信息，请选择*订阅*。
 ** 要查看 BYOL 许可证，请选择“数据服务许可证”。
@@ -142,7 +142,7 @@ image:screen-license-payment-methods3.png["勒索软件抵御付款方式页面"
 
 . 在付款方式页面中，选择“订阅”*Microsoft Azure Marketplace*。
 . 在 Azure 市场中，选择“查看购买选项”。
-. 使用 Azure Marketplace 订阅 * NetApp Intelligent Services* 和 * Ransomware Resilience*。
+. 使用 Azure Marketplace 订阅 * NetApp Intelligent Services* 和 * 勒索软件恢复能力 *。
 . 当您返回 Ransomware Resilience 时，会出现一条消息表明您已订阅。
 +
 
@@ -154,7 +154,7 @@ NOTE: 系统会向您发送一封电子邮件，其中包含 Ransomware Resilien
 image:screen-license-dw-add-license.png["添加许可证页面的屏幕截图。"]
 
 . 在添加许可证页面中，选择*输入序列号*，然后输入发送给您的电子邮件中的序列号。选择*添加许可证*。
-. 要查看许可证和订阅中的许可证详细信息，请从控制台左侧导航中选择*治理* > *许可证和订阅*。
+. 要查看Licenses and subscriptions中的许可证详细信息，请从控制台左侧导航中选择“治理”>“Licenses and subscriptions”。
 +
 ** 要查看订阅信息，请选择*订阅*。
 ** 要查看 BYOL 许可证，请选择“数据服务许可证”。
@@ -196,7 +196,7 @@ NOTE: 系统会向您发送一封电子邮件，其中包含 Ransomware Resilien
 image:screen-license-dw-add-license.png["添加许可证页面的屏幕截图。"]
 
 . 在添加许可证页面中，选择*输入序列号*。输入发送给您的电子邮件中的序列号。选择*添加许可证*。
-. 要查看许可证详细信息，请从控制台左侧导航中选择*治理*>*许可证和订阅*。
+. 要查看许可证详细信息，请从控制台左侧导航中选择“*治理*”>“*Licenses and subscriptions*”。
 +
 ** 要查看订阅信息，请选择*订阅*。
 ** 要查看 BYOL 许可证，请选择“数据服务许可证”。
@@ -241,7 +241,7 @@ image:screen-license-dw-add-license.png["添加许可证页面的屏幕截图。
 
 
 .结果
-许可证和订阅页面显示 Ransomware Resilience 已获得许可证。
+Licenses and subscriptions页面显示 Ransomware Resilience 已获得许可证。
 
 
 
@@ -260,7 +260,7 @@ TIP: 此消息也出现在Licenses and subscriptions以及 https://docs.netapp.c
 . 如果控制台无法自动更新许可证，则需要手动上传许可证文件。
 +
 .. 您可以从NetApp支持站点获取许可证文件。
-.. 在控制台中，选择**管理** > **许可证和订阅**。
+.. 在控制台中，选择**管理** > **Licenses and subscriptions**。
 .. 选择“*数据服务许可证*”选项卡，选择要更新的序列号的“*操作...*”图标，然后选择“*更新许可证*”。
 
 

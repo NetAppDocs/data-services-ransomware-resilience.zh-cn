@@ -28,7 +28,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-setting
 
 === 立即免费试用 30 天
 
-随着此版本的发布， BlueXP ransomware protection的新部署现在有 30 天的免费试用期。此前， BlueXP ransomware protection提供 90 天的免费试用。如果您已处于 90 天免费试用期，则该优惠将持续 90 天。
+随着此版本的发布， BlueXP ransomware protection的新部署现在有 30 天的免费试用期。此前， BlueXP ransomware protection提供 90 天的免费试用。如果您已享受 90 天免费试用，则该优惠将持续 90 天。
 
 
 

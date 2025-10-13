@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: rp-use-protect.html 
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, detection, protection, policy, malware 
-summary: 您可以通过在NetApp Ransomware Resilience 中为工作负载分配策略来保护工作负载免受勒索软件攻击。 
+summary: 您可以通过在NetApp Ransomware Resilience中为工作负载分配策略来保护工作负载免受勒索软件攻击。 
 ---
-= 使用NetApp勒索软件恢复保护策略保护工作负载
+= 使用NetApp Ransomware Resilience保护策略保护工作负载
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: 您可以通过在NetApp Ransomware Resilience 中为工作负载分配
 
 
 [role="lead"]
-您可以通过在NetApp Ransomware Resilience 中启用工作负载一致性保护或创建勒索软件保护策略来保护工作负载免受勒索软件攻击。
+您可以通过在NetApp Ransomware Resilience中启用工作负载一致性保护或创建勒索软件保护策略来保护工作负载免受勒索软件攻击。
 
 *所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^] 。
 
@@ -43,7 +43,7 @@ TIP: 为了增强对数据资产的管理和保护，您可以创建link:#create
 
 除了勒索软件恢复能力之外，还可以使用以下服务来管理保护：
 
-* NetApp文件共享备份和恢复、VM 文件共享
+* NetApp Backup and Recovery、VM 文件共享
 * SnapCenter for VMware 适用于虚拟机数据存储区
 * 适用于 Oracle 和 MySQL 的SnapCenter
 
@@ -247,8 +247,8 @@ NOTE: **加密用户扩展**策略是唯一支持可疑用户行为检测的预�
 . 从勒索软件恢复菜单中，选择*仪表板*。
 . 从“建议”窗格中，找到以下建议之一并选择“审阅并修复”：
 +
-** 使用NetApp控制台注册可用的SnapCenter服务器
-** 使用NetApp控制台注册适用SnapCenter Plug-in for VMware vSphere（SCV）
+** 使用NetApp Console注册可用的SnapCenter服务器
+** 使用NetApp Console注册适用SnapCenter Plug-in for VMware vSphere（SCV）
 
 
 . 按照信息使用备份和恢复为 VMware vSphere 主机注册SnapCenter或SnapCenter Plug-in for VMware vSphere。
@@ -385,7 +385,7 @@ image:screen-protection.png["管理策略页面"]
 . 选择**下一步**。
 . 如果您选择“可疑用户行为检测”作为检测设置，请选择“用户活动代理”或link:suspicious-user-activity.html#add-a-user-activity-agent["或创建一个"]。
 +
-用户活动代理托管新的数据收集器。  Ransomware Resilience 自动创建数据收集器，将用户活动事件传输到 Ransomware Resilience 以检测异常用户行为。
+用户活动代理托管新的数据收集器。Ransomware Resilience 自动创建数据收集器，将用户活动事件传输到 Ransomware Resilience 以检测异常用户行为。
 
 . 选择**下一步**。
 . 审查您的选择。选择**创建**来激活检测。
@@ -408,7 +408,7 @@ image:screen-protection.png["管理策略页面"]
 . 选择保护策略。如果不存在保护策略，请选择**添加**来创建新策略。有关创建策略的信息，请参阅<<steps,创建保护策略>>。选择**下一步**。
 . 选择备份目标或创建一个新的备份目标。选择**下一步**。
 +
-.. 如果您的保护策略包括用户行为检测，请在您的环境中选择一个用户活动代理来托管新的数据收集器。  Ransomware Resilience 自动创建数据收集器，将用户活动事件传输到 Ransomware Resilience 以检测异常用户行为。
+.. 如果您的保护策略包括用户行为检测，请在您的环境中选择一个用户活动代理来托管新的数据收集器。Ransomware Resilience 自动创建数据收集器，将用户活动事件传输到 Ransomware Resilience 以检测异常用户行为。
 
 
 . 查看新的保护策略，然后选择**保护**来应用它。

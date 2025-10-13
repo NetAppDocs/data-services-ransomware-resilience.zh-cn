@@ -4,7 +4,7 @@ permalink: rp-start-setup.html
 keywords: bluexp, ransomware protection, aws, azure 
 summary: 要使用勒索软件恢复能力，请执行几个步骤进行设置。 
 ---
-= 设置NetApp勒索软件恢复能力
+= 设置NetApp Ransomware Resilience
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: 要使用勒索软件恢复能力，请执行几个步骤进行设置�
 
 
 [role="lead"]
-您可以轻松部署NetApp勒索软件恢复能力。在开始之前，请查看link:rp-start-prerequisites.html["前提条件"]以确保您的环境已准备就绪。
+您可以轻松部署NetApp Ransomware Resilience。在开始之前，请查看link:rp-start-prerequisites.html["前提条件"]以确保您的环境已准备就绪。
 
 
 
@@ -56,7 +56,7 @@ summary: 要使用勒索软件恢复能力，请执行几个步骤进行设置�
 
 
 
-== 设置NetApp控制台
+== 设置NetApp Console
 
 下一步是设置控制台和勒索软件恢复能力。
 

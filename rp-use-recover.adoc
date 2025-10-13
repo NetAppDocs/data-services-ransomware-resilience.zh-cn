@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: rp-use-recover.html 
 keywords: ransomware protection recovery, recover from a ransomware attack, recovery point, RPA 
-summary: '遭受攻击后， NetApp Ransomware Resilience 会验证二级存储上的备份数据是否干净，推荐实际恢复点 (RPA)，并协调防崩溃恢复的工作流程。' 
+summary: '遭受攻击后， NetApp Ransomware Resilience会验证二级存储上的备份数据是否干净，推荐实际恢复点 (RPA)，并协调防崩溃恢复的工作流程。' 
 ---
-= 借助NetApp勒索软件恢复能力，在勒索软件攻击发生后恢复
+= 借助NetApp Ransomware Resilience，在勒索软件攻击发生后恢复
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,10 +12,10 @@ summary: '遭受攻击后， NetApp Ransomware Resilience 会验证二级存储�
 
 
 [role="lead"]
-在工作负载被标记为“需要恢复”后， NetApp Ransomware Resilience 会建议实际恢复点 (RPA) 并协调工作流程以实现抗崩溃恢复。
+在工作负载被标记为“需要恢复”后， NetApp Ransomware Resilience会建议实际恢复点 (RPA) 并协调工作流程以实现抗崩溃恢复。
 
 * 如果应用程序或虚拟机由SnapCenter管理，则勒索软件恢复功能会使用应用程序一致或虚拟机一致的流程将应用程序或虚拟机恢复到其先前的状态和最后的事务。应用程序或 VM 一致性恢复将任何未存储的数据（例如缓存或 I/O 操作中的数据）添加到卷中的数据中。
-* 如果应用程序或虚拟机不是由SnapCenter管理，而是由NetApp Backup and Recovery 或 Ransomware Resilience 管理，则 Ransomware Resilience 会执行崩溃一致性恢复，其中会恢复同一时间点卷中的所有数据（例如，如果系统崩溃）。
+* 如果应用程序或虚拟机不是由SnapCenter管理，而是由NetApp Backup and Recovery或 Ransomware Resilience 管理，则 Ransomware Resilience 会执行崩溃一致性恢复，其中会恢复同一时间点卷中的所有数据（例如，如果系统崩溃）。
 +
 您可以通过选择所有卷、特定卷或特定文件来恢复工作负载。
 

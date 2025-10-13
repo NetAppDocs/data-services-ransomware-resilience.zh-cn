@@ -1,20 +1,20 @@
-= BlueXP ransomware protection现已升级NetApp勒索软件恢复能力
+= BlueXP ransomware protection现已升级NetApp Ransomware Resilience
 :allow-uri-read: 
 
 
 
 
-=== BlueXP ransomware protection现已升级NetApp勒索软件恢复能力
+=== BlueXP ransomware protection现已升级NetApp Ransomware Resilience
 
 BlueXP ransomware protection服务已更名为NetApp Ransomware Resilience。
 
 
 
-=== BlueXP现在是NetApp控制台
+=== BlueXP现在是NetApp Console
 
-NetApp控制台提供企业级跨本地和云环境的存储和数据服务的集中管理，提供实时洞察、更快的工作流程和简化的管理。
+NetApp Console提供企业级跨本地和云环境的存储和数据服务的集中管理，提供实时洞察、更快的工作流程和简化的管理。
 
-有关更改的详细信息，请参阅 https://docs.netapp.com/us-en/console-relnotes/index.html["NetApp控制台发行说明"]。
+有关更改的详细信息，请参阅 https://docs.netapp.com/us-en/console-relnotes/index.html["NetApp Console发行说明"]。
 
 
 
@@ -48,4 +48,4 @@ IMPORTANT: 您必须使用新的link:#new-user-roles-for-data-breach-detection["
 
 您必须是用户行为管理员才能配置可疑用户行为设置。勒索软件恢复管理员角色不支持配置可疑用户行为设置。
 
-有关更多信息，请参阅link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp勒索软件恢复基于角色的访问"^] 。
+有关更多信息，请参阅link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Ransomware Resilience基于角色的访问"^] 。

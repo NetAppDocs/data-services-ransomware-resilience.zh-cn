@@ -4,7 +4,7 @@ permalink: rp-reference-limitations.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware, role-based access control, rbac, role, permission, access rights, organization,project,account 
 summary: 已知限制标识了该产品的此版本不支持的平台、设备或功能。 
 ---
-= NetApp勒索软件恢复能力的已知限制
+= NetApp Ransomware Resilience的已知限制
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
