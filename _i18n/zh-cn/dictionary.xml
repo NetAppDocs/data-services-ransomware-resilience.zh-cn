@@ -480,14 +480,12 @@
   <block id="28cfeb7fff7b4f9ab9bf205d7135f788" category="paragraph">要执行此任务，您需要组织管理员、文件夹或项目管理员角色。<block ref="43e60870b1a681df3de2812caf2de958" category="inline-link-rx"></block> 。</block>
   <block id="f53f2f881ada2816fc6ddea06cdcfc60" category="paragraph">*许可证类型* 您可以使用以下许可证类型：</block>
   <block id="b5bf014c6bc530be1a7b68b5bcfb8ce0" category="list-text">通过 Amazon Web Services (AWS) Marketplace、Google Cloud Marketplace 或 Azure Marketplace 购买即用即付 (PAYGO) 订阅。</block>
-  <block id="13bd4b8763a0912ae1342d2303d91929" category="list-text">自带许可证 (BYOL)，即您从NetApp销售代表处获得的NetApp许可证文件 (NLF)。您可以使用许可证序列号在控制台中激活 BYOL。</block>
   <block id="bcc2135df9c790b26ee1baa911a601ef" category="paragraph">设置 BYOL 或购买 PAYGO 订阅后，您可以在控制台的Licenses and subscriptions部分看到许可证。</block>
   <block id="aa4412f38985c565aeb98dc6634f3029" category="paragraph">免费试用期结束或许可证或订阅到期后，您仍然可以在 Ransomware Resilience 中执行以下操作：</block>
   <block id="9f5e79cce3ac3e1b3962cddaef91e4e0" category="list-text">查看工作负载和工作负载健康状况。</block>
   <block id="ed2dd81f2c51f4d72049803cf5ce6211" category="list-text">删除任何资源，例如策略。</block>
   <block id="1594f78ebbb281f7b5359eb6d2b89912" category="list-text">运行在试用期间或许可证下创建的所有计划操作。</block>
   <block id="231fd9de718f42c1c9e89368821092dd" category="section-title">其他许可证</block>
-  <block id="f5b76d2b545a3d3806e510148858010e" category="paragraph">勒索软件恢复许可证不包括其他NetApp产品。即使您没有许可证，Ransomware Resilience 也可以使用NetApp Backup and Recovery 。</block>
   <block id="1f39796076513bca42919b255963cd5a" category="admonition">如果您同时拥有备份和恢复以及勒索软件恢复功能，则受这两种产品保护的任何公共数据将仅由勒索软件恢复功能计费。</block>
   <block id="b22e0a0c145eff4bd34bc6c46894b2a1" category="section-title">使用 30 天免费试用版进行尝试</block>
   <block id="50de852d5302d938fcee7f3cfc39b286" category="paragraph">您可以通过 30 天免费试用来尝试 Ransomware Resilience。您必须是控制台组织管理员才能开始免费试用。</block>
@@ -645,36 +643,20 @@
   <block id="1f7fec232265cdaaed5c3995ce516af2" category="list-text">返回勒索软件恢复 UI 来使用它。</block>
   <block id="01ad1e9b6ee32140ab032c379c4fd753" category="summary">只需几个步骤即可开始使用NetApp Ransomware Resilience。</block>
   <block id="87269d545e3fccdff13a867df7261ace" category="doc">NetApp Ransomware Resilience快速入门</block>
-  <block id="41bff2ae3735c5f6436f8b085adcb8b8" category="paragraph">以下是开始使用NetApp Ransomware Resilience所需步骤的概述。每个步骤中的链接都会将您带到提供更多详细信息的页面。</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一个</block>
   <block id="a2d56436fc6737079209e6c74380c5fb" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>审查先决条件</block>
-  <block id="8245d68da46718af8e64343032f76d49" category="inline-link-macro">确保您的系统满足这些要求</block>
-  <block id="75d0ccc7689bb95b15a30d63c9ccdcd4" category="paragraph"><block ref="9f6f8763dd3393068af568a58712b0aa" category="inline-link-macro-rx"></block> 。</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">两个</block>
   <block id="916d9ab8dea7ac43f2e082cba0d4f60d" category="list-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>设置勒索软件抵御能力</block>
   <block id="0545ec91139cbe1d8ed0b333ebef939f" category="inline-link-macro">准备NetApp StorageGRID、Amazon Web Services、Google Cloud Platform 或 Microsoft Azure 作为备份目标</block>
   <block id="72f842d16f2016131d4e9d7e14038e88" category="list-text"><block ref="9e4e7ea8cc8b7b041d3f5d7300c15c3a" category="inline-link-macro-rx"></block> 。</block>
-  <block id="9dc5e6bd86bf7e797ea094f6fe2a5852" category="inline-link-macro">配置控制台代理</block>
-  <block id="47eb90acf1b579722f7d5dd2b44ef0e4" category="list-text"><block ref="9ec4312a792865a12e09d73a517eab36" category="inline-link-macro-rx"></block> 。</block>
-  <block id="0e6eeee847f00d7ef1cb454555892f49" category="list-text"><block ref="92c4728cc5c0729bcbef66420d0a7a81" category="inline-link-macro-rx"></block> 。</block>
   <block id="fc52e84f4845e2ef8156001fa74f3954" category="inline-link-macro">在控制台中发现工作负载</block>
-  <block id="cba6bdbd119078f38347599e997682f2" category="list-text"><block ref="76e35428aa7f6a7c95640d343a2f5eaa" category="inline-link-macro-rx"></block> 。</block>
   <block id="2eee0208d7c6702078e5b0a246b9c4d7" category="inline-link-macro">配置备份目标</block>
-  <block id="5b00991bda21ffcce334fcd5ac0e12a5" category="list-text"><block ref="7814f70b7e043ab52a7b13bfded37018" category="inline-link-macro-rx"></block> 。</block>
-  <block id="fcb74668c58aed2ac30ddcdee292a0c5" category="inline-link-macro">选择性地启用威胁检测</block>
-  <block id="896465c47d1995c6e7b722de16fa80e5" category="list-text"><block ref="4e4968353ad45e1648e9b700ebce5a49" category="inline-link-macro-rx"></block> 。</block>
   <block id="63de46c3feae8642d94945ea3e056fed" category="inline-link-macro">（可选）进行勒索软件攻击准备演习</block>
-  <block id="39bdb514f38135f0ca92651ade127954" category="list-text"><block ref="2280163364b5b58f435fe47eab713eb2" category="inline-link-macro-rx"></block> 。</block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">三</block>
-  <block id="fb35cdd7029fec15aadbdddd879fa161" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>下一步是什么？</block>
-  <block id="b9a39cb5a55f28deea4823b82a9d759b" category="paragraph">设置勒索软件恢复功能后，您可以执行以下操作。</block>
   <block id="d50e8172d497c020af4e234d3280aa47" category="inline-link-macro">在仪表板上查看工作负载保护健康状况</block>
-  <block id="0da5fc044622620fa261132f6660bfdb" category="list-text"><block ref="97145b854a05806b01a222f1cee29fd6" category="inline-link-macro-rx"></block> 。</block>
-  <block id="d3c00938bca00732fbba5d481863930b" category="list-text"><block ref="2b2daeeb32402291362fa9fa843a5c7e" category="inline-link-macro-rx"></block> 。</block>
   <block id="347a92b70b3c471a8a681a4b4a0c9256" category="inline-link-macro">响应检测到的潜在勒索软件攻击</block>
   <block id="063e9c9c189a9f6aaad2b0b511ff7b3f" category="list-text"><block ref="b5ea4db5c411dc6348eb99be9283796b" category="inline-link-macro-rx"></block> 。</block>
   <block id="fc8492dd3eefdbcdcd34f8d91982e7a9" category="inline-link-macro">从攻击中恢复（事件消除后）</block>
-  <block id="9ae83eb049c6b5251c9298d8a8d40241" category="list-text"><block ref="8b134bf38fb096386395972987c1b025" category="inline-link-macro-rx"></block> 。</block>
   <block id="34966ee9421e907a190b85aa1680ce01" category="summary">要使用勒索软件恢复能力，请执行几个步骤进行设置。</block>
   <block id="239718284ef31f1d7ca7a73645e14dd2" category="doc">设置NetApp Ransomware Resilience</block>
   <block id="b5b8e67d6a37d24ad73c89e4c7ac8c9e" category="inline-link-macro">前提条件</block>
@@ -1032,7 +1014,6 @@
   <block id="0a3dc5fda7d701cd5fc9a0ceb57afb3f" category="list-text"><block ref="9f0b279394cf25f00a608a52b5aed0b2" category="inline-link-macro-rx"></block> 。</block>
   <block id="bc1b76060f49fe8ad404d389d8431371" category="summary">使用NetApp Data Classification来提高数据的安全性和隐私合规性，以确定您的数据是否包含个人身份信息或私人信息。</block>
   <block id="e00e52239c81eaad00507b4b0b815570" category="doc">使用勒索软件恢复中的NetApp Data Classification扫描个人身份信息</block>
-  <block id="62fa4bfbc95859e20cfaa7150ab75d62" category="paragraph">在NetApp Ransomware Resilience中，您可以使用NetApp Data Classification来扫描和分类文件共享工作负载中的数据。对数据进行分类可以帮助您确定数据集是否包含个人身份信息 (PII)，这可能会增加安全风险。数据分类是控制台的核心组件，无需额外付费即可使用。</block>
   <block id="604880f6f585767eee17ec85b3c76533" category="inline-link-macro">数据分类</block>
   <block id="00735a048dd8a101a0cf04ff8cf7c168" category="paragraph"><block ref="2324d2fecbef2eccb7e03b987d67689b" category="inline-link-macro-rx"></block>利用人工智能驱动的自然语言处理进行上下文数据分析和分类，为您的数据提供可操作的见解，以满足合规性要求、检测安全漏洞、优化成本并加速迁移。</block>
   <block id="d3b14d365ca3277402fce2839d562f60" category="admonition">此过程可以影响工作负载的重要性，以帮助确保您获得适当的保护。</block>
@@ -2004,7 +1985,6 @@
   <block id="0f1fe9be7b1943507afe2ef939f76423" category="list-text">监控您的工作负载的健康状况，防范勒索软件攻击并查找数据异常。</block>
   <block id="12bcfe65b7fb19c1dbe60c374599be1e" category="list-text">快速评估勒索软件事件对您的工作量的影响。</block>
   <block id="f4d7f013aee4ff8dd19b36611ba3f3c6" category="list-text">通过恢复数据并确保不会再次感染存储的数据，智能地从勒索软件事件中恢复。</block>
-  <block id="0c59fa3b4bea70fe5377775600bed707" category="sidebar">NetApp Ransomware Resilience可保护、检测并支持从本地和云存储中的勒索软件威胁中恢复应用程序工作负载和文件共享。Ransomware Resilience 支持 Oracle、MySQL、VM 数据存储和 NAS 存储等平台，可实现安全备份和恢复，帮助组织保护关键数据并保持业务连续性。</block>
   <block id="89be776e54ba13993f6011aaa17a0ac9" category="sidebar">NetApp Ransomware Resilience文档</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">开始使用</block>
   <block id="7b72a3240bb708a49cf4a635f75c8ca9" category="sidebar">勒索软件抵御能力的新功能</block>
@@ -2038,4 +2018,41 @@
   <block id="34691f87b892c333fe1b7a23452dcda6" category="paragraph">为了使勒索软件恢复能力提供有关可疑用户行为的警报，您必须配置用户活动代理。有关详细信息，请参阅 <block ref="f3d3e5726f7feb4b59ca728c906df758" category="inline-link-macro-rx"></block>。</block>
   <block id="793485138a653779a0c8cb91bf9fc979" category="list-text">选择准备演习类型。要从加密数据泄露中手动恢复，请选择**自定义恢复**。要从可疑用户活动中恢复，请选择**数据泄露**。</block>
   <block id="8e0b9d66ccd774ed98d0b31d0e6ed305" category="admonition">演练运行时，您无法编辑准备演练配置。您可以重置钻机以停止它并修改配置。</block>
+  <block id="4226ab30b4df5e39149316f15c13d274" category="list-text">自带许可证 (BYOL)，即您从NetApp销售代表处获得的NetApp许可证文件 (NLF)。您可以使用许可证序列号在控制台中激活 BYOL。</block>
+  <block id="18105991dc2815c0ab610717f615d548" category="admonition">如果您参加六个月的试用，您应该拥有 NLF 许可证。</block>
+  <block id="4fa0264ac4080dbcb96449b3dd2eff57" category="paragraph">勒索软件恢复许可证不包括其他NetApp产品。但是，即使您没有单独的备份和恢复许可证，勒索软件恢复能力也可以与NetApp Backup and Recovery集成。</block>
+  <block id="c785cc029c5e88f7796b29b4ff0e99e1" category="paragraph">了解设置勒索软件保护功能和保护工作负载所需遵循的高级步骤。</block>
+  <block id="6ff0e20f052119502398978ae7712412" category="paragraph">按照每个步骤中的链接获取详细信息。</block>
+  <block id="be796710aeb85a06716eb7e39256193d" category="paragraph">这些任务需要_Console admin_角色。</block>
+  <block id="220434cdb736458843fe145fbd4b9ca9" category="inline-link-macro">确保已安装控制台代理</block>
+  <block id="ff6929fd02a6e7a1c0faa4152fe13ffe" category="list-text"><block ref="ff6929fd02a6e7a1c0faa4152fe13ffe" category="inline-link-macro-rx"></block></block>
+  <block id="9fde088755a092fd7205d2e697984007" category="inline-link-macro">确保您的系统满足要求</block>
+  <block id="643740187acce828986cb107d41bafc5" category="list-text"><block ref="643740187acce828986cb107d41bafc5" category="inline-link-macro-rx"></block></block>
+  <block id="b9278659401ebc53048947304c656764" category="inline-link-macro">审查勒索软件恢复用户角色并为访问勒索软件恢复的用户分配权限</block>
+  <block id="b29244e1b9c758144780bb223d35b4cf" category="list-text"><block ref="b29244e1b9c758144780bb223d35b4cf" category="inline-link-macro-rx"></block></block>
+  <block id="92c4728cc5c0729bcbef66420d0a7a81" category="list-text"><block ref="92c4728cc5c0729bcbef66420d0a7a81" category="inline-link-macro-rx"></block></block>
+  <block id="ae1607d72fd3a0506ce195b27e1dee67" category="paragraph">这些任务需要“勒索软件恢复管理员”角色。</block>
+  <block id="76e35428aa7f6a7c95640d343a2f5eaa" category="list-text"><block ref="76e35428aa7f6a7c95640d343a2f5eaa" category="inline-link-macro-rx"></block></block>
+  <block id="97145b854a05806b01a222f1cee29fd6" category="list-text"><block ref="97145b854a05806b01a222f1cee29fd6" category="inline-link-macro-rx"></block></block>
+  <block id="2280163364b5b58f435fe47eab713eb2" category="list-text"><block ref="2280163364b5b58f435fe47eab713eb2" category="inline-link-macro-rx"></block></block>
+  <block id="68d94437ae944e7e96a72f2fb55b3138" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>在 Ransomware Resilience 中配置保护和检测</block>
+  <block id="0facb5062c7824665d78c38387a13d0d" category="paragraph">这些任务需要“勒索软件恢复管理员”角色。配置可疑用户行为活动需要额外的“勒索软件恢复用户行为管理员”角色。</block>
+  <block id="2b2daeeb32402291362fa9fa843a5c7e" category="list-text"><block ref="2b2daeeb32402291362fa9fa843a5c7e" category="inline-link-macro-rx"></block></block>
+  <block id="93826dca9773d5abc2e88bd13610fa5f" category="inline-link-macro">通过配置可疑用户活动检测来增强保护</block>
+  <block id="2b3602d3a23fabd0142c6690d942d97c" category="list-text">可选地，<block ref="c26759f19d29fbc2698510c8d2899376" category="inline-link-macro-rx"></block></block>
+  <block id="9de6007d1c8bb200a2730a88c394ccc5" category="list-text">（可选）配置备份目标：</block>
+  <block id="7814f70b7e043ab52a7b13bfded37018" category="list-text"><block ref="7814f70b7e043ab52a7b13bfded37018" category="inline-link-macro-rx"></block></block>
+  <block id="b5ea4db5c411dc6348eb99be9283796b" category="list-text"><block ref="b5ea4db5c411dc6348eb99be9283796b" category="inline-link-macro-rx"></block></block>
+  <block id="8b134bf38fb096386395972987c1b025" category="list-text"><block ref="8b134bf38fb096386395972987c1b025" category="inline-link-macro-rx"></block></block>
+  <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">四个</block>
+  <block id="84b770f92be71ec30166cecd58fe295f" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block>下一步是什么？</block>
+  <block id="6bed92a99cdfd0c4fededd25f3e7cc23" category="paragraph">在勒索软件恢复中配置保护后，您可以执行以下操作。</block>
+  <block id="7257a2c29f00e84365c5a48447d9c803" category="inline-link-macro">启用数据分类来识别治理和安全风险</block>
+  <block id="746bceb6a53af383ec0aa4495f694a94" category="list-text"><block ref="746bceb6a53af383ec0aa4495f694a94" category="inline-link-macro-rx"></block></block>
+  <block id="1d1758803ee1f7559973be04f120a0f7" category="inline-link-macro">向 SIEM 发送警报</block>
+  <block id="81eb2602258c7f155c33ae884e447609" category="list-text"><block ref="81eb2602258c7f155c33ae884e447609" category="inline-link-macro-rx"></block></block>
+  <block id="660ecf2355e5ff3c5a22d2e4a48594e8" category="inline-link-macro">下载警报、保护、准备演习、恢复或摘要报告</block>
+  <block id="b5884d5e59b952624998be52e7a9fe97" category="list-text"><block ref="b5884d5e59b952624998be52e7a9fe97" category="inline-link-macro-rx"></block></block>
+  <block id="52210acbff73a572a2ca89fb77371615" category="paragraph">在NetApp Ransomware Resilience中，您可以使用NetApp Data Classification来扫描和分类文件共享工作负载中的数据。对数据进行分类可以帮助您确定数据集是否包含个人身份信息 (PII)，这可能会增加安全风险。数据分类是NetApp Console的核心组件，无需额外付费即可使用。</block>
+  <block id="4342c3c480135ea7c9398a3ba08357ec" category="sidebar">NetApp Ransomware Resilience可保护、检测并支持从本地和云存储中的勒索软件威胁中恢复应用程序工作负载和文件共享。勒索软件恢复能力可实现安全备份和恢复，帮助组织保护关键数据并维护 Oracle、MySQL、VM 数据存储、NAS 存储等的业务连续性。</block>
 </blocks>

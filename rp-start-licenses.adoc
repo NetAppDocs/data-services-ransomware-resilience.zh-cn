@@ -23,6 +23,9 @@ summary: 通过设置许可开始使用 NeApp Ransomware Resilience。
 * 自带许可证 (BYOL)，即您从NetApp销售代表处获得的NetApp许可证文件 (NLF)。您可以使用许可证序列号在控制台中激活 BYOL。
 
 
+
+NOTE: 如果您参加六个月的试用，您应该拥有 NLF 许可证。
+
 设置 BYOL 或购买 PAYGO 订阅后，您可以在控制台的Licenses and subscriptions部分看到许可证。
 
 免费试用期结束或许可证或订阅到期后，您仍然可以在 Ransomware Resilience 中执行以下操作：
@@ -36,7 +39,7 @@ summary: 通过设置许可开始使用 NeApp Ransomware Resilience。
 
 == 其他许可证
 
-勒索软件恢复许可证不包括其他NetApp产品。即使您没有许可证，Ransomware Resilience 也可以使用NetApp Backup and Recovery 。
+勒索软件恢复许可证不包括其他NetApp产品。但是，即使您没有单独的备份和恢复许可证，勒索软件恢复能力也可以与NetApp Backup and Recovery集成。
 
 
 NOTE: 如果您同时拥有备份和恢复以及勒索软件恢复功能，则受这两种产品保护的任何公共数据将仅由勒索软件恢复功能计费。
