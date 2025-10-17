@@ -209,9 +209,6 @@ image:screen-settings-backup-destinations-list2.png["备份目标页面的“设
 .步骤
 . 在*设置 > 备份目标*页面中，选择*添加*。
 . 输入备份目标的名称。
-+
-image:screen-settings-backup-destination-gcp.png["备份目标页面"]
-
 . 选择*Google Cloud Platform*。
 . 选择每个设置旁边的向下箭头并输入或选择值：
 +
@@ -219,6 +216,9 @@ image:screen-settings-backup-destination-gcp.png["备份目标页面"]
 +
 *** 创建一个新的存储桶。输入访问密钥和密钥。
 *** 输入或选择您的 Google Cloud Platform 项目和区域。
++
+image:screen-settings-backup-destination-gcp.png["备份目标页面"]
+
 
 
 ** *加密*：如果您正在创建新的存储桶，请输入提供商提供给您的加密密钥信息。如果您选择现有存储桶，则加密信息已经可用。
