@@ -14,7 +14,7 @@ summary: 勒索软件恢复中的可疑用户活动检测使您能够检测可�
 [role="lead"]
 勒索软件抵御能力支持在检测策略中检测可疑用户行为，使您能够在用户级别解决勒索软件事件。
 
-勒索软件弹性通过分析ONTAP中 FPolicy 生成的用户活动事件来检测可疑的用户活动。要收集用户活动日期，您需要部署一个或多个用户活动代理。该代理是可连接到租户上的设备的 Linux 服务器或 VM。
+勒索软件弹性通过分析ONTAP中 FPolicy 生成的用户活动事件来检测可疑的用户活动。要收集用户活动数据，您需要部署一个或多个用户活动代理。该代理是可连接到租户上的设备的 Linux 服务器或 VM。
 
 
 
@@ -34,7 +34,7 @@ summary: 勒索软件恢复中的可疑用户活动检测使您能够检测可�
 
 == 启用可疑用户活动检测
 
-*所需的控制台角色* 要执行此任务，您需要勒索软件恢复用户行为管理员角色。您无法使用 Ransomware Resilience 管理员角色执行此任务。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^] 。
+*所需的控制台角色* 要激活可疑用户活动检测，您需要组织管理员角色。对于可疑用户活动的后续配置，您需要 Ransomware Resilience 用户行为管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^]。
 
 
 
@@ -46,7 +46,7 @@ summary: 勒索软件恢复中的可疑用户活动检测使您能够检测可�
 
 ==== 要求
 
-要安装用户活动代理，您需要一个满足以下任一受支持的操作系统和服务器要求的主机或虚拟机。
+要安装用户活动代理，您需要一个满足以下支持的操作系统和服务器要求的主机或虚拟机。
 
 **操作系统要求**
 

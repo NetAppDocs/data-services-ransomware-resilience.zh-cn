@@ -473,24 +473,13 @@
   <block id="1f25ef09ab6fce0b56c79cd4246453be" category="paragraph">*您可以禁用策略吗？*</block>
   <block id="c90f429b2fc82db14813e44ccf0893a7" category="paragraph">您可以使用系统管理器 UI、API 或 CLI 在检测策略中禁用 ARP。</block>
   <block id="389b413db649d1d5d2854fd3e4faf2e6" category="paragraph">您可以通过应用不包含 FPolicy 和备份策略的其他策略来禁用它们。</block>
-  <block id="0a0e0e0ad04e5c7e8ed3c1b30cb4d073" category="summary">通过设置许可开始使用 NeApp Ransomware Resilience。</block>
   <block id="8c4e51cf0af97fc084c32c7697ac400c" category="doc">设置NetApp Ransomware Resilience的许可</block>
   <block id="9472cf1130b90417862c1aa4710f22a7" category="paragraph">借助NetApp Ransomware Resilience，您可以使用不同的许可计划。</block>
   <block id="bf82f97d170b8b28711b0f6354af9b31" category="inline-link">了解控制台访问角色</block>
   <block id="28cfeb7fff7b4f9ab9bf205d7135f788" category="paragraph">要执行此任务，您需要组织管理员、文件夹或项目管理员角色。<block ref="43e60870b1a681df3de2812caf2de958" category="inline-link-rx"></block> 。</block>
-  <block id="f53f2f881ada2816fc6ddea06cdcfc60" category="paragraph">*许可证类型* 您可以使用以下许可证类型：</block>
-  <block id="b5bf014c6bc530be1a7b68b5bcfb8ce0" category="list-text">通过 Amazon Web Services (AWS) Marketplace、Google Cloud Marketplace 或 Azure Marketplace 购买即用即付 (PAYGO) 订阅。</block>
   <block id="bcc2135df9c790b26ee1baa911a601ef" category="paragraph">设置 BYOL 或购买 PAYGO 订阅后，您可以在控制台的Licenses and subscriptions部分看到许可证。</block>
-  <block id="aa4412f38985c565aeb98dc6634f3029" category="paragraph">免费试用期结束或许可证或订阅到期后，您仍然可以在 Ransomware Resilience 中执行以下操作：</block>
-  <block id="9f5e79cce3ac3e1b3962cddaef91e4e0" category="list-text">查看工作负载和工作负载健康状况。</block>
-  <block id="ed2dd81f2c51f4d72049803cf5ce6211" category="list-text">删除任何资源，例如策略。</block>
-  <block id="1594f78ebbb281f7b5359eb6d2b89912" category="list-text">运行在试用期间或许可证下创建的所有计划操作。</block>
   <block id="231fd9de718f42c1c9e89368821092dd" category="section-title">其他许可证</block>
   <block id="1f39796076513bca42919b255963cd5a" category="admonition">如果您同时拥有备份和恢复以及勒索软件恢复功能，则受这两种产品保护的任何公共数据将仅由勒索软件恢复功能计费。</block>
-  <block id="b22e0a0c145eff4bd34bc6c46894b2a1" category="section-title">使用 30 天免费试用版进行尝试</block>
-  <block id="50de852d5302d938fcee7f3cfc39b286" category="paragraph">您可以通过 30 天免费试用来尝试 Ransomware Resilience。您必须是控制台组织管理员才能开始免费试用。</block>
-  <block id="6d82276368a10a436380f0cd7fa6094d" category="admonition">随着 2024 年 10 月的发布，Ransomware Resilience 的新部署现在有 30 天的免费试用期。此前，Ransomware Resilience 提供 90 天的免费试用。如果您已享受 90 天免费试用，则该优惠将持续 90 天。</block>
-  <block id="88c474e49a0cbbc7ef17d052040cd008" category="paragraph">试用期间不实施任何容量限制。</block>
   <block id="3ad87b9da828fc1c8e612ab5674dbabe" category="paragraph">您可以随时获得许可证或订阅，并且在 30 天试用期结束之前不会向您收费。要在 30 天试用期后继续使用，您需要购买 BYOL 许可证或 PAYGO 订阅。</block>
   <block id="f37d436fdc8600ce24709a8f4435ec79" category="paragraph">在试用期间，您可以使用全部功能。</block>
   <block id="bccaa4aa80831b76c11240a16447975f" category="inline-link">控制台</block>
@@ -498,10 +487,6 @@
   <block id="4a43cddfeeabba4570c14c252dec0bd1" category="list-text">登录控制台。</block>
   <block id="16bcca2caaffd4aceb0b9f940711e44a" category="list-text">从NetApp Console中，选择“保护”&gt;“勒索软件恢复能力”。</block>
   <block id="04f45bf7defd11ead0b4c56cf8c3f371" category="paragraph">如果这是您第一次登录此服务，则会出现登录页面。</block>
-  <block id="771e1ea643a8723d0d0dfad6c2b70ace" category="list-text">如果您尚未添加其他服务的连接器，请添加一个。</block>
-  <block id="91e534d044a3d9c6a1c8575f89e73c9b" category="inline-link">了解控制台代理</block>
-  <block id="395a0c83d18cd49c5468e19cda311fa7" category="paragraph">要添加控制台代理，请参阅<block ref="552a7d66ccd9c93a9dbc55fd8ef74d52" category="inline-link-rx"></block>。</block>
-  <block id="ce56f7856e3d6cb0eb9ff3ddabe5ec4e" category="list-text">设置控制台代理后，在勒索软件恢复登录页面中，添加控制台代理的按钮将更改为发现工作负载的按钮。选择*通过发现工作负载开始*。</block>
   <block id="7fd2f910bce182f3bed45cb0ffe3f2b7" category="list-text">要查看免费试用信息，请选择右上角的下拉选项。</block>
   <block id="07b00cce8ecdc9955eb27940a652e625" category="paragraph">*试用结束后，获取订阅或许可*</block>
   <block id="a668e7961280a1c2dd9b2e1867761d44" category="paragraph">免费试用结束后，您可以通过其中一个市场进行订阅，也可以从NetApp购买许可证。</block>
@@ -523,7 +508,6 @@
   <block id="adee13c3532773f19ac1ed1cd57fb86d" category="list-text">通过选择“添加许可证”将许可证添加到控制台。</block>
   <block id="2e8bc7beff420b094bb88e9d8c7ae468" category="inline-image-macro">添加许可证页面的屏幕截图。</block>
   <block id="91aa021bc5ef766666131294c51b12a9" category="paragraph"><block ref="91aa021bc5ef766666131294c51b12a9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="dda85ea2192849a87663a1971ff2c144" category="list-text">在添加许可证页面中，选择*输入序列号*，输入发送给您的电子邮件中包含的序列号，然后选择*添加许可证*。</block>
   <block id="44c74befbf9a8104854254c21263bbd0" category="list-text">要查看许可证详细信息，请从控制台左侧导航中选择“*管理*”&gt;“*Licenses and subscriptions*”。</block>
   <block id="6ba03f72ccb23acc2e71d13b30e6a6f3" category="list-text">要查看订阅信息，请选择*订阅*。</block>
   <block id="3a868051eb374227c279870a3cc58719" category="list-text">要查看 BYOL 许可证，请选择“数据服务许可证”。</block>
@@ -574,7 +558,6 @@
   <block id="3973bc267f97fbc53e553dbba08e2ea9" category="admonition">此消息也出现在Licenses and subscriptions以及<block ref="a12300a172aa5e6e63382bcb48a8348c" category="inline-link-rx"></block>。</block>
   <block id="bf817abc839636c237e9679a5b237f47" category="list-text">您可以发送电子邮件给支持人员以请求更新您的许可证。</block>
   <block id="153d23d2fc1cd1fafa2626b2ebad671d" category="paragraph">在您支付许可证费用并在NetApp支持站点注册后，控制台会自动更新许可证。数据服务许可证页面将在 5 到 10 分钟内反映更改。</block>
-  <block id="6c1f5db8cc1f713f620fa21a318cf1bc" category="list-text">如果控制台无法自动更新许可证，则需要手动上传许可证文件。</block>
   <block id="147b35ab5352426bba38d99d810db4ed" category="list-text">您可以从NetApp支持站点获取许可证文件。</block>
   <block id="f3538d2e62d8886ed134a8cd0baef1b1" category="list-text">在控制台中，选择**管理** &gt; **Licenses and subscriptions**。</block>
   <block id="08fc265b64fb33dd4dd39826e253b59a" category="list-text">选择“*数据服务许可证*”选项卡，选择要更新的序列号的“*操作...*”图标，然后选择“*更新许可证*”。</block>
@@ -646,7 +629,6 @@
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一个</block>
   <block id="a2d56436fc6737079209e6c74380c5fb" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>审查先决条件</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">两个</block>
-  <block id="916d9ab8dea7ac43f2e082cba0d4f60d" category="list-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>设置勒索软件抵御能力</block>
   <block id="0545ec91139cbe1d8ed0b333ebef939f" category="inline-link-macro">准备NetApp StorageGRID、Amazon Web Services、Google Cloud Platform 或 Microsoft Azure 作为备份目标</block>
   <block id="72f842d16f2016131d4e9d7e14038e88" category="list-text"><block ref="9e4e7ea8cc8b7b041d3f5d7300c15c3a" category="inline-link-macro-rx"></block> 。</block>
   <block id="fc52e84f4845e2ef8156001fa74f3954" category="inline-link-macro">在控制台中发现工作负载</block>
@@ -841,8 +823,6 @@
   <block id="be962bd392a7a1672125ea27465c8bd8" category="section-title">检测恶意活动和异常用户行为</block>
   <block id="9d06719f2534c2ebd6c7bed1fd263123" category="paragraph">查看“警报”选项卡，您可以识别是否存在恶意活动或异常用户行为。</block>
   <block id="30cd6d23e33e657384daad5db666d56c" category="inline-link-macro">可疑的用户活动</block>
-  <block id="92733af7522951b34c707ece97b76dbb" category="paragraph">您必须配置用户活动代理并启用具有用户行为检测的保护策略才能查看用户级别检测。启用用户行为检测后，*可疑用户*列会出现在警报仪表板中；未启用用户行为检测时则不会显示。要启用可疑用户检测，请参阅<block ref="da26800578b610b8b3390e49bb643377" category="inline-link-macro-rx"></block>。</block>
-  <block id="df6951a826abfdd03d428573cabc8a91" category="admonition">如果您正在使用NetAppData Infrastructure Insights(DII) 工作负载安全，建议您使用相同的工作负载安全代理来实现勒索软件恢复。您不需要为勒索软件恢复能力部署单独的工作负载安全代理，但是，使用相同的工作负载安全代理需要勒索软件恢复能力控制台组织和 DII 存储工作负载安全租户之间建立配对关系。请联系您的客户代表以启用此配对。</block>
   <block id="2654c9fc1ffd83d2d016920464872d91" category="section-title">查看恶意活动</block>
   <block id="c0339a08bfb0fb26aa3ecea9980349b3" category="paragraph">当自主勒索软件防护在勒索软件恢复中触发警报时，您可以查看以下详细信息：</block>
   <block id="da00dfcf2d3126754537ccdf32df23fa" category="list-text">输入数据的熵</block>
@@ -859,7 +839,6 @@
   <block id="24d8050f046c3ac972fd95f26e1a8670" category="list-text">选择一个事件来查看该事件的详细信息。</block>
   <block id="ff74e9f48366f1b4465d1920693ddea8" category="inline-link-macro">配置勒索软件抵御能力设置</block>
   <block id="f784461c39e5b287f6733d0ee28efad4" category="paragraph">如果您已配置可疑用户检测来查看异常用户行为，则可以查看用户级数据并阻止特定用户。要启用可疑用户设置，请参阅<block ref="788275b5d10fa192a2bbf25cebb6c38f" category="inline-link-macro-rx"></block>。</block>
-  <block id="ec2349017ee84d143f6965ba0b643c86" category="list-text">要阻止可疑用户进一步访问控制台监控的环境，请选择该用户名称下的“*阻止*”。</block>
   <block id="705db8b34cf00efb73abf6403278e299" category="section-title">将勒索软件事件标记为准备恢复（事件被消除后）</block>
   <block id="3950c317c3c61c1f422abb2e301a90ca" category="paragraph">阻止攻击后，通知存储管理员数据已准备就绪，以便他们可以开始恢复。</block>
   <block id="a31e44b45b823ec61483db05b99be2cb" category="paragraph"><block ref="a31e44b45b823ec61483db05b99be2cb" category="inline-image-macro-rx" type="image"></block></block>
@@ -873,7 +852,6 @@
   <block id="b0b578b8be1448972010b482195bbda8" category="paragraph">审查事件后，您需要确定该事件是否是潜在的攻击。如果它们不是真正的威胁，则可以将其驳回。</block>
   <block id="74583f536ee54b8803ab561a596f2bb9" category="paragraph">您可以忽略误报或决定立即恢复数据。如果您忽略警报，勒索软件恢复功能会了解此行为，将其与正常操作关联，并且不会再次针对此类行为发出警报。</block>
   <block id="5a5533258cfacee641d19f7f201b727f" category="paragraph">如果您解除工作负载，则为应对潜在勒索软件攻击而自动获取的所有快照副本都将被永久删除。</block>
-  <block id="e092b1515493abdb05e77ec47a53f36f" category="admonition">如果您关闭警报，则无法将该状态改回任何其他状态，也无法撤消此更改。</block>
   <block id="46b4f01c45e92cd2d2fe7d4406168b5d" category="list-text">选择一个或多个事件。或者，通过选择表格左上角的事件 ID 框来选择所有事件。</block>
   <block id="c4229f2836db3c8f0198619d853bad27" category="list-text">如果您确定该事件不构成威胁，请将其视为误报：</block>
   <block id="a20ff2150b7b9f34f30c94111d0f2672" category="list-text">选择事件。</block>
@@ -1785,17 +1763,13 @@
   <block id="2a4edc5ec6e55f07dba0609dc2cd6d87" category="summary">勒索软件恢复中的可疑用户活动检测使您能够检测可能构成潜在威胁的用户活动。</block>
   <block id="906ec8bab01967c36f2f073eff9f54df" category="doc">在NetApp Ransomware Resilience中配置可疑用户活动检测</block>
   <block id="9ba1db4a2c84400f14de2d58496b9f52" category="paragraph">勒索软件抵御能力支持在检测策略中检测可疑用户行为，使您能够在用户级别解决勒索软件事件。</block>
-  <block id="97f8807a01c3206f369065a241cf5ac7" category="paragraph">勒索软件弹性通过分析ONTAP中 FPolicy 生成的用户活动事件来检测可疑的用户活动。要收集用户活动日期，您需要部署一个或多个用户活动代理。该代理是可连接到租户上的设备的 Linux 服务器或 VM。</block>
   <block id="90c4c763135bd7a7443ed22e4149185b" category="section-title">代理商和收藏家</block>
   <block id="03f21183a058745685d1d78fcc7eab3a" category="paragraph">必须安装至少一个用户活动代理才能激活 Ransomware Resilience 中的可疑用户活动检测。当您从勒索软件恢复仪表板激活可疑用户活动功能时，您需要提供代理主机信息来激活该功能。</block>
   <block id="2b294b61543173e7462d37def0724cef" category="paragraph">一个代理可以托管多个数据收集器。数据收集器将数据发送到 SaaS 位置进行分析。有两种类型的收集器：</block>
-  <block id="4fb02306f3b85b6cfd31c67b79007829" category="list-text">**数据收集器**从ONTAP收集用户活动数据。</block>
-  <block id="4449b11da47ae4743bfe16fdd7a33631" category="list-text">**用户目录连接器**连接到您的目录以将用户 ID 映射到用户名。</block>
   <block id="fa83d0f077ae64e1df0b8a9ed9982815" category="paragraph">收集器在勒索软件恢复设置中配置。</block>
   <block id="4f047e83e52e21d5382adc1b5dbf3119" category="section-title">添加用户活动代理</block>
   <block id="4d4379036f7207029fbe126649ccc0a6" category="paragraph">用户活动代理是数据收集器的可执行环境；数据收集器与勒索软件恢复共享用户活动事件。您必须创建至少一个用户活动代理才能启用可疑用户活动检测。</block>
   <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="section-title">要求</block>
-  <block id="69cba9646d8849744460eb9ba06c7bd6" category="paragraph">要安装用户活动代理，您需要一个满足以下任一受支持的操作系统和服务器要求的主机或虚拟机。</block>
   <block id="176c18a49aa227401be466a34a903666" category="paragraph">**操作系统要求**</block>
   <block id="696c660ff8d9323e55146a6dbd4e4088" category="cell">操作系统</block>
   <block id="2e5d14f7919ff3c6138e7845aec4f915" category="cell">支持的版本</block>
@@ -1821,7 +1795,6 @@
   <block id="fd9b966c1c6f66e7c4f38e133767c880" category="paragraph">服务器必须满足以下最低要求：</block>
   <block id="f0499c7832db4d35decdf83de714841c" category="list-text">**CPU**：4 核</block>
   <block id="4a8a49e18f8860c4232837503bcc2edd" category="list-text">**内存**：16GB 内存</block>
-  <block id="465860b9bc6b405baa8ced9914b08ab3" category="list-text">**磁盘空间**：35GB 可用磁盘空间</block>
   <block id="a2ad8789f963859e0c26a6daaec4a76b" category="list-text">如果这是您第一次创建用户活动代理，请转到**仪表板**。在**用户活动**图块中，选择**激活**。</block>
   <block id="44e08a5b01e752ac11f59bba4e07dea7" category="paragraph">如果您要添加其他用户活动代理，请转到*设置*，找到**用户活动**图块，然后选择**管理**。在用户活动屏幕上，选择**用户活动代理**选项卡，然后选择**添加**。</block>
   <block id="75d41b8fe2ef8de56d2fd2046bb0dad3" category="list-text">选择**云提供商**，然后选择**区域**。选择**下一步**。</block>
@@ -1834,7 +1807,6 @@
   <block id="7298950e09abf5a29938d42a442acced" category="paragraph"><block ref="7298950e09abf5a29938d42a442acced" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f2d7e7792f60fc56fc833ac06d43ff03" category="list-text">检查您的设置。选择*激活*以完成添加用户活动代理。</block>
   <block id="a5990ac92f36dcb99f016321efbfa2cd" category="list-text">确认用户活动代理已成功创建。在用户活动图块中，成功部署显示为“正在运行”。</block>
-  <block id="58dc71d80ac36fa12a160eef553b4dac" category="paragraph">成功创建用户活动代理后，返回**设置**菜单，然后在用户活动图块中选择**管理**。选择**用户活动代理**选项卡，然后选择用户活动代理以查看有关它的详细信息，包括数据收集器和用户目录连接器。</block>
   <block id="87890c9758b28588c6845cfcf6d19b17" category="section-title">添加数据收集器</block>
   <block id="cebc35dcf9d04a393d86d35a4e3cf6be" category="inline-xref-macro">添加检测策略</block>
   <block id="24590b7519b5649099545f7ef699e504" category="paragraph">当您启用具有可疑用户活动检测功能的勒索软件保护策略时，数据收集器会自动创建。有关更多信息，请参阅<block ref="c43e895be468efa96867f0ef21f97de4" category="inline-xref-macro-rx"></block> 。</block>
@@ -1842,7 +1814,6 @@
   <block id="79994c0d6b62d6854ba2d69416af2030" category="inline-image-macro">用户活动设置的屏幕截图</block>
   <block id="eb9abd0b9e77424befbbd0596585482d" category="paragraph"><block ref="eb9abd0b9e77424befbbd0596585482d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ae5063128f989ec31ec308b7dd0cb2ed" category="section-title">添加用户目录连接器</block>
-  <block id="0e27165c28d4f54b78e7e5ec47c83fc4" category="paragraph">要将用户 ID 映射到用户名，您必须创建用户目录连接器。</block>
   <block id="8348d8dcee9ea32e049e21c42a431b91" category="list-text">在勒索软件恢复中，转到*设置*。</block>
   <block id="9fcb0a7634f29d96ae98e37bbc76e1cd" category="list-text">在用户活动图块中，选择**管理**。</block>
   <block id="e70202c14c96f451fdcf2617844ea351" category="list-text">选择**用户目录连接器**选项卡，然后选择**添加**。</block>
@@ -2018,8 +1989,6 @@
   <block id="34691f87b892c333fe1b7a23452dcda6" category="paragraph">为了使勒索软件恢复能力提供有关可疑用户行为的警报，您必须配置用户活动代理。有关详细信息，请参阅 <block ref="f3d3e5726f7feb4b59ca728c906df758" category="inline-link-macro-rx"></block>。</block>
   <block id="793485138a653779a0c8cb91bf9fc979" category="list-text">选择准备演习类型。要从加密数据泄露中手动恢复，请选择**自定义恢复**。要从可疑用户活动中恢复，请选择**数据泄露**。</block>
   <block id="8e0b9d66ccd774ed98d0b31d0e6ed305" category="admonition">演练运行时，您无法编辑准备演练配置。您可以重置钻机以停止它并修改配置。</block>
-  <block id="4226ab30b4df5e39149316f15c13d274" category="list-text">自带许可证 (BYOL)，即您从NetApp销售代表处获得的NetApp许可证文件 (NLF)。您可以使用许可证序列号在控制台中激活 BYOL。</block>
-  <block id="18105991dc2815c0ab610717f615d548" category="admonition">如果您参加六个月的试用，您应该拥有 NLF 许可证。</block>
   <block id="4fa0264ac4080dbcb96449b3dd2eff57" category="paragraph">勒索软件恢复许可证不包括其他NetApp产品。但是，即使您没有单独的备份和恢复许可证，勒索软件恢复能力也可以与NetApp Backup and Recovery集成。</block>
   <block id="c785cc029c5e88f7796b29b4ff0e99e1" category="paragraph">了解设置勒索软件保护功能和保护工作负载所需遵循的高级步骤。</block>
   <block id="6ff0e20f052119502398978ae7712412" category="paragraph">按照每个步骤中的链接获取详细信息。</block>
@@ -2055,4 +2024,37 @@
   <block id="b5884d5e59b952624998be52e7a9fe97" category="list-text"><block ref="b5884d5e59b952624998be52e7a9fe97" category="inline-link-macro-rx"></block></block>
   <block id="52210acbff73a572a2ca89fb77371615" category="paragraph">在NetApp Ransomware Resilience中，您可以使用NetApp Data Classification来扫描和分类文件共享工作负载中的数据。对数据进行分类可以帮助您确定数据集是否包含个人身份信息 (PII)，这可能会增加安全风险。数据分类是NetApp Console的核心组件，无需额外付费即可使用。</block>
   <block id="4342c3c480135ea7c9398a3ba08357ec" category="sidebar">NetApp Ransomware Resilience可保护、检测并支持从本地和云存储中的勒索软件威胁中恢复应用程序工作负载和文件共享。勒索软件恢复能力可实现安全备份和恢复，帮助组织保护关键数据并维护 Oracle、MySQL、VM 数据存储、NAS 存储等的业务连续性。</block>
+  <block id="7b36da612c0e3a400f4daecc8016f21e" category="summary">确保您满足勒索软件恢复的许可要求，以保护您的系统和工作负载。</block>
+  <block id="785a67fbf7c46bd5774af376154df40a" category="paragraph">*许可证类型* 勒索软件恢复能力适用于以下许可证类型：</block>
+  <block id="5ef05167488611c5bd4ff0f410595ce4" category="list-text">30天免费试用</block>
+  <block id="e71ba6c3178fa6f6844891e615ad0570" category="list-text">通过 Amazon Web Services (AWS) Marketplace、Google Cloud Marketplace 或 Azure Marketplace 购买即用即付 (PAYGO) 订阅</block>
+  <block id="2f0583f3da64d216aa72116dc3460499" category="list-text">自带许可证 (BYOL)：您从NetApp销售代表处获得的NetApp许可证文件 (NLF)。您可以使用许可证序列号在控制台中激活 BYOL。</block>
+  <block id="16c0368d04c8f5c865d6c2e90734f733" category="paragraph">免费试用期结束或者许可证或订阅到期后，您仍然可以：</block>
+  <block id="99c8f1488beda59e11f21ed9f557f56e" category="list-text">查看工作负载和工作负载健康状况</block>
+  <block id="1975faa7cb5e0e460ae859ca96dbfd00" category="list-text">删除策略等资源</block>
+  <block id="f51b0d61321d5c9f169d1ee6403840fa" category="list-text">运行在试用期间或许可证下创建的所有计划操作</block>
+  <block id="3819161dec7fd89239516062a4cc56a3" category="section-title">试用 Ransomware Resilience 30 天免费试用版</block>
+  <block id="e20a7cd21fba7d540ffd7589c1c59928" category="paragraph">您可以免费试用 Ransomware Resilience 30 天。您必须是控制台组织管理员才能开始免费试用。</block>
+  <block id="85a5bc1275ab09d60eed9f7c3b4d429b" category="paragraph">试用期间不强制执行存储容量限制。</block>
+  <block id="ca78bf5eeed0245ff3d76d132c93b609" category="inline-link-macro">添加一个</block>
+  <block id="94c135a38d325e223714d1f313c8efec" category="list-text">如果您尚未为其他服务添加控制台代理，<block ref="f7f69135987ef22de86b03a4f14a7bc8" category="inline-link-macro-rx"></block> 。</block>
+  <block id="edbdd3e3e169cd712816f78b82e91c2e" category="list-text">在勒索软件恢复登陆页面中，选择*从发现工作负载开始*来发现您的工作负载。</block>
+  <block id="2866dfee0ffdf3a11a8323f6d53635f4" category="admonition">仅当您成功安装了控制台代理后，此选项才可用。</block>
+  <block id="933f33d572b754e91a336439049ae279" category="list-text">在添加许可证页面中，选择*输入序列号*，输入发送给您的电子邮件中包含的序列号，然后选择*添加许可证*。</block>
+  <block id="2515e2bcc68e80666fa8c369e88f71e5" category="paragraph">一条消息确认许可证已添加。</block>
+  <block id="fca5751a0529f9987d0699648a97be3a" category="list-text">如果控制台无法自动更新许可证，则需要手动上传许可证文件。</block>
+  <block id="f8541056d6bacae1a78fb5d2b68c67a8" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>开始使用勒索软件抵御能力</block>
+  <block id="43eec2eb3dba42398d66e0c2aa294ea2" category="paragraph">您必须配置用户活动代理并启用具有用户行为检测的保护策略才能查看用户级警报。启用用户行为检测后，*可疑用户*列会出现在警报仪表板中；未启用用户行为检测时则不会显示。要启用可疑用户检测，请参阅<block ref="da26800578b610b8b3390e49bb643377" category="inline-link-macro-rx"></block>。</block>
+  <block id="3c6a637355e70f686e34e6e7c966c200" category="admonition">如果您正在使用NetAppData Infrastructure Insights(DII) 工作负载安全，建议您使用相同的工作负载安全代理来实现勒索软件恢复。您不需要为勒索软件恢复能力部署单独的工作负载安全代理，但是，使用相同的工作负载安全代理需要勒索软件恢复能力控制台组织和 DII 存储工作负载安全租户之间建立配对关系。请联系您的客户代表以启用此配对。</block>
+  <block id="7a7f05bb105ddcf9c0d221e37f8a923c" category="list-text">要阻止您环境中的可疑用户，请选择该用户名下的“阻止”。</block>
+  <block id="bc8ffb69fb560086f529e0097158caad" category="admonition">如果您关闭警报，则无法更改其状态或撤消此更改。</block>
+  <block id="7149ff1e14f0a158752906babaa08dc3" category="list-text">对于该事件，选择下载图标以 CSV 格式下载受影响文件的列表。</block>
+  <block id="8c7f95ceb912c8aea11de028710caf47" category="paragraph">勒索软件弹性通过分析ONTAP中 FPolicy 生成的用户活动事件来检测可疑的用户活动。要收集用户活动数据，您需要部署一个或多个用户活动代理。该代理是可连接到租户上的设备的 Linux 服务器或 VM。</block>
+  <block id="fe1bb8cb54f03cf7a69c3e9568118b30" category="list-text">**数据收集器**从ONTAP收集用户活动数据。</block>
+  <block id="b6173a051353d59a4ee775fcef288441" category="list-text">**用户目录连接器**连接到您的目录以将用户 ID 映射到用户名。</block>
+  <block id="508899c1c018f291af4cb6a0423c426c" category="paragraph">*所需的控制台角色* 要激活可疑用户活动检测，您需要组织管理员角色。对于可疑用户活动的后续配置，您需要 Ransomware Resilience 用户行为管理员角色。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
+  <block id="53b036bcd07f4ebcfe2ec32a98556822" category="paragraph">要安装用户活动代理，您需要一个满足以下支持的操作系统和服务器要求的主机或虚拟机。</block>
+  <block id="d4a6e9b0b745b83f49163b25271ce445" category="list-text">**磁盘空间**：35GB 可用磁盘空间</block>
+  <block id="398de83ff8f318218f9eaedb05929ef0" category="paragraph">成功创建用户活动代理后，返回**设置**菜单，然后在用户活动图块中选择**管理**。选择**用户活动代理**选项卡，然后选择用户活动代理以查看有关它的详细信息，包括数据收集器和用户目录连接器。</block>
+  <block id="a83ea9a287c9fdd0689933a464055150" category="paragraph">要将用户 ID 映射到用户名，您必须创建用户目录连接器。</block>
 </blocks>
