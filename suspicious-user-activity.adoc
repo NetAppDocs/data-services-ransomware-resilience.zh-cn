@@ -121,7 +121,7 @@ image:user-activity-agent.png["添加活动代理界面截图。"]
 
 === 添加数据收集器
 
-当您启用具有可疑用户活动检测功能的勒索软件保护策略时，数据收集器会自动创建。有关更多信息，请参阅xref:rp-use-protect.adoc#add-a-detection-policy-to workloads-with-existing-backup-or-snapshot-policies [添加检测策略] 。
+当您启用具有可疑用户活动检测功能的勒索软件保护策略时，数据收集器会自动创建。有关详细信息，请参阅 xref:rp-use-protect.adoc#add-a-detection-policy-to-workloads-with-existing-snapshot-and-backup-policies-managed-by-snapcenter-or-backup-and-recovery[添加检测策略]。
 
 您可以查看数据收集器的详细信息。从“设置”中，选择“用户活动”图块中的“**管理**”。选择**数据收集器**选项卡，然后选择数据收集器以查看其详细信息或暂停它。
 

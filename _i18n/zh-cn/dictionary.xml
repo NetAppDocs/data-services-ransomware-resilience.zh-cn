@@ -408,70 +408,27 @@
   <block id="815a60d80ffbc32f6db251b3410900b2" category="doc">关于NetApp Ransomware Resilience的常见问题解答</block>
   <block id="0257967210bdc685c6f54c2fd5c5300f" category="paragraph">如果您只是想快速找到有关NetApp Ransomware Resilience的问题的答案，那么此常见问题解答可以提供帮助。</block>
   <block id="ea355214fd4bc7c57f471bd92918879b" category="section-title">部署</block>
-  <block id="cb0129f1fafffbb7c3b81251b1f8981d" category="paragraph">*您需要许可证才能使用 Ransomware Resilience 吗？*</block>
   <block id="924cc6eaf82618251de609e2689ed733" category="paragraph">您可以使用以下许可证类型：</block>
   <block id="63f202b7fcd80e9277a9e585cd35c7ae" category="list-text">注册即可获得 30 天免费试用。</block>
   <block id="25cd0a0fbd2aa40b235a568f673c7397" category="list-text">通过 Amazon Web Services (AWS) Marketplace、Google Cloud Marketplace 和 Microsoft Azure Marketplace 购买NetApp Intelligent Services和勒索软件恢复的即用即付 (PAYGO) 订阅。</block>
-  <block id="6134eee99c9be037ae9b3808fe88880a" category="list-text">自带许可证 (BYOL)，即您从NetApp销售代表处获得的NetApp许可证文件 (NLF)。您可以使用许可证序列号在控制台的许可证和订阅部分激活 BYOL。</block>
-  <block id="37fdcb07fafc5cb3fb2007234b042dd3" category="paragraph">*如何启用勒索软件防御功能？*勒索软件恢复不需要任何支持。您可以从NetApp Console访问勒索软件恢复功能。</block>
-  <block id="6b444f11ce99acb8b718f4e70af43d99" category="paragraph">要开始使用，您需要注册或联系您的NetApp销售代表来试用此服务。然后，当您使用控制台代理时，它将包含适当的勒索软件恢复功能。</block>
-  <block id="6005f026524d06181f334b21b2065ed2" category="paragraph">要开始使用勒索软件恢复功能，请从其初始登录页面选择“开始发现工作负载”。</block>
-  <block id="1e7767a5a92c1fe8661fb5ca93eb9f1d" category="paragraph">*勒索软件恢复功能是否在标准、受限和私人模式下可用？*目前，勒索软件恢复仅在标准模式下可用。敬请关注。</block>
   <block id="2a9ab4f690bade887dade42f4a0f412b" category="inline-link">NetApp Console部署模式</block>
   <block id="4cebc30733ea9d8edb38766c837308c0" category="paragraph">有关所有NetApp数据服务中这些模式的说明，请参阅<block ref="9b1c9f23ced4bc12396bbe50ae116f54" category="inline-link-rx"></block>。</block>
   <block id="bf733d8a933c1601697f364223fc7ecb" category="section-title">使用权</block>
   <block id="0389f2f5f1721e770a9d2ab683ca7977" category="inline-link"><block ref="0389f2f5f1721e770a9d2ab683ca7977" category="inline-link-rx"></block></block>
-  <block id="80823d272731427177a1b6fda024e288" category="paragraph">*勒索软件防御 URL 是什么？*在浏览器中输入<block ref="cff0023c0123fb15c39d2328d8b2d3fc" category="inline-link-rx"></block>访问控制台。</block>
   <block id="2152a2d176eba534e81c7e1450f6b5e0" category="inline-link">了解所有服务的控制台访问角色</block>
-  <block id="43b88b2af5b013930329bb44fd8975ac" category="paragraph">*如何处理访问权限？*<block ref="22d772bd7efbc9b05290308cad908f86" category="inline-link-rx"></block> 。</block>
-  <block id="b42592f8261e9ff60424591d38d3eb26" category="paragraph">*什么设备分辨率最好？*勒索软件恢复的推荐设备分辨率为 1920x1080 或更高。</block>
-  <block id="dd1300bf782048f9b65c3f6db4f6c668" category="paragraph">*我应该使用哪种浏览器？*任何现代浏览器。</block>
-  <block id="cf49c80b52a1cb095928d387f3ae47ed" category="section-title">与其他服务的交互</block>
-  <block id="fa964927a115b3a4a0ecde9a0eac936f" category="paragraph">*勒索软件恢复能力是否能够识别NetApp ONTAP中的保护设置？*是的，Ransomware Resilience 发现了在ONTAP中设置的快照计划。</block>
-  <block id="3e2565e084fd6ef959237e44e34146ce" category="paragraph">*如果您使用勒索软件恢复功能设置策略，那么将来是否只需在此服务中进行更改？*我们建议您根据勒索软件恢复能力进行策略更改。</block>
-  <block id="0f70a3df9be1b1b0af455e1edf9ee1d0" category="paragraph">*勒索软件恢复能力如何与NetApp Backup and Recovery和SnapCenter交互？*</block>
-  <block id="2def3dbbcbca03329c07a24a150d6a11" category="paragraph">Ransomware Resilience 使用以下产品和服务：</block>
-  <block id="2eccf86ee34c351995d1ae7dc6a71de4" category="list-text">备份和恢复，用于发现和设置文件共享工作负载的快照和备份策略</block>
-  <block id="4e26d5c484cb7e3f966ce2c3cea227da" category="list-text">SnapCenter或SnapCenter for VMware 用于发现和设置应用程序和 VM 工作负载的快照和备份策略。</block>
-  <block id="bad28296f01c7dabeb7a89cfa504692e" category="paragraph">此外，Ransomware Resilience 使用备份和恢复以及SnapCenter / SnapCenter for VMware 来执行文件和工作负载一致的恢复。</block>
   <block id="35084d885dea7b061e6894c1cf3036d9" category="section-title">工作负载</block>
-  <block id="51a55206b7a52955b0a31059706b3eb5" category="paragraph">*工作量由什么组成？*工作负载是一个应用程序、一个虚拟机或一个文件共享。工作负载包括单个应用程序实例使用的所有卷。例如，部署在 ora3.host.com 上的 Oracle DB 实例可以分别使用 vol1 和 vol2 来存储其数据和日志。这些卷共同构成了 Oracle DB 实例的特定实例的工作负载。</block>
-  <block id="f5b5d0859398e79404070635aa3f0ebd" category="paragraph">*勒索软件恢复能力如何确定工作负载数据的优先级？*数据优先级由所做的快照副本和计划的备份决定。</block>
-  <block id="19c94ea5372746331c5809f6307cfa3d" category="paragraph">工作负载优先级（关键、标准、重要）由已应用于与工作负载关联的每个卷的快照频率决定。</block>
   <block id="1f60c8769abcb4f9589fae4ad1831a19" category="inline-link-macro">了解工作负载优先级或重要性</block>
   <block id="581ad716354744440ad65ff13c86ca1e" category="paragraph"><block ref="1ba24f606c1b9584a2674b4003d5830a" category="inline-link-macro-rx"></block> 。</block>
-  <block id="dcc68bac5b4cbd88d6084aeb1315bd98" category="paragraph">*勒索软件恢复能力支持哪些工作负载？*</block>
   <block id="5129a73689c2f34916e88aab7ca20a5a" category="paragraph">勒索软件恢复可以识别以下工作负载：Oracle、MySQL、文件共享、块存储、虚拟机和虚拟机数据存储。</block>
-  <block id="221fcc74dc06fa279578cfddaf08df04" category="paragraph">此外，如果您使用SnapCenter或SnapCenter for VMware，这些产品支持的所有工作负载也会在 Ransomware Resilience 中识别，并且 Ransomware Resilience 可以以工作负载一致的方式保护和恢复这些工作负载。</block>
-  <block id="f0cc4b9fad963de99a7aa42aabde7243" category="paragraph">*如何将数据与工作负载关联起来？*</block>
-  <block id="b66d4b85a97b03ce11afc3e13271a64c" category="paragraph">勒索软件恢复能力通过以下方式将数据与工作负载关联起来：</block>
-  <block id="b7caedda42a8032607f0bdea3bdda828" category="list-text">勒索软件恢复能力发现卷和文件扩展名，并将它们与适当的工作负载关联起来。</block>
-  <block id="dddb14f9c1684eb1da7bfaf02ecccfc5" category="list-text">此外，如果您拥有SnapCenter或SnapCenter for VMware 并在备份和恢复中配置了工作负载，那么 Ransomware Resilience 会发现由SnapCenter和SnapCenter for VMware 管理的工作负载及其关联卷。</block>
-  <block id="704c059095a613e0fdfef4025bdbd769" category="paragraph">*什么是“受保护的”工作负载？*在勒索软件恢复中，当启用主要检测策略时，工作负载将显示“受保护”状态。目前，这意味着 ARP 在与工作负载相关的所有卷上都启用。</block>
-  <block id="29e0e28df2606fb09f029badd7eb5d51" category="paragraph">*什么是“有风险”的工作负载？*如果工作负载没有启用主要检测策略，那么即使启用了备份和快照策略，它仍然“处于危险之中”。</block>
-  <block id="d392c29669bb00e39e150b48a9658870" category="paragraph">*已添加新卷，但尚未出现* 如果您向环境中添加了新卷，请再次启动发现并应用保护策略来保护该新卷。</block>
   <block id="5d1184f76781faaf229c6b885314bcd3" category="section-title">保护策略</block>
-  <block id="dbd80c61ccff8e3e577b2ef8220fb811" category="paragraph">*勒索软件恢复勒索软件策略是否与其他类型的工作负载策略共存？*目前，备份和恢复（云备份）支持每个卷一个备份策略。因此，备份和恢复以及勒索软件恢复共享备份策略。</block>
   <block id="41e8b20d4f70cd7ff369ff2c808730ee" category="paragraph">快照副本不受限制，可以从每个服务单独添加。</block>
-  <block id="077a87403fd7fb9db61f9c9df6d2f4cf" category="paragraph">*勒索软件防护策略需要哪些政策？*</block>
-  <block id="2c79851b67a6a4c6f49e977c30c7e88e" category="paragraph">勒索软件防护策略需要以下政策：</block>
   <block id="43963265d27ac7360fe50e98bde4f748" category="list-text">勒索软件检测政策</block>
   <block id="4c0abf2d4c54820b8d33061abaf30759" category="list-text">Snapshot 策略</block>
   <block id="f85025bdaaee4c51a3c8a6a750214305" category="paragraph">勒索软件抵御策略中不需要备份策略。</block>
-  <block id="b342166a9b8f67f3291cbd5c3be17a95" category="paragraph">*勒索软件恢复能力是否能够识别NetApp ONTAP中的保护设置？*</block>
-  <block id="0b8f4ac179743fa67fd446020791e228" category="paragraph">是的，勒索软件恢复能力可以发现在ONTAP中设置的快照计划，以及是否在发现的工作负载的所有卷上启用了 ARP 和 FPolicy。您最初在仪表板中看到的信息是从其他NetApp解决方案和产品汇总而来的。</block>
-  <block id="b7b050fa128664d7aabf7c2593a7818b" category="paragraph">*勒索软件恢复能力是否了解备份和恢复以及SnapCenter中已经制定的策略？*</block>
   <block id="0fb2074acd01e003dfb96452aab97fe5" category="paragraph">是的，如果您在备份和恢复或SnapCenter中管理工作负载，则这些产品管理的策略将被纳入勒索软件恢复能力。</block>
-  <block id="9a1518cb6b0dbc9aad905db36529b0ea" category="paragraph">*您可以修改从NetApp Backup and Recovery和/或SnapCenter继承的策略吗？*</block>
   <block id="554f865a5796d8129c776f0577cf3139" category="paragraph">不可以，您无法从 Ransomware Resilience 修改由备份和恢复或SnapCenter管理的策略。您可以在“备份和恢复”或SnapCenter中管理对这些策略的任何更改。</block>
-  <block id="13b5800e8dcac558b34717906c43747e" category="paragraph">*如果ONTAP中存在策略（已在系统管理器中启用，例如 ARP、FPolicy 和快照），那么这些策略是否会在勒索软件恢复能力中发生变化？*</block>
   <block id="830a27164c48c0901dff35b6935793d3" category="paragraph">不会。勒索软件恢复不会修改ONTAP中的任何现有检测策略（ARP、FPolicy 设置）。</block>
-  <block id="63f0209c56080b4ba6b619121a3574ac" category="paragraph">*注册勒索软件恢复功能后，如果在备份和恢复或SnapCenter中添加新策略会发生什么情况？*</block>
-  <block id="e93c462076339dc2496183a2da9bd4dd" category="paragraph">勒索软件恢复能力可识别在备份和恢复或SnapCenter中创建的任何新策略。</block>
-  <block id="518f0b9f41f0f038466364ab7781803f" category="paragraph">*您可以从ONTAP更改策略吗？*</block>
   <block id="e2ec1056e393e1702e9916034506b224" category="paragraph">是的，您可以在 Ransomware Resilience 中从ONTAP更改策略。您还可以在勒索软件恢复中创建新策略并将其应用于工作负载。此操作将用在勒索软件恢复中创建的策略替换现有的ONTAP策略。</block>
-  <block id="1f25ef09ab6fce0b56c79cd4246453be" category="paragraph">*您可以禁用策略吗？*</block>
-  <block id="c90f429b2fc82db14813e44ccf0893a7" category="paragraph">您可以使用系统管理器 UI、API 或 CLI 在检测策略中禁用 ARP。</block>
   <block id="389b413db649d1d5d2854fd3e4faf2e6" category="paragraph">您可以通过应用不包含 FPolicy 和备份策略的其他策略来禁用它们。</block>
   <block id="8c4e51cf0af97fc084c32c7697ac400c" category="doc">设置NetApp Ransomware Resilience的许可</block>
   <block id="9472cf1130b90417862c1aa4710f22a7" category="paragraph">借助NetApp Ransomware Resilience，您可以使用不同的许可计划。</block>
@@ -1809,7 +1766,6 @@
   <block id="a5990ac92f36dcb99f016321efbfa2cd" category="list-text">确认用户活动代理已成功创建。在用户活动图块中，成功部署显示为“正在运行”。</block>
   <block id="87890c9758b28588c6845cfcf6d19b17" category="section-title">添加数据收集器</block>
   <block id="cebc35dcf9d04a393d86d35a4e3cf6be" category="inline-xref-macro">添加检测策略</block>
-  <block id="24590b7519b5649099545f7ef699e504" category="paragraph">当您启用具有可疑用户活动检测功能的勒索软件保护策略时，数据收集器会自动创建。有关更多信息，请参阅<block ref="c43e895be468efa96867f0ef21f97de4" category="inline-xref-macro-rx"></block> 。</block>
   <block id="723cff7a2b53371ffdffcdc65a370014" category="paragraph">您可以查看数据收集器的详细信息。从“设置”中，选择“用户活动”图块中的“**管理**”。选择**数据收集器**选项卡，然后选择数据收集器以查看其详细信息或暂停它。</block>
   <block id="79994c0d6b62d6854ba2d69416af2030" category="inline-image-macro">用户活动设置的屏幕截图</block>
   <block id="eb9abd0b9e77424befbbd0596585482d" category="paragraph"><block ref="eb9abd0b9e77424befbbd0596585482d" category="inline-image-macro-rx" type="image"></block></block>
@@ -2021,7 +1977,6 @@
   <block id="1d1758803ee1f7559973be04f120a0f7" category="inline-link-macro">向 SIEM 发送警报</block>
   <block id="81eb2602258c7f155c33ae884e447609" category="list-text"><block ref="81eb2602258c7f155c33ae884e447609" category="inline-link-macro-rx"></block></block>
   <block id="660ecf2355e5ff3c5a22d2e4a48594e8" category="inline-link-macro">下载警报、保护、准备演习、恢复或摘要报告</block>
-  <block id="b5884d5e59b952624998be52e7a9fe97" category="list-text"><block ref="b5884d5e59b952624998be52e7a9fe97" category="inline-link-macro-rx"></block></block>
   <block id="52210acbff73a572a2ca89fb77371615" category="paragraph">在NetApp Ransomware Resilience中，您可以使用NetApp Data Classification来扫描和分类文件共享工作负载中的数据。对数据进行分类可以帮助您确定数据集是否包含个人身份信息 (PII)，这可能会增加安全风险。数据分类是NetApp Console的核心组件，无需额外付费即可使用。</block>
   <block id="4342c3c480135ea7c9398a3ba08357ec" category="sidebar">NetApp Ransomware Resilience可保护、检测并支持从本地和云存储中的勒索软件威胁中恢复应用程序工作负载和文件共享。勒索软件恢复能力可实现安全备份和恢复，帮助组织保护关键数据并维护 Oracle、MySQL、VM 数据存储、NAS 存储等的业务连续性。</block>
   <block id="7b36da612c0e3a400f4daecc8016f21e" category="summary">确保您满足勒索软件恢复的许可要求，以保护您的系统和工作负载。</block>
@@ -2057,4 +2012,67 @@
   <block id="d4a6e9b0b745b83f49163b25271ce445" category="list-text">**磁盘空间**：35GB 可用磁盘空间</block>
   <block id="398de83ff8f318218f9eaedb05929ef0" category="paragraph">成功创建用户活动代理后，返回**设置**菜单，然后在用户活动图块中选择**管理**。选择**用户活动代理**选项卡，然后选择用户活动代理以查看有关它的详细信息，包括数据收集器和用户目录连接器。</block>
   <block id="a83ea9a287c9fdd0689933a464055150" category="paragraph">要将用户 ID 映射到用户名，您必须创建用户目录连接器。</block>
+  <block id="89bd0177a422e5d81fce2f8f82dac3f6" category="paragraph-title">使用勒索软件恢复功能需要许可证吗？</block>
+  <block id="bc43d832ca9bfb061aff20db6dea53d8" category="list-text">自带许可证 (BYOL)，即您从NetApp销售代表处获得的NetApp许可证文件 (NLF)。您可以使用许可证序列号在控制台的“Licenses and subscriptions”部分激活 BYOL。</block>
+  <block id="d09cd8b04dca387b71375d21530453e3" category="paragraph-title">如何启用勒索软件防御能力？</block>
+  <block id="f5886d019e91dd87e408bbca30bba7f6" category="inline-link-macro">访问角色</block>
+  <block id="5812b71fbc1facdd617ae2a2f05d7979" category="inline-link-macro">发现工作负载</block>
+  <block id="ee81d9a989a55cdf636f1aa60d0323cb" category="paragraph">您可以从NetApp Console访问勒索软件恢复功能。请确保您已 <block ref="3897d51cbf4670a21d5ecfb81f3b7db9" category="inline-link-macro-rx"></block> 和 <block ref="7cc100a4e35b42109d34b0d1c6d432c9" category="inline-link-macro-rx"></block>。如果您已成功配置控制台代理，则可以执行以下操作： <block ref="f19bbe7d2dbc45b6f2a3e4d9d3615c0f" category="inline-link-macro-rx"></block>。</block>
+  <block id="b52b33be37704fe2bbec466dbd24ebc8" category="inline-link-macro">勒索软件抵御能力快速入门指南</block>
+  <block id="f01a6d88778bc2eafdde382631a72a38" category="paragraph">有关详细信息，请参阅<block ref="0653f1304a9b5b3dbbff99318c3e6ddb" category="inline-link-macro-rx"></block>和<block ref="05ba41c524ffb406f6310a0b3bdf1649" category="inline-link-macro-rx"></block>。</block>
+  <block id="09b4e659b5042a8ea914da8856be1a0c" category="paragraph-title">勒索软件防护是否提供标准模式、受限模式和私有模式？</block>
+  <block id="f69439605d790261f07bba305c30c4bf" category="paragraph">勒索软件恢复功能目前仅在标准模式下可用。</block>
+  <block id="e7c15b40cec31e1da255e2ed480ffea9" category="paragraph-title">勒索软件恢复能力网址是什么？</block>
+  <block id="655faae89c47b272363e4dd68e0417ea" category="paragraph">在浏览器中输入<block ref="cff0023c0123fb15c39d2328d8b2d3fc" category="inline-link-rx"></block> 访问控制台。</block>
+  <block id="f2cea79238e257b8fd4bb3c77870b474" category="paragraph-title">访问权限是如何管理的？</block>
+  <block id="0649d0e75325d7c69a6dba1dd694decb" category="inline-link-macro">专用访问角色</block>
+  <block id="42f90fce041123d26e3233a9c42bd29a" category="paragraph"><block ref="22d772bd7efbc9b05290308cad908f86" category="inline-link-rx"></block>。勒索软件恢复能力也具备 <block ref="e01bb4c7154e7243ac24f11836a81f4a" category="inline-link-macro-rx"></block>。</block>
+  <block id="ffa483e3ee75d99e2612af924d5e9d5b" category="paragraph-title">哪种设备分辨率最佳？</block>
+  <block id="665ce6ac2e4eb6fccbf463bf936bec04" category="paragraph">勒索软件恢复的推荐设备分辨率为 1920x1080 或更高。</block>
+  <block id="654c205bcf87cc0cd36f606d947ec009" category="paragraph-title">我应该使用哪个浏览器？</block>
+  <block id="109ebdb84b226b323abc2b47b353e5f4" category="paragraph">您可以使用任何现代网络浏览器访问NetApp Console。</block>
+  <block id="67a915151759ecc737f698391f7cfd08" category="section-title">互操作性</block>
+  <block id="93b28face605282843b25b8f2fa64a10" category="paragraph-title">Ransomware Resilience 是否了解NetApp ONTAP中所做的保护设置？</block>
+  <block id="10c4fe0b6e00d5560df8e602d85a5bd1" category="paragraph">是的，Ransomware Resilience 发现了在ONTAP中设置的快照计划。</block>
+  <block id="8ed72bdbbdc0df9146a0777651178cbf" category="paragraph-title">勒索软件恢复功能如何与NetApp Backup and Recovery和SnapCenter交互？</block>
+  <block id="8f3fc6dee049aeb65422cea50c997060" category="paragraph">勒索软件恢复功能与备份和恢复功能协同工作，以发现并设置文件共享工作负载的快照和备份策略。</block>
+  <block id="41c755bb70844acc0dfa6ef656a1458f" category="paragraph">勒索软件恢复能力与SnapCenter或SnapCenter for VMware 配合使用，可以发现并设置应用程序和虚拟机工作负载的快照和备份策略。</block>
+  <block id="4aab1b1684152d34047e64fa09c64149" category="paragraph">勒索软件恢复功能还可以与备份和恢复以及SnapCenter （包括 VMware 版SnapCenter ）配合使用，以执行文件和工作负载一致性恢复。</block>
+  <block id="282764b1530b129720ca01a123b6f6ce" category="paragraph-title">在勒索软件防御的语境下，什么是工作负载？</block>
+  <block id="10c8ec686acd93b9da39b3efea09bc01" category="paragraph">工作负载是一个应用程序、一个虚拟机或一个文件共享。工作负载包括单个应用程序实例使用的所有卷。</block>
+  <block id="f7e19062cc2eaeb5901ce8337d69e539" category="paragraph">例如，考虑部署在 ora3.host.com 上的 Oracle 数据库。<block ref="2b0d59c7031769e80c8e5118b6ec7694" prefix=" " category="inline-code"></block> 包含数据和<block ref="a110e8ed91b0de267a5728888b1f4ed1" prefix=" " category="inline-code"></block> 包含日志。这两个卷构成了该 Oracle 数据库实例的工作负载。</block>
+  <block id="f4d0f54d022c7715505fb12db9dfaab4" category="paragraph-title">勒索软件恢复能力如何确定工作负载数据的优先级？</block>
+  <block id="6f240a888a055fa4629059d3d5328220" category="paragraph">工作负载优先级（关键、标准、重要）由已应用于与工作负载关联的每个卷的快照频率和计划备份决定。</block>
+  <block id="79444a9daf1e4ef34a492d7a4ccc93fd" category="paragraph-title">勒索软件恢复能力支持哪些工作负载？</block>
+  <block id="8ff55251ff506b50711d75f8d5138385" category="paragraph">如果您正在使用SnapCenter或SnapCenter for VMware，则这些产品支持的所有工作负载也会在勒索软件恢复功能中得到识别。勒索软件恢复能力可以以与工作负载一致的方式保护和恢复SnapCenter和SnapCenter工作负载。</block>
+  <block id="65a602dc25a2da85e0a1dfb15824b10b" category="paragraph-title">如何将数据与工作负载关联起来？</block>
+  <block id="e2201c0935bcdfd14ed840897f30bcdc" category="paragraph">勒索软件恢复能力会发现卷和文件扩展名，并将它们与相应的工作负载关联起来。</block>
+  <block id="bbcd2d0377872826c23c1bf4bcd98e47" category="paragraph">如果您拥有SnapCenter或SnapCenter for VMware，并且在备份和恢复中配置了工作负载，那么勒索软件恢复功能将发现由SnapCenter和SnapCenter for VMware 管理的工作负载及其关联的卷。</block>
+  <block id="f7d49d845f0e8fd37a070e797785ddd2" category="paragraph-title">什么是受保护的工作负载？</block>
+  <block id="7259cd6e0f46eebf9079f25f465a8c63" category="inline-link-macro">自主勒索软件防护 (ARP)</block>
+  <block id="7fd0dced59717f1ce225e83c1eba7879" category="paragraph">在勒索软件恢复能力中，当工作负载启用了主要检测策略时，其状态将显示为“*受保护*”，这意味着 <block ref="f47b2a56bf7e72f952a180e4f688a755" category="inline-link-macro-rx"></block> 已在与工作负载相关的所有卷上启用。</block>
+  <block id="a7728d009ece45c9ca2552ef1b9e83b5" category="paragraph-title">什么是“高风险”工作量？</block>
+  <block id="feb245a8019757951a6c89440c58dbd0" category="inline-link-macro">检测策略</block>
+  <block id="073899b4550e086de0057b494471a8d5" category="paragraph">如果工作负载未启用主检测策略，即使启用了备份和快照策略，也会被标记为“有风险”。为了防止勒索软件攻击，您应该启用…… <block ref="ffe6233ab872c39a610f87efd1e90b37" category="inline-link-macro-rx"></block>。</block>
+  <block id="77f988a37bbdd1881b090c55f9b830f1" category="paragraph-title">我添加了一个新卷，但它还没有显示出来。我应该怎么办？</block>
+  <block id="2173d44554906f5f04303f8e155b7e0d" category="inline-link-macro">采取保护策略以保护新增容量</block>
+  <block id="b79a0001646a8a21be92374c30d89073" category="paragraph">如果您向环境中添加了新卷，请重新启动工作负载发现。在发现体积之后， <block ref="11d93ee27365ded5cd7b6061cdb7f916" category="inline-link-macro-rx"></block>。</block>
+  <block id="9bc7240d2271708be5ab02f9ffb90507" category="paragraph-title">勒索软件恢复策略是否可以与其他类型的工作负载策略共存？</block>
+  <block id="1742edc0bb171824cfcf035b24ca9d60" category="paragraph">目前，备份和恢复（云备份）支持每个卷一个备份策略。如果您使用备份和恢复功能配置备份保护，它将与勒索软件恢复功能共享备份策略。</block>
+  <block id="8a31321cca2cf2857546a9d721eb4f00" category="paragraph-title">勒索软件防护策略需要哪些策略？</block>
+  <block id="46ef9b90faaa2faa4780eb4ab9679d71" category="inline-link-macro">勒索软件防护策略</block>
+  <block id="eb736865032ae478d0b6e5b412448020" category="paragraph">一个 <block ref="5f4e714854e79a1737929ec78e18ea2b" category="inline-link-macro-rx"></block> 需要：</block>
+  <block id="03e55fcba3b01c6e3fb1919d269654c0" category="list-text">勒索软件检测策略，以及</block>
+  <block id="3f6fda029d0c02be255dfd8176381b0b" category="list-text">快照策略</block>
+  <block id="7b1ffd6b9cf684b80d475d03b8d6e7ee" category="paragraph">是的，Ransomware Resilience 发现了在ONTAP中设置的快照计划。它还会发现已发现的工作负载中的所有卷是否启用了 ARP 和 FPolicy。您在勒索软件恢复仪表板中看到的信息来自其他NetApp解决方案和产品。</block>
+  <block id="b47f32a472405e3fa06c5fd8b5ce74b9" category="paragraph-title">勒索软件恢复功能是否了解备份和恢复以及SnapCenter中已制定的策略？</block>
+  <block id="f9368916b722dbf65864396e08a2f81a" category="paragraph-title">能否修改从NetApp Backup and Recovery和/或SnapCenter继承的策略？</block>
+  <block id="1b574bfc0313243d6641e2a840917179" category="paragraph-title">如果ONTAP中存在策略（例如 ARP、FPolicy 和快照），这些策略是否会在勒索软件恢复功能中更改？</block>
+  <block id="4f169f5ccc5598c9065c573b18437be7" category="paragraph-title">注册勒索软件恢复功能后，如果在备份和恢复或SnapCenter中添加新策略会发生什么情况？</block>
+  <block id="1481f2014d70d8be4eaa9d42a2ac7e81" category="paragraph">勒索软件恢复能力可以识别备份和恢复或SnapCenter中新创建的策略和策略更改。</block>
+  <block id="9e4bf76e69b44d54bda6324e7a451d29" category="paragraph-title">能否通过ONTAP更改策略？</block>
+  <block id="8eb907afc706971993c8bde086302ff0" category="paragraph-title">可以在ONTAP中禁用策略吗？</block>
+  <block id="7986143a8e8e26aa1cd4fe5e42208a2b" category="paragraph">您可以使用ONTAP中的系统管理器 UI、API 或 CLI 在检测策略中禁用 ARP。</block>
+  <block id="6d1a51f08d9ca2d81528c19a5e4f2463" category="list-text"><block ref="6d1a51f08d9ca2d81528c19a5e4f2463" category="inline-link-macro-rx"></block></block>
+  <block id="4db76a2031d1695a2f0a985a14a43ffa" category="paragraph">当您启用具有可疑用户活动检测功能的勒索软件保护策略时，数据收集器会自动创建。有关详细信息，请参阅 <block ref="eadf066433fbca34180c794e1f4838ae" category="inline-xref-macro-rx"></block>。</block>
 </blocks>
