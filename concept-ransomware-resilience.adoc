@@ -169,7 +169,9 @@ image:diagram-rp-architecture-preview3.png["勒索软件抵御能力架构图"]
 
 勒索软件恢复支持以下备份目标、系统和数据源：
 
-*支持的备份目标*
+
+
+=== 支持的备份目标
 
 * 亚马逊网络服务（AWS）S3
 * Google Cloud Platform
@@ -177,7 +179,9 @@ image:diagram-rp-architecture-preview3.png["勒索软件抵御能力架构图"]
 * NetAppStorageGRID
 
 
-*支持的系统*
+
+
+=== 支持的系统
 
 * 本地ONTAP NAS（使用 NFS 和 CIFS 协议），采用ONTAP版本 9.11.1 及更高版本
 * 本地ONTAP SAN（使用 FC、iSCSI 和 NVMe 协议），采用ONTAP版本 9.17.1 及更高版本
@@ -186,16 +190,14 @@ image:diagram-rp-architecture-preview3.png["勒索软件抵御能力架构图"]
 * 适用于 Microsoft Azure 的Cloud Volumes ONTAP 9.12.1 或更高版本（使用 NFS 和 CIFS 协议）
 * 适用于 AWS、Google Cloud Platform 和 Microsoft Azure 的Cloud Volumes ONTAP 9.17.1 或更高版本（使用 FC、iSCSI 和 NVMe 协议）
 * Amazon FSx for NetApp ONTAP，使用自主勒索软件防护（ARP 而非 ARP/AI）
-+
-
-NOTE: ARP/AI 需要ONTAP 9.16 或更高版本。
 
 
 
+NOTE: 在ONTAP中使用 ARP/AI 需要ONTAP 9.16 或更高版本。 + ONTAP不为FlexGroup卷、挂载点卷、挂载路径卷、脱机卷和数据保护 (DP) 卷提供勒索软件防护支持。请务必查看link:https://docs.netapp.com/us-en/ontap/anti-ransomware/use-cases-restrictions-concept.html["ONTAP中受支持和不受支持的配置"^]。
 
-NOTE: 不支持以下内容： FlexGroup卷、早于 9.11.1 的ONTAP版本、挂载点卷、挂载路径卷、离线卷和数据保护 (DP) 卷。
 
-*支持的工作负载数据源*
+
+=== 支持的工作负载数据源
 
 勒索软件恢复能力可保护主数据卷上的以下基于应用程序的工作负载：
 
@@ -203,7 +205,6 @@ NOTE: 不支持以下内容： FlexGroup卷、早于 9.11.1 的ONTAP版本、挂
 * 块存储
 * VMware 数据存储区
 * 数据库（MySQL 和 Oracle）
-* 更多内容即将推出
 
 
 此外，如果您使用SnapCenter或SnapCenter for VMware，则这些产品支持的所有工作负载也会在 Ransomware Resilience 中得到识别。勒索软件恢复能力可以以工作负载一致的方式保护和恢复这些内容。

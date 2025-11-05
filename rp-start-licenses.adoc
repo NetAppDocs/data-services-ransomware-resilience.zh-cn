@@ -16,7 +16,11 @@ summary: 确保您满足勒索软件恢复的许可要求，以保护您的系�
 
 要执行此任务，您需要组织管理员、文件夹或项目管理员角色。 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解控制台访问角色"^] 。
 
-*许可证类型* 勒索软件恢复能力适用于以下许可证类型：
+
+
+== 许可证类型
+
+勒索软件防护功能提供以下几种许可类型：
 
 * 30天免费试用
 * 通过 Amazon Web Services (AWS) Marketplace、Google Cloud Marketplace 或 Azure Marketplace 购买即用即付 (PAYGO) 订阅

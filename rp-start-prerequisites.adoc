@@ -12,58 +12,72 @@ summary: 通过验证对您的环境、网络访问、登录和 Web 浏览器的
 
 
 [role="lead"]
-通过验证您的操作环境、登录、网络访问和 Web 浏览器的准备情况，开始使用NetApp Ransomware Resilience。
+首先验证您的操作环境、网络访问和 Web 浏览器是否准备就绪，即可开始使用NetApp Ransomware Resilience。
 
-要使用勒索软件恢复能力，您需要满足以下先决条件。
+要使用勒索软件恢复功能，请确保满足先决条件。
 
 
 
-== 在NetApp Console中
+== 支持的系统
+
+请确保您使用的是受支持的系统：
+
+* 本地ONTAP NAS（使用 NFS 和 CIFS 协议），采用ONTAP版本 9.11.1 及更高版本
+* 本地ONTAP SAN（使用 FC、iSCSI 和 NVMe 协议），采用ONTAP版本 9.17.1 及更高版本
+* 适用于 AWS 的Cloud Volumes ONTAP 9.11.1 或更高版本（使用 NFS 和 CIFS 协议）
+* 适用于 Google Cloud Platform 的Cloud Volumes ONTAP 9.11.1 或更高版本（使用 NFS 和 CIFS 协议）
+* 适用于 Microsoft Azure 的Cloud Volumes ONTAP 9.12.1 或更高版本（使用 NFS 和 CIFS 协议）
+* 适用于 AWS、Google Cloud Platform 和 Microsoft Azure 的Cloud Volumes ONTAP 9.17.1 或更高版本（使用 FC、iSCSI 和 NVMe 协议）
+* Amazon FSx for NetApp ONTAP，使用自主勒索软件防护（ARP 而非 ARP/AI）
+
+
+
+NOTE: 在ONTAP中使用 ARP/AI 需要ONTAP 9.16 或更高版本。 + ONTAP不为FlexGroup卷、挂载点卷、挂载路径卷、脱机卷和数据保护 (DP) 卷提供勒索软件防护支持。请务必查看link:https://docs.netapp.com/us-en/ontap/anti-ransomware/use-cases-restrictions-concept.html["ONTAP中受支持和不受支持的配置"^]。
+
+
+
+== NetApp Console要求
+
+您的NetApp Console配置需要：
 
 * 具有组织管理员权限的NetApp Console用户帐户，用于发现资源。
-* 一个控制台组织，其中至少有一个活动的控制台代理连接到本地ONTAP集群或者 AWS 或 Azure 中的Cloud Volumes ONTAP 。
-* 控制台代理必须具有 `cloudmanager-ransomware-protection`容器处于活动状态。
-* 至少一个具有NetApp本地ONTAP集群或 AWS 或 Azure 中的Cloud Volumes ONTAP 的控制台系统。勒索软件恢复支持 NAS（NFS 和 SMB）和 SAN（iSCSI、FC 和 NVMe）协议。
+* 一个控制台组织和系统，其中至少有一个活动的控制台代理连接到link:concept-ransomware-resilience.html#supported-backup-targets-systems-and-workload-data-sources["支持的系统"]。
 +
-** ONTAP或Cloud Volumes ONTAP集群（ ONTAP版本 9.11.1 或更高版本）支持勒索软件恢复功能。
-+
-
-NOTE: 如果您计划在 SAN 工作负载上使用勒索软件恢复能力，则必须运行ONTAP 9.17.1 或更高版本。
-
-** 如果您的本地ONTAP集群或 AWS 或 Azure 云中的Cloud Volumes ONTAP尚未在控制台中登录，则需要控制台代理。
-+
-参考 https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["了解如何配置控制台代理"]和 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["标准控制台要求"^]。
-
+** 如果您的本地ONTAP集群或 AWS 或 Azure 云中的Cloud Volumes ONTAP未在控制台中设置，请参阅link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["了解如何配置控制台代理"^]和link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["标准控制台要求"^]。
 +
 
 NOTE: 如果您在单个控制台组织中拥有多个控制台代理，则勒索软件恢复功能将扫描除控制台 UI 中当前选择的代理之外的所有控制台代理中的ONTAP资源。
 
 
 
-
-
-
-
-== 在ONTAP 9.11.1 及更高版本中
-
-* 本地ONTAP实例上启用了ONTAP One 许可证。
-* NetApp Autonomous Ransomware Protection 许可证（由 Ransomware Resilience 使用）在本地ONTAP实例上启用，具体取决于您使用的ONTAP版本。参考 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索软件防护概述"^]。
+* 控制台代理必须具有 `cloudmanager-ransomware-protection`容器处于活动状态。
+* 至少一个具有NetApp本地ONTAP集群或 AWS 或 Azure 中的Cloud Volumes ONTAP 的控制台系统。勒索软件恢复支持 NAS（NFS 和 SMB）和 SAN（iSCSI、FC 和 NVMe）协议。
++
+** ONTAP或Cloud Volumes ONTAP集群（ ONTAP版本 9.11.1 或更高版本）支持勒索软件恢复功能。
 +
 
-NOTE: 与预览版不同，Ransomware Resilience 的正式版包含NetApp Autonomous Ransomware Protection 技术的许可证。参考 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索软件防护概述"^]了解详情。
+NOTE: 要在 SAN 工作负载上使用勒索软件恢复功能，您必须运行ONTAP 9.17.1 或更高版本。
 
-+
-有关更多许可详细信息，请参阅link:concept-ransomware-resilience.html["了解勒索软件抵御能力"]。
 
-* 要应用保护配置（例如启用自主勒索软件保护等），勒索软件恢复能力需要ONTAP集群上的管理员权限。  ONTAP集群应该仅使用ONTAP集群管理员用户凭据进行加入。
-* 如果已使用非管理员用户凭据在控制台中登录ONTAP集群，则必须通过登录ONTAP集群来更新非管理员用户权限，如本页所述。
 
+
+
+
+
+== ONTAP 要求
+
+* 您必须运行ONTAP 9.11.1 或更高版本，并且在本地ONTAP实例上启用ONTAP One 许可证。有关ONTAP支持的更多信息，请参阅link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索软件防护概述"^]。
+* 要应用保护配置（例如启用自主勒索软件保护），勒索软件恢复能力需要ONTAP集群上的管理员权限。ONTAP集群应该仅使用ONTAP集群管理员用户凭据进行加入。
+
+
+
+NOTE: 如果您已使用非管理员凭据将ONTAP集群连接到控制台，则[您必须更新ONTAP集群中的凭据](#update-non-admin-user-permissions-in-an-ontap-system)。
 
 
 
 == 数据备份
 
-* NetApp StorageGRID、AWS S3、Azure Blob 或 Google Cloud Platform 中用于备份目标的帐户以及设置的访问权限。
+* 在NetApp StorageGRID、AWS S3、Azure Blob 或 Google Cloud Platform 中拥有一个帐户，用于备份目标，并配置了适当的访问权限。
 +
 请参阅 https://docs.netapp.com/us-en/console-setup-admin/reference-permissions.html["AWS、Azure 或 S3 权限列表"^]了解详情。
 
@@ -88,7 +102,7 @@ NOTE: 与预览版不同，Ransomware Resilience 的正式版包含NetApp Autono
 . 登录控制台并查找需要更新其ONTAP用户权限的系统。
 . 选择系统以查看详细信息。
 . 选择“查看其他信息”以显示用户名。
-. 使用管理员用户登录ONTAP集群 CLI。
+. 以管理员用户身份登录ONTAP集群 CLI。
 . 显示该用户的现有角色。进入：
 +
 [listing]
@@ -101,5 +115,5 @@ security login show -user-or-group-name <username>
 ----
 security login modify -user-or-group-name <username> -application console|http|ontapi|ssh|telnet -authentication-method password -role admin
 ----
-. 返回勒索软件恢复 UI 来使用它。
+. 返回NetApp Console以使用勒索软件恢复功能。
 

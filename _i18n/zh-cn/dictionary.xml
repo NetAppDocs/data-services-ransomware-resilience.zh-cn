@@ -237,12 +237,10 @@
   <block id="90d096ff0013c9c2874a247b26e69950" category="list-text">帮助您监控结果。</block>
   <block id="4f743c093ec077920561596aa32a74f6" category="section-title">支持的备份目标、系统和工作负载数据源</block>
   <block id="b45c27598e81de132cbcf41c4f6124d9" category="paragraph">勒索软件恢复支持以下备份目标、系统和数据源：</block>
-  <block id="5a2f764441f9d3e054b68c956f11e77a" category="paragraph">*支持的备份目标*</block>
   <block id="736ca911d7d143d01bd8cbfe0d4afbca" category="list-text">亚马逊网络服务（AWS）S3</block>
   <block id="5c9ef0d871938dccceb29ee63fad8ddb" category="list-text">Google Cloud Platform</block>
   <block id="6a51ed7bcacdfb13f78abc1e0f69c201" category="list-text">微软 Azure Blob</block>
   <block id="55cf1a0f0fce69fd543500e5761dd26d" category="list-text">NetAppStorageGRID</block>
-  <block id="02d9d4ccf573660435e940eabcc8f12c" category="paragraph">*支持的系统*</block>
   <block id="5f35d0b4a7930f14f1022ee1f942ee64" category="list-text">本地ONTAP NAS（使用 NFS 和 CIFS 协议），采用ONTAP版本 9.11.1 及更高版本</block>
   <block id="36471da59b7d9b72aa431fd1f5059d05" category="list-text">本地ONTAP SAN（使用 FC、iSCSI 和 NVMe 协议），采用ONTAP版本 9.17.1 及更高版本</block>
   <block id="0479370d1a7f4250832bb43f782a1456" category="list-text">适用于 AWS 的Cloud Volumes ONTAP 9.11.1 或更高版本（使用 NFS 和 CIFS 协议）</block>
@@ -250,15 +248,11 @@
   <block id="4d32d1cc8c36c71c8d57d570d802694f" category="list-text">适用于 Microsoft Azure 的Cloud Volumes ONTAP 9.12.1 或更高版本（使用 NFS 和 CIFS 协议）</block>
   <block id="35042137939d246a1fd01199cb942d15" category="list-text">适用于 AWS、Google Cloud Platform 和 Microsoft Azure 的Cloud Volumes ONTAP 9.17.1 或更高版本（使用 FC、iSCSI 和 NVMe 协议）</block>
   <block id="54d1e9634870c74de38de33364a86d27" category="list-text">Amazon FSx for NetApp ONTAP，使用自主勒索软件防护（ARP 而非 ARP/AI）</block>
-  <block id="1d6131f7ad87ad503cde9efa2561d2d8" category="admonition">ARP/AI 需要ONTAP 9.16 或更高版本。</block>
-  <block id="c231c2b9f4d999149380b14f4bd21a7e" category="admonition">不支持以下内容： FlexGroup卷、早于 9.11.1 的ONTAP版本、挂载点卷、挂载路径卷、离线卷和数据保护 (DP) 卷。</block>
-  <block id="6b1713530668cac3f2a5c5835ae37a1f" category="paragraph">*支持的工作负载数据源*</block>
   <block id="2fd51284279972a6a1390536b053f3c3" category="paragraph">勒索软件恢复能力可保护主数据卷上的以下基于应用程序的工作负载：</block>
   <block id="ffc184891768c331383cd53bcd1bc968" category="list-text">NetApp文件共享</block>
   <block id="4f0550f066ae72bb8c24fc3f59c323bf" category="list-text">块存储</block>
   <block id="ed11408803c4c1aca5fbebbc43d88458" category="list-text">VMware 数据存储区</block>
   <block id="3560990ee46f2f17d59094ab9e308c5e" category="list-text">数据库（MySQL 和 Oracle）</block>
-  <block id="713cbd93b2ba47b4561b53a841624b51" category="list-text">更多内容即将推出</block>
   <block id="ac52d0195d6b8f8c9196f4a11d911326" category="paragraph">此外，如果您使用SnapCenter或SnapCenter for VMware，则这些产品支持的所有工作负载也会在 Ransomware Resilience 中得到识别。勒索软件恢复能力可以以工作负载一致的方式保护和恢复这些内容。</block>
   <block id="02f360fe822afa82c0f600943169df7e" category="section-title">可能有助于您进行勒索软件防护的术语</block>
   <block id="77460e2b891748333455193aadd137d8" category="paragraph">了解一些与勒索软件保护相关的术语可能会对您有所帮助。</block>
@@ -545,28 +539,14 @@
   <block id="ac6282fe86530df822c059310d9c8cc3" category="paragraph">请参阅<block ref="40333c3f84ed5cb5976f4d99c62be349" category="inline-link-macro-rx"></block> 。</block>
   <block id="d0e83b4dfc8809d4d0f31e184c6f9ebb" category="summary">通过验证对您的环境、网络访问、登录和 Web 浏览器的支持，开始使用NetApp Ransomware Resilience。</block>
   <block id="fd2baaaf591d18081f2e012015874835" category="doc">NetApp Ransomware Resilience前提条件</block>
-  <block id="24c096a4eee14bf4c04d2cbdd4effd54" category="paragraph">通过验证您的操作环境、登录、网络访问和 Web 浏览器的准备情况，开始使用NetApp Ransomware Resilience。</block>
-  <block id="cfdba60f0ede042388dac5205623741d" category="paragraph">要使用勒索软件恢复能力，您需要满足以下先决条件。</block>
-  <block id="5bf25f6ec08ec736c7b9b49cc19c6dd7" category="section-title">在NetApp Console中</block>
   <block id="e315520b8d0944e7422c773e49fc17a7" category="list-text">具有组织管理员权限的NetApp Console用户帐户，用于发现资源。</block>
-  <block id="60e39582e4cf8359d140fc0851baccb4" category="list-text">一个控制台组织，其中至少有一个活动的控制台代理连接到本地ONTAP集群或者 AWS 或 Azure 中的Cloud Volumes ONTAP 。</block>
   <block id="ffc25a5f8d1276ee801a950e7f83a233" category="list-text">控制台代理必须具有<block ref="d5aabb6133fba5c7ef5a4e8db21d18ae" prefix=" " category="inline-code"></block>容器处于活动状态。</block>
   <block id="7bff903bef6a1c5af1e562c29d1de15e" category="list-text">至少一个具有NetApp本地ONTAP集群或 AWS 或 Azure 中的Cloud Volumes ONTAP 的控制台系统。勒索软件恢复支持 NAS（NFS 和 SMB）和 SAN（iSCSI、FC 和 NVMe）协议。</block>
-  <block id="097ff3efa4909e783a040ec7edc317d6" category="list-text">如果您的本地ONTAP集群或 AWS 或 Azure 云中的Cloud Volumes ONTAP尚未在控制台中登录，则需要控制台代理。</block>
   <block id="04f679e072129c7e87e077dc95e5e73e" category="inline-link">了解如何配置控制台代理</block>
   <block id="b1fb1d531493b1af3ab2980b2c579a5f" category="inline-link">标准控制台要求</block>
-  <block id="cb12a493b17ae7fff08a2132dcea0a98" category="paragraph">参考<block ref="f26f3bdec25207bfa60c6d1f2da2fd25" category="inline-link-rx"></block>和<block ref="e6a35e3eadbd084db13ee929315e54c1" category="inline-link-rx"></block>。</block>
   <block id="f9a3157f34101a0d560e518291db02ba" category="admonition">如果您在单个控制台组织中拥有多个控制台代理，则勒索软件恢复功能将扫描除控制台 UI 中当前选择的代理之外的所有控制台代理中的ONTAP资源。</block>
-  <block id="2501cbb4187a9a6c7f42f035596578a4" category="section-title">在ONTAP 9.11.1 及更高版本中</block>
-  <block id="f89c934c898fc55d4773d10ee90d485e" category="list-text">本地ONTAP实例上启用了ONTAP One 许可证。</block>
   <block id="13572bbe68fe6ecbb17fb5a38d1313bb" category="inline-link">自主勒索软件防护概述</block>
-  <block id="852e40f75680d314fce781dad2f346b6" category="list-text">NetApp Autonomous Ransomware Protection 许可证（由 Ransomware Resilience 使用）在本地ONTAP实例上启用，具体取决于您使用的ONTAP版本。参考<block ref="9a25fd5e356132f930267232d70ad02b" category="inline-link-rx"></block>。</block>
-  <block id="fff65a3ba54f3c29c9a0b5b04f6bb1c6" category="admonition">与预览版不同，Ransomware Resilience 的正式版包含NetApp Autonomous Ransomware Protection 技术的许可证。参考<block ref="9a25fd5e356132f930267232d70ad02b" category="inline-link-rx"></block>了解详情。</block>
   <block id="d5d09e7741370854c28c983cfbae51eb" category="inline-link-macro">了解勒索软件抵御能力</block>
-  <block id="5cc74ffa295c128286831c0e8de84cd1" category="paragraph">有关更多许可详细信息，请参阅<block ref="11f96aed2a11a318ecdf8f5381ec25fa" category="inline-link-macro-rx"></block>。</block>
-  <block id="47c8d077dd25d3b0a8650ef6f84f0820" category="list-text">要应用保护配置（例如启用自主勒索软件保护等），勒索软件恢复能力需要ONTAP集群上的管理员权限。  ONTAP集群应该仅使用ONTAP集群管理员用户凭据进行加入。</block>
-  <block id="d6b16e754b93934f7687ad4f252b7073" category="list-text">如果已使用非管理员用户凭据在控制台中登录ONTAP集群，则必须通过登录ONTAP集群来更新非管理员用户权限，如本页所述。</block>
-  <block id="0885a21123eeb2ad2e03289064c229ea" category="list-text">NetApp StorageGRID、AWS S3、Azure Blob 或 Google Cloud Platform 中用于备份目标的帐户以及设置的访问权限。</block>
   <block id="d2e3e802d3f25894bd170688859d6cef" category="inline-link">AWS、Azure 或 S3 权限列表</block>
   <block id="90061bb176f3e723f6f2161eafc1901c" category="paragraph">请参阅<block ref="31e1fb669a04af441205b80b4846232f" category="inline-link-rx"></block>了解详情。</block>
   <block id="583833d6f0468c713c410ea158e1b6f6" category="list-text">不需要在系统上启用NetApp Backup and Recovery 。</block>
@@ -577,10 +557,8 @@
   <block id="df4a4e3e8d87a650fd5d152bd4fab199" category="list-text">登录控制台并查找需要更新其ONTAP用户权限的系统。</block>
   <block id="0a8a7f0fafc4b245a6e039b7da0e38c7" category="list-text">选择系统以查看详细信息。</block>
   <block id="ddf0d8cb7fa932ccfbf9231d4f27f992" category="list-text">选择“查看其他信息”以显示用户名。</block>
-  <block id="9fe71dce626bd006ff641fd38ed29790" category="list-text">使用管理员用户登录ONTAP集群 CLI。</block>
   <block id="af2fd7f57e628b460dd2978fa6cf0a79" category="list-text">显示该用户的现有角色。进入：</block>
   <block id="ec2732dacf33a5e90fbcf1cf42cb9ef7" category="list-text">更改用户的角色。进入：</block>
-  <block id="1f7fec232265cdaaed5c3995ce516af2" category="list-text">返回勒索软件恢复 UI 来使用它。</block>
   <block id="01ad1e9b6ee32140ab032c379c4fd753" category="summary">只需几个步骤即可开始使用NetApp Ransomware Resilience。</block>
   <block id="87269d545e3fccdff13a867df7261ace" category="doc">NetApp Ransomware Resilience快速入门</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一个</block>
@@ -1939,7 +1917,6 @@
   <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">常见问题解答</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知识和支持</block>
   <block id="69d1e7a74a8d35e4122500df6d2f5042" category="list-text">ONTAP或Cloud Volumes ONTAP集群（ ONTAP版本 9.11.1 或更高版本）支持勒索软件恢复功能。</block>
-  <block id="d36369f24098b858527294c5a234c72d" category="admonition">如果您计划在 SAN 工作负载上使用勒索软件恢复能力，则必须运行ONTAP 9.17.1 或更高版本。</block>
   <block id="51fecb5d19a6637dea83445678fd4ffa" category="section-title">数据备份</block>
   <block id="9755e4a474d0024a8dcd40393e571716" category="section-title">可疑的用户行为</block>
   <block id="34691f87b892c333fe1b7a23452dcda6" category="paragraph">为了使勒索软件恢复能力提供有关可疑用户行为的警报，您必须配置用户活动代理。有关详细信息，请参阅 <block ref="f3d3e5726f7feb4b59ca728c906df758" category="inline-link-macro-rx"></block>。</block>
@@ -1980,7 +1957,6 @@
   <block id="52210acbff73a572a2ca89fb77371615" category="paragraph">在NetApp Ransomware Resilience中，您可以使用NetApp Data Classification来扫描和分类文件共享工作负载中的数据。对数据进行分类可以帮助您确定数据集是否包含个人身份信息 (PII)，这可能会增加安全风险。数据分类是NetApp Console的核心组件，无需额外付费即可使用。</block>
   <block id="4342c3c480135ea7c9398a3ba08357ec" category="sidebar">NetApp Ransomware Resilience可保护、检测并支持从本地和云存储中的勒索软件威胁中恢复应用程序工作负载和文件共享。勒索软件恢复能力可实现安全备份和恢复，帮助组织保护关键数据并维护 Oracle、MySQL、VM 数据存储、NAS 存储等的业务连续性。</block>
   <block id="7b36da612c0e3a400f4daecc8016f21e" category="summary">确保您满足勒索软件恢复的许可要求，以保护您的系统和工作负载。</block>
-  <block id="785a67fbf7c46bd5774af376154df40a" category="paragraph">*许可证类型* 勒索软件恢复能力适用于以下许可证类型：</block>
   <block id="5ef05167488611c5bd4ff0f410595ce4" category="list-text">30天免费试用</block>
   <block id="e71ba6c3178fa6f6844891e615ad0570" category="list-text">通过 Amazon Web Services (AWS) Marketplace、Google Cloud Marketplace 或 Azure Marketplace 购买即用即付 (PAYGO) 订阅</block>
   <block id="2f0583f3da64d216aa72116dc3460499" category="list-text">自带许可证 (BYOL)：您从NetApp销售代表处获得的NetApp许可证文件 (NLF)。您可以使用许可证序列号在控制台中激活 BYOL。</block>
@@ -2075,4 +2051,27 @@
   <block id="7986143a8e8e26aa1cd4fe5e42208a2b" category="paragraph">您可以使用ONTAP中的系统管理器 UI、API 或 CLI 在检测策略中禁用 ARP。</block>
   <block id="6d1a51f08d9ca2d81528c19a5e4f2463" category="list-text"><block ref="6d1a51f08d9ca2d81528c19a5e4f2463" category="inline-link-macro-rx"></block></block>
   <block id="4db76a2031d1695a2f0a985a14a43ffa" category="paragraph">当您启用具有可疑用户活动检测功能的勒索软件保护策略时，数据收集器会自动创建。有关详细信息，请参阅 <block ref="eadf066433fbca34180c794e1f4838ae" category="inline-xref-macro-rx"></block>。</block>
+  <block id="649b83fee66314cb36bc122912f59725" category="inline-link-macro">ONTAP中受支持和不受支持的配置</block>
+  <block id="49f82a509cd0abff5327e4c71868f448" category="admonition">在ONTAP中使用 ARP/AI 需要ONTAP 9.16 或更高版本。 + ONTAP不为FlexGroup卷、挂载点卷、挂载路径卷、脱机卷和数据保护 (DP) 卷提供勒索软件防护支持。请务必查看<block ref="49252e6bcf11c366c792cea95977195b" category="inline-link-macro-rx"></block>。</block>
+  <block id="0b115ac5b217f989a1fc7dd422161b82" category="section-title">支持的备份目标</block>
+  <block id="933247e0be7796a309cfa4c95bd34938" category="section-title">支持的系统</block>
+  <block id="d7962ffe79df3d1aba19878fd6d019e4" category="section-title">支持的工作负载数据源</block>
+  <block id="2b2fba693aacdb90002ef3efdb1f458b" category="section-title">许可证类型</block>
+  <block id="f16034022338b3a005a0680a88d47bf5" category="paragraph">勒索软件防护功能提供以下几种许可类型：</block>
+  <block id="06dafb1ce76f077b43468ebf52fe4f71" category="paragraph">首先验证您的操作环境、网络访问和 Web 浏览器是否准备就绪，即可开始使用NetApp Ransomware Resilience。</block>
+  <block id="ae76d3bf4a09c080710fa0d7937275b1" category="paragraph">要使用勒索软件恢复功能，请确保满足先决条件。</block>
+  <block id="ff79a6341986aef28eb40de7bb83e3a9" category="paragraph">请确保您使用的是受支持的系统：</block>
+  <block id="70409a142107b4016b7ef004178c29d8" category="section-title">NetApp Console要求</block>
+  <block id="4c2c00472698b27eb7facf4ba3c6971f" category="paragraph">您的NetApp Console配置需要：</block>
+  <block id="fda98bab7cfe51ed764422ff7c4cc4dc" category="inline-link-macro">支持的系统</block>
+  <block id="24a33b7b8d81b241dc8d72ce84d02061" category="list-text">一个控制台组织和系统，其中至少有一个活动的控制台代理连接到<block ref="33fcda4d13136e9638e8e0eecc30f508" category="inline-link-macro-rx"></block>。</block>
+  <block id="0d2165e32151ff379bcc5699011bbdbe" category="list-text">如果您的本地ONTAP集群或 AWS 或 Azure 云中的Cloud Volumes ONTAP未在控制台中设置，请参阅<block ref="8a718d7913e8764fcbd48fb78a901ed8" category="inline-link-macro-rx"></block>和<block ref="b04507b2bbabc17c071b912167d3ff4f" category="inline-link-macro-rx"></block>。</block>
+  <block id="def72830b58fb69b381492858d3b3665" category="admonition">要在 SAN 工作负载上使用勒索软件恢复功能，您必须运行ONTAP 9.17.1 或更高版本。</block>
+  <block id="1b6bc3125f482fcbcf029c833aea1290" category="section-title">ONTAP 要求</block>
+  <block id="69e575df737b34413e9ac5e132f6db01" category="list-text">您必须运行ONTAP 9.11.1 或更高版本，并且在本地ONTAP实例上启用ONTAP One 许可证。有关ONTAP支持的更多信息，请参阅<block ref="a17b9b304c2ac7f4ba576e11b099c691" category="inline-link-macro-rx"></block>。</block>
+  <block id="287d5057af26ee58d3ebb3f5ab1c418c" category="list-text">要应用保护配置（例如启用自主勒索软件保护），勒索软件恢复能力需要ONTAP集群上的管理员权限。ONTAP集群应该仅使用ONTAP集群管理员用户凭据进行加入。</block>
+  <block id="afabe9e17313d371201713a96a9674ac" category="admonition">如果您已使用非管理员凭据将ONTAP集群连接到控制台，则[您必须更新ONTAP集群中的凭据](#update-non-admin-user-permissions-in-an-ontap-system)。</block>
+  <block id="2256fdd13b41cd806db98cd42c5b498c" category="list-text">在NetApp StorageGRID、AWS S3、Azure Blob 或 Google Cloud Platform 中拥有一个帐户，用于备份目标，并配置了适当的访问权限。</block>
+  <block id="27bfb5502a8db50d09f593ce1b77b181" category="list-text">以管理员用户身份登录ONTAP集群 CLI。</block>
+  <block id="14e79e90c6d487ebb867aa7b0f88bf25" category="list-text">返回NetApp Console以使用勒索软件恢复功能。</block>
 </blocks>
