@@ -207,7 +207,7 @@ NOTE: 在ONTAP中使用 ARP/AI 需要ONTAP 9.16 或更高版本。 + ONTAP不为
 * 数据库（MySQL 和 Oracle）
 
 
-此外，如果您使用SnapCenter或SnapCenter for VMware，则这些产品支持的所有工作负载也会在 Ransomware Resilience 中得到识别。勒索软件恢复能力可以以工作负载一致的方式保护和恢复这些内容。
+如果您正在使用SnapCenter或SnapCenter for VMware，则这些产品支持的所有工作负载也会在勒索软件恢复功能中得到识别。勒索软件恢复能力可以以工作负载一致的方式保护和恢复这些内容。
 
 
 

@@ -24,8 +24,6 @@ indexpage:
       url: "/rp-start-simulate.html"
   - title: 使用勒索软件弹性
     links:
-    - title: 使用勒索软件恢复概述
-      url: "/rp-use-overview.html"
     - title: 发现工作负载
       url: "/rp-start-discover.html"
     - title: 使用仪表板查看工作负载健康状况

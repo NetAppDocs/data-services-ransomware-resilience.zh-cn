@@ -44,8 +44,6 @@ sidebar:
       url: "/suspicious-user-activity.html"
   - title: 使用勒索软件弹性
     entries:
-    - title: 使用勒索软件恢复概述
-      url: "/rp-use-overview.html"
     - title: 使用仪表板查看工作负载健康状况
       url: "/rp-use-dashboard.html"
     - title: 保护工作负载
