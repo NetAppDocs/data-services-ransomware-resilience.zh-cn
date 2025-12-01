@@ -1995,7 +1995,6 @@
   <block id="e29d7c0b36af68edd13ebac84f15b44b" category="cell">云提供商</block>
   <block id="f447ac856e7e72435904956e3b15f433" category="cell">地区</block>
   <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="cell">AWS</block>
-  <block id="90f74c5c50c42b91275c19e2cccad976" category="cell">美国东部（us-east-1）</block>
   <block id="3a580f142203677f1f0bc30898f63f53" category="cell">Azure</block>
   <block id="3c110de67497eb3f8d4c100e43101c81" category="cell">美国东部</block>
   <block id="0ba29c6a1afacf586b03a26162c72274" category="cell">环境</block>
@@ -2069,4 +2068,7 @@
   <block id="daf104544b5203a46e1580e1b8583f1f" category="paragraph">将 NSS 凭据与您的NetApp Console帐户关联与将 NSS 帐户与控制台用户登录关联不同。</block>
   <block id="5bc1315a63455544e7a917a7cc968939" category="paragraph">这些 NSS 凭证与您的特定控制台帐户 ID 相关联。属于控制台组织的用户可以从*支持 &gt; NSS 管理*访问这些凭据。</block>
   <block id="7687b0a57d5cb728d9fb892dfc814715" category="paragraph">这些操作使控制台能够使用您的 NSS 帐户进行许可证下载、软件升级验证和未来支持注册等操作。</block>
+  <block id="24dd233beea6d20446b604bba13115c0" category="list-text">亚太地区（悉尼）（ap-southeast-2）</block>
+  <block id="5c024c0f8096e0fba857f661afe2dbd0" category="list-text">欧洲（法兰克福）(eu-central-1)</block>
+  <block id="d605e764d56b8615ebf6dd5f87998855" category="list-text">美国东部（弗吉尼亚北部）（us-east-1）</block>
 </blocks>
