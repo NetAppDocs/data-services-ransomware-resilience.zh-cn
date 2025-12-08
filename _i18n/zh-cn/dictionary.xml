@@ -1610,7 +1610,6 @@
   <block id="906ec8bab01967c36f2f073eff9f54df" category="doc">在NetApp Ransomware Resilience中配置可疑用户活动检测</block>
   <block id="9ba1db4a2c84400f14de2d58496b9f52" category="paragraph">勒索软件抵御能力支持在检测策略中检测可疑用户行为，使您能够在用户级别解决勒索软件事件。</block>
   <block id="90c4c763135bd7a7443ed22e4149185b" category="section-title">代理商和收藏家</block>
-  <block id="03f21183a058745685d1d78fcc7eab3a" category="paragraph">必须安装至少一个用户活动代理才能激活 Ransomware Resilience 中的可疑用户活动检测。当您从勒索软件恢复仪表板激活可疑用户活动功能时，您需要提供代理主机信息来激活该功能。</block>
   <block id="2b294b61543173e7462d37def0724cef" category="paragraph">一个代理可以托管多个数据收集器。数据收集器将数据发送到 SaaS 位置进行分析。有两种类型的收集器：</block>
   <block id="fa83d0f077ae64e1df0b8a9ed9982815" category="paragraph">收集器在勒索软件恢复设置中配置。</block>
   <block id="4f047e83e52e21d5382adc1b5dbf3119" category="section-title">添加用户活动代理</block>
@@ -1626,21 +1625,15 @@
   <block id="6fe8b98c53e8d099686936732785d471" category="cell">Debian</block>
   <block id="96076f12b1cb63e4304e6e93bf2bdf1c" category="cell">11（64 位）、12（64 位），包括 SELinux</block>
   <block id="47aa329f6ec0cd1009231b4b7fca0a6b" category="cell">OpenSUSE 飞跃</block>
-  <block id="19b160ebc6598b7f22f292d227c45c9d" category="cell">15.3（64 位）至 15.6（64 位）</block>
   <block id="fdcd362ac5f5f9817e70642dd2a48bfd" category="cell">Oracle Linux</block>
-  <block id="95ccc8f8721ed98f86b3373d9ede2a15" category="cell">8.10（64 位）、9.1（64 位）至 9.6（64 位），包括 SELinux</block>
-  <block id="a82007c47b25723539a00ff94e8b3d27" category="cell">红帽</block>
   <block id="d33305ae6335b0a9106e226ed71ca60f" category="cell">8.10（64 位）、9.1（64 位）至 9.6（64 位）和 10（64 位），包括 SELinux</block>
   <block id="d405e3063aac76a254e44386c961b24c" category="cell">洛基</block>
-  <block id="562cb7e6b7d585b5ffbe8d9aec64cf10" category="cell">Rocky 9.4（64 位）至 9.6（64 位），包括 SELinux</block>
   <block id="92ceb02e8fd413288d949e40d8ca4832" category="cell">SUSE 企业 Linux</block>
   <block id="ce370a856bc8592a8206af596cace9ea" category="cell">15 SP4（64 位）至 15 SP6（64 位），包括 SELinux</block>
   <block id="3d945423f8e9496c429a5d8c65b4604f" category="cell">Ubuntu</block>
   <block id="6072b01d67af0366830f2fef13cdf0da" category="cell">20.04 LTS（64 位）、22.04 LTS（64 位）和 24.04 LTS（64 位）</block>
   <block id="e5fc81082964adedb5790746c18c9fb7" category="paragraph">**服务器要求**</block>
   <block id="fd9b966c1c6f66e7c4f38e133767c880" category="paragraph">服务器必须满足以下最低要求：</block>
-  <block id="f0499c7832db4d35decdf83de714841c" category="list-text">**CPU**：4 核</block>
-  <block id="4a8a49e18f8860c4232837503bcc2edd" category="list-text">**内存**：16GB 内存</block>
   <block id="a2ad8789f963859e0c26a6daaec4a76b" category="list-text">如果这是您第一次创建用户活动代理，请转到**仪表板**。在**用户活动**图块中，选择**激活**。</block>
   <block id="44e08a5b01e752ac11f59bba4e07dea7" category="paragraph">如果您要添加其他用户活动代理，请转到*设置*，找到**用户活动**图块，然后选择**管理**。在用户活动屏幕上，选择**用户活动代理**选项卡，然后选择**添加**。</block>
   <block id="75d41b8fe2ef8de56d2fd2046bb0dad3" category="list-text">选择**云提供商**，然后选择**区域**。选择**下一步**。</block>
@@ -1662,24 +1655,14 @@
   <block id="8348d8dcee9ea32e049e21c42a431b91" category="list-text">在勒索软件恢复中，转到*设置*。</block>
   <block id="9fcb0a7634f29d96ae98e37bbc76e1cd" category="list-text">在用户活动图块中，选择**管理**。</block>
   <block id="e70202c14c96f451fdcf2617844ea351" category="list-text">选择**用户目录连接器**选项卡，然后选择**添加**。</block>
-  <block id="6b0d749af4fb3ac0e4e4a1eefc36c454" category="list-text">提供连接的详细信息：</block>
   <block id="496ee322ba138fdbc777e5ab2e30145e" category="list-text">*姓名*</block>
   <block id="e018ce61f2faa0782aac0cf5ceb4e39f" category="list-text">*用户目录类型*</block>
   <block id="817d09446fbab0a167f137ba029b3b2c" category="list-text">*服务器IP地址或域名*</block>
   <block id="942f115bf2a4bb90285e9cc5de7fd48b" category="list-text">*森林名称或搜索名称*</block>
-  <block id="28781714c6ccf5cfa635f547328898a5" category="list-text">*BIND 域名*</block>
   <block id="f379b6d26456916980ea32f662e2088a" category="list-text">*绑定密码*</block>
-  <block id="2bfa02843b15eae74dde462c970a2a00" category="list-text">*协议*（可选）</block>
   <block id="5ddcf17f54788a5bb9148e8671562c06" category="list-text">*港口*</block>
   <block id="4648df055f6134caf491290d363fdd55" category="inline-image-macro">用户目录连接的屏幕截图</block>
   <block id="e41447b39a2a8caf5092a92f230bd291" category="paragraph"><block ref="e41447b39a2a8caf5092a92f230bd291" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="86c3d5aee71dba0d2e67a122a900b46d" category="paragraph">提供属性映射详细信息：</block>
-  <block id="67abd0bd8cf8f6b948416d41be7c6f6a" category="list-text">*显示名称*</block>
-  <block id="aff175f709dc693d1f9ca4c44728163a" category="list-text">*SID*（如果您使用 LDAP）</block>
-  <block id="3b57547caa3754998fa617bd92514f25" category="list-text">*用户名*</block>
-  <block id="c8a0546946d4ed57fd88fc4918d3825f" category="list-text">*Unix ID*（如果您使用 NFS）</block>
-  <block id="44c65853ed8da5c496344c1e746b1669" category="list-text">选择*包括可选属性*。您还可以包括电子邮件地址、电话号码、角色、州、国家、部门、照片、经理 DN 或群组。</block>
-  <block id="7703674a5321c1f23549682250a732e9" category="paragraph">选择“*高级*”以添加可选的搜索查询。</block>
   <block id="7174ea6988f438d85266f06a4d178a79" category="list-text">选择**添加**。</block>
   <block id="c46a6dfd4cabd150fef75d97e543d6e6" category="list-text">返回用户目录连接器选项卡以检查用户目录连接器的状态。如果创建成功，用户目录连接器的状态显示为*正在运行*。</block>
   <block id="ecdd284164c9ec55e281a5e22e24af67" category="section-title">删除用户目录连接器</block>
@@ -1893,7 +1876,6 @@
   <block id="b6173a051353d59a4ee775fcef288441" category="list-text">**用户目录连接器**连接到您的目录以将用户 ID 映射到用户名。</block>
   <block id="508899c1c018f291af4cb6a0423c426c" category="paragraph">*所需的控制台角色* 要激活可疑用户活动检测，您需要组织管理员角色。对于可疑用户活动的后续配置，您需要 Ransomware Resilience 用户行为管理员角色。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
   <block id="53b036bcd07f4ebcfe2ec32a98556822" category="paragraph">要安装用户活动代理，您需要一个满足以下支持的操作系统和服务器要求的主机或虚拟机。</block>
-  <block id="d4a6e9b0b745b83f49163b25271ce445" category="list-text">**磁盘空间**：35GB 可用磁盘空间</block>
   <block id="398de83ff8f318218f9eaedb05929ef0" category="paragraph">成功创建用户活动代理后，返回**设置**菜单，然后在用户活动图块中选择**管理**。选择**用户活动代理**选项卡，然后选择用户活动代理以查看有关它的详细信息，包括数据收集器和用户目录连接器。</block>
   <block id="a83ea9a287c9fdd0689933a464055150" category="paragraph">要将用户 ID 映射到用户名，您必须创建用户目录连接器。</block>
   <block id="89bd0177a422e5d81fce2f8f82dac3f6" category="paragraph-title">使用勒索软件恢复功能需要许可证吗？</block>
@@ -2071,4 +2053,26 @@
   <block id="f6967390d49d08c53cc88d3cdf42eb92" category="list-text">Oracle SnapCenter</block>
   <block id="897c29783a147c6c7b7844f2d4a9e81a" category="paragraph">预览版服务可保护BlueXP组织内各个组织中 Oracle、VM 数据存储和本地 NAS 存储上的文件共享以及 AWS 上的Cloud Volumes ONTAP （使用 NFS 协议）上的应用程序工作负载，并将数据备份到 Amazon Web Services 云存储。</block>
   <block id="2d2972fc6d16379955701a1cc8c6633f" category="sidebar">NetApp Ransomware Resilience可保护、检测并支持从本地和云存储中的勒索软件威胁中恢复应用程序工作负载和文件共享。勒索软件恢复能力可实现安全备份和恢复，帮助组织保护关键数据并维持 Oracle、VM 数据存储、NAS 存储等的业务连续性。</block>
+  <block id="05a32e62ff35ead335cfbdaf6b19a9b2" category="paragraph">必须安装至少一个用户活动代理才能激活 Ransomware Resilience 中的可疑用户活动检测。当您从勒索软件恢复仪表板激活可疑用户活动功能时，您需要提供代理主机信息。</block>
+  <block id="f075180c986e3a7a8e0bad4fcec7c485" category="cell">15.3（64 位）至 15.6（64 位）</block>
+  <block id="32d094cff0ab508ab383051555e7844b" category="cell">8.10（64 位）、9.1（64 位）至 9.6（64 位），包括 SELinux</block>
+  <block id="1d9fc183665bd1e195391190be506894" category="cell">Red Hat</block>
+  <block id="40a4866844a145aa0d01d094ea38e0d3" category="cell">Rocky 9.4 (64 位) 至 9.6 (64 位)，包括 SELinux</block>
+  <block id="ec0c7e841d2f0e7a16a6b4b47a57ecd8" category="list-text">CPU：4 核</block>
+  <block id="177d9a4926538bc7d9bcbb8ad6ca3f0f" category="list-text">**内存**：16GB 内存</block>
+  <block id="f01ab58abd28b55b4954d17a62080293" category="list-text">**磁盘空间**：35 GB 可用磁盘空间</block>
+  <block id="191a3f30ab05799955dc06c5f394b591" category="list-text">配置连接。请在每个字段中填写所需信息。</block>
+  <block id="6f16a5f8ff5d75ab84c018adacdfcbb7" category="cell">字段</block>
+  <block id="8099786db97f0913cd0cefcd4a7bc6fd" category="cell">请为用户目录连接器输入一个唯一的名称</block>
+  <block id="4adff96a4a05104e03197234118085e2" category="cell">目录类型</block>
+  <block id="722fb2ada3f9ea6943e9b3e31070b992" category="cell">连接所在服务器的 IP 地址或完全限定域名 (FQDN)</block>
+  <block id="de477c1e3721a76952a5b9396ecf6fdd" category="paragraph">您可以将目录结构的林级别指定为直接域名（例如）。<block ref="50e97bbcb7daba438b04ca294e70b332" prefix=" " category="inline-code"></block>）或一组相对专有名称（例如：<block ref="a095aad7202650a49f2e97c9b4301648" prefix=" " category="inline-code"></block>）。你也可以输入一个<block ref="e4a59df8b97206109eb4b7f2fe528a4d" prefix=" " category="inline-code"></block> 按组织单元或<block ref="1c2903397d8833382673bab22aa8b937" prefix=" " category="inline-code"></block> 仅限特定用户（例如：<block ref="bf398740ce4b2f74d8422fcaf8220aa1" prefix=" " category="inline-code"></block>）。</block>
+  <block id="e84098015e7ceb92236e398c96a2a10d" category="cell">*绑定DN*</block>
+  <block id="bc155f025a2d678a9b7a2ecd0f109bb7" category="cell">BIND DN 是被允许搜索目录的用户帐户，例如 user@domain.com。用户需要域只读权限。</block>
+  <block id="c0e32b7e69f6b1f044d23fea6824f4f5" category="cell">BIND DN 中提供的用户密码</block>
+  <block id="dce365633ffb688b7532470dfaf4e118" category="cell">*协议*</block>
+  <block id="91fa08a58f816e98d83df1ce310eb825" category="cell">协议字段为可选字段。您可以使用 LDAP、LDAPS 或基于 StartTLS 的 LDAP。</block>
+  <block id="f9115354bfb0b47a80e11c68936a7ec8" category="cell">请输入您选择的端口号</block>
+  <block id="ffcb2d1f993f068c61d2776ab07c354f" category="paragraph">提供属性映射详细信息： * *显示名称* * *SID*（如果您使用 LDAP） * *用户名* * *Unix ID*（如果您使用 NFS） * 如果您选择 *包含可选属性*，您还可以添加电子邮件地址、电话号码、角色、州/省、国家/地区、部门、照片、经理 DN 或组。</block>
+  <block id="8cab6e56434342fb39a14e12391a5d3e" category="paragraph">+ 选择“高级”以添加可选的搜索查询。</block>
 </blocks>
