@@ -16,7 +16,7 @@ summary: 在发现过程中，勒索软件恢复力会分析所有控制台代�
 
 *所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^] 。
 
-*勒索软件恢复能力发现了什么？*勒索软件恢复能力评估 MySQL 应用程序、Oracle 应用程序、VMware 数据存储区、文件共享和块存储。
+*勒索软件恢复能力发现了什么？*勒索软件恢复能力评估 Oracle 应用程序、VMware 数据存储、文件共享和块存储。
 
 
 NOTE: 勒索软件恢复能力无法发现使用FlexGroup卷的工作负载。

@@ -1,12 +1,12 @@
 ---
 indexpage:
   title: NetApp Ransomware Resilience文档
-  summary: NetApp Ransomware Resilience可保护、检测并支持从本地和云存储中的勒索软件威胁中恢复应用程序工作负载和文件共享。勒索软件恢复能力可实现安全备份和恢复，帮助组织保护关键数据并维护
-    Oracle、MySQL、VM 数据存储、NAS 存储等的业务连续性。
+  summary: NetApp Ransomware Resilience可保护、检测并支持从本地和云存储中的勒索软件威胁中恢复应用程序工作负载和文件共享。勒索软件恢复能力可实现安全备份和恢复，帮助组织保护关键数据并维持
+    Oracle、VM 数据存储、NAS 存储等的业务连续性。
   keywords: bluexp, ransomware, anti-ransomware, cyber attack, netapp, ontap, amazon
     web services, aws, storagegrid, protection, resilience
-  lead: NetApp Ransomware Resilience可保护、检测并支持从本地和云存储中的勒索软件威胁中恢复应用程序工作负载和文件共享。勒索软件恢复能力可实现安全备份和恢复，帮助组织保护关键数据并维护
-    Oracle、MySQL、VM 数据存储、NAS 存储等的业务连续性。
+  lead: NetApp Ransomware Resilience可保护、检测并支持从本地和云存储中的勒索软件威胁中恢复应用程序工作负载和文件共享。勒索软件恢复能力可实现安全备份和恢复，帮助组织保护关键数据并维持
+    Oracle、VM 数据存储、NAS 存储等的业务连续性。
   tiles:
   - title: 开始使用
     links:

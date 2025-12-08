@@ -45,7 +45,7 @@ TIP: 为了增强对数据资产的管理和保护，您可以创建link:#create
 
 * NetApp Backup and Recovery、VM 文件共享
 * SnapCenter for VMware 适用于虚拟机数据存储区
-* 适用于 Oracle 和 MySQL 的SnapCenter
+* Oracle SnapCenter
 
 
 这些服务的保护信息出现在 Ransomware Resilience 中。您可以使用 Ransomware Resilience 向这些服务添加检测策略。添加具有勒索软件恢复能力的保护策略将取代现有的保护策略。

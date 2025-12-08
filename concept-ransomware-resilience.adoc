@@ -16,7 +16,7 @@ summary: 勒索软件恢复能力使您能够查看有关网络安全的相关�
 [role="lead"]
 勒索软件攻击可以阻止对您数据的访问，攻击者可以要求赎金以换取数据发布或解密。据 IDC 称，勒索软件受害者遭受多次勒索软件攻击的情况并不少见。攻击可能会中断您对数据的访问，时间从一天到几周不等。
 
-NetApp Ransomware Resilience可保护您的数据免受勒索软件攻击。在勒索软件恢复能力中，可以对基于应用程序的工作负载提供保护，包括本地 NAS 存储（使用 NFS 和 CIFS 协议）和 SAN 存储（FC、iSCSI 和 NVMe）上的 Oracle、MySQL、VM 数据存储区和文件共享，以及适用于 Amazon Web Services 的Cloud Volumes ONTAP 、适用于 Google Cloud 的Cloud Volumes ONTAP 、适用于 Microsoft Azure 的Cloud Volumes ONTAP和NetApp Console上的Amazon FSx for NetApp ONTAP 。您可以将数据备份到 Amazon Web Services、Google Cloud、Microsoft Azure 云存储和NetApp StorageGRID。
+NetApp Ransomware Resilience可保护您的数据免受勒索软件攻击。在勒索软件恢复功能中，可通过 NetApp 控制台为 Oracle、VM 数据存储和本地 NAS 存储（使用 NFS 和 CIFS 协议）和 SAN 存储（FC、iSCSI 和 NVMe）上的文件共享以及 Amazon Web Services 的Cloud Volumes ONTAP 、Google Cloud 的Cloud Volumes ONTAP 、Microsoft Azure 的Cloud Volumes ONTAP和Amazon FSx for NetApp ONTAP基于NetApp Console的工作负载保护。您可以将数据备份到 Amazon Web Services、Google Cloud、Microsoft Azure 云存储和NetApp StorageGRID。
 
 
 
@@ -39,7 +39,7 @@ image:concept-security-layer-diagram.png["安全层图"]
 
 勒索软件恢复功能充分利用了多种NetApp技术，以便您的存储管理员、数据安全管理员或安全运营工程师可以实现以下目标：
 
-* *识别* NetApp Console、项目和控制台代理中的NetApp内部部署 NAS（NFS 或 CIFS）和 SAN（FC、iSCSI 和 NVMe）系统中所有基于应用程序、文件共享或 VMware 管理的工作负载。勒索软件弹性对数据优先级进行分类，并为您提供勒索软件弹性改进的建议。
+* *识别* NetApp本地 NAS（NFS 或 CIFS）和 SAN（FC、iSCSI 和 NVMe）系统中所有基于应用程序、文件共享或 VMware 管理的工作负载，包括NetApp Console、项目和控制台代理。勒索软件弹性对数据优先级进行分类，并为您提供勒索软件弹性改进的建议。
 * 通过对数据启用备份、快照副本和勒索软件保护策略来*保护*您的工作负载。
 * *检测*可能是勒索软件攻击的异常。脚注：[尽管攻击可能未被发现，但我们的研究表明， NetApp技术已对某些基于文件加密的勒索软件攻击实现了高度检测。]
 * 通过自动启动锁定的防篡改NetApp ONTAP快照来*应对*潜在的勒索软件攻击，这样副本就不会被意外或恶意删除。您的备份数据将保持不变，并在源头和目标端受到端到端的保护，免受勒索软件攻击。
@@ -59,7 +59,7 @@ image:diagram-rp-features-phases3.png["图表展示了勒索软件抵御攻击�
 * 评估您的勒索软件防护态势并将其显示在易于理解的仪表板中。
 * 根据发现和保护态势分析提供后续步骤的建议。
 * 一键访问即可应用 AI/ML 驱动的数据保护建议。
-* 保护顶级基于应用程序的工作负载中的数据，例如 MySQL、Oracle、VMware 数据存储和文件共享。
+* 保护基于应用程序的工作负载（例如 Oracle、VMware 数据存储和文件共享）中的数据。
 * 使用人工智能技术实时检测针对主存储数据的勒索软件攻击。
 * 通过创建快照副本和启动有关异常活动的警报来启动自动操作以响应检测到的潜在攻击。
 * 应用精心策划的恢复以满足 RPO 政策。勒索软件恢复能力通过使用多种NetApp恢复服务（包括NetApp Backup and Recovery（以前称为云备份）和SnapCenter）来协调勒索软件事件的恢复。
@@ -228,7 +228,6 @@ NOTE: 在ONTAP中使用 ARP/AI 需要ONTAP 9.16 或更高版本。+ ONTAP不为F
 * 数据库：
 +
 ** Microsoft SQL Server
-** MySQL
 ** Oracle
 ** PostgreSQL
 
@@ -246,5 +245,5 @@ NOTE: 在ONTAP中使用 ARP/AI 需要ONTAP 9.16 或更高版本。+ ONTAP不为F
 了解一些与勒索软件保护相关的术语可能会对您有所帮助。
 
 * *保护*：勒索软件恢复中的保护意味着确保使用保护策略定期在不同的安全域中进行快照和不可变备份。
-* *工作负载*：勒索软件恢复中的工作负载可以包括 MySQL 或 Oracle 数据库、VMware 数据存储区或文件共享。
+* *工作负载*：勒索软件恢复中的工作负载可以包括 Oracle 数据库、VMware 数据存储或文件共享。
 
