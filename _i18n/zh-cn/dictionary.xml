@@ -2069,7 +2069,6 @@
   <block id="8a9b2764802b622f9894a669a606f74f" category="doc">扩展程序阻止功能已在工作负载级别启用。</block>
   <block id="ab47595f128d75b47b3449fcd4dfb523" category="paragraph">启用扩展阻止功能后，现在是在工作负载级别而不是存储虚拟机级别启用该功能。</block>
   <block id="a6493502d5fc22c0b3ccee818dc4a5a5" category="section-title">编辑用户行为警报状态</block>
-  <block id="f143f02b29819ec9e761d9f292dea42c" category="paragraph">勒索软件恢复功能现在允许您编辑用户行为警报的状态。您可以手动关闭和解决警报。现在您还可以将警报标记为“审核中”。</block>
   <block id="685b0f2db45e4fc09a06ccb4695806de" category="inline-xref-macro">管理警报</block>
   <block id="30acfc7aa0f5ff9593d73e769de766c0" category="paragraph">有关详细信息，请参阅 <block ref="32161c93f86d45672d8429d13ea78e6b" category="inline-xref-macro-rx"></block>。</block>
   <block id="d5214a8deea026de61af736ebf8697dd" category="section-title">支持多个控制台代理</block>
@@ -2079,7 +2078,6 @@
   <block id="ee1bc5da2dde4f02ef7aa47df921506a" category="doc">在NetApp Ransomware Resilience中管理警报</block>
   <block id="9a51095678260d2a753174230dbe8a88" category="paragraph">当NetApp Ransomware Resilience检测到可能的攻击时，它会在仪表板和通知区域显示警报。勒索软件恢复能力会立即拍摄快照。查看勒索软件恢复能力*警报*选项卡中的潜在风险。</block>
   <block id="6fe459ab097d6c4270e2ad317a017b93" category="paragraph">警报事件可以具有以下几种状态：</block>
-  <block id="afc3fd7b02af578176e65700acd6709b" category="list-text">*审核中*：您可以在评估事件时将其标记为审核中。</block>
   <block id="93771318f0ad483bcb651c0ded2c6033" category="admonition">攻击解除后，无法恢复其状态。如果您解除工作负载，则为应对潜在勒索软件攻击而自动获取的所有快照副本都将被永久删除。</block>
   <block id="c95e7dd9856afddc701e5bf3b384f093" category="paragraph">审查事件后，您需要确定该事件是否是潜在的攻击。如果它们不构成实际威胁，就可以忽略不计。</block>
   <block id="c73a9fafaefc34f0b97adbaba4200dc9" category="paragraph">您可以忽略误报或决定立即恢复数据。如果您忽略警报，勒索软件恢复功能会学习此行为并将其与正常操作关联起来，并且不会再次针对此类行为发出警报。</block>
@@ -2090,4 +2088,5 @@
   <block id="6edf03555b64b68b413469994ca42164" category="list-text">*控制台代理* - 控制台代理应与用户活动代理位于同一网络中，并可通过 SSH 连接到用户活动代理的 IP 地址。</block>
   <block id="8e19d605b8be4e3be2157e822268633f" category="list-text">如果您选择“包含可选属性”，您还可以添加电子邮件地址、电话号码、角色、州/省、国家/地区、部门、照片、经理 DN 或组。选择“*高级*”以添加可选的搜索查询。</block>
   <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">2025年12月8日</block>
+  <block id="4256b08931f8c14d28bbf33199e1b022" category="paragraph">勒索软件恢复功能现在允许您编辑用户行为警报的状态。您可以手动关闭和解决警报。</block>
 </blocks>
