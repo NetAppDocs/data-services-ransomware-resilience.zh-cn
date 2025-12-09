@@ -14,7 +14,7 @@
 
 勒索软件恢复功能现在允许您编辑用户行为警报的状态。您可以手动关闭和解决警报。
 
-有关详细信息，请参阅 xref:rp-use-alert.html[管理警报]。
+有关详细信息，请参阅 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html["管理勒索软件恢复能力中的警报"^]。
 
 
 
