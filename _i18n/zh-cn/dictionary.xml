@@ -215,7 +215,6 @@
   <block id="533c17bbfdfb297420db9af0908070d6" category="inline-link">自主勒索软件防护</block>
   <block id="cc6088539286339733631d73fb51774b" category="inline-link">NetApp Backup and Recovery</block>
   <block id="2dd00507ca85eec8a3465506e478e45f" category="inline-link">ONTAP FPolicy</block>
-  <block id="f2abd20c3ee58c54298223da2df91335" category="list-text">发现每个卷的当前NetApp快照副本和备份策略的保护级别以及任何机上检测功能。然后，勒索软件恢复能力通过使用备份和恢复、 ONTAP服务和NetApp技术（例如自主勒索软件保护（ARP 或 ARP/AI，取决于您的ONTAP版本）、FPolicy、备份策略和快照策略）将此保护态势与工作负载相关联。详细了解<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="inline-link-rx"></block>，<block ref="2b1b7f994c6938347657a18d8edc7db7" category="inline-link-rx"></block> ， 和<block ref="591ebe16737e602cc342b68e859c040e" category="inline-link-rx"></block>。</block>
   <block id="d8b67a8dae92158ddb9e71a66b9532b5" category="list-text">根据自动发现的保护级别为每个工作负载分配业务优先级，并根据工作负载的业务优先级推荐保护策略。工作负载优先级基于已应用于与工作负载相关的每个卷的快照频率。</block>
   <block id="f23d5c00c473a2e87ffcd7a0eedb89b5" category="cell">*保护*</block>
   <block id="63b3247f9021fefc99163e7f1ccaa624" category="list-text">通过将策略应用于每个已识别的工作负载，主动监控工作负载并协调备份和恢复、 SnapCenter和ONTAP API 的使用。</block>
@@ -680,8 +679,6 @@
   <block id="179e5ea4317177f519c688d15ef67987" category="paragraph"><block ref="179e5ea4317177f519c688d15ef67987" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e462715e9b155f4f9638da4f314c8aff" category="list-text">选择*准备演习*和*下载*以下载准备演习报告。</block>
   <block id="bb44ab86396f7335c45f2c99c022776c" category="summary">如果勒索软件恢复功能检测到可能的攻击，勒索软件恢复功能仪表板上就会出现警报，指示潜在攻击。此时，您应该查看“勒索软件弹性警报”选项卡中的潜在风险。</block>
-  <block id="1238309e873f300d76b90a5b0f3a20bc" category="doc">使用NetApp Ransomware Resilience处理检测到的勒索软件警报</block>
-  <block id="5edf980bc8d23fb98c1f0d60dc6594f8" category="paragraph">当NetApp Ransomware Resilience检测到可能的攻击时，它会在仪表板和通知区域显示警报。勒索软件恢复能力会立即拍摄快照。查看勒索软件恢复能力*警报*选项卡中的潜在风险。</block>
   <block id="0cf61fe483b7c3216a42a15a22e0ef97" category="paragraph">如果勒索软件恢复功能检测到可能的攻击，控制台通知设置中会出现通知，并且电子邮件会发送到配置的地址。电子邮件包含有关严重性、受影响的工作负载的信息，以及勒索软件恢复力*警报*选项卡中警报的链接。</block>
   <block id="4c8cd66676ad1c434108e699d9777408" category="paragraph">您可以忽略误报或决定立即恢复数据。</block>
   <block id="899157335f0c98105a8cbc92966ba06d" category="admonition">如果您关闭警报，勒索软件恢复功能会了解此行为，将其与正常操作关联，并且不会再次对其发出警报。</block>
@@ -703,10 +700,8 @@
   <block id="64c00e9ea78abe412d8db56dd1df0462" category="paragraph">警报可以具有以下状态之一：</block>
   <block id="adf79604cd73ac69e1173c85b1070d09" category="list-text">*新的*</block>
   <block id="001af4b9160bf93cb0c3215a7180e3b7" category="list-text">*不活跃*</block>
-  <block id="0ab8632cf6795b381aaa64cb2dc1b45f" category="paragraph">警报事件可以具有以下状态之一：</block>
   <block id="be48871d3fcb22d62d5de71b2de11ab9" category="list-text">*新*：所有事件在首次发现时均标记为“新”。</block>
   <block id="d2b7a3286df55d9570e26ad7450dfeb9" category="list-text">*已解除*：如果您怀疑该活动不是勒索软件攻击，您可以将状态更改为“已解除”。</block>
-  <block id="5295c827fac90b16880fb1c75f51694f" category="admonition">在您驳回攻击后，您无法将其改回。如果您解除工作负载，则为应对潜在勒索软件攻击而自动获取的所有快照副本都将被永久删除。</block>
   <block id="abcc01ccddba81d6df2f14e786d4b375" category="list-text">*正在驳回*：该事件正在被驳回。</block>
   <block id="135963592c039774ee41872c4fec1009" category="list-text">*已解决*：该事件已修复。</block>
   <block id="afd9740574ba951a58c825da5cfeddb3" category="list-text">*自动解决*：对于低优先级警报，如果五天内未采取任何措施，则事件将自动解决。</block>
@@ -768,18 +763,12 @@
   <block id="6faff9d182a89c619b1ad36913af4fa5" category="list-text">要启动工作负载恢复，请在消息中选择“*恢复*工作负载”或选择“*恢复*”选项卡。</block>
   <block id="dbb2ae89216b8dfda3662d01ab32469f" category="paragraph">将警报标记为恢复后，警报将从“警报”选项卡移至“恢复”选项卡。</block>
   <block id="d3870301348c9947a819b7a9ed0c25df" category="section-title">忽略不属于潜在攻击的事件</block>
-  <block id="b0b578b8be1448972010b482195bbda8" category="paragraph">审查事件后，您需要确定该事件是否是潜在的攻击。如果它们不是真正的威胁，则可以将其驳回。</block>
-  <block id="74583f536ee54b8803ab561a596f2bb9" category="paragraph">您可以忽略误报或决定立即恢复数据。如果您忽略警报，勒索软件恢复功能会了解此行为，将其与正常操作关联，并且不会再次针对此类行为发出警报。</block>
   <block id="5a5533258cfacee641d19f7f201b727f" category="paragraph">如果您解除工作负载，则为应对潜在勒索软件攻击而自动获取的所有快照副本都将被永久删除。</block>
-  <block id="46b4f01c45e92cd2d2fe7d4406168b5d" category="list-text">选择一个或多个事件。或者，通过选择表格左上角的事件 ID 框来选择所有事件。</block>
   <block id="c4229f2836db3c8f0198619d853bad27" category="list-text">如果您确定该事件不构成威胁，请将其视为误报：</block>
   <block id="a20ff2150b7b9f34f30c94111d0f2672" category="list-text">选择事件。</block>
   <block id="4c8220d9b08f6a99b99ca2a31e910796" category="list-text">选择表格上方的*编辑状态*按钮。</block>
   <block id="cae6793a9f947fdb33e9ebb9c2913794" category="inline-image-macro">警报编辑状态页面</block>
   <block id="e6fe1dbe41a0d14f05208f5ee0593783" category="paragraph"><block ref="e6fe1dbe41a0d14f05208f5ee0593783" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a3766d306cdb80badf038a83067d73d3" category="list-text">从编辑状态框中，选择“已解除”状态。</block>
-  <block id="0d77ad85eefae95571395461b82d0990" category="paragraph">将显示有关工作负载和已删除快照副本的其他信息。</block>
-  <block id="982b96cbcd987b2495b15ba07dd59831" category="paragraph">一个或多个事件的状态变为“已解除”。</block>
   <block id="03449fca76164b6dcb5b9e314b4a5c2b" category="section-title">查看受影响文件的列表</block>
   <block id="0fd4c032e8d9638089eca51930a25305" category="paragraph">在文件级别恢复应用程序工作负载之前，您可以查看受影响文件的列表。您可以访问警报页面下载受影响文件的列表。然后使用恢复页面上传列表并选择要恢复的文件。</block>
   <block id="6162015141ec2e05b3da3316c594dc7a" category="paragraph">使用“警报”页面检索受影响文件的列表。</block>
@@ -1639,7 +1628,6 @@
   <block id="75d41b8fe2ef8de56d2fd2046bb0dad3" category="list-text">选择**云提供商**，然后选择**区域**。选择**下一步**。</block>
   <block id="604a864dab990debb57e02cc6550cb0b" category="list-text">提供用户活动代理详细信息：</block>
   <block id="8b67ab5f6d4b7a7c9b54a220ab393e0f" category="list-text">**用户活动代理名称**</block>
-  <block id="40c10b55b38de651cc304b987f3b8552" category="list-text">*控制台代理* - 控制台代理应与用户活动代理位于同一网络中，并通过 SSH 连接到用户活动代理 IP 地址。</block>
   <block id="b023c42f6578a2febd3d77169ecb00ef" category="list-text">*VM DNS 名称或 IP 地址*</block>
   <block id="95a1594aeff80ead5b4f2710e4acb1c5" category="list-text">*虚拟机 SSH 密钥*</block>
   <block id="1dc03f52e7a38f5b6ec91f4303e010ad" category="inline-image-macro">添加活动代理界面截图。</block>
@@ -2078,6 +2066,28 @@
   <block id="aff175f709dc693d1f9ca4c44728163a" category="list-text">*SID*（如果您使用 LDAP）</block>
   <block id="3b57547caa3754998fa617bd92514f25" category="list-text">*用户名*</block>
   <block id="c8a0546946d4ed57fd88fc4918d3825f" category="list-text">*Unix ID*（如果您使用 NFS）</block>
-  <block id="1358e8e29329a97048f0688a1813071f" category="list-text">如果您选择“包含可选属性”，您还可以添加电子邮件地址、电话号码、角色、州/省、国家/地区、部门、照片、经理 DN 或组。</block>
-  <block id="7703674a5321c1f23549682250a732e9" category="paragraph">选择“*高级*”以添加可选的搜索查询。</block>
+  <block id="8a9b2764802b622f9894a669a606f74f" category="doc">扩展程序阻止功能已在工作负载级别启用。</block>
+  <block id="ab47595f128d75b47b3449fcd4dfb523" category="paragraph">启用扩展阻止功能后，现在是在工作负载级别而不是存储虚拟机级别启用该功能。</block>
+  <block id="a6493502d5fc22c0b3ccee818dc4a5a5" category="section-title">编辑用户行为警报状态</block>
+  <block id="f143f02b29819ec9e761d9f292dea42c" category="paragraph">勒索软件恢复功能现在允许您编辑用户行为警报的状态。您可以手动关闭和解决警报。现在您还可以将警报标记为“审核中”。</block>
+  <block id="685b0f2db45e4fc09a06ccb4695806de" category="inline-xref-macro">管理警报</block>
+  <block id="30acfc7aa0f5ff9593d73e769de766c0" category="paragraph">有关详细信息，请参阅 <block ref="32161c93f86d45672d8429d13ea78e6b" category="inline-xref-macro-rx"></block>。</block>
+  <block id="d5214a8deea026de61af736ebf8697dd" category="section-title">支持多个控制台代理</block>
+  <block id="1a6a565def701385358a626d6728afd8" category="paragraph">勒索软件恢复功能现在支持使用多个控制台代理来管理同一系统。</block>
+  <block id="76adc55b5a0beb97a709fbc0c204a3d0" category="paragraph">有关控制台代理的更多信息，请参阅<block ref="c97584494dd542160395e5c607ae4c2c" category="inline-link-macro-rx"></block>。</block>
+  <block id="be8cc003074f86f2bc2b3ef0d2f3a334" category="list-text">发现每个卷的当前NetApp快照副本和备份策略的保护级别以及任何机上检测功能。然后，勒索软件恢复能力通过使用备份和恢复、 ONTAP服务以及NetApp技术（例如自主勒索软件保护（ARP 或 ARP/AI，具体取决于您的ONTAP版本）、FPolicy、备份策略和快照策略）将此保护状态与工作负载关联起来。了解更多<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="inline-link-rx"></block>，<block ref="2b1b7f994c6938347657a18d8edc7db7" category="inline-link-rx"></block> ， 和<block ref="591ebe16737e602cc342b68e859c040e" category="inline-link-rx"></block>。</block>
+  <block id="ee1bc5da2dde4f02ef7aa47df921506a" category="doc">在NetApp Ransomware Resilience中管理警报</block>
+  <block id="9a51095678260d2a753174230dbe8a88" category="paragraph">当NetApp Ransomware Resilience检测到可能的攻击时，它会在仪表板和通知区域显示警报。勒索软件恢复能力会立即拍摄快照。查看勒索软件恢复能力*警报*选项卡中的潜在风险。</block>
+  <block id="6fe459ab097d6c4270e2ad317a017b93" category="paragraph">警报事件可以具有以下几种状态：</block>
+  <block id="afc3fd7b02af578176e65700acd6709b" category="list-text">*审核中*：您可以在评估事件时将其标记为审核中。</block>
+  <block id="93771318f0ad483bcb651c0ded2c6033" category="admonition">攻击解除后，无法恢复其状态。如果您解除工作负载，则为应对潜在勒索软件攻击而自动获取的所有快照副本都将被永久删除。</block>
+  <block id="c95e7dd9856afddc701e5bf3b384f093" category="paragraph">审查事件后，您需要确定该事件是否是潜在的攻击。如果它们不构成实际威胁，就可以忽略不计。</block>
+  <block id="c73a9fafaefc34f0b97adbaba4200dc9" category="paragraph">您可以忽略误报或决定立即恢复数据。如果您忽略警报，勒索软件恢复功能会学习此行为并将其与正常操作关联起来，并且不会再次针对此类行为发出警报。</block>
+  <block id="ea3cf0f8eb2106f78fd9e62d674bd7c0" category="list-text">选择一个或多个事件。或者，选择表格左上角的“事件 ID”框，即可选择所有事件。</block>
+  <block id="845279243191f55592e2d4438456de67" category="list-text">在“编辑状态”框中，选择“已解雇”状态。</block>
+  <block id="c66f0ec622b69a240be9821f2dbbb082" category="paragraph">显示了有关工作负载和快照副本被删除的更多信息。</block>
+  <block id="3224e89b6de433c70f47e320c0777439" category="paragraph">事件状态更改为“已驳回”。</block>
+  <block id="6edf03555b64b68b413469994ca42164" category="list-text">*控制台代理* - 控制台代理应与用户活动代理位于同一网络中，并可通过 SSH 连接到用户活动代理的 IP 地址。</block>
+  <block id="8e19d605b8be4e3be2157e822268633f" category="list-text">如果您选择“包含可选属性”，您还可以添加电子邮件地址、电话号码、角色、州/省、国家/地区、部门、照片、经理 DN 或组。选择“*高级*”以添加可选的搜索查询。</block>
+  <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">2025年12月8日</block>
 </blocks>

@@ -123,7 +123,7 @@ image:diagram-rp-architecture-preview3.png["勒索软件抵御能力架构图"]
 | *确认*  a| 
 * 查找连接到控制台的所有客户本地 NAS（NFS 和 CIFS 协议）、SAN（FC、iSCSI 和 NVMe）和Cloud Volumes ONTAP数据。
 * 从ONTAP和SnapCenter服务 API 中识别客户数据并将其与工作负载关联。详细了解 https://docs.netapp.com/us-en/ontap-family/["ONTAP"^]和 https://docs.netapp.com/us-en/snapcenter/index.html["SnapCenter软件"^]。
-* 发现每个卷的当前NetApp快照副本和备份策略的保护级别以及任何机上检测功能。然后，勒索软件恢复能力通过使用备份和恢复、 ONTAP服务和NetApp技术（例如自主勒索软件保护（ARP 或 ARP/AI，取决于您的ONTAP版本）、FPolicy、备份策略和快照策略）将此保护态势与工作负载相关联。详细了解 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索软件防护"^]， https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["NetApp Backup and Recovery"^] ， 和 https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^]。
+* 发现每个卷的当前NetApp快照副本和备份策略的保护级别以及任何机上检测功能。然后，勒索软件恢复能力通过使用备份和恢复、 ONTAP服务以及NetApp技术（例如自主勒索软件保护（ARP 或 ARP/AI，具体取决于您的ONTAP版本）、FPolicy、备份策略和快照策略）将此保护状态与工作负载关联起来。了解更多 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索软件防护"^]， https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["NetApp Backup and Recovery"^] ， 和 https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^]。
 * 根据自动发现的保护级别为每个工作负载分配业务优先级，并根据工作负载的业务优先级推荐保护策略。工作负载优先级基于已应用于与工作负载相关的每个卷的快照频率。
 
 
