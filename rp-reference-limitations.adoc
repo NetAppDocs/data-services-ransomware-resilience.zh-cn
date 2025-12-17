@@ -24,8 +24,8 @@ summary: 已知限制标识了该产品的此版本不支持的平台、设备�
 
 == Amazon FSx for NetApp ONTAP限制
 
-勒索软件恢复能力支持Amazon FSx for NetApp ONTAP系统。该系统有以下限制：
+勒索软件恢复能力支持Amazon FSx for NetApp ONTAP系统。以下限制适用于Amazon FSx for ONTAP：
 
-* Fsx for ONTAP不支持备份策略。在这种环境下，您应该使用Amazon FSx执行备份操作。您可以使用勒索软件恢复功能恢复这些工作负载。
+* Amazon FSx for ONTAP不支持备份策略。在这种环境下，您应该使用Amazon FSx执行备份操作。您可以使用勒索软件恢复功能恢复这些工作负载。
 * 恢复操作仅从快照执行。
 
