@@ -109,9 +109,9 @@ NOTE: 如果您已使用非管理员凭据将ONTAP集群连接到控制台，则
 
 
 
-== 可疑的用户行为
+== 可疑用户行为要求
 
-为了使勒索软件恢复能力提供有关可疑用户行为的警报，您必须配置用户活动代理。有关详细信息，请参阅 link:suspicious-user-activity.html["在NetApp Ransomware Resilience中配置可疑用户活动检测"]。
+为了使勒索软件恢复能力提供有关可疑用户行为的警报，您必须配置用户活动代理。 To install a user activity agent, ensure your system meets link:suspicious-user-activity.html["要求"].
 
 
 

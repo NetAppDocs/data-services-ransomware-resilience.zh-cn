@@ -4,7 +4,7 @@ permalink: rp-use-dashboard.html
 keywords: ransomware protection, ransomware protection dashboard, detect ransomware attacks, recover from ransomware attack 
 summary: NetApp Ransomware Resilience仪表板提供有关工作负载保护健康状况的信息。您可以快速确定处于危险之中或受保护的工作负载、受事件影响或处于恢复中的工作负载，并通过查看受保护或处于危险中的存储量来衡量保护程度。您还可以使用仪表板来查看保护建议并采取行动。 
 ---
-= 使用 NetAPp 勒索软件恢复力仪表板监控工作负载健康状况
+= 使用NetApp Ransomware Resilience仪表板监控工作负载健康状况
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -14,7 +14,7 @@ summary: NetApp Ransomware Resilience仪表板提供有关工作负载保护健�
 [role="lead"]
 NetApp Ransomware Resilience仪表板提供有关工作负载保护健康状况的概览信息。您可以快速确定处于危险之中或受保护的工作负载，识别受事件影响或处于恢复中的工作负载，并通过查看受保护或处于危险中的存储量来衡量保护程度。
 
-使用仪表板查看保护建议、更改设置、下载报告和查看文档。
+使用控制面板查看保护建议、更改设置和下载报告。
 
 *所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员、勒索软件恢复管理员或勒索软件恢复查看器角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^] 。
 
@@ -149,15 +149,15 @@ TIP: 您稍后可以将已消除的项目更改为待办事项。当您将某项
 * *恢复*：包括需要恢复的所有工作负载的状态和详细信息，包括勒索软件恢复标记为“需要恢复”、“进行中”、“恢复失败”和“成功恢复”的工作负载总数。
 
 
-从页面下载的 CSV 文件仅包含该页面的数据。
+从网页下载的 CSV 文件仅包含该网页中的数据。
 
 CSV 文件包含所有控制台系统上所有工作负载的数据。
 
 .步骤
-. 从勒索软件恢复力仪表板中，选择*刷新*image:button-refresh.png["刷新选项"]右上角的选项可刷新文件中显示的数据。
+. 在勒索软件恢复能力控制面板中，选择“刷新”。 image:button-refresh.png["刷新选项"] 右上角有刷新文件中显示的数据的选项。
 . 执行以下操作之一：
 +
-** 从页面上选择*下载*image:button-download.png["下载选项"]选项。
+** 从页面上选择“下载”按钮。 image:button-download.png["下载选项图标的图像"] 选项。
 ** 从勒索软件恢复菜单中，选择*报告*。
 
 
