@@ -113,15 +113,10 @@ TIP: 建议您使用网络时间协议 (NTP) 或简单网络时间协议 (SNTP) 
 | 协议 | 端口 | 源 | 目标 | 描述 
 
 
-| TCP | 443 | 用户活动代理  a| 
-* <site_name>.cs01-ap-1.cloudinsights.netapp.com
-* <site_name>.c01-ap-1.cloudinsights.netapp.com
-* <site_name>.c02-ap-1.cloudinsights.netapp.com
-
-| 获得勒索软件恢复能力 
+| TCP | 443 | 用户活动代理 | 勒索软件恢复服务 | 获得勒索软件恢复能力 
 
 
-| TCP | 443 | 用户活动代理 | agentlogin.cs01-ap-1.cloudinsights.netapp.com | 访问身份验证服务 
+| TCP | 443 | 用户活动代理 | 勒索软件恢复服务 | 访问身份验证服务 
 |===
 
 
@@ -132,15 +127,10 @@ TIP: 建议您使用网络时间协议 (NTP) 或简单网络时间协议 (SNTP) 
 | 协议 | 端口 | 源 | 目标 | 描述 
 
 
-| TCP | 443 | 用户活动代理  a| 
-* <site_name>.cs01-eu-1.cloudinsights.netapp.com
-* <site_name>.c01-eu-1.cloudinsights.netapp.com
-* <site_name>.c02-eu-1.cloudinsights.netapp.com
-
-| 获得勒索软件恢复能力 
+| TCP | 443 | 用户活动代理 | 勒索软件恢复服务 | 获得勒索软件恢复能力 
 
 
-| TCP | 443 | 用户活动代理 | agentlogin.cs01-eu-1.cloudinsights.netapp.com | 访问身份验证服务 
+| TCP | 443 | 用户活动代理 | 勒索软件恢复服务 | 访问身份验证服务 
 |===
 
 
@@ -151,15 +141,10 @@ TIP: 建议您使用网络时间协议 (NTP) 或简单网络时间协议 (SNTP) 
 | 协议 | 端口 | 源 | 目标 | 描述 
 
 
-| TCP | 443 | 用户活动代理  a| 
-* <site_name>.cs01.cloudinsights.netapp.com
-* <site_name>.c01.cloudinsights.netapp.com
-* <site_name>.c02.cloudinsights.netapp.com
-
-| 获得勒索软件恢复能力 
+| TCP | 443 | 用户活动代理 | 勒索软件恢复服务 | 获得勒索软件恢复能力 
 
 
-| TCP | 443 | 用户活动代理 | agentlogin.cs01.cloudinsights.netapp.com | 访问身份验证服务 
+| TCP | 443 | 用户活动代理 | 勒索软件恢复服务 | 访问身份验证服务 
 |===
 
 
