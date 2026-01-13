@@ -1,0 +1,27 @@
+= 将快照复制到ONTAP
+:allow-uri-read: 
+
+
+
+
+=== 将快照复制到ONTAP
+
+勒索软件恢复功能现在支持将快照复制到辅助ONTAP站点。您可以创建包含复制功能的勒索软件防护策略，也可以使用预定义的策略。通过使用复制策略的保护组，您可以为每个工作负载复制到相同的目标位置或不同的目标位置。
+
+有关详细信息，请参阅 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["在勒索软件恢复中保护工作负载"^]。
+
+
+
+=== 将工作负载排除在勒索软件恢复能力之外
+
+勒索软件恢复功能现在支持将系统中的特定工作负载从保护范围和勒索软件恢复仪表板中排除。发现工作负载后，您可以将其排除在外；如果想要添加勒索软件防护，则可以重新将其包含在内。排除在外的工作负载无需付费。
+
+有关详细信息，请参阅 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-discover.html#exclude-workloads["排除工作负载"^]。
+
+
+
+=== 标记提醒，如正在审核中
+
+勒索软件恢复功能现在允许您将警报标记为“审核中”。使用“审核中”标签可以提高团队在对活跃的勒索软件威胁进行分类和管理时的清晰度。
+
+有关详细信息，请参阅 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html["管理勒索软件恢复能力中的警报"^]。

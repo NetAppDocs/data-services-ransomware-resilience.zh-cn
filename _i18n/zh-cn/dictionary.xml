@@ -337,10 +337,6 @@
   <block id="76722f595147e9e40ab79fef549441a4" category="admonition">我们建议您不要禁用快照策略。</block>
   <block id="ef54d92c7cc927ca7eb5e489c30b0e9b" category="summary">在发现过程中，勒索软件恢复力会分析所有控制台代理和帐户的系统中的所有卷和文件。</block>
   <block id="e9be3c13b1ed73a120f1b23e2cefb058" category="doc">发现NetApp Ransomware Resilience中的工作负载</block>
-  <block id="66fde4240a0e74342b069b682c733504" category="paragraph">*如何发现工作负载？*您可以执行以下操作：</block>
-  <block id="e532d8f244f0ea9cd5619802d3cb8f03" category="list-text">在每个控制台代理中，选择您想要发现工作负载的系统。如果您想保护环境中的特定工作负载而不是其他工作负载，您可能会受益于此功能。</block>
-  <block id="6785cfec3a12064afa1fdb005b389154" category="list-text">发现先前选择的系统新创建的工作负载。</block>
-  <block id="35cf13d9dca3a78ecf913cca5a7af14a" category="list-text">发现新系统。</block>
   <block id="790472d97707885ad0bca12c5442db2a" category="paragraph">在每个控制台代理中，选择您想要发现工作负载的系统。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步骤</block>
   <block id="7b8dc42ed597eb23a119869a1195c334" category="list-text">从NetApp Console中，选择 *保护* &gt; *勒索软件保护*。</block>
@@ -363,12 +359,9 @@
   <block id="7aa859cab6bf5bccbd16604f19eefa93" category="inline-link-macro">了解仪表板向您显示的内容。</block>
   <block id="6363fabfdf63bcf12dfba9fd9de06ba3" category="paragraph"><block ref="6363fabfdf63bcf12dfba9fd9de06ba3" category="inline-link-macro-rx"></block></block>
   <block id="0e8bd87ff5fa544ac4a41711a3b607ee" category="section-title">发现先前选定的系统新创建的工作负载</block>
-  <block id="50cb53872ff54665f11a232b976038d3" category="paragraph">如果您已经选择了要发现的系统，则可以从仪表板中发现这些环境的新创建的工作负载。</block>
-  <block id="349f26e9c45e28e1bbdcacd539035898" category="list-text">要确定最后发现的日期，请查看勒索软件恢复力仪表板右上角*刷新*图标旁边的日期和时间戳。</block>
   <block id="cee654483027bd7fe0b0908f5113b46f" category="section-title">发现新系统</block>
   <block id="3a268026d4270688c4ec208104cc118c" category="paragraph">如果您已经发现了系统，您可以找到新的或以前未选择的系统。</block>
   <block id="12138171b6ceeb4bdc45d66e55bebe1c" category="inline-image-macro">垂直行动</block>
-  <block id="981597877eeda1ab60f9f862028665bf" category="list-text">从勒索软件恢复菜单中，选择垂直<block ref="ddacd9651566dbd67045ad6fbaf81a6c" category="inline-image-macro-rx" type="image"></block>...右上角的选项。从下拉菜单中选择*设置*。</block>
   <block id="405f846fd5caab9c6bb41e637ac55c97" category="summary">查找有关NetApp Ransomware Resilience的常见问题的答案。</block>
   <block id="815a60d80ffbc32f6db251b3410900b2" category="doc">关于NetApp Ransomware Resilience的常见问题解答</block>
   <block id="0257967210bdc685c6f54c2fd5c5300f" category="paragraph">如果您只是想快速找到有关NetApp Ransomware Resilience的问题的答案，那么此常见问题解答可以提供帮助。</block>
@@ -924,8 +917,6 @@
   <block id="54a418aa76c7e9afaa77a58a34a3d3ed" category="doc">使用NetApp Ransomware Resilience保护策略保护工作负载</block>
   <block id="7bf3a8af65d2a153b44dafcf248f1df7" category="paragraph">您可以通过在NetApp Ransomware Resilience中启用工作负载一致性保护或创建勒索软件保护策略来保护工作负载免受勒索软件攻击。</block>
   <block id="9d76fd8cddbcb128567856bd698d409e" category="section-title">了解勒索软件防护策略</block>
-  <block id="88a4ad08ed31669f06a098dea0a14a38" category="paragraph">勒索软件保护策略包括_检测_和_保护_策略。</block>
-  <block id="dd90d4cdb71a18320f3becc35cd530d5" category="list-text">**检测策略** 检测勒索软件威胁</block>
   <block id="b5728c1f0d5859e4bf3e89712b5ddbdf" category="list-text">**保护策略**包括快照和备份策略。保护策略中需要检测和快照策略。备份策略是可选的。</block>
   <block id="7646c296ea1b221cbb826893afaa224e" category="paragraph">如果您使用其他NetApp产品来保护您的工作负载，勒索软件恢复能力会发现这些产品并提供以下选项：</block>
   <block id="0e468f869572effeac4af4bbea21ed06" category="list-text">使用勒索软件检测策略并继续使用其他NetApp工具创建的快照和备份策略，或者</block>
@@ -975,18 +966,11 @@
   <block id="6041f003f0f1bda39024283f18c8591b" category="list-text">管理快照和备份的勒索软件保护策略的名称</block>
   <block id="0b780e70f563e19cd1a3f1e2bce2f198" category="paragraph">*工作量的重要性*</block>
   <block id="0882532dc9eb74e24a8b137f1e6a0b39" category="paragraph">勒索软件恢复能力根据对每个工作负载的分析，在发现过程中为每个工作负载分配重要性或优先级。工作负载重要性由以下快照频率决定：</block>
-  <block id="1ad5d2b1df5750779a9e10432b0d7a7b" category="list-text">*严重*：每小时拍摄的快照副本超过 1 个（高度激进的保护计划）</block>
-  <block id="1adc4b459e7f50d96280424fb7e06709" category="list-text">*重要*：每小时拍摄的快照副本少于 1 个，但每天拍摄的快照副本多于 1 个</block>
-  <block id="e12f58d91eed1a4a160b184cc1b10ebf" category="list-text">*标准*：每天拍摄的快照副本超过 1 个</block>
-  <block id="48102e7d0a568223836c2d653abd58e5" category="paragraph">*预定义检测策略* [[预定义]]</block>
   <block id="58adba48bf0678c3abb71d1fdf829602" category="paragraph">您可以选择以下勒索软件恢复预定义策略之一，这些策略与工作负载重要性相一致。</block>
   <block id="4d293abd3f96b37c9afdf90f01855f8b" category="admonition">**加密用户扩展**策略是唯一支持可疑用户行为检测的预定义策略。</block>
   <block id="a2c5d5541ff19f8df63922963356ec16" category="cell">政策层面</block>
   <block id="d4e2713d1b1725a1592f9268589f990d" category="cell">Snapshot</block>
   <block id="7cf395303ce3665a9834721d4b748e4b" category="cell">频率</block>
-  <block id="c2097ddf718c7c0477555ad9dde31c5e" category="cell">保留时间（天）</block>
-  <block id="39531fdceaea662abd6669cba8f989fc" category="cell">快照副本数量</block>
-  <block id="c6b8cedaee837159aadd999ac609755e" category="cell">快照副本总数上限</block>
   <block id="e8ce96c640213db710ed76440fe41391" category="cell">*关键工作量政策*</block>
   <block id="ef47e7cb2656929b4b5701de51c43f5f" category="paragraph">每刻钟</block>
   <block id="efec1cf9b9eee75e20f0e689c7d19618" category="cell">每15分钟</block>
@@ -1054,9 +1038,7 @@
   <block id="e4574be2aa1d855d0a159fa734c028b7" category="list-text">对于每个项目，选择*向下箭头*。</block>
   <block id="b77a56354e9e39a76b1a118e9bfa09d3" category="list-text">*检测政策*：</block>
   <block id="949db64066489b0349a4ff1451832808" category="list-text">*策略*：选择预先设计的检测策略之一。</block>
-  <block id="0bea212ea55cc876a45f2009621526fb" category="list-text">*主要检测*：启用勒索软件检测，让勒索软件恢复能力检测潜在的勒索软件攻击。</block>
   <block id="66ecff8104cfb8cf22c05ebdad07a66a" category="list-text">*可疑用户行为检测*：启用用户行为检测，将用户活动事件传输到勒索软件恢复能力并检测可疑事件，例如数据泄露。</block>
-  <block id="25c38cb370fc00bc6fd644a75102eeb2" category="list-text">*阻止文件扩展名*：启用此功能可让勒索软件恢复功能阻止已知的可疑文件扩展名。当启用主要检测时，勒索软件恢复能力会自动获取快照副本。</block>
   <block id="7c06fadd4f73e4b63eb519df7d9880fc" category="paragraph">如果您想更改被阻止的文件扩展名，请在系统管理器中编辑它们。</block>
   <block id="c8499d03897189696e5af26fc5ab9f45" category="list-text">*快照策略*：</block>
   <block id="007ac2633329ecdb55692304050d9260" category="list-text">*快照策略基础名称*：选择一个策略或选择*创建*并输入快照策略的名称。</block>
@@ -1079,7 +1061,6 @@
   <block id="5bf833f3ee3985c83ff4a2c137c2cdb9" category="list-text">勒索软件恢复能力检测是否存在活动的SnapCenter或备份和恢复策略。</block>
   <block id="0d7426ba5ec4042ac3383e7c8f81d565" category="list-text">要保留现有的备份和恢复或SnapCenter策略并仅应用_检测_策略，请取消选中**替换现有策略**框。</block>
   <block id="346ced422939f5220048eed80e512829" category="list-text">要查看SnapCenter策略的详细信息，请选择*向下箭头*。</block>
-  <block id="0004fcb1621d03d3051ca5a93121a0c9" category="list-text">选择您想要的检测设置：*加密检测* *可疑用户行为检测* *阻止可疑文件扩展名*</block>
   <block id="c716b644cde6bcf010e93cdafcb078a0" category="list-text">选择**下一步**。</block>
   <block id="a3de809b15b92430b0a649973defb161" category="inline-link-macro">或创建一个</block>
   <block id="4ba6fce8781481d7a10ccdf42ed8690d" category="list-text">如果您选择“可疑用户行为检测”作为检测设置，请选择“用户活动代理”或<block ref="739a3400f03009256dff1eb7cc8f7f4a" category="inline-link-macro-rx"></block>。</block>
@@ -1259,9 +1240,7 @@
   <block id="b2ff9d90b8575c5030e4183e92ccf938" category="summary">使用NetApp Ransomware Resilience，您可以下载显示保护、警报和恢复详细信息的报告并将其保存为 CSV 文件。</block>
   <block id="2963ad4383209a31ba7b5a890b302bc2" category="doc">在NetApp Ransomware Resilience中下载报告</block>
   <block id="6fb301adfaa83e3f2590a0454361757e" category="paragraph">您可以导出保护数据并下载显示攻击准备演习、保护、警报和恢复的详细信息的 CSV 或 JSON 文件。</block>
-  <block id="d788bcb0d6bc2e0d54ec3c042333bf41" category="admonition">在下载文件之前，您应该刷新数据，这也会刷新文件中出现的数据。</block>
   <block id="229560de4c61096e275f68d7eda37c00" category="paragraph">*您可以下载哪些数据？*您可以从任何主菜单选项下载文件：</block>
-  <block id="9e3cf45f94aa890af53ce59cfb5a0bac" category="list-text">*保护*：包含所有工作负载的状态和详细信息，包括受保护和处于危险中的工作负载总数。</block>
   <block id="a7e404e1296fea04d0cd654b84867b5a" category="list-text">*恢复*：包括所有需要恢复的工作负载的状态和详细信息，包括标记为“需要恢复”、“进行中”、“恢复失败”和“恢复成功”的工作负载总数。</block>
   <block id="a36d9f25fe7ecafe45db2fd45823c6e7" category="list-text">*报告*：您可以从任何页面导出数据并下载文件。</block>
   <block id="cba5c013826db3e7efce5d0c19aee9c1" category="admonition">您只能从*报告*页面下载准备情况演习报告。</block>
@@ -1542,9 +1521,7 @@
   <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">NetApp全新产品</block>
   <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">如果您是NetApp新用户并且没有 NSS 帐户，请按照以下步骤操作。</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">帮助菜单的屏幕截图，其中支持是第一个选项</block>
-  <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">从支持注册页面找到您的帐户 ID 序列号。</block>
-  <block id="379f9cd57d97013f3f7fdd24f692a0b1" category="paragraph"><block ref="379f9cd57d97013f3f7fdd24f692a0b1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">NetApp 的支持注册网站</block>
   <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">导航至<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block>并选择*我不是注册的NetApp客户*。</block>
   <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">填写必填字段（带有红色星号的字段）。</block>
@@ -1572,8 +1549,6 @@
   <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">如果您已有客户级 NSS 帐户并尝试添加合作伙伴级帐户，情况也是如此。</block>
   <block id="1afe8a81cfddc9fa9559e272bb6b9496" category="list-text">成功登录后， NetApp将存储 NSS 用户名。</block>
   <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">三个水平点的图标</block>
-  <block id="0dfcbbbe02d3e96f8ad78782e8772587" category="paragraph">这是系统生成的映射到您的电子邮件的 ID。在*NSS 管理*页面上，您可以显示来自<block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block>菜单。</block>
-  <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">如果您需要刷新登录凭证令牌，还有一个*更新凭证*选项<block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block>菜单。</block>
   <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">使用此选项会提示您再次登录。请注意，这些帐户的令牌将在 90 天后过期。我们将发布通知来提醒您此事。</block>
   <block id="2a4edc5ec6e55f07dba0609dc2cd6d87" category="summary">勒索软件恢复中的可疑用户活动检测使您能够检测可能构成潜在威胁的用户活动。</block>
   <block id="906ec8bab01967c36f2f073eff9f54df" category="doc">在NetApp Ransomware Resilience中配置可疑用户活动检测</block>
@@ -2044,7 +2019,6 @@
   <block id="ee1bc5da2dde4f02ef7aa47df921506a" category="doc">在NetApp Ransomware Resilience中管理警报</block>
   <block id="9a51095678260d2a753174230dbe8a88" category="paragraph">当NetApp Ransomware Resilience检测到可能的攻击时，它会在仪表板和通知区域显示警报。勒索软件恢复能力会立即拍摄快照。查看勒索软件恢复能力*警报*选项卡中的潜在风险。</block>
   <block id="6fe459ab097d6c4270e2ad317a017b93" category="paragraph">警报事件可以具有以下几种状态：</block>
-  <block id="93771318f0ad483bcb651c0ded2c6033" category="admonition">攻击解除后，无法恢复其状态。如果您解除工作负载，则为应对潜在勒索软件攻击而自动获取的所有快照副本都将被永久删除。</block>
   <block id="c95e7dd9856afddc701e5bf3b384f093" category="paragraph">审查事件后，您需要确定该事件是否是潜在的攻击。如果它们不构成实际威胁，就可以忽略不计。</block>
   <block id="c73a9fafaefc34f0b97adbaba4200dc9" category="paragraph">您可以忽略误报或决定立即恢复数据。如果您忽略警报，勒索软件恢复功能会学习此行为并将其与正常操作关联起来，并且不会再次针对此类行为发出警报。</block>
   <block id="ea3cf0f8eb2106f78fd9e62d674bd7c0" category="list-text">选择一个或多个事件。或者，选择表格左上角的“事件 ID”框，即可选择所有事件。</block>
@@ -2063,7 +2037,6 @@
   <block id="55971de7d1268c37251f60641b742b76" category="paragraph">在“发现”仪表板中，“勒索软件恢复能力”显示受支持和不受支持的系统配置。勒索软件恢复能力评估 Oracle 应用程序、VMware 数据存储、文件共享和块存储。</block>
   <block id="1e55889dc96c3aa2614c39626c9cecdd" category="admonition">勒索软件恢复能力无法发现使用FlexGroup 的卷的工作负载。</block>
   <block id="c0605366a345249c74664f31f92636c4" category="paragraph">勒索软件恢复能力会检查您当前的备份保护、快照副本和NetApp自主勒索软件保护选项。勒索软件恢复能力还可以检测来自SnapCenter for VMware（用于 VM 数据存储）、 SnapCenter for Oracle 和NetApp Backup and Recovery （用于文件共享和 VM 文件共享）的保护信息。然后它会推荐一些改善勒索软件防护的方法。</block>
-  <block id="20571d4d9a9f67814984ceaa9897d90b" category="paragraph">勒索软件恢复功能仅针对选定系统中的控制台代理发现工作负载数据。此过程可能需要几分钟时间。</block>
   <block id="0c4db502345984347741cd5a9a3da447" category="list-text">在控制面板中，选择“刷新”图标以查找新的工作负载。</block>
   <block id="242b6b00ff2f35d933e337704d202041" category="list-text">在工作负载发现卡中，选择*发现工作负载*。发现过程可能需要几分钟。加载图标显示进度。</block>
   <block id="728cc93ad9329b5fca77365b0336ce77" category="list-text">勒索软件恢复力可以发现受支持和不受支持的系统。如果系统的ONTAP版本低于所需版本，则不支持该系统。当您将鼠标悬停在某个不受支持的系统上时，工具提示会显示原因。选择您想要发现工作负载的系统。</block>
@@ -2129,4 +2102,74 @@
   <block id="c3c0e3736c092f9f194505694468ca8b" category="inline-link-macro">系统要求</block>
   <block id="3711ac0a85bd797cffe6d1b55a460f16" category="paragraph">确保您已满足以下条件： <block ref="24745d2c3c6c1ff64bcdf410b4214e6b" category="inline-link-macro-rx"></block> 用户活动代理。请确保您的配置符合支持的云提供商和区域要求。</block>
   <block id="bbeae0eeffca7072631fe62be382e481" category="cell">勒索软件恢复服务</block>
+  <block id="28f949c139c27e6b09df3640a4d3aea0" category="doc">将快照复制到ONTAP</block>
+  <block id="f67d671d0eb9b2810d472b2c73fb65d6" category="paragraph">勒索软件恢复功能现在支持将快照复制到辅助ONTAP站点。您可以创建包含复制功能的勒索软件防护策略，也可以使用预定义的策略。通过使用复制策略的保护组，您可以为每个工作负载复制到相同的目标位置或不同的目标位置。</block>
+  <block id="6ca5a36112bece1031ef1a3e82518ffb" category="inline-link-macro">在勒索软件恢复中保护工作负载</block>
+  <block id="0b603f5148dda4ce1b974e4b20493476" category="paragraph">有关详细信息，请参阅 <block ref="1b59dbcecddb451034333205ceb2d85d" category="inline-link-macro-rx"></block>。</block>
+  <block id="f7bb3fba9e87909a7d99018a8feebef5" category="section-title">将工作负载排除在勒索软件恢复能力之外</block>
+  <block id="36d62eb8fbffb07f574185bd90036cd1" category="paragraph">勒索软件恢复功能现在支持将系统中的特定工作负载从保护范围和勒索软件恢复仪表板中排除。发现工作负载后，您可以将其排除在外；如果想要添加勒索软件防护，则可以重新将其包含在内。排除在外的工作负载无需付费。</block>
+  <block id="427dab7765b34a516acce2d3545db33d" category="inline-link-macro">排除工作负载</block>
+  <block id="cce6483b933a36b9eebb2ecf0d8f32a6" category="paragraph">有关详细信息，请参阅 <block ref="40a5b14292f3b3c1d42c8b093a2843e2" category="inline-link-macro-rx"></block>。</block>
+  <block id="35308ce14b9ba8b4f632405b876f0cc3" category="section-title">标记提醒，如正在审核中</block>
+  <block id="ff4c9cd383a7fe5ae887d1ac68d7ba52" category="paragraph">勒索软件恢复功能现在允许您将警报标记为“审核中”。使用“审核中”标签可以提高团队在对活跃的勒索软件威胁进行分类和管理时的清晰度。</block>
+  <block id="89f2d4e28daee04bf630a66530a30349" category="paragraph">勒索软件恢复能力仅在选择系统时才会发现工作负载数据。发现过程可能需要几分钟时间。</block>
+  <block id="67cfc97e3b12b9504bf641388c095506" category="paragraph">如果您已向先前发现的系统添加了工作负载，则需要重新启动发现以保护新的工作负载。</block>
+  <block id="a766aa8ad09c7fe20050753d75beca3f" category="list-text">要确定上次发现的时间，请查看勒索软件恢复仪表板右上角“刷新”图标旁边的日期和时间戳。</block>
+  <block id="b449485bf7d14cf53070de7818e6bb15" category="inline-image-macro">垂直操作&lt;block ref="2f43b42fd833d1e77420a8dae7419000" prefix="</block>
+  <block id="5b000e587ccbc59d84db84375ebb8da8" category="list-text">从“勒索软件恢复”菜单中，选择垂直方向 <block ref="fc01824fafc69aa9b95ac35277bbc402" category="inline-image-macro-rx" type="image"></block>右上角的“category='inline-code'/&gt; 选项。从下拉菜单中选择“设置”。</block>
+  <block id="a73cb044815fd2c4fc6f7f4be69aea1b" category="paragraph">勒索软件恢复功能允许您将系统中的特定工作负载排除在勒索软件保护和检测之外。</block>
+  <block id="195a678c9c8d484143eb63eed10f0646" category="paragraph">您只能排除受支持且已成功发现的工作负载。您可以随时修改排除的工作负载列表。对于未纳入勒索软件恢复功能的工作负载，您无需付费。</block>
+  <block id="8177747908126fef8483f6d1d6004f44" category="list-title">将工作负载添加到排除的工作负载列表中</block>
+  <block id="37eb321d29db5dca11557bda9adc6eb7" category="list-text">在勒索软件恢复功能中，选择**设置**。</block>
+  <block id="c015f4b89fe0df1b17fc4657c586df8c" category="list-text">在“设置”仪表板中，找到“工作负载发现”仪表板。该卡片标明了已排除的工作负载数量。要添加工作负载，请在排除的工作负载旁边选择**管理**。</block>
+  <block id="7722f090277db2c47e7aecd7f6ee7e81" category="inline-image-macro">勒索软件恢复设置仪表板</block>
+  <block id="fed7f3c8409ae810bb45ed3af428f167" category="paragraph"><block ref="fed7f3c8409ae810bb45ed3af428f167" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2aa032eed68682b8806374264ab61a71" category="list-text">在“排除的工作负载”页面中，选择**添加**。</block>
+  <block id="37cf02ce6bbea058426687b673a078ad" category="list-text">选择要排除的工作负载，然后单击**添加**。</block>
+  <block id="5b9260ea2b4c6018fc2bd598ec422b08" category="list-text">请查看“已排除的工作负载”页面，了解已排除的工作负载。添加工作负载时，其名称旁边会显示进度指示器。如果工作负载未成功排除，则不会显示在页面上。</block>
+  <block id="423527e51d69b12e13d1380a3cd19d9f" category="list-title">从排除的工作负载列表中移除工作负载</block>
+  <block id="8e0c5d2e3270df01d0de694ff5c7c445" category="list-text">在“设置”仪表板中，找到“工作负载发现”仪表板。该卡片标明了已排除的工作负载数量。在排除的工作负载旁边，选择**管理**。</block>
+  <block id="d3ce09b8cd5f44a1b0f3a2d83e6ac0f2" category="inline-image-macro">勒索软件防护设置仪表板的屏幕截图。</block>
+  <block id="ca700be141532b3ddfdcc178e0b5cd32" category="paragraph"><block ref="ca700be141532b3ddfdcc178e0b5cd32" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9ec9c37808e2bdf2c275e0fc67f873fc" category="list-text">要从排除列表中删除单个工作负载，请选择要删除的工作负载的操作菜单。</block>
+  <block id="d1e463c8fe8d734bd3327fb633998456" category="paragraph">要删除多个工作负载，请选中要删除的工作负载旁边的复选框，然后选择**从排除列表中删除**。</block>
+  <block id="9f1822f26663cadd0ea726defa3cca17" category="list-text">在对话框中，选择“删除”以确认要从排除列表中删除工作负载。</block>
+  <block id="01e74a47d7af3692bf72faf95ffcd1a3" category="inline-image-macro">成功移除已排除的工作负载的屏幕截图。</block>
+  <block id="af77f82e6f94939c1b89727420b621ac" category="list-text">如果成功从排除的工作负载列表中删除工作负载，则“排除的工作负载”页面上将显示成功消息，并且该工作负载将不再出现在排除的工作负载列表中。如果操作失败，将显示错误消息；请重试该操作。 <block ref="364f1d2f9b1485226ce83c7872b1bae0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="afc3fd7b02af578176e65700acd6709b" category="list-text">*审核中*：您可以在评估事件时将其标记为审核中。</block>
+  <block id="a6e3974f4227562b42dd3774682f3f56" category="admonition">攻击解除后，无法恢复其状态。如果您取消某个工作负载，则为应对潜在的勒索软件攻击而自动创建的所有快照副本都将被永久删除。</block>
+  <block id="95f7e6287ef0ab80de109e7baee476ad" category="paragraph">勒索软件防护策略包括检测、保护和复制策略。</block>
+  <block id="b8b45f3c53a227dc5aa1d806ef340f06" category="list-text">**检测策略** 识别勒索软件威胁</block>
+  <block id="68fc9b8869c6d23ecc7c4acaf4ef7761" category="list-text">**复制策略** 使您能够将勒索软件恢复功能的快照复制到辅助站点。复制计划可以设置为每小时、每天、每周或每月一次的频率。</block>
+  <block id="3ed69b14426127876e3ab79ddc2e266e" category="paragraph">目前，您只能将快照复制到本地ONTAP存储。</block>
+  <block id="6474bbda8f7c072686c6e020cf107ead" category="list-text">从控制台左侧导航栏中选择“保护”&gt;“勒索软件恢复”。</block>
+  <block id="ace8eeed056a04351826cffef5f4da33" category="admonition">可疑用户行为活动和 FPolicy（可疑文件扩展名）活动与检测状态分开列出。</block>
+  <block id="8e671825df2521c62d586d393df3398d" category="paragraph">*复制目标*：如果您已配置快照复制，则会列出目标存储虚拟机和系统的名称。如果没有复制项，此字段显示“无”。</block>
+  <block id="705d8898c1c055eb3bff9939a87b6812" category="list-text">*关键*：每小时会创建多个快照副本（高度激进的保护计划）</block>
+  <block id="0bec43abfdb99f043ac56e20931d1899" category="list-text">*重要提示*：快照副本的创建频率低于每小时一次，但高于每天一次。</block>
+  <block id="890ca6db61a7d84b3c2f7e8b21560ff7" category="list-text">*标准*：每天拍摄多次快照副本</block>
+  <block id="da4aa80a5402fe8991327699e5421e28" category="section-title">预定义的检测策略</block>
+  <block id="b267816a1724e79c894aa7e4509e18b2" category="paragraph">+ **关键复制策略** 是唯一支持将快照复制到ONTAP 的预定义策略。</block>
+  <block id="0d6a90889ade51e4252ba8bbf1ad155e" category="cell">保留时间（天）</block>
+  <block id="b5b7fab63026325a379913c2a05751c2" category="cell">快照副本数量</block>
+  <block id="aa9adfa847815670c9bd986dafc8c79c" category="cell">快照副本的最大数量</block>
+  <block id="cf9344351eb239ccd95661876c4d97ee" category="cell">*关键复制策略*</block>
+  <block id="ad53fda1a18da9db9d8aa1d460952aa5" category="list-text">二次复制到ONTAP</block>
+  <block id="8f6c5d8baaf38cda61b5392a06e30e68" category="list-text">*主要检测*：启用勒索软件恢复功能，以检测潜在的勒索软件攻击。</block>
+  <block id="21fd87cf8a3d6f008657537a5cec6e82" category="list-text">*阻止文件扩展名*：启用勒索软件恢复功能，以阻止已知的可疑文件扩展名。启用主检测功能后，勒索软件恢复功能会自动创建快照副本。</block>
+  <block id="50723c157cd9ea132a02f421411e273d" category="list-text">*复制策略*：</block>
+  <block id="f84245dfb1fc8217e62c0934102ba606" category="list-text">*复制策略基本名称*：输入新名称或选择现有名称。基本名称是附加到所有快照的前缀。</block>
+  <block id="d230465858c85552b6c5a5b1ef3bb21f" category="list-text">*复制计划*：切换要启用的频率（每小时、每天、每周或每月），并为每个启用的计划设置保留值（要保留的复制快照的数量）。</block>
+  <block id="228ec8f5cf8241b99a71e0c11689b0e6" category="list-text">选择所需的检测设置：*加密检测* *可疑用户行为检测* *阻止可疑文件扩展名*</block>
+  <block id="447fce6406d4a8e99de98a2d5d107536" category="list-text">如果您的策略包含复制，请选择**目标系统**和**目标存储虚拟机**。选择**下一步**。</block>
+  <block id="0c82c0ade162cfe42b72c98aa569451d" category="list-text">如果保护策略包含复制功能，请检查复制设置。</block>
+  <block id="22af614d3b0e3b88037f6f632819e41f" category="list-text">要将所有快照复制到同一目标位置，请选中“**每个工作负载使用同一目标位置**”。在控制台代理部分，为工作负载选择*目标系统*和*目标存储虚拟机*。</block>
+  <block id="5cddb60bd30a2b5abfa065435ff46fad" category="paragraph">要使用不同的目的地，请取消选中该复选框。检查每个控制台代理下的每个工作负载，并为每个工作负载分配一个*目标系统*和*目标存储虚拟机*。选择**下一步**。</block>
+  <block id="05f102695dcd78d82f88a52818f4c682" category="admonition">下载文件之前，您应该刷新仪表板，以便在报告中获取最新数据。</block>
+  <block id="6f540707e47351a26c8e3c79ccce18ea" category="list-text">*保护*：包括所有工作负载的状态和详细信息，包括受保护的工作负载总数和面临风险的工作负载总数。</block>
+  <block id="38fc1b337c0ea26463916fc2913205c1" category="paragraph"><block ref="38fc1b337c0ea26463916fc2913205c1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7019a39846e9a2c7f7a80eaba91e4a41" category="paragraph"><block ref="7019a39846e9a2c7f7a80eaba91e4a41" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1d593c3f7480ada9580d93cd753c3f93" category="paragraph">这是系统生成的映射到您的电子邮件的 ID。在*NSS 管理*页面上，您可以显示来自<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block>菜单。</block>
+  <block id="872eaae7deb6035c20f9bfe6deefd03d" category="list-text">如果您需要刷新登录凭证令牌，还有一个*更新凭证*选项<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block>菜单。</block>
+  <block id="667dffcf5676fe0bd645082d2a512fef" category="section-title">2026年1月12日</block>
 </blocks>
