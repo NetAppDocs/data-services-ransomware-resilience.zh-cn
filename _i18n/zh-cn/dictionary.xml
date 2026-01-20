@@ -2105,15 +2105,25 @@
   <block id="d230465858c85552b6c5a5b1ef3bb21f" category="list-text">*复制计划*：切换要启用的频率（每小时、每天、每周或每月），并为每个启用的计划设置保留值（要保留的复制快照的数量）。</block>
   <block id="228ec8f5cf8241b99a71e0c11689b0e6" category="list-text">选择所需的检测设置：*加密检测* *可疑用户行为检测* *阻止可疑文件扩展名*</block>
   <block id="447fce6406d4a8e99de98a2d5d107536" category="list-text">如果您的策略包含复制，请选择**目标系统**和**目标存储虚拟机**。选择**下一步**。</block>
-  <block id="05f102695dcd78d82f88a52818f4c682" category="admonition">下载文件之前，您应该刷新仪表板，以便在报告中获取最新数据。</block>
   <block id="6f540707e47351a26c8e3c79ccce18ea" category="list-text">*保护*：包括所有工作负载的状态和详细信息，包括受保护的工作负载总数和面临风险的工作负载总数。</block>
   <block id="38fc1b337c0ea26463916fc2913205c1" category="paragraph"><block ref="38fc1b337c0ea26463916fc2913205c1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7019a39846e9a2c7f7a80eaba91e4a41" category="paragraph"><block ref="7019a39846e9a2c7f7a80eaba91e4a41" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1d593c3f7480ada9580d93cd753c3f93" category="paragraph">这是系统生成的映射到您的电子邮件的 ID。在*NSS 管理*页面上，您可以显示来自<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block>菜单。</block>
   <block id="872eaae7deb6035c20f9bfe6deefd03d" category="list-text">如果您需要刷新登录凭证令牌，还有一个*更新凭证*选项<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block>菜单。</block>
   <block id="667dffcf5676fe0bd645082d2a512fef" category="section-title">2026年1月12日</block>
-  <block id="1bfdea46bcdc184ecc395f7be984a97f" category="paragraph">勒索软件恢复功能现在支持将快照复制到辅助ONTAP站点。您可以创建包含复制功能的勒索软件防护策略，也可以使用预定义的策略。</block>
   <block id="1f84339ab34d5298a23a70d51ad457d4" category="inline-link-macro">启用可疑用户活动检测</block>
   <block id="0c72d558c2e8468bc311f1933be197b5" category="admonition">如果您正在使用NetAppData Infrastructure Insights(DII) 工作负载安全，建议您使用相同的工作负载安全代理来实现勒索软件恢复。您无需为勒索软件恢复能力部署单独的工作负载安全代理，但是，使用相同的工作负载安全代理需要勒索软件恢复能力控制台组织和 DII 存储工作负载安全租户之间的配对关系。请联系您的客户经理以启用此配对功能。+ 如果您未使用 DII，则可以受益于可疑用户行为检测功能。请确保您已 <block ref="f31f86ab68cf8ca6dc8a3009e6d9ea7a" category="inline-link-macro-rx"></block> 并已配置相应的代理。</block>
   <block id="49fa679e35a13dc09de6805c384904d1" category="list-text">要配置备份策略，请选择一个，然后选择**下一步**。</block>
+  <block id="748b96a793ccf0ab113112372db17649" category="paragraph">勒索软件恢复功能现在支持将快照复制到辅助ONTAP站点。通过使用复制策略的保护组，您可以为每个工作负载复制到相同的目标位置或不同的目标位置。您可以创建包含复制功能的勒索软件防护策略，也可以使用预定义的策略。</block>
+  <block id="389e0c39aeda061370262a9fa330d865" category="doc">不支持的卷</block>
+  <block id="7aedbf1b65f2bcaf699a2f7f37ba458b" category="paragraph">勒索软件恢复能力报告现在会在**摘要**报告中捕获有关受支持和不受支持的卷的信息。利用这些信息来诊断系统中的卷为何可能不符合勒索软件防护条件。</block>
+  <block id="6a43554be5f7f046255a806f0d7cbba9" category="inline-link-macro">下载勒索软件恢复力报告</block>
+  <block id="877e42a9811fb7c41b1fccef32ca2477" category="paragraph">有关详细信息，请参阅 <block ref="225fa9dfe1003c8a72e52db2e5a89a50" category="inline-link-macro-rx"></block>。</block>
+  <block id="0b2947ed93537c3557ef0b1dda419a7a" category="admonition">如果您发现已发现的系统中存在未显示的卷，则这些卷可能不受支持。要查找不支持的卷列表，请转到“设置”菜单，然后选择“工作负载发现”卡中的操作菜单，下载支持和不支持的卷的 JSON 报告。</block>
+  <block id="0c82c0ade162cfe42b72c98aa569451d" category="list-text">如果保护策略包含复制功能，请检查复制设置。</block>
+  <block id="d6fa1bf46ad545c166256cf297b47ba9" category="list-text">要将所有快照复制到同一目标位置，请选中“**每个工作负载使用同一目标位置**”。在控制台代理部分，为工作负载选择*目标系统*和*目标存储虚拟机*。+ 要使用不同的目的地，请取消选中该框。检查每个控制台代理下的每个工作负载，并为每个工作负载分配一个*目标系统*和*目标存储虚拟机*。选择**下一步**。</block>
+  <block id="87971b78e8c43e7c3e77036d3ec8d929" category="admonition">下载文件之前，请刷新仪表盘以获取报告中的最新数据。</block>
+  <block id="5d26628350f5209b3a0d69e817a49a0f" category="list-text">**摘要**：包括受支持和不受支持的工作负载列表、改善网络弹性态势的建议措施，以及勒索软件弹性仪表板中捕获的信息。</block>
+  <block id="886b1df808dc5d3879143640b1ad98a7" category="admonition">在“设置”中的“工作负载发现”卡片中，选择操作菜单<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block> 然后**下载报告（JSON）**以查看系统中支持和不支持的工作负载列表。</block>
+  <block id="194a29c3464a05de3c32434145c0b5d6" category="section-title">2026年1月19日</block>
 </blocks>
