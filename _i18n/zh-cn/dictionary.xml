@@ -1753,7 +1753,6 @@
   <block id="7149ff1e14f0a158752906babaa08dc3" category="list-text">对于该事件，选择下载图标以 CSV 格式下载受影响文件的列表。</block>
   <block id="fe1bb8cb54f03cf7a69c3e9568118b30" category="list-text">**数据收集器**从ONTAP收集用户活动数据。</block>
   <block id="b6173a051353d59a4ee775fcef288441" category="list-text">**用户目录连接器**连接到您的目录以将用户 ID 映射到用户名。</block>
-  <block id="508899c1c018f291af4cb6a0423c426c" category="paragraph">*所需的控制台角色* 要激活可疑用户活动检测，您需要组织管理员角色。对于可疑用户活动的后续配置，您需要 Ransomware Resilience 用户行为管理员角色。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
   <block id="398de83ff8f318218f9eaedb05929ef0" category="paragraph">成功创建用户活动代理后，返回**设置**菜单，然后在用户活动图块中选择**管理**。选择**用户活动代理**选项卡，然后选择用户活动代理以查看有关它的详细信息，包括数据收集器和用户目录连接器。</block>
   <block id="a83ea9a287c9fdd0689933a464055150" category="paragraph">要将用户 ID 映射到用户名，您必须创建用户目录连接器。</block>
   <block id="89bd0177a422e5d81fce2f8f82dac3f6" category="paragraph-title">使用勒索软件恢复功能需要许可证吗？</block>
@@ -2126,4 +2125,6 @@
   <block id="5d26628350f5209b3a0d69e817a49a0f" category="list-text">**摘要**：包括受支持和不受支持的工作负载列表、改善网络弹性态势的建议措施，以及勒索软件弹性仪表板中捕获的信息。</block>
   <block id="886b1df808dc5d3879143640b1ad98a7" category="admonition">在“设置”中的“工作负载发现”卡片中，选择操作菜单<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block> 然后**下载报告（JSON）**以查看系统中支持和不支持的工作负载列表。</block>
   <block id="194a29c3464a05de3c32434145c0b5d6" category="section-title">2026年1月19日</block>
+  <block id="5971dc29642c8dabe6ddf4db4c2f9634" category="paragraph">*需要控制台角色* 要激活可疑用户活动检测，您需要**组织管理员角色**。对于后续的可疑用户活动配置，您需要 **Ransomware Resilience 用户行为管理员角色**。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
+  <block id="49c6535c126789c87c5cd609fbdb3a3f" category="paragraph">确保每个角色都应用于组织级别。</block>
 </blocks>
