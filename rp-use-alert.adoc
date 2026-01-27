@@ -14,7 +14,7 @@ summary: 如果勒索软件恢复功能检测到可能的攻击，勒索软件�
 [role="lead"]
 当NetApp Ransomware Resilience检测到可能的攻击时，它会在仪表板和通知区域显示警报。勒索软件恢复能力会立即拍摄快照。查看勒索软件恢复能力*警报*选项卡中的潜在风险。
 
-如果勒索软件恢复功能检测到可能的攻击，控制台通知设置中会出现通知，并且电子邮件会发送到配置的地址。电子邮件包含有关严重性、受影响的工作负载的信息，以及勒索软件恢复力*警报*选项卡中警报的链接。
+如果 Ransomware Resilience 检测到可能的攻击，则会在 Console Notification 设置中显示通知，并向配置的地址发送电子邮件。电子邮件包括有关严重程度、受影响工作负载的信息，以及 Ransomware Resilience *Alerts* 选项卡中警报的链接。
 
 您可以忽略误报或决定立即恢复数据。
 
@@ -46,7 +46,7 @@ TIP: 如果您关闭警报，勒索软件恢复功能会了解此行为，将其
 
 
 
-NOTE: 对于 SAN 环境，警告仅基于高熵。
+NOTE: 对于 SAN 环境，警告仅基于高熵值。
 
 证据基于ONTAP中的自主勒索软件防护信息。有关详细信息，请参阅 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索软件防护概述"^]。
 
@@ -103,20 +103,10 @@ image:screen-alerts.png["警报页面"]
 
 == 回复警报电子邮件
 
-当勒索软件弹性检测到潜在攻击时，它会根据订阅用户的订阅通知偏好向其发送电子邮件通知。电子邮件包含有关警报的信息，包括严重程度和受影响的资源。
-
-您可以接收勒索软件恢复警报的电子邮件通知。此功能可帮助您随时了解警报、警报的严重程度以及受影响的资源。
+当 Ransomware Resilience 检测到潜在的攻击时，它会根据在 NetApp Console 设置中配置的订阅通知首选项向订阅用户发送电子邮件通知。电子邮件包含有关警报的信息，包括严重程度和受影响的资源。
 
 
-TIP: 要订阅电子邮件通知，请参阅 https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings["设置电子邮件通知设置"^]。
-
-. 在勒索软件恢复中，转到*设置*页面。
-. 在“通知”下，找到电子邮件通知设置。
-. 输入您想要接收警报的电子邮件地址。
-. 保存更改。
-
-
-当生成新警报时，您将收到电子邮件通知。
+TIP: 要在 Console 中设置电子邮件通知，请参见 link:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings["设置电子邮件通知设置"^]。
 
 *所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员、勒索软件恢复管理员或勒索软件恢复查看器角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^] 。
 
@@ -143,10 +133,10 @@ TIP: 要订阅电子邮件通知，请参阅 https://docs.netapp.com/us-en/conso
 
 查看“警报”选项卡，您可以识别是否存在恶意活动或异常用户行为。
 
-您必须配置用户活动代理并启用具有用户行为检测的保护策略才能查看用户级警报。启用用户行为检测后，*可疑用户*列会出现在警报仪表板中；未启用用户行为检测时则不会显示。要启用可疑用户检测，请参阅link:suspicious-user-activity.html["可疑的用户活动"]。
+必须已配置用户活动代理并启用具有用户行为检测的保护策略，才能查看用户级警报。仅当启用了用户行为检测时，*可疑用户*列才会显示在警报仪表板中。要启用可疑用户检测，请参阅 link:suspicious-user-activity.html["可疑的用户活动"]。
 
 
-NOTE: 如果您正在使用NetAppData Infrastructure Insights(DII) 工作负载安全，建议您使用相同的工作负载安全代理来实现勒索软件恢复。您无需为勒索软件恢复能力部署单独的工作负载安全代理，但是，使用相同的工作负载安全代理需要勒索软件恢复能力控制台组织和 DII 存储工作负载安全租户之间的配对关系。请联系您的客户经理以启用此配对功能。+ 如果您未使用 DII，则可以受益于可疑用户行为检测功能。请确保您已 link:suspicious-user-activity.html["启用可疑用户活动检测"] 并已配置相应的代理。
+NOTE: 如果您使用的是 NetApp Data Infrastructure Insights (DII) Workload Security，建议您使用相同的 Workload Security 代理来实现 Ransomware Resilience。您不需要为 Ransomware Resilience 部署单独的 Workload Security 代理，但是，使用相同的 Workload Security 代理需要在 Ransomware Resilience Console 组织和 DII Storage Workload Security 租户之间建立配对关系。请联系您的客户代表以启用此配对。+ 要在_没有_ DII 的情况下使用可疑用户检测，请确保您已经link:suspicious-user-activity.html["启用可疑用户活动检测"]并配置了适当的代理。
 
 
 
@@ -191,7 +181,7 @@ image:screen-alerts-incidents3.png["警报事件页面"]
 
 == 将勒索软件事件标记为准备恢复（事件被消除后）
 
-阻止攻击后，通知存储管理员数据已准备就绪，以便他们可以开始恢复。
+停止攻击后，通知您的存储管理员数据已准备就绪，以便他们可以启动恢复过程。
 
 *所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^] 。
 

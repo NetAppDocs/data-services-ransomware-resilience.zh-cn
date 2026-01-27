@@ -604,7 +604,6 @@
   <block id="179e5ea4317177f519c688d15ef67987" category="paragraph"><block ref="179e5ea4317177f519c688d15ef67987" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e462715e9b155f4f9638da4f314c8aff" category="list-text">选择*准备演习*和*下载*以下载准备演习报告。</block>
   <block id="bb44ab86396f7335c45f2c99c022776c" category="summary">如果勒索软件恢复功能检测到可能的攻击，勒索软件恢复功能仪表板上就会出现警报，指示潜在攻击。此时，您应该查看“勒索软件弹性警报”选项卡中的潜在风险。</block>
-  <block id="0cf61fe483b7c3216a42a15a22e0ef97" category="paragraph">如果勒索软件恢复功能检测到可能的攻击，控制台通知设置中会出现通知，并且电子邮件会发送到配置的地址。电子邮件包含有关严重性、受影响的工作负载的信息，以及勒索软件恢复力*警报*选项卡中警报的链接。</block>
   <block id="4c8cd66676ad1c434108e699d9777408" category="paragraph">您可以忽略误报或决定立即恢复数据。</block>
   <block id="899157335f0c98105a8cbc92966ba06d" category="admonition">如果您关闭警报，勒索软件恢复功能会了解此行为，将其与正常操作关联，并且不会再次对其发出警报。</block>
   <block id="a8fd9e3988acb841854762788963d815" category="paragraph">要开始恢复数据，请将警报标记为准备好恢复，以便存储管理员可以开始恢复过程。</block>
@@ -620,7 +619,6 @@
   <block id="dfc56481bc0d4c0e37c0cc1e55fec278" category="list-text">之前没有发现过新的扩展，并且相同行为没有重复足够多次以将其声明为攻击。</block>
   <block id="2c8035709ee020723e6bf59e526fe816" category="list-text">观察到高熵。</block>
   <block id="98a2c9ec203e0706ca2f538df133d059" category="list-text">文件读取、写入、重命名或删除活动比正常水平增加了一倍。</block>
-  <block id="4da187364d63bcda0c1ea8730221bf1a" category="admonition">对于 SAN 环境，警告仅基于高熵。</block>
   <block id="e96b2ea99a3be7415866a5df8f69cf6e" category="paragraph">证据基于ONTAP中的自主勒索软件防护信息。有关详细信息，请参阅<block ref="9a25fd5e356132f930267232d70ad02b" category="inline-link-rx"></block>。</block>
   <block id="64c00e9ea78abe412d8db56dd1df0462" category="paragraph">警报可以具有以下状态之一：</block>
   <block id="adf79604cd73ac69e1173c85b1070d09" category="list-text">*新的*</block>
@@ -645,15 +643,7 @@
   <block id="3de551d699ac2cc6d8ee45100e3c09c2" category="list-text"><block ref="7b8fc6583551e56b0c8a96f4e8f63c8a" category="inline-xref-macro-rx"></block> 。</block>
   <block id="ab66e5346633f4af4f4982dc29ca7015" category="list-text"><block ref="e99b3e15cfc7ea44c087b4875208c217" category="inline-xref-macro-rx"></block> 。</block>
   <block id="9b317c5e8c93afadbc7755c407538945" category="section-title">回复警报电子邮件</block>
-  <block id="14e7851a172a122d7528efff8567f8ba" category="paragraph">当勒索软件弹性检测到潜在攻击时，它会根据订阅用户的订阅通知偏好向其发送电子邮件通知。电子邮件包含有关警报的信息，包括严重程度和受影响的资源。</block>
-  <block id="bf1a62bcb3143d1124cae262157745d7" category="paragraph">您可以接收勒索软件恢复警报的电子邮件通知。此功能可帮助您随时了解警报、警报的严重程度以及受影响的资源。</block>
   <block id="def7f3eac7eed1dada5cdcd2951ede36" category="inline-link">设置电子邮件通知设置</block>
-  <block id="b170729861af663a30599b6746973b7b" category="admonition">要订阅电子邮件通知，请参阅<block ref="99cf5d485b43f483ee8ecf47c33bdf82" category="inline-link-rx"></block>。</block>
-  <block id="f2e19c6011cc550fb6503dafd26a8973" category="list-text">在勒索软件恢复中，转到*设置*页面。</block>
-  <block id="ed6e52d47993626528f7c48bb20927cd" category="list-text">在“通知”下，找到电子邮件通知设置。</block>
-  <block id="581a71037b750a62c75558dfea9bae72" category="list-text">输入您想要接收警报的电子邮件地址。</block>
-  <block id="345e93a96b6e66cb9274dbad975c0db2" category="list-text">保存更改。</block>
-  <block id="ea9dd721e10f4a1fefec35d95c57efc7" category="paragraph">当生成新警报时，您将收到电子邮件通知。</block>
   <block id="e66d9f5613065312cf1d46114b193ed7" category="list-text">查看电子邮件。</block>
   <block id="f40ae80cf7396576022afae759080cf1" category="list-text">在电子邮件中，选择“查看警报”并登录“勒索软件恢复”。</block>
   <block id="9d425c6001c325d2240cf2219c5c8111" category="paragraph">出现“警报”页面。</block>
@@ -679,7 +669,6 @@
   <block id="ff74e9f48366f1b4465d1920693ddea8" category="inline-link-macro">配置勒索软件抵御能力设置</block>
   <block id="f784461c39e5b287f6733d0ee28efad4" category="paragraph">如果您已配置可疑用户检测来查看异常用户行为，则可以查看用户级数据并阻止特定用户。要启用可疑用户设置，请参阅<block ref="788275b5d10fa192a2bbf25cebb6c38f" category="inline-link-macro-rx"></block>。</block>
   <block id="705db8b34cf00efb73abf6403278e299" category="section-title">将勒索软件事件标记为准备恢复（事件被消除后）</block>
-  <block id="3950c317c3c61c1f422abb2e301a90ca" category="paragraph">阻止攻击后，通知存储管理员数据已准备就绪，以便他们可以开始恢复。</block>
   <block id="a31e44b45b823ec61483db05b99be2cb" category="paragraph"><block ref="a31e44b45b823ec61483db05b99be2cb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9d6e925ee1290815ef828d96d28218c6" category="list-text">在警报页面中，选择警报。</block>
   <block id="81e1378e6c274792e689b2705fda8824" category="paragraph"><block ref="81e1378e6c274792e689b2705fda8824" category="inline-image-macro-rx" type="image"></block></block>
@@ -1747,7 +1736,6 @@
   <block id="2515e2bcc68e80666fa8c369e88f71e5" category="paragraph">一条消息确认许可证已添加。</block>
   <block id="fca5751a0529f9987d0699648a97be3a" category="list-text">如果控制台无法自动更新许可证，则需要手动上传许可证文件。</block>
   <block id="f8541056d6bacae1a78fb5d2b68c67a8" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>开始使用勒索软件抵御能力</block>
-  <block id="43eec2eb3dba42398d66e0c2aa294ea2" category="paragraph">您必须配置用户活动代理并启用具有用户行为检测的保护策略才能查看用户级警报。启用用户行为检测后，*可疑用户*列会出现在警报仪表板中；未启用用户行为检测时则不会显示。要启用可疑用户检测，请参阅<block ref="da26800578b610b8b3390e49bb643377" category="inline-link-macro-rx"></block>。</block>
   <block id="7a7f05bb105ddcf9c0d221e37f8a923c" category="list-text">要阻止您环境中的可疑用户，请选择该用户名下的“阻止”。</block>
   <block id="bc8ffb69fb560086f529e0097158caad" category="admonition">如果您关闭警报，则无法更改其状态或撤消此更改。</block>
   <block id="7149ff1e14f0a158752906babaa08dc3" category="list-text">对于该事件，选择下载图标以 CSV 格式下载受影响文件的列表。</block>
@@ -2111,7 +2099,6 @@
   <block id="872eaae7deb6035c20f9bfe6deefd03d" category="list-text">如果您需要刷新登录凭证令牌，还有一个*更新凭证*选项<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block>菜单。</block>
   <block id="667dffcf5676fe0bd645082d2a512fef" category="section-title">2026年1月12日</block>
   <block id="1f84339ab34d5298a23a70d51ad457d4" category="inline-link-macro">启用可疑用户活动检测</block>
-  <block id="0c72d558c2e8468bc311f1933be197b5" category="admonition">如果您正在使用NetAppData Infrastructure Insights(DII) 工作负载安全，建议您使用相同的工作负载安全代理来实现勒索软件恢复。您无需为勒索软件恢复能力部署单独的工作负载安全代理，但是，使用相同的工作负载安全代理需要勒索软件恢复能力控制台组织和 DII 存储工作负载安全租户之间的配对关系。请联系您的客户经理以启用此配对功能。+ 如果您未使用 DII，则可以受益于可疑用户行为检测功能。请确保您已 <block ref="f31f86ab68cf8ca6dc8a3009e6d9ea7a" category="inline-link-macro-rx"></block> 并已配置相应的代理。</block>
   <block id="49fa679e35a13dc09de6805c384904d1" category="list-text">要配置备份策略，请选择一个，然后选择**下一步**。</block>
   <block id="748b96a793ccf0ab113112372db17649" category="paragraph">勒索软件恢复功能现在支持将快照复制到辅助ONTAP站点。通过使用复制策略的保护组，您可以为每个工作负载复制到相同的目标位置或不同的目标位置。您可以创建包含复制功能的勒索软件防护策略，也可以使用预定义的策略。</block>
   <block id="389e0c39aeda061370262a9fa330d865" category="doc">不支持的卷</block>
@@ -2127,4 +2114,11 @@
   <block id="194a29c3464a05de3c32434145c0b5d6" category="section-title">2026年1月19日</block>
   <block id="5971dc29642c8dabe6ddf4db4c2f9634" category="paragraph">*需要控制台角色* 要激活可疑用户活动检测，您需要**组织管理员角色**。对于后续的可疑用户活动配置，您需要 **Ransomware Resilience 用户行为管理员角色**。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
   <block id="49c6535c126789c87c5cd609fbdb3a3f" category="paragraph">确保每个角色都应用于组织级别。</block>
+  <block id="426b9957bbb31fa730d0ddd4241a548c" category="paragraph">如果 Ransomware Resilience 检测到可能的攻击，则会在 Console Notification 设置中显示通知，并向配置的地址发送电子邮件。电子邮件包括有关严重程度、受影响工作负载的信息，以及 Ransomware Resilience *Alerts* 选项卡中警报的链接。</block>
+  <block id="ea6028617b2209ac986a738b1b26840a" category="admonition">对于 SAN 环境，警告仅基于高熵值。</block>
+  <block id="53140a5b1fd2965a3ae256fca48ef979" category="paragraph">当 Ransomware Resilience 检测到潜在的攻击时，它会根据在 NetApp Console 设置中配置的订阅通知首选项向订阅用户发送电子邮件通知。电子邮件包含有关警报的信息，包括严重程度和受影响的资源。</block>
+  <block id="a2079b2871fe8072cb3a3a5245ad0458" category="admonition">要在 Console 中设置电子邮件通知，请参见 <block ref="7a8deb9a674d2246166ab2113d0b6247" category="inline-link-macro-rx"></block>。</block>
+  <block id="02b8f736b0a683e2999fdad847ee8cd4" category="paragraph">必须已配置用户活动代理并启用具有用户行为检测的保护策略，才能查看用户级警报。仅当启用了用户行为检测时，*可疑用户*列才会显示在警报仪表板中。要启用可疑用户检测，请参阅 <block ref="da26800578b610b8b3390e49bb643377" category="inline-link-macro-rx"></block>。</block>
+  <block id="b37f5f6a060700bfc5da32b05dba5978" category="admonition">如果您使用的是 NetApp Data Infrastructure Insights (DII) Workload Security，建议您使用相同的 Workload Security 代理来实现 Ransomware Resilience。您不需要为 Ransomware Resilience 部署单独的 Workload Security 代理，但是，使用相同的 Workload Security 代理需要在 Ransomware Resilience Console 组织和 DII Storage Workload Security 租户之间建立配对关系。请联系您的客户代表以启用此配对。+ 要在_没有_ DII 的情况下使用可疑用户检测，请确保您已经<block ref="f31f86ab68cf8ca6dc8a3009e6d9ea7a" category="inline-link-macro-rx"></block>并配置了适当的代理。</block>
+  <block id="22b921337bb720d655059859772c0131" category="paragraph">停止攻击后，通知您的存储管理员数据已准备就绪，以便他们可以启动恢复过程。</block>
 </blocks>
