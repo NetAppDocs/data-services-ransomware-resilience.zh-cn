@@ -107,46 +107,58 @@ TIP: 建议您使用网络时间协议 (NTP) 或简单网络时间协议 (SNTP) 
 查看您所在地区（亚太地区、欧洲或美国）的云网络访问规则。
 
 
+IMPORTANT: 在初始安装期间，将 `<site_name>`替换为通配符(`*`）权限。激活代理并完全运行后，您可以将权限替换为站点名称。请联系您的 NetApp 代表以获取站点名称。
+
+
 
 ==== 基于亚太地区的用户活动代理部署
 
-[cols="5*"]
+[cols="1,1,1,3,1"]
 |===
 | 协议 | 端口 | 源 | 目标 | 描述 
 
 
-| TCP | 443 | 用户活动代理 | 勒索软件恢复服务 | 获得勒索软件恢复能力 
+| TCP | 443 | 用户活动代理  a| 
+* <site_name>.cs01-ap-1.cloudinsights.netapp.com/cn
+* <site_name>.c01-ap-1.cloudinsights.netapp.com/cn
+* <site_name>.c02-ap-1.cloudinsights.netapp.com/cn
+* gentlogin.cs01-ap-1.cloudinsights.netapp.com/cn
 
-
-| TCP | 443 | 用户活动代理 | 勒索软件恢复服务 | 访问身份验证服务 
+| 获得勒索软件恢复能力 
 |===
 
 
 ==== 欧洲用户活动代理部署
 
-[cols="5*"]
+[cols="1,1,1,3,1"]
 |===
 | 协议 | 端口 | 源 | 目标 | 描述 
 
 
-| TCP | 443 | 用户活动代理 | 勒索软件恢复服务 | 获得勒索软件恢复能力 
+| TCP | 443 | 用户活动代理  a| 
+* <site_name>.cs01-eu-1.cloudinsights.netapp.com/cn
+* <site_name>.c01-eu-1.cloudinsights.netapp.com/cn
+* <site_name>.c02-eu-1.cloudinsights.netapp.com/cn
+* agentlogin.cs01-eu-1.cloudinsights.netapp.com/cn
 
-
-| TCP | 443 | 用户活动代理 | 勒索软件恢复服务 | 访问身份验证服务 
+| 获得勒索软件恢复能力 
 |===
 
 
 ==== 美国用户活动代理部署
 
-[cols="5*"]
+[cols="1,1,1,3,1"]
 |===
 | 协议 | 端口 | 源 | 目标 | 描述 
 
 
-| TCP | 443 | 用户活动代理 | 勒索软件恢复服务 | 获得勒索软件恢复能力 
+| TCP | 443 | 用户活动代理  a| 
+* <site_name>.cs01.cloudinsights.netapp.com/cn
+* <site_name>.c01.cloudinsights.netapp.com/cn
+* <site_name>.c02.cloudinsights.netapp.com/cn
+* agentlogin.cs01.cloudinsights.netapp.com
 
-
-| TCP | 443 | 用户活动代理 | 勒索软件恢复服务 | 访问身份验证服务 
+| 获得勒索软件恢复能力 
 |===
 
 
