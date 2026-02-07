@@ -118,7 +118,7 @@ IMPORTANT: 在初始安装期间，将 `<site_name>`替换为通配符(`*`）权
 | 协议 | 端口 | 源 | 目标 | 描述 
 
 
-| TCP | 443 | 用户活动代理  a| 
+| HTTPS（TCP） | 443 | 用户活动代理  a| 
 * <site_name>.cs01-ap-1.cloudinsights.netapp.com/cn
 * <site_name>.c01-ap-1.cloudinsights.netapp.com/cn
 * <site_name>.c02-ap-1.cloudinsights.netapp.com/cn
@@ -135,7 +135,7 @@ IMPORTANT: 在初始安装期间，将 `<site_name>`替换为通配符(`*`）权
 | 协议 | 端口 | 源 | 目标 | 描述 
 
 
-| TCP | 443 | 用户活动代理  a| 
+| HTTPS（TCP） | 443 | 用户活动代理  a| 
 * <site_name>.cs01-eu-1.cloudinsights.netapp.com/cn
 * <site_name>.c01-eu-1.cloudinsights.netapp.com/cn
 * <site_name>.c02-eu-1.cloudinsights.netapp.com/cn
@@ -152,7 +152,7 @@ IMPORTANT: 在初始安装期间，将 `<site_name>`替换为通配符(`*`）权
 | 协议 | 端口 | 源 | 目标 | 描述 
 
 
-| TCP | 443 | 用户活动代理  a| 
+| HTTPS（TCP） | 443 | 用户活动代理  a| 
 * <site_name>.cs01.cloudinsights.netapp.com/cn
 * <site_name>.c01.cloudinsights.netapp.com/cn
 * <site_name>.c02.cloudinsights.netapp.com/cn
@@ -172,7 +172,7 @@ IMPORTANT: 在初始安装期间，将 `<site_name>`替换为通配符(`*`）权
 | TCP | 389（LDAP） 636（LDAP/启动-tls） | 用户活动代理 | LDAP Server URL | 连接到 LDAP 
 
 
-| TCP | 443 | 用户活动代理 | 集群或SVM管理IP地址（取决于SVM收集器配置） | API 与ONTAP进行通信 
+| HTTPS（TCP） | 443 | 用户活动代理 | 集群或SVM管理IP地址（取决于SVM收集器配置） | API 与ONTAP进行通信 
 
 
 | TCP | 35000 - 55000  a| 
