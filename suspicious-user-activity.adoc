@@ -4,7 +4,7 @@ permalink: suspicious-user-activity.html
 keywords: data breach detection, data breach, user activity, suspicious, anomalous, 
 summary: 勒索软件恢复中的可疑用户活动检测使您能够检测可能构成潜在威胁的用户活动。 
 ---
-= 在NetApp Ransomware Resilience中配置可疑用户活动检测
+= 在 NetApp Ransomware Resilience 中为用户活动检测配置代理和收集器
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,15 +12,7 @@ summary: 勒索软件恢复中的可疑用户活动检测使您能够检测可�
 
 
 [role="lead"]
-勒索软件抵御能力支持在检测策略中检测可疑用户行为，使您能够在用户级别解决勒索软件事件。
-
-勒索软件弹性通过分析ONTAP中 FPolicy 生成的用户活动事件来检测可疑的用户活动。要收集用户活动数据，您需要部署一个或多个用户活动代理。该代理是可连接到租户上的设备的 Linux 服务器或 VM。
-
-
-
-== 用户活动代理和收集器
-
-必须安装至少一个用户活动代理才能激活 Ransomware Resilience 中的可疑用户活动检测。当您从勒索软件恢复仪表板激活可疑用户活动功能时，您需要提供代理主机信息。
+要在 NetApp Ransomware Resilience 中启用可疑用户行为检测，必须至少安装一个用户活动代理。从 Ransomware Resilience 控制面板激活可疑用户活动功能时，需要提供用户活动代理主机信息。
 
 一个代理可以托管多个数据收集器。数据收集器将数据发送到 SaaS 位置进行分析。有两种类型的收集器：
 
@@ -30,190 +22,27 @@ summary: 勒索软件恢复中的可疑用户活动检测使您能够检测可�
 
 收集器在勒索软件恢复设置中配置。
 
+
+NOTE: 如果您已经在使用 NetApp Data Infrastructure Insights (DII) Workload Security，建议您使用相同的 Workload Security 代理来实现 Ransomware Resilience。您不需要为 Ransomware Resilience 部署单独的 Workload Security 代理，但是，使用相同的 Workload Security 代理需要在 Ransomware Resilience Console 组织和 DII Storage Workload Security 租户之间建立配对关系。请联系您的账号代表以启用此配对。
+
++ 如果您尚未使用 DII，请继续执行此处的配置说明。
+
+
+
+== 开始之前
+
+* 请确保满足 link:reference-user-activity-requirements.html["操作系统、服务器和网络要求"]。
+
+
 *需要控制台角色* 要激活可疑用户活动检测，您需要**组织管理员角色**。对于后续的可疑用户活动配置，您需要 **Ransomware Resilience 用户行为管理员角色**。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^]。
 
 确保每个角色都应用于组织级别。
 
 
 
-== 系统要求
+== 创建用户活动代理
 
-要安装用户活动代理，您需要一台满足以下要求的主机或虚拟机。
-
-
-
-=== 操作系统要求
-
-[cols="2"]
-|===
-| 操作系统 | 支持的版本 
-
-
-| AlmaLinux | 9.4（64 位）至 9.5（64 位）和 10（64 位），包括 SELinux 
-
-
-| CentOS | CentOS Stream 9（64 位） 
-
-
-| Debian | 11（64 位）、12（64 位），包括 SELinux 
-
-
-| OpenSUSE 飞跃 | 15.3（64 位）至 15.6（64 位） 
-
-
-| Oracle Linux | 8.10（64 位）、9.1（64 位）至 9.6（64 位），包括 SELinux 
-
-
-| Red Hat | 8.10（64 位）、9.1（64 位）至 9.6（64 位）和 10（64 位），包括 SELinux 
-
-
-| 洛基 | Rocky 9.4 (64 位) 至 9.6 (64 位)，包括 SELinux 
-
-
-| SUSE 企业 Linux | 15 SP4（64 位）至 15 SP6（64 位），包括 SELinux 
-
-
-| Ubuntu | 20.04 LTS（64 位）、22.04 LTS（64 位）和 24.04 LTS（64 位） 
-|===
-
-NOTE: 用于用户活动代理的计算机不应运行其他应用程序级软件。建议使用专用服务器。
-
-这 `unzip` 安装需要该命令。这 `sudo su -` 该命令用于安装、运行脚本和卸载。
-
-
-
-=== 服务器要求
-
-服务器必须满足以下最低要求：
-
-* CPU：4 核
-* **内存**：16GB 内存
-* **磁盘空间**：36 GB 可用磁盘空间
-
-
-
-NOTE: 分配额外的磁盘空间以用于创建文件系统。请确保文件系统中至少有 35 GB 的可用空间。+ 如果 `/opt` 这是从 NAS 存储设备挂载的文件夹，本地用户必须有权限访问此文件夹。如果本地用户没有必要的权限，则用户活动代理创建可能会失败。
-
-
-NOTE: 建议您将用户活动代理安装在与勒索软件恢复环境不同的系统上。如果将它们安装在同一台机器上，则应预留 50 至 55 GB 的磁盘空间。对于 Linux 系统，分配 25-30 GB 的空间 `/opt/netapp` 以及 25 GB `var/log/netapp`。
-
-
-TIP: 建议您使用网络时间协议 (NTP) 或简单网络时间协议 (SNTP) 同步ONTAP系统和用户活动代理计算机上的时间。
-
-
-
-=== 云网络访问规则
-
-查看您所在地区（亚太地区、欧洲或美国）的云网络访问规则。
-
-
-IMPORTANT: 在初始安装期间，将 `<site_name>`替换为通配符(`*`）权限。激活代理并完全运行后，您可以将权限替换为站点名称。请联系您的 NetApp 代表以获取站点名称。
-
-
-
-==== 基于亚太地区的用户活动代理部署
-
-[cols="1,1,1,3,1"]
-|===
-| 协议 | 端口 | 源 | 目标 | 描述 
-
-
-| HTTPS（TCP） | 443 | 用户活动代理  a| 
-* <site_name>.cs01-ap-1.cloudinsights.netapp.com/cn
-* <site_name>.c01-ap-1.cloudinsights.netapp.com/cn
-* <site_name>.c02-ap-1.cloudinsights.netapp.com/cn
-* gentlogin.cs01-ap-1.cloudinsights.netapp.com/cn
-
-| 获得勒索软件恢复能力 
-|===
-
-
-==== 欧洲用户活动代理部署
-
-[cols="1,1,1,3,1"]
-|===
-| 协议 | 端口 | 源 | 目标 | 描述 
-
-
-| HTTPS（TCP） | 443 | 用户活动代理  a| 
-* <site_name>.cs01-eu-1.cloudinsights.netapp.com/cn
-* <site_name>.c01-eu-1.cloudinsights.netapp.com/cn
-* <site_name>.c02-eu-1.cloudinsights.netapp.com/cn
-* agentlogin.cs01-eu-1.cloudinsights.netapp.com/cn
-
-| 获得勒索软件恢复能力 
-|===
-
-
-==== 美国用户活动代理部署
-
-[cols="1,1,1,3,1"]
-|===
-| 协议 | 端口 | 源 | 目标 | 描述 
-
-
-| HTTPS（TCP） | 443 | 用户活动代理  a| 
-* <site_name>.cs01.cloudinsights.netapp.com/cn
-* <site_name>.c01.cloudinsights.netapp.com/cn
-* <site_name>.c02.cloudinsights.netapp.com/cn
-* agentlogin.cs01.cloudinsights.netapp.com
-
-| 获得勒索软件恢复能力 
-|===
-
-
-=== 网络内规则
-
-[cols="5*"]
-|===
-| 协议 | 端口 | 源 | 目标 | 描述 
-
-
-| TCP | 389（LDAP） 636（LDAP/启动-tls） | 用户活动代理 | LDAP Server URL | 连接到 LDAP 
-
-
-| HTTPS（TCP） | 443 | 用户活动代理 | 集群或SVM管理IP地址（取决于SVM收集器配置） | API 与ONTAP进行通信 
-
-
-| TCP | 35000 - 55000  a| 
-SVM 数据 LIF IP 地址
-| 用户活动代理 | ONTAP与用户活动代理之间关于 Fpolicy 事件的通信。为了让ONTAP能够向用户活动代理发送事件，必须向其开放这些端口，包括用户活动代理本身上的任何防火墙（如果存在）。+ **注意：**您不需要预留*所有*这些端口，但您为此预留的端口必须在此范围内。建议您先预留 100 个端口，如有必要再增加。 
-
-
-| TCP | 35000-55000 | 集群管理 IP | 用户活动代理 | ONTAP集群管理 IP 与用户活动代理之间关于 *EMS 事件* 的通信。为了让ONTAP能够向用户活动代理发送 EMS 事件，必须向用户活动代理开放这些端口，包括用户活动代理本身上的任何防火墙。+ **注意：**您不需要预留*所有*这些端口，但您为此预留的端口必须在此范围内。建议您先预留 100 个端口，如有必要再增加。 
-
-
-| SSH | 22 | 用户活动代理 | 集群管理 | 需要 CIFS/SMB 用户阻止。 
-|===
-
-
-== 启用可疑用户活动检测
-
-确保您已满足以下条件： link:#system-requirements["系统要求"] 用户活动代理。请确保您的配置符合支持的云提供商和区域要求。
-
-云服务提供商支持
-
-可疑用户活动数据可以存储在 AWS 和 Azure 的以下区域中：
-
-|===
-| 云提供商 | 地区 
-
-
-| AWS  a| 
-* 亚太地区（悉尼）（ap-southeast-2）
-* 欧洲（法兰克福）(eu-central-1)
-* 美国东部（弗吉尼亚北部）（us-east-1）
-
-
-
-
-| Azure | 美国东部 
-|===
-
-
-=== 添加用户活动代理
-
-用户活动代理是数据收集器的可执行环境；数据收集器与勒索软件恢复共享用户活动事件。您必须创建至少一个用户活动代理才能启用可疑用户活动检测。
+用户活动代理是 link:#add-a-data-collector["数据收集器"] 的可执行环境；数据收集器与 Ransomware Resilience 共享用户活动事件。您必须至少创建一个用户活动代理才能启用可疑用户活动检测。
 
 .步骤
 . 如果这是您第一次创建用户活动代理，请转到**仪表板**。在**用户活动**图块中，选择**激活**。
@@ -234,11 +63,11 @@ image:user-activity-agent.png["添加活动代理界面截图。"]
 
 . 选择**下一步**。
 . 检查您的设置。选择*激活*以完成添加用户活动代理。
-. 确认用户活动代理已成功创建。在用户活动图块中，成功部署显示为“正在运行”。
+. 确认已成功创建用户活动代理。在用户活动图块中，成功的部署显示为 **Running**。
 
 
 .结果
-成功创建用户活动代理后，返回**设置**菜单，然后在用户活动图块中选择**管理**。选择**用户活动代理**选项卡，然后选择用户活动代理以查看有关它的详细信息，包括数据收集器和用户目录连接器。
+成功创建用户活动代理后，返回 **Settings** 菜单，然后在 User activity 图块中选择 **Manage**。选择 **User activity agents** 选项卡，然后选择用户活动代理以查看其详细信息，包括数据收集器和用户目录连接器。
 
 
 
@@ -252,7 +81,7 @@ image:user-activity-settings.png["用户活动设置的屏幕截图"]
 
 
 
-=== 添加用户目录连接器
+== 创建用户目录连接器
 
 要将用户 ID 映射到用户名，您必须创建用户目录连接器。
 
@@ -318,11 +147,11 @@ image:screenshot-user-directory-connection.png["用户目录连接的屏幕截�
 . 找到用户活动图块，选择**管理**。
 . 选择**用户目录连接器**选项卡。
 . 确定要删除的用户目录连接器。在行尾的操作菜单中，选择三个点 `...`然后**删除**。
-. 在弹出的对话框中，选择**删除**以确认您的操作。
+. 在弹出对话框中，选择 **删除** 进行确认。
 
 
 
 
 == 响应可疑用户活动警报
 
-配置可疑用户活动检测后，您可以在警报页面中监控事件。有关更多信息，请参阅link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["检测恶意活动和异常用户行为"] 。
+配置可疑用户活动检测后，可以在警报页面中监控事件。有关详细信息，请参见 link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["检测恶意活动和可疑用户行为"]。

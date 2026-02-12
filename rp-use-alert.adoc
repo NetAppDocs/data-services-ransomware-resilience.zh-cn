@@ -136,9 +136,6 @@ TIP: 要在 Console 中设置电子邮件通知，请参见 link:https://docs.ne
 必须已配置用户活动代理并启用具有用户行为检测的保护策略，才能查看用户级警报。仅当启用了用户行为检测时，*可疑用户*列才会显示在警报仪表板中。要启用可疑用户检测，请参阅 link:suspicious-user-activity.html["可疑的用户活动"]。
 
 
-NOTE: 如果您使用的是 NetApp Data Infrastructure Insights (DII) Workload Security，建议您使用相同的 Workload Security 代理来实现 Ransomware Resilience。您不需要为 Ransomware Resilience 部署单独的 Workload Security 代理，但是，使用相同的 Workload Security 代理需要在 Ransomware Resilience Console 组织和 DII Storage Workload Security 租户之间建立配对关系。请联系您的客户代表以启用此配对。+ 要在_没有_ DII 的情况下使用可疑用户检测，请确保您已经link:suspicious-user-activity.html["启用可疑用户活动检测"]并配置了适当的代理。
-
-
 
 === 查看恶意活动
 

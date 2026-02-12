@@ -111,19 +111,19 @@ NOTE: 如果您已使用非管理员凭据将ONTAP集群连接到控制台，则
 
 == 可疑用户行为要求
 
-为了使勒索软件恢复能力提供有关可疑用户行为的警报，您必须配置用户活动代理。 To install a user activity agent, ensure your system meets link:suspicious-user-activity.html["要求"].
+要使 Ransomware Resilience 提供有关可疑用户行为的警报，必须配置用户活动代理。要安装用户活动代理，请确保您的系统满足 link:reference-user-activity-requirements.html["要求"]。
 
 
 
 == 更新ONTAP系统中的非管理员用户权限
 
-如果您需要更新特定系统的非管理员用户权限，请完成以下步骤。
+如果需要更新特定系统的非管理员用户权限，请使用此过程步骤。
 
-. 登录控制台并查找需要更新其ONTAP用户权限的系统。
-. 选择系统以查看详细信息。
+. 登录到 Console。在仪表板中，确定需要更新其 ONTAP 用户权限的系统。
+. 选择系统以查看其详细信息。
 . 选择“查看其他信息”以显示用户名。
 . 以管理员用户身份登录ONTAP集群 CLI。
-. 显示该用户的现有角色。进入：
+. 显示该用户的现有角色：
 +
 [listing]
 ----

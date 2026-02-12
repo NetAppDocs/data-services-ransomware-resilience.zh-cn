@@ -443,7 +443,7 @@ image:screen-protection.png["管理策略页面"]
 . 要查看SnapCenter策略的详细信息，请选择*向下箭头*。
 . 选择所需的检测设置：*加密检测* *可疑用户行为检测* *阻止可疑文件扩展名*
 . 选择**下一步**。
-. 如果您选择“可疑用户行为检测”作为检测设置，请选择“用户活动代理”或link:suspicious-user-activity.html#add-a-user-activity-agent["或创建一个"]。
+. 如果您选择 *Suspicious user behavior detection* 作为检测设置，请选择 User activity agent 或 link:suspicious-user-activity.html#create-a-user-activity-agent["或创建一个"]。
 +
 用户活动代理托管新的数据收集器。Ransomware Resilience 自动创建数据收集器，将用户活动事件传输到 Ransomware Resilience 以检测异常用户行为。
 

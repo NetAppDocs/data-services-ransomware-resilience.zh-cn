@@ -100,7 +100,7 @@ image:diagram-rp-features-phases3.png["图表展示了勒索软件抵御攻击�
 
 NetApp Console提供企业级跨本地和云环境的NetApp存储和数据服务的集中管理。需要控制台才能访问和使用NetApp数据服务。作为管理界面，它使您能够从一个界面管理许多存储资源。控制台管理员可以控制企业内所有系统的存储和服务的访问。
 
-您不需要许可证或订阅即可开始使用NetApp Console，并且只有当您需要在云中部署控制台代理以确保与存储系统或NetApp数据服务的连接时才需要付费。但是，一些可从控制台访问的NetApp数据服务是需要许可或基于订阅的。
+开始使用 NetApp Console 无需许可证或订阅，仅在云中部署 Console 代理以确保连接到存储系统或 NetApp 数据服务时才会产生费用。但是，从 Console 访问的一些 NetApp 数据服务是许可或基于订阅的。
 
 详细了解link:https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html["NetApp Console"^]。
 
@@ -237,7 +237,7 @@ NOTE: 在ONTAP中使用 ARP/AI 需要ONTAP 9.16 或更高版本。+ ONTAP不为F
 
 
 
-== 可能有助于您进行勒索软件防护的术语
+== 关键术语
 
 了解一些与勒索软件保护相关的术语可能会对您有所帮助。
 

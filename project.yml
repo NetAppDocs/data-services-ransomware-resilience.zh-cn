@@ -40,8 +40,14 @@ sidebar:
       url: "/rp-start-simulate.html"
     - title: 在“设置”中配置备份、威胁检测和攻击模拟
       url: "/rp-use-settings.html"
-    - title: 配置可疑用户活动检测
-      url: "/suspicious-user-activity.html"
+    - title: 配置用户活动检测
+      entries:
+      - title: 了解用户活动检测
+        url: "/concept-user-behavior.html"
+      - title: 用户活动要求
+        url: "/reference-user-activity-requirements.html"
+      - title: 配置代理和收集器
+        url: "/suspicious-user-activity.html"
   - title: 使用勒索软件弹性
     entries:
     - title: 使用仪表板查看工作负载健康状况
