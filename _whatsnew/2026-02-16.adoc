@@ -1,0 +1,27 @@
+= Azure NetApp Files 支持
+:allow-uri-read: 
+
+
+
+
+=== Azure NetApp Files 支持
+
+Ransomware Resilience 现在支持 Azure NetApp Files 系统，使您能够有效检测和响应 Azure NetApp Files 中的勒索软件威胁。当您发现工作负载时，Ransomware Resilience 现在会显示 Azure NetApp Files 并将其显示在保护仪表板中。Ransomware Resilience 对 Azure NetApp Files 的支持仅包括快照检测和保护策略。对 Azure NetApp Files 的支持当前处于预览状态。
+
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["了解勒索软件抵御能力"^]。
+
+
+
+=== 从用户行为警报中排除用户
+
+Ransomware Resilience 现在允许您从用户行为警报中排除特定用户。排除受信任的用户可以防止误报和不必要的警报。
+
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#exclude-users-from-alerts["从警报中排除用户"^]。
+
+
+
+=== 用户行为活动的保护组支持
+
+Ransomware Resilience 保护组现在支持可疑用户行为检测的检测策略。当您将勒索软件保护策略应用于保护组时，它会跨工作负载应用策略，从而简化对网络安全态势的管理。
+
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html#create-a-protection-group["创建保护组"^]。

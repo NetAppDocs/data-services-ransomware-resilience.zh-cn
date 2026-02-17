@@ -184,7 +184,10 @@ image:diagram-rp-architecture-preview3.png["勒索软件抵御能力架构图"]
 | 环境 | 协议 | 支持的版本 
 
 
-| Amazon FSx for NetApp ONTAP* | NFS、CIFS 和 SAN | 不适用 
+| Amazon FSx for NetApp ONTAP* | CIFS、NFS 和 SAN | 不适用 
+
+
+| Azure NetApp Files | CIFS 和 NFS | 不适用 
 
 
 .2+| 适用于 AWS 的Cloud Volumes ONTAP | CIFS 和 NFS | 9.11.1 及更高版本 

@@ -39,6 +39,9 @@ summary: 您可以通过在NetApp Ransomware Resilience中为工作负载分配�
 
 
 
+NOTE: 如果要为 Amazon FSxN for ONTAP 和 Azure NetApp Files 配置保护策略，请参阅 link:rp-reference-limitations.html["每项服务的限制"]。
+
+
 TIP: 为了增强对数据资产的管理和保护，您可以创建link:#create-a-protection-group["群组文件共享"]通过一种策略来集体保护卷。
 
 
@@ -57,7 +60,7 @@ TIP: 为了增强对数据资产的管理和保护，您可以创建link:#create
 如果勒索软件检测策略由ONTAP中的自主勒索软件防护（ARP 或 ARP/AI，取决于ONTAP版本）和 FPolicy 管理，则这些工作负载将受到保护并将继续由 ARP 和 FPolicy 管理。
 
 
-NOTE: Amazon FSx for NetApp ONTAP中的工作负载没有可用的备份目标。使用 FSx for ONTAP备份服务执行备份操作。您为 AWS 中的 FSx for ONTAP中的工作负载设置备份策略，而不是在 Ransomware Resilience 中设置。备份策略出现在 Ransomware Resilience 中，与 AWS 保持不变。
+NOTE: Amazon FSx for NetApp ONTAP 或 Azure NetApp Files 中的工作负载无法使用备份目标。使用 FSx for ONTAP 备份服务执行备份操作。您可以在 AWS 中为 FSx for ONTAP 中的工作负载设置备份策略，而不是在 Ransomware Resilience 中。备份策略显示在 Ransomware Resilience 中，并且与 AWS 保持不变。
 
 
 
@@ -441,7 +444,13 @@ image:screen-protection.png["管理策略页面"]
 . 勒索软件恢复能力检测是否存在活动的SnapCenter或备份和恢复策略。
 . 要保留现有的备份和恢复或SnapCenter策略并仅应用_检测_策略，请取消选中**替换现有策略**框。
 . 要查看SnapCenter策略的详细信息，请选择*向下箭头*。
-. 选择所需的检测设置：*加密检测* *可疑用户行为检测* *阻止可疑文件扩展名*
+. 选择所需的检测设置：
++
+....
+*Encryption detection*
+*Suspicious user behavior detection*
+*Block suspicious file extensions*
+....
 . 选择**下一步**。
 . 如果您选择 *Suspicious user behavior detection* 作为检测设置，请选择 User activity agent 或 link:suspicious-user-activity.html#create-a-user-activity-agent["或创建一个"]。
 +
@@ -522,7 +531,7 @@ TIP: 要查看有关工作负载的更多详细信息，请滚动到右侧。
 +
 image:screen-protection-groups-policy.png["添加保护组 - 策略页面"]
 
-. 选择策略来管理该组的保护。要确认，请选择“下一步”。
+. 选择用于管理此组保护的策略。
 . 如果保护策略包含复制功能，请检查复制设置。
 +
 .. 要将所有快照复制到同一目标位置，请选中“**每个工作负载使用同一目标位置**”。在控制台代理部分，为工作负载选择*目标系统*和*目标存储虚拟机*。+ 要使用不同的目的地，请取消选中该框。检查每个控制台代理下的每个工作负载，并为每个工作负载分配一个*目标系统*和*目标存储虚拟机*。选择**下一步**。
