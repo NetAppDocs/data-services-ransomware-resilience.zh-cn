@@ -62,9 +62,9 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 .勒索软件恢复功能如何与NetApp Backup and Recovery和SnapCenter交互？
 勒索软件恢复功能与备份和恢复功能协同工作，以发现并设置文件共享工作负载的快照和备份策略。
 
-勒索软件恢复能力与SnapCenter或SnapCenter for VMware 配合使用，可以发现并设置应用程序和虚拟机工作负载的快照和备份策略。
+Ransomware Resilience 与 SnapCenter 或 SnapCenter for VMware 配合使用，以发现和设置应用程序和 VM 工作负载的快照和备份策略。您目前无法使用 Ransomware Resilience 与 SnapCenter 进行恢复。
 
-勒索软件恢复功能还可以与备份和恢复以及SnapCenter （包括 VMware 版SnapCenter ）配合使用，以执行文件和工作负载一致性恢复。
+Ransomware Resilience 还与 Backup and Recovery 配合使用，以执行文件和工作负载一致的恢复。
 
 对于许可和计费，即使您没有单独的备份和恢复许可证，勒索软件恢复功能也可以与备份和恢复功能集成。如果您同时拥有备份和恢复以及勒索软件恢复功能，则受这两种产品保护的任何公共数据仅由勒索软件恢复功能计费。
 
@@ -85,7 +85,7 @@ link:rp-use-protect.html["了解工作负载优先级或重要性"] 。
 .勒索软件恢复能力支持哪些工作负载？
 勒索软件恢复能力可以识别以下工作负载：Oracle、文件共享、块存储、虚拟机和虚拟机数据存储。
 
-如果您正在使用SnapCenter或SnapCenter for VMware，则这些产品支持的所有工作负载也会在勒索软件恢复功能中得到识别。勒索软件恢复能力可以以与工作负载一致的方式保护和恢复SnapCenter和SnapCenter工作负载。
+如果您使用 SnapCenter 或 SnapCenter for VMware，这些产品支持的所有工作负载也会在 Ransomware Resilience 中标识。
 
 .如何将数据与工作负载关联起来？
 勒索软件恢复能力会发现卷和文件扩展名，并将它们与相应的工作负载关联起来。

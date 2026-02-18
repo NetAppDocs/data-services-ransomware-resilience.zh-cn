@@ -198,7 +198,6 @@
   <block id="0a0979a6d279475a420ea5c279943daa" category="paragraph">NetApp Console提供企业级跨本地和云环境的NetApp存储和数据服务的集中管理。需要控制台才能访问和使用NetApp数据服务。作为管理界面，它使您能够从一个界面管理许多存储资源。控制台管理员可以控制企业内所有系统的存储和服务的访问。</block>
   <block id="a139b69cf2c6a37377eea224685da3f6" category="paragraph">详细了解<block ref="6d844886de4fe963e1e4b97f495f829d" category="inline-link-macro-rx"></block>。</block>
   <block id="cbd914c846d96d6001aec3ae8b50e684" category="section-title">勒索软件抵御能力的工作原理</block>
-  <block id="16091f015c891dfa25a4cfd6d5a0d84b" category="paragraph">Ransomware Resilience 使用NetApp Backup and Recovery来发现和设置文件共享工作负载的快照和备份策略，使用SnapCenter或SnapCenter for VMware 来发现和设置应用程序和虚拟机工作负载的快照和备份策略。此外，Ransomware Resilience 使用备份和恢复以及SnapCenter / SnapCenter for VMware 来执行文件和工作负载一致的恢复。</block>
   <block id="22923429041036f2b1f3e35fddeb9626" category="inline-image-macro">勒索软件抵御能力架构图</block>
   <block id="f0a0e2f9ba23fe1d39ea3c9b319b0262" category="paragraph"><block ref="f0a0e2f9ba23fe1d39ea3c9b319b0262" category="inline-image-macro-rx" type="image"></block></block>
   <block id="21021ea0e52be8e9c599f4dff41e5be0" category="cell">功能</block>
@@ -206,14 +205,11 @@
   <block id="3d39c52f84949476c9663603ca01f73f" category="cell">*确认*</block>
   <block id="c82f46c0119153d2fbb052c15694e283" category="list-text">查找连接到控制台的所有客户本地 NAS（NFS 和 CIFS 协议）、SAN（FC、iSCSI 和 NVMe）和Cloud Volumes ONTAP数据。</block>
   <block id="253b40ae359ba25b56231803430c4873" category="inline-link">ONTAP</block>
-  <block id="bbbbcb8f41827abddd8ec6151fdf9e99" category="inline-link">SnapCenter软件</block>
-  <block id="0101be00694088a1944bea83a894d482" category="list-text">从ONTAP和SnapCenter服务 API 中识别客户数据并将其与工作负载关联。详细了解<block ref="a16fd9a0601d0464b4c9ce4f59c2454b" category="inline-link-rx"></block>和<block ref="d4e2312364a2363181c5807750f77d43" category="inline-link-rx"></block>。</block>
   <block id="533c17bbfdfb297420db9af0908070d6" category="inline-link">自主勒索软件防护</block>
   <block id="cc6088539286339733631d73fb51774b" category="inline-link">NetApp Backup and Recovery</block>
   <block id="2dd00507ca85eec8a3465506e478e45f" category="inline-link">ONTAP FPolicy</block>
   <block id="d8b67a8dae92158ddb9e71a66b9532b5" category="list-text">根据自动发现的保护级别为每个工作负载分配业务优先级，并根据工作负载的业务优先级推荐保护策略。工作负载优先级基于已应用于与工作负载相关的每个卷的快照频率。</block>
   <block id="f23d5c00c473a2e87ffcd7a0eedb89b5" category="cell">*保护*</block>
-  <block id="63b3247f9021fefc99163e7f1ccaa624" category="list-text">通过将策略应用于每个已识别的工作负载，主动监控工作负载并协调备份和恢复、 SnapCenter和ONTAP API 的使用。</block>
   <block id="bd86dbcbafa7a7406429c16dcbb97e30" category="cell">*探测*</block>
   <block id="f90af1ae1e0fb166621b4480576b55ac" category="list-text">使用集成机器学习 (ML) 模型检测潜在攻击，该模型可检测潜在的异常加密和活动。</block>
   <block id="643c690d78252033cbf74c266292ae07" category="list-text">提供双层检测，首先检测主存储中的潜在勒索软件攻击，然后通过获取额外的自动快照副本来创建最近的数据还原点，以响应异常活动。勒索软件恢复能力能够更深入地挖掘以更精确地识别潜在攻击，而不会影响主要工作负载的性能。</block>
@@ -728,10 +724,6 @@
   <block id="189c4ff0677fc252921dcedc653aa720" category="cell">将数据发送到安全和事件管理系统 (SIEM) 进行威胁分析和检测。</block>
   <block id="6dfbc052f1c7457b9c825b0e076c1503" category="inline-link-macro">配置保护设置</block>
   <block id="c00b830d377d62d0c3d20c11bcd0ce1e" category="cell">输入 SIEM/XDR 服务器详细信息以启用威胁检测。请参阅<block ref="9f0b279394cf25f00a608a52b5aed0b2" category="inline-link-macro-rx"></block> 。</block>
-  <block id="87179dfbe133b0e5bec8d13398695148" category="cell">为应用程序或 VMware 启用工作负载一致的保护。</block>
-  <block id="c9cf11dae3413da2395f3c9102153a2f" category="cell">这些工作负载不由SnapCenter软件或SnapCenter Plug-in for VMware vSphere管理。</block>
-  <block id="67f57f861a379dead16cb189597a369c" category="inline-link-macro">保护工作负载免受勒索软件攻击</block>
-  <block id="e3807143575a294b5c98b4786f7cb179" category="cell">要让它们由SnapCenter管理，请启用工作负载一致的保护。请参阅<block ref="2d12612123ced7dcaea608fc8db14aca" category="inline-link-macro-rx"></block> 。</block>
   <block id="2f2ad69d4eabc32debaa79396c406151" category="cell">改善系统的安全态势</block>
   <block id="ed1df3b69f10d586e5712ba9ce41d501" category="cell">NetApp Digital Advisor已发现至少一个高或严重的安全风险。</block>
   <block id="c422252635de9cce46903202ef695202" category="cell">审查NetApp Digital Advisor中的所有安全风险。参考<block ref="5d1aa2fae9958ef5ced45eec5d13d250" category="inline-link-rx"></block>。</block>
@@ -746,13 +738,6 @@
   <block id="1f03c05bf6e65a368653bb061f47d41c" category="cell">为这些工作负载分配策略。请参阅<block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block> 。</block>
   <block id="09ac1a414033303cc9f61ba014837263" category="cell">保护关键或高度重要的文件共享工作负载免受勒索软件的侵害。</block>
   <block id="723aa86a592f3ac7a3d0c493a7f7f6f8" category="cell">保护页面显示未受保护的文件共享或数据存储类型的关键或高度重要的工作负载。</block>
-  <block id="71f89a5dcbec59e77a93dd3d78946bec" category="cell">为每个工作负载分配一个策略。请参阅<block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block> 。</block>
-  <block id="7d88942a24d59d8cc9c016aa59861d89" category="cell">使用控制台注册适用于 VMware vSphere (SCV) 的SnapCenter插件</block>
-  <block id="8b335c02365a669f37c5c422d345fe5a" category="cell">VM 工作负载未受到保护。</block>
-  <block id="9dfe1b9e848ef36ab7e53e7c31b9859a" category="cell">通过启用适用于 VMware vSphere 的SnapCenter插件，为 VM 工作负载分配 VM 一致的保护。请参阅<block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block> 。</block>
-  <block id="39b7962492ec1bd941ef06d01eb99cb3" category="cell">使用控制台注册可用的SnapCenter服务器</block>
-  <block id="2ece652cbde6f187c5192710497e20cc" category="cell">应用程序不受保护。</block>
-  <block id="9fbd0a5b8d780df80cfc32e0668ad4b0" category="cell">通过启用SnapCenter Server 为工作负载分配应用程序一致的保护。请参阅<block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block> 。</block>
   <block id="98ec50a82f77bf6d52cb0d41cd36eb6e" category="cell">查看新警报。</block>
   <block id="b29cd5fcb78e77e70a83008e3f5f222b" category="cell">存在新的警报。</block>
   <block id="66cea763fac3b4f8340502aaf5d8d0d2" category="cell">查看新警报。请参阅<block ref="09d5258094b1e39cdb847e9d6bbdf0b2" category="inline-link-macro-rx"></block> 。</block>
@@ -850,16 +835,9 @@
   <block id="7646c296ea1b221cbb826893afaa224e" category="paragraph">如果您使用其他NetApp产品来保护您的工作负载，勒索软件恢复能力会发现这些产品并提供以下选项：</block>
   <block id="0e468f869572effeac4af4bbea21ed06" category="list-text">使用勒索软件检测策略并继续使用其他NetApp工具创建的快照和备份策略，或者</block>
   <block id="47751183709636889e320f1a849dd584" category="list-text">使用勒索软件弹性来管理检测、快照和备份。</block>
-  <block id="299dad2dd448d97ac3577bbf54e62bae" category="inline-link-macro">群组文件共享</block>
-  <block id="aa6ed3da76207281afb017fa59e3a234" category="admonition">为了增强对数据资产的管理和保护，您可以创建<block ref="42586d1dae6cc24e336332e3dadf2f9b" category="inline-link-macro-rx"></block>通过一种策略来集体保护卷。</block>
   <block id="be96aa820e4d4c79150a1ea86f47ceb0" category="section-title">与其他NetApp托管服务结合的保护策略</block>
-  <block id="7d94fa5c52f4b044d2cd78e42e11247c" category="paragraph">除了勒索软件恢复能力之外，还可以使用以下服务来管理保护：</block>
-  <block id="58c4a0b8427aedffed15f507a82a122c" category="list-text">NetApp Backup and Recovery、VM 文件共享</block>
-  <block id="e10a2e4ef1f3cc661e89aa47c1655787" category="list-text">SnapCenter for VMware 适用于虚拟机数据存储区</block>
-  <block id="9f467d31ef54c60530e9d07d18e7df6d" category="paragraph">这些服务的保护信息出现在 Ransomware Resilience 中。您可以使用 Ransomware Resilience 向这些服务添加检测策略。添加具有勒索软件恢复能力的保护策略将取代现有的保护策略。</block>
   <block id="f37d79a56cb20cdcf206acc1cfa8be14" category="paragraph">如果勒索软件检测策略由ONTAP中的自主勒索软件防护（ARP 或 ARP/AI，取决于ONTAP版本）和 FPolicy 管理，则这些工作负载将受到保护并将继续由 ARP 和 FPolicy 管理。</block>
   <block id="d62f06f1ca9fb020be7953fe3101f0a3" category="section-title">针对不受NetApp应用程序保护的工作负载的保护策略</block>
-  <block id="ec45a6a3163f1e5c5139c2b24b9596f2" category="paragraph">如果您的工作负载不是由备份和恢复、勒索软件恢复、 SnapCenter或SnapCenter Plug-in for VMware vSphere管理的，则它可能具有作为ONTAP或其他产品的一部分拍摄的快照。如果ONTAP FPolicy 保护已到位，则可以使用ONTAP更改 FPolicy 保护。</block>
   <block id="631014fb608aae26275f461a597abc09" category="section-title">查看工作负载上的勒索软件保护</block>
   <block id="a6f7464fa2fed88291aecd220709e4c3" category="paragraph">保护工作负载的第一步是查看当前工作负载及其保护状态。您可以看到以下类型的工作负载：</block>
   <block id="1178945c6ac5c3d230f56a7ae6f7233f" category="list-text">应用程序工作负载</block>
@@ -872,7 +850,6 @@
   <block id="b6ed68904b26faac81b9a6914f1b95cd" category="paragraph"><block ref="b6ed68904b26faac81b9a6914f1b95cd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4dc51b8615944f599801153cc7777840" category="list-text">在此页面中，您可以查看和更改工作负载的保护详细信息。</block>
   <block id="cf077fd7afe54e3a0c2d1f4f171b9592" category="inline-link-macro">添加勒索软件防护策略</block>
-  <block id="a81f2565e57ff5c4b192e7c8be0e161c" category="admonition">看<block ref="63a8fd9f713a393cc650fb6baf07f02c" category="inline-link-macro-rx"></block>了解在存在SnapCenter或备份和恢复的现有保护策略的情况下使用勒索软件恢复能力的情况。</block>
   <block id="ea8dec8d3636bbf3ba7b767b038d9d54" category="section-title">了解保护页面</block>
   <block id="48b06ad4392e9d571814713a4c79666f" category="paragraph">保护页面显示有关工作负载保护的以下信息：</block>
   <block id="ce4ef271bc40fcdcc146584fcac5d544" category="paragraph">*保护状态*：工作负载可以显示以下保护状态之一，以指示是否应用了策略：</block>
@@ -887,7 +864,6 @@
   <block id="5c2759b4d028484070c8f18a9a00a77b" category="list-text">*错误*：已分配勒索软件检测策略，但勒索软件恢复遇到错误。</block>
   <block id="848b5d316059d2d55beb9ee650949af1" category="admonition">当在勒索软件恢复中启用保护时，勒索软件检测策略状态从学习模式变为主动模式后，警报检测和报告开始。</block>
   <block id="5136b3f2cc37cf0eaf6bfaccc2423d06" category="paragraph">*检测策略*：如果已分配勒索软件检测策略，则会显示其名称。如果尚未分配检测策略，则会显示“N/A”。</block>
-  <block id="fcfaa1717a25ca0b7a0ee4d01c88d881" category="paragraph">*快照和备份策略*：此列显示应用于工作负载的快照和备份策略以及管理这些策略的产品或服务。</block>
   <block id="7800ff1a67d9e451676d5610315d8070" category="list-text">由SnapCenter管理</block>
   <block id="0472b61b28ca14fb08ff6c175c18d033" category="list-text">由适用于SnapCenter Plug-in for VMware vSphere管理</block>
   <block id="41f549aea93353d6eedfd7f80279c9bc" category="list-text">由备份和恢复管理</block>
@@ -925,29 +901,10 @@
   <block id="32bb90e8976aab5298d5da10fe66f21d" category="cell">72</block>
   <block id="98dce83da57b0395e163467c9dae521b" category="cell">93</block>
   <block id="0396743cd11b926055aa9c4e3fc5eb14" category="cell">*加密用户扩展*</block>
-  <block id="39b649553c2deef3d750057602cfacdb" category="section-title">使用SnapCenter实现应用程序或虚拟机一致的保护</block>
-  <block id="50140fc820086d654fdd4e90a5104aef" category="paragraph">启用应用程序或虚拟机一致性保护可帮助您以一致的方式保护应用程序或虚拟机工作负载，实现静止和一致的状态，以避免以后需要恢复时发生潜在的数据丢失。</block>
-  <block id="9f4541743e1d4a7bfc25061647eb3902" category="paragraph">此过程启动使用备份和恢复为应用程序注册SnapCenter软件服务器或SnapCenter Plug-in for VMware vSphere。</block>
-  <block id="6baa335c463f583028e58b3acfd45211" category="paragraph">启用工作负载一致性保护后，您可以在勒索软件恢复中管理保护策略。保护策略包括在其他地方管理的快照和备份策略以及在勒索软件恢复中管理的勒索软件检测策略。</block>
-  <block id="261346f7d903c80fe95c3eed4c9b6f97" category="paragraph">要了解如何使用备份和恢复注册适用于 VMware vSphere 的SnapCenter或SnapCenter Plug-in for VMware vSphere，请参阅以下信息：</block>
-  <block id="9b210cd0fa0a7fe3694561f1949c72e3" category="inline-link">注册SnapCenter服务器软件</block>
-  <block id="ddf89136f09ce1edd773dde2cdce8ec9" category="list-text"><block ref="ddf89136f09ce1edd773dde2cdce8ec9" category="inline-link-rx"></block></block>
-  <block id="8f2653c5938080ffdd57904f850bc430" category="inline-link">SnapCenter Plug-in for VMware vSphere</block>
-  <block id="9aa90d1045ef51cc1be88f6f561fd811" category="list-text"><block ref="9aa90d1045ef51cc1be88f6f561fd811" category="inline-link-rx"></block></block>
-  <block id="1ec4d515745aff456d744786e699ea82" category="list-text">从勒索软件恢复菜单中，选择*仪表板*。</block>
-  <block id="37253b6a1f32230b01d647f42b9b6e8f" category="list-text">从“建议”窗格中，找到以下建议之一并选择“审阅并修复”：</block>
-  <block id="0bde9546f6d4c2d3b942bb4c05094c32" category="list-text">使用NetApp Console注册可用的SnapCenter服务器</block>
-  <block id="854f384d16b1aa3f59795b8cd8a7ea92" category="list-text">使用NetApp Console注册适用SnapCenter Plug-in for VMware vSphere（SCV）</block>
-  <block id="8256db449d783061334b6804f98bc901" category="list-text">按照信息使用备份和恢复为 VMware vSphere 主机注册SnapCenter或SnapCenter Plug-in for VMware vSphere。</block>
-  <block id="5a43fd978fdfbe5150cdd067263fac36" category="list-text">返回勒索软件恢复能力。</block>
-  <block id="3a1b7ef92b9f821158d7a6a8276d337c" category="list-text">从勒索软件恢复力导航到仪表板并再次启动发现过程。</block>
-  <block id="02d5d22b5f67beb8b5279408d426e93c" category="list-text">从勒索软件恢复中，选择“保护”以查看“保护”页面。</block>
-  <block id="cebfa4409b0603554b2d559a348328f3" category="list-text">查看“保护”页面上的快照和备份策略列中的详细信息，以了解这些策略是否在其他地方进行管理。</block>
   <block id="5a0562438e5d5b94d2b1f72b243b05b6" category="paragraph">添加勒索软件保护策略有三种方法：</block>
   <block id="4f55a46d628f47452a1508b130bbaa08" category="list-text">**如果您没有快照或备份策略，请创建勒索软件保护策略。**</block>
   <block id="06c84d9fd2ec5293677c8364dc1b3da7" category="paragraph">勒索软件防护策略包括：</block>
   <block id="7759a4720271a1ab3b4e6b1c36a67058" category="list-text">备份策略</block>
-  <block id="5c18f2365717154f53f286eba4d53797" category="list-text">**用勒索软件恢复管理的保护策略替换SnapCenter或备份和恢复保护中的现有快照或备份策略。**</block>
   <block id="a49a95f9a293b47d316bebea16d14e29" category="list-text">*使用其他NetApp产品或服务中管理的现有快照和备份策略为工作负载创建检测策略。*</block>
   <block id="b7caa7f3615aea01fd626561bb13bda1" category="paragraph">检测策略不会改变其他产品中管理的策略。</block>
   <block id="f05ea9e0c9ccffc58a546b5b7a0d8608" category="inline-link-macro">备份和恢复</block>
@@ -980,15 +937,9 @@
   <block id="589d15d214feb500a590692bf3a50f04" category="list-text">*备份计划*：选择二级存储的计划选项并启用该计划。</block>
   <block id="02fe451dde6aa884097ca3b7c67707a5" category="admonition">要在辅助存储上启用备份锁定，请使用*设置*选项配置备份目标。有关详细信息，请参阅<block ref="522f9942d2238ef69c22ece6b9af5205" category="inline-link-macro-rx"></block> 。</block>
   <block id="fa12509cfb8e8ccded16e2a254e988c4" category="list-text">选择“*添加*”。</block>
-  <block id="0e345c91bfbb67f474a5e74b7cfde71f" category="section-title">将检测策略添加到具有由SnapCenter或备份和恢复管理的现有快照和备份策略的工作负载</block>
-  <block id="896d240f69d6ce39da710b568fd26741" category="paragraph">勒索软件恢复能力使您能够为在其他NetApp产品或服务中管理的现有快照和备份保护的工作负载分配检测策略或保护策略。其他服务（例如备份和恢复和SnapCenter）使用管理快照、复制到二级存储或备份到对象存储的策略。</block>
   <block id="1a068d6a85d666ea306209409d3e8bca" category="section-title">向具有现有备份或快照策略的工作负载添加检测策略</block>
   <block id="8ffd4321390a5a9174c14e023f8f68f8" category="inline-xref">利用勒索软件抵御能力进行保护</block>
-  <block id="7a7571f3126bfa4d6b2758ba7ef43c5b" category="paragraph">如果您已有带有备份和恢复或SnapCenter 的快照或备份策略，则可以添加策略来检测勒索软件攻击。要使用 Ransomware Resilience 管理保护和检测，请参阅<block ref="1b2a8d93a0a5a450b6a73f4f622cfd7c" category="inline-xref-macro-rx"></block>。</block>
   <block id="09c6435d6ace09bdb7d8fc52f7d5661e" category="list-text">在“保护”页面中，选择一个工作负载，然后选择“*保护*”。</block>
-  <block id="5bf833f3ee3985c83ff4a2c137c2cdb9" category="list-text">勒索软件恢复能力检测是否存在活动的SnapCenter或备份和恢复策略。</block>
-  <block id="0d7426ba5ec4042ac3383e7c8f81d565" category="list-text">要保留现有的备份和恢复或SnapCenter策略并仅应用_检测_策略，请取消选中**替换现有策略**框。</block>
-  <block id="346ced422939f5220048eed80e512829" category="list-text">要查看SnapCenter策略的详细信息，请选择*向下箭头*。</block>
   <block id="c716b644cde6bcf010e93cdafcb078a0" category="list-text">选择**下一步**。</block>
   <block id="a3de809b15b92430b0a649973defb161" category="inline-link-macro">或创建一个</block>
   <block id="8e7f1a46323a19741e1abd05eac8cbb8" category="paragraph">用户活动代理托管新的数据收集器。Ransomware Resilience 自动创建数据收集器，将用户活动事件传输到 Ransomware Resilience 以检测异常用户行为。</block>
@@ -996,7 +947,6 @@
   <block id="24fae1821c4530c41f4af2d4f1f70175" category="list-text">在“保护”页面上，查看**检测状态**以确认检测处于活动状态。</block>
   <block id="783a386314b7dc75416c1abf94fcf70f" category="section-title">用勒索软件保护策略替换现有的备份或快照策略</block>
   <block id="cc8bf7105e0bf7256578c2b5c24f9ebf" category="paragraph">您可以用勒索软件保护策略替换现有的备份或快照策略。这种方法会删除外部管理的保护，并在勒索软件恢复中配置检测和保护。</block>
-  <block id="6d512117a713a92567c93ad11953652c" category="list-text">勒索软件恢复能力检测是否存在现有的活动备份和恢复或SnapCenter策略。要替换现有的备份和恢复或SnapCenter策略，请选中“替换现有策略”框。当您选中该框时，勒索软件恢复力会用检测策略替换检测策略列表。</block>
   <block id="df03f91b3a74d5ec2baa41276e3a16de" category="inline-xref">创建保护策略</block>
   <block id="6254fbe0af1c355b3b21ba0edff9f802" category="list-text">选择保护策略。如果不存在保护策略，请选择**添加**来创建新策略。有关创建策略的信息，请参阅<block ref="176be3a772dd966966fe67b132b5ec7b" category="inline-xref-macro-rx"></block>。选择**下一步**。</block>
   <block id="375396793fa0187dd9b04e12d4a0a7b3" category="list-text">选择备份目标或创建一个新的备份目标。选择**下一步**。</block>
@@ -1005,13 +955,10 @@
   <block id="82f3ca7fa2e1f82d7f077e15af9747a4" category="section-title">分配不同的策略</block>
   <block id="0fd65377e78b78ae68af3a3a26d93972" category="paragraph">您可以用其他策略替换现有策略。</block>
   <block id="46d1903c41e1de7b9bef66a115265f90" category="list-text">在“保护”页面的工作负载行上，选择“编辑保护”。</block>
-  <block id="be7f5945ef4dddcdf00af31b8a6b7017" category="list-text">如果工作负载具有您想要维护的现有备份和恢复或SnapCenter策略，请取消选中“替换现有策略”。要替换现有策略，请选中**替换现有策略**。</block>
   <block id="66ec3353b28340ad300fda396a4ba1f1" category="list-text">在“策略”页面中，选择要分配的策略的向下箭头以查看详细信息。</block>
   <block id="bb5447070c795a6e8d29fa9cd98a5127" category="list-text">选择您想要分配的策略。</block>
   <block id="29864b11a88d292065fabaefa9c7fd21" category="list-text">选择*保护*以完成更改。</block>
   <block id="d3bc7420d7e89fa51ba74ffa21c65564" category="section-title">创建保护组</block>
-  <block id="57f424e2ea0a409d7e6664f904a599fd" category="paragraph">将文件共享分组到保护组中可以更轻松地保护您的数据资产。勒索软件恢复能力可以同时保护组中的所有卷，而不是单独保护每个卷。</block>
-  <block id="ceb5e85b23125d83e7e34d6d2cd53a46" category="paragraph">您可以创建组，而不管其保护状态如何（即未受保护的组和受保护的组）。当您将保护策略添加到保护组时，新的保护策略将替换任何现有策略，包括由SnapCenter和NetApp Backup and Recovery管理的策略。</block>
   <block id="c0083e031f0cf112f85b91ba1e7e9ede" category="list-text">在“保护”页面中，选择“保护组”选项卡。</block>
   <block id="eff1f461a10b29d3af110ea7c19ed170" category="inline-image-macro">保护组页面</block>
   <block id="eafdfecbaead6d931ea739364927dcc6" category="paragraph"><block ref="eafdfecbaead6d931ea739364927dcc6" category="inline-image-macro-rx" type="image"></block></block>
@@ -1025,25 +972,18 @@
   <block id="a739b6145911af1f850b745cae737475" category="paragraph"><block ref="a739b6145911af1f850b745cae737475" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f724f66c90177c8dac8336038a0778c0" category="list-text">如果您的检测策略包括用户行为检测，请选择您想要使用的数据收集器，然后单击**下一步**。</block>
   <block id="0fc76de5572d1186f1358665dff6076f" category="list-text">检查保护组的选择。</block>
-  <block id="d7a75d0f58bb349985e6d2104ca65596" category="list-text">要完成保护组的创建，请选择“*添加*”。</block>
   <block id="eda3b9c0a863dbdeae5ac8cceaa9106b" category="section-title">编辑组保护</block>
   <block id="109a3a62d5a108a8bab007233de0c046" category="paragraph">您可以更改现有组的检测策略。</block>
   <block id="ecfb3b2431beb33b5fe2ef7c83f7fb1b" category="list-text">在“保护”页面中，选择“保护组”选项卡，然后选择要修改其策略的组。</block>
   <block id="a26badbee19c22b720b3fd3aab2acb10" category="list-text">从保护组的概览页面中，选择“编辑保护”。</block>
-  <block id="2ff762148d68ddc135491ee1e6eebb11" category="list-text">选择要应用的现有保护策略或选择**添加**以创建新的保护策略。有关添加保护策略的更多信息，请参阅<block ref="176be3a772dd966966fe67b132b5ec7b" category="inline-xref-macro-rx"></block>。然后选择**保存**。</block>
   <block id="5e98270982ef1359c1d22eb22e2503e8" category="list-text">在备份目标概览中，选择现有的备份目标或**添加新的备份目标**。</block>
   <block id="b2eb460947dbe219806dbc27f478d291" category="list-text">选择**下一步**来查看您的更改。</block>
-  <block id="53522fa53710da57ddc6e0452516732b" category="section-title">从组中删除工作负载</block>
-  <block id="7fac60e8c61e94cf97a02abd83048b7d" category="paragraph">您可能稍后需要从现有组中删除工作负载。</block>
   <block id="35a8cf13ce382c8fdf2a7f51c0b2b8cc" category="list-text">选择要从中删除一个或多个工作负载的组。</block>
   <block id="44264335870d783d6e7b840b5015b4b8" category="inline-image-macro">保护组详细信息页面</block>
   <block id="b65981674e374f9759dbdb3ca4f23faf" category="paragraph"><block ref="b65981674e374f9759dbdb3ca4f23faf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3b38fb1cff0115f63e5d56c7c77aa619" category="inline-image-macro">操作按钮</block>
-  <block id="c2117b7e370bdb148d6d321b9f97e6a2" category="list-text">在选定的保护组页面中，选择要从组中删除的工作负载，然后选择“操作”<block ref="c25b92b317848c2a66dcfecc2a02ad99" category="inline-image-macro-rx" type="image"></block>选项。</block>
   <block id="a700fd9c40104e68960fb6ca2311ac54" category="list-text">从“操作”菜单中，选择“删除工作负载”。</block>
   <block id="05d9024c9e1747e3e7428ac3d6598aec" category="list-text">确认您要删除工作负载并选择*删除*。</block>
-  <block id="c03e7f3047e8c0787fdc020e7de058ad" category="section-title">删除保护组</block>
-  <block id="9fd377e1ddf4914e67d43d07590f6fd7" category="paragraph">删除保护组会删除该组及其保护，但不会删除单个工作负载。</block>
   <block id="45a84df973de2cf5ebebbbb483cfdc19" category="list-text">在选定的保护组页面的右上角，选择“*删除保护组*”。</block>
   <block id="923d9e45e363794e64a67b73838142ac" category="list-text">确认您要删除该组并选择*删除*。</block>
   <block id="f3d0cde08790f065a5bc8c494e512b95" category="section-title">管理勒索软件防护策略</block>
@@ -1064,8 +1004,6 @@
   <block id="2626c315654649457283f31cd264c39c" category="summary">遭受攻击后， NetApp Ransomware Resilience会验证二级存储上的备份数据是否干净，推荐实际恢复点 (RPA)，并协调防崩溃恢复的工作流程。</block>
   <block id="113ff3b2aeb407622305a50c77bebec8" category="doc">借助NetApp Ransomware Resilience，在勒索软件攻击发生后恢复</block>
   <block id="197d5e3f8c27a534ff428274b4db5d59" category="paragraph">在工作负载被标记为“需要恢复”后， NetApp Ransomware Resilience会建议实际恢复点 (RPA) 并协调工作流程以实现抗崩溃恢复。</block>
-  <block id="02a3255b4a78b568c242155543d840b5" category="list-text">如果应用程序或虚拟机由SnapCenter管理，则勒索软件恢复功能会使用应用程序一致或虚拟机一致的流程将应用程序或虚拟机恢复到其先前的状态和最后的事务。应用程序或 VM 一致性恢复将任何未存储的数据（例如缓存或 I/O 操作中的数据）添加到卷中的数据中。</block>
-  <block id="150a9129e0470e3f64dd6e85290aa419" category="list-text">如果应用程序或虚拟机不是由SnapCenter管理，而是由NetApp Backup and Recovery或 Ransomware Resilience 管理，则 Ransomware Resilience 会执行崩溃一致性恢复，其中会恢复同一时间点卷中的所有数据（例如，如果系统崩溃）。</block>
   <block id="57a6bb038991f08ac0fdcf64095bd0af" category="paragraph">您可以通过选择所有卷、特定卷或特定文件来恢复工作负载。</block>
   <block id="b5ccdb3dc0dc7a8afa4ba1ad3929e36a" category="admonition">工作负载恢复可能会影响正在运行的工作负载。您应该与适当的利益相关者协调恢复过程。</block>
   <block id="3ab57f205469e682011f73cdb8f98562" category="list-text">*需要恢复*：需要恢复工作负载。</block>
@@ -1079,23 +1017,14 @@
   <block id="6ff7646970e054813b30a697e9d483e8" category="list-text">查看“*恢复*”页面中的工作负载信息。</block>
   <block id="4adfa9c3d33f897660ad408e7f5dc8e8" category="inline-image-macro">恢复页面</block>
   <block id="926aaeb3693d20413ab32b7da19a4c24" category="paragraph"><block ref="926aaeb3693d20413ab32b7da19a4c24" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c88ce586395ff50170d86c2e66f0f11f" category="section-title">还原由SnapCenter管理的工作负载</block>
   <block id="e5807844b120730d46eedbad32ba0ea7" category="paragraph">使用勒索软件恢复能力，存储管理员可以确定如何从推荐的还原点或首选的还原点最佳地恢复工作负载。</block>
-  <block id="3701babc00cc2388f5c0e0a6bec5332e" category="paragraph">如果需要恢复，应用程序状态将会改变。如果备份中包含控制文件，应用程序将从控制文件恢复到其先前的状态。恢复完成后，应用程序将以读写模式打开。</block>
-  <block id="09d14384760a241994bfdec992b9465c" category="list-text">从勒索软件恢复中，选择*恢复*。</block>
   <block id="7c653203a3096df8b7646a6ab87c0b2f" category="list-text">选择处于“需要恢复”状态的工作负载。</block>
   <block id="3423ce5ef0c24dff08aba7c67e954912" category="list-text">要恢复，请选择*恢复*。</block>
-  <block id="30c409ae1b08d8e3117cdad918ae4f7c" category="list-text">*恢复范围*：应用程序一致（或者对于虚拟机的SnapCenter ，恢复范围为“按虚拟机”）</block>
-  <block id="6d1ab812949416963a53c2fdc95014ab" category="list-text">*来源*：选择来源旁边的向下箭头查看详细信息。选择要用于还原数据的还原点。</block>
-  <block id="ea8da750ada6c0a6912947f81ce03786" category="admonition">勒索软件恢复能力将最佳还原点识别为事件发生前的最新备份，并显示“推荐”指示。</block>
   <block id="8e39c6b8e82f00af62a92b5e18f0d487" category="list-text">*目的地*：选择目的地旁边的向下箭头查看详细信息。</block>
-  <block id="ad7fb327f4193be83424f1fc4c25d4fd" category="list-text">选择原始位置或备用位置。</block>
   <block id="fc36d223c5b876afa4e1a764e408f5bb" category="list-text">选择系统。</block>
   <block id="977d94fcfbb6a7da851005e1aaa99663" category="list-text">选择存储虚拟机。</block>
-  <block id="accfbb7c139fd416a120a640d6c1590a" category="list-text">如果原始目标没有足够的空间来恢复工作负载，则会出现“临时存储”行。您可以选择临时存储来恢复工作负载数据。恢复的数据将从临时存储复制到原始位置。单击临时存储行中的*向下箭头*并设置目标集群、存储虚拟机和本地层。</block>
   <block id="1a7c3267d0415566593c1285505aa765" category="list-text">检查您的选择。</block>
   <block id="6f6897e6c796f284c66b248179fd67ba" category="list-text">从顶部菜单中，选择“*恢复*”以查看“恢复”页面上的工作负载，其中操作的状态会在各个状态之间移动。</block>
-  <block id="f0266c70abac9ef71bb56a1eb183c0b0" category="section-title">还原不受SnapCenter管理的工作负载</block>
   <block id="4bd702a7df3c8966625d698f05cd0cc6" category="paragraph">安全存储管理员可以恢复不同级别的数据：</block>
   <block id="c2fcef7151504f035e47ba31c3e5ddf5" category="list-text">恢复所有卷</block>
   <block id="068f7fc4b5a2b14387afa21644b54045" category="list-text">在卷级别或文件和文件夹级别恢复应用程序。</block>
@@ -1733,15 +1662,12 @@
   <block id="10c4fe0b6e00d5560df8e602d85a5bd1" category="paragraph">是的，Ransomware Resilience 发现了在ONTAP中设置的快照计划。</block>
   <block id="8ed72bdbbdc0df9146a0777651178cbf" category="paragraph-title">勒索软件恢复功能如何与NetApp Backup and Recovery和SnapCenter交互？</block>
   <block id="8f3fc6dee049aeb65422cea50c997060" category="paragraph">勒索软件恢复功能与备份和恢复功能协同工作，以发现并设置文件共享工作负载的快照和备份策略。</block>
-  <block id="41c755bb70844acc0dfa6ef656a1458f" category="paragraph">勒索软件恢复能力与SnapCenter或SnapCenter for VMware 配合使用，可以发现并设置应用程序和虚拟机工作负载的快照和备份策略。</block>
-  <block id="4aab1b1684152d34047e64fa09c64149" category="paragraph">勒索软件恢复功能还可以与备份和恢复以及SnapCenter （包括 VMware 版SnapCenter ）配合使用，以执行文件和工作负载一致性恢复。</block>
   <block id="282764b1530b129720ca01a123b6f6ce" category="paragraph-title">在勒索软件防御的语境下，什么是工作负载？</block>
   <block id="10c8ec686acd93b9da39b3efea09bc01" category="paragraph">工作负载是一个应用程序、一个虚拟机或一个文件共享。工作负载包括单个应用程序实例使用的所有卷。</block>
   <block id="f7e19062cc2eaeb5901ce8337d69e539" category="paragraph">例如，考虑部署在 ora3.host.com 上的 Oracle 数据库。<block ref="2b0d59c7031769e80c8e5118b6ec7694" prefix=" " category="inline-code"></block> 包含数据和<block ref="a110e8ed91b0de267a5728888b1f4ed1" prefix=" " category="inline-code"></block> 包含日志。这两个卷构成了该 Oracle 数据库实例的工作负载。</block>
   <block id="f4d0f54d022c7715505fb12db9dfaab4" category="paragraph-title">勒索软件恢复能力如何确定工作负载数据的优先级？</block>
   <block id="6f240a888a055fa4629059d3d5328220" category="paragraph">工作负载优先级（关键、标准、重要）由已应用于与工作负载关联的每个卷的快照频率和计划备份决定。</block>
   <block id="79444a9daf1e4ef34a492d7a4ccc93fd" category="paragraph-title">勒索软件恢复能力支持哪些工作负载？</block>
-  <block id="8ff55251ff506b50711d75f8d5138385" category="paragraph">如果您正在使用SnapCenter或SnapCenter for VMware，则这些产品支持的所有工作负载也会在勒索软件恢复功能中得到识别。勒索软件恢复能力可以以与工作负载一致的方式保护和恢复SnapCenter和SnapCenter工作负载。</block>
   <block id="65a602dc25a2da85e0a1dfb15824b10b" category="paragraph-title">如何将数据与工作负载关联起来？</block>
   <block id="e2201c0935bcdfd14ed840897f30bcdc" category="paragraph">勒索软件恢复能力会发现卷和文件扩展名，并将它们与相应的工作负载关联起来。</block>
   <block id="bbcd2d0377872826c23c1bf4bcd98e47" category="paragraph">如果您拥有SnapCenter或SnapCenter for VMware，并且在备份和恢复中配置了工作负载，那么勒索软件恢复功能将发现由SnapCenter和SnapCenter for VMware 管理的工作负载及其关联的卷。</block>
@@ -1793,7 +1719,6 @@
   <block id="2256fdd13b41cd806db98cd42c5b498c" category="list-text">在NetApp StorageGRID、AWS S3、Azure Blob 或 Google Cloud Platform 中拥有一个帐户，用于备份目标，并配置了适当的访问权限。</block>
   <block id="27bfb5502a8db50d09f593ce1b77b181" category="list-text">以管理员用户身份登录ONTAP集群 CLI。</block>
   <block id="14e79e90c6d487ebb867aa7b0f88bf25" category="list-text">返回NetApp Console以使用勒索软件恢复功能。</block>
-  <block id="0d2fa76effcb3dce9fea42e1ccddfc30" category="paragraph">如果您正在使用SnapCenter或SnapCenter for VMware，则这些产品支持的所有工作负载也会在勒索软件恢复功能中得到识别。勒索软件恢复能力可以以工作负载一致的方式保护和恢复这些内容。</block>
   <block id="77750efa6f5ff153acdc42067058017f" category="section-title">2025年11月10日</block>
   <block id="8fe9bae39f62679bc4b589ccb17384a9" category="paragraph">云服务提供商支持</block>
   <block id="e29d7c0b36af68edd13ebac84f15b44b" category="cell">云提供商</block>
@@ -1880,7 +1805,6 @@
   <block id="182b9ed848b82506c10ba162f10e3f5b" category="list-text">保护基于应用程序的工作负载（例如 Oracle、VMware 数据存储和文件共享）中的数据。</block>
   <block id="aa07eabc400eb4ccb13f116e99da0b48" category="list-text">*工作负载*：勒索软件恢复中的工作负载可以包括 Oracle 数据库、VMware 数据存储或文件共享。</block>
   <block id="6b62768f3f94df043ea31bf9c43b2a42" category="paragraph">勒索软件恢复能力可以识别以下工作负载：Oracle、文件共享、块存储、虚拟机和虚拟机数据存储。</block>
-  <block id="f6967390d49d08c53cc88d3cdf42eb92" category="list-text">Oracle SnapCenter</block>
   <block id="897c29783a147c6c7b7844f2d4a9e81a" category="paragraph">预览版服务可保护BlueXP组织内各个组织中 Oracle、VM 数据存储和本地 NAS 存储上的文件共享以及 AWS 上的Cloud Volumes ONTAP （使用 NFS 协议）上的应用程序工作负载，并将数据备份到 Amazon Web Services 云存储。</block>
   <block id="2d2972fc6d16379955701a1cc8c6633f" category="sidebar">NetApp Ransomware Resilience可保护、检测并支持从本地和云存储中的勒索软件威胁中恢复应用程序工作负载和文件共享。勒索软件恢复能力可实现安全备份和恢复，帮助组织保护关键数据并维持 Oracle、VM 数据存储、NAS 存储等的业务连续性。</block>
   <block id="f075180c986e3a7a8e0bad4fcec7c485" category="cell">15.3（64 位）至 15.6（64 位）</block>
@@ -2178,7 +2102,6 @@
   <block id="771abd282157ca2dcc3c9f4d73d158c2" category="admonition">如果要为 Amazon FSxN for ONTAP 和 Azure NetApp Files 配置保护策略，请参阅 <block ref="f35eaad9edb95ec2be22c4403bf0d360" category="inline-link-macro-rx"></block>。</block>
   <block id="3adbdb581af927d3972b2f1c8cfb96a6" category="admonition">Amazon FSx for NetApp ONTAP 或 Azure NetApp Files 中的工作负载无法使用备份目标。使用 FSx for ONTAP 备份服务执行备份操作。您可以在 AWS 中为 FSx for ONTAP 中的工作负载设置备份策略，而不是在 Ransomware Resilience 中。备份策略显示在 Ransomware Resilience 中，并且与 AWS 保持不变。</block>
   <block id="3bc2d94b3185bcb1259a8b3cf7da880b" category="list-text">选择所需的检测设置：</block>
-  <block id="d5fc4bf8c0e9a03cea6fbde26d8608f2" category="list-text">选择用于管理此组保护的策略。</block>
   <block id="e468b341048b440bba27f4904f7a59c4" category="paragraph">在 NetApp Ransomware Resilience 设置选项卡中，您可以配置备份目标、执行攻击就绪演练、配置工作负载发现或配置可疑用户活动检测。</block>
   <block id="04ba211304888e157a1517c86860bd73" category="list-text">配置可疑用户活动报告。有关详细信息，请参见 <block ref="da26800578b610b8b3390e49bb643377" category="inline-link-macro-rx"></block>。</block>
   <block id="5d8eeee45929294781013d6d152aae8a" category="inline-link-macro">将 NetApp Ransomware Resilience 连接到 SIEM</block>
@@ -2210,4 +2133,44 @@
   <block id="2787b10f438b5f28e340793feb9becb6" category="paragraph">在 Ransomware Resilience 中启用 Microsoft Sentinel 之前，需要在 Microsoft Sentinel 中执行以下高级步骤：</block>
   <block id="fb042b7b99959e391eeb7c417511098a" category="section-title">2026 年 2 月 16 日</block>
   <block id="51f5590fac3af82049df229fcb91793c" category="sidebar">配置 SIEM</block>
+  <block id="8944abed4a7795983ff8cde0c660dfda" category="paragraph">Ransomware Resilience 使用 NetApp Backup and Recovery 来发现和设置文件共享工作负载的快照和备份策略。</block>
+  <block id="7275b90366e3424df414ea245c97ebe6" category="list-text">识别来自 ONTAP 和 SnapCenter 服务 API 的客户数据，并将其与工作负载相关联。详细了解<block ref="a16fd9a0601d0464b4c9ce4f59c2454b" category="inline-link-rx"></block>。</block>
+  <block id="c7508e265b893e4d518594502d79c380" category="list-text">主动监控工作负载并通过将策略应用于每个已识别的工作负载来协调 Backup and Recovery 和 ONTAP API 的使用。</block>
+  <block id="8ab694960534ed38cae5f75597a21b9b" category="admonition">尽管 Ransomware Resilience 识别来自 SnapCenter 的策略，但您无法通过 SnapCenter 使用 Ransomware Resilience 执行恢复。</block>
+  <block id="52632b136c48766a9fb3109144810641" category="paragraph">Ransomware Resilience 与 SnapCenter 或 SnapCenter for VMware 配合使用，以发现和设置应用程序和 VM 工作负载的快照和备份策略。您目前无法使用 Ransomware Resilience 与 SnapCenter 进行恢复。</block>
+  <block id="33be3f4617dbd57db084d6df8086348f" category="paragraph">Ransomware Resilience 还与 Backup and Recovery 配合使用，以执行文件和工作负载一致的恢复。</block>
+  <block id="ae785e9a302942d106ead6b14e222e26" category="paragraph">如果您使用 SnapCenter 或 SnapCenter for VMware，这些产品支持的所有工作负载也会在 Ransomware Resilience 中标识。</block>
+  <block id="e47b008a3c9b07db3a7f7c525eeccc5a" category="cell">为每个工作负载分配一个策略。请参阅 <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block>。请参阅 <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block>。请参阅 <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block>。</block>
+  <block id="402b250b6b0cd33bf0396353ed30be82" category="inline-link-macro">组工作负载</block>
+  <block id="c35d66439764aa49afc7babd31dd817e" category="admonition">为了增强对数据资产的管理和保护，您可以创建<block ref="f976640ede437bd07da0e62885caa3e9" category="inline-link-macro-rx"></block>来在一个策略下共同保护卷。</block>
+  <block id="32fcd2ee690f5f3556594e0a5c86b657" category="paragraph">除了 Ransomware Resilience 之外，您还可以使用 NetApp Backup and Recovery 来管理文件共享、VM 文件共享的保护。</block>
+  <block id="19df373c6eb28e440c7376f7b6153ac6" category="paragraph">来自 Backup &amp; Recovery 服务的保护信息显示在 Ransomware Resilience 中。您可以使用 Ransomware Resilience 向这些服务添加检测策略。使用 Ransomware Resilience 添加保护策略将取代现有的保护策略。</block>
+  <block id="42a88e6373b8a6a0a4d8625012fbd018" category="paragraph">Ransomware Resilience 还从 SnapCenter for VMware 为 VM 数据存储库和 SnapCenter for Oracle 发现保护策略。您无法使用这些服务通过 Ransomware Resilience 进行还原。</block>
+  <block id="5faff4d5da024e537f30a6f61e63b11d" category="paragraph">如果您的工作负载不是由 Backup and Recovery 或 Ransomware Resilience 管理，则可能有作为 ONTAP 或其他产品的一部分拍摄的快照。如果 ONTAP FPolicy 保护到位，则可以使用 ONTAP 更改 FPolicy 保护。</block>
+  <block id="376bb43ad447ff15d962afc4342493d1" category="admonition">请参阅 <block ref="63a8fd9f713a393cc650fb6baf07f02c" category="inline-link-macro-rx"></block> 了解当存在具有 Backup and Recovery 的现有保护策略时如何使用 Ransomware Resilience。</block>
+  <block id="c049e5f82d4b1bdaa78b9bfa0423bfe4" category="paragraph">*Snapshot、复制和备份策略*：此列显示应用于工作负载的快照和备份策略以及管理这些策略的产品或服务。</block>
+  <block id="c042540406160704837d8d0bcec8b01c" category="admonition">对于任何 SnapCenter 策略，您都无法在 Ransomware Resilience 中管理恢复。</block>
+  <block id="294bdeaab3c13eeb5476a96b2a4d7991" category="list-text">**将 Backup and Recovery 保护中的现有快照或备份策略替换为由 Ransomware Resilience 管理的保护策略。**</block>
+  <block id="f9dbe879fedc698e4cd50df0431ab680" category="section-title">将检测策略添加到具有由 Backup and Recovery 管理的现有快照和备份策略的工作负载</block>
+  <block id="8fd11cb4939abea9a38c1a8b9b718b44" category="paragraph">Ransomware Resilience 使您能够为工作负载分配检测策略或保护策略，并使用其他 NetApp 产品或服务管理的现有快照和备份保护。Backup and Recovery 使用管理快照、复制到辅助存储或备份到对象存储的策略。</block>
+  <block id="7d234783d8e389cb7544820e219e6417" category="paragraph">如果您有具有 Backup and Recovery 功能的现有快照或备份策略，则可以添加策略来检测勒索软件攻击。要使用 Ransomware Resilience 管理保护和检测，请参阅 <block ref="1b2a8d93a0a5a450b6a73f4f622cfd7c" category="inline-xref-macro-rx"></block>。</block>
+  <block id="ecd154a0da8331970980b784ad676e9b" category="list-text">Ransomware Resilience 检测是否存在现有的活动 Backup and Recovery 策略。</block>
+  <block id="ffe6653bcd557bfbd80aff3ce171f491" category="list-text">要保留现有的 Backup and Recovery 并仅应用_检测_策略，请不要选中**替换现有策略**框。</block>
+  <block id="aafd4e94bcc37426152d473c41e03659" category="list-text">Ransomware Resilience 检测是否存在现有的活动 Backup and Recovery 策略。要替换现有策略，请选择**替换现有策略**框。选中此框后，Ransomware Resilience 将用检测策略替换检测策略列表。</block>
+  <block id="037372d8704e59765af4c473d08f5257" category="list-text">如果工作负载具有要维护的现有 Backup and Recovery 策略，请取消选中**替换现有策略**。要替换现有策略，请选中**替换现有策略**。</block>
+  <block id="2ef974fc1907e25ad7d2ab240867a065" category="list-text">如果应用程序或虚拟机由 NetApp Backup and Recovery 或 Ransomware Resilience 管理，则 Ransomware Resilience 执行崩溃一致性恢复，例如，如果系统崩溃，则在同一时间点还原卷中的所有数据。</block>
+  <block id="b11b835f559ed8748e33a3412f3c77b2" category="section-title">还原工作负载</block>
+  <block id="ea9eea4a980add15f1982bc5d385bfc2" category="doc">在 NetApp Ransomware Resilience 中管理保护组</block>
+  <block id="ed2728c518fe52f7f1f0f734bdf3232f" category="paragraph">NetApp Ransomware Resilience 提供保护组，以便更轻松地管理您的数据资产。保护组是工作负载的逻辑分组。Ransomware Resilience 可以使用单一保护策略同时保护保护组中的所有卷，使您无需对每个工作负载应用策略。</block>
+  <block id="e4b0231f7907d5401a43e9aad6fab95f" category="paragraph">无论其保护状态如何，您都可以创建组（即未受保护的组和受保护的组）。向保护组添加保护策略时，新保护策略将替换任何现有策略，包括由 NetApp Backup and Recovery 管理的策略。</block>
+  <block id="d9caa9454e226f338bc169e8c4db8222" category="list-text">从 Protection 仪表板中，选择 *Protection groups* 选项卡。</block>
+  <block id="3ad4ecebf7017832f3e6bbb358275752" category="list-text">为组选择保护策略。</block>
+  <block id="edd7f8585c7f281bafec7321766208f9" category="list-text">要最终确定保护组，请选择 *Add* 。</block>
+  <block id="67d340d4f19203c29ed66de9c5912ec7" category="list-text">选择要应用的现有保护策略，或选择 **添加** 以创建新的保护策略。有关添加保护策略的详细信息，请参见 <block ref="138ab222387c0cb2938fed9d223ea5db" category="inline-link-macro-rx"></block>。然后选择 **保存**。</block>
+  <block id="3128b94e12f52eaecfdea189a2bfe4fd" category="section-title">从保护组中删除工作负载</block>
+  <block id="9be117e96d40f1667b79710dcb8a2372" category="paragraph">稍后可能需要从现有保护组中删除工作负载。</block>
+  <block id="6ee81a346ed2300b07940337511fa860" category="list-text">从保护组页面中，选择要从组中删除的工作负载，然后选择 *Actions* <block ref="c25b92b317848c2a66dcfecc2a02ad99" category="inline-image-macro-rx" type="image"></block> 选项。</block>
+  <block id="82cec7652bb841468c070420458d39c0" category="section-title">删除保护组</block>
+  <block id="fbd3e733007100e47d8c59bbffb4a650" category="paragraph">删除保护组时，Ransomware Resilience 会删除工作负载上的组和保护策略。它不会删除单个工作负载。</block>
+  <block id="3f3b36ab9f107f9d308521e786376b81" category="sidebar">管理保护组</block>
 </blocks>

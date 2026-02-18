@@ -97,9 +97,6 @@ TIP: 选择“i”工具提示即可查看有关此数据的提示。要增加�
 | 连接到 SIEM 进行威胁报告。 | 将数据发送到安全和事件管理系统 (SIEM) 进行威胁分析和检测。 | 输入 SIEM/XDR 服务器详细信息以启用威胁检测。请参阅link:rp-use-settings.html["配置保护设置"] 。 
 
 
-| 为应用程序或 VMware 启用工作负载一致的保护。 | 这些工作负载不由SnapCenter软件或SnapCenter Plug-in for VMware vSphere管理。 | 要让它们由SnapCenter管理，请启用工作负载一致的保护。请参阅link:rp-use-protect.html["保护工作负载免受勒索软件攻击"] 。 
-
-
 | 改善系统的安全态势 | NetApp Digital Advisor已发现至少一个高或严重的安全风险。 | 审查NetApp Digital Advisor中的所有安全风险。参考 https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisor文档"^]。 
 
 
@@ -112,13 +109,7 @@ TIP: 选择“i”工具提示即可查看有关此数据的提示。要增加�
 | 保护关键或高度重要的应用程序工作负载免受勒索软件的攻击。 | 保护页面显示未受保护的关键或高度重要（基于分配的优先级）应用程序工作负载。 | 为这些工作负载分配策略。请参阅link:rp-use-protect.html["保护工作负载免受勒索软件攻击"] 。 
 
 
-| 保护关键或高度重要的文件共享工作负载免受勒索软件的侵害。 | 保护页面显示未受保护的文件共享或数据存储类型的关键或高度重要的工作负载。 | 为每个工作负载分配一个策略。请参阅link:rp-use-protect.html["保护工作负载免受勒索软件攻击"] 。 
-
-
-| 使用控制台注册适用于 VMware vSphere (SCV) 的SnapCenter插件 | VM 工作负载未受到保护。 | 通过启用适用于 VMware vSphere 的SnapCenter插件，为 VM 工作负载分配 VM 一致的保护。请参阅link:rp-use-protect.html["保护工作负载免受勒索软件攻击"] 。 
-
-
-| 使用控制台注册可用的SnapCenter服务器 | 应用程序不受保护。 | 通过启用SnapCenter Server 为工作负载分配应用程序一致的保护。请参阅link:rp-use-protect.html["保护工作负载免受勒索软件攻击"] 。 
+| 保护关键或高度重要的文件共享工作负载免受勒索软件的侵害。 | 保护页面显示未受保护的文件共享或数据存储类型的关键或高度重要的工作负载。 | 为每个工作负载分配一个策略。请参阅 link:rp-use-protect.html["保护工作负载免受勒索软件攻击"]。请参阅 link:rp-use-protect.html["保护工作负载免受勒索软件攻击"]。请参阅 link:rp-use-protect.html["保护工作负载免受勒索软件攻击"]。 
 
 
 | 查看新警报。 | 存在新的警报。 | 查看新警报。请参阅link:rp-use-alert.html["响应检测到的勒索软件警报"] 。 

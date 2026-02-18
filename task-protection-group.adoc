@@ -1,0 +1,108 @@
+---
+sidebar: sidebar 
+permalink: task-protection-group 
+keywords: ransomware protection, protection group, modify, create, 
+summary: 您可以通过在NetApp Ransomware Resilience中为工作负载分配策略来保护工作负载免受勒索软件攻击。 
+---
+= 在 NetApp Ransomware Resilience 中管理保护组
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilience 提供保护组，以便更轻松地管理您的数据资产。保护组是工作负载的逻辑分组。Ransomware Resilience 可以使用单一保护策略同时保护保护组中的所有卷，使您无需对每个工作负载应用策略。
+
+*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^] 。
+
+
+
+== 创建保护组
+
+无论其保护状态如何，您都可以创建组（即未受保护的组和受保护的组）。向保护组添加保护策略时，新保护策略将替换任何现有策略，包括由 NetApp Backup and Recovery 管理的策略。
+
+.步骤
+. 从勒索软件恢复菜单中，选择*保护*。
++
+image:screen-protection.png["管理策略页面"]
+
+. 从 Protection 仪表板中，选择 *Protection groups* 选项卡。
++
+image:screen-protection-groups.png["保护组页面"]
+
+. 选择“*添加*”。
++
+image:screen-protection-groups-add.png["添加保护组页面"]
+
+. 输入保护组的名称。
+. 选择要添加到组中的工作负载。
++
+
+TIP: 要查看有关工作负载的更多详细信息，请滚动到右侧。
+
+. 选择“下一步”。
++
+image:screen-protection-groups-policy.png["添加保护组 - 策略页面"]
+
+. 为组选择保护策略。
+. 如果保护策略包含复制功能，请检查复制设置。
++
+.. 要将所有快照复制到同一目标位置，请选中“**每个工作负载使用同一目标位置**”。在控制台代理部分，为工作负载选择*目标系统*和*目标存储虚拟机*。+ 要使用不同的目的地，请取消选中该框。检查每个控制台代理下的每个工作负载，并为每个工作负载分配一个*目标系统*和*目标存储虚拟机*。选择**下一步**。
+
+
+. 要配置备份策略，请选择一个，然后选择**下一步**。
+. 如果您的检测策略包括用户行为检测，请选择您想要使用的数据收集器，然后单击**下一步**。
+. 检查保护组的选择。
+. 要最终确定保护组，请选择 *Add* 。
+
+
+
+
+=== 编辑组保护
+
+您可以更改现有组的检测策略。
+
+.步骤
+. 从勒索软件恢复菜单中，选择*保护*。
+. 在“保护”页面中，选择“保护组”选项卡，然后选择要修改其策略的组。
+. 从保护组的概览页面中，选择“编辑保护”。
+. 选择要应用的现有保护策略，或选择 **添加** 以创建新的保护策略。有关添加保护策略的详细信息，请参见 link:rp-use-protect.html#add-a-ransomware-protection-strategy["创建保护策略"]。然后选择 **保存**。
+. 在备份目标概览中，选择现有的备份目标或**添加新的备份目标**。
+. 选择**下一步**来查看您的更改。
+
+
+
+
+== 从保护组中删除工作负载
+
+稍后可能需要从现有保护组中删除工作负载。
+
+.步骤
+. 从勒索软件恢复菜单中，选择*保护*。
+. 在“保护”页面中，选择“保护组”选项卡。
+. 选择要从中删除一个或多个工作负载的组。
++
+image:screen-protection-groups-more-workloads.png["保护组详细信息页面"]
+
+. 从保护组页面中，选择要从组中删除的工作负载，然后选择 *Actions* image:screenshot_horizontal_more_button.gif["操作按钮"] 选项。
+. 从“操作”菜单中，选择“删除工作负载”。
+. 确认您要删除工作负载并选择*删除*。
+
+
+
+
+== 删除保护组
+
+删除保护组时，Ransomware Resilience 会删除工作负载上的组和保护策略。它不会删除单个工作负载。
+
+.步骤
+. 从勒索软件恢复菜单中，选择*保护*。
+. 在“保护”页面中，选择“保护组”选项卡。
+. 选择要从中删除一个或多个工作负载的组。
++
+image:screen-protection-groups-more-workloads.png["保护组详细信息页面"]
+
+. 在选定的保护组页面的右上角，选择“*删除保护组*”。
+. 确认您要删除该组并选择*删除*。
+

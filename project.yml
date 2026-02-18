@@ -58,6 +58,8 @@ sidebar:
       entries:
       - title: 使用勒索软件保护策略保护工作负载
         url: "/rp-use-protect.html"
+      - title: 管理保护组
+        url: "/task-protection-group.html"
       - title: 扫描个人身份信息
         url: "/rp-use-protect-classify.html"
     - title: 响应检测到的警报
