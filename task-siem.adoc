@@ -11,7 +11,7 @@ summary: '您可以自动将数据从 NetApp Ransomware Resilience 发送到您�
 
 
 [role="lead"]
-您可以自动将数据从 NetApp Ransomware Resilience 发送到您的安全和事件管理系统 (SIEM)，以进行威胁分析和检测。
+安全和事件管理系统 (SIEM) 集中日志和事件数据，以提供有关安全事件和合规性的见解。NetApp Ransomware Resilience 支持自动将数据发送到您的 SIEM，以简化威胁分析和检测。
 
 Ransomware Resilience 支持以下 SIEM：
 
@@ -183,7 +183,7 @@ TIP: 这是您之前创建的自定义角色。
 . 输入凭证：
 +
 .. 输入租户 ID、客户端应用程序 ID 和客户端应用程序密钥。
-.. 单击“*验证*”。
+.. 选择 *Authenticate*。
 +
 
 NOTE: 认证成功后，会出现“已认证”的信息。

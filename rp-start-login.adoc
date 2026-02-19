@@ -12,7 +12,7 @@ summary: 通过NetApp Console开始使用NetApp Ransomware Resilience。
 
 
 [role="lead"]
-通过NetApp Console登录到NetApp Ransomware Resilience 。
+要访问 NetApp Ransomware Resilience，您必须通过 NetApp Console 登录。
 
 要登录控制台，您可以使用您的NetApp支持站点凭据，也可以使用您的电子邮件和密码注册NetApp云登录。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["了解有关登录的更多信息"^] 。
 

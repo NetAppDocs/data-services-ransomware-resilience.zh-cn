@@ -12,7 +12,7 @@ summary: 使用可疑用户行为检测和警报来防止工作负载上的数�
 
 
 [role="lead"]
-NetApp Ransomware Resilience 支持检测可疑用户行为，使您能够在用户级别解决勒索软件事件。
+借助用户活动检测，NetApp Ransomware Resilience 使您能够在用户级别解决勒索软件事件，从而阻止数据泄露和大规模删除等事件。
 
 NetApp Ransomware Resilience 通过监控可疑的用户活动，提供人工智能驱动的数据泄露检测。读取活动和读取活动访问模式的急剧增加用于确定恶意意图。检测到后，Ransomware Resilience 会在 NetApp Console、电子邮件和任何已配置的安全生态系统（例如 SIEM）中自动生成警报。
 

@@ -6,6 +6,6 @@
 
 === 不支持的卷
 
-勒索软件恢复能力报告现在会在**摘要**报告中捕获有关受支持和不受支持的卷的信息。利用这些信息来诊断系统中的卷为何可能不符合勒索软件防护条件。
+Ransomware Resilience 报告现在可以在**摘要**报告中捕获有关受支持和不受支持卷的信息。使用此信息可诊断系统中的卷可能不符合勒索软件保护条件的原因。
 
 有关详细信息，请参阅 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports.html["下载勒索软件恢复力报告"^]。

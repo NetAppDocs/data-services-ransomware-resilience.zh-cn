@@ -1,0 +1,95 @@
+---
+sidebar: sidebar 
+permalink: task-review-protection.html 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, detection, protection, policy, malware 
+summary: 您可以通过在NetApp Ransomware Resilience中为工作负载分配策略来保护工作负载免受勒索软件攻击。 
+---
+= 在 NetApp Ransomware Resilience 中查看防护状态
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilience 的保护仪表板概述了工作负载的保护状态和准备情况。使用保护仪表板，深入了解受保护的内容、需要保护的内容以及保护范围。
+
+一旦您了解了当前保护的范围，link:rp-use-protect.html["您可以创建勒索软件保护策略并将其应用于您的工作负载"]。
+
+
+
+== 查看工作负载的保护
+
+保护工作负载的第一步是查看当前工作负载及其保护状态。您可以看到以下类型的工作负载：
+
+* 应用程序工作负载
+* 阻止工作负载
+* 文件共享工作负载
+* 虚拟机工作负载
+
+
+.步骤
+. 从控制台左侧导航栏中选择“保护”>“勒索软件恢复”。
+. 执行以下操作之一：
++
+** 从仪表板上的数据保护窗格中，选择“查看全部”。
+** 从菜单中选择*保护*。
++
+image:screen-protection.png["保护页面"]
+
+
+
+. 在此页面中，您可以查看和更改工作负载的保护详细信息。
+
+
+
+NOTE: 请参阅 link:rp-use-protect.html#add-a-ransomware-protection-strategy["添加勒索软件防护策略"] 了解当存在具有 Backup and Recovery 的现有保护策略时如何使用 Ransomware Resilience。
+
+
+
+== 了解保护信息板
+
+Ransomware Resilience 中的保护仪表板显示有关工作负载的详细信息（例如，工作负载名称和类型、Console 代理、系统和存储 VM）以及有关保护状态的见解。使用保护仪表板查看和管理针对工作负载的勒索软件准备情况。以下列尤其有助于了解您的保护姿势：
+
+*保护状态*：工作负载可以显示以下保护状态之一，以指示是否应用了策略：
+
+* *受保护*：已应用策略。与工作负载相关的所有卷上均启用了 ARP（或 ARP/AI，取决于ONTAP版本）。
+* *存在风险*：未应用任何政策。如果工作负载没有启用主要检测策略，那么即使启用了快照和备份策略，它仍然“处于危险之中”。
+* *进行中*：政策正在应用但尚未完成。
+* *失败*：策略已应用但不起作用。
+
+
+*检测状态*：
+
++ Ransomware Resilience 可深入了解您在工作负载上配置的勒索软件检测策略的范围。使用以下字段查看检测范围。
+
+* *加密检测状态*
+* *可疑用户行为检测状态*
+* *阻止可疑文件扩展名*
+
+
+*快照、复制和备份策略*：此列显示管理策略的产品或服务。如果没有策略，该字段将显示 N/A。
+
+*重要性*
+
+勒索软件恢复能力根据对每个工作负载的分析，在发现过程中为每个工作负载分配重要性或优先级。工作负载重要性由以下快照频率决定：
+
+* *关键*：每小时会创建多个快照副本（高度激进的保护计划）
+* *重要提示*：快照副本的创建频率低于每小时一次，但高于每天一次。
+* *标准*：每天拍摄多次快照副本
+
+
+*Privacy exposure*：选择此选项以link:task-classify.html["使用 NetApp Data Classification 扫描个人身份信息"]。
+
+*复制目标*：如果已配置快照复制，则会列出目标存储 VM 和系统的名称。如果没有复制，此字段显示 "N/A"。
+
+*备份目标*：如果您已使用备份配置了勒索软件保护策略，此处将列出备份目标系统的名称。
+
+
+
+== 后续步骤
+
+* link:rp-use-protect.html["使用勒索软件保护策略保护工作负载"]
+* link:task-protection-group.html["管理保护组"]
+* link:task-classify.html["扫描个人身份信息"]
+

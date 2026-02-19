@@ -12,7 +12,7 @@ summary: 您可以通过在NetApp Ransomware Resilience中为工作负载分配�
 
 
 [role="lead"]
-您可以通过在NetApp Ransomware Resilience中启用工作负载一致性保护或创建勒索软件保护策略来保护工作负载免受勒索软件攻击。
+勒索软件防护策略是 NetApp Ransomware Resilience 的一个关键特征：它们支持检测、保护和复制。保护策略是网络安全态势的重要组成部分。
 
 *所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^] 。
 
@@ -61,92 +61,9 @@ NOTE: Amazon FSx for NetApp ONTAP 或 Azure NetApp Files 中的工作负载无�
 
 
 
-=== 针对不受NetApp应用程序保护的工作负载的保护策略
+==== 针对不受NetApp应用程序保护的工作负载的保护策略
 
 如果您的工作负载不是由 Backup and Recovery 或 Ransomware Resilience 管理，则可能有作为 ONTAP 或其他产品的一部分拍摄的快照。如果 ONTAP FPolicy 保护到位，则可以使用 ONTAP 更改 FPolicy 保护。
-
-
-
-== 查看工作负载上的勒索软件保护
-
-保护工作负载的第一步是查看当前工作负载及其保护状态。您可以看到以下类型的工作负载：
-
-* 应用程序工作负载
-* 阻止工作负载
-* 文件共享工作负载
-* 虚拟机工作负载
-
-
-.步骤
-. 从控制台左侧导航栏中选择“保护”>“勒索软件恢复”。
-. 执行以下操作之一：
-+
-** 从仪表板上的数据保护窗格中，选择“查看全部”。
-** 从菜单中选择*保护*。
-+
-image:screen-protection.png["保护页面"]
-
-
-
-. 在此页面中，您可以查看和更改工作负载的保护详细信息。
-
-
-
-NOTE: 请参阅 link:#add-a-ransomware-protection-strategy["添加勒索软件防护策略"] 了解当存在具有 Backup and Recovery 的现有保护策略时如何使用 Ransomware Resilience。
-
-
-
-=== 了解保护页面
-
-保护页面显示有关工作负载保护的以下信息：
-
-*保护状态*：工作负载可以显示以下保护状态之一，以指示是否应用了策略：
-
-* *受保护*：已应用策略。与工作负载相关的所有卷上均启用了 ARP（或 ARP/AI，取决于ONTAP版本）。
-* *存在风险*：未应用任何政策。如果工作负载没有启用主要检测策略，那么即使启用了快照和备份策略，它仍然“处于危险之中”。
-* *进行中*：政策正在应用但尚未完成。
-* *失败*：策略已应用但不起作用。
-
-
-*检测状态*：工作负载可以具有以下勒索软件检测状态之一：
-
-* *学习*：最近为工作负载分配了勒索软件检测策略，并且勒索软件恢复正在扫描工作负载。
-* *主动*：已分配勒索软件检测保护策略。
-* *未设置*：未分配勒索软件检测保护策略。
-* *错误*：已分配勒索软件检测策略，但勒索软件恢复遇到错误。
-+
-
-TIP: 当在勒索软件恢复中启用保护时，勒索软件检测策略状态从学习模式变为主动模式后，警报检测和报告开始。
-
-
-
-
-NOTE: 可疑用户行为活动和 FPolicy（可疑文件扩展名）活动与检测状态分开列出。
-
-*检测策略*：如果已分配勒索软件检测策略，则会显示其名称。如果尚未分配检测策略，则会显示“N/A”。
-
-*复制目标*：如果您已配置快照复制，则会列出目标存储虚拟机和系统的名称。如果没有复制项，此字段显示“无”。
-
-*Snapshot、复制和备份策略*：此列显示应用于工作负载的快照和备份策略以及管理这些策略的产品或服务。
-
-* 由SnapCenter管理
-* 由适用于SnapCenter Plug-in for VMware vSphere管理
-* 由备份和恢复管理
-* 管理快照和备份的勒索软件保护策略的名称
-* 无
-
-
-
-NOTE: 对于任何 SnapCenter 策略，您都无法在 Ransomware Resilience 中管理恢复。
-
-*工作量的重要性*
-
-勒索软件恢复能力根据对每个工作负载的分析，在发现过程中为每个工作负载分配重要性或优先级。工作负载重要性由以下快照频率决定：
-
-* *关键*：每小时会创建多个快照副本（高度激进的保护计划）
-* *重要提示*：快照副本的创建频率低于每小时一次，但高于每天一次。
-* *标准*：每天拍摄多次快照副本
-
 
 
 
@@ -394,11 +311,11 @@ image:screen-protection.png["管理策略页面"]
 . 要保留现有的 Backup and Recovery 并仅应用_检测_策略，请不要选中**替换现有策略**框。
 . 选择所需的检测设置：
 +
-....
-*Encryption detection*
-*Suspicious user behavior detection*
-*Block suspicious file extensions*
-....
+** *加密检测*
+** *可疑用户行为检测*
+** *阻止可疑文件扩展名*
+
+
 . 选择**下一步**。
 . 如果您选择 *Suspicious user behavior detection* 作为检测设置，请选择 User activity agent 或 link:suspicious-user-activity.html#create-a-user-activity-agent["或创建一个"]。
 +

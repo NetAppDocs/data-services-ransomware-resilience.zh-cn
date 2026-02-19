@@ -12,9 +12,9 @@ summary: 通过验证对您的环境、网络访问、登录和 Web 浏览器的
 
 
 [role="lead"]
-首先验证您的操作环境、网络访问和 Web 浏览器是否准备就绪，即可开始使用NetApp Ransomware Resilience。
+为了确保 NetApp Ransomware Resilience 的成功部署，请验证您的操作环境、网络访问和 Web 浏览器的准备情况。
 
-要使用勒索软件恢复功能，请确保满足先决条件。
+检查并确保您满足以下要求。
 
 
 

@@ -58,6 +58,9 @@ image:screen-protection-groups-policy.png["添加保护组 - 策略页面"]
 
 
 
+TIP: 在 Ransomware Resilience 中查看保护仪表板时，您可以按保护组对工作负载进行排序。
+
+
 
 === 编辑组保护
 

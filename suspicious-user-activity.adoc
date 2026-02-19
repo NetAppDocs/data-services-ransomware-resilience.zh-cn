@@ -12,20 +12,20 @@ summary: 勒索软件恢复中的可疑用户活动检测使您能够检测可�
 
 
 [role="lead"]
-要在 NetApp Ransomware Resilience 中启用可疑用户行为检测，必须至少安装一个用户活动代理。从 Ransomware Resilience 控制面板激活可疑用户活动功能时，需要提供用户活动代理主机信息。
+NetApp Ransomware Resilience 用户活动检测可帮助您防止用户级别的勒索软件事件。要在 Ransomware Resilience 中启用可疑用户行为检测，必须至少安装一个用户活动代理，该代理将创建一个数据收集环境，以监控用户行为中类似于勒索软件事件的异常模式。
 
-一个代理可以托管多个数据收集器。数据收集器将数据发送到 SaaS 位置进行分析。有两种类型的收集器：
+用户活动代理托管数据收集器和用户目录连接器，它们都将数据发送到 SaaS 位置进行分析。
 
-* **数据收集器**从ONTAP收集用户活动数据。
-* **用户目录连接器**连接到您的目录以将用户 ID 映射到用户名。
+* **数据收集器**从 ONTAP 收集用户活动数据。当您创建具有用户行为检测的保护策略时，将自动创建数据收集器。
+* **用户目录连接器**连接到您的目录以将用户 ID 映射到用户名。您必须配置用户目录连接器。
 
 
-收集器在勒索软件恢复设置中配置。
+用户活动代理、数据收集器和用户目录连接器都可以从 Ransomware Resilience 设置信息板进行管理。
 
 
 NOTE: 如果您已经在使用 NetApp Data Infrastructure Insights (DII) Workload Security，建议您使用相同的 Workload Security 代理来实现 Ransomware Resilience。您不需要为 Ransomware Resilience 部署单独的 Workload Security 代理，但是，使用相同的 Workload Security 代理需要在 Ransomware Resilience Console 组织和 DII Storage Workload Security 租户之间建立配对关系。请联系您的账号代表以启用此配对。
 
-+ 如果您尚未使用 DII，请继续执行此处的配置说明。
++ 如果您_不_使用 DII，请继续执行此处的配置说明。
 
 
 

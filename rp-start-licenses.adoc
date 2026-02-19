@@ -12,9 +12,9 @@ summary: 确保您满足勒索软件恢复的许可要求，以保护您的系�
 
 
 [role="lead"]
-借助NetApp Ransomware Resilience，您可以使用不同的许可计划。
+NetApp Ransomware Resilience 提供不同的许可证计划，使您能够订阅对您的组织有意义的服务。
 
-要执行此任务，您需要组织管理员、文件夹或项目管理员角色。 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解控制台访问角色"^] 。
+要设置许可，您需要 Organization admin、Folder 或 project admin 角色 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解控制台访问角色"^]。
 
 
 
