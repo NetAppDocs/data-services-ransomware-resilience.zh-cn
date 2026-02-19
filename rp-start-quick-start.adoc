@@ -62,7 +62,7 @@ summary: 只需几个步骤即可开始使用NetApp Ransomware Resilience。
 在勒索软件恢复中配置保护后，您可以执行以下操作。
 
 [role="quick-margin-list"]
-* link:rp-use-protect-classify.html["启用数据分类来识别治理和安全风险"]
+* link:task-classify.html["启用数据分类来识别治理和安全风险"]
 * link:task-siem.html["向 SIEM 发送警报"]
 * link:rp-use-reports.html["下载警报、保护、准备演习、恢复或摘要报告"]
 

@@ -39,7 +39,7 @@ image:all-file-activity.png["所有文件活动视图的屏幕截图"]。
 Ransomware Resilience 可疑用户行为活动检测有三个关键组成部分。
 
 * **用户活动代理**是数据收集器的可执行环境。您必须配置用户活动代理。
-* **数据收集器**与 Ransomware Resilience 共享用户活动事件。当您xref:rp-use-protect.adoc#add-a-detection-policy-to-workloads-with-existing-snapshot-and-backup-policies-managed-by-snapcenter-or-backup-and-recovery[启用带有可疑用户活动检测的勒索软件保护策略]时，会自动创建数据收集器。
+* **数据收集器**与 Ransomware Resilience 共享用户活动事件。当您link:rp-use-protect.html#add-a-detection-policy-to-workloads-with-existing-backup-or-snapshot-policies["启用带有可疑用户活动检测的勒索软件保护策略"]时，会自动创建数据收集器。
 * **用户目录连接器**启用用户名和用户 ID 之间的映射，从而在响应可疑用户行为时提高清晰度。您必须配置用户目录连接器。
 
 

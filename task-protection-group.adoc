@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: task-protection-group 
+permalink: task-protection-group.html 
 keywords: ransomware protection, protection group, modify, create, 
 summary: 您可以通过在NetApp Ransomware Resilience中为工作负载分配策略来保护工作负载免受勒索软件攻击。 
 ---
