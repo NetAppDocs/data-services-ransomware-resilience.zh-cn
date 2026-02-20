@@ -21,6 +21,9 @@ NetApp Ransomware Resilience 通过监控可疑的用户活动，提供人工智
 勒索软件弹性通过分析ONTAP中 FPolicy 生成的用户活动事件来检测可疑的用户活动。要收集用户活动数据，您需要部署一个或多个用户活动代理。该代理是可连接到租户上的设备的 Linux 服务器或 VM。
 
 
+IMPORTANT: SAN 工作负载当前不支持用户活动检测。您可以在 Amazon FSxN for ONTAP、Cloud Volumes ONTAP 和 ONTAP 中对 NAS 工作负载使用用户活动检测。
+
+
 
 == 可疑用户活动取证
 

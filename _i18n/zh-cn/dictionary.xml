@@ -590,13 +590,10 @@
   <block id="899157335f0c98105a8cbc92966ba06d" category="admonition">如果您关闭警报，勒索软件恢复功能会了解此行为，将其与正常操作关联，并且不会再次对其发出警报。</block>
   <block id="a8fd9e3988acb841854762788963d815" category="paragraph">要开始恢复数据，请将警报标记为准备好恢复，以便存储管理员可以开始恢复过程。</block>
   <block id="304b86572af1a03e438d6a3b86bfad43" category="paragraph">每个警报可能包含不同数量和状态的多个事件。审查所有事件。</block>
-  <block id="214db9c71f4c0ba37c3d72c3460341e5" category="paragraph">勒索软件恢复能力提供了有关导致发出警报的原因的信息（称为“证据”），例如：</block>
   <block id="271b5be554c7641bb10d05402276d05a" category="list-text">文件扩展名已创建或更改</block>
   <block id="ae12e4a2881496a3d2a890f09a21dbb7" category="list-text">创建文件并比较检测率与预期率</block>
   <block id="00567bc010bd0fe366d33796dbc20cc4" category="list-text">文件删除，并比较检测率与预期率</block>
   <block id="7491606097f73ec9ee4cd8649e24e37b" category="list-text">当加密程度较高时，无需更改文件扩展名</block>
-  <block id="c8922ede2258e352de90fce4498e586f" category="paragraph">警报分为以下类型之一：</block>
-  <block id="c8e4786dc8495216a70ff4c4a2f04274" category="list-text">*潜在攻击*：当自主勒索软件防护检测到新的扩展并且在过去 24 小时内重复发生 20 次以上时（默认行为），就会发出警报。</block>
   <block id="e881515eb95ff022b5c6fd323fe5a57a" category="list-text">*警告*：基于以下行为会出现警告：</block>
   <block id="dfc56481bc0d4c0e37c0cc1e55fec278" category="list-text">之前没有发现过新的扩展，并且相同行为没有重复足够多次以将其声明为攻击。</block>
   <block id="2c8035709ee020723e6bf59e526fe816" category="list-text">观察到高熵。</block>
@@ -604,15 +601,7 @@
   <block id="e96b2ea99a3be7415866a5df8f69cf6e" category="paragraph">证据基于ONTAP中的自主勒索软件防护信息。有关详细信息，请参阅<block ref="9a25fd5e356132f930267232d70ad02b" category="inline-link-rx"></block>。</block>
   <block id="64c00e9ea78abe412d8db56dd1df0462" category="paragraph">警报可以具有以下状态之一：</block>
   <block id="adf79604cd73ac69e1173c85b1070d09" category="list-text">*新的*</block>
-  <block id="001af4b9160bf93cb0c3215a7180e3b7" category="list-text">*不活跃*</block>
-  <block id="be48871d3fcb22d62d5de71b2de11ab9" category="list-text">*新*：所有事件在首次发现时均标记为“新”。</block>
-  <block id="d2b7a3286df55d9570e26ad7450dfeb9" category="list-text">*已解除*：如果您怀疑该活动不是勒索软件攻击，您可以将状态更改为“已解除”。</block>
-  <block id="abcc01ccddba81d6df2f14e786d4b375" category="list-text">*正在驳回*：该事件正在被驳回。</block>
-  <block id="135963592c039774ee41872c4fec1009" category="list-text">*已解决*：该事件已修复。</block>
-  <block id="afd9740574ba951a58c825da5cfeddb3" category="list-text">*自动解决*：对于低优先级警报，如果五天内未采取任何措施，则事件将自动解决。</block>
-  <block id="0ab493fb9f14e4a6d1e67c75639156f3" category="admonition">如果您在“设置”页面的“勒索软件恢复”中配置了安全和事件管理系统 (SIEM)，则“勒索软件恢复”会向您的 SIEM 系统发送警报详细信息。</block>
   <block id="428c58ec1c2902ea6bff31e38cae88ff" category="section-title">查看警报</block>
-  <block id="12cc8340b05947bc26160f562979c312" category="paragraph">您可以从勒索软件恢复仪表板或“警报”选项卡访问警报。</block>
   <block id="d676f14418a66ee1ac07a8bb1f61d02f" category="list-text">在勒索软件恢复力仪表板中，查看警报窗格。</block>
   <block id="6f619b1b7d17720e868f27a6a00e82c3" category="list-text">选择其中一个状态下的“查看全部”。</block>
   <block id="63afcf111af36e926f8c3a19c547e9ae" category="list-text">选择一个警报来查看每个警报的每个卷上的所有事件。</block>
@@ -627,19 +616,16 @@
   <block id="9b317c5e8c93afadbc7755c407538945" category="section-title">回复警报电子邮件</block>
   <block id="def7f3eac7eed1dada5cdcd2951ede36" category="inline-link">设置电子邮件通知设置</block>
   <block id="e66d9f5613065312cf1d46114b193ed7" category="list-text">查看电子邮件。</block>
-  <block id="f40ae80cf7396576022afae759080cf1" category="list-text">在电子邮件中，选择“查看警报”并登录“勒索软件恢复”。</block>
   <block id="9d425c6001c325d2240cf2219c5c8111" category="paragraph">出现“警报”页面。</block>
   <block id="ebce9876dfa9cc6dfd0e7d91d6a4ff2e" category="list-text">审查每个卷上每个警报的所有事件。</block>
   <block id="be962bd392a7a1672125ea27465c8bd8" category="section-title">检测恶意活动和异常用户行为</block>
   <block id="9d06719f2534c2ebd6c7bed1fd263123" category="paragraph">查看“警报”选项卡，您可以识别是否存在恶意活动或异常用户行为。</block>
   <block id="30cd6d23e33e657384daad5db666d56c" category="inline-link-macro">可疑的用户活动</block>
   <block id="2654c9fc1ffd83d2d016920464872d91" category="section-title">查看恶意活动</block>
-  <block id="c0339a08bfb0fb26aa3ecea9980349b3" category="paragraph">当自主勒索软件防护在勒索软件恢复中触发警报时，您可以查看以下详细信息：</block>
   <block id="da00dfcf2d3126754537ccdf32df23fa" category="list-text">输入数据的熵</block>
   <block id="acbf3e1d9f15facfe81c7ba30574b98f" category="list-text">预期的新文件创建率与检测到的速率的比较</block>
   <block id="244cbe016f3894f8fdbc6c552b25b627" category="list-text">预期文件删除率与检测率的比较</block>
   <block id="b53ebc948bfc1f79f472eb77a501f56d" category="list-text">文件的预期重命名率与检测到的重命名率的比较</block>
-  <block id="627c9caf27de22ab63a8c85f8e162aeb" category="list-text">受影响的文件和目录</block>
   <block id="f9a5e70d083b4b276ca27983e0da35c8" category="admonition">这些详细信息对于 NAS 工作负载是可见的。对于 SAN 环境，只有熵数据可用。</block>
   <block id="8910b12ac8590ba4767a30b2ddc0d161" category="list-text">从勒索软件恢复菜单中，选择*警报*。</block>
   <block id="76449079e275babe381772ebc5fecd7e" category="list-text">选择一个警报。</block>
@@ -1799,7 +1785,6 @@
   <block id="76adc55b5a0beb97a709fbc0c204a3d0" category="paragraph">有关控制台代理的更多信息，请参阅<block ref="c97584494dd542160395e5c607ae4c2c" category="inline-link-macro-rx"></block>。</block>
   <block id="be8cc003074f86f2bc2b3ef0d2f3a334" category="list-text">发现每个卷的当前NetApp快照副本和备份策略的保护级别以及任何机上检测功能。然后，勒索软件恢复能力通过使用备份和恢复、 ONTAP服务以及NetApp技术（例如自主勒索软件保护（ARP 或 ARP/AI，具体取决于您的ONTAP版本）、FPolicy、备份策略和快照策略）将此保护状态与工作负载关联起来。了解更多<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="inline-link-rx"></block>，<block ref="2b1b7f994c6938347657a18d8edc7db7" category="inline-link-rx"></block> ， 和<block ref="591ebe16737e602cc342b68e859c040e" category="inline-link-rx"></block>。</block>
   <block id="ee1bc5da2dde4f02ef7aa47df921506a" category="doc">在NetApp Ransomware Resilience中管理警报</block>
-  <block id="9a51095678260d2a753174230dbe8a88" category="paragraph">当NetApp Ransomware Resilience检测到可能的攻击时，它会在仪表板和通知区域显示警报。勒索软件恢复能力会立即拍摄快照。查看勒索软件恢复能力*警报*选项卡中的潜在风险。</block>
   <block id="6fe459ab097d6c4270e2ad317a017b93" category="paragraph">警报事件可以具有以下几种状态：</block>
   <block id="c95e7dd9856afddc701e5bf3b384f093" category="paragraph">审查事件后，您需要确定该事件是否是潜在的攻击。如果它们不构成实际威胁，就可以忽略不计。</block>
   <block id="c73a9fafaefc34f0b97adbaba4200dc9" category="paragraph">您可以忽略误报或决定立即恢复数据。如果您忽略警报，勒索软件恢复功能会学习此行为并将其与正常操作关联起来，并且不会再次针对此类行为发出警报。</block>
@@ -1901,8 +1886,6 @@
   <block id="9f1822f26663cadd0ea726defa3cca17" category="list-text">在对话框中，选择“删除”以确认要从排除列表中删除工作负载。</block>
   <block id="01e74a47d7af3692bf72faf95ffcd1a3" category="inline-image-macro">成功移除已排除的工作负载的屏幕截图。</block>
   <block id="af77f82e6f94939c1b89727420b621ac" category="list-text">如果成功从排除的工作负载列表中删除工作负载，则“排除的工作负载”页面上将显示成功消息，并且该工作负载将不再出现在排除的工作负载列表中。如果操作失败，将显示错误消息；请重试该操作。 <block ref="364f1d2f9b1485226ce83c7872b1bae0" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="afc3fd7b02af578176e65700acd6709b" category="list-text">*审核中*：您可以在评估事件时将其标记为审核中。</block>
-  <block id="a6e3974f4227562b42dd3774682f3f56" category="admonition">攻击解除后，无法恢复其状态。如果您取消某个工作负载，则为应对潜在的勒索软件攻击而自动创建的所有快照副本都将被永久删除。</block>
   <block id="b8b45f3c53a227dc5aa1d806ef340f06" category="list-text">**检测策略** 识别勒索软件威胁</block>
   <block id="68fc9b8869c6d23ecc7c4acaf4ef7761" category="list-text">**复制策略** 使您能够将勒索软件恢复功能的快照复制到辅助站点。复制计划可以设置为每小时、每天、每周或每月一次的频率。</block>
   <block id="3ed69b14426127876e3ab79ddc2e266e" category="paragraph">目前，您只能将快照复制到本地ONTAP存储。</block>
@@ -2046,7 +2029,6 @@
   <block id="af5eb4e584c938e9f8b3531d944e3a59" category="list-text">Azure NetApp Files 不支持带有复制的勒索软件保护策略。</block>
   <block id="1c312af1f49befaddd00883a617fa8ba" category="list-text">选择保护策略时，请确保其快照计划与 Azure NetApp Files 兼容。Azure NetApp Files 中最常用的快照计划是每小时一次。</block>
   <block id="e02189957b252d42e679aa66d35030cd" category="list-text"><block ref="e02189957b252d42e679aa66d35030cd" category="inline-link-macro-rx"></block></block>
-  <block id="bf1ffe0e445fb2a07fc3757d6ae841ec" category="list-text">要阻止环境中的可疑用户，请选择用户名称旁边的 *Block*。</block>
   <block id="0f20f1de24e002ee03e9a0d693faaf59" category="list-text">要禁用给定用户的警报，该用户是您知道是错误的警报的主题，请选择三个点 <block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>），然后**将此用户排除在监控之外**。查看对话框，然后选择**排除**进行确认。</block>
   <block id="c65a69d50600a3f76ccdd1109d15b6e3" category="inline-link-macro">排除用户</block>
   <block id="d632bf28d8164d0436ca05f069b989e9" category="admonition">要为用户重新启用警报，请返回警报。选择三个点，然后选择**将此用户包含在监控中**。您也可以<block ref="e33a84d4132808c30f0e6b091e9f7e88" category="inline-link-macro-rx"></block>监控。</block>
@@ -2178,4 +2160,38 @@
   <block id="d3a17ab1969b7e28ae5324bee6d4cd54" category="paragraph">安全和事件管理系统 (SIEM) 集中日志和事件数据，以提供有关安全事件和合规性的见解。NetApp Ransomware Resilience 支持自动将数据发送到您的 SIEM，以简化威胁分析和检测。</block>
   <block id="1054e7cee5045661c2dae3afe8f146e4" category="list-text">选择 *Authenticate*。</block>
   <block id="3538785960373ea81ad23e72866e9266" category="sidebar">查看保护</block>
+  <block id="9b792a24170d5651c572c72e1a0fcfc2" category="admonition">SAN 工作负载当前不支持用户活动检测。您可以在 Amazon FSxN for ONTAP、Cloud Volumes ONTAP 和 ONTAP 中对 NAS 工作负载使用用户活动检测。</block>
+  <block id="6aef124ac144e3ae69ac50e0f114e548" category="paragraph">当 NetApp Ransomware Resilience 检测到可能的攻击时，它会在仪表板和通知区域显示警报。Ransomware Resilience 立即拍摄快照。当您收到警报时，请查看 Ransomware Resilience *警报*选项卡中的潜在风险，以评估对数据的影响并防止潜在的勒索软件攻击。</block>
+  <block id="51f69bf6a11f3daca8752b8344ebc420" category="section-title">如何生成警报</block>
+  <block id="9e7bcb464844b7db89d979e9085bac76" category="paragraph">Ransomware Resilience 依赖于有关数据熵模式、文件扩展名类型和加密的证据来生成警报。警报基于以下事件：</block>
+  <block id="fb7cc6e16ef254f2ff2f03b0ba6cadee" category="list-text">数据泄露</block>
+  <block id="147fa6a15cbb387b90cd75ccc34d8cfe" category="list-text">数据销毁</block>
+  <block id="9755e4a474d0024a8dcd40393e571716" category="list-text">可疑的用户行为</block>
+  <block id="f94e6cd450a12c55223329be07d15575" category="inline-link-macro">用户活动检测</block>
+  <block id="09e9060a723336e7b5657759fccb4bbf" category="admonition">对于数据泄露、数据销毁和可疑用户行为警报，必须配置 <block ref="9403988536e87b1b5fabe2157e11581a" category="inline-link-macro-rx"></block>。</block>
+  <block id="b413c7d063ce740207cbb531b68c46dc" category="section-title">警报类型和状态</block>
+  <block id="1405a7e68c0a63e640869ddcfd6a3c37" category="paragraph">提醒具有两种状态之一：*新建* 或 *未激活*。</block>
+  <block id="75a90d27a357c4859ab2e4e41a012d82" category="paragraph">警报分为以下几种类型：</block>
+  <block id="bdb8ca0360b2fe066d05c9a1a048c735" category="list-text">*潜在攻击*：警报在以下情况下被归类为潜在攻击：</block>
+  <block id="f56291051fc1ed98942260fa2ee0eee0" category="list-text">Autonomous Ransomware Protection 检测到新的扩展，并且在过去 24 小时内重复发生超过 20 次（默认行为）。</block>
+  <block id="b235238ab28a3bf3f4659ca61246b1ba" category="list-text">检测到数据泄露。</block>
+  <block id="e97aedde568ba1309d7dee88757cc7a6" category="list-text">检测到数据销毁。</block>
+  <block id="30f96ff3a86b53c9339e0fcb0a5d4f56" category="section-title">警报状态</block>
+  <block id="46a2a41cc6e552044816a2d04634545d" category="cell">状态</block>
+  <block id="4ba105e3c097cf6f2953389b3edb7afe" category="cell">所有事件在首次识别时都标记为"新"。</block>
+  <block id="583663d39289a91bdb2fc8a311ff5d43" category="cell">*审核中*</block>
+  <block id="2997572eb0d7e3b29462cc68181bc484" category="cell">您可以在评估警报事件时将其手动标记为"审核中"。</block>
+  <block id="acb47975adbffbb55594bbed73e4b27d" category="cell">*已关闭*</block>
+  <block id="37d6f73d98a805a6d1c377464250b2f8" category="paragraph">如果您怀疑该活动不是勒索软件攻击，则可以将状态更改为"已解除"。+ 注意：解除攻击后，无法恢复其状态。如果解除工作负载，则为响应潜在的勒索软件攻击而自动创建的所有快照副本都将被永久删除。</block>
+  <block id="233759d6fff761018a2a5438302273e3" category="cell">*已解决*</block>
+  <block id="5f7604fd39c6c6a677a542c60aafd5b4" category="cell">此事件已修复。</block>
+  <block id="ec573101219f640c28052674265d7465" category="cell">*自动解决*</block>
+  <block id="06dc51fc99ed3c0d2a4c44ba607b2290" category="cell">对于低优先级警报，如果在五天内未采取任何行动，则会自动解决事件。</block>
+  <block id="f6cf985a5665cb78843065d12f8d1651" category="paragraph">您可以从 Ransomware Resilience 仪表板或*警报*选项卡访问警报。</block>
+  <block id="4cd7c3f63e9693e91004f9e55b4eb0ce" category="list-text">在电子邮件中，选择 *View alert* 并登录到 Ransomware Resilience。</block>
+  <block id="f8e5b2d689322950f1d346b22381d36c" category="paragraph">当 Autonomous Ransomware Protection 在 Ransomware Resilience 中触发警报时，您可以查看以下详细信息：</block>
+  <block id="7f41a371ba4e549119e44e211d1b4d72" category="list-text">触发警报时</block>
+  <block id="378c9aa27d38e9ec5b0fbf34bcb8febc" category="list-text">当访问权限被更改或拒绝时</block>
+  <block id="49408f5917e16f5795da1781a7748aa5" category="list-text">受影响的工作负载、卷、文件和目录</block>
+  <block id="a6bd7f80fc17cbb8e58e8dca754bf710" category="list-text">要阻止环境中的可疑用户，请选择用户名称旁边的 *Block*。</block>
 </blocks>
