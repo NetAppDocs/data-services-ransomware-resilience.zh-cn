@@ -35,19 +35,19 @@ summary: 通过验证对您的环境、网络访问、登录和 Web 浏览器的
 .2+| 适用于 AWS 的Cloud Volumes ONTAP | CIFS 和 NFS | 9.11.1 及更高版本 
 
 
-| SAN（FC、iSCSI 和 NVMe） | 9.17.1 及更高版本 
+| SAN（iSCSI 和 NVMe） | 9.17.1 及更高版本 
 
 
 .2+| 适用于 Google Cloud Platform 的Cloud Volumes ONTAP | CIFS 和 NFS | 9.11.1 及更高版本 
 
 
-| SAN（FC、iSCSI 和 NVMe） | 9.17.1 及更高版本 
+| SAN（iSCSI 和 NVMe） | 9.17.1 及更高版本 
 
 
 .2+| 适用于 Microsoft Azure 的Cloud Volumes ONTAP | CIFS 和 NFS | 9.12.1 及更高版本 
 
 
-| SAN（FC、iSCSI 和 NVMe） | 9.17.1 及更高版本 
+| SAN（iSCSI 和 NVMe） | 9.17.1 及更高版本 
 
 
 .2+| ONTAP （本地部署） | CIFS 和 NFS | 9.11.1 及更高版本 
@@ -66,7 +66,7 @@ summary: 通过验证对您的环境、网络访问、登录和 Web 浏览器的
 * 具有组织管理员权限的NetApp Console用户帐户，用于发现资源。
 * 一个控制台组织和系统，其中至少有一个活动的控制台代理连接到link:concept-ransomware-resilience.html#supported-backup-targets-systems-and-workload-data-sources["支持的系统"]。
 +
-** 如果您的本地ONTAP集群或 AWS 或 Azure 云中的Cloud Volumes ONTAP未在控制台中设置，请参阅link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html["了解如何配置控制台代理"^]和link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["标准控制台要求"^]。
+** 如果您的本地 ONTAP 集群或 Cloud Volumes ONTAP 系统未在 Console 中设置，请参阅 link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html["了解如何配置控制台代理"^] 和 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["标准控制台要求"^]。
 +
 
 NOTE: 如果您在单个控制台组织中拥有多个控制台代理，则勒索软件恢复功能将扫描除控制台 UI 中当前选择的代理之外的所有控制台代理中的ONTAP资源。
@@ -74,14 +74,10 @@ NOTE: 如果您在单个控制台组织中拥有多个控制台代理，则勒�
 
 
 * 控制台代理必须具有 `cloudmanager-ransomware-protection`容器处于活动状态。
-* 至少一个具有NetApp本地ONTAP集群或 AWS 或 Azure 中的Cloud Volumes ONTAP 的控制台系统。勒索软件恢复支持 NAS（NFS 和 SMB）和 SAN（iSCSI、FC 和 NVMe）协议。
-+
-** ONTAP或Cloud Volumes ONTAP集群（ ONTAP版本 9.11.1 或更高版本）支持勒索软件恢复功能。
+* 对于 ONTAP 或 Cloud Volumes ONTAP 集群，Ransomware Resilience 要求 ONTAP 版本为 9.11.1 或更高版本。
 +
 
 NOTE: 要在 SAN 工作负载上使用勒索软件恢复功能，您必须运行ONTAP 9.17.1 或更高版本。
-
-
 
 
 
