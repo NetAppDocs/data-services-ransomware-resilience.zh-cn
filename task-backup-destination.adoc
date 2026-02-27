@@ -1,0 +1,215 @@
+---
+sidebar: sidebar 
+permalink: task-backup-destination.html 
+keywords: ransomware protection, backup destination, storagegrid, aws, azure, google cloud 
+summary: 在 NetApp Ransomware Resilience 中添加备份目标，以提高网络弹性。 
+---
+= 在 NetApp Ransomware Resilience 中添加备份目标
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+当 NetApp Ransomware Resilience 发现工作负载时，如果配置了备份，则 Ransomware Resilience 会识别备份目标。如果您计划将备份用作 link:rp-use-protect.html["勒索软件防护策略"] 的一部分，但尚未在工作负载上配置备份目标，则必须在 NetApp Ransomware Resilience 中添加备份目标，以提高网络弹性。
+
+您可以从以下备份目标中选择一个：
+
+* NetAppStorageGRID
+* 亚马逊网络服务（AWS）
+* Google Cloud Platform
+* Microsoft Azure
+
+
+
+NOTE: Amazon FSx for NetApp ONTAP 和 Azure NetApp Files 中的工作负载无法使用备份目标。使用本机备份解决方案执行备份操作：FSx for ONTAP 备份服务或 Azure NetApp Files 备份。
+
+*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^] 。
+
+
+
+== 添加StorageGRID作为备份目标
+
+要将NetApp StorageGRID设置为备份目标，请输入以下信息。
+
+.步骤
+. 在勒索软件恢复功能中，选择**设置**。
+. 在**备份目的地**图块中，选择**查看**。
+. 选择**添加**。
+. 输入备份目标的名称。
++
+image:screen-settings-backup-destination.png["备份目标页面"]
+
+. 选择* StorageGRID*。
+. 选择每个设置旁边的向下箭头以查看必填字段：
++
+** *提供商设置*：
++
+*** 选择**创建新存储桶**或**自带存储桶**。
+*** 提供**网关节点完全限定域名 (FQDN)** 和**端口**。
+*** 提供 StorageGRID 凭据：**Access key** 和 **Secret key**。
+
+
+** *网络*：选择 IP 空间。
++
+*** IP 空间是您要备份的卷所在的集群。此 IP 空间的集群间 LIF 必须具有出站互联网访问权限。
+
+
+** *备份锁定*
++
+选择是否要配置备份锁定。使用备份锁定，副本受到保护，不会被修改或删除，并会扫描勒索软件威胁。配置备份目标后，您无法修改此设置。** 如果您不想要备份锁定，请选择 **None**。** 选择 **Governance mode** 以允许具有特定权限的用户在保留期间覆盖或删除受保护的备份文件。** 选择 **Compliance mode** 以防止用户在保留期间覆盖或删除受保护的备份文件。
+
+
+
+. 选择“*添加*”。
+
+
+.结果
+新的备份目标将添加到备份目标列表中。
+
+image:screen-settings-backup-destinations-list2.png["备份目标的屏幕截图。"]
+
+
+
+== 添加 Amazon Web Services 作为备份目标
+
+要将 AWS 设置为备份目标，请输入以下信息。
+
+有关在控制台中管理 AWS 存储的详细信息，请参见 link:https://docs.netapp.com/us-en/console-setup-admin/task-viewing-amazon-s3.html["管理您的 Amazon S3 存储桶"^]。
+
+.步骤
+. 在勒索软件恢复功能中，选择**设置**。
+. 在**备份目的地**图块中，选择**查看**。
+. 选择**添加**。
+. 选择*Amazon Web Services*。
+. 选择每个设置旁边的向下箭头并输入或选择值：
++
+** *提供商设置*：
++
+*** 创建一个新的存储桶，如果控制台中已经存在存储桶，则选择一个现有存储桶，或者使用您自己的存储桶来存储备份。
+*** AWS 账户、区域、AWS 凭证的访问密钥和密钥
++
+https://docs.netapp.com/us-en/storage-management-s3-storage/task-add-s3-bucket.html["如果您想要自带存储桶，请参阅添加 S3 存储桶"^] 。
+
+
+
+** *加密*：如果您正在创建新的 S3 存储桶，请输入提供商提供给您的加密密钥信息。如果您选择现有存储桶，则加密信息已经可用。
++
+默认情况下，存储桶中的数据使用 AWS 管理的密钥加密。您可以继续使用 AWS 管理的密钥，也可以使用您自己的密钥管理数据的加密。
+
+** *网络*：选择 IP 空间以及是否使用私有端点。
++
+*** IP 空间是您要备份的卷所在的集群。此 IP 空间的集群间 LIF 必须具有出站互联网访问权限。
+*** 或者，选择是否使用您之前配置的 AWS 私有终端节点 (PrivateLink)。
++
+如果您想使用 AWS PrivateLink，请参阅 https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html["适用于 Amazon S3 的 AWS PrivateLink"^]。
+
+
+
+** *备份锁*：选择是否希望勒索软件恢复功能保护备份不被修改或删除。此选项使用NetApp DataLock 技术。每个备份将在保留期内锁定，或至少 30 天，再加上最多 14 天的缓冲期。
++
+
+CAUTION: 如果现在配置备份锁定设置，则无法在配置备份目标后更改该设置。
+
++
+*** *治理模式*：特定用户（具有 s3:BypassGovernanceRetention 权限）可以在保留期内覆盖或删除受保护的文件。
+*** *合规模式*：用户在保留期内无法覆盖或删除受保护的备份文件。
+
+
+
+
+. 选择“*添加*”。
+
+
+.结果
+新的备份目标将添加到备份目标列表中。
+
+image:screen-settings-backup-destinations-list2.png["备份目标页面的“设置”选项"]
+
+
+
+== 添加 Google Cloud Platform 作为备份目标
+
+要将 Google Cloud Platform (GCP) 设置为备份目标，请输入以下信息。
+
+有关在 Console 中管理 GCP 存储的详细信息，请参阅 link:https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-google.html["Google Cloud 中的控制台代理安装选项"^]。
+
+.步骤
+. 在勒索软件恢复功能中，选择**设置**。
+. 在**备份目的地**图块中，选择**查看**。
+. 选择**添加**。
+. 输入备份目标的名称。
+. 选择*Google Cloud Platform*。
+. 选择每个设置旁边的向下箭头并输入或选择值：
++
+** *提供商设置*：
++
+*** 选择**创建新存储桶**或**自带存储桶**。
+*** 提供 Google Cloud Platform 凭据：**Access key** 和 **Secret key**。
+*** 选择您的 **Project** 及其所在的 **Region**。
++
+image:screen-settings-backup-destination-gcp.png["备份目标页面"]
+
+
+
+** *加密*：如果您正在创建新的存储桶，请输入提供商提供给您的加密密钥信息。如果您选择现有存储桶，则加密信息已经可用。
++
+默认情况下，存储桶中的数据使用 Google 管理的密钥进行加密。您可以通过选择 **Google 管理的密钥**或使用**客户管理的密钥**继续使用默认设置。
+
+
+
+. 选择“*添加*”。
+
+
+.结果
+新的备份目标将添加到备份目标列表中。
+
+
+
+== 添加 Microsoft Azure 作为备份目标
+
+要将 Azure 设置为备份目标，请输入以下信息。
+
+有关在控制台中管理 Azure 凭据和市场订阅的详细信息，请参阅 https://docs.netapp.com/us-en/console-setup-admin/task-adding-azure-accounts.html["管理 Azure 凭据和市场订阅"^]。
+
+.步骤
+. 在勒索软件恢复功能中，选择**设置**。
+. 在**备份目的地**图块中，选择**查看**。
+. 选择**添加**。
+. 选择“*Azure*”。
+. 选择每个设置旁边的向下箭头并输入或选择值：
++
+** *提供商设置*：
++
+*** 创建一个新的存储帐户，如果控制台中已经存在，则选择一个现有的存储帐户，或者使用您自己的存储帐户来存储备份。
+*** 请提供应用程序（客户端）ID、客户端密码和目录（租户）ID。选择 **身份验证**。
+*** 为您的 Azure 订阅选择 Azure 订阅、区域和资源组。
++
+https://docs.netapp.com/us-en/storage-management-blob-storage/task-add-blob-storage.html["如果您想自带存储帐户，请参阅添加 Azure Blob 存储帐户"^] 。
+
+
+
+** *加密*：默认情况下，数据使用 Microsoft 托管的密钥加密。选择 **Microsoft-managed key** 以保留此选项；或者，选择 **Customer managed key** 以使用您自己的密钥进行加密。
+** *网络*：选择 IP 空间以及是否使用私有端点。
++
+*** IP 空间是您要备份的卷所在的集群。此 IP 空间的集群间 LIF 必须具有出站互联网访问权限。
+*** 或者，选择是否使用之前配置的 Azure 专用终结点。
++
+如果您想使用 Azure PrivateLink，请参阅 https://azure.microsoft.com/en-us/products/private-link/["Azure PrivateLink"^]。
+
+
+
+** *备份锁定*
++
+选择是否要配置备份锁定。使用备份锁定，副本受到保护，不会被修改或删除，并会扫描勒索软件威胁。配置备份目标后，您无法修改此设置。** 如果您不想要备份锁定，请选择 **None**。** 选择 **Governance mode** 以允许具有特定权限的用户在保留期间覆盖或删除受保护的备份文件。** 选择 **Compliance mode** 以防止用户在保留期间覆盖或删除受保护的备份文件。
+
+
+
+. 选择“*添加*”。
+
+
+.结果
+新的备份目标将添加到备份目标列表中。
+
+image:screen-settings-backup-destinations-list2.png["备份目标页面的“设置”选项"]

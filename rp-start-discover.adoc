@@ -4,7 +4,7 @@ permalink: rp-start-discover.html
 keywords: bluexp, ransomware protection, protection, risk, cyber attack, security,data security, data protection, data recovery, data discovery 
 summary: 在发现过程中，勒索软件恢复力会分析所有控制台代理和帐户的系统中的所有卷和文件。 
 ---
-= 发现NetApp Ransomware Resilience中的工作负载
+= 在 NetApp Ransomware Resilience 中发现并管理工作负载
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -60,13 +60,13 @@ image:screen-discover-workloads.png["发现工作负载屏幕截图"]
 . 要下载已发现的工作负载列表，请选择*下载结果*。
 . 要显示勒索软件恢复仪表板，请选择“转到仪表板”。
 +
-仪表板显示数据保护健康状况。随着新工作负载的发现，处于危险中或受保护的工作负载的数量会更新。
+仪表板显示数据保护健康状况。发现新工作负载时，存在风险或受保护的工作负载数量会更新。
 
 +
-image:screen-dashboard.png["勒索软件抵御能力仪表板"]
+image:screen-dashboard.png["Ransomware Resilience 控制面板"]
 
 +
-link:rp-use-dashboard.html["了解仪表板向您显示的内容。"]
+link:rp-use-dashboard.html["了解控制面板显示的内容。"]
 
 
 
@@ -78,7 +78,7 @@ link:rp-use-dashboard.html["了解仪表板向您显示的内容。"]
 
 .步骤
 . 要确定上次发现的时间，请查看勒索软件恢复仪表板右上角“刷新”图标旁边的日期和时间戳。
-. 在控制面板中，选择“刷新”图标以查找新的工作负载。
+. 在控制面板中，选择 *Refresh* 图标以查找新的工作负载。
 
 
 
@@ -88,10 +88,10 @@ TIP: 如果您发现已发现的系统中存在未显示的卷，则这些卷可
 
 == 发现新系统
 
-如果您已经发现了系统，您可以找到新的或以前未选择的系统。
+如果您已经发现了工作负载，则可以找到新的或以前未选择的工作负载。
 
 .步骤
-. 从“勒索软件恢复”菜单中，选择垂直方向 右上角的“category='inline-code'/> 选项。从下拉菜单中选择“设置”。
+. 在 Ransomware Resilience 中，选择*设置*。
 . 在工作负载发现卡中，选择*发现工作负载*。发现过程可能需要几分钟。加载图标显示进度。
 . 勒索软件恢复力可以发现受支持和不受支持的系统。如果系统的ONTAP版本低于所需版本，则不支持该系统。当您将鼠标悬停在某个不受支持的系统上时，工具提示会显示原因。选择您想要发现工作负载的系统。
 . 选择*发现*。

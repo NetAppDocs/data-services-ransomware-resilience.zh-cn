@@ -102,7 +102,7 @@ NOTE: 如果您已使用非管理员凭据将ONTAP集群连接到控制台，则
 
 * 不需要在系统上启用NetApp Backup and Recovery 。
 +
-勒索软件恢复力有助于通过设置选项配置备份目标。看link:rp-use-settings.html["配置设置"] 。
+Ransomware Resilience 有助于通过"设置"选项配置备份目标。请参阅 link:task-backup-destination.html["添加备份目标"]。
 
 
 

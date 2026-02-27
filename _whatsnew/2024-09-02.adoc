@@ -16,7 +16,7 @@ BlueXP ransomware protection 现在从 NetApp Digital Advisor 收集有关集群
 
 在此版本中，您可以将备份目标设置为 Google Cloud Platform 存储桶。以前，您只能将备份目标添加到NetApp StorageGRID、Amazon Web Services 和 Microsoft Azure。
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["了解有关配置BlueXP ransomware protection设置的更多信息"] 。
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-destination.html["了解有关配置BlueXP ransomware protection设置的更多信息"]。
 
 
 

@@ -32,7 +32,7 @@ NetApp Ransomware Resilience 的保护仪表板概述了工作负载的保护状
 . 从控制台左侧导航栏中选择“保护”>“勒索软件恢复”。
 . 执行以下操作之一：
 +
-** 从仪表板上的数据保护窗格中，选择“查看全部”。
+** 在控制面板的 Data Protection 窗格中，选择 *查看全部*。
 ** 从菜单中选择*保护*。
 +
 image:screen-protection.png["保护页面"]

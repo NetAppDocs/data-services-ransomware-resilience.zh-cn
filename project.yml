@@ -30,44 +30,46 @@ sidebar:
       url: "/rp-start-quick-start.html"
     - title: 设置勒索软件抵御能力
       url: "/rp-start-setup.html"
-    - title: 访问勒索软件弹性
-      url: "/rp-start-login.html"
     - title: 设置许可
       url: "/rp-start-licenses.html"
     - title: 发现工作负载
       url: "/rp-start-discover.html"
-    - title: 通过准备演习模拟勒索软件攻击
-      url: "/rp-start-simulate.html"
-    - title: 在“设置”中配置备份、威胁检测和攻击模拟
-      url: "/rp-use-settings.html"
-    - title: 配置 SIEM
-      url: "/task-siem.html"
-    - title: 配置用户活动检测
-      entries:
-      - title: 了解用户活动检测
-        url: "/concept-user-behavior.html"
-      - title: 用户活动要求
-        url: "/reference-user-activity-requirements.html"
-      - title: 配置代理和收集器
-        url: "/suspicious-user-activity.html"
   - title: 使用勒索软件弹性
     entries:
-    - title: 使用仪表板查看工作负载健康状况
+    - title: 访问勒索软件弹性
+      url: "/rp-start-login.html"
+    - title: 查看工作负载运行状况
       url: "/rp-use-dashboard.html"
-    - title: 保护工作负载
+    - title: 保护和检测
       entries:
       - title: 查看保护
         url: "/task-review-protection.html"
-      - title: 使用勒索软件保护策略保护工作负载
+      - title: 配置备份目标
+        url: "/task-backup-destination.html"
+      - title: 保护工作负载
         url: "/rp-use-protect.html"
+      - title: 配置用户活动检测
+        entries:
+        - title: 了解用户活动检测
+          url: "/concept-user-behavior.html"
+        - title: 用户活动检测要求
+          url: "/reference-user-activity-requirements.html"
+        - title: 配置代理和收集器
+          url: "/suspicious-user-activity.html"
       - title: 管理保护组
         url: "/task-protection-group.html"
       - title: 扫描个人身份信息
         url: "/task-classify.html"
-    - title: 响应检测到的警报
-      url: "/rp-use-alert.html"
-    - title: 从勒索软件攻击中恢复
-      url: "/rp-use-recover.html"
+    - title: 响应和恢复
+      entries:
+      - title: 响应检测到的警报
+        url: "/rp-use-alert.html"
+      - title: 从勒索软件攻击中恢复
+        url: "/rp-use-recover.html"
+    - title: 进行准备演习
+      url: "/rp-start-simulate.html"
+    - title: 配置 SIEM
+      url: "/task-siem.html"
     - title: 下载报告
       url: "/rp-use-reports.html"
   - section: support

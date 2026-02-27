@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-use-alert.html 
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert 
-summary: 如果勒索软件恢复功能检测到可能的攻击，勒索软件恢复功能仪表板上就会出现警报，指示潜在攻击。此时，您应该查看“勒索软件弹性警报”选项卡中的潜在风险。 
+summary: 如果 Ransomware Resilience 检测到可能的攻击，则 Ransomware Resilience 仪表板上会出现警报，指示可能的攻击。此时，您应该在 Ransomware Resilience Alerts 选项卡中查看潜在风险。 
 ---
 = 在NetApp Ransomware Resilience中管理警报
 :hardbreaks:
@@ -12,7 +12,7 @@ summary: 如果勒索软件恢复功能检测到可能的攻击，勒索软件�
 
 
 [role="lead"]
-当 NetApp Ransomware Resilience 检测到可能的攻击时，它会在仪表板和通知区域显示警报。Ransomware Resilience 立即拍摄快照。当您收到警报时，请查看 Ransomware Resilience *警报*选项卡中的潜在风险，以评估对数据的影响并防止潜在的勒索软件攻击。
+当 NetApp Ransomware Resilience 检测到可能的攻击时，它会在仪表板和"通知"菜单中显示警报。Ransomware Resilience 立即拍摄快照。收到警报时，请查看 Ransomware Resilience *警报*选项卡中的潜在风险，以评估对数据的影响并防止潜在的勒索软件攻击。
 
 如果 Ransomware Resilience 检测到可能的攻击，则会在 Console Notification 设置中显示通知，并向配置的地址发送电子邮件。电子邮件包括有关严重程度、受影响工作负载的信息，以及 Ransomware Resilience *Alerts* 选项卡中警报的链接。
 
@@ -110,7 +110,7 @@ NOTE: 对于 SAN 环境，警告仅基于高熵值。
 *所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员、勒索软件恢复管理员或勒索软件恢复查看器角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^] 。
 
 .步骤
-. 在勒索软件恢复力仪表板中，查看警报窗格。
+. 在 Ransomware Resilience 控制面板中，查看 Alerts 窗格。
 . 选择其中一个状态下的“查看全部”。
 . 选择一个警报来查看每个警报的每个卷上的所有事件。
 . 要查看其他警报，请选择左上角面包屑中的“*警报*”。
@@ -195,7 +195,7 @@ image:screen-alerts-incidents3.png["警报事件页面"]
 
 === 查看异常用户行为
 
-如果您已配置可疑用户检测来查看异常用户行为，则可以查看用户级数据并阻止特定用户。要启用可疑用户设置，请参阅link:rp-use-settings.html["配置勒索软件抵御能力设置"]。
+如果您已将可疑用户检测配置为查看异常用户行为，则可以查看用户级数据并阻止特定用户。要启用可疑用户设置，请参阅link:suspicious-user-activity.html["为用户活动检测配置代理和收集器"]。
 
 .步骤
 . 从勒索软件恢复菜单中，选择*警报*。

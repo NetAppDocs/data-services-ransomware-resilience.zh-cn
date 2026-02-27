@@ -280,7 +280,7 @@ Snapshot 副本锁定适用于ONTAP 9.12.1 及更高版本。要了解有关Snap
 *** *备份计划*：选择二级存储的计划选项并启用该计划。
 +
 
-TIP: 要在辅助存储上启用备份锁定，请使用*设置*选项配置备份目标。有关详细信息，请参阅link:rp-use-settings.html["配置设置"] 。
+TIP: 要启用辅助存储上的备份锁定，请使用 *Settings* 选项配置备份目标。有关详细信息，请参见 link:task-backup-destination.html["配置设置"]。
 
 
 

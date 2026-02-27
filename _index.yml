@@ -12,28 +12,24 @@ indexpage:
     links:
     - title: 了解勒索软件抵御能力
       url: "/concept-ransomware-resilience.html"
+    - title: 了解用户活动检测
+      url: "/concept-user-behavior.html"
     - title: 勒索软件抵御能力的新功能
       url: "/whats-new.html"
     - title: 前提条件
       url: "/rp-start-prerequisites.html"
     - title: 快速启动
       url: "/rp-start-quick-start.html"
-    - title: 配置备份目标并启用威胁检测
-      url: "/rp-use-settings.html"
-    - title: 模拟勒索软件攻击
-      url: "/rp-start-simulate.html"
-    - title: 配置可疑用户活动检测
-      url: "/suspicious-user-activity.html"
   - title: 使用勒索软件弹性
     links:
     - title: 发现工作负载
       url: "/rp-start-discover.html"
-    - title: 使用仪表板查看工作负载健康状况
+    - title: 查看工作负载运行状况
       url: "/rp-use-dashboard.html"
     - title: 保护工作负载
       url: "/rp-use-protect.html"
-    - title: 使用NetApp Data Classification扫描个人身份信息
-      url: "/task-classify.html"
+    - title: 配置可疑用户活动检测
+      url: "/suspicious-user-activity.html"
     - title: 响应检测到的警报
       url: "/rp-use-alert.html"
     - title: 从攻击中恢复

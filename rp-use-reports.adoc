@@ -41,7 +41,7 @@ CSV 或 JSON 文件包含所有控制台系统上所有工作负载的数据。
 +
 image:screen-dashboard.png["信息板页面"]
 
-. 从仪表板或其他页面，选择*刷新*image:button-refresh.png["刷新选项"]右上角的选项可刷新报告中显示的数据。
+. 在控制面板或其他页面中，选择右上角的 *刷新* image:button-refresh.png["刷新选项"] 选项以刷新报告中显示的数据。
 . 执行以下操作之一：
 +
 ** 从页面上选择*下载*image:button-download.png["下载选项"]选项。
