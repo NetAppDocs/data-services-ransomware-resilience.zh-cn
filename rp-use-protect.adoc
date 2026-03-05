@@ -52,8 +52,6 @@ TIP: 为了增强对数据资产的管理和保护，您可以创建link:task-pr
 
 来自 Backup & Recovery 服务的保护信息显示在 Ransomware Resilience 中。您可以使用 Ransomware Resilience 向这些服务添加检测策略。使用 Ransomware Resilience 添加保护策略将取代现有的保护策略。
 
-Ransomware Resilience 还从 SnapCenter for VMware 为 VM 数据存储库和 SnapCenter for Oracle 发现保护策略。您无法使用这些服务通过 Ransomware Resilience 进行还原。
-
 如果勒索软件检测策略由ONTAP中的自主勒索软件防护（ARP 或 ARP/AI，取决于ONTAP版本）和 FPolicy 管理，则这些工作负载将受到保护并将继续由 ARP 和 FPolicy 管理。
 
 
