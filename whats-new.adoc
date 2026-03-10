@@ -18,6 +18,26 @@ summary: 了解NetApp Ransomware Resilience的新功能。
 
 
 
+== 2026 年 3 月 09 日
+
+
+
+=== 从用户行为警报中批量排除用户
+
+除了现有的基于 UI 和 CSV 的选项之外，Ransomware Resilience 现在还支持上传要从用户行为活动警报中排除的用户的 JSON 列表。
+
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#exclude-users-from-alerts["从警报中排除用户"^]。
+
+
+
+=== 用户行为活动增强
+
+Ransomware Resilience 通过添加电子邮件警报并在受支持的 SIEM 事件数据（AWS Security Hub、Microsoft Sentinel 和 Splunk Cloud）中包含用户行为事件，提高了对用户行为的洞察力。这些增强功能可为您的安全和合规性监控提供更准确的见解。
+
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["将 NetApp Ransomware Resilience 连接到 SIEM"^]。
+
+
+
 == 2026 年 2 月 16 日
 
 
