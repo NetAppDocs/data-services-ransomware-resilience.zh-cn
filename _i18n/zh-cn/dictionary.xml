@@ -2172,4 +2172,31 @@
   <block id="a8bb9ad5a88304569c56e3805762683b" category="doc">在 NetApp Ransomware Resilience 中扫描个人身份信息</block>
   <block id="1ca81bce832a538b6144470d9a25c786" category="paragraph">在 NetApp Ransomware Resilience 中，您可以使用 NetApp Data Classification 对文件共享工作负载中的数据进行扫描和分类。对数据进行分类有助于您确定数据集是否包含个人身份信息 (PII)，这可能会增加安全风险。</block>
   <block id="1954c0eede9cec276e44236c76142770" category="paragraph">Data Classification 是 NetApp Console 的核心组件。您无需许可证即可使用 Data Classification。根据您的设置，配置 Data Classification 可能会产生费用，而 Ransomware Resilience 不会收取这些费用。有关详细信息，请参见<block ref="c5cce5d1091349460847f69d486fd688" category="inline-link-macro-rx"></block>。</block>
+  <block id="70c542a285cfdf5cc22587e58fc3fcbb" category="doc">适用于 Microsoft Sentinel 和 Splunk 的 SOAR playbook</block>
+  <block id="2f9304fe9b427489507405bef9a0bb9f" category="inline-link-macro">Splunk</block>
+  <block id="e0df5750183f59f1a681c84ab0a08458" category="paragraph">Ransomware Resilience 现在为 <block ref="353f990ad0de32e744a84d05e731dc96" category="inline-link-macro-rx"></block> 和 <block ref="4655146bfbabab7fd679c2d1ca7a8d15" category="inline-link-macro-rx"></block> 提供安全编排、自动化和响应 (SOAR) 攻略。这些攻略能够简化威胁响应管理、自动化任务测试和基本勒索软件响应工作，包括创建快照和让卷脱机。</block>
+  <block id="c75f115758f26a9b54a9d51601b66cf9" category="inline-link-macro">整合 SOAR 攻略</block>
+  <block id="b8b94feeaf531f391629f42d138991ba" category="paragraph">有关详细信息，请参见<block ref="ea7002ba1a528c89bfc86119082f1178" category="inline-link-macro-rx"></block>。</block>
+  <block id="e809d3cd971f3bd0702a07af10ed5b3f" category="summary">集成和使用 SOAR 攻略，实现 NetApp Ransomware Resilience 威胁响应任务的自动化。</block>
+  <block id="64495558f55fc510fa1f0d8417e9d0f9" category="doc">为 NetApp Ransomware Resilience 集成 SOAR 攻略</block>
+  <block id="15ece8e7c495c241dd67ef0baad7fcaf" category="paragraph">Ransomware Resilience 提供安全编排、自动化和响应 (SOAR) 攻略，使您能够自动执行威胁响应等任务。</block>
+  <block id="be0ccf0303f9149ec406ad081d1e1b4f" category="paragraph">Ransomware Resilience 攻略提供以下功能：</block>
+  <block id="70a6131a6c77f1f9afbf85c23200dee6" category="list-text">创建卷的快照</block>
+  <block id="a4431e17a1690b12df20e34bb2f4b744" category="list-text">利用威胁情报丰富 IP 地址</block>
+  <block id="762279f864f96ffbe81b311754b74896" category="list-text">丰富给定 agent 和系统的存储信息</block>
+  <block id="b826f101cb377022bc455ad2020f2f86" category="list-text">使卷脱机以进行事件响应</block>
+  <block id="dbc85b383817f560c0d1b083f4449627" category="list-text">测试连接性</block>
+  <block id="870d0fb8b0bf7879e6ada101131c6864" category="list-text">查看富化作业的状态</block>
+  <block id="5156f3fe3404db2816f53b4f01711a75" category="section-title">操作手册</block>
+  <block id="0c7fbad5c54a3cc727fd8969a07d6ea4" category="paragraph">Ransomware Resilience 为 Microsoft Sentinel 和 Splunk 提供 playbook。查看相应的 GitHub 页面以了解设置详细信息。</block>
+  <block id="8ab0c1a60a7c0ca7e1eee721cf8a8924" category="list-text"><block ref="8ab0c1a60a7c0ca7e1eee721cf8a8924" category="inline-link-macro-rx"></block></block>
+  <block id="4655146bfbabab7fd679c2d1ca7a8d15" category="list-text"><block ref="4655146bfbabab7fd679c2d1ca7a8d15" category="inline-link-macro-rx"></block></block>
+  <block id="fcd13f38c6a87165a33577bfdd3654b4" category="inline-link-macro">Splunkbase</block>
+  <block id="2a89449caab8a2ca7d825a1c6a44640c" category="admonition">对于 Splunk Cloud，您必须运行平台版本 7.0、7.1、7.2、8.0 或 8.4。有关详细信息，请参见<block ref="258077ff9a23292548ab7c25d009028a" category="inline-link-macro-rx"></block>。</block>
+  <block id="d11de361a9507cdd0eba54b47b77df6e" category="list-text"><block ref="d11de361a9507cdd0eba54b47b77df6e" category="inline-link-macro-rx"></block></block>
+  <block id="5d0a0988b6064ad1afb79d8f5aa31f02" category="inline-link-macro">安全协调、自动化和响应 (SOAR) 攻略</block>
+  <block id="b6f1ae85c12d06f23f82164c0136a6fc" category="admonition">Ransomware Resilience 也支持 <block ref="de8332ed81162473af5cb8a1551a7e36" category="inline-link-macro-rx"></block>。</block>
+  <block id="d8c1214f51ea9ce3d7b9e64dd8a16327" category="inline-link-macro">整合 SOAR 攻略</block>
+  <block id="450000aaa83625b4284af1b1791c4576" category="list-text"><block ref="450000aaa83625b4284af1b1791c4576" category="inline-link-macro-rx"></block></block>
+  <block id="462a6e98fbd2a13cda63645b676477e3" category="section-title">2026 年 3 月 12 日</block>
 </blocks>
