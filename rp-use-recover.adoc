@@ -4,7 +4,7 @@ permalink: rp-use-recover.html
 keywords: ransomware protection recovery, recover from a ransomware attack, recovery point, RPA 
 summary: '遭受攻击后， NetApp Ransomware Resilience会验证二级存储上的备份数据是否干净，推荐实际恢复点 (RPA)，并协调防崩溃恢复的工作流程。' 
 ---
-= 借助NetApp Ransomware Resilience，在勒索软件攻击发生后恢复
+= 使用 NetApp Ransomware Resilience 从勒索软件攻击中恢复
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
