@@ -27,7 +27,7 @@ Ransomware Resilience 攻略提供以下功能：
 
 == 操作手册
 
-Ransomware Resilience 为 Microsoft Sentinel 和 Splunk 提供 playbook。查看相应的 GitHub 页面以了解设置详细信息。
+Ransomware Resilience 为 Google SecOps、Microsoft Sentinel 和 Splunk 提供操作手册。查看相应的 GitHub 页面以了解设置详细信息。
 
 * link:https://github.com/chronicle/content-hub/tree/main/content/response_integrations/third_party/partner/netappransomwareresilience["Google SecOps"^]
 * link:https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks["Microsoft Sentinel"^]

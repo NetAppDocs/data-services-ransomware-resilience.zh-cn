@@ -39,5 +39,5 @@ Ransomware Resilience 支持 Azure NetApp Files。以下限制适用于 Azure Ne
 * Azure NetApp Files 不支持带有备份策略的勒索软件保护策略。您可以使用 Azure NetApp Files 备份。
 * Azure NetApp Files 不支持带有复制的勒索软件保护策略。
 * 选择保护策略时，请确保其快照计划与 Azure NetApp Files 兼容。Azure NetApp Files 中最常用的快照计划是每小时一次。
-* 建议您不要将支持的 link:reference-soar.html["SOAR 攻略"] 与 Azure NetApp Files 一起使用，因为 Azure NetApp Files API 会阻止自动化操作。
+* 由于 Azure NetApp Files API 会阻止自动操作，因此建议不要将 link:reference-soar.html["SOAR 攻略"] 与 Azure NetApp Files 一起使用。
 
