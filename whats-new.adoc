@@ -18,6 +18,18 @@ summary: 了解NetApp Ransomware Resilience的新功能。
 
 
 
+== 2026 年 3 月 31 日
+
+
+
+=== Google SecOps 的 SOAR 攻略
+
+Ransomware Resilience 现在为 link:https://github.com/chronicle/content-hub/tree/main/content/response_integrations/third_party/partner/netappransomwareresiliences["Google SecOps"^] 提供安全编排、自动化和响应 (SOAR) 攻略。该攻略可简化威胁响应管理，自动化任务测试和基本勒索软件响应工作，包括创建快照和使卷脱机。
+
+有关详细信息，请参见link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/reference-soar.html["整合 SOAR 攻略"^]。
+
+
+
 == 2026 年 3 月 12 日
 
 

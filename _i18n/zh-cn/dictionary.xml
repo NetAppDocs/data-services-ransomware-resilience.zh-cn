@@ -2158,7 +2158,6 @@
   <block id="fd117b89b92e15d359324da93300356b" category="doc">将 NetApp Ransomware Resilience 连接到 SIEM 以进行威胁分析和检测</block>
   <block id="e02579eaf37afcb0e3837dd893799871" category="paragraph">安全信息和事件管理系统 (SIEM) 集中日志和事件数据，以提供有关安全事件和合规性的见解。NetApp Ransomware Resilience 支持自动将数据发送到您的 SIEM，以简化威胁分析和检测。</block>
   <block id="df4bdd45174b09881add6730bdfaf045" category="section-title">2026 年 3 月 09 日</block>
-  <block id="b4dfd6d471f025389f9c78ebe17c16ba" category="paragraph">当工作负载被归类为受保护时，它将计入购买的容量或 PAYGO 订阅。当使用至少一个快照或备份策略启用检测策略时，Ransomware Resilience 会将工作负载分类为受保护。使用检测策略发现但_无_备份或快照策略的工作负载被归类为存在风险。存在风险的工作负载不计入购买的容量。</block>
   <block id="9b0a81f6fc494248483a10631a72dabe" category="paragraph">在免费试用期结束后，受保护的工作负载将计入购买的容量或订阅。Ransomware Resilience 对于与受保护工作负载相关的数据（由 ONTAP 报告），在效率优化之前按 GB 收费。</block>
   <block id="1dba6347dc69b3be8eba699851eddc8f" category="paragraph-title">Ransomware Resilience 的计费是如何运作的？</block>
   <block id="6c1c5737355a8b30e87ad5d7c6da9553" category="inline-link-macro">更新许可证</block>
@@ -2199,4 +2198,15 @@
   <block id="450000aaa83625b4284af1b1791c4576" category="list-text"><block ref="450000aaa83625b4284af1b1791c4576" category="inline-link-macro-rx"></block></block>
   <block id="462a6e98fbd2a13cda63645b676477e3" category="section-title">2026 年 3 月 12 日</block>
   <block id="cb4ae29d8762239c8dfdfc76bdb65d37" category="paragraph">Ransomware Resilience 现在为 <block ref="8ab0c1a60a7c0ca7e1eee721cf8a8924" category="inline-link-macro-rx"></block> 和 <block ref="4655146bfbabab7fd679c2d1ca7a8d15" category="inline-link-macro-rx"></block> 提供安全编排、自动化和响应 (SOAR) 攻略。这些攻略能够简化威胁响应管理、自动化任务测试和基本勒索软件响应工作，包括创建快照和让卷脱机。</block>
+  <block id="7a62bbe1752bad34a2882c1488855472" category="paragraph">当工作负载被归类为受保护时，它将计入购买的容量或 PAYGO 订阅。当检测策略启用了至少一个快照或备份策略时，Ransomware Resilience 会将工作负载分类为受保护。使用检测策略发现但_没有_任何备份或快照策略的工作负载被归类为存在风险。存在风险的工作负载不计入购买的容量。</block>
+  <block id="0a444369e66f3a256a69eec8c1934071" category="paragraph">在考虑大小时，许可成本基于活动文件系统的逻辑容量（意味着不包括占用空间的快照）。</block>
+  <block id="ed300adca180c1e33d800707367434a6" category="doc">Google SecOps 的 SOAR 攻略</block>
+  <block id="d6e96acd595d94a4f4fd9727f77f8f89" category="inline-link-macro">Google SecOps</block>
+  <block id="6e9577ca2ef4afc51475afb9c4855a58" category="paragraph">Ransomware Resilience 现在为 <block ref="a0b16504c1687e5508c034346a32796a" category="inline-link-macro-rx"></block> 提供安全编排、自动化和响应 (SOAR) 攻略。该攻略可简化威胁响应管理，自动化任务测试和基本勒索软件响应工作，包括创建快照和使卷脱机。</block>
+  <block id="d942356c034f7ad3c314a5fae7d11e1d" category="list-text"><block ref="d942356c034f7ad3c314a5fae7d11e1d" category="inline-link-macro-rx"></block></block>
+  <block id="1432a60da610bc1b6af09d6319597446" category="inline-link-macro">Azure NetApp Files 的限制</block>
+  <block id="7c227d7b6723bc5af92a1b877aae1bbe" category="admonition">对于 Azure NetApp Files 系统，请使用 SOAR 查看<block ref="a1a46b98c4974de0d0c21339035b1250" category="inline-link-macro-rx"></block>。</block>
+  <block id="895dff905f51ff367d108afbf6e634a7" category="inline-link-macro">SOAR 攻略</block>
+  <block id="fbaf8ef61cfa55e52a929ce171ffe013" category="list-text">建议您不要将支持的 <block ref="237628f5d72273fb0e39c8149431292e" category="inline-link-macro-rx"></block> 与 Azure NetApp Files 一起使用，因为 Azure NetApp Files API 会阻止自动化操作。</block>
+  <block id="d8fdc2681cdec613a02ac551c44a6e8c" category="section-title">2026 年 3 月 31 日</block>
 </blocks>
