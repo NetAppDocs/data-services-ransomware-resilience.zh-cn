@@ -18,6 +18,7 @@ Ransomware Resilience 支持以下 SIEM：
 * AWS Security Hub
 * Microsoft Sentinel
 * Splunk Cloud
+* Splunk Enterprise
 
 
 在 Ransomware Resilience 中启用 SIEM 之前，您需要配置您的 SIEM 系统。
@@ -202,16 +203,19 @@ NOTE: 认证成功后，会出现“已认证”的信息。
 
 
 
-== 配置 Splunk Cloud 进行威胁检测
+== 配置 Splunk Cloud 和 Splunk Enterprise 以进行威胁检测
 
-在 Ransomware Resilience 中启用 Splunk Cloud 之前，您需要在 Splunk Cloud 中执行以下高级步骤：
+Ransomware Resilience 支持使用 Splunk Cloud 和 Splunk Enterprise 进行威胁检测。在 Ransomware Resilience 中启用 Splunk 连接之前，您需要：
 
-* 在 Splunk Cloud 中启用 HTTP 事件收集器以通过 HTTP 或 HTTPS 从控制台接收事件数据。
-* 在 Splunk Cloud 中创建事件收集器令牌。
+* 在 Splunk Cloud 或 Enterprise 中启用 HTTP Event Collector，以通过 HTTP 或 HTTPS 从 Console 接收事件数据。
+* 在 Splunk Cloud 或 Enterprise 中创建事件收集器令牌。
 
+
+
+NOTE: 对于 Splunk Enterprise，您必须允许入站公共互联网流量，以便 Ransomware Resilience 能够使用提供的 HTTP 事件收集器详细信息推送事件。
 
 .在 Splunk 中启用 HTTP 事件收集器的步骤
-. 转到 Splunk Cloud。
+. 转到您选择的 Splunk 环境：云或企业。
 . 选择*设置* > *数据输入*。
 . 选择 *HTTP 事件收集器* > *全局设置*。
 . 在所有令牌切换上，选择*已启用*。
@@ -220,7 +224,7 @@ NOTE: 认证成功后，会出现“已认证”的信息。
 
 
 .在 Splunk 中创建事件收集器令牌的步骤
-. 转到 Splunk Cloud。
+. 转至 Splunk Cloud 或 Enterprise。
 . 选择*设置* > *添加数据*。
 . 选择*监控* > *HTTP 事件收集器*。
 . 输入令牌的名称并选择*下一步*。
@@ -250,7 +254,7 @@ image:screen-settings2.png["设置页面"]
 image:screen-settings-threat-detection-3options.png["启用威胁检测详细信息页面"]
 
 . 选择其中一个 SIEM 系统。
-. 输入您在 AWS Security Hub 或 Splunk Cloud 中配置的令牌和身份验证详细信息。
+. 输入您在 AWS Security Hub、Splunk Cloud 或 Splunk Enterprise 中配置的令牌和身份验证详细信息。
 +
 
 NOTE: 您输入的信息取决于您选择的 SIEM。

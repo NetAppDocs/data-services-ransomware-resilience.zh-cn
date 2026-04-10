@@ -1132,12 +1132,7 @@
   <block id="53e68cb1edb551af8b1c0d8fee230e44" category="admonition">认证成功后，会出现“已认证”的信息。</block>
   <block id="00bcd4c2f217493f06ecbb6ddfa3862b" category="list-text">输入应用程序的 Log Analytics 工作区详细信息。</block>
   <block id="b263ba58e894356680bda9edd8c52400" category="list-text">选择订阅 ID、资源组和 Log Analytics 工作区。</block>
-  <block id="9ccf45c8190b08c78e0be70f31ab71c4" category="section-title">配置 Splunk Cloud 进行威胁检测</block>
-  <block id="4d6d1328084c627bf56727551f4a6626" category="paragraph">在 Ransomware Resilience 中启用 Splunk Cloud 之前，您需要在 Splunk Cloud 中执行以下高级步骤：</block>
-  <block id="8a628c54baa5d5a16a963626db04a20f" category="list-text">在 Splunk Cloud 中启用 HTTP 事件收集器以通过 HTTP 或 HTTPS 从控制台接收事件数据。</block>
-  <block id="a0df7816503d32b52e0b8eaf94868e56" category="list-text">在 Splunk Cloud 中创建事件收集器令牌。</block>
   <block id="2c65d4e0cdac9c48880857277c1bc9e3" category="list-title">在 Splunk 中启用 HTTP 事件收集器的步骤</block>
-  <block id="a99a07d12915c1a94a26205b4a84ba20" category="list-text">转到 Splunk Cloud。</block>
   <block id="ce0362998bb10251a5412bcabd9b833c" category="list-text">选择*设置* &gt; *数据输入*。</block>
   <block id="069c7509480a5fbadda560c7376dca8a" category="list-text">选择 *HTTP 事件收集器* &gt; *全局设置*。</block>
   <block id="b42b974604014d593eace2a8678716ed" category="list-text">在所有令牌切换上，选择*已启用*。</block>
@@ -1162,7 +1157,6 @@
   <block id="322bdafeaec3f2756e524c7676eec70b" category="inline-image-macro">启用威胁检测详细信息页面</block>
   <block id="a79d3cc091ba614079e19b05bd4144d7" category="paragraph"><block ref="a79d3cc091ba614079e19b05bd4144d7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="53ff0c832c14f6bc98decd93490e2576" category="list-text">选择其中一个 SIEM 系统。</block>
-  <block id="8b2302df496c7e3838b65f0dfaee3ab4" category="list-text">输入您在 AWS Security Hub 或 Splunk Cloud 中配置的令牌和身份验证详细信息。</block>
   <block id="4cb0caa7f0c97dd44ed525e6237432d2" category="admonition">您输入的信息取决于您选择的 SIEM。</block>
   <block id="71377237946a16cc4981e8007b83be9b" category="list-text">选择*启用*。</block>
   <block id="f29be3377655fbc2e89f86e482ef5ca2" category="paragraph">设置页面显示“已连接”。</block>
@@ -2207,6 +2201,16 @@
   <block id="dce0959f50faa93a47d141f615365404" category="paragraph">Ransomware Resilience 为 Google SecOps、Microsoft Sentinel 和 Splunk 提供操作手册。查看相应的 GitHub 页面以了解设置详细信息。</block>
   <block id="4f61a1c38b74708d0982090b3ace3f21" category="list-text">由于 Azure NetApp Files API 会阻止自动操作，因此建议不要将 <block ref="237628f5d72273fb0e39c8149431292e" category="inline-link-macro-rx"></block> 与 Azure NetApp Files 一起使用。</block>
   <block id="4fcce21aba16e6a89d3c15cbcce7db5a" category="list-text">输入测试工作负荷的名称。请勿在名称中包含破折号。</block>
-  <block id="922e09477f5763a3965ac29db0b9139d" category="list-text">选择要还原的标记为"Readiness drill"的测试工作负载。</block>
   <block id="3aecb1c0d4a2579d6c2b4487309b2cdc" category="admonition">击退攻击后，无法将其更改回去。如果关闭工作负载，则为响应潜在的勒索软件攻击而自动创建的所有快照副本都将被永久删除。如果忽略警报，则认为准备演习已完成。</block>
+  <block id="a1f10863eda000ced0430d0c31580729" category="list-text">Azure NetApp Files 不支持 FPolicy 或用户行为活动。</block>
+  <block id="001b6bed17667ada4d5dad085e5729b3" category="list-text">选择要还原的标有"Readiness drill"的测试工作负载。</block>
+  <block id="5dba46907e72d7502229329d2aafd8a2" category="list-text">Splunk Enterprise</block>
+  <block id="a8fdc49c32c2aa34ebd35cbf9823def6" category="section-title">配置 Splunk Cloud 和 Splunk Enterprise 以进行威胁检测</block>
+  <block id="681024dbfdb70dd04ac980451d89db64" category="paragraph">Ransomware Resilience 支持使用 Splunk Cloud 和 Splunk Enterprise 进行威胁检测。在 Ransomware Resilience 中启用 Splunk 连接之前，您需要：</block>
+  <block id="026d482451225403707f4d919cfb8461" category="list-text">在 Splunk Cloud 或 Enterprise 中启用 HTTP Event Collector，以通过 HTTP 或 HTTPS 从 Console 接收事件数据。</block>
+  <block id="42de63532cd927f3b14ff23339042fae" category="list-text">在 Splunk Cloud 或 Enterprise 中创建事件收集器令牌。</block>
+  <block id="b8e9fd0fd0fe8e4c4d930ae7315048e4" category="admonition">对于 Splunk Enterprise，您必须允许入站公共互联网流量，以便 Ransomware Resilience 能够使用提供的 HTTP 事件收集器详细信息推送事件。</block>
+  <block id="261f193d834ffba7dae6c54f99306659" category="list-text">转到您选择的 Splunk 环境：云或企业。</block>
+  <block id="eade5cc0d987bed25c884550a681c364" category="list-text">转至 Splunk Cloud 或 Enterprise。</block>
+  <block id="e4f58ddb798b11dab7791e0175f6cf0f" category="list-text">输入您在 AWS Security Hub、Splunk Cloud 或 Splunk Enterprise 中配置的令牌和身份验证详细信息。</block>
 </blocks>
