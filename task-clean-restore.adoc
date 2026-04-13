@@ -1,0 +1,603 @@
+---
+sidebar: sidebar 
+permalink: task-clean-restore.html 
+keywords: clean room, clean restore, secure recovery, restore, isolated recovery environment 
+summary: Ransomware Resilience 使您能够通过干净恢复来控制和消毒您的工作负载。 
+---
+= 在 NetApp Ransomware Resilience 中配置干净恢复环境
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilience 提供干净的恢复，在勒索软件攻击后提供引导式恢复。要执行全新还原，您必须首先在内部或受支持的云环境中创建隔离恢复环境 (IRE)。在 IRE 中，您创建了一个无尘室，Ransomware Resilience 会在其中隔离工作负载，以识别哪些文件是干净的，哪些文件受到勒索软件的影响。
+
+*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^] 。
+
+
+
+== 了解干净还原
+
+当您执行干净恢复时，Ransomware Resilience 将引导您完成优化恢复的多步骤流程。
+
+* **设置**：要执行干净还原，您必须首先创建 IRE，然后选择要还原的工作负载。Ransomware Resilience 创建了一个针对工作负载执行所有操作的洁净室。
+* **分析**：在洁净室中，Ransomware Resilience 会分析所有快照，以查看是否存在加密。清洁恢复确定恢复映射以确定最佳恢复计划。
++
+一旦发现没有受影响文件的还原点，则会跳过所有早期的还原点。例如，如果勒索软件事件发生在 10 月 10 日，并且在 10 月 7 日上午 10:21 发现了一个没有受影响文件的还原点，则会跳过 10 月 7 日上午 10:21 之前的所有还原点。
+
++
+分析步骤还会显示已审阅的文件数量，表明哪些文件受到影响，哪些文件没有受到影响。
+
+* **计划**：选择提供的恢复选项：
++
+** _最新未受影响的还原点_：来自攻击前最新未加密快照的最快还原点
+** _最少数据丢失_：来自不同快照的每个未加密文件的最新版本
++
+您还可以在规划步骤中查看文件历史记录，以查看勒索软件事件何时影响了文件，以及恢复点与该事件的时间关系。
+
+
+
+* **清理**：Ransomware Resilience 从恢复点删除恶意软件。如果无法清理任何文件，则会将其从恢复中排除，并隔离到单独的位置。
+* **还原**：Ransomware Resilience 将干净的数据还原到源环境中。
+* **END**：Ransomware Resilience 提供流程的详细摘要并关闭洁净室，释放设置期间配置的资源，以消除未来的计量成本。
+
+
+
+
+== 支持的配置
+
+* 每个 Ransomware Resilience 帐户只能创建一个 IRE。每个 IRE 可以有三个干净的房间。
+* 当前仅支持 NAS 文件共享（NFS/CIFS）的清除恢复。
+* 您必须将干净还原执行到源环境。
+* 您可以在云中或本地创建 IRE。目前，支持以下配置：
++
+|===
+| 源 | 目的地 (IRE) | 支持的目标区域 
+
+
+| 内部部署（仅限 AFF 或 FAS 系统）* | 本地 (VMware vCenter) | 不适用 
+
+
+| 内部部署（仅限 AFF 或 FAS 系统）* | 云：AWS  a| 
+** 美国东部 1 区
+** EU Central 1
+
+
+
+
+| 云：Cloud Volumes ONTAP with AWS* | 云：AWS  a| 
+** 美国东部 1 区
+** EU Central 1
+
+
+
+
+| 云：Amazon FSxN for ONTAP | 云：AWS  a| 
+** 美国东部 1 区
+** EU Central 1
+
+
+|===
++
+{asterisk} 您必须运行 ONTAP 9.11.1 或更高版本。
+
+
+
+
+NOTE: 在基于云的环境中执行干净恢复可能会产生云提供商的额外计算费用。有关详细信息，请参见 link:#cost-and-licensing["成本和许可"]。
+
+
+
+== 注意事项
+
+* 只能对基于加密的勒索软件攻击执行干净还原。
+* 如果隔离恢复环境没有新操作的容量，它将排队，直到有可用性。
++
+** 您可以随时在 Ransomware Resilience Recovery 控制面板中监控活动和排队的清除恢复操作的状态。
+
+
+* 启动干净恢复时，会卸载原始卷，这可能会中断 IO 访问。
+
+
+
+
+=== 本地环境的其他注意事项
+
+如果要部署本地 IRE，则在干净还原中为恢复分析克隆 Windows VM 时，克隆的 VM 将保留与源相同的配置。这可能会导致冲突：
+
+* 使用相同的安全标识符 (SID) 会导致身份验证和安全冲突。
+* 使用相同的计算机名 (CN) 会导致网络冲突。
+* 使用相同的机器身份会导致许可和激活问题。
+
+
+为了避免这些冲突，Ransomware Resilience 会在克隆虚拟机上执行 sysprep，从而重置 SID、CN 和机器标识。重置这些值可确保克隆虚拟机作为唯一且独立的实例运行，而不会干扰源虚拟机。
+
+
+
+=== 辅助来源
+
+为本地源创建 IRE 时，可以选择添加辅助源。
+
+如果主源可用，则必须将干净还原还原到主源。如果主源不可用，并且您已配置辅助源，则干净还原将还原到辅助源。
+
+默认情况下，清理还原过程会分析源环境中的快照。如果源环境不可用或源上的未加密快照不可用，则清理还原会分析辅助系统上的快照（如果已配置）。
+
+
+
+== 成本和许可
+
+作为 Ransomware Resilience 的一部分提供干净恢复。执行干净恢复或创建 IRE 无需额外的许可证。
+
+启用干净还原可能会产生第三方云提供商费用。根据您使用服务的方式，当存在干净的还原环境时，这些费用可能会重复发生。
+
+第三方费用可包括计算实例的创建和部署以及用于清理和恢复的额外生产存储容量。请考虑以下示例：
+
+* 当在 AWS 中部署 IRE 并启动干净恢复时，两个 t3.medium AWS EC2 实例将部署在 IRE 的洁净室中，用于清除加密和恶意软件。
+* 在 Cloud Volumes ONTAP 中，clean restore 为元数据卷和快照克隆创建一个 clean room storage VM 以进行分析。
+
+
+
+
+== 前提条件
+
+确保已完成所选干净还原部署类型的先决条件。选择所选 IRE 配置的选项卡。
+
+
+NOTE: 创建 IRE 时，必须在创建 IRE 的系统选择步骤中添加要用于分析的每个系统（主系统或辅助系统）。
+
+[role="tabbed-block"]
+====
+.云到云
+--
+此图说明了云到云干净还原配置的示例。在创建 IRE 之前，请查看图表和需要配置的资源。
+
+image::diagram-clean-recovery-cloud-cloud.png[云到云清理恢复示意图]
+
+--
+====
+如果您要配置源位于 Amazon FSxN for ONTAP 中的 IRE，请跳过此洁净室 SVM 数据 LIF IP 要求。
+
+[]
+====
+* 为洁净室 SVM 数据 LIF 提供 IP 地址。记下 IP 地址：在 IRE 配置过程中需要此 IP 地址。
++
+** 对于使用云到云干净恢复的 AWS Cloud Volumes ONTAP，请确保将 IP 地址分配给弹性网络接口。
+
+
+* 允许从 SVM 数据 LIF IP 路由到 IRE。
+
+
+.生产环境路由表
+* 生产路由表必须允许从 IRE 子网到干净还原数据 LIF IP 的流量。您必须将此路由添加到生产路由表中。
+* 生产 ONTAP 群集上的安全组和防火墙应允许 NFSv4 和 NFSv3 入站流量到干净还原数据 LIF IP。防火墙应对来自 IRE CIDR 范围的入口打开：
++
+[cols="1,1,1,1"]
+|===
+| 协议 | 目标端口 | 源 | 目的 
+
+
+| TCP & UDP | 2049 | IRE VPC CIDR 范围 | 从 IRE 进行 NFSv4 访问 
+
+
+| TCP & UDP | 111 | IRE VPC CIDR 范围 | 从 IRE 访问 NFSv3 
+
+
+| TCP & UDP | 635 | IRE VPC CIDR 范围 | 从 IRE 访问 NFSv3 
+
+
+| TCP & UDP | 4045 | IRE VPC CIDR 范围 | 从 IRE 访问 NFSv3 
+
+
+| TCP & UDP | 4046 | IRE VPC CIDR 范围 | 从 IRE 访问 NFSv3 
+
+
+| TCP & UDP | 4049 | IRE VPC CIDR 范围 | 从 IRE 访问 NFSv3 
+|===
+
+
+.IRE 路由表
+* IRE 路由表应为 IRE VPC 中的主要路由表。
+* IRE 路由表应允许路由到干净恢复数据 LIF IP 地址。
+* IRE 路由表还应允许到公共互联网的路由，以便 IRE 代理正常工作。
+
+
+.虚拟私有云 (VPC)
+* 对于 IRE，请在生产环境的 IP 地址范围内配置 VPC。IP 地址不应与任何现有的 IP 地址冲突。
++
+** VPC 的最小容量应为 64 个 IP 地址（a /26 网络掩码）。
+** VPC 必须允许公共互联网访问。否则，Console 代理将无法工作
+
+
+
+
+.云权限
+* Ransomware Resilience 需要具有正确 IAM 权限的 AWS 访问密钥和密钥，以便在 AWS 环境中执行干净恢复。link:https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["在 AWS 中创建 IAM 策略"^] 使用以下权限，然后将策略附加到新创建的用户。创建用户后，生成 IAM 凭据并将其提供给干净恢复。
++
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "EC2Isolated recovery environmentFullAccess",
+            "Effect": "Allow",
+            "Action": "ec2:*",
+            "Resource": "*",
+            "Condition": {
+                "StringLike": {
+                    "aws:ResourceTag/rps::Isolated recovery environment-name": "*"
+                }
+            }
+        },
+        {
+            "Sid": "EC2CreateAccess",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "EC2ReadPermissions",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:Describe*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "IAMFullAccess",
+            "Effect": "Allow",
+            "Action": "iam:*",
+            "Resource": "*",
+            "Condition": {
+                "StringLike": {
+                    "aws:ResourceTag/rps::Isolated recovery environment-name": "*"
+                }
+            }
+        },
+        {
+            "Sid": "S3FullAccessToIsolated recovery environmentStateBucketCreation",
+            "Effect": "Allow",
+            "Action": [
+                "s3:CreateBucket"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "S3FullAccessToIsolated recovery environmentStateBucketObjects",
+            "Effect": "Allow",
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": "arn:aws:s3:::*-netapp-Isolated recovery environment-state-bucket/*"
+        },
+        {
+            "Sid": "S3FullAccessToIsolated recovery environmentStateBucket",
+            "Effect": "Allow",
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": "arn:aws:s3:::*-netapp-Isolated recovery environment-state-bucket"
+        }
+    ]
+}
+----
+
+
+--
+
+--
+此图说明了本地到云端清理还原配置的示例。在创建 IRE 之前，请查看图表和需要配置的资源。
+
+image:diagram-clean-recovery-cloud-on-prem.png["云到本地干净恢复的图表"]
+
+====
+如果您要配置源位于 Amazon FSxN for ONTAP 中的 IRE，请跳过此洁净室 SVM 数据 LIF IP 要求。
+
+[]
+====
+* 为洁净室 SVM 数据 LIF 提供 IP 地址。记下 IP 地址：在 IRE 配置过程中需要此 IP 地址。
++
+** 对于使用云到云干净恢复的 AWS Cloud Volumes ONTAP，请确保将 IP 地址分配给弹性网络接口。
+
+
+* 允许从 SVM 数据 LIF IP 路由到 IRE。
+
+
+.生产环境路由表
+* 生产路由表必须允许从 IRE 子网到干净还原数据 LIF IP 的流量。您必须将此路由添加到生产路由表中。
+* 生产 ONTAP 群集上的安全组和防火墙应允许 NFSv4 和 NFSv3 入站流量到干净还原数据 LIF IP。防火墙应对来自 IRE CIDR 范围的入口打开：
++
+[cols="1,1,1,1"]
+|===
+| 协议 | 目标端口 | 源 | 目的 
+
+
+| TCP & UDP | 2049 | IRE VPC CIDR 范围 | 从 IRE 进行 NFSv4 访问 
+
+
+| TCP & UDP | 111 | IRE VPC CIDR 范围 | 从 IRE 访问 NFSv3 
+
+
+| TCP & UDP | 635 | IRE VPC CIDR 范围 | 从 IRE 访问 NFSv3 
+
+
+| TCP & UDP | 4045 | IRE VPC CIDR 范围 | 从 IRE 访问 NFSv3 
+
+
+| TCP & UDP | 4046 | IRE VPC CIDR 范围 | 从 IRE 访问 NFSv3 
+
+
+| TCP & UDP | 4049 | IRE VPC CIDR 范围 | 从 IRE 访问 NFSv3 
+|===
+
+
+.IRE 路由表
+* IRE 路由表应为 IRE VPC 中的主要路由表。
+* IRE 路由表应允许路由到干净恢复数据 LIF IP 地址。
+* IRE 路由表还应允许到公共互联网的路由，以便 IRE 代理正常工作。
+
+
+.虚拟私有云 (VPC)
+* 对于 IRE，请在生产环境的 IP 地址范围内配置 VPC。IP 地址不应与任何现有的 IP 地址冲突。
++
+** VPC 的最小容量应为 64 个 IP 地址（a /26 网络掩码）。
+** VPC 必须允许公共互联网访问。否则，Console 代理将无法工作
+
+
+
+
+.云权限
+* Ransomware Resilience 需要具有正确 IAM 权限的 AWS 访问密钥和密钥，以便在 AWS 环境中执行干净恢复。link:https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["在 AWS 中创建 IAM 策略"^] 使用以下权限，然后将策略附加到新创建的用户。创建用户后，生成 IAM 凭据并将其提供给干净恢复。
++
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "EC2Isolated recovery environmentFullAccess",
+            "Effect": "Allow",
+            "Action": "ec2:*",
+            "Resource": "*",
+            "Condition": {
+                "StringLike": {
+                    "aws:ResourceTag/rps::Isolated recovery environment-name": "*"
+                }
+            }
+        },
+        {
+            "Sid": "EC2CreateAccess",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "EC2ReadPermissions",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:Describe*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "IAMFullAccess",
+            "Effect": "Allow",
+            "Action": "iam:*",
+            "Resource": "*",
+            "Condition": {
+                "StringLike": {
+                    "aws:ResourceTag/rps::Isolated recovery environment-name": "*"
+                }
+            }
+        },
+        {
+            "Sid": "S3FullAccessToIsolated recovery environmentStateBucketCreation",
+            "Effect": "Allow",
+            "Action": [
+                "s3:CreateBucket"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "S3FullAccessToIsolated recovery environmentStateBucketObjects",
+            "Effect": "Allow",
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": "arn:aws:s3:::*-netapp-Isolated recovery environment-state-bucket/*"
+        },
+        {
+            "Sid": "S3FullAccessToIsolated recovery environmentStateBucket",
+            "Effect": "Allow",
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": "arn:aws:s3:::*-netapp-Isolated recovery environment-state-bucket"
+        }
+    ]
+}
+----
+
+
+--
+
+--
+此图说明了从本地到本地干净还原配置的示例。在创建 IRE 之前，请查看图表和需要配置的资源。
+
+image:diagram-clean-recovery-on-prem.png["云到本地干净恢复的图表"]
+
+.洁净室 SVM 数据 LIF IP (crr-data-LIF-IP)
+* 在您选择连接到 IRE 以还原工作负载的每个系统中都会创建一个 Storage Virtual Machine (SVM)。您必须为每个系统提供一个专用 IP 地址，该地址用作洁净室 SVM 的数据 LIF。
+
+
+.主机和 vCenter
+* vCenter 必须是 7.0 或更高版本，并且至少有一个数据中心。
+* ESXi 主机必须是 ESXi 版本 7.0 或更高版本，并且至少有一个主机具有足够的 CPU 和内存资源来克隆虚拟机。
+* 提供的 vCenter 凭据必须具有发现资源和克隆 VM 的权限。
+
+
+.基本 VM（Windows 或 Linux）
+* 在干净恢复过程中，基本 VM 被克隆到选定的数据中心，放置在选定的 ESXi 计算上，映射到指定的数据存储，并连接到指定的网络。当克隆 VM 时，它们被配置为具有 2 个 vCPU 和 4 GB RAM（用于 Linux 或 Windows VM）以及与基本 VM 相同的磁盘空间量。每个干净恢复会话使用给定 CIDR 范围内的两个 IP 地址。
+* 您必须提供足够的 IP 地址范围，以容纳多个并行的洁净室会话。恢复完成后，IP 地址将被释放。
+* 数据存储应该有足够的可用容量来容纳克隆虚拟机。
+* IP 地址范围必须以 CIDR 格式指定（例如，100.100.0.0/24）
+* 对于 Linux VM：
++
+** 操作系统必须是 Ubuntu Linux 20.04 或更高版本。
+** 必须打开本地系统的电源。
+** 必须安装并运行 VMware Tools。
+** 必须启用 SSH。
+** 您必须已安装 nfs-common。
+** 必须安装并运行 Docker。
+** 您必须至少有 40 GB 的可用空间。
+
+
+* 对于 Windows VM：
++
+** Windows 虚拟机应有 20 GB 可用空间。
+** 操作系统应为 Windows Server 2022 或 2025。
+** 应安装并运行 VMware Tools。
+** 必须启用 WinRM。
+** 应配置 IP。
+** 请确保您拥有允许克隆基本 VM 的适当许可证。
+** 必须打开 VM 电源。
+
+
+
+
+.网络
+* 使用以下访问权限配置 VLAN 资源：
++
+[cols="25,75"]
+|===
+| 资源 | 使用权 
+
+
+| 洁净室 SVM VLAN  a| 
+NFS 访问：* Production Console agent * Console agent VLAN * Clean room VLAN
+
+
+
+| Console 代理 VLAN  a| 
+** NFS 访问洁净室 SVM VLAN
+** 对洁净室 VLAN 的 HTTP/SSH 访问
+
+
+
+
+| 洁净室 VLAN | NFS 访问洁净室 SVM VLAN 
+|===
+
+
+.专用 Console 代理
+* 为 IRE 部署专用 NetApp Console 代理。Console 代理必须部署在目标 vCenter 中，并可访问洁净室 VLAN。有关部署过程的详细信息，请参见 link:https://docs.netapp.com/us-en/console-setup-admin/task-install-agent-on-prem.html["在本地部署 Console 代理"^]。
+
+
+--
+
+--
+====
+
+
+== 创建隔离的恢复环境
+
+在进行清洁恢复之前，您必须创建一个隔离的恢复室。
+
+如果环境位于云端或本地，则创建隔离恢复室的过程会有所不同。请确保遵循正确位置的说明。
+
+[role="tabbed-block"]
+====
+.云
+--
+. 在勒索软件恢复功能中，选择**设置**。
+. 在 Clean restores 卡中，如果这是您的第一个环境，请选择 **Configure**；如果已经创建了环境，请选择 **Manage**。
+. 如果这是您第一次创建 IRE，请继续下一步。
++
+如果您已经创建了 IRE，请选择**添加**以创建另一个 IRE。
+
+. 对于基于云的 IRE，请选择 **Amazon Web Services**。
+. 展开 **名称** 部分。为环境创建 **名称**。
+. 展开 *Systems* 部分。选择要连接到 IRE 的系统。对于您选择的每个系统，必须提供存储 VM 的 IP 地址、子网掩码和网关。
++
+
+NOTE: 对于部署到 Amazon FSxN for ONTAP 的 IRE，无需提供此信息。
+
++
+image:clean-restore-systems.png["系统选择界面的屏幕截图。"]
+
+. 展开 **Authentication** 部分。
++
+** 输入云 **Account** ID，然后为该帐户选择 **Region**。
+** 输入账户的 **Access key** 和 **Secret key**。
+** 展开 *Virtual private cloud (VPC)* 部分。输入要部署 IRE 的 VPC ID。
++
+image:screenshot-set-up-recovery-environment.png["IRE 身份验证设置的屏幕截图。"]
+
+
+
+. 选择 **Add** 以创建 IRE。
++
+选择添加后，Ransomware Resilience 会测试连接，这可能需要几分钟时间。
+
+
+
+--
+.内部部署
+--
+. 在勒索软件恢复功能中，选择**设置**。
+. 在 Clean restores 卡中，如果这是您的第一个环境，请选择 **Add**；如果已经创建了环境，请选择 **Manage**。
+. 如果这是您第一次创建 IRE，请继续下一步。如果您已创建 IRE，请选择**添加**以创建另一个 IRE。
+. 对于位置，选择 **On-premises**。
+. 展开 *Name* 部分。为 IRE 分配 **Name**。
+. 展开*系统*部分。选择要连接到 IRE 的系统。为具有要在 IRE 中恢复的工作负载的每个系统分配存储 VM IP、子网掩码和网关。
++
+您选择的每个系统都必须具有分配的 IP 地址。您可以选择主系统或辅助系统。如果主系统没有未加密的快照或不可用，则可以使用辅助系统进行分析和恢复。
+
++
+image:clean-restore-systems.png["系统选择界面的屏幕截图。"]
+
+. 展开 **Console agent** 部分。从 IRE 中部署的下拉菜单中选择 Console agent。
+. 展开 *Compute* 部分。
++
+.. 提供对 vCenter 服务器进行身份验证的凭据：*IP 地址*或完全限定的域名 (FQDN)、*端口*、*用户名*和*密码*。
+.. 选择 **Authenticate** 以确认凭据。请等待 UI 确认您的凭据后再继续。
+.. 选择要部署虚拟机的 *Datacenter*、*Cluster* 和 *ESXi host*。
+.. 选择 ESXi 主机 *Datastore* 和 *Network*。
+.. 输入虚拟机的 *IP 地址范围*和*网关*。
++
+image:clean-restore-compute.png["计算选择界面的屏幕截图。"]
+
+
+
+. 展开 *VMs* 部分，该部分根据您在 *Compute* 部分中的输入填充。选择位于 ESXi 主机上的 VM，这些 VM 将在干净还原期间用于扫描恶意软件。为您选择的每个 VM 提供 *User name* 和 *Password*。
+. 选择 **添加** 以创建 IRE。Ransomware Resilience 会在您选择添加后测试连接；此过程可能需要一段时间。
+
+
+--
+====
+您可以跟踪进度。在设置选项卡中，选择 **隔离恢复环境**。隔离恢复环境页面显示所有 IRE 及其状态。选择 **查看作业** 可查看与该环境相关的所有作业的详细信息。
+
+创建 IRE 后，您可以修改 IRE 中的系统。在设置选项卡中，选择**隔离恢复环境**。找到要编辑的 IRE，选择操作菜单 `...`然后选择**编辑**。继续修改系统。完成后选择**保存**。
+
+
+
+== 删除隔离的恢复环境
+
+您不能删除具有活动还原操作的 IRE；您可以取消还原操作或等待还原完成，然后删除 IRE。
+
+
+IMPORTANT: 如果您删除了 IRE，它也会删除洁净室 SVM 和元数据卷。删除这些资产后，您将无法再为干净还原生成报告。
+
+. 转至 **设置**。
+. 在 Clean restore card 中，选择 **Manage**。
+. 确定要删除的无尘室。在该房间的操作菜单列中，选择三个点 `...`然后选择 **删除**。
+. 在对话框中，选择 **Delete** 以确认操作。
+

@@ -1,0 +1,27 @@
+= 清理还原
+:allow-uri-read: 
+
+
+
+
+=== 清理还原
+
+Ransomware Resilience 现在支持 clean restores，这是一种新的恢复选项，可帮助您快速轻松地从勒索软件攻击中恢复。Clean restores 提供指导性工作流程，可识别最佳还原点以启动和运行您的工作负载，同时最大限度地减少停机时间。Clean restore 中的工作流程还提供对数据的文件级见解，确保您可以还原无恶意软件的工作负载，从而防止再次感染并最大限度地减少数据丢失。
+
+要了解支持的配置以及如何配置系统以进行干净还原，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["创建隔离的恢复环境"^]。要了解如何使用干净还原进行恢复，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore-recover["使用干净还原恢复工作负载"^]。
+
+
+
+=== Splunk Enterprise 的 SIEM 支持
+
+Ransomware Resilience 现在为 Splunk Enterprise 提供安全信息事件管理 (SIEM) 支持，使您能够集中日志和事件数据，并简化威胁分析和检测。
+
+有关详细信息，请参见link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["将 Ransomware Resilience 连接到 SIEM"^]。
+
+
+
+=== 用户行为活动增强
+
+对数据泄露事件的洞察现在可以在事件发生后保留 13 个月，从而可以根据您的报告需求进行更长时间的记录保存。
+
+有关详细信息，请参见link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-user-behavior.html["了解用户活动检测"^]。

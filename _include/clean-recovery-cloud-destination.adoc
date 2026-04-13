@@ -1,0 +1,135 @@
+= 
+:allow-uri-read: 
+
+
+[NOTE]
+.洁净室 SVM 数据 LIF IP (crr-data-LIF-IP)
+====
+如果您要配置源位于 Amazon FSxN for ONTAP 中的 IRE，请跳过此洁净室 SVM 数据 LIF IP 要求。
+
+====
+* 为洁净室 SVM 数据 LIF 提供 IP 地址。记下 IP 地址：在 IRE 配置过程中需要此 IP 地址。
++
+** 对于使用云到云干净恢复的 AWS Cloud Volumes ONTAP，请确保将 IP 地址分配给弹性网络接口。
+
+
+* 允许从 SVM 数据 LIF IP 路由到 IRE。
+
+
+.生产环境路由表
+* 生产路由表必须允许从 IRE 子网到干净还原数据 LIF IP 的流量。您必须将此路由添加到生产路由表中。
+* 生产 ONTAP 群集上的安全组和防火墙应允许 NFSv4 和 NFSv3 入站流量到干净还原数据 LIF IP。防火墙应对来自 IRE CIDR 范围的入口打开：
++
+[cols="1,1,1,1"]
+|===
+| 协议 | 目标端口 | 源 | 目的 
+
+
+| TCP & UDP | 2049 | IRE VPC CIDR 范围 | 从 IRE 进行 NFSv4 访问 
+
+
+| TCP & UDP | 111 | IRE VPC CIDR 范围 | 从 IRE 访问 NFSv3 
+
+
+| TCP & UDP | 635 | IRE VPC CIDR 范围 | 从 IRE 访问 NFSv3 
+
+
+| TCP & UDP | 4045 | IRE VPC CIDR 范围 | 从 IRE 访问 NFSv3 
+
+
+| TCP & UDP | 4046 | IRE VPC CIDR 范围 | 从 IRE 访问 NFSv3 
+
+
+| TCP & UDP | 4049 | IRE VPC CIDR 范围 | 从 IRE 访问 NFSv3 
+|===
+
+
+.IRE 路由表
+* IRE 路由表应为 IRE VPC 中的主要路由表。
+* IRE 路由表应允许路由到干净恢复数据 LIF IP 地址。
+* IRE 路由表还应允许到公共互联网的路由，以便 IRE 代理正常工作。
+
+
+.虚拟私有云 (VPC)
+* 对于 IRE，请在生产环境的 IP 地址范围内配置 VPC。IP 地址不应与任何现有的 IP 地址冲突。
++
+** VPC 的最小容量应为 64 个 IP 地址（a /26 网络掩码）。
+** VPC 必须允许公共互联网访问。否则，Console 代理将无法工作
+
+
+
+
+.云权限
+* Ransomware Resilience 需要具有正确 IAM 权限的 AWS 访问密钥和密钥，以便在 AWS 环境中执行干净恢复。link:https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["在 AWS 中创建 IAM 策略"^] 使用以下权限，然后将策略附加到新创建的用户。创建用户后，生成 IAM 凭据并将其提供给干净恢复。
++
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "EC2Isolated recovery environmentFullAccess",
+            "Effect": "Allow",
+            "Action": "ec2:*",
+            "Resource": "*",
+            "Condition": {
+                "StringLike": {
+                    "aws:ResourceTag/rps::Isolated recovery environment-name": "*"
+                }
+            }
+        },
+        {
+            "Sid": "EC2CreateAccess",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "EC2ReadPermissions",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:Describe*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "IAMFullAccess",
+            "Effect": "Allow",
+            "Action": "iam:*",
+            "Resource": "*",
+            "Condition": {
+                "StringLike": {
+                    "aws:ResourceTag/rps::Isolated recovery environment-name": "*"
+                }
+            }
+        },
+        {
+            "Sid": "S3FullAccessToIsolated recovery environmentStateBucketCreation",
+            "Effect": "Allow",
+            "Action": [
+                "s3:CreateBucket"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "S3FullAccessToIsolated recovery environmentStateBucketObjects",
+            "Effect": "Allow",
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": "arn:aws:s3:::*-netapp-Isolated recovery environment-state-bucket/*"
+        },
+        {
+            "Sid": "S3FullAccessToIsolated recovery environmentStateBucket",
+            "Effect": "Allow",
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": "arn:aws:s3:::*-netapp-Isolated recovery environment-state-bucket"
+        }
+    ]
+}
+----
+

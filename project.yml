@@ -64,8 +64,16 @@ sidebar:
       entries:
       - title: 响应检测到的警报
         url: "/rp-use-alert.html"
-      - title: 从勒索软件攻击中恢复
+      - title: 查看恢复状态
         url: "/rp-use-recover.html"
+      - title: 使用自定义还原进行恢复
+        url: "/rp-use-recover.html"
+      - title: 执行干净还原
+        entries:
+        - title: 创建隔离的恢复环境
+          url: "/task-clean-restore.html"
+        - title: 使用干净还原进行恢复
+          url: "/task-clean-restore-recover.html"
     - title: 进行准备演习
       url: "/rp-start-simulate.html"
     - title: 配置 SIEM

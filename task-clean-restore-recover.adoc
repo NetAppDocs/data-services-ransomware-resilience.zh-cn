@@ -1,0 +1,71 @@
+---
+sidebar: sidebar 
+permalink: task-clean-restore-recover.html 
+keywords: clean room, clean restore, secure recovery, recover, isolated recovery environment, ire 
+summary: Ransomware Resilience 使您能够通过干净恢复来控制和消毒您的工作负载。 
+---
+= 使用 NetApp Ransomware Resilience 中的干净恢复功能恢复工作负载
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+借助 NetApp Ransomware Resilience，您可以使用干净还原在基于加密的勒索软件攻击后执行引导式恢复。干净还原可识别优化的恢复路径，以最大限度地减少数据丢失，并在尽可能短的时间内在线恢复工作负载。
+
+"清除还原"选项是 xref:task-custom-restore.html[自定义还原选项] 的替代方案。
+
+
+
+== 开始之前
+
+在执行干净还原之前，您必须已配置 link:task-clean-restore.html["隔离恢复环境"^]。
+
+*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^] 。
+
+
+
+== 注意事项
+
+* 只能对基于加密的勒索软件攻击执行干净还原。
+* 如果隔离恢复环境没有新操作的容量，它将排队，直到有可用性。
++
+** 您可以随时在 Ransomware Resilience Recovery 控制面板中监控活动和排队的清除恢复操作的状态。
+
+
+* 启动干净恢复时，会卸载原始卷，这可能会中断 IO 访问。
+
+
+
+
+== 执行干净还原
+
+. 在 **恢复** 部分，选择要还原的工作负载。选择 **还原**。
+. 在 Restore Type 选项中，依次选择 **Clean restore** 和 **Next**。
+. 选择要使用的隔离恢复环境，然后选择 **下一步**。
+. 查看隔离的恢复环境，确认其位置正确。选择 **Restore**。
+. Ransomware Resilience 执行必要的设置。设置成功完成后，Ransomware Resilience 表示**设置完成**。要继续分析，请选择**下一步**。
+. 设置完成后，选择 **运行分析**。Ransomware Resilience 会分析勒索软件事件发生前七天内的所有可用还原点，显示还原点的日期和类型。
++
+image:screenshot-clean-room-analysis.png["Clean Restore 分析步骤的屏幕截图。"]
+
+. 分析完成后，选择 **Next** 以计划您的恢复。Ransomware Resilience 提供两种选择：**Least data loss** 和 **Latest unimpacted restore point**。选择任一选项，并可选择查看任一还原点的单个文件数据。
++
+要查看粒度文件事件数据，请选择一个文件以分析其加密状态；创建、修改或删除的时间，以及与什么操作相对应的还原点。
+
++
+image:clean-restore-plan.png["Clean Restore Plan 步骤的屏幕截图。"]
+
+. 选择还原点后，选择 **下一步** 开始清理文件。
+. Ransomware Resilience 开始清理工作负载。
++
+清洁完成后，选择 **Start recovery** 以启动恢复。
+
+. 选择是否要保存原始工作负载。若要放弃保存原始工作负载，请选择 **否，替换原始工作负载**。若要保存，请选择 **是，保存原始工作负载**，然后为该工作负载输入一个新名称。
+. 选择 **Start recovery** 以启动恢复。
+. 恢复完成后，选择 **Next** 进入最后阶段。
+. 选择 **Release resources and end** 以释放资源并关闭洁净室。要确认是否要释放资源，请选择 **End**。
+

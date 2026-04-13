@@ -82,7 +82,7 @@ TIP: 在勒索软件弹性保护仪表板中监控受保护数据的大小。要
 +
 image:screen-landing.png["勒索软件恢复能力的登陆页面截图"]
 
-. 如果您尚未为其他服务添加控制台代理，link:ps://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["添加一个"^] 。
+. 如果尚未为其他服务添加 Console 代理，请 link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["添加一个"^]。
 . 在勒索软件恢复登陆页面中，选择*从发现工作负载开始*来发现您的工作负载。
 +
 
@@ -240,7 +240,7 @@ image:screen-license-dw-add-license.png["添加许可证页面的屏幕截图。
 
 .步骤
 . 获得许可证后，返回 Ransomware Resilience。选择右上角的*查看付款方式*选项。或者，在免费试用即将到期的消息中，选择*订阅或购买许可证*。
-. 选择“添加许可证”转到控制台许可证和订阅页面。
+. 选择 *Add license* 转到 Console Licenses and subscriptions 页面。
 . 从“数据服务许可证”选项卡中，选择“添加许可证”。
 +
 image:screen-license-dw-add-license.png["添加许可证页面的屏幕截图。"]

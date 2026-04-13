@@ -370,7 +370,6 @@
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">开始之前</block>
   <block id="73738579d10f958bf97df41b6b44631a" category="paragraph">您需要 Ransomware Resilience 序列号。从您的销售订单中找到此号码，或联系客户团队获取此信息。</block>
   <block id="af25599baf3c84c2f248b3b60dcbeb1e" category="list-text">获得许可证后，返回 Ransomware Resilience。选择右上角的*查看付款方式*选项。或者，在免费试用即将到期的消息中，选择*订阅或购买许可证*。</block>
-  <block id="92039ced8cec8859d2ca3a52e4c27cde" category="list-text">选择“添加许可证”转到控制台许可证和订阅页面。</block>
   <block id="13a1d7753283c14a67aa5ea60b79c583" category="list-text">从“数据服务许可证”选项卡中，选择“添加许可证”。</block>
   <block id="7578ebad24c71aee2f2992e5efe1118d" category="list-text">在“添加许可证”页面中，输入序列号和NetApp支持站点帐户信息。</block>
   <block id="8e74888372203fd2a7ad3d3f9a2ce99f" category="list-text">如果您有控制台许可证序列号并知道您的 NSS 帐户，请选择 *输入序列号* 选项并输入该信息。</block>
@@ -927,11 +926,9 @@
   <block id="a70aafb0a2b8a5a46157e22ae8d2dd99" category="list-text">*失败*：工作负载恢复过程无法完成。</block>
   <block id="f591728141675d7a289dcb31f31fde56" category="section-title">查看已准备好恢复的工作负载</block>
   <block id="9e307871a02cb271c0a3a1a008a2e4e1" category="paragraph">查看处于“需要恢复”恢复状态的工作负载。</block>
-  <block id="2400d3aab4f81941f09385a6e9a6dda5" category="list-text">从菜单中选择*恢复*。</block>
   <block id="6ff7646970e054813b30a697e9d483e8" category="list-text">查看“*恢复*”页面中的工作负载信息。</block>
   <block id="4adfa9c3d33f897660ad408e7f5dc8e8" category="inline-image-macro">恢复页面</block>
   <block id="926aaeb3693d20413ab32b7da19a4c24" category="paragraph"><block ref="926aaeb3693d20413ab32b7da19a4c24" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e5807844b120730d46eedbad32ba0ea7" category="paragraph">使用勒索软件恢复能力，存储管理员可以确定如何从推荐的还原点或首选的还原点最佳地恢复工作负载。</block>
   <block id="7c653203a3096df8b7646a6ab87c0b2f" category="list-text">选择处于“需要恢复”状态的工作负载。</block>
   <block id="3423ce5ef0c24dff08aba7c67e954912" category="list-text">要恢复，请选择*恢复*。</block>
   <block id="8e39c6b8e82f00af62a92b5e18f0d487" category="list-text">*目的地*：选择目的地旁边的向下箭头查看详细信息。</block>
@@ -973,10 +970,7 @@
   <block id="e117d7e0417b0abf71f8e538099181f1" category="admonition">新的卷名称显示为原始卷名称+备份名称+备份日期。</block>
   <block id="6412a45d589675b39a03f4d8c440e7a7" category="section-title">在文件级别恢复应用程序工作负载</block>
   <block id="dda1633bee980c6aee630455ccc23784" category="paragraph">您可以将文件级别的应用程序工作负载还原到相同或不同的系统。</block>
-  <block id="c859754ec0a06e9f1e87879e1e8a4b78" category="paragraph-title">获取受影响文件列表的步骤</block>
-  <block id="e962fee54eeb3df3283d6d28bb1f073b" category="admonition">如果某个卷有多个警报，您将需要下载每个警报的受影响文件的 CSV 列表。</block>
   <block id="632b8e66b02aebebfc5b46583ee30222" category="list-text">要查看完整的文件列表，请选择“受影响的文件”窗格顶部的“*单击此处*”。</block>
-  <block id="d4ea49f7c37230203af54722c95962fe" category="list-title">恢复这些文件的步骤</block>
   <block id="3e64769073a6ebfad26862c552f42c72" category="list-text">在“还原”页面的“还原范围”中，选择“按文件”。</block>
   <block id="f1760e95914fef75d7a25a4643d9128a" category="list-text">在卷列表中，选择包含要还原的文件的卷。</block>
   <block id="a47287face7d6331a60273ac64f1cb53" category="list-text">*还原点*：选择*还原点*旁边的向下箭头查看详细信息。选择要用于还原数据的还原点。</block>
@@ -1007,12 +1001,7 @@
   <block id="cc03ddbe51eba1cd776926690a07ca14" category="list-text">*目的地*：返回原始位置。</block>
   <block id="b2ff9d90b8575c5030e4183e92ccf938" category="summary">使用NetApp Ransomware Resilience，您可以下载显示保护、警报和恢复详细信息的报告并将其保存为 CSV 文件。</block>
   <block id="2963ad4383209a31ba7b5a890b302bc2" category="doc">在NetApp Ransomware Resilience中下载报告</block>
-  <block id="229560de4c61096e275f68d7eda37c00" category="paragraph">*您可以下载哪些数据？*您可以从任何主菜单选项下载文件：</block>
   <block id="a7e404e1296fea04d0cd654b84867b5a" category="list-text">*恢复*：包括所有需要恢复的工作负载的状态和详细信息，包括标记为“需要恢复”、“进行中”、“恢复失败”和“恢复成功”的工作负载总数。</block>
-  <block id="a36d9f25fe7ecafe45db2fd45823c6e7" category="list-text">*报告*：您可以从任何页面导出数据并下载文件。</block>
-  <block id="cba5c013826db3e7efce5d0c19aee9c1" category="admonition">您只能从*报告*页面下载准备情况演习报告。</block>
-  <block id="5b21bc493cdab40a819ce8921c81c72d" category="paragraph">如果您从保护、警报或恢复页面下载 CSV 或 JSON 文件，则数据仅显示该页面上的数据。</block>
-  <block id="12d495a2d34cbe83eecedb29ea139390" category="paragraph">CSV 或 JSON 文件包含所有控制台系统上所有工作负载的数据。</block>
   <block id="4263eebb7cfbc2a50797df9b351df75d" category="list-text">从NetApp Ransomware Resilience菜单中，选择 *报告*。</block>
   <block id="09121bb3cb936ab87dd837c1fd8da18a" category="list-text">如果您选择了“*报告*”选项，请选择一个预配置的文件名并选择“*下载*”。</block>
   <block id="55483e3219b15f38112442f737a1bf92" category="section-title">添加备份目标</block>
@@ -1416,7 +1405,6 @@
   <block id="3e89831fbd0267df9052ee5e70bc06ab" category="sidebar">访问勒索软件弹性</block>
   <block id="d67482bbf82ef9c339e44809ea9873b1" category="sidebar">使用勒索软件保护策略保护工作负载</block>
   <block id="4b55af6e5a9948a11e84a0809a34edfb" category="sidebar">扫描个人身份信息</block>
-  <block id="f8a7dc43864435cb9b522a28b586e556" category="sidebar">从勒索软件攻击中恢复</block>
   <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">常见问题解答</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知识和支持</block>
   <block id="51fecb5d19a6637dea83445678fd4ffa" category="section-title">数据备份</block>
@@ -1464,7 +1452,6 @@
   <block id="e20a7cd21fba7d540ffd7589c1c59928" category="paragraph">您可以免费试用 Ransomware Resilience 30 天。您必须是控制台组织管理员才能开始免费试用。</block>
   <block id="85a5bc1275ab09d60eed9f7c3b4d429b" category="paragraph">试用期间不强制执行存储容量限制。</block>
   <block id="ca78bf5eeed0245ff3d76d132c93b609" category="inline-link-macro">添加一个</block>
-  <block id="94c135a38d325e223714d1f313c8efec" category="list-text">如果您尚未为其他服务添加控制台代理，<block ref="f7f69135987ef22de86b03a4f14a7bc8" category="inline-link-macro-rx"></block> 。</block>
   <block id="edbdd3e3e169cd712816f78b82e91c2e" category="list-text">在勒索软件恢复登陆页面中，选择*从发现工作负载开始*来发现您的工作负载。</block>
   <block id="2866dfee0ffdf3a11a8323f6d53635f4" category="admonition">仅当您成功安装了控制台代理后，此选项才可用。</block>
   <block id="933f33d572b754e91a336439049ae279" category="list-text">在添加许可证页面中，选择*输入序列号*，输入发送给您的电子邮件中包含的序列号，然后选择*添加许可证*。</block>
@@ -1858,7 +1845,6 @@
   <block id="6a3ad50557786ed110b2cefa2a2be7bd" category="list-text">选择系统以查看其详细信息。</block>
   <block id="6872a6ef5ae2db047b6effa74304d0af" category="list-text">显示该用户的现有角色：</block>
   <block id="67c903793b6bf8b730fee76339b93672" category="list-text">如果您选择 *Suspicious user behavior detection* 作为检测设置，请选择 User activity agent 或 <block ref="0fcb9e48262f104799fbf49d6c09d7d5" category="inline-link-macro-rx"></block>。</block>
-  <block id="7c6b2f72c99d1ebd4a429f9dc9ce38de" category="doc">在 NetApp Ransomware Resilience 中为用户活动检测配置代理和收集器</block>
   <block id="a7045f65a60246a57662a00a9dc6dc73" category="inline-link-macro">操作系统、服务器和网络要求</block>
   <block id="72ae3905ad051e75d558266df8b1e63a" category="list-text">请确保满足 <block ref="4535d4c19297d046165dc98674d914e8" category="inline-link-macro-rx"></block>。</block>
   <block id="59ad45573dbf4296a202cefa7894c118" category="section-title">创建用户活动代理</block>
@@ -1977,7 +1963,6 @@
   <block id="43cf481327dfdef7257dfcd2239c1c16" category="list-text">*加密检测*</block>
   <block id="b2a1cab5712cdb105f101f829159956b" category="list-text">*可疑用户行为检测*</block>
   <block id="e221e0c0391c288e04416b2254112154" category="list-text">*阻止可疑文件扩展名*</block>
-  <block id="e90e1f21879e00aa74c7b0dba188efdb" category="paragraph">NetApp Ransomware Resilience 以 CSV 和 JSON 格式提供报告，显示受支持和不受支持卷的详细信息、攻击准备演练、保护、警报和恢复。使用报告，您可以保存和查看有关演练、保护状态、警报和恢复事件的离线报告。</block>
   <block id="920471a68a7a085ba7f5c267570313be" category="paragraph">NetApp Ransomware Resilience 用户活动检测可帮助您防止用户级别的勒索软件事件。要在 Ransomware Resilience 中启用可疑用户行为检测，必须至少安装一个用户活动代理，该代理将创建一个数据收集环境，以监控用户行为中类似于勒索软件事件的异常模式。</block>
   <block id="91600cc8235d0715eba412169c7c3d73" category="paragraph">用户活动代理托管数据收集器和用户目录连接器，它们都将数据发送到 SaaS 位置进行分析。</block>
   <block id="fa97e4f101b82056aea0cbbc9151ce6c" category="list-text">**数据收集器**从 ONTAP 收集用户活动数据。当您创建具有用户行为检测的保护策略时，将自动创建数据收集器。</block>
@@ -2077,7 +2062,6 @@
   <block id="4640cffe8cecf29a2e28eccc89d62e54" category="cell">输入 SIEM/XDR 服务器详细信息以启用威胁检测。请参阅<block ref="ffa7fd2a3621d8607d19220a5312c79a" category="inline-link-macro-rx"></block>。</block>
   <block id="384ff6974e7af6bfbb47b5f1a1e8a8ef" category="cell">将备份目标添加到此工作负载以对其进行保护。请参阅 <block ref="e25a1b60993d45f33b0deea2ae726330" category="inline-link-macro-rx"></block>。</block>
   <block id="b6ac186c730d3951ea5f7795e32f0554" category="admonition">要启用辅助存储上的备份锁定，请使用 *Settings* 选项配置备份目标。有关详细信息，请参见 <block ref="33c35db19b883807eccfb2734290ae91" category="inline-link-macro-rx"></block>。</block>
-  <block id="11f2f37965157c7da67e33eb40c1030c" category="list-text">在控制面板中，查看"提醒"窗格中的"恢复所需"总计，然后选择 *查看全部*。</block>
   <block id="bcecace85f7c3d476feccac24d9db3eb" category="list-text">在控制面板或其他页面中，选择右上角的 *刷新* <block ref="94d384894f036157c348eadc55c40952" category="inline-image-macro-rx" type="image"></block> 选项以刷新报告中显示的数据。</block>
   <block id="cc3ae719c12cc9e21d1f9b6b919eb818" category="summary">在 NetApp Ransomware Resilience 中添加备份目标，以提高网络弹性。</block>
   <block id="162cbc2e55bba363e404fc5b076b5396" category="doc">在 NetApp Ransomware Resilience 中添加备份目标</block>
@@ -2158,8 +2142,6 @@
   <block id="7df30d939fa4f3d1575169ec6d1894d8" category="doc">NetApp Ransomware Resilience 的已知限制</block>
   <block id="e9be3c13b1ed73a120f1b23e2cefb058" category="doc">在 NetApp Ransomware Resilience 中发现工作负载</block>
   <block id="871215526a8732732fd40b6335388e98" category="doc">NetApp Ransomware Resilience 常见问题解答</block>
-  <block id="382e702ef8f61842f6f9c0b76fb23047" category="doc">使用 NetApp Ransomware Resilience 从勒索软件攻击中恢复</block>
-  <block id="a8bb9ad5a88304569c56e3805762683b" category="doc">在 NetApp Ransomware Resilience 中扫描个人身份信息</block>
   <block id="1ca81bce832a538b6144470d9a25c786" category="paragraph">在 NetApp Ransomware Resilience 中，您可以使用 NetApp Data Classification 对文件共享工作负载中的数据进行扫描和分类。对数据进行分类有助于您确定数据集是否包含个人身份信息 (PII)，这可能会增加安全风险。</block>
   <block id="1954c0eede9cec276e44236c76142770" category="paragraph">Data Classification 是 NetApp Console 的核心组件。您无需许可证即可使用 Data Classification。根据您的设置，配置 Data Classification 可能会产生费用，而 Ransomware Resilience 不会收取这些费用。有关详细信息，请参见<block ref="c5cce5d1091349460847f69d486fd688" category="inline-link-macro-rx"></block>。</block>
   <block id="70c542a285cfdf5cc22587e58fc3fcbb" category="doc">适用于 Microsoft Sentinel 和 Splunk 的 SOAR playbook</block>
@@ -2213,4 +2195,253 @@
   <block id="261f193d834ffba7dae6c54f99306659" category="list-text">转到您选择的 Splunk 环境：云或企业。</block>
   <block id="eade5cc0d987bed25c884550a681c364" category="list-text">转至 Splunk Cloud 或 Enterprise。</block>
   <block id="e4f58ddb798b11dab7791e0175f6cf0f" category="list-text">输入您在 AWS Security Hub、Splunk Cloud 或 Splunk Enterprise 中配置的令牌和身份验证详细信息。</block>
+  <block id="c49fdbd48abc0805f78e165d087f6c4b" category="admonition-title">洁净室 SVM 数据 LIF IP (crr-data-LIF-IP)</block>
+  <block id="f0778a7682182f497af90edd54b04a18" category="paragraph">如果您要配置源位于 Amazon FSxN for ONTAP 中的 IRE，请跳过此洁净室 SVM 数据 LIF IP 要求。</block>
+  <block id="074ccc576a0d2f59ff97aa7d5cd6f1db" category="list-text">为洁净室 SVM 数据 LIF 提供 IP 地址。记下 IP 地址：在 IRE 配置过程中需要此 IP 地址。</block>
+  <block id="6e72e986d17ee66e6f3fdfe4e138163d" category="list-text">对于使用云到云干净恢复的 AWS Cloud Volumes ONTAP，请确保将 IP 地址分配给弹性网络接口。</block>
+  <block id="b1573f80f25470f8eb281542e0c5be32" category="list-text">允许从 SVM 数据 LIF IP 路由到 IRE。</block>
+  <block id="9c9dab37f0ac19e3e253ffd75559fad6" category="list-title">生产环境路由表</block>
+  <block id="17e68097ee762fecf78b9e9fdb36d0c8" category="list-text">生产路由表必须允许从 IRE 子网到干净还原数据 LIF IP 的流量。您必须将此路由添加到生产路由表中。</block>
+  <block id="673c05ce31cb0b56b8af3c9126f1cbb0" category="list-text">生产 ONTAP 群集上的安全组和防火墙应允许 NFSv4 和 NFSv3 入站流量到干净还原数据 LIF IP。防火墙应对来自 IRE CIDR 范围的入口打开：</block>
+  <block id="7c1a5f175cfc657a18de4a95621d74e3" category="cell">目标端口</block>
+  <block id="261addf78c7b2c961032b3dd08ba0b1f" category="cell">目的</block>
+  <block id="f8dc77f2ac2f7272dc57dd5689ee9d63" category="cell">TCP &amp; UDP</block>
+  <block id="06b1338ba02add2b5d2da67663b19ebe" category="cell">2049</block>
+  <block id="48f2e8432e8385f065e192dbe2c54948" category="cell">IRE VPC CIDR 范围</block>
+  <block id="4afacf798011af530d39470f0f7302d4" category="cell">从 IRE 进行 NFSv4 访问</block>
+  <block id="698d51a19d8a121ce581499d7b701668" category="cell">111</block>
+  <block id="4d41b2260156687cd1e011fa25c9a1fe" category="cell">从 IRE 访问 NFSv3</block>
+  <block id="6a10bbd480e4c5573d8f3af73ae0454b" category="cell">635</block>
+  <block id="ee0e95249268b86ff2053bef214bfeda" category="cell">4045</block>
+  <block id="354ac345fd8c6d7ef634d9a8e3d47b83" category="cell">4046</block>
+  <block id="89a4779d3836ea432f7ea074e522a17e" category="cell">4049</block>
+  <block id="a96992553da8960e79dd08a3aebe469c" category="list-title">IRE 路由表</block>
+  <block id="e4c932cf61edc0fce9f5b104f66ab438" category="list-text">IRE 路由表应为 IRE VPC 中的主要路由表。</block>
+  <block id="c2cccb2eacdb092cd7d276cf6e0a7e23" category="list-text">IRE 路由表应允许路由到干净恢复数据 LIF IP 地址。</block>
+  <block id="719950786b97235baf482bf31cdb5bc3" category="list-text">IRE 路由表还应允许到公共互联网的路由，以便 IRE 代理正常工作。</block>
+  <block id="da24b5c81ba0343ed645984ea8b07f17" category="list-title">虚拟私有云 (VPC)</block>
+  <block id="cae5a69da14508ba47067bd733f9b47e" category="list-text">对于 IRE，请在生产环境的 IP 地址范围内配置 VPC。IP 地址不应与任何现有的 IP 地址冲突。</block>
+  <block id="ab56c80155a34dbf9b3a23a431a66db7" category="list-text">VPC 的最小容量应为 64 个 IP 地址（a /26 网络掩码）。</block>
+  <block id="50b0b122b46409582254c40604d5a2ac" category="list-text">VPC 必须允许公共互联网访问。否则，Console 代理将无法工作</block>
+  <block id="beada74f16c5078d9dcfb7d53fb2e205" category="list-title">云权限</block>
+  <block id="854c429c8b60de0e8502c18a4ad20f86" category="inline-link-macro">在 AWS 中创建 IAM 策略</block>
+  <block id="164bd1fd2869da49bcef315a5bbe2370" category="list-text">Ransomware Resilience 需要具有正确 IAM 权限的 AWS 访问密钥和密钥，以便在 AWS 环境中执行干净恢复。<block ref="269f7c936a5a453bf5e1f3661f3e90dd" category="inline-link-macro-rx"></block> 使用以下权限，然后将策略附加到新创建的用户。创建用户后，生成 IAM 凭据并将其提供给干净恢复。</block>
+  <block id="600a19be2eeeff3456f518555f21d179" category="list-text">只能对基于加密的勒索软件攻击执行干净还原。</block>
+  <block id="2a0ba341f6bfb114fb8d895beeb1a449" category="list-text">如果隔离恢复环境没有新操作的容量，它将排队，直到有可用性。</block>
+  <block id="1e0cb6f175281202fbb8e130dc6ceb5b" category="list-text">您可以随时在 Ransomware Resilience Recovery 控制面板中监控活动和排队的清除恢复操作的状态。</block>
+  <block id="75b68821e2e55eb56181916eaf645c45" category="list-text">启动干净恢复时，会卸载原始卷，这可能会中断 IO 访问。</block>
+  <block id="ad2a9811677d640aa02be04e16ed6267" category="doc">清理还原</block>
+  <block id="a27a472ba292f326ddc2e430f964123b" category="paragraph">Ransomware Resilience 现在支持 clean restores，这是一种新的恢复选项，可帮助您快速轻松地从勒索软件攻击中恢复。Clean restores 提供指导性工作流程，可识别最佳还原点以启动和运行您的工作负载，同时最大限度地减少停机时间。Clean restore 中的工作流程还提供对数据的文件级见解，确保您可以还原无恶意软件的工作负载，从而防止再次感染并最大限度地减少数据丢失。</block>
+  <block id="86ef5018580452c81ea6cb2911275e90" category="inline-link-macro">创建隔离的恢复环境</block>
+  <block id="508a286442ccdd0f0c8a02ce355b62db" category="inline-link-macro">使用干净还原恢复工作负载</block>
+  <block id="a9e75b5aa64910e787dec413e103a858" category="paragraph">要了解支持的配置以及如何配置系统以进行干净还原，请参见 <block ref="bce58762a021948ccde0fba2f5f7a845" category="inline-link-macro-rx"></block>。要了解如何使用干净还原进行恢复，请参见 <block ref="455be04ee07ce68cbcdf924300b59eba" category="inline-link-macro-rx"></block>。</block>
+  <block id="1268d987cbc2b2bc1be3c9ba04af7cd1" category="section-title">Splunk Enterprise 的 SIEM 支持</block>
+  <block id="8d4e1592ef4f14add49e9860e8b367dc" category="paragraph">Ransomware Resilience 现在为 Splunk Enterprise 提供安全信息事件管理 (SIEM) 支持，使您能够集中日志和事件数据，并简化威胁分析和检测。</block>
+  <block id="c81c8aac6cfb1c5f690b914eda6a69fd" category="inline-link-macro">将 Ransomware Resilience 连接到 SIEM</block>
+  <block id="dbdca0e081ed0b247153e35ce9b1c298" category="paragraph">有关详细信息，请参见<block ref="d02df671c233387bf6b644be94acfdf7" category="inline-link-macro-rx"></block>。</block>
+  <block id="54dee0adf9652288315f3c7099d462be" category="section-title">用户行为活动增强</block>
+  <block id="7ee4b3a8392885d95b1b7c9f5a6c99e5" category="paragraph">对数据泄露事件的洞察现在可以在事件发生后保留 13 个月，从而可以根据您的报告需求进行更长时间的记录保存。</block>
+  <block id="787e93d4c2f472a6434cd13d74f3f4d4" category="paragraph">有关详细信息，请参见<block ref="1a6935dbce91cdb72e61e2f8c1313b36" category="inline-link-macro-rx"></block>。</block>
+  <block id="ff1d8a11789570b9a7e5f2d8fa4b3245" category="list-text">如果尚未为其他服务添加 Console 代理，请 <block ref="51497621bfe4b6ebf6d24d0214cc9366" category="inline-link-macro-rx"></block>。</block>
+  <block id="5ce927453063236746bf9f7b1ee339ed" category="list-text">选择 *Add license* 转到 Console Licenses and subscriptions 页面。</block>
+  <block id="5aacdcc38fb6938e8f7950fb8e5395fc" category="doc">在 NetApp Ransomware Resilience 中查看恢复状态</block>
+  <block id="12d4b8182b6c1654981eba595c7de57c" category="list-text">在 Ransomware Resilience 主控制面板中，查看警报窗格中的"恢复所需"总计，然后选择 *查看全部*。</block>
+  <block id="b4f544735b828be5cd38dd2b84c34888" category="paragraph">或者，从侧边栏中选择 *Recovery*。</block>
+  <block id="88ade1fb5341b9cab4ee9b0b899aada2" category="section-title">恢复工作负载</block>
+  <block id="3ed6844c21861f4032d4bb0085849cce" category="paragraph">评估工作负载后，您有两种选择来恢复工作负载：</block>
+  <block id="558f08ac28f5d715f7d0f406a1404b95" category="inline-xref-macro">使用自定义还原进行恢复</block>
+  <block id="683e86eb75d5e8da1a3597af4eb62db8" category="list-text"><block ref="683e86eb75d5e8da1a3597af4eb62db8" category="inline-xref-macro-rx"></block></block>
+  <block id="baf02bc77de4caf276599d8b3c23c8b0" category="inline-xref-macro">使用干净还原进行恢复</block>
+  <block id="47a1b97d112c774adbe8538c59caa4e5" category="list-text"><block ref="47a1b97d112c774adbe8538c59caa4e5" category="inline-xref-macro-rx"></block></block>
+  <block id="b33cc6ae02a005574f67dfd20adb1e83" category="paragraph">NetApp Ransomware Resilience 以 JSON 格式提供报告，显示受支持和不受支持的卷、攻击就绪演练、保护、警报和恢复的详细信息，使您能够离线评估和审查勒索软件事件和就绪情况。</block>
+  <block id="cfd78d66bd11cf60d1554ae2cc1ce600" category="paragraph">*我可以下载哪些报告？*</block>
+  <block id="3d49084ca725aed4ed86dd5114d71e31" category="list-text">*准备演习*：包括模拟攻击的结果，以突出需要改进的领域。</block>
+  <block id="5197e64c7ccdc2c17a66633186db1e56" category="list-text">*Clean restore*：包括有关使用 clean restore 还原的工作负载的详细信息。</block>
+  <block id="3d5136c6c3a9616651f6d948d9ff9bc3" category="paragraph">您必须具有活动的隔离恢复环境 (IRE) 才能生成干净还原报告。删除 IRE 后，干净还原报告不可用。</block>
+  <block id="362814f084076136afc53ff5657841e9" category="doc">在 NetApp Ransomware Resilience 中配置用户活动检测</block>
+  <block id="9d13b6c301a5845f3abf35b5845c2e44" category="doc">使用 NetApp Ransomware Resilience 识别隐私泄露</block>
+  <block id="6099697e2a6a8f6f3f428d832424ccd8" category="summary">Ransomware Resilience 使您能够通过干净恢复来控制和消毒您的工作负载。</block>
+  <block id="6a9e29e376d0cfeb3458eb2ec0d368c2" category="doc">使用 NetApp Ransomware Resilience 中的干净恢复功能恢复工作负载</block>
+  <block id="f0b90fa8f5ad3bdcf7ca0566043b0bc7" category="paragraph">借助 NetApp Ransomware Resilience，您可以使用干净还原在基于加密的勒索软件攻击后执行引导式恢复。干净还原可识别优化的恢复路径，以最大限度地减少数据丢失，并在尽可能短的时间内在线恢复工作负载。</block>
+  <block id="88616a0b3339c4c7896bc89637623c8c" category="inline-xref-macro">自定义还原选项</block>
+  <block id="335671c274748cbe7e810da4fb09ee39" category="paragraph">"清除还原"选项是 <block ref="7505fe57dac9c850bacebdaf9c5d9534" category="inline-xref-macro-rx"></block> 的替代方案。</block>
+  <block id="563d648fca7174bd637bc7553ffbdfd5" category="inline-link-macro">隔离恢复环境</block>
+  <block id="68a63568bae8b1136a4d6ed86a9df817" category="paragraph">在执行干净还原之前，您必须已配置 <block ref="e6b9ac27e9d8426eab4ef45db03a98fc" category="inline-link-macro-rx"></block>。</block>
+  <block id="ea61e2c2ff507048203824add1eb7c21" category="section-title">注意事项</block>
+  <block id="8a687ede20b3179501211e222eccc84d" category="section-title">执行干净还原</block>
+  <block id="7d3fcc28c899a7b289e05e013aad4dc6" category="list-text">在 **恢复** 部分，选择要还原的工作负载。选择 **还原**。</block>
+  <block id="9c5ec70f60ca9ceaf825ce83f9bd4bac" category="list-text">在 Restore Type 选项中，依次选择 **Clean restore** 和 **Next**。</block>
+  <block id="b57d941a4d6ae6c8309974df2602afd1" category="list-text">选择要使用的隔离恢复环境，然后选择 **下一步**。</block>
+  <block id="d58c5ad1de11a448129ae415c7bf9504" category="list-text">查看隔离的恢复环境，确认其位置正确。选择 **Restore**。</block>
+  <block id="adbc7d98b73b56e4671ba46ad7551544" category="list-text">Ransomware Resilience 执行必要的设置。设置成功完成后，Ransomware Resilience 表示**设置完成**。要继续分析，请选择**下一步**。</block>
+  <block id="aac0bbc39aabd77485c1a91df7ebf08a" category="list-text">设置完成后，选择 **运行分析**。Ransomware Resilience 会分析勒索软件事件发生前七天内的所有可用还原点，显示还原点的日期和类型。</block>
+  <block id="737dfd8870fb9011f2148f9df5f1c709" category="inline-image-macro">Clean Restore 分析步骤的屏幕截图。</block>
+  <block id="d64cc3b278bde1725adb921ef1a31d7e" category="paragraph"><block ref="d64cc3b278bde1725adb921ef1a31d7e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="975584d4fa288f1c7066a3e04c45884c" category="list-text">分析完成后，选择 **Next** 以计划您的恢复。Ransomware Resilience 提供两种选择：**Least data loss** 和 **Latest unimpacted restore point**。选择任一选项，并可选择查看任一还原点的单个文件数据。</block>
+  <block id="c26ff48add8a2ec49af17a7e2a76ee5b" category="paragraph">要查看粒度文件事件数据，请选择一个文件以分析其加密状态；创建、修改或删除的时间，以及与什么操作相对应的还原点。</block>
+  <block id="59eb34c12f3abfa98756951d0fb8ecfb" category="inline-image-macro">Clean Restore Plan 步骤的屏幕截图。</block>
+  <block id="ea7360bc3a148c8251f392279d717749" category="paragraph"><block ref="ea7360bc3a148c8251f392279d717749" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="06b21a82c6a8e8409f7421e256a89d75" category="list-text">选择还原点后，选择 **下一步** 开始清理文件。</block>
+  <block id="bf919d26eded9ba9285a6e36c4dca3fd" category="list-text">Ransomware Resilience 开始清理工作负载。</block>
+  <block id="4f7284ff2b84a2edf1a4d1841e9673e8" category="paragraph">清洁完成后，选择 **Start recovery** 以启动恢复。</block>
+  <block id="7b2695ab24236bab0ddf7ad7175f5c04" category="list-text">选择是否要保存原始工作负载。若要放弃保存原始工作负载，请选择 **否，替换原始工作负载**。若要保存，请选择 **是，保存原始工作负载**，然后为该工作负载输入一个新名称。</block>
+  <block id="bb48b2870670838fdaceecb7e839faf4" category="list-text">选择 **Start recovery** 以启动恢复。</block>
+  <block id="6f442695db7c03fcadf2ad5e394da170" category="list-text">恢复完成后，选择 **Next** 进入最后阶段。</block>
+  <block id="c40ef494fde6d59a18088598fb50e5f5" category="list-text">选择 **Release resources and end** 以释放资源并关闭洁净室。要确认是否要释放资源，请选择 **End**。</block>
+  <block id="ce9ea3f9da32231f2342106b6a2da0c1" category="doc">在 NetApp Ransomware Resilience 中配置干净恢复环境</block>
+  <block id="d08d6f8d7a531831181b973c3132aaef" category="paragraph">NetApp Ransomware Resilience 提供干净的恢复，在勒索软件攻击后提供引导式恢复。要执行全新还原，您必须首先在内部或受支持的云环境中创建隔离恢复环境 (IRE)。在 IRE 中，您创建了一个无尘室，Ransomware Resilience 会在其中隔离工作负载，以识别哪些文件是干净的，哪些文件受到勒索软件的影响。</block>
+  <block id="f6ee05d779160a7db74d926e2bb640f7" category="section-title">了解干净还原</block>
+  <block id="ae684a367ef7be289c58528c425ecc18" category="paragraph">当您执行干净恢复时，Ransomware Resilience 将引导您完成优化恢复的多步骤流程。</block>
+  <block id="3f2567a86f8c54d04ec6273cdb7e3a90" category="list-text">**设置**：要执行干净还原，您必须首先创建 IRE，然后选择要还原的工作负载。Ransomware Resilience 创建了一个针对工作负载执行所有操作的洁净室。</block>
+  <block id="c3763704f64261ad7b74c0b6ece3a5e7" category="list-text">**分析**：在洁净室中，Ransomware Resilience 会分析所有快照，以查看是否存在加密。清洁恢复确定恢复映射以确定最佳恢复计划。</block>
+  <block id="5cdee73c83008a843d9dbb0a991b8307" category="paragraph">一旦发现没有受影响文件的还原点，则会跳过所有早期的还原点。例如，如果勒索软件事件发生在 10 月 10 日，并且在 10 月 7 日上午 10:21 发现了一个没有受影响文件的还原点，则会跳过 10 月 7 日上午 10:21 之前的所有还原点。</block>
+  <block id="82e75ee1827478564b33a5410c9eb863" category="paragraph">分析步骤还会显示已审阅的文件数量，表明哪些文件受到影响，哪些文件没有受到影响。</block>
+  <block id="3ad61c0b3a3d27855f2b93882effa895" category="list-text">**计划**：选择提供的恢复选项：</block>
+  <block id="e5837c573a5ec3255c53e691d80aa8d5" category="list-text">_最新未受影响的还原点_：来自攻击前最新未加密快照的最快还原点</block>
+  <block id="005de8e860701780275d7a1820f266e8" category="list-text">_最少数据丢失_：来自不同快照的每个未加密文件的最新版本</block>
+  <block id="bcec21f7634632270763ec4fbec096be" category="paragraph">您还可以在规划步骤中查看文件历史记录，以查看勒索软件事件何时影响了文件，以及恢复点与该事件的时间关系。</block>
+  <block id="d4b88ae7112ba206532c2177bf4d3ee7" category="list-text">**清理**：Ransomware Resilience 从恢复点删除恶意软件。如果无法清理任何文件，则会将其从恢复中排除，并隔离到单独的位置。</block>
+  <block id="df2aee92cf409d5307ab1b2587c12b51" category="list-text">**还原**：Ransomware Resilience 将干净的数据还原到源环境中。</block>
+  <block id="c37b4ad01da7b4bdabb1e1ef27187b86" category="list-text">**END**：Ransomware Resilience 提供流程的详细摘要并关闭洁净室，释放设置期间配置的资源，以消除未来的计量成本。</block>
+  <block id="1f0b82560627b660c6c6958a1df834b8" category="section-title">支持的配置</block>
+  <block id="01c81fea09d285ebadc2362452091509" category="list-text">每个 Ransomware Resilience 帐户只能创建一个 IRE。每个 IRE 可以有三个干净的房间。</block>
+  <block id="582cfdbdcce499f277827ab3d0e7be89" category="list-text">当前仅支持 NAS 文件共享（NFS/CIFS）的清除恢复。</block>
+  <block id="9c69ad94c9075f0b7cad75c76d595107" category="list-text">您必须将干净还原执行到源环境。</block>
+  <block id="3f1675c8b59091961a73a7cb3f4ccc76" category="list-text">您可以在云中或本地创建 IRE。目前，支持以下配置：</block>
+  <block id="9937b29fcbc513990ee3a11d520463ec" category="cell">目的地 (IRE)</block>
+  <block id="936e18cf7bf36043950dc2aaedf4d3e0" category="cell">支持的目标区域</block>
+  <block id="459af8e818b008f87953a215f60b7602" category="cell">内部部署（仅限 AFF 或 FAS 系统）*</block>
+  <block id="ada6ac960107fc33df56471b0563964c" category="cell">本地 (VMware vCenter)</block>
+  <block id="1470c4596f09bf147bf564758d0ab65a" category="cell">云：AWS</block>
+  <block id="8086e076c1440c96a66792ace0ad9a9a" category="list-text">美国东部 1 区</block>
+  <block id="2cefd515e4957f2cd0e6e94109aedf59" category="list-text">EU Central 1</block>
+  <block id="3189552bad716cc50b21cf06e1ce8055" category="cell">云：Cloud Volumes ONTAP with AWS*</block>
+  <block id="6eac9a8614fc5276d77f16262e773b73" category="cell">云：Amazon FSxN for ONTAP</block>
+  <block id="b1f5b0ae27e9c2d8ce17d7546a138c55" category="paragraph">{asterisk} 您必须运行 ONTAP 9.11.1 或更高版本。</block>
+  <block id="e94e6e5768958058fb727a7416bb95cc" category="inline-link-macro">成本和许可</block>
+  <block id="df793ad0d2ee67dbaef2bbd64569c674" category="admonition">在基于云的环境中执行干净恢复可能会产生云提供商的额外计算费用。有关详细信息，请参见 <block ref="c8aa07fb5af5da0ce42c5de706498fc6" category="inline-link-macro-rx"></block>。</block>
+  <block id="fbf08ce067505f9878100fd957c4b417" category="section-title">本地环境的其他注意事项</block>
+  <block id="566ad5e0156a42a838473ceceafc4a22" category="paragraph">如果要部署本地 IRE，则在干净还原中为恢复分析克隆 Windows VM 时，克隆的 VM 将保留与源相同的配置。这可能会导致冲突：</block>
+  <block id="fc9897437d0058f47163b41933bf7218" category="list-text">使用相同的安全标识符 (SID) 会导致身份验证和安全冲突。</block>
+  <block id="b8a224e639154658d903c119ad01f115" category="list-text">使用相同的计算机名 (CN) 会导致网络冲突。</block>
+  <block id="42d5a005352158447d080ff821694db4" category="list-text">使用相同的机器身份会导致许可和激活问题。</block>
+  <block id="2b973fe4e18c7b4ee211cfe2a2373d41" category="paragraph">为了避免这些冲突，Ransomware Resilience 会在克隆虚拟机上执行 sysprep，从而重置 SID、CN 和机器标识。重置这些值可确保克隆虚拟机作为唯一且独立的实例运行，而不会干扰源虚拟机。</block>
+  <block id="c94b2ef9dde0531d36cb0d4e5d7b4b72" category="section-title">辅助来源</block>
+  <block id="08607b19598a980be86467b52da1e4d3" category="paragraph">为本地源创建 IRE 时，可以选择添加辅助源。</block>
+  <block id="dd4cfaa170b77a39c3f6a4580966901c" category="paragraph">如果主源可用，则必须将干净还原还原到主源。如果主源不可用，并且您已配置辅助源，则干净还原将还原到辅助源。</block>
+  <block id="4a03772068b579d9b09ff0433b7acadd" category="paragraph">默认情况下，清理还原过程会分析源环境中的快照。如果源环境不可用或源上的未加密快照不可用，则清理还原会分析辅助系统上的快照（如果已配置）。</block>
+  <block id="bf6aff190124dd12362477474eddaf9b" category="paragraph">作为 Ransomware Resilience 的一部分提供干净恢复。执行干净恢复或创建 IRE 无需额外的许可证。</block>
+  <block id="2c5f8b1bf69ff1fef550992679ff59b6" category="paragraph">启用干净还原可能会产生第三方云提供商费用。根据您使用服务的方式，当存在干净的还原环境时，这些费用可能会重复发生。</block>
+  <block id="d820e90e08f18bcb21f419de5072496d" category="paragraph">第三方费用可包括计算实例的创建和部署以及用于清理和恢复的额外生产存储容量。请考虑以下示例：</block>
+  <block id="b8e0a8b93f5e303e66c1913fea32d6c2" category="list-text">当在 AWS 中部署 IRE 并启动干净恢复时，两个 t3.medium AWS EC2 实例将部署在 IRE 的洁净室中，用于清除加密和恶意软件。</block>
+  <block id="c21b1c1f109ee448ac505029595363ff" category="list-text">在 Cloud Volumes ONTAP 中，clean restore 为元数据卷和快照克隆创建一个 clean room storage VM 以进行分析。</block>
+  <block id="794fbe3384113d14f1fdcd8989bf96c9" category="paragraph">确保已完成所选干净还原部署类型的先决条件。选择所选 IRE 配置的选项卡。</block>
+  <block id="97b3465a0840a995756be84349359712" category="admonition">创建 IRE 时，必须在创建 IRE 的系统选择步骤中添加要用于分析的每个系统（主系统或辅助系统）。</block>
+  <block id="f936c9befadd0c2d8782d30172d6b01c" category="open-title">云到云</block>
+  <block id="a398547216c8a6f879cf6f1f9ece192b" category="paragraph">此图说明了云到云干净还原配置的示例。在创建 IRE 之前，请查看图表和需要配置的资源。</block>
+  <block id="e4c9c1fbddfacd425e4392d01cc2e86d" category="image-alt">云到云清理恢复示意图</block>
+  <block id="ab667ad4c2c05508cbadf5243680d8f5" category="paragraph">此图说明了本地到云端清理还原配置的示例。在创建 IRE 之前，请查看图表和需要配置的资源。</block>
+  <block id="e2089e21752dabbd3ef51ff9a49553db" category="inline-image-macro">云到本地干净恢复的图表</block>
+  <block id="e625cf867c975ae8e97fac00f8ea41e7" category="paragraph"><block ref="e625cf867c975ae8e97fac00f8ea41e7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="57983f59ac18dd6402d0d93159c0e4f3" category="paragraph">此图说明了从本地到本地干净还原配置的示例。在创建 IRE 之前，请查看图表和需要配置的资源。</block>
+  <block id="4d3cce2603ee3aa9f3e68180c988fecb" category="paragraph"><block ref="4d3cce2603ee3aa9f3e68180c988fecb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1bd140cbc0c8258678984fa95a11c4e7" category="list-text">在您选择连接到 IRE 以还原工作负载的每个系统中都会创建一个 Storage Virtual Machine (SVM)。您必须为每个系统提供一个专用 IP 地址，该地址用作洁净室 SVM 的数据 LIF。</block>
+  <block id="dddae7341366d21d7817814cf5648201" category="list-title">主机和 vCenter</block>
+  <block id="4c83fbda122cce9ae58d211347f6ad57" category="list-text">vCenter 必须是 7.0 或更高版本，并且至少有一个数据中心。</block>
+  <block id="de09cac8955fbf4a538227b1a500f1ea" category="list-text">ESXi 主机必须是 ESXi 版本 7.0 或更高版本，并且至少有一个主机具有足够的 CPU 和内存资源来克隆虚拟机。</block>
+  <block id="d60d7d94a2b0fa737cc49124079ae916" category="list-text">提供的 vCenter 凭据必须具有发现资源和克隆 VM 的权限。</block>
+  <block id="583b10215b97e432386097ad4ec74fba" category="list-title">基本 VM（Windows 或 Linux）</block>
+  <block id="8e43f7e3e1b14cfafc8b3e06e57ce8f7" category="list-text">在干净恢复过程中，基本 VM 被克隆到选定的数据中心，放置在选定的 ESXi 计算上，映射到指定的数据存储，并连接到指定的网络。当克隆 VM 时，它们被配置为具有 2 个 vCPU 和 4 GB RAM（用于 Linux 或 Windows VM）以及与基本 VM 相同的磁盘空间量。每个干净恢复会话使用给定 CIDR 范围内的两个 IP 地址。</block>
+  <block id="8cf10fd69a4fd984472b32ac076fd294" category="list-text">您必须提供足够的 IP 地址范围，以容纳多个并行的洁净室会话。恢复完成后，IP 地址将被释放。</block>
+  <block id="5de22c7c2e6d79be9397c6ce6e52329d" category="list-text">数据存储应该有足够的可用容量来容纳克隆虚拟机。</block>
+  <block id="f57c45eba65afff0aceb3a08fcbcb844" category="list-text">IP 地址范围必须以 CIDR 格式指定（例如，100.100.0.0/24）</block>
+  <block id="907c95835e464d0d2873ade7ea1a6aa0" category="list-text">对于 Linux VM：</block>
+  <block id="544db10e10ef5df6ce60a5904860672f" category="list-text">操作系统必须是 Ubuntu Linux 20.04 或更高版本。</block>
+  <block id="406c1681779df816214c3844edb2bea6" category="list-text">必须打开本地系统的电源。</block>
+  <block id="fa48228aaf71277e6bc2d05f062b62bb" category="list-text">必须安装并运行 VMware Tools。</block>
+  <block id="c3d0c72650d11485355d35484d14c0a1" category="list-text">必须启用 SSH。</block>
+  <block id="e1be34a58f3251e0469bedfad3e4788d" category="list-text">您必须已安装 nfs-common。</block>
+  <block id="bf53e61c050ee11a55b3479c83c5512f" category="list-text">必须安装并运行 Docker。</block>
+  <block id="66ed64c9284af661b30715d4eca9f181" category="list-text">您必须至少有 40 GB 的可用空间。</block>
+  <block id="300cc7d3b66cf666cb37df412b0cc68b" category="list-text">对于 Windows VM：</block>
+  <block id="21755314d24463f2d188ab45bb05c0c0" category="list-text">Windows 虚拟机应有 20 GB 可用空间。</block>
+  <block id="90d564042949a5f93242647a2eebfa5a" category="list-text">操作系统应为 Windows Server 2022 或 2025。</block>
+  <block id="f4202e7e0c5094531b708b50600cc832" category="list-text">应安装并运行 VMware Tools。</block>
+  <block id="09b7c2aa37556075a97e0692779f37aa" category="list-text">必须启用 WinRM。</block>
+  <block id="3150667c3111f1fed62e5265ad610aa2" category="list-text">应配置 IP。</block>
+  <block id="8521641d0ead625e5ab746c26c3df774" category="list-text">请确保您拥有允许克隆基本 VM 的适当许可证。</block>
+  <block id="b69e202d94775b8134a93d5f20d13c9e" category="list-text">必须打开 VM 电源。</block>
+  <block id="eec89088ee408b80387155272b113256" category="list-title">网络</block>
+  <block id="5d1a1ff59e66d0bc9d1daac52f5b90db" category="list-text">使用以下访问权限配置 VLAN 资源：</block>
+  <block id="be8545ae7ab0276e15898aae7acfbd7a" category="cell">资源</block>
+  <block id="57985bf22d56d3d5ad7e34ea170e50e1" category="cell">洁净室 SVM VLAN</block>
+  <block id="aad7ad0a3b482124ebe65e2a0d0d63f4" category="paragraph">NFS 访问：* Production Console agent * Console agent VLAN * Clean room VLAN</block>
+  <block id="8270526e73a5afac153ac40285767b82" category="cell">Console 代理 VLAN</block>
+  <block id="7cc3389e88f60e41b644c5d65d86d889" category="list-text">NFS 访问洁净室 SVM VLAN</block>
+  <block id="0ef1f9cf74002e09d29a925e45cb855e" category="list-text">对洁净室 VLAN 的 HTTP/SSH 访问</block>
+  <block id="15ab65595c9c0052c561da4d42f21b89" category="cell">洁净室 VLAN</block>
+  <block id="746b3d3a85d2d1d3c46dfac5624ebef0" category="cell">NFS 访问洁净室 SVM VLAN</block>
+  <block id="c0d06f34f409c88591b7f6400fe18f79" category="list-title">专用 Console 代理</block>
+  <block id="7ceddaa8655f37336fb68de0bd913377" category="inline-link-macro">在本地部署 Console 代理</block>
+  <block id="aa147883aef6768d6c780bb0a1c8f82b" category="list-text">为 IRE 部署专用 NetApp Console 代理。Console 代理必须部署在目标 vCenter 中，并可访问洁净室 VLAN。有关部署过程的详细信息，请参见 <block ref="8982c6b7b71ee0cfe0da7587be46f6b1" category="inline-link-macro-rx"></block>。</block>
+  <block id="fcbb0e1baa9ae5913c0059a3babc98ba" category="paragraph">在进行清洁恢复之前，您必须创建一个隔离的恢复室。</block>
+  <block id="90f9f1ae9aae8bda3367df6cbbd98883" category="paragraph">如果环境位于云端或本地，则创建隔离恢复室的过程会有所不同。请确保遵循正确位置的说明。</block>
+  <block id="c8e2277ecfb1427838c488c217f99466" category="open-title">云</block>
+  <block id="0f41fbceabc827d5c5df2618a1c312ad" category="list-text">在 Clean restores 卡中，如果这是您的第一个环境，请选择 **Configure**；如果已经创建了环境，请选择 **Manage**。</block>
+  <block id="33319874642cd9fa09af5fae9c62b0f4" category="list-text">如果这是您第一次创建 IRE，请继续下一步。</block>
+  <block id="7a5443fd9ce8d6f45236ac37568d5b41" category="paragraph">如果您已经创建了 IRE，请选择**添加**以创建另一个 IRE。</block>
+  <block id="b0836e1bf6680e789281aea3293f7647" category="list-text">对于基于云的 IRE，请选择 **Amazon Web Services**。</block>
+  <block id="4564ef7a631e6ae4e5c472323c190a1d" category="list-text">展开 **名称** 部分。为环境创建 **名称**。</block>
+  <block id="b330f48d8947ae91888a185951c00937" category="list-text">展开 *Systems* 部分。选择要连接到 IRE 的系统。对于您选择的每个系统，必须提供存储 VM 的 IP 地址、子网掩码和网关。</block>
+  <block id="9c0961645ab2dde42b360b9dd39f0dcc" category="admonition">对于部署到 Amazon FSxN for ONTAP 的 IRE，无需提供此信息。</block>
+  <block id="be33043acadffab164c32971cd856af7" category="inline-image-macro">系统选择界面的屏幕截图。</block>
+  <block id="9aa6cf1eff1a76b0409b3e752312ea85" category="paragraph"><block ref="9aa6cf1eff1a76b0409b3e752312ea85" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="89fdf1c0dc132ad5060755aed85034a8" category="list-text">展开 **Authentication** 部分。</block>
+  <block id="4714db5e444c82e9797cf1040d2e1bb4" category="list-text">输入云 **Account** ID，然后为该帐户选择 **Region**。</block>
+  <block id="3aae9af33dfbd98649b0845bbd649675" category="list-text">输入账户的 **Access key** 和 **Secret key**。</block>
+  <block id="a81c4edeb10492c8584a0c9082f6ce84" category="list-text">展开 *Virtual private cloud (VPC)* 部分。输入要部署 IRE 的 VPC ID。</block>
+  <block id="c2b8af5a06c2ce8a91c4861ae659df43" category="inline-image-macro">IRE 身份验证设置的屏幕截图。</block>
+  <block id="9a717f23235ddd79acf46b60cbb49654" category="paragraph"><block ref="9a717f23235ddd79acf46b60cbb49654" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="220e304e2191688ccb248376282d530b" category="list-text">选择 **Add** 以创建 IRE。</block>
+  <block id="f705de5bc3ba8ea79dddb837a99ebb45" category="paragraph">选择添加后，Ransomware Resilience 会测试连接，这可能需要几分钟时间。</block>
+  <block id="f0e69ccbb7ad96f546f7924206944bfa" category="open-title">内部部署</block>
+  <block id="9f1d53078d7f9d9907fb2e5042915794" category="list-text">在 Clean restores 卡中，如果这是您的第一个环境，请选择 **Add**；如果已经创建了环境，请选择 **Manage**。</block>
+  <block id="fffc61b2d6d50fdd26e57c1dc63ba3e1" category="list-text">如果这是您第一次创建 IRE，请继续下一步。如果您已创建 IRE，请选择**添加**以创建另一个 IRE。</block>
+  <block id="a32ffcf87a910c4dc1998036da51a79e" category="list-text">对于位置，选择 **On-premises**。</block>
+  <block id="de069b391b655fa33e7b553f551b3ed8" category="list-text">展开 *Name* 部分。为 IRE 分配 **Name**。</block>
+  <block id="da5888e486faa08ea3f4a546d8ea2b6b" category="list-text">展开*系统*部分。选择要连接到 IRE 的系统。为具有要在 IRE 中恢复的工作负载的每个系统分配存储 VM IP、子网掩码和网关。</block>
+  <block id="6c98e0cb0c66954d78f2191bf8fdcd90" category="paragraph">您选择的每个系统都必须具有分配的 IP 地址。您可以选择主系统或辅助系统。如果主系统没有未加密的快照或不可用，则可以使用辅助系统进行分析和恢复。</block>
+  <block id="88fd1b8a6e78502ed71683ed691e3faa" category="list-text">展开 **Console agent** 部分。从 IRE 中部署的下拉菜单中选择 Console agent。</block>
+  <block id="594222a9ce3ab2f5ea0066e3f132342d" category="list-text">展开 *Compute* 部分。</block>
+  <block id="2c164c9a5db457fb3a29bc4f36a90e11" category="list-text">提供对 vCenter 服务器进行身份验证的凭据：*IP 地址*或完全限定的域名 (FQDN)、*端口*、*用户名*和*密码*。</block>
+  <block id="dc7731af7d2a810f6507b9403958dd46" category="list-text">选择 **Authenticate** 以确认凭据。请等待 UI 确认您的凭据后再继续。</block>
+  <block id="1af5b22f428ddc58d2ad153a520e2dbb" category="list-text">选择要部署虚拟机的 *Datacenter*、*Cluster* 和 *ESXi host*。</block>
+  <block id="b3c061b4902652a5ebd7ec117faf4ac4" category="list-text">选择 ESXi 主机 *Datastore* 和 *Network*。</block>
+  <block id="653958d4d3ad99fa5fc27c03767b14a0" category="list-text">输入虚拟机的 *IP 地址范围*和*网关*。</block>
+  <block id="3c313c8ed317dbe7d4203dcdd31c8a19" category="inline-image-macro">计算选择界面的屏幕截图。</block>
+  <block id="8cae18dea7d74591e21c2f2407666e60" category="paragraph"><block ref="8cae18dea7d74591e21c2f2407666e60" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7ca860788f238da4a9c5263bd546d3d2" category="list-text">展开 *VMs* 部分，该部分根据您在 *Compute* 部分中的输入填充。选择位于 ESXi 主机上的 VM，这些 VM 将在干净还原期间用于扫描恶意软件。为您选择的每个 VM 提供 *User name* 和 *Password*。</block>
+  <block id="d7b9a49b450fb7d4116d3c4df7a11288" category="list-text">选择 **添加** 以创建 IRE。Ransomware Resilience 会在您选择添加后测试连接；此过程可能需要一段时间。</block>
+  <block id="af131a682b99e37528a95fa21be4b5cc" category="paragraph">您可以跟踪进度。在设置选项卡中，选择 **隔离恢复环境**。隔离恢复环境页面显示所有 IRE 及其状态。选择 **查看作业** 可查看与该环境相关的所有作业的详细信息。</block>
+  <block id="16a6474800dcc57e48f9c5fecf7f4b0a" category="paragraph">创建 IRE 后，您可以修改 IRE 中的系统。在设置选项卡中，选择**隔离恢复环境**。找到要编辑的 IRE，选择操作菜单<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block>然后选择**编辑**。继续修改系统。完成后选择**保存**。</block>
+  <block id="59f0ec64e6ca9eb2b145c2d0b972a631" category="section-title">删除隔离的恢复环境</block>
+  <block id="3b98dd3eb2a4ab1e4dbff3d07d4b9987" category="paragraph">您不能删除具有活动还原操作的 IRE；您可以取消还原操作或等待还原完成，然后删除 IRE。</block>
+  <block id="f9df77cbf2042ca0c84056ff5f798b3f" category="admonition">如果您删除了 IRE，它也会删除洁净室 SVM 和元数据卷。删除这些资产后，您将无法再为干净还原生成报告。</block>
+  <block id="ffbbe06f3f17d59276920755ff6ac29b" category="list-text">转至 **设置**。</block>
+  <block id="40d3ac507a7227e0481f98409e8015f7" category="list-text">在 Clean restore card 中，选择 **Manage**。</block>
+  <block id="28d6e2e82ae55c1edb64289ae5513448" category="list-text">确定要删除的无尘室。在该房间的操作菜单列中，选择三个点<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block>然后选择 **删除**。</block>
+  <block id="7c2d524886480cf4cd6bc69e0c99bb89" category="list-text">在对话框中，选择 **Delete** 以确认操作。</block>
+  <block id="f4cc881797e2311f16dfa07e4349adcc" category="doc">使用 NetApp Ransomware Resilience 中的自定义还原从勒索软件攻击中恢复</block>
+  <block id="535ddb562a8b468bf49b846735d03ed1" category="paragraph">借助 Ransomware Resilience，存储管理员可以确定如何最好地从推荐的还原点或首选还原点还原工作负载。</block>
+  <block id="bd0b37105ea52455dcd82ba55451d05f" category="inline-xref-macro">clean restore 选项</block>
+  <block id="5dcd94da76cba8e0b3c6917268a26445" category="admonition">Ransomware Resilience 还支持 <block ref="8b52cfc7bcb9ecd0048f1693353befd6" category="inline-xref-macro-rx"></block>，它提供引导式恢复和高级功能，以确保仅恢复干净和未加密的数据。</block>
+  <block id="078165d94495873b74eac3f73ef2c5c5" category="paragraph">*必需的控制台角色* 组织管理员、文件夹或项目管理员或 Ransomware protection 管理员。<block ref="c63b2c8d20974c1834bc75207be469f3" category="inline-link-macro-rx"></block>.</block>
+  <block id="4f22e7913d6404c2f4a730aca8aa04aa" category="list-text">选择 **自定义还原** 以继续，而不清理文件。</block>
+  <block id="b5909998e75bc501f2c6e00e6e19c1d6" category="section-title">检索受影响的文件列表</block>
+  <block id="186ec07a353da723ddd0689610e66577" category="admonition">如果一个卷有多个警报，则需要下载每个警报的受影响文件的 CSV 列表。</block>
+  <block id="488dd29bfedaf4a56b590ad9e2171dc8" category="section-title">还原文件</block>
+  <block id="138cbd11459ece46267adb92ab34ee1f" category="paragraph">评估受影响的文件后，您可以还原它们。</block>
+  <block id="403f4a170e2d1c03d329e0f0dd8d1b84" category="section-title">2026 年 4 月 13 日</block>
+  <block id="794c08acf0fdad83a95c363b8c9662f4" category="sidebar">查看恢复状态</block>
+  <block id="d14be6fd318be2bc44adb6224cd0309b" category="sidebar">使用干净还原进行恢复</block>
 </blocks>
