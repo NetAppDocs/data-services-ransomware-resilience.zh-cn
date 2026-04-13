@@ -2195,8 +2195,8 @@
   <block id="261f193d834ffba7dae6c54f99306659" category="list-text">转到您选择的 Splunk 环境：云或企业。</block>
   <block id="eade5cc0d987bed25c884550a681c364" category="list-text">转至 Splunk Cloud 或 Enterprise。</block>
   <block id="e4f58ddb798b11dab7791e0175f6cf0f" category="list-text">输入您在 AWS Security Hub、Splunk Cloud 或 Splunk Enterprise 中配置的令牌和身份验证详细信息。</block>
-  <block id="c49fdbd48abc0805f78e165d087f6c4b" category="admonition-title">洁净室 SVM 数据 LIF IP (crr-data-LIF-IP)</block>
-  <block id="f0778a7682182f497af90edd54b04a18" category="paragraph">如果您要配置源位于 Amazon FSxN for ONTAP 中的 IRE，请跳过此洁净室 SVM 数据 LIF IP 要求。</block>
+  <block id="c49fdbd48abc0805f78e165d087f6c4b" category="list-title">洁净室 SVM 数据 LIF IP (crr-data-LIF-IP)</block>
+  <block id="f0778a7682182f497af90edd54b04a18" category="admonition">如果您要配置源位于 Amazon FSxN for ONTAP 中的 IRE，请跳过此洁净室 SVM 数据 LIF IP 要求。</block>
   <block id="074ccc576a0d2f59ff97aa7d5cd6f1db" category="list-text">为洁净室 SVM 数据 LIF 提供 IP 地址。记下 IP 地址：在 IRE 配置过程中需要此 IP 地址。</block>
   <block id="6e72e986d17ee66e6f3fdfe4e138163d" category="list-text">对于使用云到云干净恢复的 AWS Cloud Volumes ONTAP，请确保将 IP 地址分配给弹性网络接口。</block>
   <block id="b1573f80f25470f8eb281542e0c5be32" category="list-text">允许从 SVM 数据 LIF IP 路由到 IRE。</block>
@@ -2208,7 +2208,7 @@
   <block id="f8dc77f2ac2f7272dc57dd5689ee9d63" category="cell">TCP &amp; UDP</block>
   <block id="06b1338ba02add2b5d2da67663b19ebe" category="cell">2049</block>
   <block id="48f2e8432e8385f065e192dbe2c54948" category="cell">IRE VPC CIDR 范围</block>
-  <block id="4afacf798011af530d39470f0f7302d4" category="cell">从 IRE 进行 NFSv4 访问</block>
+  <block id="4afacf798011af530d39470f0f7302d4" category="cell">从 IRE 访问 NFSv4</block>
   <block id="698d51a19d8a121ce581499d7b701668" category="cell">111</block>
   <block id="4d41b2260156687cd1e011fa25c9a1fe" category="cell">从 IRE 访问 NFSv3</block>
   <block id="6a10bbd480e4c5573d8f3af73ae0454b" category="cell">635</block>
@@ -2234,14 +2234,13 @@
   <block id="a27a472ba292f326ddc2e430f964123b" category="paragraph">Ransomware Resilience 现在支持 clean restores，这是一种新的恢复选项，可帮助您快速轻松地从勒索软件攻击中恢复。Clean restores 提供指导性工作流程，可识别最佳还原点以启动和运行您的工作负载，同时最大限度地减少停机时间。Clean restore 中的工作流程还提供对数据的文件级见解，确保您可以还原无恶意软件的工作负载，从而防止再次感染并最大限度地减少数据丢失。</block>
   <block id="86ef5018580452c81ea6cb2911275e90" category="inline-link-macro">创建隔离的恢复环境</block>
   <block id="508a286442ccdd0f0c8a02ce355b62db" category="inline-link-macro">使用干净还原恢复工作负载</block>
-  <block id="a9e75b5aa64910e787dec413e103a858" category="paragraph">要了解支持的配置以及如何配置系统以进行干净还原，请参见 <block ref="bce58762a021948ccde0fba2f5f7a845" category="inline-link-macro-rx"></block>。要了解如何使用干净还原进行恢复，请参见 <block ref="455be04ee07ce68cbcdf924300b59eba" category="inline-link-macro-rx"></block>。</block>
   <block id="1268d987cbc2b2bc1be3c9ba04af7cd1" category="section-title">Splunk Enterprise 的 SIEM 支持</block>
   <block id="8d4e1592ef4f14add49e9860e8b367dc" category="paragraph">Ransomware Resilience 现在为 Splunk Enterprise 提供安全信息事件管理 (SIEM) 支持，使您能够集中日志和事件数据，并简化威胁分析和检测。</block>
-  <block id="c81c8aac6cfb1c5f690b914eda6a69fd" category="inline-link-macro">将 Ransomware Resilience 连接到 SIEM</block>
-  <block id="dbdca0e081ed0b247153e35ce9b1c298" category="paragraph">有关详细信息，请参见<block ref="d02df671c233387bf6b644be94acfdf7" category="inline-link-macro-rx"></block>。</block>
+  <block id="c81c8aac6cfb1c5f690b914eda6a69fd" category="inline-link-macro">将勒索软件弹性连接到 SIEM</block>
+  <block id="dbdca0e081ed0b247153e35ce9b1c298" category="paragraph">有关详细信息，请参见 <block ref="d02df671c233387bf6b644be94acfdf7" category="inline-link-macro-rx"></block>。</block>
   <block id="54dee0adf9652288315f3c7099d462be" category="section-title">用户行为活动增强</block>
   <block id="7ee4b3a8392885d95b1b7c9f5a6c99e5" category="paragraph">对数据泄露事件的洞察现在可以在事件发生后保留 13 个月，从而可以根据您的报告需求进行更长时间的记录保存。</block>
-  <block id="787e93d4c2f472a6434cd13d74f3f4d4" category="paragraph">有关详细信息，请参见<block ref="1a6935dbce91cdb72e61e2f8c1313b36" category="inline-link-macro-rx"></block>。</block>
+  <block id="787e93d4c2f472a6434cd13d74f3f4d4" category="paragraph">有关详细信息，请参见 <block ref="1a6935dbce91cdb72e61e2f8c1313b36" category="inline-link-macro-rx"></block>。</block>
   <block id="ff1d8a11789570b9a7e5f2d8fa4b3245" category="list-text">如果尚未为其他服务添加 Console 代理，请 <block ref="51497621bfe4b6ebf6d24d0214cc9366" category="inline-link-macro-rx"></block>。</block>
   <block id="5ce927453063236746bf9f7b1ee339ed" category="list-text">选择 *Add license* 转到 Console Licenses and subscriptions 页面。</block>
   <block id="5aacdcc38fb6938e8f7950fb8e5395fc" category="doc">在 NetApp Ransomware Resilience 中查看恢复状态</block>
@@ -2269,7 +2268,7 @@
   <block id="68a63568bae8b1136a4d6ed86a9df817" category="paragraph">在执行干净还原之前，您必须已配置 <block ref="e6b9ac27e9d8426eab4ef45db03a98fc" category="inline-link-macro-rx"></block>。</block>
   <block id="ea61e2c2ff507048203824add1eb7c21" category="section-title">注意事项</block>
   <block id="8a687ede20b3179501211e222eccc84d" category="section-title">执行干净还原</block>
-  <block id="7d3fcc28c899a7b289e05e013aad4dc6" category="list-text">在 **恢复** 部分，选择要还原的工作负载。选择 **还原**。</block>
+  <block id="7d3fcc28c899a7b289e05e013aad4dc6" category="list-text">在 **恢复** 部分，选择要还原的工作负载。选择 **Restore**。</block>
   <block id="9c5ec70f60ca9ceaf825ce83f9bd4bac" category="list-text">在 Restore Type 选项中，依次选择 **Clean restore** 和 **Next**。</block>
   <block id="b57d941a4d6ae6c8309974df2602afd1" category="list-text">选择要使用的隔离恢复环境，然后选择 **下一步**。</block>
   <block id="d58c5ad1de11a448129ae415c7bf9504" category="list-text">查看隔离的恢复环境，确认其位置正确。选择 **Restore**。</block>
@@ -2389,20 +2388,19 @@
   <block id="c8e2277ecfb1427838c488c217f99466" category="open-title">云</block>
   <block id="0f41fbceabc827d5c5df2618a1c312ad" category="list-text">在 Clean restores 卡中，如果这是您的第一个环境，请选择 **Configure**；如果已经创建了环境，请选择 **Manage**。</block>
   <block id="33319874642cd9fa09af5fae9c62b0f4" category="list-text">如果这是您第一次创建 IRE，请继续下一步。</block>
-  <block id="7a5443fd9ce8d6f45236ac37568d5b41" category="paragraph">如果您已经创建了 IRE，请选择**添加**以创建另一个 IRE。</block>
+  <block id="7a5443fd9ce8d6f45236ac37568d5b41" category="paragraph">如果您已创建 IRE，请选择**添加**以创建另一个 IRE。</block>
   <block id="b0836e1bf6680e789281aea3293f7647" category="list-text">对于基于云的 IRE，请选择 **Amazon Web Services**。</block>
   <block id="4564ef7a631e6ae4e5c472323c190a1d" category="list-text">展开 **名称** 部分。为环境创建 **名称**。</block>
-  <block id="b330f48d8947ae91888a185951c00937" category="list-text">展开 *Systems* 部分。选择要连接到 IRE 的系统。对于您选择的每个系统，必须提供存储 VM 的 IP 地址、子网掩码和网关。</block>
+  <block id="b330f48d8947ae91888a185951c00937" category="list-text">展开*系统*部分。选择要连接到 IRE 的系统。对于您选择的每个系统，必须提供存储 VM 的 IP 地址、子网掩码和网关。</block>
   <block id="9c0961645ab2dde42b360b9dd39f0dcc" category="admonition">对于部署到 Amazon FSxN for ONTAP 的 IRE，无需提供此信息。</block>
   <block id="be33043acadffab164c32971cd856af7" category="inline-image-macro">系统选择界面的屏幕截图。</block>
   <block id="9aa6cf1eff1a76b0409b3e752312ea85" category="paragraph"><block ref="9aa6cf1eff1a76b0409b3e752312ea85" category="inline-image-macro-rx" type="image"></block></block>
   <block id="89fdf1c0dc132ad5060755aed85034a8" category="list-text">展开 **Authentication** 部分。</block>
   <block id="4714db5e444c82e9797cf1040d2e1bb4" category="list-text">输入云 **Account** ID，然后为该帐户选择 **Region**。</block>
-  <block id="3aae9af33dfbd98649b0845bbd649675" category="list-text">输入账户的 **Access key** 和 **Secret key**。</block>
   <block id="a81c4edeb10492c8584a0c9082f6ce84" category="list-text">展开 *Virtual private cloud (VPC)* 部分。输入要部署 IRE 的 VPC ID。</block>
   <block id="c2b8af5a06c2ce8a91c4861ae659df43" category="inline-image-macro">IRE 身份验证设置的屏幕截图。</block>
   <block id="9a717f23235ddd79acf46b60cbb49654" category="paragraph"><block ref="9a717f23235ddd79acf46b60cbb49654" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="220e304e2191688ccb248376282d530b" category="list-text">选择 **Add** 以创建 IRE。</block>
+  <block id="220e304e2191688ccb248376282d530b" category="list-text">选择 **添加** 以创建 IRE。</block>
   <block id="f705de5bc3ba8ea79dddb837a99ebb45" category="paragraph">选择添加后，Ransomware Resilience 会测试连接，这可能需要几分钟时间。</block>
   <block id="f0e69ccbb7ad96f546f7924206944bfa" category="open-title">内部部署</block>
   <block id="9f1d53078d7f9d9907fb2e5042915794" category="list-text">在 Clean restores 卡中，如果这是您的第一个环境，请选择 **Add**；如果已经创建了环境，请选择 **Manage**。</block>
@@ -2422,7 +2420,7 @@
   <block id="8cae18dea7d74591e21c2f2407666e60" category="paragraph"><block ref="8cae18dea7d74591e21c2f2407666e60" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7ca860788f238da4a9c5263bd546d3d2" category="list-text">展开 *VMs* 部分，该部分根据您在 *Compute* 部分中的输入填充。选择位于 ESXi 主机上的 VM，这些 VM 将在干净还原期间用于扫描恶意软件。为您选择的每个 VM 提供 *User name* 和 *Password*。</block>
   <block id="d7b9a49b450fb7d4116d3c4df7a11288" category="list-text">选择 **添加** 以创建 IRE。Ransomware Resilience 会在您选择添加后测试连接；此过程可能需要一段时间。</block>
-  <block id="af131a682b99e37528a95fa21be4b5cc" category="paragraph">您可以跟踪进度。在设置选项卡中，选择 **隔离恢复环境**。隔离恢复环境页面显示所有 IRE 及其状态。选择 **查看作业** 可查看与该环境相关的所有作业的详细信息。</block>
+  <block id="af131a682b99e37528a95fa21be4b5cc" category="paragraph">您可以跟踪进度。在设置选项卡中，选择**隔离恢复环境**。隔离恢复环境页面显示所有 IRE 及其状态。选择 **查看作业** 可查看与该环境相关的所有作业的详细信息。</block>
   <block id="16a6474800dcc57e48f9c5fecf7f4b0a" category="paragraph">创建 IRE 后，您可以修改 IRE 中的系统。在设置选项卡中，选择**隔离恢复环境**。找到要编辑的 IRE，选择操作菜单<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block>然后选择**编辑**。继续修改系统。完成后选择**保存**。</block>
   <block id="59f0ec64e6ca9eb2b145c2d0b972a631" category="section-title">删除隔离的恢复环境</block>
   <block id="3b98dd3eb2a4ab1e4dbff3d07d4b9987" category="paragraph">您不能删除具有活动还原操作的 IRE；您可以取消还原操作或等待还原完成，然后删除 IRE。</block>
@@ -2444,4 +2442,8 @@
   <block id="403f4a170e2d1c03d329e0f0dd8d1b84" category="section-title">2026 年 4 月 13 日</block>
   <block id="794c08acf0fdad83a95c363b8c9662f4" category="sidebar">查看恢复状态</block>
   <block id="d14be6fd318be2bc44adb6224cd0309b" category="sidebar">使用干净还原进行恢复</block>
+  <block id="6ff288c704ac97afbc67708bc23dbc09" category="paragraph">要了解支持的配置以及如何配置系统以进行干净还原，请参见 <block ref="bce58762a021948ccde0fba2f5f7a845" category="inline-link-macro-rx"></block>。要了解如何使用干净还原进行恢复，请参见 <block ref="c39fc221f9e8d680274efcf9f5170bf4" category="inline-link-macro-rx"></block>。</block>
+  <block id="482b73c713ea8cffc3070c798b03badc" category="open-title">本地到云</block>
+  <block id="8880534a0e139c017e28bbf6bc44e84b" category="open-title">本地到本地</block>
+  <block id="9df5336cadaa8da9a21a00f3f55c497b" category="list-text">输入帐户的 **Access key** 和 **Secret key**。</block>
 </blocks>
