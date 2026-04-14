@@ -2262,8 +2262,6 @@
   <block id="6099697e2a6a8f6f3f428d832424ccd8" category="summary">Ransomware Resilience 使您能够通过干净恢复来控制和消毒您的工作负载。</block>
   <block id="6a9e29e376d0cfeb3458eb2ec0d368c2" category="doc">使用 NetApp Ransomware Resilience 中的干净恢复功能恢复工作负载</block>
   <block id="f0b90fa8f5ad3bdcf7ca0566043b0bc7" category="paragraph">借助 NetApp Ransomware Resilience，您可以使用干净还原在基于加密的勒索软件攻击后执行引导式恢复。干净还原可识别优化的恢复路径，以最大限度地减少数据丢失，并在尽可能短的时间内在线恢复工作负载。</block>
-  <block id="88616a0b3339c4c7896bc89637623c8c" category="inline-xref-macro">自定义还原选项</block>
-  <block id="335671c274748cbe7e810da4fb09ee39" category="paragraph">"清除还原"选项是 <block ref="7505fe57dac9c850bacebdaf9c5d9534" category="inline-xref-macro-rx"></block> 的替代方案。</block>
   <block id="563d648fca7174bd637bc7553ffbdfd5" category="inline-link-macro">隔离恢复环境</block>
   <block id="68a63568bae8b1136a4d6ed86a9df817" category="paragraph">在执行干净还原之前，您必须已配置 <block ref="e6b9ac27e9d8426eab4ef45db03a98fc" category="inline-link-macro-rx"></block>。</block>
   <block id="ea61e2c2ff507048203824add1eb7c21" category="section-title">注意事项</block>
@@ -2287,7 +2285,6 @@
   <block id="bb48b2870670838fdaceecb7e839faf4" category="list-text">选择 **Start recovery** 以启动恢复。</block>
   <block id="6f442695db7c03fcadf2ad5e394da170" category="list-text">恢复完成后，选择 **Next** 进入最后阶段。</block>
   <block id="c40ef494fde6d59a18088598fb50e5f5" category="list-text">选择 **Release resources and end** 以释放资源并关闭洁净室。要确认是否要释放资源，请选择 **End**。</block>
-  <block id="ce9ea3f9da32231f2342106b6a2da0c1" category="doc">在 NetApp Ransomware Resilience 中配置干净恢复环境</block>
   <block id="d08d6f8d7a531831181b973c3132aaef" category="paragraph">NetApp Ransomware Resilience 提供干净的恢复，在勒索软件攻击后提供引导式恢复。要执行全新还原，您必须首先在内部或受支持的云环境中创建隔离恢复环境 (IRE)。在 IRE 中，您创建了一个无尘室，Ransomware Resilience 会在其中隔离工作负载，以识别哪些文件是干净的，哪些文件受到勒索软件的影响。</block>
   <block id="f6ee05d779160a7db74d926e2bb640f7" category="section-title">了解干净还原</block>
   <block id="ae684a367ef7be289c58528c425ecc18" category="paragraph">当您执行干净恢复时，Ransomware Resilience 将引导您完成优化恢复的多步骤流程。</block>
@@ -2386,25 +2383,18 @@
   <block id="fcbb0e1baa9ae5913c0059a3babc98ba" category="paragraph">在进行清洁恢复之前，您必须创建一个隔离的恢复室。</block>
   <block id="90f9f1ae9aae8bda3367df6cbbd98883" category="paragraph">如果环境位于云端或本地，则创建隔离恢复室的过程会有所不同。请确保遵循正确位置的说明。</block>
   <block id="c8e2277ecfb1427838c488c217f99466" category="open-title">云</block>
-  <block id="0f41fbceabc827d5c5df2618a1c312ad" category="list-text">在 Clean restores 卡中，如果这是您的第一个环境，请选择 **Configure**；如果已经创建了环境，请选择 **Manage**。</block>
-  <block id="33319874642cd9fa09af5fae9c62b0f4" category="list-text">如果这是您第一次创建 IRE，请继续下一步。</block>
-  <block id="7a5443fd9ce8d6f45236ac37568d5b41" category="paragraph">如果您已创建 IRE，请选择**添加**以创建另一个 IRE。</block>
   <block id="b0836e1bf6680e789281aea3293f7647" category="list-text">对于基于云的 IRE，请选择 **Amazon Web Services**。</block>
-  <block id="4564ef7a631e6ae4e5c472323c190a1d" category="list-text">展开 **名称** 部分。为环境创建 **名称**。</block>
   <block id="b330f48d8947ae91888a185951c00937" category="list-text">展开*系统*部分。选择要连接到 IRE 的系统。对于您选择的每个系统，必须提供存储 VM 的 IP 地址、子网掩码和网关。</block>
   <block id="9c0961645ab2dde42b360b9dd39f0dcc" category="admonition">对于部署到 Amazon FSxN for ONTAP 的 IRE，无需提供此信息。</block>
   <block id="be33043acadffab164c32971cd856af7" category="inline-image-macro">系统选择界面的屏幕截图。</block>
   <block id="9aa6cf1eff1a76b0409b3e752312ea85" category="paragraph"><block ref="9aa6cf1eff1a76b0409b3e752312ea85" category="inline-image-macro-rx" type="image"></block></block>
   <block id="89fdf1c0dc132ad5060755aed85034a8" category="list-text">展开 **Authentication** 部分。</block>
-  <block id="4714db5e444c82e9797cf1040d2e1bb4" category="list-text">输入云 **Account** ID，然后为该帐户选择 **Region**。</block>
   <block id="a81c4edeb10492c8584a0c9082f6ce84" category="list-text">展开 *Virtual private cloud (VPC)* 部分。输入要部署 IRE 的 VPC ID。</block>
   <block id="c2b8af5a06c2ce8a91c4861ae659df43" category="inline-image-macro">IRE 身份验证设置的屏幕截图。</block>
   <block id="9a717f23235ddd79acf46b60cbb49654" category="paragraph"><block ref="9a717f23235ddd79acf46b60cbb49654" category="inline-image-macro-rx" type="image"></block></block>
   <block id="220e304e2191688ccb248376282d530b" category="list-text">选择 **添加** 以创建 IRE。</block>
-  <block id="f705de5bc3ba8ea79dddb837a99ebb45" category="paragraph">选择添加后，Ransomware Resilience 会测试连接，这可能需要几分钟时间。</block>
   <block id="f0e69ccbb7ad96f546f7924206944bfa" category="open-title">内部部署</block>
   <block id="9f1d53078d7f9d9907fb2e5042915794" category="list-text">在 Clean restores 卡中，如果这是您的第一个环境，请选择 **Add**；如果已经创建了环境，请选择 **Manage**。</block>
-  <block id="fffc61b2d6d50fdd26e57c1dc63ba3e1" category="list-text">如果这是您第一次创建 IRE，请继续下一步。如果您已创建 IRE，请选择**添加**以创建另一个 IRE。</block>
   <block id="a32ffcf87a910c4dc1998036da51a79e" category="list-text">对于位置，选择 **On-premises**。</block>
   <block id="de069b391b655fa33e7b553f551b3ed8" category="list-text">展开 *Name* 部分。为 IRE 分配 **Name**。</block>
   <block id="da5888e486faa08ea3f4a546d8ea2b6b" category="list-text">展开*系统*部分。选择要连接到 IRE 的系统。为具有要在 IRE 中恢复的工作负载的每个系统分配存储 VM IP、子网掩码和网关。</block>
@@ -2413,21 +2403,14 @@
   <block id="594222a9ce3ab2f5ea0066e3f132342d" category="list-text">展开 *Compute* 部分。</block>
   <block id="2c164c9a5db457fb3a29bc4f36a90e11" category="list-text">提供对 vCenter 服务器进行身份验证的凭据：*IP 地址*或完全限定的域名 (FQDN)、*端口*、*用户名*和*密码*。</block>
   <block id="dc7731af7d2a810f6507b9403958dd46" category="list-text">选择 **Authenticate** 以确认凭据。请等待 UI 确认您的凭据后再继续。</block>
-  <block id="1af5b22f428ddc58d2ad153a520e2dbb" category="list-text">选择要部署虚拟机的 *Datacenter*、*Cluster* 和 *ESXi host*。</block>
-  <block id="b3c061b4902652a5ebd7ec117faf4ac4" category="list-text">选择 ESXi 主机 *Datastore* 和 *Network*。</block>
-  <block id="653958d4d3ad99fa5fc27c03767b14a0" category="list-text">输入虚拟机的 *IP 地址范围*和*网关*。</block>
   <block id="3c313c8ed317dbe7d4203dcdd31c8a19" category="inline-image-macro">计算选择界面的屏幕截图。</block>
   <block id="8cae18dea7d74591e21c2f2407666e60" category="paragraph"><block ref="8cae18dea7d74591e21c2f2407666e60" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7ca860788f238da4a9c5263bd546d3d2" category="list-text">展开 *VMs* 部分，该部分根据您在 *Compute* 部分中的输入填充。选择位于 ESXi 主机上的 VM，这些 VM 将在干净还原期间用于扫描恶意软件。为您选择的每个 VM 提供 *User name* 和 *Password*。</block>
-  <block id="d7b9a49b450fb7d4116d3c4df7a11288" category="list-text">选择 **添加** 以创建 IRE。Ransomware Resilience 会在您选择添加后测试连接；此过程可能需要一段时间。</block>
-  <block id="af131a682b99e37528a95fa21be4b5cc" category="paragraph">您可以跟踪进度。在设置选项卡中，选择**隔离恢复环境**。隔离恢复环境页面显示所有 IRE 及其状态。选择 **查看作业** 可查看与该环境相关的所有作业的详细信息。</block>
   <block id="16a6474800dcc57e48f9c5fecf7f4b0a" category="paragraph">创建 IRE 后，您可以修改 IRE 中的系统。在设置选项卡中，选择**隔离恢复环境**。找到要编辑的 IRE，选择操作菜单<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block>然后选择**编辑**。继续修改系统。完成后选择**保存**。</block>
   <block id="59f0ec64e6ca9eb2b145c2d0b972a631" category="section-title">删除隔离的恢复环境</block>
   <block id="3b98dd3eb2a4ab1e4dbff3d07d4b9987" category="paragraph">您不能删除具有活动还原操作的 IRE；您可以取消还原操作或等待还原完成，然后删除 IRE。</block>
   <block id="f9df77cbf2042ca0c84056ff5f798b3f" category="admonition">如果您删除了 IRE，它也会删除洁净室 SVM 和元数据卷。删除这些资产后，您将无法再为干净还原生成报告。</block>
   <block id="ffbbe06f3f17d59276920755ff6ac29b" category="list-text">转至 **设置**。</block>
   <block id="40d3ac507a7227e0481f98409e8015f7" category="list-text">在 Clean restore card 中，选择 **Manage**。</block>
-  <block id="28d6e2e82ae55c1edb64289ae5513448" category="list-text">确定要删除的无尘室。在该房间的操作菜单列中，选择三个点<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block>然后选择 **删除**。</block>
   <block id="7c2d524886480cf4cd6bc69e0c99bb89" category="list-text">在对话框中，选择 **Delete** 以确认操作。</block>
   <block id="f4cc881797e2311f16dfa07e4349adcc" category="doc">使用 NetApp Ransomware Resilience 中的自定义还原从勒索软件攻击中恢复</block>
   <block id="535ddb562a8b468bf49b846735d03ed1" category="paragraph">借助 Ransomware Resilience，存储管理员可以确定如何最好地从推荐的还原点或首选还原点还原工作负载。</block>
@@ -2446,4 +2429,20 @@
   <block id="482b73c713ea8cffc3070c798b03badc" category="open-title">本地到云</block>
   <block id="8880534a0e139c017e28bbf6bc44e84b" category="open-title">本地到本地</block>
   <block id="9df5336cadaa8da9a21a00f3f55c497b" category="list-text">输入帐户的 **Access key** 和 **Secret key**。</block>
+  <block id="2717d5efc491d88d4fc433e4af820d74" category="summary">在 NetApp Ransomware Resilience 中进行清洁恢复之前，您必须创建一个隔离的恢复环境来隔离和清洁环境。</block>
+  <block id="d58e1a84905920b61ed4f1f26262aeb9" category="doc">在 NetApp Ransomware Resilience 中配置环境以进行干净恢复</block>
+  <block id="48b395c83fb3667e93231c09593be027" category="list-text">在 Clean restore card 中，选择 **Add** 以创建独立的恢复环境。</block>
+  <block id="105f7259b2dc81485c4baf296e55aec5" category="list-text">展开 **名称** 部分。输入环境的 **名称**。</block>
+  <block id="2eda5a6118ec15220cd7332a61e3afa7" category="list-text">输入云 **Account** ID，然后从下拉菜单中选择该账户的 **Region**。您只能在受支持的区域中部署 IRE。</block>
+  <block id="8a6858555f085685f5bb427c4dbd4219" category="paragraph">选择添加后，Ransomware Resilience 会测试连接，这可能需要几分钟的时间。当 IRE 的状态显示为"已部署"时，IRE 已成功部署。</block>
+  <block id="72fe6d9d17dfd2ab74965b68d4ad7d09" category="list-text">选择要部署 VM 的 *Datacenter* 和 *Cluster*。</block>
+  <block id="3e00060a376e7413a4ebadfd06157d94" category="list-text">为 ESXi 主机选择*数据存储区*和*网络*。</block>
+  <block id="30329b19b858d26d073ea4ab5feeed6f" category="list-text">为虚拟机输入 CIDR 格式的 *IP 地址范围*（例如 10.0.0.1/24）、*子网掩码*和*网关*。</block>
+  <block id="5e4a4c67d9b9212d3f7d2d36cd4be2de" category="list-text">展开 *VMs* 部分，该部分根据您在 *Compute* 部分中的输入填充。</block>
+  <block id="1a65a52eeaaaf2a882bf42fa7b872483" category="list-text">对于 Ransomware Resilience 用于扫描勒索软件的 Linux VM，请从下拉菜单中选择 VM，然后输入 VM 的*用户名*和*密码*。</block>
+  <block id="3c4a04ceaab48b61f17ab0bd613644c0" category="list-text">对于用于扫描的 Windows VM，请从下拉菜单中选择 VM，然后输入 VM 的*用户名*和*密码*。</block>
+  <block id="13291e241521a2260f7ae5746544e195" category="list-text">选择 **Add** 创建 IRE。选择添加后，Ransomware Resilience 会测试连接；此过程可能需要几分钟。当 IRE 的状态显示为"deployed"时，IRE 已成功部署。</block>
+  <block id="8d81ff5c5b48d23cce9332dd984632b4" category="paragraph">您可以跟踪进度。在设置选项卡中，选择**隔离恢复环境**。隔离恢复环境页面显示 IRE 及其状态。选择**查看作业**可查看与该环境相关的所有作业详情。</block>
+  <block id="4f9ce9d8880d6bdd44ed37068e5fb560" category="admonition">如果您需要更改 IRE 的任何详细信息，请从 Ransomware Resilience 侧栏中选择 *Settings*，然后在 Clean restore card 中选择 **Manage**。选择 IRE 的操作菜单，然后选择 **Edit** 以更改配置。</block>
+  <block id="b84cf7acbf3f47154038369f7661d257" category="list-text">确定要删除的无尘室。选择 IRE 的操作菜单 <block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>），然后选择**删除**。</block>
 </blocks>
