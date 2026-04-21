@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-start-licenses.html 
 keywords: bluexp license, ransomware protection license, netapp console 
-summary: 确保您满足勒索软件恢复的许可要求，以保护您的系统和工作负载。 
+summary: 确保您满足 Ransomware Resilience 的许可要求，以保护您的工作负载。 
 ---
 = 设置NetApp Ransomware Resilience的许可
 :hardbreaks:
