@@ -2178,7 +2178,6 @@
   <block id="b1573f80f25470f8eb281542e0c5be32" category="list-text">允许从 SVM 数据 LIF IP 路由到 IRE。</block>
   <block id="9c9dab37f0ac19e3e253ffd75559fad6" category="list-title">生产环境路由表</block>
   <block id="17e68097ee762fecf78b9e9fdb36d0c8" category="list-text">生产路由表必须允许从 IRE 子网到干净还原数据 LIF IP 的流量。您必须将此路由添加到生产路由表中。</block>
-  <block id="673c05ce31cb0b56b8af3c9126f1cbb0" category="list-text">生产 ONTAP 群集上的安全组和防火墙应允许 NFSv4 和 NFSv3 入站流量到干净还原数据 LIF IP。防火墙应对来自 IRE CIDR 范围的入口打开：</block>
   <block id="7c1a5f175cfc657a18de4a95621d74e3" category="cell">目标端口</block>
   <block id="261addf78c7b2c961032b3dd08ba0b1f" category="cell">目的</block>
   <block id="f8dc77f2ac2f7272dc57dd5689ee9d63" category="cell">TCP &amp; UDP</block>
@@ -2457,4 +2456,6 @@
   <block id="6d008767b6b1ed8f9bb99930968157ff" category="summary">确保您满足 Ransomware Resilience 的许可要求，以保护您的工作负载。</block>
   <block id="360e5892ccf9a138fa1f7477e6e2db92" category="list-text">如果这是您第一次使用 Ransomware Resilience，<block ref="f19bbe7d2dbc45b6f2a3e4d9d3615c0f" category="inline-link-macro-rx"></block>。</block>
   <block id="df3fb79f22fd0d8a496bd6ab0f7fcb62" category="sidebar">NetApp Ransomware Resilience 可保护、检测并支持从本地和云存储中的勒索软件威胁中恢复工作负载。Ransomware Resilience 可实现安全备份和恢复，帮助组织保护关键数据并维护 Oracle、虚拟机数据存储、NAS 存储等的业务连续性。</block>
+  <block id="d75c1a5d668e6fb6360954c43259df75" category="list-title">IRE 防火墙</block>
+  <block id="93222c59d4ce3b5c19ed433527efc1b4" category="list-text">您应该创建一个单独的防火墙来管理 crr-data-LIF-IP 的入口。此防火墙应允许从 IRE VPC CIDR 范围进行 NFSv3 和 NFSv4 装载。</block>
 </blocks>
