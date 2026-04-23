@@ -32,8 +32,6 @@
   <block id="5148a0988dead45b54188f22121bb178" category="paragraph">现在，您可以使用 Microsoft Sentinel 将数据发送到安全和事件管理系统 (SIEM) 以进行威胁分析和检测。以前，您可以选择 AWS Security Hub 或 Splunk Cloud 作为您的 SIEM。</block>
   <block id="178324624f63d3f322bedd1a0cf9e6fc" category="section-title">立即免费试用 30 天</block>
   <block id="31e5266d7eefb6e39e445571b556a4b6" category="paragraph">随着此版本的发布， BlueXP ransomware protection的新部署现在有 30 天的免费试用期。此前， BlueXP ransomware protection提供 90 天的免费试用。如果您已享受 90 天免费试用，则该优惠将持续 90 天。</block>
-  <block id="131dcf966228f0c4a90e6e64618c8def" category="section-title">在文件级别恢复 Podman 的应用程序工作负载</block>
-  <block id="b4a1818e2de3da83b0e71c710c96525c" category="paragraph">在文件级别恢复应用程序工作负载之前，您现在可以查看可能受到攻击影响的文件列表并确定要恢复的文件。以前，如果组织（以前是帐户）中的BlueXP连接器正在使用 Podman，则此功能将被禁用。它现在已为 Podman 启用。您可以让BlueXP ransomware protection选择要恢复的文件，您可以上传列出受警报影响的所有文件的 CSV 文件，或者您可以手动识别要恢复的文件。</block>
   <block id="f013b90a0fd96db59795b7cb0b9d2d1b" category="inline-link">了解有关从勒索软件攻击中恢复的更多信息</block>
   <block id="5b647f592bce019e9ea00dd644f72e0d" category="paragraph"><block ref="3233a18d80c5120d82dff0bcc15fb4c4" category="inline-link-rx"></block> 。</block>
   <block id="e6ecd439699f8fefa13e20f9536a72a6" category="doc">使用Data Infrastructure Insights存储工作负载安全检测异常用户行为</block>
@@ -153,7 +151,6 @@
   <block id="e1e21525512158b10d87c17fe3eb8be1" category="list-text">*最外层*：这是使用防火墙、入侵检测系统和虚拟专用网络来保护网络边界的第一道防线。</block>
   <block id="3d919b06a70d926da258dcac0b1b3567" category="list-text">*网络安全*：这一层建立在网络分段、流量监控和加密的基础上。</block>
   <block id="de44ea881a9fa5d914b559d9ddf154c6" category="list-text">*身份安全*：使用身份验证方法、访问控制和身份管理来确保只有授权用户才能访问敏感资源。</block>
-  <block id="1fd649bf08bafaf5cfd51a70ba2289a5" category="list-text">*应用程序安全*：使用安全编码实践、安全测试和运行时应用程序自我保护来保护软件应用程序。</block>
   <block id="db8257db6100fdc78f6b256a62675d51" category="list-text">*数据安全*：通过数据保护、备份和恢复策略保护您的数据。勒索软件恢复力在此层上运行。</block>
   <block id="9dde44b4554f7832d0e00963746f8f42" category="inline-image-macro">安全层图</block>
   <block id="58cc8c9025afc05f9ee4dee0439c8c7d" category="paragraph"><block ref="58cc8c9025afc05f9ee4dee0439c8c7d" category="inline-image-macro-rx" type="image"></block></block>
@@ -205,7 +202,6 @@
   <block id="b1d747ad7060df692913a3b8e839735e" category="list-text">使用NetApp技术和产品（例如ONTAP、自主勒索软件防护（ARP 或 ARP/AI，取决于您的ONTAP版本）和 FPolicy）启动快速快照副本。</block>
   <block id="5fefe6c4ada89d95390ae77eba79e7db" category="cell">*恢复*</block>
   <block id="059d032d5bb8125e3e1681f7d9ce6023" category="list-text">通过使用备份和恢复、 ONTAP、自主勒索软件防护（ARP 或 ARP/AI，取决于您的ONTAP版本）以及 FPolicy 技术和服务，确定最佳快照或备份并推荐最佳恢复点实际 (RPA)。</block>
-  <block id="26871f0800751ffb8b48674992b42dfe" category="list-text">协调包括虚拟机、文件共享、块存储和数据库在内的工作负载的恢复，并保持应用程序的一致性。</block>
   <block id="4ddd3abee434eb92eb13e6cac3e1ad1d" category="cell">*治理*</block>
   <block id="cc4378b1dc9af2e69cb13a88397e2aa7" category="list-text">分配勒索软件保护策略</block>
   <block id="90d096ff0013c9c2874a247b26e69950" category="list-text">帮助您监控结果。</block>
@@ -215,10 +211,7 @@
   <block id="5c9ef0d871938dccceb29ee63fad8ddb" category="list-text">Google Cloud Platform</block>
   <block id="6a51ed7bcacdfb13f78abc1e0f69c201" category="list-text">微软 Azure Blob</block>
   <block id="55cf1a0f0fce69fd543500e5761dd26d" category="list-text">NetAppStorageGRID</block>
-  <block id="2fd51284279972a6a1390536b053f3c3" category="paragraph">勒索软件恢复能力可保护主数据卷上的以下基于应用程序的工作负载：</block>
-  <block id="ffc184891768c331383cd53bcd1bc968" category="list-text">NetApp文件共享</block>
   <block id="4f0550f066ae72bb8c24fc3f59c323bf" category="list-text">块存储</block>
-  <block id="ed11408803c4c1aca5fbebbc43d88458" category="list-text">VMware 数据存储区</block>
   <block id="77460e2b891748333455193aadd137d8" category="paragraph">了解一些与勒索软件保护相关的术语可能会对您有所帮助。</block>
   <block id="826a4e8d8facce6f785b2a404538e6cd" category="list-text">*保护*：勒索软件恢复中的保护意味着确保使用保护策略定期在不同的安全域中进行快照和不可变备份。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律声明</block>
@@ -609,10 +602,8 @@
   <block id="cae6793a9f947fdb33e9ebb9c2913794" category="inline-image-macro">警报编辑状态页面</block>
   <block id="e6fe1dbe41a0d14f05208f5ee0593783" category="paragraph"><block ref="e6fe1dbe41a0d14f05208f5ee0593783" category="inline-image-macro-rx" type="image"></block></block>
   <block id="03449fca76164b6dcb5b9e314b4a5c2b" category="section-title">查看受影响文件的列表</block>
-  <block id="0fd4c032e8d9638089eca51930a25305" category="paragraph">在文件级别恢复应用程序工作负载之前，您可以查看受影响文件的列表。您可以访问警报页面下载受影响文件的列表。然后使用恢复页面上传列表并选择要恢复的文件。</block>
   <block id="6162015141ec2e05b3da3316c594dc7a" category="paragraph">使用“警报”页面检索受影响文件的列表。</block>
   <block id="adb36d0a41dcf531bb715bb815c75586" category="admonition">如果某个卷有多个警报，您可能需要下载每个警报的受影响文件的 CSV 列表。</block>
-  <block id="eab85082296138dfa241a48f81820ee9" category="list-text">在“警报”页面上，按工作负载对结果进行排序，以显示要恢复的应用程序工作负载的警报。</block>
   <block id="4901f4d01c8a64589f2641ea221c79ee" category="list-text">从该工作负载的警报列表中选择一个警报。</block>
   <block id="020c63db3b1b6d893f5b8e59d6f4f282" category="list-text">对于该警报，选择一个事件。</block>
   <block id="3da0517dff453f03b4448de6079af196" category="inline-image-macro">特定警报的受影响文件列表</block>
@@ -657,8 +648,6 @@
   <block id="8db2e9b654cd93f28beeae96f827c30a" category="cell">增加保留、添加备份、强制执行不可变备份、阻止可疑文件扩展名、启用二级存储检测等。请参阅<block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block> 。</block>
   <block id="a3b50e444d5d5789130de78ddb2b3e45" category="cell">准备 &lt;备份提供商&gt; 作为备份目标来备份您的工作负载数据。</block>
   <block id="e08278c8217792f95a8bc1de9c7a7d8b" category="cell">工作负载目前没有任何备份目标。</block>
-  <block id="3b4633f78219c68314768337af8968bf" category="cell">保护关键或高度重要的应用程序工作负载免受勒索软件的攻击。</block>
-  <block id="9c592743fe6a292e0be5b9e6343dc1ba" category="cell">保护页面显示未受保护的关键或高度重要（基于分配的优先级）应用程序工作负载。</block>
   <block id="1f03c05bf6e65a368653bb061f47d41c" category="cell">为这些工作负载分配策略。请参阅<block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block> 。</block>
   <block id="09ac1a414033303cc9f61ba014837263" category="cell">保护关键或高度重要的文件共享工作负载免受勒索软件的侵害。</block>
   <block id="723aa86a592f3ac7a3d0c493a7f7f6f8" category="cell">保护页面显示未受保护的文件共享或数据存储类型的关键或高度重要的工作负载。</block>
@@ -759,7 +748,6 @@
   <block id="f37d79a56cb20cdcf206acc1cfa8be14" category="paragraph">如果勒索软件检测策略由ONTAP中的自主勒索软件防护（ARP 或 ARP/AI，取决于ONTAP版本）和 FPolicy 管理，则这些工作负载将受到保护并将继续由 ARP 和 FPolicy 管理。</block>
   <block id="d62f06f1ca9fb020be7953fe3101f0a3" category="section-title">针对不受NetApp应用程序保护的工作负载的保护策略</block>
   <block id="a6f7464fa2fed88291aecd220709e4c3" category="paragraph">保护工作负载的第一步是查看当前工作负载及其保护状态。您可以看到以下类型的工作负载：</block>
-  <block id="1178945c6ac5c3d230f56a7ae6f7233f" category="list-text">应用程序工作负载</block>
   <block id="8a5042da8154d7b57ae6ca95c51af501" category="list-text">阻止工作负载</block>
   <block id="f6eb9aea7f708dfdaa2db67cab1a9d7a" category="list-text">文件共享工作负载</block>
   <block id="001c5efa43c01ae33e4db0d43c8d8fa5" category="list-text">虚拟机工作负载</block>
@@ -925,9 +913,6 @@
   <block id="1a7c3267d0415566593c1285505aa765" category="list-text">检查您的选择。</block>
   <block id="6f6897e6c796f284c66b248179fd67ba" category="list-text">从顶部菜单中，选择“*恢复*”以查看“恢复”页面上的工作负载，其中操作的状态会在各个状态之间移动。</block>
   <block id="4bd702a7df3c8966625d698f05cd0cc6" category="paragraph">安全存储管理员可以恢复不同级别的数据：</block>
-  <block id="c2fcef7151504f035e47ba31c3e5ddf5" category="list-text">恢复所有卷</block>
-  <block id="068f7fc4b5a2b14387afa21644b54045" category="list-text">在卷级别或文件和文件夹级别恢复应用程序。</block>
-  <block id="318b3b219a722faf75710b5f3a03fc90" category="list-text">在卷级别、目录或文件/文件夹级别恢复文件共享。</block>
   <block id="e626ada343290f415dbe5463dd32adc6" category="list-text">从虚拟机级别的数据存储中恢复。</block>
   <block id="f7c909c79472e02e68ad0d93011cfe0d" category="paragraph">该过程根据工作负载类型而有所不同。</block>
   <block id="44dfe1570ed5a548116ca04db0d20450" category="list-text">*恢复范围*：选择您想要完成的恢复类型：</block>
@@ -936,7 +921,6 @@
   <block id="2381a26d342d1f67e865975093ebf01f" category="list-text">按文件：您可以指定要还原的文件夹或单个文件。</block>
   <block id="46a7598fc73d53164244a0638ecf7951" category="admonition">对于 SAN 工作负载，您只能按工作负载进行恢复。</block>
   <block id="529c8dae31154f53895310faea8c67fa" category="admonition">您最多可以选择 100 个文件或一个文件夹。</block>
-  <block id="908544495ea40587cf39ce2e5f22e4bc" category="list-text">根据您选择的是应用程序、卷还是文件，继续执行以下步骤之一。</block>
   <block id="92c289a4edeb4fe9f271012a0186db7e" category="section-title">恢复所有卷</block>
   <block id="d6423436696bf345f898a3676ed1f0dd" category="list-text">在“还原”页面的“还原范围”中，选择“*所有卷*”。</block>
   <block id="60b7fcd27a0d6ec11fae18faa686b7b8" category="inline-image-macro">按所有卷恢复页面</block>
@@ -947,8 +931,6 @@
   <block id="2a8100bf9205c5202d9072f926fc015c" category="list-text">选择聚合。</block>
   <block id="93cd071f37816a758745f9110838474f" category="list-text">更改将添加到所有新卷的卷前缀。</block>
   <block id="51371f4640fbc3d25ac82cefab45418d" category="admonition">新卷名称显示为前缀+原始卷名称+备份名称+备份日期。</block>
-  <block id="6176694f7bff94dfa4c7296ff6dc3769" category="section-title">在卷级别恢复应用程序工作负载</block>
-  <block id="48c24178716eb1262ba72b16ed76e5c5" category="list-text">选择处于“需要恢复”状态的应用程序工作负载。</block>
   <block id="e97c4e3d59c331da11cb01db2eadc265" category="list-text">在“还原”页面的“还原范围”中，选择“按卷”。</block>
   <block id="645aa6060c294634583fc329f68ef054" category="inline-image-macro">按卷恢复页面</block>
   <block id="7c4da72b4401875080d62e2c8998be3f" category="paragraph"><block ref="7c4da72b4401875080d62e2c8998be3f" category="inline-image-macro-rx" type="image"></block></block>
@@ -956,8 +938,6 @@
   <block id="cb66ace7c6b9d638625f30c2eadff897" category="admonition">勒索软件恢复能力将最佳还原点识别为事件发生前的最新备份，并显示“推荐”指示。</block>
   <block id="ce398ae17610821c0664dc141883be1a" category="list-text">查看新的卷名称。</block>
   <block id="e117d7e0417b0abf71f8e538099181f1" category="admonition">新的卷名称显示为原始卷名称+备份名称+备份日期。</block>
-  <block id="6412a45d589675b39a03f4d8c440e7a7" category="section-title">在文件级别恢复应用程序工作负载</block>
-  <block id="dda1633bee980c6aee630455ccc23784" category="paragraph">您可以将文件级别的应用程序工作负载还原到相同或不同的系统。</block>
   <block id="632b8e66b02aebebfc5b46583ee30222" category="list-text">要查看完整的文件列表，请选择“受影响的文件”窗格顶部的“*单击此处*”。</block>
   <block id="3e64769073a6ebfad26862c552f42c72" category="list-text">在“还原”页面的“还原范围”中，选择“按文件”。</block>
   <block id="f1760e95914fef75d7a25a4643d9128a" category="list-text">在卷列表中，选择包含要还原的文件的卷。</block>
@@ -1070,16 +1050,13 @@
   <block id="e9533d3cc3450cc437e3452b21f4e97f" category="list-text">为注册创建一个秘密。</block>
   <block id="d0d26c22c8bcacd0db2ef7f6857801c1" category="list-text">*权限*：为应用程序分配权限。</block>
   <block id="634e092bf22459996810a1c2929824dc" category="list-text">*身份验证*：输入应用程序的身份验证凭据。</block>
-  <block id="7a183e1af9011b3614a78324d4616e15" category="list-title">启用 Microsoft Sentinel 的步骤</block>
   <block id="08a65e7044425c8d2c782e9b34c3e654" category="list-text">转到 Microsoft Sentinel。</block>
   <block id="8c871324b9c8d6f9e574d61e6af06ac8" category="list-text">创建*Log Analytics 工作区*。</block>
   <block id="d7f9c1502929f8a9624aeb8a459be84e" category="list-text">启用 Microsoft Sentinel 以使用您刚刚创建的 Log Analytics 工作区。</block>
-  <block id="74ac1228e90a795447fcd3ef5d57fbb9" category="list-title">在 Microsoft Sentinel 中创建自定义角色的步骤</block>
   <block id="c81259b70bf3f6091a6ea9d12a1516c3" category="list-text">选择*订阅* &gt; *访问控制 (IAM)*。</block>
   <block id="0e0b93e5e66d733c957afe1a383637ec" category="list-text">输入自定义角色名称。使用名称 *Ransomware Resilience Sentinel Configurator*。</block>
   <block id="dcec7acebd109f04b4e2a5e7982c2ca6" category="list-text">复制以下 JSON 并将其粘贴到 *JSON* 选项卡中。</block>
   <block id="f14b670805869bff13be2818d420e8b9" category="list-text">检查并保存您的设置。</block>
-  <block id="1edce0bd61c3bd7df2516cf1c42c87b9" category="list-title">注册勒索软件恢复能力以接收来自 Microsoft Sentinel 的事件的步骤</block>
   <block id="cc29294d0b591a10fc322169b7f1f026" category="list-text">选择 *Entra ID* &gt; *应用程序* &gt; *应用程序注册*。</block>
   <block id="5f1387f27bad2647c460bfdb36ec2e0b" category="list-text">对于应用程序的*显示名称*，输入“*Ransomware Resilience*”。</block>
   <block id="b98526e9d91b1e1635367700d6012267" category="list-text">在 *支持的帐户类型* 字段中，选择 *仅限此组织目录中的帐户*。</block>
@@ -1087,14 +1064,12 @@
   <block id="b99a9a5879442c5ad3ae30c94964ccb3" category="list-text">选择*审核*。</block>
   <block id="d7f089d595dc5d8b4b35eb5acb6cf354" category="list-text">选择*注册*来保存您的设置。</block>
   <block id="5293737739d192ce4c823f55d6348b38" category="paragraph">注册后，Microsoft Entra 管理中心将显示应用程序概述窗格。</block>
-  <block id="08d457149f23a08e7d52fc0144d0ba4d" category="list-title">创建注册密钥的步骤</block>
   <block id="110778c40d9a0f7258c68cac989bbe9c" category="list-text">选择*证书和机密* &gt; *客户端机密* &gt; *新客户端机密*。</block>
   <block id="25b912035505a8c7f4db26a790036f2e" category="list-text">为您的应用程序机密添加描述。</block>
   <block id="8d630138be955f4fdc041c611342cd58" category="list-text">为秘密选择一个*到期日期*或指定自定义有效期。</block>
   <block id="485fdedb0c7094275d346a406c7511bc" category="admonition">客户端密钥的有效期限制为两年（24 个月）或更短。  Microsoft 建议您设置小于 12 个月的到期值。</block>
   <block id="1ff868ad6c260db8589989baff2a8980" category="list-text">选择“*添加*”来创建您的秘密。</block>
   <block id="c669e93c1e1c1457b26eee151fca6438" category="list-text">记录身份验证步骤中使用的秘密。离开此页面后，该秘密将不再显示。</block>
-  <block id="260a969e6beee33bb0d12186ae95be83" category="list-title">为应用程序分配权限的步骤</block>
   <block id="9917d3e3752f3388fb31aaf44f32cf72" category="list-text">选择*添加* &gt; *添加角色分配*。</block>
   <block id="fc9ff510933e7824938a0a7d44b24aeb" category="list-text">对于*特权管理员角色*字段，选择*勒索软件弹性哨兵配置器*。</block>
   <block id="fa4157795fdbaed676b0486ebceb9f1a" category="admonition">这是您之前创建的自定义角色。</block>
@@ -1102,19 +1077,16 @@
   <block id="ba79e586f6b5202f28597984ee8243b7" category="list-text">选择“*选择成员*”。然后，选择*Ransomware Resilience Sentinel Configurator*。</block>
   <block id="0b08d4bbcc90f50506c6e3c62fa007c9" category="list-text">在*用户可以做什么*字段中，选择*允许用户分配除特权管理员角色所有者、UAA、RBAC（推荐）之外的所有角色*。</block>
   <block id="0427238efbd6d8ab4d12c132cb4cae7d" category="list-text">选择*审核并分配*来分配权限。</block>
-  <block id="b37c7df6ed28d0c6b82990a40be5956c" category="list-title">输入应用程序身份验证凭据的步骤</block>
   <block id="9d4673f4ba59f2e834f5cc5a15b8a533" category="list-text">输入凭证：</block>
   <block id="df399ba2a5bc8f8f94de9d50ed1b4f39" category="list-text">输入租户 ID、客户端应用程序 ID 和客户端应用程序密钥。</block>
   <block id="53e68cb1edb551af8b1c0d8fee230e44" category="admonition">认证成功后，会出现“已认证”的信息。</block>
   <block id="00bcd4c2f217493f06ecbb6ddfa3862b" category="list-text">输入应用程序的 Log Analytics 工作区详细信息。</block>
   <block id="b263ba58e894356680bda9edd8c52400" category="list-text">选择订阅 ID、资源组和 Log Analytics 工作区。</block>
-  <block id="2c65d4e0cdac9c48880857277c1bc9e3" category="list-title">在 Splunk 中启用 HTTP 事件收集器的步骤</block>
   <block id="ce0362998bb10251a5412bcabd9b833c" category="list-text">选择*设置* &gt; *数据输入*。</block>
   <block id="069c7509480a5fbadda560c7376dca8a" category="list-text">选择 *HTTP 事件收集器* &gt; *全局设置*。</block>
   <block id="b42b974604014d593eace2a8678716ed" category="list-text">在所有令牌切换上，选择*已启用*。</block>
   <block id="1f07cda18625f2e87b3b485165c2fde6" category="list-text">要让事件收集器通过 HTTPS 而不是 HTTP 进行监听和通信，请选择“启用 SSL”。</block>
   <block id="f0f064c9e7c481532480bef9466ae445" category="list-text">在“HTTP 端口号”中输入 HTTP 事件收集器的端口。</block>
-  <block id="c660c961cf09ba8531cdfd3369af008b" category="list-title">在 Splunk 中创建事件收集器令牌的步骤</block>
   <block id="23e1d5a70208de028ca12ba8bef552d9" category="list-text">选择*设置* &gt; *添加数据*。</block>
   <block id="5c4a26d0a7ecde2f25b0a5d7c482ab87" category="list-text">选择*监控* &gt; *HTTP 事件收集器*。</block>
   <block id="7afbca3b4e9f4fb695134baafcac5c4d" category="list-text">输入令牌的名称并选择*下一步*。</block>
@@ -1294,13 +1266,8 @@
   <block id="3ad6a80bb44b13a7ad34ad835b0166d5" category="paragraph">在此版本中，您可以使用 BYOL 许可证，它是您从NetApp销售代表处获得的NetApp许可证文件 (NLF)。</block>
   <block id="a0f248fceae83613cf99c651e3c24be5" category="inline-link">了解有关设置许可的详细信息</block>
   <block id="9d5aaa8966c5e35be75ef082fe317272" category="paragraph"><block ref="52acad0b8ccf8676f5a7124bd999ec73" category="inline-link-rx"></block> 。</block>
-  <block id="731d998f19bf5dc5e302b024a5e269ae" category="section-title">在文件级别恢复应用程序工作负载</block>
-  <block id="3ca66b2ea6d0090926c6ed42102cd321" category="paragraph">在文件级别恢复应用程序工作负载之前，您现在可以查看可能受到攻击影响的文件列表并确定要恢复的文件。您可以让BlueXP ransomware protection选择要恢复的文件，您可以上传列出受警报影响的所有文件的 CSV 文件，或者您可以手动识别要恢复的文件。</block>
   <block id="f117dfa6c0387d743ec4a20f0d5de0bc" category="admonition">在此版本中，如果帐户中的所有BlueXP连接器均未使用 Podman，则启用单个文件恢复功能。否则，该帐户将被禁用。</block>
   <block id="a73c37f93df66de7bad711d109e97dec" category="section-title">下载受影响文件的列表</block>
-  <block id="2054cf1c5fa9dc941ee8bea29d93f66c" category="paragraph">在文件级别恢复应用程序工作负载之前，您现在可以访问“警报”页面以 CSV 文件形式下载受影响文件的列表，然后使用“恢复”页面上传该 CSV 文件。</block>
-  <block id="eb7455ff51d7f3745fb801aa3ad0fb2a" category="inline-link">了解有关在恢复应用程序之前下载受影响文件的更多信息</block>
-  <block id="29dfc4e316452c829eef22178afa1c8f" category="paragraph"><block ref="280bb568aae28b55ea90793d53388aa1" category="inline-link-rx"></block> 。</block>
   <block id="16a3ef0c0012d6ecafe00aeaff08d20c" category="section-title">删除保护计划</block>
   <block id="0e7f928ba1ebfe3d5652a71f58c576d8" category="paragraph">通过此版本，您现在可以删除勒索软件保护策略。</block>
   <block id="5bc0cd3e3204e2ab72bd03661373648f" category="inline-link">了解有关保护工作负载和管理勒索软件保护策略的更多信息</block>
@@ -1469,8 +1436,6 @@
   <block id="67a915151759ecc737f698391f7cfd08" category="section-title">互操作性</block>
   <block id="10c4fe0b6e00d5560df8e602d85a5bd1" category="paragraph">是的，Ransomware Resilience 发现了在ONTAP中设置的快照计划。</block>
   <block id="282764b1530b129720ca01a123b6f6ce" category="paragraph-title">在勒索软件防御的语境下，什么是工作负载？</block>
-  <block id="10c8ec686acd93b9da39b3efea09bc01" category="paragraph">工作负载是一个应用程序、一个虚拟机或一个文件共享。工作负载包括单个应用程序实例使用的所有卷。</block>
-  <block id="f7e19062cc2eaeb5901ce8337d69e539" category="paragraph">例如，考虑部署在 ora3.host.com 上的 Oracle 数据库。<block ref="2b0d59c7031769e80c8e5118b6ec7694" prefix=" " category="inline-code"></block> 包含数据和<block ref="a110e8ed91b0de267a5728888b1f4ed1" prefix=" " category="inline-code"></block> 包含日志。这两个卷构成了该 Oracle 数据库实例的工作负载。</block>
   <block id="f4d0f54d022c7715505fb12db9dfaab4" category="paragraph-title">勒索软件恢复能力如何确定工作负载数据的优先级？</block>
   <block id="6f240a888a055fa4629059d3d5328220" category="paragraph">工作负载优先级（关键、标准、重要）由已应用于与工作负载关联的每个卷的快照频率和计划备份决定。</block>
   <block id="79444a9daf1e4ef34a492d7a4ccc93fd" category="paragraph-title">勒索软件恢复能力支持哪些工作负载？</block>
@@ -1538,10 +1503,6 @@
   <block id="954e661212d7a62095e6b957259dc36f" category="inline-link-macro">ARP/AI</block>
   <block id="7271886a703021fd0851304115b49ee2" category="paragraph">{asterisk} Amazon FSx for NetApp ONTAP使用自主勒索软件保护 (ARP) 而不是 ARP/AI。有关两者区别的更多信息，请参阅<block ref="ee25b596f35c0a0b982fc7b7e342f828" category="inline-link-macro-rx"></block>。</block>
   <block id="c71c95f02c8e85a6e5cddd09ad2a5d8b" category="admonition">在ONTAP中使用 ARP/AI 需要ONTAP 9.16 或更高版本。+ ONTAP不为FabricPool FlexCache、 FlexGroup卷、一致性组挂载点卷、挂载路径卷、脱机卷和数据保护 (DP) 卷提供勒索软件防护支持。请务必查看<block ref="49252e6bcf11c366c792cea95977195b" category="inline-link-macro-rx"></block>。</block>
-  <block id="fd3b4579ab972a1738986581275cfcfa" category="list-text">数据库：</block>
-  <block id="78898e52fcbdc5337204a384f2456d4f" category="list-text">Microsoft SQL Server</block>
-  <block id="30162ed78b6c10f731411f2fc440c24f" category="list-text">Oracle</block>
-  <block id="399bd1ee587245ecac6f39beaa99886f" category="list-text">PostgreSQL</block>
   <block id="acd257a01891523b6ff91a9020b733ba" category="paragraph">可疑用户活动数据可以存储在 AWS 和 Azure 的以下区域中：</block>
   <block id="2feeca48692986e9cc471ec61f847fca" category="paragraph">NetApp以多种方式为NetApp Console及其云服务提供支持。全天候提供广泛的免费自助支持选项，例如知识库 (KB) 文章和社区论坛。您的支持注册包含通过网络工单获取的远程技术支持。</block>
   <block id="317cbd2c4fdbfd06a6c66bcd3f57d7ad" category="paragraph">有关云提供商文件服务、其基础设施或使用该服务的任何解决方案的技术支持，请参阅该产品的文档。</block>
@@ -1595,7 +1556,6 @@
   <block id="d605e764d56b8615ebf6dd5f87998855" category="list-text">美国东部（弗吉尼亚北部）（us-east-1）</block>
   <block id="a55a22032fc9fd630abe933324e9d4b9" category="paragraph-title">Ransomware Resilience 是否了解ONTAP中的保护设置？</block>
   <block id="1c8f51534c2fc10dfef26d32d61c7ed3" category="paragraph">对于许可和计费，即使您没有单独的备份和恢复许可证，勒索软件恢复功能也可以与备份和恢复功能集成。如果您同时拥有备份和恢复以及勒索软件恢复功能，则受这两种产品保护的任何公共数据仅由勒索软件恢复功能计费。</block>
-  <block id="182b9ed848b82506c10ba162f10e3f5b" category="list-text">保护基于应用程序的工作负载（例如 Oracle、VMware 数据存储和文件共享）中的数据。</block>
   <block id="6b62768f3f94df043ea31bf9c43b2a42" category="paragraph">勒索软件恢复能力可以识别以下工作负载：Oracle、文件共享、块存储、虚拟机和虚拟机数据存储。</block>
   <block id="897c29783a147c6c7b7844f2d4a9e81a" category="paragraph">预览版服务可保护BlueXP组织内各个组织中 Oracle、VM 数据存储和本地 NAS 存储上的文件共享以及 AWS 上的Cloud Volumes ONTAP （使用 NFS 协议）上的应用程序工作负载，并将数据备份到 Amazon Web Services 云存储。</block>
   <block id="f075180c986e3a7a8e0bad4fcec7c485" category="cell">15.3（64 位）至 15.6（64 位）</block>
@@ -1644,7 +1604,6 @@
   <block id="869c8807275d576171cb34b892652da6" category="paragraph">有关详细信息，请参阅 <block ref="ca80a6cafecee489657bc722219fb267" category="inline-link-macro-rx"></block>。</block>
   <block id="22a81a009e8d21bf17e2788fdbfa4a6d" category="paragraph">勒索软件恢复能力支持Amazon FSx for NetApp ONTAP系统。以下限制适用于Amazon FSx for ONTAP：</block>
   <block id="f20af4e11539d270463e7ed46557be6f" category="paragraph">在使用NetApp Ransomware Resilience之前，它首先需要发现工作负载数据。在发现过程中，勒索软件恢复力会分析组织内所有控制台代理和项目系统中的所有卷和文件。</block>
-  <block id="55971de7d1268c37251f60641b742b76" category="paragraph">在“发现”仪表板中，“勒索软件恢复能力”显示受支持和不受支持的系统配置。勒索软件恢复能力评估 Oracle 应用程序、VMware 数据存储、文件共享和块存储。</block>
   <block id="ab066b3292d8ab61ef3b5c77169cdd19" category="section-title">更多信息</block>
   <block id="48bf90c5e99016f124c48c02a77dc8fd" category="inline-link-macro">NetApp Console许可证和订阅文档</block>
   <block id="0fa9a3c869139d736cd7d6df862b94e3" category="list-text"><block ref="0fa9a3c869139d736cd7d6df862b94e3" category="inline-link-macro-rx"></block></block>
@@ -1905,7 +1864,6 @@
   <block id="ffe6653bcd557bfbd80aff3ce171f491" category="list-text">要保留现有的 Backup and Recovery 并仅应用_检测_策略，请不要选中**替换现有策略**框。</block>
   <block id="aafd4e94bcc37426152d473c41e03659" category="list-text">Ransomware Resilience 检测是否存在现有的活动 Backup and Recovery 策略。要替换现有策略，请选择**替换现有策略**框。选中此框后，Ransomware Resilience 将用检测策略替换检测策略列表。</block>
   <block id="037372d8704e59765af4c473d08f5257" category="list-text">如果工作负载具有要维护的现有 Backup and Recovery 策略，请取消选中**替换现有策略**。要替换现有策略，请选中**替换现有策略**。</block>
-  <block id="2ef974fc1907e25ad7d2ab240867a065" category="list-text">如果应用程序或虚拟机由 NetApp Backup and Recovery 或 Ransomware Resilience 管理，则 Ransomware Resilience 执行崩溃一致性恢复，例如，如果系统崩溃，则在同一时间点还原卷中的所有数据。</block>
   <block id="b11b835f559ed8748e33a3412f3c77b2" category="section-title">还原工作负载</block>
   <block id="ea9eea4a980add15f1982bc5d385bfc2" category="doc">在 NetApp Ransomware Resilience 中管理保护组</block>
   <block id="ed2728c518fe52f7f1f0f734bdf3232f" category="paragraph">NetApp Ransomware Resilience 提供保护组，以便更轻松地管理您的数据资产。保护组是工作负载的逻辑分组。Ransomware Resilience 可以使用单一保护策略同时保护保护组中的所有卷，使您无需对每个工作负载应用策略。</block>
@@ -2008,7 +1966,6 @@
   <block id="49408f5917e16f5795da1781a7748aa5" category="list-text">受影响的工作负载、卷、文件和目录</block>
   <block id="a6bd7f80fc17cbb8e58e8dca754bf710" category="list-text">要阻止环境中的可疑用户，请选择用户名称旁边的 *Block*。</block>
   <block id="e2907e7cb7d68b36821cd11cda209bc3" category="cell">SAN（iSCSI 和 NVMe）</block>
-  <block id="65072a668477cd315b4302df8afcce32" category="paragraph">NetApp Ransomware Resilience 可保护您的数据免受勒索软件攻击。在 Ransomware Resilience 中，保护可用于 Oracle、VM 数据存储区和文件共享的基于应用程序的工作负载，用于 NAS 存储（NFS 和 CIFS 协议）和 SAN 存储（FC、iSCSI 和 NVMe 协议）。本地存储以及 Cloud Volumes ONTAP for Amazon Web Services、Cloud Volumes ONTAP for Google Cloud、Cloud Volumes ONTAP for Microsoft Azure、Azure NetApp Files 和 Amazon FSx for NetApp ONTAP 在 NetApp Console 中支持 Ransomware Resilience。您可以将数据备份到 Amazon Web Services、Google Cloud、Microsoft Azure 和 NetApp StorageGRID。</block>
   <block id="3b9c98c430c62cb3627db641468d7e64" category="list-text">评估您的勒索软件防护态势，并将其显示在易于理解的仪表板中，同时提供改进防护的建议。</block>
   <block id="9bd1fe262c57584526c5184d4de31827" category="list-text">如果您的本地 ONTAP 集群或 Cloud Volumes ONTAP 系统未在 Console 中设置，请参阅 <block ref="1c09904f3fbf9f22b68e96599d2dcddc" category="inline-link-macro-rx"></block> 和 <block ref="b04507b2bbabc17c071b912167d3ff4f" category="inline-link-macro-rx"></block>。</block>
   <block id="3eb45f3714606347a6ff182b822b69cc" category="list-text">对于 ONTAP 或 Cloud Volumes ONTAP 集群，Ransomware Resilience 要求 ONTAP 版本为 9.11.1 或更高版本。</block>
@@ -2439,7 +2396,6 @@
   <block id="76c07e024915a14c275975a549a9ee9b" category="list-text">通过协调多种 NetApp 技术，*恢复*您的工作负载以帮助加快工作负载正常运行时间。您可以选择恢复特定卷。Ransomware Resilience 提供有关最佳选项的建议。</block>
   <block id="857d0c5d34b476c300d20857901434ee" category="list-text">查找连接到 Console 的系统中的所有本地和云 NAS（NFS 和 CIFS 协议）以及 SAN（FC、iSCSI 和 NVMe）数据。</block>
   <block id="8d2a9bcb8af52527cb5ef134952b126c" category="list-text">标识来自 ONTAP 和 Backup and Recovery 服务 API 的数据，并将其与工作负载相关联。详细了解<block ref="a16fd9a0601d0464b4c9ce4f59c2454b" category="inline-link-rx"></block>。</block>
-  <block id="aea5e53a84ea68f5c29fd5b651210249" category="list-text">*工作负载*：工作负载是系统内存储资源的逻辑分组，例如 Oracle 数据库、VMware 数据存储或文件共享。</block>
   <block id="185b7516beffeca9e791d1462be2e3df" category="paragraph">如果要停止使用应用于工作负载的保护策略，可以使用 System Manager、API 调用或 CLI 禁用它们。</block>
   <block id="321e92de54fb9050ca985e93dd41037e" category="admonition">Ransomware Resilience 不会发现使用 FlexGroup 卷的系统。</block>
   <block id="660970b5bfb72eddca5566de07107009" category="section-title">选择要发现的工作负载</block>
@@ -2458,4 +2414,37 @@
   <block id="df3fb79f22fd0d8a496bd6ab0f7fcb62" category="sidebar">NetApp Ransomware Resilience 可保护、检测并支持从本地和云存储中的勒索软件威胁中恢复工作负载。Ransomware Resilience 可实现安全备份和恢复，帮助组织保护关键数据并维护 Oracle、虚拟机数据存储、NAS 存储等的业务连续性。</block>
   <block id="d75c1a5d668e6fb6360954c43259df75" category="list-title">IRE 防火墙</block>
   <block id="93222c59d4ce3b5c19ed433527efc1b4" category="list-text">您应该创建一个单独的防火墙来管理 crr-data-LIF-IP 的入口。此防火墙应允许从 IRE VPC CIDR 范围进行 NFSv3 和 NFSv4 装载。</block>
+  <block id="ed6277eb011dd9324445de0b4deb0234" category="paragraph">NetApp Ransomware Resilience 可保护您的数据免受勒索软件攻击。在 Ransomware Resilience 中，NAS 存储（NFS 和 CIFS 协议）和 SAN 存储（FC、iSCSI 和 NVMe 协议）的文件共享可获得保护。Ransomware Resilience 支持本地存储以及适用于 Amazon Web Services 的 Cloud Volumes ONTAP、适用于 Google Cloud 的 Cloud Volumes ONTAP、适用于 Microsoft Azure 的 Cloud Volumes ONTAP、Azure NetApp Files 和适用于 NetApp ONTAP 的 Amazon FSx（跨 NetApp Console）。您可以将数据备份到 Amazon Web Services、Google Cloud、Microsoft Azure 和 NetApp StorageGRID。</block>
+  <block id="fb1cd4562ec1a61033e9d2c4ab767995" category="list-text">保护文件共享中的数据。</block>
+  <block id="303e01b1cd1cab99501fe839539f4e39" category="list-text">协调工作负载的恢复，包括 VM、文件共享和块存储。</block>
+  <block id="c951303ee0fd5682237895bfad7df328" category="paragraph">Ransomware Resilience 可保护主数据卷上的以下工作负载：</block>
+  <block id="c2d47b6bc95c845ff73e9809734fad1a" category="list-text">文件共享</block>
+  <block id="df8050ed04247af525daf2daa6c322c4" category="list-text">*Workload*：工作负载是系统内存储资源的逻辑分组，例如文件共享。</block>
+  <block id="219ae0200ec3ea6dcfb05554d78fc029" category="paragraph">在 Discovery 仪表板中，Ransomware Resilience 显示受支持和不受支持的系统配置。Ransomware Resilience 评估文件共享和块存储。</block>
+  <block id="69bffd4bb9e455aa5c62ca1f53702cd9" category="paragraph">工作负载是 VM 或文件共享。</block>
+  <block id="f4154bf5e6042768a9a528579573895f" category="paragraph">在文件级别还原工作负载之前，您可以查看受影响文件的列表。您可以访问"提醒"页面，下载受影响文件的列表。然后使用恢复页面上传列表并选择要还原的文件。</block>
+  <block id="3143da82214f4e025a696a23ee63d6dd" category="list-text">在 Alerts 页面上，按工作负载对结果进行排序，以显示要还原的工作负载的警报。</block>
+  <block id="ad81d983549cd4869ecbf4e4568dd9a4" category="cell">保护关键或非常重要的工作负载免受勒索软件的侵害。</block>
+  <block id="90c14c660f3939a93b414d3d4c9b707b" category="cell">Protect 页面显示未受保护的关键或高度重要的工作负载（基于分配的优先级）。</block>
+  <block id="74dd01db809dfdbbd3fee87a6f6fd4ae" category="list-text">如果虚拟机由 NetApp Backup and Recovery 或 Ransomware Resilience 管理，Ransomware Resilience 会执行崩溃一致性恢复，即恢复同一时间点卷中的所有数据，例如，如果系统崩溃。</block>
+  <block id="14952d9b177967e65f6269de52dfadc6" category="list-text">恢复所有卷</block>
+  <block id="103e1bfcc7b78c6a613046060aa97751" category="list-text">在卷级别、目录或文件级别恢复文件共享。</block>
+  <block id="138e328417253325f0020bc6f909cf21" category="list-text">根据您选择的是卷还是文件，继续执行以下过程之一。</block>
+  <block id="66b52194e9444d101bbebc0e5d3c85db" category="list-text">选择处于"需要还原"状态的工作负载。</block>
+  <block id="c4bf33102c16c6d0f3b82ccd10132cbe" category="section-title">在卷级别还原工作负载</block>
+  <block id="6eeebf96ed736572085b2e60a07707d2" category="section-title">在文件级别还原工作负载</block>
+  <block id="330d8bbff953330ca78d7f5a365cf755" category="paragraph">您可以将工作负载在文件级别恢复到相同或不同的系统。</block>
+  <block id="ac59eb4c3a4cee556cefcce89ff46aa1" category="list-title">启用 Microsoft Sentinel</block>
+  <block id="db5ac87576026bbb8d31e812518d4d3a" category="list-title">在 Microsoft Sentinel 中创建自定义角色</block>
+  <block id="5714c8ca3850d2c9baed74815356f1ca" category="list-title">注册 Ransomware Resilience 以接收来自 Microsoft Sentinel 的事件</block>
+  <block id="6629c8b10a65c01c4456e0a111604c4c" category="list-title">为注册创建密钥</block>
+  <block id="bf61754a0d34cf517c48ffb1487ba40c" category="list-title">分配权限</block>
+  <block id="c7439d2223d35c56a0c13dfc89356b4a" category="list-title">输入身份验证凭据</block>
+  <block id="1d0d3e915b82f0548aa65826ac228575" category="list-title">在 Splunk 中启用 HTTP Event Collector</block>
+  <block id="e4ae3ec1a7b6078a2a227108e873d56c" category="list-title">在 Splunk 中创建 Event Collector 令牌</block>
+  <block id="80f321a7a812aa867bed58b03ef5cc65" category="section-title">在文件级别还原工作负载</block>
+  <block id="7a9b2e033aaa7b0a366213831f6f5670" category="paragraph">现在，在还原文件级别的工作负载之前，您可以查看可能受攻击影响的文件列表，并确定要还原的文件。您可以让 BlueXP 勒索软件保护选择要还原的文件，也可以上传列出受警报影响的所有文件的 CSV 文件，也可以手动确定要还原的文件。</block>
+  <block id="367e5a02a217d0d56ba1d4196683de67" category="paragraph">现在，在还原文件级别的工作负载之前，您可以访问"提醒"页面，下载 CSV 文件中的受影响文件列表，然后使用"恢复"页面上传 CSV 文件。</block>
+  <block id="b61174a96feeed9315df09125dbf021e" category="inline-link-macro">详细了解在还原工作负载之前下载受影响的文件</block>
+  <block id="f9ab80c55fbab58c37aab4891dabffae" category="paragraph"><block ref="f9ab80c55fbab58c37aab4891dabffae" category="inline-link-macro-rx"></block></block>
 </blocks>
