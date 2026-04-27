@@ -2289,7 +2289,6 @@
   <block id="fa48228aaf71277e6bc2d05f062b62bb" category="list-text">必须安装并运行 VMware Tools。</block>
   <block id="c3d0c72650d11485355d35484d14c0a1" category="list-text">必须启用 SSH。</block>
   <block id="e1be34a58f3251e0469bedfad3e4788d" category="list-text">您必须已安装 nfs-common。</block>
-  <block id="bf53e61c050ee11a55b3479c83c5512f" category="list-text">必须安装并运行 Docker。</block>
   <block id="66ed64c9284af661b30715d4eca9f181" category="list-text">您必须至少有 40 GB 的可用空间。</block>
   <block id="300cc7d3b66cf666cb37df412b0cc68b" category="list-text">对于 Windows VM：</block>
   <block id="21755314d24463f2d188ab45bb05c0c0" category="list-text">Windows 虚拟机应有 20 GB 可用空间。</block>
@@ -2447,4 +2446,5 @@
   <block id="367e5a02a217d0d56ba1d4196683de67" category="paragraph">现在，在还原文件级别的工作负载之前，您可以访问"提醒"页面，下载 CSV 文件中的受影响文件列表，然后使用"恢复"页面上传 CSV 文件。</block>
   <block id="b61174a96feeed9315df09125dbf021e" category="inline-link-macro">详细了解在还原工作负载之前下载受影响的文件</block>
   <block id="f9ab80c55fbab58c37aab4891dabffae" category="paragraph"><block ref="f9ab80c55fbab58c37aab4891dabffae" category="inline-link-macro-rx"></block></block>
+  <block id="23bb3b926c6da9edf1342c50a0cbf22e" category="list-text">必须安装并运行 Docker 版本 20.x 或更高版本。</block>
 </blocks>

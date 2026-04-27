@@ -457,7 +457,7 @@ image:diagram-clean-recovery-on-prem.png["云到本地干净恢复的图表"]
 ** 必须安装并运行 VMware Tools。
 ** 必须启用 SSH。
 ** 您必须已安装 nfs-common。
-** 必须安装并运行 Docker。
+** 必须安装并运行 Docker 版本 20.x 或更高版本。
 ** 您必须至少有 40 GB 的可用空间。
 
 
