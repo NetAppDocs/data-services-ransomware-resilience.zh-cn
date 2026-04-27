@@ -54,6 +54,6 @@ image:screen-recovery2.png["恢复页面"]
 
 评估工作负载后，您有两种选择来恢复工作负载：
 
-* xref:task-custom-restore.html[使用自定义还原进行恢复]
 * xref:task-clean-restore.html[使用干净还原进行恢复]
+* xref:task-custom-restore.html[使用自定义还原进行恢复]
 
