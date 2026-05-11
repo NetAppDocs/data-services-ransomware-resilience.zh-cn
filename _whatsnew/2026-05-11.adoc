@@ -1,0 +1,35 @@
+= 清理还原增强功能
+:allow-uri-read: 
+
+
+
+
+=== 清理还原增强功能
+
+Clean restore 现在支持恢复到备用集群和超过 7 天的分析。
+
+link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["使用干净还原恢复工作负载"^].
+
+
+
+=== Google SecOps SIEM 支持
+
+Ransomware Resilience 现在支持 Google SecOps 的安全信息和事件管理 (SIEM)，使您能够将数据自动发送到 Google SecOps 以简化威胁分析和检测。
+
+有关配置信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["将勒索软件弹性连接到 SIEM"^]。
+
+
+
+=== Azure NetApp Files 支持现已全面推出
+
+Ransomware Resilience 现在支持 Azure NetApp Files 系统，使您能够有效检测和响应 Azure NetApp Files 中的勒索软件威胁。当您发现工作负载时，Ransomware Resilience 现在会显示 Azure NetApp Files 并将其显示在保护仪表板中。Ransomware Resilience 对 Azure NetApp Files 的支持包括仅使用快照的检测和保护策略。对 Azure NetApp Files 的支持现已全面推出 (GA)。
+
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["了解勒索软件抵御能力"^]。
+
+
+
+=== SOAR 对屏蔽用户的支持
+
+Ransomware Resilience 现在支持使用 Google SecOps 和 Splunk SOAR playbooks 阻止个人用户。借助此功能，当 Ransomware Resilience 检测到数据泄露或大规模删除数据等可疑用户活动时，您可以自动阻止用户。
+
+link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/reference-soar.html["整合 SOAR 攻略"^].
