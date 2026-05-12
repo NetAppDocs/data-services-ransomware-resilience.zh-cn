@@ -2151,22 +2151,16 @@
   <block id="68a63568bae8b1136a4d6ed86a9df817" category="paragraph">在执行干净还原之前，您必须已配置 <block ref="e6b9ac27e9d8426eab4ef45db03a98fc" category="inline-link-macro-rx"></block>。</block>
   <block id="ea61e2c2ff507048203824add1eb7c21" category="section-title">注意事项</block>
   <block id="8a687ede20b3179501211e222eccc84d" category="section-title">执行干净还原</block>
-  <block id="7d3fcc28c899a7b289e05e013aad4dc6" category="list-text">在 **恢复** 部分，选择要还原的工作负载。选择 **Restore**。</block>
   <block id="9c5ec70f60ca9ceaf825ce83f9bd4bac" category="list-text">在 Restore Type 选项中，依次选择 **Clean restore** 和 **Next**。</block>
   <block id="b57d941a4d6ae6c8309974df2602afd1" category="list-text">选择要使用的隔离恢复环境，然后选择 **下一步**。</block>
   <block id="d58c5ad1de11a448129ae415c7bf9504" category="list-text">查看隔离的恢复环境，确认其位置正确。选择 **Restore**。</block>
-  <block id="adbc7d98b73b56e4671ba46ad7551544" category="list-text">Ransomware Resilience 执行必要的设置。设置成功完成后，Ransomware Resilience 表示**设置完成**。要继续分析，请选择**下一步**。</block>
   <block id="737dfd8870fb9011f2148f9df5f1c709" category="inline-image-macro">Clean Restore 分析步骤的屏幕截图。</block>
   <block id="d64cc3b278bde1725adb921ef1a31d7e" category="paragraph"><block ref="d64cc3b278bde1725adb921ef1a31d7e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="975584d4fa288f1c7066a3e04c45884c" category="list-text">分析完成后，选择 **Next** 以计划您的恢复。Ransomware Resilience 提供两种选择：**Least data loss** 和 **Latest unimpacted restore point**。选择任一选项，并可选择查看任一还原点的单个文件数据。</block>
-  <block id="c26ff48add8a2ec49af17a7e2a76ee5b" category="paragraph">要查看粒度文件事件数据，请选择一个文件以分析其加密状态；创建、修改或删除的时间，以及与什么操作相对应的还原点。</block>
   <block id="59eb34c12f3abfa98756951d0fb8ecfb" category="inline-image-macro">Clean Restore Plan 步骤的屏幕截图。</block>
   <block id="ea7360bc3a148c8251f392279d717749" category="paragraph"><block ref="ea7360bc3a148c8251f392279d717749" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4f7284ff2b84a2edf1a4d1841e9673e8" category="paragraph">清洁完成后，选择 **Start recovery** 以启动恢复。</block>
-  <block id="7b2695ab24236bab0ddf7ad7175f5c04" category="list-text">选择是否要保存原始工作负载。若要放弃保存原始工作负载，请选择 **否，替换原始工作负载**。若要保存，请选择 **是，保存原始工作负载**，然后为该工作负载输入一个新名称。</block>
   <block id="bb48b2870670838fdaceecb7e839faf4" category="list-text">选择 **Start recovery** 以启动恢复。</block>
   <block id="6f442695db7c03fcadf2ad5e394da170" category="list-text">恢复完成后，选择 **Next** 进入最后阶段。</block>
-  <block id="c40ef494fde6d59a18088598fb50e5f5" category="list-text">选择 **Release resources and end** 以释放资源并关闭洁净室。要确认是否要释放资源，请选择 **End**。</block>
   <block id="d08d6f8d7a531831181b973c3132aaef" category="paragraph">NetApp Ransomware Resilience 提供干净的恢复，在勒索软件攻击后提供引导式恢复。要执行全新还原，您必须首先在内部或受支持的云环境中创建隔离恢复环境 (IRE)。在 IRE 中，您创建了一个无尘室，Ransomware Resilience 会在其中隔离工作负载，以识别哪些文件是干净的，哪些文件受到勒索软件的影响。</block>
   <block id="f6ee05d779160a7db74d926e2bb640f7" category="section-title">了解干净还原</block>
   <block id="ae684a367ef7be289c58528c425ecc18" category="paragraph">当您执行干净恢复时，Ransomware Resilience 将引导您完成优化恢复的多步骤流程。</block>
@@ -2206,7 +2200,6 @@
   <block id="2b973fe4e18c7b4ee211cfe2a2373d41" category="paragraph">为了避免这些冲突，Ransomware Resilience 会在克隆虚拟机上执行 sysprep，从而重置 SID、CN 和机器标识。重置这些值可确保克隆虚拟机作为唯一且独立的实例运行，而不会干扰源虚拟机。</block>
   <block id="c94b2ef9dde0531d36cb0d4e5d7b4b72" category="section-title">辅助来源</block>
   <block id="08607b19598a980be86467b52da1e4d3" category="paragraph">为本地源创建 IRE 时，可以选择添加辅助源。</block>
-  <block id="dd4cfaa170b77a39c3f6a4580966901c" category="paragraph">如果主源可用，则必须将干净还原还原到主源。如果主源不可用，并且您已配置辅助源，则干净还原将还原到辅助源。</block>
   <block id="4a03772068b579d9b09ff0433b7acadd" category="paragraph">默认情况下，清理还原过程会分析源环境中的快照。如果源环境不可用或源上的未加密快照不可用，则清理还原会分析辅助系统上的快照（如果已配置）。</block>
   <block id="bf6aff190124dd12362477474eddaf9b" category="paragraph">作为 Ransomware Resilience 的一部分提供干净恢复。执行干净恢复或创建 IRE 无需额外的许可证。</block>
   <block id="2c5f8b1bf69ff1fef550992679ff59b6" category="paragraph">启用干净还原可能会产生第三方云提供商费用。根据您使用服务的方式，当存在干净的还原环境时，这些费用可能会重复发生。</block>
@@ -2413,8 +2406,6 @@
   <block id="cbe03757132fcab02b71ae82dd1e0884" category="cell">工作负载重要性的变化</block>
   <block id="2f976de5f743c1cf88b6945568efbc4d" category="paragraph">有关修复隐私泄露的信息，请参见 Data Classification 文档：</block>
   <block id="9a9dd7aacb2ac352c55dbbc5bc460b94" category="doc">清理还原增强功能</block>
-  <block id="5214cc2b554214c44574918df0ce4dd1" category="paragraph">Clean restore 现在支持恢复到备用集群和超过 7 天的分析。</block>
-  <block id="b3b5d3c0c3eb03018f8b168331bf449f" category="paragraph"><block ref="b1b57aeec3a947615fddf0610c8788f4" category="inline-link-macro-rx"></block>.</block>
   <block id="eddd63bd47a99db9ac6b332f06d65b76" category="section-title">Google SecOps SIEM 支持</block>
   <block id="4977d1cdc293f17b4b971e00b9010c9d" category="paragraph">Ransomware Resilience 现在支持 Google SecOps 的安全信息和事件管理 (SIEM)，使您能够将数据自动发送到 Google SecOps 以简化威胁分析和检测。</block>
   <block id="5ef49dc0416f3c817660ec88587d3752" category="paragraph">有关配置信息，请参见 <block ref="d02df671c233387bf6b644be94acfdf7" category="inline-link-macro-rx"></block>。</block>
@@ -2427,10 +2418,6 @@
   <block id="33cfb684e4c2f848fb95d0dfdc255bec" category="inline-link-macro">用户行为活动检测</block>
   <block id="c7374d5e15926358755ed36bb1b7e217" category="paragraph">{asterisk} 只有 Splunk 和 Google SecOps SOAR 剧本才支持屏蔽用户。您必须在受支持的系统上配置 <block ref="b5480edb0f1108d2d990061c7e3130d0" category="inline-link-macro-rx"></block> 才能阻止用户。</block>
   <block id="86a0d99882458a05cdf455b05a5fc9ae" category="list-text">Azure NetApp Files 不支持 FPolicy 或用户行为活动。Azure NetApp Files 也不支持熵取证。</block>
-  <block id="3bb44a404ece63a954a10befcdada9a8" category="list-text">设置完成后，选择 **运行分析**。Ransomware Resilience 在勒索软件事件之前查找可用的还原点，显示还原点的日期和类型。Ransomware Resilience 以七天为间隔搜索还原点。如果在前七天内没有可用的还原点，Ransomware Resilience 将开始查看之前的七天，并重复该过程，直到找到可行的恢复途径。</block>
-  <block id="7857c1a3e3c71150758f075d8491a6f6" category="list-text">选择还原点后，选择 **下一步** 开始清理文件。Ransomware Resilience 开始清理工作负载。</block>
-  <block id="ec72076b80f039b34d11e1dff3bca668" category="list-text">选择恢复目标位置。</block>
-  <block id="2c4ffbb9470b6d460ce8723289618c37" category="list-text">如果您选择了 *Alternate*，请选择 *System*、*Storage VM* 和 *Aggregate* 进行恢复。输入 *New volume* 名称。</block>
   <block id="5e5e4d611b545e088600f1e94c227e02" category="list-text">在类型部分，选择 *Cleaning only*。</block>
   <block id="15133f0d70ddd9da0f0a4ccaf25d12f2" category="paragraph">安全信息和事件管理 (SIEM) 系统集中日志和事件数据，以提供有关安全事件和合规性的见解。NetApp Ransomware Resilience 支持自动将数据发送到您的 SIEM，以简化威胁分析和检测。</block>
   <block id="f6f2f1de81eb4c260d55918d831d8b4e" category="paragraph">Ransomware Resilience 支持以下 SIEM 系统：</block>
@@ -2482,4 +2469,28 @@
   <block id="0bffbc11a95d5a4be5584ad87467b460" category="list-text">为运行 HTTP Event Collector 的 Splunk Cloud 实例输入 *Host* 和 *Port*。端口应与您在 HTTP event collector 进程中输入的内容相匹配。</block>
   <block id="00b8afb4b439e4d80895bdc0b67f43e4" category="list-text">输入您在 Splunk 中创建的事件收集器令牌。</block>
   <block id="9b70df306d1f1719fd9d70e02911394c" category="section-title">2026 年 5 月 11 日</block>
+  <block id="5d9344af71b6822a1b2231cd47017aef" category="paragraph">清理还原现在支持恢复到备用位置，使您能够将卷还原到由同一 Console 代理管理的不同系统、存储 VM 和聚合。此外，清理还原已取消了搜索可行快照进行恢复的七天限制。清理还原现在会继续查看可用快照以寻找可行的恢复点，无论距离勒索软件事件有多远。</block>
+  <block id="66599dda2c9083455404f2c8f0bd486b" category="paragraph"><block ref="c39fc221f9e8d680274efcf9f5170bf4" category="inline-link-macro-rx"></block>.</block>
+  <block id="915ee925651ce61780806b5575738228" category="section-title">恢复到其他位置的注意事项</block>
+  <block id="0afaa93ee8a5c95bc0cb38c6daee892a" category="paragraph">使用干净还原还原卷时，可以选择还原到由同一 Console 代理管理的备用位置。新位置可以位于相同或不同的系统、存储 VM 或聚合上。还原到备用位置时：</block>
+  <block id="87286f1a408a8f4d35051e83d11a108a" category="list-text">ARP 将在新卷上自动启用。</block>
+  <block id="aeb5c79a37ab4399d53c0414084015a5" category="list-text">系统将根据您提供的名称设置接合路径。例如：<block ref="a05d126ec33d5bc01fa36f55495a655a" prefix=" " category="inline-code"></block>。</block>
+  <block id="f9a8b710b836efb8f0794a64ff193bd6" category="list-text">还原卷的导出策略与源卷的导出策略相同。</block>
+  <block id="57b82cda9b5a98234f3cd96443b6a898" category="list-text">还原卷上的 SMB 共享与源卷相同。</block>
+  <block id="9c56b8f4f828d5b236878ac7c716381b" category="list-text">在 **恢复** 部分，确定要还原的工作负载。选择 **还原**。</block>
+  <block id="9b102f4725cadaa2e41b28bfa987ea28" category="list-text">Ransomware Resilience 执行必要的配置。设置成功完成后，Ransomware Resilience 会更新状态。要继续，请选择**下一步**。</block>
+  <block id="57b332ad5183c541ab3ceecd3f933dca" category="list-text">设置完成后，选择 **运行分析**。Ransomware Resilience 搜索最新的未受影响的快照。</block>
+  <block id="bb44ee0d088c710287719ffb36b06518" category="paragraph">要查看粒度文件事件数据，请选择一个文件来分析其加密状态和元数据：创建、修改或删除的时间，以及什么还原点对应于什么操作。</block>
+  <block id="5c9dc5eb823545093e7c3683f1e22431" category="list-text">选择还原点后，选择 **创建还原点**。Ransomware Resilience 会启动一系列作业来创建还原点。完成此流程后，选择 **下一步**。</block>
+  <block id="9546c5040f1161ef9e33b9f4c8b06d40" category="list-text">选择 **开始清理** ，开始从文件中清理恶意软件。</block>
+  <block id="79146d347b80bc7153056d2e7aecbb3f" category="list-text">清洁完成后，选择 **下一步**。</block>
+  <block id="a5c1c108166d7d7bf5a42714d4520afb" category="list-text">选择恢复目标：</block>
+  <block id="bd4c65e5584f68cddc5105e7797e5c0d" category="list-text">选择 **Primary (original)** 以恢复到原始目的地。</block>
+  <block id="e7fd8e73ad2ba2d6cafe93d797580367" category="inline-link-macro">您已配置了辅助源</block>
+  <block id="6b0fe1e4033aa22e683186a0e4277b11" category="paragraph">如果主要位置不可用且<block ref="8cacf3422aa8b4078b87d3c28fcb581f" category="inline-link-macro-rx"></block>，您可以改为还原到**次要**源。</block>
+  <block id="4dd316edec675cf81af287694c576fda" category="list-text">选择 **Alternate** 以恢复到新卷。为新卷选择 **System**、**Storage VM** 和 **Aggregate**，然后提供 **New volume name**。</block>
+  <block id="0d82e39ef01b66f1049f774775f69a57" category="inline-image-macro">备用恢复目标的屏幕截图</block>
+  <block id="84c03f1b38aa942e542555e111083674" category="paragraph"><block ref="84c03f1b38aa942e542555e111083674" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f5cfed6a695ca584c4de91e043cec8df" category="list-text">选择 **释放资源并退出** 以释放资源并关闭洁净室。如需确认，请选择 **结束**。</block>
+  <block id="ee9eb963788511d80fc2e4d572229dfc" category="paragraph">如果主源不可用，并且您已配置辅助源，则干净还原将还原到辅助源。</block>
 </blocks>

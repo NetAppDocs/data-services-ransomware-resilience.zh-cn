@@ -6,9 +6,9 @@
 
 === 清理还原增强功能
 
-Clean restore 现在支持恢复到备用集群和超过 7 天的分析。
+清理还原现在支持恢复到备用位置，使您能够将卷还原到由同一 Console 代理管理的不同系统、存储 VM 和聚合。此外，清理还原已取消了搜索可行快照进行恢复的七天限制。清理还原现在会继续查看可用快照以寻找可行的恢复点，无论距离勒索软件事件有多远。
 
-link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["使用干净还原恢复工作负载"^].
+link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore-recover.html["使用干净还原恢复工作负载"^].
 
 
 
