@@ -2199,7 +2199,6 @@
   <block id="42d5a005352158447d080ff821694db4" category="list-text">使用相同的机器身份会导致许可和激活问题。</block>
   <block id="2b973fe4e18c7b4ee211cfe2a2373d41" category="paragraph">为了避免这些冲突，Ransomware Resilience 会在克隆虚拟机上执行 sysprep，从而重置 SID、CN 和机器标识。重置这些值可确保克隆虚拟机作为唯一且独立的实例运行，而不会干扰源虚拟机。</block>
   <block id="c94b2ef9dde0531d36cb0d4e5d7b4b72" category="section-title">辅助来源</block>
-  <block id="08607b19598a980be86467b52da1e4d3" category="paragraph">为本地源创建 IRE 时，可以选择添加辅助源。</block>
   <block id="4a03772068b579d9b09ff0433b7acadd" category="paragraph">默认情况下，清理还原过程会分析源环境中的快照。如果源环境不可用或源上的未加密快照不可用，则清理还原会分析辅助系统上的快照（如果已配置）。</block>
   <block id="bf6aff190124dd12362477474eddaf9b" category="paragraph">作为 Ransomware Resilience 的一部分提供干净恢复。执行干净恢复或创建 IRE 无需额外的许可证。</block>
   <block id="2c5f8b1bf69ff1fef550992679ff59b6" category="paragraph">启用干净还原可能会产生第三方云提供商费用。根据您使用服务的方式，当存在干净的还原环境时，这些费用可能会重复发生。</block>
@@ -2493,4 +2492,5 @@
   <block id="84c03f1b38aa942e542555e111083674" category="paragraph"><block ref="84c03f1b38aa942e542555e111083674" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f5cfed6a695ca584c4de91e043cec8df" category="list-text">选择 **释放资源并退出** 以释放资源并关闭洁净室。如需确认，请选择 **结束**。</block>
   <block id="ee9eb963788511d80fc2e4d572229dfc" category="paragraph">如果主源不可用，并且您已配置辅助源，则干净还原将还原到辅助源。</block>
+  <block id="1ed548d363a0d2a6ce0c5db113b94db8" category="paragraph">创建 IRE 时，您可以选择添加辅助源。</block>
 </blocks>
