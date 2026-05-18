@@ -18,6 +18,28 @@ summary: 了解NetApp Ransomware Resilience的新功能。
 
 
 
+== 2026 年 5 月 18 日
+
+
+
+=== Google Cloud NetApp Volumes 支持（预览）
+
+Ransomware Resilience 现在支持 Google Cloud NetApp Volumes 系统，使您能够有效检测和响应 Google Cloud NetApp Volumes 中的勒索软件威胁。当您进行发现时，Ransomware Resilience 会自动显示来自 Google Cloud NetApp Volumes 系统的工作负载。当您发现这些系统时，它们会出现在 Ransomware Resilience 仪表板中。Ransomware Resilience 对 Google Cloud NetApp Volumes 的支持目前处于预览阶段。
+
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["了解勒索软件抵御能力"^]。有关 Google Cloud NetApp Volumes 支持范围的信息，请查看 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-limitations.html["勒索软件恢复能力的局限性"^]。
+
+
+
+=== 清理还原增强功能
+
+清除还原现在支持报告。使用报告，您可以查看和评估清除还原，并将此信息离线保存为 CSV 文件。
+
+清除还原现在还支持停止分析。如果停止分析，则必须重新开始清除还原。
+
+要了解有关报告的更多信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports.html["下载勒索软件恢复力报告"^]。要了解有关恢复的更多信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore-recover.html["使用干净还原恢复工作负载"^]。
+
+
+
 == 2026 年 5 月 11 日
 
 
