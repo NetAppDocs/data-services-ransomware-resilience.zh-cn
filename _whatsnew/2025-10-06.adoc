@@ -27,13 +27,13 @@ NetApp Console提供企业级跨本地和云环境的存储和数据服务的集
 
 IMPORTANT: 您必须使用新的link:#new-user-roles-for-data-breach-detection["勒索软件恢复用户行为管理员和勒索软件恢复用户行为查看器"]角色来访问可疑用户行为检测设置。
 
-有关详细信息，请参阅link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["启用可疑用户活动检测"]和link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior["查看异常用户行为"]。
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["启用用户活动检测"] 和 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior["查看异常用户行为"]。
 
 
 
 ==== 其他可疑用户活动检测
 
-除了数据泄露检测之外，勒索软件恢复能力还根据观察到的可疑用户活动检测以下警报类型：
+除了数据泄露检测之外，Ransomware Resilience 还会根据观察到的用户活动检测以下警报类型：
 
 * **数据破坏 - 潜在攻击** - 当文件删除的数量超过历史标准时，会创建具有潜在攻击严重程度的警报。
 * **可疑用户行为 - 潜在攻击** - 当观察到类似于勒索软件攻击的读取、重命名和删除操作时，会创建严重程度为潜在攻击的警报
@@ -44,7 +44,7 @@ IMPORTANT: 您必须使用新的link:#new-user-roles-for-data-breach-detection["
 
 ==== 用于数据泄露检测的新用户角色
 
-为了管理可疑用户活动警报，Ransomware Resilience 为控制台组织管理员引入了两个新角色，以授予对可疑用户活动检测的访问权限：Ransomware Resilience 用户行为管理员和 Ransomware Resilience 用户行为查看器。
+为了管理用户活动警报，NetApp Ransomware Resilience 为 NetApp Console 组织管理员引入了两个新角色，以授予对可疑用户活动检测的访问权限：NetApp Ransomware Resilience 用户行为管理员和 NetApp Ransomware Resilience 用户行为查看器。
 
 您必须是用户行为管理员才能配置可疑用户行为设置。勒索软件恢复管理员角色不支持配置可疑用户行为设置。
 

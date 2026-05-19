@@ -41,4 +41,4 @@
 {asterisk} Amazon FSx for NetApp ONTAP使用自主勒索软件保护 (ARP) 而不是 ARP/AI。有关两者区别的更多信息，请参阅link:https://docs.netapp.com/us-en/ontap/anti-ransomware/#arp-ai["ARP/AI"^]。
 
 
-NOTE: Azure NetApp Files 或 Google Cloud NetApp Volumes 不支持可疑用户活动检测。有关支持可疑用户活动检测的详细信息，请参见 link:reference-user-activity-requirements.html["用户活动检测要求"]。
+NOTE: Azure NetApp Files 或 Google Cloud NetApp Volumes 不支持用户活动检测。有关支持用户活动检测的详细信息，请参见 link:reference-user-activity-requirements.html["用户活动检测要求"]。

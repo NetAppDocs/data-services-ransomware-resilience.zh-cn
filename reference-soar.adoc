@@ -24,7 +24,7 @@ Ransomware Resilience 攻略提供以下功能：
 * 查看富化作业的状态
 
 
-{asterisk} 只有 Splunk 和 Google SecOps SOAR 剧本才支持屏蔽用户。您必须在受支持的系统上配置 link:concept-user-behavior["用户行为活动检测"] 才能阻止用户。
+{asterisk} 只有 Splunk 和 Google SecOps SOAR 剧本才支持屏蔽用户。您必须在受支持的系统上配置 link:concept-user-behavior["用户行为检测"] 才能阻止用户。
 
 
 

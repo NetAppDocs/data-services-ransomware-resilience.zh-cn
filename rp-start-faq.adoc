@@ -120,6 +120,18 @@ link:rp-use-protect.html["了解工作负载优先级或重要性"] 。
 
 勒索软件抵御策略中不需要备份策略。
 
+.Ransomware Resilience 可以识别哪些类型的攻击？
+Ransomware Resilience 可识别五种攻击类型：
+
+* 加密（熵）
+* 加密（用户行为）
+* 数据泄露
+* 数据销毁
+* 可疑的用户活动
+
+
+详细了解link:concept-ransomware-resilience.html#attack-types["攻击类型"]。
+
 .Ransomware Resilience 是否了解ONTAP中的保护设置？
 是的，Ransomware Resilience 会发现在 ONTAP 中设置的快照计划。它还会发现是否在发现的工作负载中的所有卷上启用了 ARP 和 FPolicy。您在 Ransomware Resilience 控制面板中看到的信息是从其他 NetApp 解决方案和产品中汇总而来的。
 

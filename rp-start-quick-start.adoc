@@ -24,7 +24,7 @@ summary: 只需几个步骤即可开始使用NetApp Ransomware Resilience。
 * link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html#agent-installation["确保已安装控制台代理"^]
 * link:rp-start-prerequisites.html["确保您的系统满足要求"]
 +
-** 还请查看 link:reference-user-activity-requirements.html["检测可疑用户活动"] 和 link:task-clean-restore.html["干净还原"] 的要求。
+** 还请查看 link:reference-user-activity-requirements.html["检测可疑用户行为"] 和 link:task-clean-restore.html["干净还原"] 的要求。
 
 
 * link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["审查勒索软件恢复用户角色并为访问勒索软件恢复的用户分配权限"]
@@ -43,12 +43,12 @@ summary: 只需几个步骤即可开始使用NetApp Ransomware Resilience。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]在 Ransomware Resilience 中配置保护和检测
 [role="quick-margin-para"]
-这些任务需要“勒索软件恢复管理员”角色。配置可疑用户行为活动需要额外的“勒索软件恢复用户行为管理员”角色。
+这些任务需要 _Ransomware Resilience admin_ 角色。配置用户行为检测需要额外的 _Ransomware Resilience user behavior admin_ 角色。
 
 [role="quick-margin-list"]
 * link:rp-use-protect.html["保护工作负载"]
 +
-** 可选地，link:suspicious-user-activity.html["通过配置可疑用户活动检测来增强保护"]
+** 或者，link:suspicious-user-activity.html["通过配置用户行为检测来增强保护"]
 
 
 * （可选）配置备份目标：
@@ -63,10 +63,11 @@ summary: 只需几个步骤即可开始使用NetApp Ransomware Resilience。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"]下一步是什么？
 [role="quick-margin-para"]
-在勒索软件恢复中配置保护后，您可以执行以下操作。
+在 NetApp Ransomware Resilience 中配置保护后，您可以：
 
 [role="quick-margin-list"]
 * link:task-classify.html["启用数据分类来识别治理和安全风险"]
 * link:task-siem.html["向 SIEM 发送警报"]
+* link:reference-soar.html["配置 SOAR 剧本"]
 * link:rp-use-reports.html["下载警报、保护、准备演习、恢复或摘要报告"]
 
