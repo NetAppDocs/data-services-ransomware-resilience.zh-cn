@@ -204,7 +204,6 @@
   <block id="059d032d5bb8125e3e1681f7d9ce6023" category="list-text">通过使用备份和恢复、 ONTAP、自主勒索软件防护（ARP 或 ARP/AI，取决于您的ONTAP版本）以及 FPolicy 技术和服务，确定最佳快照或备份并推荐最佳恢复点实际 (RPA)。</block>
   <block id="4ddd3abee434eb92eb13e6cac3e1ad1d" category="cell">*治理*</block>
   <block id="cc4378b1dc9af2e69cb13a88397e2aa7" category="list-text">分配勒索软件保护策略</block>
-  <block id="90d096ff0013c9c2874a247b26e69950" category="list-text">帮助您监控结果。</block>
   <block id="4f743c093ec077920561596aa32a74f6" category="section-title">支持的备份目标、系统和工作负载数据源</block>
   <block id="b45c27598e81de132cbcf41c4f6124d9" category="paragraph">勒索软件恢复支持以下备份目标、系统和数据源：</block>
   <block id="736ca911d7d143d01bd8cbfe0d4afbca" category="list-text">亚马逊网络服务（AWS）S3</block>
@@ -1859,7 +1858,6 @@
   <block id="fa97e4f101b82056aea0cbbc9151ce6c" category="list-text">**数据收集器**从 ONTAP 收集用户活动数据。当您创建具有用户行为检测的保护策略时，将自动创建数据收集器。</block>
   <block id="039bbdbfc55cf385f4e9d2f185a58a2f" category="list-text">**用户目录连接器**连接到您的目录以将用户 ID 映射到用户名。您必须配置用户目录连接器。</block>
   <block id="8f8ab86c0f901231688c7df2b7c1fe00" category="paragraph">用户活动代理、数据收集器和用户目录连接器都可以从 Ransomware Resilience 设置信息板进行管理。</block>
-  <block id="3bf09ba6164b30984f536fd784b700e3" category="paragraph">+ 如果您_不_使用 DII，请继续执行此处的配置说明。</block>
   <block id="8e1169256c8218a428d9f7bf9485bb7a" category="admonition">在 Ransomware Resilience 中查看保护仪表板时，您可以按保护组对工作负载进行排序。</block>
   <block id="4baf379055a0f4c2e8270e48da4264cd" category="doc">在 NetApp Ransomware Resilience 中查看防护状态</block>
   <block id="1a54b4ce88b0b40ec2bc5535c46c4022" category="paragraph">NetApp Ransomware Resilience 的保护仪表板概述了工作负载的保护状态和准备情况。使用保护仪表板，深入了解受保护的内容、需要保护的内容以及保护范围。</block>
@@ -2518,4 +2516,29 @@
   <block id="fd97f891be8e4ff9fd31d19ccffe7cfa" category="list-text">具有复制的保护策略目前不支持 Google Cloud NetApp Volumes</block>
   <block id="98d8c0e0a6e1f848e25119bcb40e31fb" category="paragraph">分析运行时，您可以选择 **停止**。停止分析需要重新启动干净还原过程。</block>
   <block id="3bfca6a430fa87d8630a8459fe8a4aa1" category="section-title">2026 年 5 月 18 日</block>
+  <block id="2e16025a0775d82fdc475daeb18a1fe1" category="list-text">帮助您监控结果。</block>
+  <block id="b39c809eea98a8d210feb1830518c4e1" category="section-title">规模建议</block>
+  <block id="00a0542d454a2c3d33aa384b663f57ae" category="paragraph">收集用户事件时，请确保托管用户活动代理的计算机大小能够适应您的事件率。这意味着确保在托管用户活动代理的计算机上有足够的数据收集器和足够的 CPU 和 RAM 来容忍每秒的事件数。要增加数据收集器的数量，您可能需要增加 RAM 或 CPU 容量。Ransomware Resilience 每个用户活动代理最多支持 50 个数据收集器。</block>
+  <block id="6be806c9e81235cc334525899e24ce6d" category="paragraph">下表提供了尺寸调整的一般指导：</block>
+  <block id="b8ba9599bd38d83618d773a0942a64b8" category="cell">用户活动代理机器配置</block>
+  <block id="3999d93ad3d5c74655af6243f558b8c2" category="cell">数据收集器数量</block>
+  <block id="18d4395da7ff8f089039a4b405433d06" category="cell">最大事件率</block>
+  <block id="b5de202e9046a5a5b8fefd0d5db9cad4" category="cell">4 核、16GB</block>
+  <block id="23c89b5a97c4b2cdaa4c2463c212461a" category="cell">10 个数据收集器</block>
+  <block id="269caf37ed3e8cf3c1e0fedca333dc67" category="cell">20,000 个事件/秒</block>
+  <block id="4abe7d5f36e50b61122614a74ed19547" category="cell">4 核、32GB</block>
+  <block id="4e562f558044748b7be8a4092faa6075" category="cell">20 个数据收集器</block>
+  <block id="9f4dd2227b035f32e343309b777f9a0f" category="paragraph">您还可以计算您的具体要求。在计算合适的大小时，建议您使用 30% 的缓冲率进行限定。使用此公式来确定您的配置是否可以处理负载。</block>
+  <block id="ad126668a8b9ef5079623e9949eca426" category="example-title">Ransomware Resilience 提供了一个用于计算事件数据速率的脚本。了解如何在 Ransomware Resilience 中计算事件数据速率。</block>
+  <block id="05ad069676a9f89984541497cb4b503a" category="paragraph">Ransomware Resilience 提供了一个可以在系统上运行的脚本来计算事件数据速率。默认情况下，该脚本最多可运行五个存储虚拟机。如果您的环境包含 5 个以上的 SVM，则可以相应地修改脚本。无论 SVM 的数量有多少，该脚本大约需要五分钟才能获得平均事件率读数。在运行脚本之前，您必须：</block>
+  <block id="a8addc595422085e1668bb3064c9e3c2" category="inline-link-macro">已配置用户活动代理</block>
+  <block id="ee4ff3935e64f4bc766cf7c778ecf035" category="list-text"><block ref="ee4ff3935e64f4bc766cf7c778ecf035" category="inline-link-macro-rx"></block></block>
+  <block id="b824ffb71459288c7a3f5b876e2c6648" category="list-text">集群 IP 地址</block>
+  <block id="3b35700f5db77466b9829093b579bafc" category="list-text">集群管理员用户名和密码</block>
+  <block id="8357c5714e49295e422957fed4ec2caa" category="list-text">安装<block ref="2fa62e05d832f87969a8d99226be5a74" prefix=" " category="inline-code"></block>在 Linux 机器上（可以使用命令安装<block ref="bd20ec476e804fab40ab36d6175d1936" prefix=" " category="inline-code"></block>）</block>
+  <block id="361ccd8284c6f49a106851d9aeaab8b2" category="list-text">从托管用户活动代理的集群中，以管理员身份运行脚本：<block ref="3b9c122b681f59f04f03105e338591ce" prefix=" " category="inline-code"></block></block>
+  <block id="e0e0df3692200b73a8808571748906b3" category="list-text">出现提示时，请提供 cluter IP 地址、管理员用户名和管理员密码。</block>
+  <block id="2757451d7ac78a3fd169d2600d54a8ad" category="list-text">脚本运行大约需要五分钟。完成后，命令行将显示事件速率，例如"Svm svm_rate 正在生成 100 个事件/秒"。</block>
+  <block id="73e368716ffe1eef8733ba4acf297472" category="paragraph">使用事件率来计算您的规模。</block>
+  <block id="caa617e3833cdf64d33905efb6a82682" category="paragraph">如果您_不_使用 DII，请继续执行此处的配置说明。</block>
 </blocks>
