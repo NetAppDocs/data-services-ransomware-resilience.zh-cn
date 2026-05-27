@@ -107,7 +107,7 @@ NOTE: 对于 SAN 环境，警告仅基于高熵值。
 
 您可以从 Ransomware Resilience 仪表板或*警报*选项卡访问警报。
 
-*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员、勒索软件恢复管理员或勒索软件恢复查看器角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^] 。
+*必需的控制台角色* 要执行此任务，您需要 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["超级管理员"^]、Ransomware Resilience 管理员或 Ransomware Resilience 查看器角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^]。
 
 .步骤
 . 在 Ransomware Resilience 控制面板中，查看 Alerts 窗格。
@@ -136,7 +136,7 @@ image:screen-alerts.png["警报页面"]
 
 TIP: 要在 Console 中设置电子邮件通知，请参见 link:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings["设置电子邮件通知设置"^]。
 
-*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员、勒索软件恢复管理员或勒索软件恢复查看器角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^] 。
+*必需的控制台角色* 要执行此任务，您需要 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["超级管理员"^]、Ransomware Resilience 管理员或 Ransomware Resilience 查看器角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^]。
 
 .步骤
 . 查看电子邮件。
@@ -217,7 +217,7 @@ TIP: 要为用户重新启用警报，请返回警报。选择三个点，然后
 
 停止攻击后，通知您的存储管理员数据已准备就绪，以便他们可以启动恢复过程。
 
-*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^] 。
+*需要控制台角色* 要执行此任务，需要 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["超级管理员"^] 或 Ransomware Resilience 管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^]。
 
 .步骤
 . 从勒索软件恢复菜单中，选择*警报*。
@@ -250,7 +250,7 @@ image:screen-alerts-incidents3.png["警报事件页面"]
 
 CAUTION: 如果您关闭警报，则无法更改其状态或撤消此更改。
 
-*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^] 。
+*需要控制台角色* 要执行此任务，需要 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["超级管理员"^] 或 Ransomware Resilience 管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^]。
 
 .步骤
 . 从勒索软件恢复菜单中，选择*警报*。
@@ -287,7 +287,7 @@ image:screen-alerts-status-edit.png["警报编辑状态页面"]
 
 在文件级别还原工作负载之前，您可以查看受影响文件的列表。您可以访问"提醒"页面，下载受影响文件的列表。然后使用恢复页面上传列表并选择要还原的文件。
 
-*所需的控制台角色* 要执行此任务，您需要组织管理员、文件夹或项目管理员或勒索软件恢复管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^] 。
+*需要控制台角色* 要执行此任务，需要 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["超级管理员"^] 或 Ransomware Resilience 管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^]。
 
 .步骤
 使用“警报”页面检索受影响文件的列表。
