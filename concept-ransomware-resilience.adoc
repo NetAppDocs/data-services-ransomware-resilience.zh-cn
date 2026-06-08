@@ -168,13 +168,13 @@ Ransomware Resilience 可识别五种类型的攻击：
 
 [cols="25,75"]
 |===
-| 攻击类型 | 定义 
+| 攻击类型 | 描述 
 
 
-| 加密（熵） | Ransomware Resilience 识别异常的 IOPS 模式、数据熵和非标准文件后缀。 
+| 加密（熵） | Ransomware Resilience 可识别异常 IOPS 模式、数据熵和非标准文件后缀。 
 
 
-| 加密（用户行为） | NetApp Ransomware Resilience 可识别特定用户执行的异常文件读取、写入和重命名活动。 
+| 加密（用户行为） | Ransomware Resilience 可识别特定用户执行的异常文件读取、写入和重命名活动。 
 
 
 | 数据泄露 | NetApp Ransomware Resilience 检测特定用户执行的异常文件读取访问模式。 

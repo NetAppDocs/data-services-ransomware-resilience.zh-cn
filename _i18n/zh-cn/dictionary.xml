@@ -1609,7 +1609,6 @@
   <block id="9f1822f26663cadd0ea726defa3cca17" category="list-text">在对话框中，选择“删除”以确认要从排除列表中删除工作负载。</block>
   <block id="01e74a47d7af3692bf72faf95ffcd1a3" category="inline-image-macro">成功移除已排除的工作负载的屏幕截图。</block>
   <block id="af77f82e6f94939c1b89727420b621ac" category="list-text">如果成功从排除的工作负载列表中删除工作负载，则“排除的工作负载”页面上将显示成功消息，并且该工作负载将不再出现在排除的工作负载列表中。如果操作失败，将显示错误消息；请重试该操作。 <block ref="364f1d2f9b1485226ce83c7872b1bae0" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b8b45f3c53a227dc5aa1d806ef340f06" category="list-text">**检测策略** 识别勒索软件威胁</block>
   <block id="68fc9b8869c6d23ecc7c4acaf4ef7761" category="list-text">**复制策略** 使您能够将勒索软件恢复功能的快照复制到辅助站点。复制计划可以设置为每小时、每天、每周或每月一次的频率。</block>
   <block id="3ed69b14426127876e3ab79ddc2e266e" category="paragraph">目前，您只能将快照复制到本地ONTAP存储。</block>
   <block id="6474bbda8f7c072686c6e020cf107ead" category="list-text">从控制台左侧导航栏中选择“保护”&gt;“勒索软件恢复”。</block>
@@ -1977,7 +1976,6 @@
   <block id="70a6131a6c77f1f9afbf85c23200dee6" category="list-text">创建卷的快照</block>
   <block id="a4431e17a1690b12df20e34bb2f4b744" category="list-text">利用威胁情报丰富 IP 地址</block>
   <block id="762279f864f96ffbe81b311754b74896" category="list-text">丰富给定 agent 和系统的存储信息</block>
-  <block id="b826f101cb377022bc455ad2020f2f86" category="list-text">使卷脱机以进行事件响应</block>
   <block id="dbc85b383817f560c0d1b083f4449627" category="list-text">测试连接性</block>
   <block id="870d0fb8b0bf7879e6ada101131c6864" category="list-text">查看富化作业的状态</block>
   <block id="5156f3fe3404db2816f53b4f01711a75" category="section-title">操作手册</block>
@@ -2057,7 +2055,6 @@
   <block id="c81c8aac6cfb1c5f690b914eda6a69fd" category="inline-link-macro">将勒索软件弹性连接到 SIEM</block>
   <block id="dbdca0e081ed0b247153e35ce9b1c298" category="paragraph">有关详细信息，请参见 <block ref="d02df671c233387bf6b644be94acfdf7" category="inline-link-macro-rx"></block>。</block>
   <block id="7ee4b3a8392885d95b1b7c9f5a6c99e5" category="paragraph">对数据泄露事件的洞察现在可以在事件发生后保留 13 个月，从而可以根据您的报告需求进行更长时间的记录保存。</block>
-  <block id="787e93d4c2f472a6434cd13d74f3f4d4" category="paragraph">有关详细信息，请参见 <block ref="1a6935dbce91cdb72e61e2f8c1313b36" category="inline-link-macro-rx"></block>。</block>
   <block id="ff1d8a11789570b9a7e5f2d8fa4b3245" category="list-text">如果尚未为其他服务添加 Console 代理，请 <block ref="51497621bfe4b6ebf6d24d0214cc9366" category="inline-link-macro-rx"></block>。</block>
   <block id="5ce927453063236746bf9f7b1ee339ed" category="list-text">选择 *Add license* 转到 Console Licenses and subscriptions 页面。</block>
   <block id="5aacdcc38fb6938e8f7950fb8e5395fc" category="doc">在 NetApp Ransomware Resilience 中查看恢复状态</block>
@@ -2344,7 +2341,6 @@
   <block id="23261131430f46ec6fb27110ac7f00fc" category="section-title">SOAR 对屏蔽用户的支持</block>
   <block id="e5b8f2d9ef7cdce04d260640283c68c6" category="paragraph">Ransomware Resilience 现在支持使用 Google SecOps 和 Splunk SOAR playbooks 阻止个人用户。借助此功能，当 Ransomware Resilience 检测到数据泄露或大规模删除数据等可疑用户活动时，您可以自动阻止用户。</block>
   <block id="2f82a2e72d177e2d1d65a490cf072506" category="paragraph"><block ref="f63222f2dbc8e79c6867c1aa1bf7ad40" category="inline-link-macro-rx"></block>.</block>
-  <block id="cec6d1e77603c10f8f9b0c0c23a333f4" category="list-text">阻止用户*</block>
   <block id="5e5e4d611b545e088600f1e94c227e02" category="list-text">在类型部分，选择 *Cleaning only*。</block>
   <block id="15133f0d70ddd9da0f0a4ccaf25d12f2" category="paragraph">安全信息和事件管理 (SIEM) 系统集中日志和事件数据，以提供有关安全事件和合规性的见解。NetApp Ransomware Resilience 支持自动将数据发送到您的 SIEM，以简化威胁分析和检测。</block>
   <block id="f6f2f1de81eb4c260d55918d831d8b4e" category="paragraph">Ransomware Resilience 支持以下 SIEM 系统：</block>
@@ -2486,11 +2482,8 @@
   <block id="d8e08662cf603a3c4ee9aaf071e19599" category="section-title">攻击类型</block>
   <block id="e4234a1d906d9cdc9c698d93ee4a1039" category="paragraph">Ransomware Resilience 可识别五种类型的攻击：</block>
   <block id="fa56851239948098bf91b1314fa7effe" category="cell">攻击类型</block>
-  <block id="0b890b1926b90387673882e6ccae7fdc" category="cell">定义</block>
   <block id="c4ffd36782688a65f942ba6948827e83" category="cell">加密（熵）</block>
-  <block id="fd2cef800f88467f684f65a53518ac63" category="cell">Ransomware Resilience 识别异常的 IOPS 模式、数据熵和非标准文件后缀。</block>
   <block id="403901db25c61c486833fc82dd2d7acd" category="cell">加密（用户行为）</block>
-  <block id="4ae2d9c30cc3f3a656abf5d6a3d16fa4" category="cell">NetApp Ransomware Resilience 可识别特定用户执行的异常文件读取、写入和重命名活动。</block>
   <block id="bf4ede30456e84ab02d9c068f99126f7" category="cell">NetApp Ransomware Resilience 检测特定用户执行的异常文件读取访问模式。</block>
   <block id="85205fe8e109c0311a7cc912374e07a9" category="cell">Ransomware Resilience 可发现特定用户对文件的大规模删除。</block>
   <block id="9ad1cf824a5d301d8eb3668a3f64e5c9" category="cell">Ransomware Resilience 可识别数据泄露、数据销毁或加密范围之外的异常行为。</block>
@@ -2509,7 +2502,6 @@
   <block id="73ec7da766dca94cf1c4b669985cd2a5" category="list-text"><block ref="73ec7da766dca94cf1c4b669985cd2a5" category="inline-link-macro-rx"></block></block>
   <block id="f2947fbfc4001f394585c42e28740767" category="inline-link-macro">配置用户行为代理和检测器</block>
   <block id="ad709ceaf0cfdbb15b5cbf9fdce90fd8" category="list-text"><block ref="ad709ceaf0cfdbb15b5cbf9fdce90fd8" category="inline-link-macro-rx"></block></block>
-  <block id="bd3c8dbfc7f9bd3854a71cfc2ee0f27e" category="paragraph">{asterisk} 只有 Splunk 和 Google SecOps SOAR 剧本才支持屏蔽用户。您必须在受支持的系统上配置 <block ref="1c8c6ad1b9f3fa5ec23ffb4b53fcc1e8" category="inline-link-macro-rx"></block> 才能阻止用户。</block>
   <block id="4a7bec04cbec6247858664ff561920a3" category="paragraph">Ransomware Resilience 支持用户行为检测，适用于本地 ONTAP 系统的工作负载，以及与 <block ref="12d7be4f3da31a90f0de3bba45ddeec1" category="inline-xref-macro-rx"></block> 保持一致的 Amazon FsxN for NetApp ONTAP 和 Cloud Volumes ONTAP 系统。</block>
   <block id="f79eb8967b3c8df9a5242b71bfa6765b" category="paragraph">用户行为数据可以存储在以下区域的 AWS 和 Azure 中：</block>
   <block id="f7d8c82b937f1272bcd68f037f70dcbb" category="list-text">Azure NetApp Files 不支持 FPolicy 或用户行为检测。Azure NetApp Files 也不支持熵取证。</block>
@@ -2549,4 +2541,25 @@
   <block id="ff6a5ffc05eb6e03c3063d043a5357eb" category="inline-link-macro">超级管理员</block>
   <block id="3a7fa73e20b4b1d037f90f17dc665f22" category="paragraph">*必需的控制台角色* 要执行此任务，您需要 <block ref="91fb5ef1173b6f41fdaa815d28743781" category="inline-link-macro-rx"></block>、Ransomware Resilience 管理员或 Ransomware Resilience 查看器角色。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
   <block id="61c00724cddefbe4d1c796a3d8795e62" category="paragraph">*需要控制台角色* 要执行此任务，需要 <block ref="91fb5ef1173b6f41fdaa815d28743781" category="inline-link-macro-rx"></block> 或 Ransomware Resilience 管理员角色。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
+  <block id="4b77ea6c402cb5104fd06a61c7376030" category="inline-link-macro">了解用户行为检测</block>
+  <block id="85780f52607b54dbe81ff2c46d981a17" category="paragraph">有关详细信息，请参见 <block ref="371ae1c35fd8f1482622c079d0f009f9" category="inline-link-macro-rx"></block>。</block>
+  <block id="ad047b692e58386490130db85fe198fd" category="doc">增强保护策略的灵活性</block>
+  <block id="0492ddae19933de338f553ff06833c6f" category="paragraph">Ransomware Resilience 现在为选择勒索软件检测策略提供了更大的灵活性。以前，所有勒索软件保护策略都必须包括加密检测。现在，您可以仅使用用户行为检测来启用勒索软件保护策略。</block>
+  <block id="7238c31678a241cb872ee9d18f1e46a2" category="paragraph">保护策略仍然可以包括加密检测_和_可疑用户行为检测。阻止文件扩展名也可以添加到任何保护策略中。</block>
+  <block id="bd1924893d8fb00ed3c326b7af6243b5" category="paragraph">如果禁用现有策略的部分保护策略，则在策略的上一次迭代下创建的任何现有警报只能标记为"已解决"而不是"已忽略"。例如，如果您有一个保护策略，其中包括加密检测和可疑用户行为，但您禁用了加密检测，则只能解决该工作负载的现有加密警报。</block>
+  <block id="2b7a103134591ddcc36191e5b569a29b" category="paragraph">有关详细信息，请参见 <block ref="5b0b8f72704979749944145d24f2c6be" category="inline-link-macro-rx"></block>。</block>
+  <block id="eac1000048fff271adb3d0d010dd86f5" category="section-title">SOAR 战术手册增强功能</block>
+  <block id="993b3419e78327c12451169533b8d701" category="paragraph">Ransomware Resilience SOAR 攻略现在可在您阻止用户或使卷脱机后提供补救步骤。如果操作被认为不是勒索软件威胁，您现在可以将卷恢复联机并取消阻止用户。</block>
+  <block id="74ea76930b47f412faf2fb55e463038e" category="cell">Ransomware Resilience 可识别异常 IOPS 模式、数据熵和非标准文件后缀。</block>
+  <block id="583ab768c1c1f45999e48e96c301cc48" category="cell">Ransomware Resilience 可识别特定用户执行的异常文件读取、写入和重命名活动。</block>
+  <block id="48c197e68b527d9bc2137bcea71c2e76" category="list-text">屏蔽/取消屏蔽用户*</block>
+  <block id="1943cfeff6e7967a7ab396ecab9a4c21" category="list-text">使卷脱机以进行事件响应，或在事件发生后使卷联机</block>
+  <block id="46d3a8bf54f5d5c4058a1eba2e7daa4a" category="paragraph">{asterisk} 只有 Splunk 和 Google SecOps SOAR 攻略才支持屏蔽/取消屏蔽用户。您必须在受支持的系统上配置 <block ref="1c8c6ad1b9f3fa5ec23ffb4b53fcc1e8" category="inline-link-macro-rx"></block> 才能阻止用户。</block>
+  <block id="495dc566c29577d14a3418e529c90d3c" category="list-text">**检测策略**识别勒索软件威胁。您有三个检测选项：</block>
+  <block id="b3b96411f9486bb0c2c8a4e2b07e7d35" category="list-text">加密检测</block>
+  <block id="2b694a9a00b006682bcbea870c2ca4fb" category="list-text">阻止可疑文件扩展名</block>
+  <block id="a1c735fa1a87c7cfca09d994cfe02048" category="inline-link-macro">可疑用户活动（需要额外配置）</block>
+  <block id="262d414194517bdfa67b048201f2b424" category="paragraph">您的检测策略可以包括所有三个选项，也可以包括这三个选项的组合。它必须包括加密检测或 <block ref="0c1271458a5eed3dcf0b345a743161db" category="inline-link-macro-rx"></block>。</block>
+  <block id="38cfc49361136d6f7410fbe2c3b7430a" category="list-text">*保护更改*：包括审查工作负载保护策略在一段时间内的更改：30 天、60 天、90 天或 1 年。</block>
+  <block id="3e323562bd488e4cbd90a025b9424181" category="section-title">2026 年 6 月 08 日</block>
 </blocks>

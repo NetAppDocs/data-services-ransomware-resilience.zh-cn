@@ -1,0 +1,23 @@
+= 增强保护策略的灵活性
+:allow-uri-read: 
+
+
+
+
+=== 增强保护策略的灵活性
+
+Ransomware Resilience 现在为选择勒索软件检测策略提供了更大的灵活性。以前，所有勒索软件保护策略都必须包括加密检测。现在，您可以仅使用用户行为检测来启用勒索软件保护策略。
+
+保护策略仍然可以包括加密检测_和_可疑用户行为检测。阻止文件扩展名也可以添加到任何保护策略中。
+
+如果禁用现有策略的部分保护策略，则在策略的上一次迭代下创建的任何现有警报只能标记为"已解决"而不是"已忽略"。例如，如果您有一个保护策略，其中包括加密检测和可疑用户行为，但您禁用了加密检测，则只能解决该工作负载的现有加密警报。
+
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["使用NetApp Ransomware Resilience保护策略保护工作负载"^]。
+
+
+
+=== SOAR 战术手册增强功能
+
+Ransomware Resilience SOAR 攻略现在可在您阻止用户或使卷脱机后提供补救步骤。如果操作被认为不是勒索软件威胁，您现在可以将卷恢复联机并取消阻止用户。
+
+link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/reference-soar.html["整合 SOAR 攻略"^].

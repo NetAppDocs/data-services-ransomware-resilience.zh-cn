@@ -24,4 +24,4 @@ Ransomware Resilience 现在为 Splunk Enterprise 提供安全信息事件管理
 
 对数据泄露事件的洞察现在可以在事件发生后保留 13 个月，从而可以根据您的报告需求进行更长时间的记录保存。
 
-有关详细信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-user-behavior.html["了解用户活动检测"^]。
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-user-behavior.html["了解用户行为检测"^]。
