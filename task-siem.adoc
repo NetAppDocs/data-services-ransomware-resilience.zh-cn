@@ -69,13 +69,13 @@ NOTE: 只有在您已配置 xref:concept-user-behavior.adoc[用户行为检测] 
 
 == 配置 AWS Security Hub 进行威胁检测
 
-在 Ransomware Resilience 中启用 AWS Security Hub 之前，需要在 AWS Security Hub 中执行以下高级别步骤：
+在 Ransomware Resilience 中启用 AWS Security Hub 之前，需要在 AWS Security Hub 中执行安全配置：
 
 * 在 AWS Security Hub 中设置权限。
 * 在 AWS Security Hub 中设置身份验证访问密钥和密钥。  （此处未提供这些步骤。）
 
 
-.在 AWS Security Hub 中设置权限的步骤
+.在 AWS Security Hub 中设置权限
 . 转到 *AWS IAM 控制台*。
 . 选择*政策*。
 . 使用以下 JSON 格式的代码创建策略：

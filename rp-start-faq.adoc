@@ -94,10 +94,10 @@ link:rp-use-protect.html["了解工作负载优先级或重要性"] 。
 勒索软件恢复能力会发现卷和文件扩展名，并将它们与相应的工作负载关联起来。
 
 .什么是受保护的工作负载？
-在勒索软件恢复能力中，当工作负载启用了主要检测策略时，其状态将显示为“*受保护*”，这意味着 link:concept-ransomware-resilience.html["自主勒索软件防护 (ARP)"] 已在与工作负载相关的所有卷上启用。
+在 Ransomware Resilience 中，当启用 _detection_ 策略时，工作负载显示 *protected* 状态。检测策略必须由加密检测或可疑用户行为检测（或两者）组成。它还可以包括可疑文件扩展名检测。有关详细信息，请参见 link:rp-use-protect.html#add-a-ransomware-protection-strategy["检测策略"]。
 
 .什么是“高风险”工作量？
-如果工作负载未启用主检测策略，即使启用了备份和快照策略，也会被标记为“有风险”。为了防止勒索软件攻击，您应该启用…… link:rp-use-protect.html#add-a-ransomware-protection-strategy["检测策略"]。
+如果工作负载未启用检测策略，即使启用了备份和快照策略，也会标记为"有风险"。为了防范勒索软件，您应该启用 link:rp-use-protect.html#add-a-ransomware-protection-strategy["检测策略"]。
 
 .我添加了一个新卷，但它还没有显示出来。我应该怎么办？
 如果您向环境中添加了新卷，请重新启动工作负载发现。在发现体积之后， link:rp-use-protect.html#add-a-ransomware-protection-strategy["采取保护策略以保护新增容量"]。

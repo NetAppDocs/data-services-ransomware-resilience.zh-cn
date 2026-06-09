@@ -521,7 +521,6 @@
   <block id="179e5ea4317177f519c688d15ef67987" category="paragraph"><block ref="179e5ea4317177f519c688d15ef67987" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e462715e9b155f4f9638da4f314c8aff" category="list-text">选择*准备演习*和*下载*以下载准备演习报告。</block>
   <block id="4c8cd66676ad1c434108e699d9777408" category="paragraph">您可以忽略误报或决定立即恢复数据。</block>
-  <block id="899157335f0c98105a8cbc92966ba06d" category="admonition">如果您关闭警报，勒索软件恢复功能会了解此行为，将其与正常操作关联，并且不会再次对其发出警报。</block>
   <block id="a8fd9e3988acb841854762788963d815" category="paragraph">要开始恢复数据，请将警报标记为准备好恢复，以便存储管理员可以开始恢复过程。</block>
   <block id="304b86572af1a03e438d6a3b86bfad43" category="paragraph">每个警报可能包含不同数量和状态的多个事件。审查所有事件。</block>
   <block id="271b5be554c7641bb10d05402276d05a" category="list-text">文件扩展名已创建或更改</block>
@@ -709,10 +708,6 @@
   <block id="4dc51b8615944f599801153cc7777840" category="list-text">在此页面中，您可以查看和更改工作负载的保护详细信息。</block>
   <block id="cf077fd7afe54e3a0c2d1f4f171b9592" category="inline-link-macro">添加勒索软件防护策略</block>
   <block id="ce4ef271bc40fcdcc146584fcac5d544" category="paragraph">*保护状态*：工作负载可以显示以下保护状态之一，以指示是否应用了策略：</block>
-  <block id="463f5e1b668b83efc12cf4dbc90300ff" category="list-text">*受保护*：已应用策略。与工作负载相关的所有卷上均启用了 ARP（或 ARP/AI，取决于ONTAP版本）。</block>
-  <block id="2849b9294b844719ab6e63ff0e8d64a0" category="list-text">*存在风险*：未应用任何政策。如果工作负载没有启用主要检测策略，那么即使启用了快照和备份策略，它仍然“处于危险之中”。</block>
-  <block id="d8b2d86957c187231adaeb328cc57adb" category="list-text">*进行中*：政策正在应用但尚未完成。</block>
-  <block id="a6539f11a6b87c60fecf3f4d34dfb4d1" category="list-text">*失败*：策略已应用但不起作用。</block>
   <block id="0882532dc9eb74e24a8b137f1e6a0b39" category="paragraph">勒索软件恢复能力根据对每个工作负载的分析，在发现过程中为每个工作负载分配重要性或优先级。工作负载重要性由以下快照频率决定：</block>
   <block id="58adba48bf0678c3abb71d1fdf829602" category="paragraph">您可以选择以下勒索软件恢复预定义策略之一，这些策略与工作负载重要性相一致。</block>
   <block id="4d293abd3f96b37c9afdf90f01855f8b" category="admonition">**加密用户扩展**策略是唯一支持可疑用户行为检测的预定义策略。</block>
@@ -767,7 +762,6 @@
   <block id="e4574be2aa1d855d0a159fa734c028b7" category="list-text">对于每个项目，选择*向下箭头*。</block>
   <block id="b77a56354e9e39a76b1a118e9bfa09d3" category="list-text">*检测政策*：</block>
   <block id="949db64066489b0349a4ff1451832808" category="list-text">*策略*：选择预先设计的检测策略之一。</block>
-  <block id="66ecff8104cfb8cf22c05ebdad07a66a" category="list-text">*可疑用户行为检测*：启用用户行为检测，将用户活动事件传输到勒索软件恢复能力并检测可疑事件，例如数据泄露。</block>
   <block id="7c06fadd4f73e4b63eb519df7d9880fc" category="paragraph">如果您想更改被阻止的文件扩展名，请在系统管理器中编辑它们。</block>
   <block id="c8499d03897189696e5af26fc5ab9f45" category="list-text">*快照策略*：</block>
   <block id="007ac2633329ecdb55692304050d9260" category="list-text">*快照策略基础名称*：选择一个策略或选择*创建*并输入快照策略的名称。</block>
@@ -988,7 +982,6 @@
   <block id="0df177143ce12a3516098cd3329e85c2" category="section-title">配置 AWS Security Hub 进行威胁检测</block>
   <block id="de9b4f41a945df92e6c5b62f443f03f1" category="list-text">在 AWS Security Hub 中设置权限。</block>
   <block id="5fd0d2c5fd8b96b7b7b69f69b942c559" category="list-text">在 AWS Security Hub 中设置身份验证访问密钥和密钥。  （此处未提供这些步骤。）</block>
-  <block id="12eef9b6a125a82d69978241dca88c07" category="list-title">在 AWS Security Hub 中设置权限的步骤</block>
   <block id="66d20ba773065dfc079ca6feb04ef773" category="list-text">转到 *AWS IAM 控制台*。</block>
   <block id="bf6953a41efa897b0862fca0fe547641" category="list-text">选择*政策*。</block>
   <block id="2228b7980f61d80481608141744ecee0" category="list-text">使用以下 JSON 格式的代码创建策略：</block>
@@ -1375,11 +1368,8 @@
   <block id="65a602dc25a2da85e0a1dfb15824b10b" category="paragraph-title">如何将数据与工作负载关联起来？</block>
   <block id="e2201c0935bcdfd14ed840897f30bcdc" category="paragraph">勒索软件恢复能力会发现卷和文件扩展名，并将它们与相应的工作负载关联起来。</block>
   <block id="f7d49d845f0e8fd37a070e797785ddd2" category="paragraph-title">什么是受保护的工作负载？</block>
-  <block id="7259cd6e0f46eebf9079f25f465a8c63" category="inline-link-macro">自主勒索软件防护 (ARP)</block>
-  <block id="7fd0dced59717f1ce225e83c1eba7879" category="paragraph">在勒索软件恢复能力中，当工作负载启用了主要检测策略时，其状态将显示为“*受保护*”，这意味着 <block ref="f47b2a56bf7e72f952a180e4f688a755" category="inline-link-macro-rx"></block> 已在与工作负载相关的所有卷上启用。</block>
   <block id="a7728d009ece45c9ca2552ef1b9e83b5" category="paragraph-title">什么是“高风险”工作量？</block>
   <block id="feb245a8019757951a6c89440c58dbd0" category="inline-link-macro">检测策略</block>
-  <block id="073899b4550e086de0057b494471a8d5" category="paragraph">如果工作负载未启用主检测策略，即使启用了备份和快照策略，也会被标记为“有风险”。为了防止勒索软件攻击，您应该启用…… <block ref="ffe6233ab872c39a610f87efd1e90b37" category="inline-link-macro-rx"></block>。</block>
   <block id="77f988a37bbdd1881b090c55f9b830f1" category="paragraph-title">我添加了一个新卷，但它还没有显示出来。我应该怎么办？</block>
   <block id="2173d44554906f5f04303f8e155b7e0d" category="inline-link-macro">采取保护策略以保护新增容量</block>
   <block id="b79a0001646a8a21be92374c30d89073" category="paragraph">如果您向环境中添加了新卷，请重新启动工作负载发现。在发现体积之后， <block ref="11d93ee27365ded5cd7b6061cdb7f916" category="inline-link-macro-rx"></block>。</block>
@@ -1622,8 +1612,6 @@
   <block id="aa9adfa847815670c9bd986dafc8c79c" category="cell">快照副本的最大数量</block>
   <block id="cf9344351eb239ccd95661876c4d97ee" category="cell">*关键复制策略*</block>
   <block id="ad53fda1a18da9db9d8aa1d460952aa5" category="list-text">二次复制到ONTAP</block>
-  <block id="8f6c5d8baaf38cda61b5392a06e30e68" category="list-text">*主要检测*：启用勒索软件恢复功能，以检测潜在的勒索软件攻击。</block>
-  <block id="21fd87cf8a3d6f008657537a5cec6e82" category="list-text">*阻止文件扩展名*：启用勒索软件恢复功能，以阻止已知的可疑文件扩展名。启用主检测功能后，勒索软件恢复功能会自动创建快照副本。</block>
   <block id="50723c157cd9ea132a02f421411e273d" category="list-text">*复制策略*：</block>
   <block id="f84245dfb1fc8217e62c0934102ba606" category="list-text">*复制策略基本名称*：输入新名称或选择现有名称。基本名称是附加到所有快照的前缀。</block>
   <block id="d230465858c85552b6c5a5b1ef3bb21f" category="list-text">*复制计划*：切换要启用的频率（每小时、每天、每周或每月），并为每个启用的计划设置保留值（要保留的复制快照的数量）。</block>
@@ -2346,7 +2334,6 @@
   <block id="f6f2f1de81eb4c260d55918d831d8b4e" category="paragraph">Ransomware Resilience 支持以下 SIEM 系统：</block>
   <block id="963e2ddcdebcdd0f6fcbd1dad696e580" category="admonition">Ransomware Resilience 还提供 <block ref="de8332ed81162473af5cb8a1551a7e36" category="inline-link-macro-rx"></block>。</block>
   <block id="1d128c6086cbb73d30a6cbf3e127963d" category="list-text">*title*：检测到的警报的显示名称。</block>
-  <block id="bf49f7b724de055a76d11fee549a6a9c" category="paragraph">在 Ransomware Resilience 中启用 AWS Security Hub 之前，需要在 AWS Security Hub 中执行以下高级别步骤：</block>
   <block id="41b1238763de1c7569a52c2f6f418f26" category="list-title">在 Ransomware Resilience 中验证 AWS Security Hub</block>
   <block id="a9e57cc6ddc3d658ec2f623d0d9bc8a4" category="list-text">在 Ransomware Resilience 中，选择侧边栏中的 *Settings*。</block>
   <block id="d28cdccd0f4e99a6f4e0f91d5197063e" category="list-text">选择 *AWS Security Hub* 作为 SIEM 提供程序。</block>
@@ -2562,4 +2549,18 @@
   <block id="262d414194517bdfa67b048201f2b424" category="paragraph">您的检测策略可以包括所有三个选项，也可以包括这三个选项的组合。它必须包括加密检测或 <block ref="0c1271458a5eed3dcf0b345a743161db" category="inline-link-macro-rx"></block>。</block>
   <block id="38cfc49361136d6f7410fbe2c3b7430a" category="list-text">*保护更改*：包括审查工作负载保护策略在一段时间内的更改：30 天、60 天、90 天或 1 年。</block>
   <block id="3e323562bd488e4cbd90a025b9424181" category="section-title">2026 年 6 月 08 日</block>
+  <block id="8301d3df17a7d3b229e97daa256bc551" category="paragraph">在 Ransomware Resilience 中，当启用 _detection_ 策略时，工作负载显示 *protected* 状态。检测策略必须由加密检测或可疑用户行为检测（或两者）组成。它还可以包括可疑文件扩展名检测。有关详细信息，请参见 <block ref="ffe6233ab872c39a610f87efd1e90b37" category="inline-link-macro-rx"></block>。</block>
+  <block id="6c6097f9e44fb30ef0bc0a6e210dce9b" category="paragraph">如果工作负载未启用检测策略，即使启用了备份和快照策略，也会标记为"有风险"。为了防范勒索软件，您应该启用 <block ref="ffe6233ab872c39a610f87efd1e90b37" category="inline-link-macro-rx"></block>。</block>
+  <block id="fec111d809c49ffc75c21732e808fe2d" category="admonition">如果忽略此警报，Ransomware Resilience 将了解此行为，将其与正常操作相关联，并停止发送类似事件的警报。</block>
+  <block id="7f2998da36c9b089182a98b4c6ff6c5d" category="admonition">如果您有一个现有的保护策略，然后在其上禁用了一种检测形式，则在策略的上一次迭代下创建的任何警报只能标记为"已解决"而不是"已忽略"。例如，如果您有一个包含加密检测和可疑用户行为的保护策略的活动警报，但随后禁用了加密检测，则只能将该警报标记为"已解决"。</block>
+  <block id="5e37428a91a220042e4764361ae6e656" category="list-text">*加密检测*：启用 Ransomware Resilience 以检测基于加密的攻击。</block>
+  <block id="83b90da4f4a4213417bbdd607b6813c9" category="list-text">*可疑用户行为检测*：启用用户行为检测，将用户活动事件传输到 Ransomware Resilience，并检测数据泄露或数据销毁等可疑事件。</block>
+  <block id="8d9e80b9523ae8e43c09fee979fbfe13" category="list-text">*阻止文件扩展名*：启用 Ransomware Resilience 以阻止已知的可疑文件扩展名。</block>
+  <block id="87c5b70bcda4f0448400bb7245e5d975" category="admonition">您可以选择检测策略的任意组合。检测策略必须包括加密检测或可疑用户行为检测。</block>
+  <block id="18282a82722e35ec83f6634f6933e908" category="list-text">*受保护*：应用检测策略。</block>
+  <block id="689a050b69b980dbe9c67ea9fdaeb981" category="list-text">*存在风险*：不适用任何策略。如果工作负载未启用检测策略，则即使启用了快照和备份策略，也会"面临风险"。</block>
+  <block id="1c2f725024e8db3f57c9ffb6c1869a4f" category="list-text">*进行中*：正在应用策略，但操作尚未完成。</block>
+  <block id="7f2fe4ecc84891950d87f953f70363aa" category="list-text">*Failed*：已配置策略，但出现错误。</block>
+  <block id="ed3c60417302240ba271d87f011c0f32" category="paragraph">在 Ransomware Resilience 中启用 AWS Security Hub 之前，需要在 AWS Security Hub 中执行安全配置：</block>
+  <block id="6209d7a62e35781f2a36ba4149e80d90" category="list-title">在 AWS Security Hub 中设置权限</block>
 </blocks>
