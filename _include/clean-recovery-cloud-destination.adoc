@@ -12,7 +12,7 @@
 
 
 
-NOTE: 如果您要配置源位于 Amazon FSxN for ONTAP 中的 IRE，请跳过此洁净室 SVM 数据 LIF IP 要求。
+NOTE: 如果要配置源位于 Amazon FSx for NetApp ONTAP 中的 IRE，请跳过此洁净室 SVM 数据 LIF IP 要求。
 
 .生产环境路由表
 * 生产路由表必须允许从 IRE 子网到干净还原数据 LIF IP 的流量。您必须将此路由添加到生产路由表中。

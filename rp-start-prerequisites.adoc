@@ -26,7 +26,7 @@ summary: 通过验证对您的环境、网络访问、登录和 Web 浏览器的
 | 环境 | 协议 | 支持的版本 
 
 
-| Amazon FSx for NetApp ONTAP* | CIFS、NFS 和 SAN | 不适用 
+| Amazon FSx for NetApp ONTAP | CIFS、NFS 和 SAN | 不适用 
 
 
 | Azure NetApp Files | CIFS 和 NFS | 不适用 
@@ -58,8 +58,6 @@ summary: 通过验证对您的环境、网络访问、登录和 Web 浏览器的
 
 | Google Cloud NetApp Volumes | CIFS、NFS、SAN (iSCSI & NVMe) | 不适用 
 |===
-{asterisk} Amazon FSx for NetApp ONTAP使用自主勒索软件保护 (ARP) 而不是 ARP/AI。有关两者区别的更多信息，请参阅link:https://docs.netapp.com/us-en/ontap/anti-ransomware/#arp-ai["ARP/AI"^]。
-
 
 NOTE: Azure NetApp Files 或 Google Cloud NetApp Volumes 不支持用户活动检测。有关支持用户活动检测的详细信息，请参见 link:reference-user-activity-requirements.html["用户活动检测要求"]。
 
