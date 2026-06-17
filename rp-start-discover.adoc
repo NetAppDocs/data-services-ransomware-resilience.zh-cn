@@ -31,6 +31,9 @@ Ransomware Resilience 会检查您当前的备份保护、快照副本和 NetApp
 
 发现工作负载并不会自动保护它们。Ransomware Resilience 在发现过程中识别来自 NetApp Backup and Recovery 或 ONTAP 的现有保护策略。任何没有保护的工作负载都需要您 link:rp-use-protect.html["配置保护"]。
 
+
+NOTE: Ransomware Resilience 每个控制台代理最多只能发现 3,000 个工作负载。
+
 .步骤
 . 从NetApp Console中，选择“保护”>“勒索软件恢复能力”。
 +

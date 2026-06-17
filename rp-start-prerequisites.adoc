@@ -78,6 +78,7 @@ NOTE: 如果单个 Console 组织中有多个 Console 代理，则 Ransomware Re
 
 
 * 控制台代理必须具有 `cloudmanager-ransomware-protection`容器处于活动状态。
+* 每个 Console 代理的工作负载上限为 3,000 个。
 * 对于 ONTAP 或 Cloud Volumes ONTAP 集群，Ransomware Resilience 需要 ONTAP 版本 9.11.1 或更高版本。
 +
 
