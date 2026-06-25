@@ -2405,7 +2405,6 @@
   <block id="c36975af9ca6baf7b5a05658605b577d" category="paragraph">如果需要更新特定系统的非管理员用户权限，请使用以下过程：</block>
   <block id="3e24330471da607e91da657f3cdf7a39" category="list-text">登录到 Console。在仪表板上，确定需要更新其 ONTAP 用户权限的系统。</block>
   <block id="df790109011414a6034217652cd48d7c" category="inline-link-macro">干净还原</block>
-  <block id="ff3968cf2fd662dd2275d75511ef33af" category="cell">CIFS、NFS、SAN (iSCSI &amp; NVMe)</block>
   <block id="a1b7351b5e78c5f7b3c07f1f9b210761" category="doc">Google Cloud NetApp Volumes 支持（预览）</block>
   <block id="d80af1c0606a32f418ab576db57cacc1" category="paragraph">Ransomware Resilience 现在支持 Google Cloud NetApp Volumes 系统，使您能够有效检测和响应 Google Cloud NetApp Volumes 中的勒索软件威胁。当您进行发现时，Ransomware Resilience 会自动显示来自 Google Cloud NetApp Volumes 系统的工作负载。当您发现这些系统时，它们会出现在 Ransomware Resilience 仪表板中。Ransomware Resilience 对 Google Cloud NetApp Volumes 的支持目前处于预览阶段。</block>
   <block id="35b27350003f459df80234524883b5fc" category="inline-link-macro">勒索软件恢复能力的局限性</block>
@@ -2563,4 +2562,6 @@
   <block id="b4bada7d854e6650f9cc28e404fe40fb" category="admonition">对于部署到 Amazon FSx for NetApp ONTAP 的 IRE，无需提供此信息。</block>
   <block id="f5b6822ed53c8f99c424ea0e8e011bf7" category="admonition">Ransomware Resilience 每个控制台代理最多只能发现 3,000 个工作负载。</block>
   <block id="bb4393b6187d55f98dbeb4c5bb8add00" category="list-text">每个 Console 代理的工作负载上限为 3,000 个。</block>
+  <block id="8df5e57d843114bbbb53a4c85f76cb68" category="list-text">来自 Google Cloud NetApp Volumes 的 SAN 工作负载目前在 Ransomware Resilience 中不受支持。</block>
+  <block id="afce532bad172bcef50d75935d2ed43b" category="list-text">复制策略</block>
 </blocks>
