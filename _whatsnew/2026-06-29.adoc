@@ -1,0 +1,11 @@
+= 自动响应用户活动警报
+:allow-uri-read: 
+
+
+
+
+=== 自动响应用户活动警报
+
+Ransomware Resilience 现在支持在生成用户活动警报时自动创建快照和阻止用户。通过自动响应，您可以在生成警告后立即阻止用户，并创建快照进行恢复，从而无需手动干预即可更快地响应。
+
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-automate-user-activity.html["自动响应用户活动警报"^]。

@@ -50,3 +50,10 @@ image:screen-dashboard.png["信息板页面"]
 image:screen-reports.png["显示准备情况演练报告的报告页面"]
 
 
+
+
+
+== 更多信息
+
+* link:task-automate-user-activity.html["自动响应用户活动事件"]
+

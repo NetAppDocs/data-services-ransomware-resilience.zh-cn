@@ -56,6 +56,8 @@ sidebar:
           url: "/reference-user-activity-requirements.html"
         - title: 配置代理和收集器
           url: "/suspicious-user-activity.html"
+        - title: 管理用户警报和拦截
+          url: "/task-users-manage.html"
       - title: 管理保护组
         url: "/task-protection-group.html"
       - title: 扫描个人身份信息
@@ -64,6 +66,8 @@ sidebar:
       entries:
       - title: 响应检测到的警报
         url: "/rp-use-alert.html"
+      - title: 自动响应用户活动警报
+        url: "/task-automate-user-activity.html"
       - title: 查看恢复状态
         url: "/rp-use-recover.html"
       - title: 使用干净还原进行恢复

@@ -1,0 +1,78 @@
+---
+sidebar: sidebar 
+permalink: task-automate-user-activity.html 
+keywords: data breach detection, data breach, user activity, automated response 
+summary: NetApp Ransomware Resilience 支持创建对用户活动事件的自动响应，使您能够自动创建快照或阻止用户。 
+---
+= 自动响应 NetApp Ransomware Resilience 中的用户活动警报
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilience 支持创建对 link:concept-user-behavior.html["用户活动事件"] 的自动响应。通过自动响应，Ransomware Resilience 可以在检测到攻击或警告时创建快照或阻止用户，从而更快速地响应勒索软件事件。
+
+加密（用户行为）、数据泄露和数据销毁事件均支持自动响应。在创建自动响应之前，您必须具有 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent["配置了用户活动代理，启用了具有用户活动检测的策略，并创建了用户目录连接器"]。
+
+
+
+== 创建自动响应
+
+您只能保护一个存储 VM，且该存储 VM 至少有一个工作负载受可疑用户行为检测策略保护。
+
+.步骤
+. 在勒索软件恢复功能中，选择**设置**。
+. 在用户活动监控图块中，选择**管理**。
+. 选择**Automated responses**选项卡。
+. 选择**添加**以创建此行为。
+. 为自动响应输入**名称**。
+. 选择要触发响应的事件类型：**攻击**或**警告**。详细了解不同的 link:rp-use-alert.html#alert-types-and-statuses["警报类型"]。
+. 选择响应：
++
+** **阻止用户访问**：触发警报时，用户将被阻止访问所有受 Ransomware Resilience 保护的存储 VM。
++
+如果选择此选项，则还必须选择阻止的持续时间。它可以是 1 到 24 小时之间的间隔，也可以是永久性的。
+
+** **拍摄快照**：为受影响的工作负载创建快照，以用于潜在的恢复。快照保留七天。
+
+
+. 选择触发自动响应的警报类型：
++
+|===
+
+
+| 警报类型 | 描述 
+
+
+| 加密（用户行为） | Ransomware Resilience 可识别特定用户执行的异常文件读取、写入和重命名活动。 
+
+
+| 数据泄露 | NetApp Ransomware Resilience 检测特定用户执行的异常文件读取访问模式。 
+
+
+| 数据销毁 | Ransomware Resilience 可发现特定用户对文件的大规模删除。 
+|===
+. 选择要应用自动响应的Storage VM。
+. 选择**添加**以创建自动响应。
+
+
+
+
+== 修改自动响应
+
+创建自动响应后，您可以暂停、重新启动或修改响应。您可以修改响应的名称、触发响应的警报类型、存储 VM 和采取的操作。
+
+.步骤
+. 在勒索软件恢复功能中，选择**设置**。
+. 在用户活动监控图块中，选择**管理**。
+. 选择**Automated responses**选项卡。
+. 选择要修改的自动回复。
+. 要暂停或删除响应，请选择操作菜单，然后选择**暂停**（或**开始**）或**删除**。
++
+要修改回复，请选择**编辑**。
+
+. 您可以修改警报严重性以外的任何设置。
+. 选择**保存**以保存更改。
+

@@ -1163,9 +1163,7 @@
   <block id="f2d7e7792f60fc56fc833ac06d43ff03" category="list-text">检查您的设置。选择*激活*以完成添加用户活动代理。</block>
   <block id="87890c9758b28588c6845cfcf6d19b17" category="section-title">添加数据收集器</block>
   <block id="cebc35dcf9d04a393d86d35a4e3cf6be" category="inline-xref-macro">添加检测策略</block>
-  <block id="723cff7a2b53371ffdffcdc65a370014" category="paragraph">您可以查看数据收集器的详细信息。从“设置”中，选择“用户活动”图块中的“**管理**”。选择**数据收集器**选项卡，然后选择数据收集器以查看其详细信息或暂停它。</block>
   <block id="8348d8dcee9ea32e049e21c42a431b91" category="list-text">在勒索软件恢复中，转到*设置*。</block>
-  <block id="9fcb0a7634f29d96ae98e37bbc76e1cd" category="list-text">在用户活动图块中，选择**管理**。</block>
   <block id="e70202c14c96f451fdcf2617844ea351" category="list-text">选择**用户目录连接器**选项卡，然后选择**添加**。</block>
   <block id="496ee322ba138fdbc777e5ab2e30145e" category="list-text">*姓名*</block>
   <block id="e018ce61f2faa0782aac0cf5ceb4e39f" category="list-text">*用户目录类型*</block>
@@ -1178,7 +1176,6 @@
   <block id="7174ea6988f438d85266f06a4d178a79" category="list-text">选择**添加**。</block>
   <block id="c46a6dfd4cabd150fef75d97e543d6e6" category="list-text">返回用户目录连接器选项卡以检查用户目录连接器的状态。如果创建成功，用户目录连接器的状态显示为*正在运行*。</block>
   <block id="ecdd284164c9ec55e281a5e22e24af67" category="section-title">删除用户目录连接器</block>
-  <block id="064c929bca3d74ce57c593b98179d9b6" category="list-text">找到用户活动图块，选择**管理**。</block>
   <block id="7a4d95b4bd97e134c18ec0bc73dfdc26" category="list-text">选择**用户目录连接器**选项卡。</block>
   <block id="78b1b242bace6a18a2fc89d34f35271a" category="list-text">确定要删除的用户目录连接器。在行尾的操作菜单中，选择三个点<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block>然后**删除**。</block>
   <block id="e5b5e43b801607d44c3fb5101a5e5b57" category="summary">了解NetApp Ransomware Resilience的新功能。</block>
@@ -1685,8 +1682,6 @@
   <block id="72ae3905ad051e75d558266df8b1e63a" category="list-text">请确保满足 <block ref="4535d4c19297d046165dc98674d914e8" category="inline-link-macro-rx"></block>。</block>
   <block id="59ad45573dbf4296a202cefa7894c118" category="section-title">创建用户活动代理</block>
   <block id="a757b06cbcf40569f4970cd41ee13a89" category="inline-link-macro">数据收集器</block>
-  <block id="3e5b5a49d2a1ae0f82a222ba8e4ffa7c" category="list-text">确认已成功创建用户活动代理。在用户活动图块中，成功的部署显示为 **Running**。</block>
-  <block id="01aa0dea5e13315b3322ab5d449cbb8e" category="paragraph">成功创建用户活动代理后，返回 **Settings** 菜单，然后在 User activity 图块中选择 **Manage**。选择 **User activity agents** 选项卡，然后选择用户活动代理以查看其详细信息，包括数据收集器和用户目录连接器。</block>
   <block id="1c3618a77bb3c98ee22e85ebb2ff2cb5" category="section-title">创建用户目录连接器</block>
   <block id="450a540c6661e25e017db4862aec2e38" category="list-text">在弹出对话框中，选择 **删除** 进行确认。</block>
   <block id="236c87046e76c7fbe637db256ad65c54" category="inline-link-macro">检测恶意活动和可疑用户行为</block>
@@ -1712,22 +1707,15 @@
   <block id="e02189957b252d42e679aa66d35030cd" category="list-text"><block ref="e02189957b252d42e679aa66d35030cd" category="inline-link-macro-rx"></block></block>
   <block id="0f20f1de24e002ee03e9a0d693faaf59" category="list-text">要禁用给定用户的警报，该用户是您知道是错误的警报的主题，请选择三个点 <block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>），然后**将此用户排除在监控之外**。查看对话框，然后选择**排除**进行确认。</block>
   <block id="c65a69d50600a3f76ccdd1109d15b6e3" category="inline-link-macro">排除用户</block>
-  <block id="d632bf28d8164d0436ca05f069b989e9" category="admonition">要为用户重新启用警报，请返回警报。选择三个点，然后选择**将此用户包含在监控中**。您也可以<block ref="e33a84d4132808c30f0e6b091e9f7e88" category="inline-link-macro-rx"></block>监控。</block>
   <block id="fb7f1789c81ab5377f72e16f6b9384ad" category="inline-link-macro">每项服务的限制</block>
   <block id="3adbdb581af927d3972b2f1c8cfb96a6" category="admonition">Amazon FSx for NetApp ONTAP 或 Azure NetApp Files 中的工作负载无法使用备份目标。使用 FSx for ONTAP 备份服务执行备份操作。您可以在 AWS 中为 FSx for ONTAP 中的工作负载设置备份策略，而不是在 Ransomware Resilience 中。备份策略显示在 Ransomware Resilience 中，并且与 AWS 保持不变。</block>
   <block id="3bc2d94b3185bcb1259a8b3cf7da880b" category="list-text">选择所需的检测设置：</block>
   <block id="eb7705f4441056c554dc7aea52de0b17" category="paragraph">如果存在某些受信任的用户，其行为可能会触发用户行为警报，则可以将其从警报中排除。</block>
-  <block id="0189c7f085ff5d22843080df2225281b" category="list-text">在设置仪表板中，找到用户活动卡，然后选择 **管理**。</block>
-  <block id="82694a5fa079406313056daf01f9118b" category="list-text">选择 **排除用户** 选项卡。</block>
   <block id="de13c27fd58614b060a46c2092ed0545" category="list-text">要在 UI 中查看单个用户，请选择**手动选择**。要上传排除用户的列表，请选择**上传**。</block>
   <block id="9dd5e919daf597022ca9ace5ebd739e9" category="list-text">如果选择了**手动选择**，请选中要排除的特定用户名旁边的复选框。</block>
-  <block id="8641c2055d546da7c2e15e6d18bc9016" category="list-text">选择 **Add** 以完成将用户添加到排除列表。</block>
-  <block id="98e062a77fcb05260f463a017f171f72" category="list-text">在**排除的用户**选项卡中，从用户行为检测警报中删除的用户名称现在显示在仪表板中。</block>
   <block id="bf7da00a56585a6a89ff8f8184dfd6fd" category="inline-link-macro">响应勒索软件警报</block>
   <block id="face5a9388d96715a2df2a403febcfad" category="admonition">您还可以直接从警报中排除用户。有关详细信息，请参见 <block ref="56429daef20ebac0c2b98002f6d61934" category="inline-link-macro-rx"></block>。</block>
   <block id="0b09185e7ecba92cf7f8f0712501db0b" category="section-title">从排除的用户列表中删除用户</block>
-  <block id="3ba04eb11eb815c62355b0a9cb7b05e5" category="paragraph">您可以在之后将用户添加回检测。</block>
-  <block id="144c603fbbde0985023a4ea73e22e35b" category="list-text">从排除的用户选择中找到要删除的用户的名称。选择具有用户名的行上的操作菜单 <block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>），然后选择 **删除**。</block>
   <block id="581c5c550f20f231f6c9e881e699829b" category="list-text">在对话框中，选择 **Remove** 以确认要删除选定用户。</block>
   <block id="90c78a95b0a3dffc0aa664d3139d1369" category="summary">您可以自动将数据从 NetApp Ransomware Resilience 发送到您的安全和事件管理系统 (SIEM)，以进行威胁分析和检测。</block>
   <block id="03883d80013dc0b2b972eccd5b93b56f" category="list-text">AWS Security Hub</block>
@@ -1936,7 +1924,6 @@
   <block id="2aeee41e03e1ec5e48f7c1deb934b617" category="list-text">如果您选择 **Upload**，请下载包含所有用户列表的 CSV 或 JSON 文件。选择 **Download** 以访问列表。</block>
   <block id="e2616004bc9cf87f18910a512e2c2379" category="paragraph">在本地计算机上，查看文件。删除要为其维护检测的所有用户的名称。当列表仅包含要从检测中排除的用户的名称时，请将其保存。</block>
   <block id="3e56f67eb69a3fdb139a993bc1606e4f" category="paragraph">在 Ransomware Resilience 中，选择**上传**。找到并上传文件。</block>
-  <block id="2a26cf4062a1ee4ec346c86574259847" category="list-text">要从 UI 中排除单个用户，请选择**手动选择**。</block>
   <block id="fd117b89b92e15d359324da93300356b" category="doc">将 NetApp Ransomware Resilience 连接到 SIEM 以进行威胁分析和检测</block>
   <block id="df4bdd45174b09881add6730bdfaf045" category="section-title">2026 年 3 月 09 日</block>
   <block id="9b0a81f6fc494248483a10631a72dabe" category="paragraph">在免费试用期结束后，受保护的工作负载将计入购买的容量或订阅。Ransomware Resilience 对于与受保护工作负载相关的数据（由 ONTAP 报告），在效率优化之前按 GB 收费。</block>
@@ -2564,4 +2551,79 @@
   <block id="bb4393b6187d55f98dbeb4c5bb8add00" category="list-text">每个 Console 代理的工作负载上限为 3,000 个。</block>
   <block id="8df5e57d843114bbbb53a4c85f76cb68" category="list-text">来自 Google Cloud NetApp Volumes 的 SAN 工作负载目前在 Ransomware Resilience 中不受支持。</block>
   <block id="afce532bad172bcef50d75935d2ed43b" category="list-text">复制策略</block>
+  <block id="fb9721f24a420ba827ac36665b13797e" category="doc">自动响应用户活动警报</block>
+  <block id="5b29c2b1307b96a1557ab05a56715041" category="paragraph">Ransomware Resilience 现在支持在生成用户活动警报时自动创建快照和阻止用户。通过自动响应，您可以在生成警告后立即阻止用户，并创建快照进行恢复，从而无需手动干预即可更快地响应。</block>
+  <block id="709c9c15efe20baf89cd9c0bc4da8ba3" category="inline-link-macro">自动响应用户活动警报</block>
+  <block id="1683df33985dedfe87b3e10a6e28374e" category="paragraph">有关详细信息，请参见 <block ref="af4a7ce82e0454100b9537cefe9d85c8" category="inline-link-macro-rx"></block>。</block>
+  <block id="f3948d55e3032152ce189836caaf0b14" category="list-text">在 *Responses* 磁贴中，选择 **Take snapshot now** 以创建快照。</block>
+  <block id="c6adf86dd8ab3fa173149ecb95e0444f" category="list-text">如果您在 SVM 上启用了自动响应，请选择 **Edit user blocking** 以阻止用户。要阻止用户，请选择 **Time period for blocked user**，然后设置阻止的持续时间（从一小时到永久）。如果您认为警报不是勒索软件事件，您也可以取消阻止用户。选择 **Save**。</block>
+  <block id="a6a7e26bcffa88b63e76d3f0a0f08eda" category="admonition">要为用户重新启用警报，请返回警报。选择三个点，然后选择**将此用户包含在监控中**。您也可以<block ref="1a21a4e753ba6e9b70e02139a1cf7da7" category="inline-link-macro-rx"></block>监控。</block>
+  <block id="670130480e76ce2b912da3ad5daf63f4" category="inline-link-macro">自动响应用户活动事件</block>
+  <block id="8cd568562744ebd2ad72f4d26b638c5b" category="list-text"><block ref="8cd568562744ebd2ad72f4d26b638c5b" category="inline-link-macro-rx"></block></block>
+  <block id="cb69a3dbb2ce54452da8242f5d593a7d" category="list-text">确认已成功创建用户活动代理。在用户活动监控图块中，成功部署显示为**Running**。</block>
+  <block id="f8154656f491b6010fd0659081a5e592" category="paragraph">成功创建用户活动代理后，返回 **设置** 菜单，然后在用户活动监控磁贴中选择 **管理**。选择 **用户活动代理** 选项卡，然后选择用户活动代理以查看其详细信息，包括数据收集器和用户目录连接器。</block>
+  <block id="6e2ca6477a8595f1e41d451cdd9ebd00" category="paragraph">您可以查看数据收集器的详细信息。在"设置"中，在"用户活动监控"图块中选择**管理**。选择**数据收集器**选项卡，然后选择数据收集器以查看其详细信息或暂停它。</block>
+  <block id="8e01f2104a7304e76047e58936807cf1" category="list-text">在用户活动监控图块中，选择**管理**。</block>
+  <block id="7e6d3cb777f931902eef28d721b391ad" category="list-text">在 Ransomware Resilience 中，选择 *Settings*。</block>
+  <block id="8e80013d454d77fa5da380a02985bf08" category="list-text">找到用户活动监控磁贴，选择**管理**。</block>
+  <block id="ca9b34b1ac8edb836cc31adfeb86da35" category="paragraph">您也可以<block ref="8cd568562744ebd2ad72f4d26b638c5b" category="inline-link-macro-rx"></block>。</block>
+  <block id="83019ea39039a789f3a1ef050322b3c6" category="inline-link-macro">在 NetApp Ransomware Resilience 中管理用户拦截和警报</block>
+  <block id="ab86c889344f48e6cc9a644f588de541" category="list-text"><block ref="ab86c889344f48e6cc9a644f588de541" category="inline-link-macro-rx"></block></block>
+  <block id="0e5314dd9df9fd8758e118ce1e7ba897" category="summary">NetApp Ransomware Resilience 支持创建对用户活动事件的自动响应，使您能够自动创建快照或阻止用户。</block>
+  <block id="da6a5c0ffdbef8b4ec186025eff8e43b" category="doc">自动响应 NetApp Ransomware Resilience 中的用户活动警报</block>
+  <block id="11b56910cc00c324c49386ed5582988f" category="inline-link-macro">用户活动事件</block>
+  <block id="0a8871a3299a107751c7b0db71e644f4" category="paragraph">NetApp Ransomware Resilience 支持创建对 <block ref="8b86ab47aa824ef9943240ff5124bbba" category="inline-link-macro-rx"></block> 的自动响应。通过自动响应，Ransomware Resilience 可以在检测到攻击或警告时创建快照或阻止用户，从而更快速地响应勒索软件事件。</block>
+  <block id="24bb73d1c33f357d17024d9c2c631ff2" category="inline-link-macro">配置了用户活动代理，启用了具有用户活动检测的策略，并创建了用户目录连接器</block>
+  <block id="5a1cf133e86dfea0d4fd6beddf99419d" category="paragraph">加密（用户行为）、数据泄露和数据销毁事件均支持自动响应。在创建自动响应之前，您必须具有 <block ref="c512b877bbe8303215878962f3edb05e" category="inline-link-macro-rx"></block>。</block>
+  <block id="5a9dbc95cd10e68b8aa5b25769a12f66" category="section-title">创建自动响应</block>
+  <block id="525947b7bc9136d3c68f8d5e68e67c65" category="paragraph">您只能保护一个存储 VM，且该存储 VM 至少有一个工作负载受可疑用户行为检测策略保护。</block>
+  <block id="0ba604d3520d7d31a74f42a24b136cf6" category="list-text">选择**Automated responses**选项卡。</block>
+  <block id="ba6bbd2f6aa7a13738511856f29ba569" category="list-text">选择**添加**以创建此行为。</block>
+  <block id="ca08d0e59990fdffbb6467bdd7f00b5f" category="list-text">为自动响应输入**名称**。</block>
+  <block id="92e6ea9e52b7a81fdf0b4994719a42c1" category="inline-link-macro">警报类型</block>
+  <block id="5abb35f1388941d8bf8186c476c69efb" category="list-text">选择要触发响应的事件类型：**攻击**或**警告**。详细了解不同的 <block ref="ef3f4c22db9f55b59ebc4da2b7df602e" category="inline-link-macro-rx"></block>。</block>
+  <block id="aa7a11a604c21a1423b1261241c7d78c" category="list-text">选择响应：</block>
+  <block id="9646518b7752370de53f195201268e7d" category="list-text">**阻止用户访问**：触发警报时，用户将被阻止访问所有受 Ransomware Resilience 保护的存储 VM。</block>
+  <block id="5fe611c6876641199f70e49558f48be4" category="paragraph">如果选择此选项，则还必须选择阻止的持续时间。它可以是 1 到 24 小时之间的间隔，也可以是永久性的。</block>
+  <block id="a2f16c29a43535c7c6aa7898c58ae9f8" category="list-text">**拍摄快照**：为受影响的工作负载创建快照，以用于潜在的恢复。快照保留七天。</block>
+  <block id="972f6ae068eb9ed1c0b103c19d4c1136" category="list-text">选择触发自动响应的警报类型：</block>
+  <block id="2bc4fcf9346e74ca05878a7e5dd6e2d4" category="cell">警报类型</block>
+  <block id="677329539728cfa937ee007c1bf7e778" category="list-text">选择要应用自动响应的Storage VM。</block>
+  <block id="7838a605d6ae3901553635e8d43bc210" category="list-text">选择**添加**以创建自动响应。</block>
+  <block id="ecc70cc5b710cb19c30985347907a33f" category="section-title">修改自动响应</block>
+  <block id="70df577ad04e86da4cfcd49d12f42c34" category="paragraph">创建自动响应后，您可以暂停、重新启动或修改响应。您可以修改响应的名称、触发响应的警报类型、存储 VM 和采取的操作。</block>
+  <block id="6957bab7b5de8b995af86b7615cf8877" category="list-text">选择要修改的自动回复。</block>
+  <block id="bc06f86137f36e1395909963dc24a7e9" category="list-text">要暂停或删除响应，请选择操作菜单，然后选择**暂停**（或**开始**）或**删除**。</block>
+  <block id="ffaa50c6810616dffe4f2fa3b11dd9d5" category="paragraph">要修改回复，请选择**编辑**。</block>
+  <block id="9190ef848f1a62966c143f87f9a3b16e" category="list-text">您可以修改警报严重性以外的任何设置。</block>
+  <block id="60fb8ad171246036e201929bc65c1158" category="list-text">选择**保存**以保存更改。</block>
+  <block id="b1e9096bc5102d69a78befc70d41fe69" category="summary">在 NetApp Ransomware Resilience 中创建用户目录连接器后，您可以阻止和取消阻止用户，并从警报中排除用户。</block>
+  <block id="728a9373b496fb3b49cccf8e1eb055c0" category="paragraph">在 NetApp Ransomware Resilience 中创建用户目录连接器后，您可以在遇到勒索软件事件时阻止和解锁用户并对其进行评估。如果您确定用户的行为不是攻击，也可以选择将其从勒索软件警报中排除。</block>
+  <block id="9594e6c0471983974b6adc193bd57d4e" category="paragraph">您必须<block ref="c512b877bbe8303215878962f3edb05e" category="inline-link-macro-rx"></block>才能阻止用户。</block>
+  <block id="37bcec617eba318667a247a58bd99097" category="inline-link-macro">自动响应</block>
+  <block id="88450b9601513114d92202ed82d65469" category="admonition">您可以<block ref="5b864d1f7cea25f12e7a99e07202259f" category="inline-link-macro-rx"></block>查看用户活动检测事件。</block>
+  <block id="25fce885a9bc8a8f1284152fe15304d0" category="section-title">管理被屏蔽的用户</block>
+  <block id="f633d2cf36d2d43dc232424839fa15de" category="paragraph">当您认为用户应对恶意活动负责时，您可以阻止他们。</block>
+  <block id="5fbbcc09a7f5316f17aaf20a9f942557" category="list-title">阻止用户</block>
+  <block id="93e35e2f3f7138fcbfc327d758e1ec96" category="list-text">在设置仪表板中，找到用户活动监控图块，然后选择**管理**。</block>
+  <block id="2361358ff14122114e736beff61c48a2" category="list-text">选择**Users**选项卡。</block>
+  <block id="766067e25ac4a8f22dad6344937ca56d" category="list-text">选择**Block users**。</block>
+  <block id="b00b5ebe4a8164319e36e4bbef8f727f" category="list-text">选择屏蔽持续时间：可以是1小时到24小时，也可以是永久屏蔽。</block>
+  <block id="50d68502e7fbfa82f99e1abb688a948f" category="list-text">选中要阻止的用户名称旁边的复选框。</block>
+  <block id="126b3c7582135a76321582de4bcad51d" category="list-text">选择 **Block**。</block>
+  <block id="23e9aa0fec2a06ec7f4b6f9076d62992" category="list-title">修改阻止的用户列表</block>
+  <block id="3d06dabf3eaa23797059f7fffa998cfd" category="list-text">选择**编辑用户屏蔽**。</block>
+  <block id="e2d552c6afc3cd9e9e5367d429f832c4" category="list-text">选择修改。要修改阻止的持续时间，请选择 **被阻止用户的时间段**，然后修改持续时间。要从阻止的用户列表中删除用户，请选择 **取消阻止用户**。</block>
+  <block id="4ecd815bab325d10795007a2e86d0a31" category="list-text">选中要更改其状态的被阻止用户的名称旁边的复选框。</block>
+  <block id="8d5311b8775f8a9ea8945d76095bb698" category="list-text">选择**保存**。</block>
+  <block id="d90cde04b4a8cbf5c0f2097687b77bc8" category="section-title">管理用户警报</block>
+  <block id="bf21122a37b943f2b70a86b30f0af377" category="list-text">选择 **Excluded from monitoring** 选项卡。</block>
+  <block id="a5e15107d3aab04bc0c5f9ef6e7eafe8" category="list-text">选择**添加**以完成将用户添加到排除列表。</block>
+  <block id="999d037bde1c176486633543cd03a250" category="list-text">在**从监控中排除**选项卡中，从用户行为检测警报中删除的用户名称现在显示在仪表板中。</block>
+  <block id="0e1a585fedc96851082d7b2be641fb77" category="list-text">要从 UI 中排除单个用户，请选择**手动选择**。</block>
+  <block id="2e1bb6ba10017caa1a34a9693a9495b0" category="list-text">找到要从排除用户列表中删除的用户名称。选择用户名所在行的操作菜单 <block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>），然后选择**删除**。</block>
+  <block id="f1d60a07f24fee746248e3b38e0d0891" category="inline-link-macro">自动响应用户活动检测事件</block>
+  <block id="67f8bfb01063a7bf1e47bc5de6e7fcb9" category="list-text"><block ref="67f8bfb01063a7bf1e47bc5de6e7fcb9" category="inline-link-macro-rx"></block></block>
+  <block id="f210e90dbf694c894759f78cc6d8b222" category="section-title">2026 年 6 月 29 日</block>
+  <block id="97d60b3e7c986739c534cb2a3c8f2b99" category="sidebar">管理用户警报和拦截</block>
 </blocks>

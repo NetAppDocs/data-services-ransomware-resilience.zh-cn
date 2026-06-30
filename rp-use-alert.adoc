@@ -207,12 +207,14 @@ image:screen-alerts-incidents3.png["警报事件页面"]
 +
 .. 要阻止环境中的可疑用户，请选择用户名称旁边的 *Block*。
 .. 要禁用给定用户的警报，该用户是您知道是错误的警报的主题，请选择三个点 (`...`），然后**将此用户排除在监控之外**。查看对话框，然后选择**排除**进行确认。
+.. 在 *Responses* 磁贴中，选择 **Take snapshot now** 以创建快照。
+.. 如果您在 SVM 上启用了自动响应，请选择 **Edit user blocking** 以阻止用户。要阻止用户，请选择 **Time period for blocked user**，然后设置阻止的持续时间（从一小时到永久）。如果您认为警报不是勒索软件事件，您也可以取消阻止用户。选择 **Save**。
 
 
 
 
 
-TIP: 要为用户重新启用警报，请返回警报。选择三个点，然后选择**将此用户包含在监控中**。您也可以link:suspicious-user-activity.html#exclude-users-from-alerts["排除用户"]监控。
+TIP: 要为用户重新启用警报，请返回警报。选择三个点，然后选择**将此用户包含在监控中**。您也可以link:task-users-manage.html["排除用户"]监控。
 
 
 
