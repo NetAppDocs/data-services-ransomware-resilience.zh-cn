@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: task-users-manage.html 
 keywords: user activity detection, 
-summary: 在 NetApp Ransomware Resilience 中创建用户目录连接器后，您可以阻止和取消阻止用户，并从警报中排除用户。 
+summary: 在 NetApp Ransomware Resilience 中创建用户目录连接器后，您可以阻止和取消阻止用户，并从警报中排除用户。您还可以从生成警报中排除文件路径。 
 ---
-= 在 NetApp Ransomware Resilience 中管理用户拦截和警报
+= 在 NetApp Ransomware Resilience 中管理警报和阻止的用户
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-在 NetApp Ransomware Resilience 中创建用户目录连接器后，您可以在遇到勒索软件事件时阻止和解锁用户并对其进行评估。如果您确定用户的行为不是攻击，也可以选择将其从勒索软件警报中排除。
+在 NetApp Ransomware Resilience 中配置用户行为监控后，您可以自定义警报并管理被阻止的用户。自定义警报允许您排除生成警报的特定用户或文件路径。拦截用户是为了响应勒索软件事件，以防止恶意用户活动。
 
 您必须link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent["配置了用户活动代理，启用了具有用户活动检测的策略，并创建了用户目录连接器"]才能阻止用户。
 
@@ -46,7 +46,7 @@ TIP: 您可以link:task-automate-user-activity.html["自动响应"]查看用户�
 
 
 
-== 管理用户警报
+== 从警报中排除用户
 
 如果存在某些受信任的用户，其行为可能会触发用户行为警报，则可以将其从警报中排除。
 
@@ -74,13 +74,32 @@ TIP: 您可以link:task-automate-user-activity.html["自动响应"]查看用户�
 TIP: 您还可以直接从警报中排除用户。有关详细信息，请参见 link:rp-use-alert.html["响应勒索软件警报"]。
 
 .从排除的用户列表中删除用户
-. 在设置仪表板中，找到用户活动监控图块，然后选择**管理**。
+. 在设置仪表板中，找到用户活动卡，然后选择 **管理**。
 . 选择 **Excluded from monitoring** 选项卡。
 . 选择**添加**。
 . 要从 UI 中排除单个用户，请选择**手动选择**。
-. 找到要从排除用户列表中删除的用户名称。选择用户名所在行的操作菜单 (`...`），然后选择**删除**。
+. 从排除的用户选择中找到要删除的用户的名称。选择用户名所在行的操作菜单 (`...`），然后选择**删除**。
 . 在对话框中，选择 **Remove** 以确认要删除选定用户。
 
+
+
+
+== 从监控中排除文件路径
+
+每个文件路径都必须以卷名开头。它最多可以包含该卷的三个子目录，例如"volume/directory/subdirectory/subdirectory2"。您可以通过手动输入文件路径或上传列出路径的 CSV 文件来排除文件路径。
+
+.步骤
+. 在勒索软件恢复功能中，选择**设置**。
+. 在用户活动监控图块中，选择**管理**。
+. 选择 *Excluded from monitoring* 选项卡。
+. 选择**添加**以输入要排除的文件路径。
+. 要在 UI 中输入文件路径，请选择 *手动输入* 单选按钮，然后输入文件路径，例如"volume/directory/subdirectory/"。要输入其他文件路径，请选择 **选择文件路径**。
+. 要上传文件路径列表，请选择**上传**单选按钮。选择上传按钮以选择 CSV 文件。
+. 选择**添加**。
+
+
+.结果
+当操作成功完成时，Ransomware Resilience 开始从监控中排除所选路径中的文件，以检测可疑的用户行为。您可以随时从"设置"菜单中查看路径列表。如果需要再次启用对文件路径的监控，可以从列表中删除它们。
 
 
 

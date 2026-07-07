@@ -1,0 +1,11 @@
+= 从用户行为警报中排除文件路径
+:allow-uri-read: 
+
+
+
+
+=== 从用户行为警报中排除文件路径
+
+NetApp Ransomware Resilience 支持在用户行为监控警报中排除特定的文件路径。如果您知道某些文件路径不存在风险，或者正在对卷中可能触发警报的文件进行操作，则可以排除这些文件路径。
+
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-users-manage.html["从警报中排除文件路径"^]。

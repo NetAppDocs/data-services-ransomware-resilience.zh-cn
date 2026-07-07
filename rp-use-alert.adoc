@@ -41,7 +41,7 @@ Ransomware Resilience 依赖于有关数据熵模式、文件扩展名类型和�
 
 
 
-NOTE: 对于数据泄露、数据销毁和可疑用户行为警报，必须配置 link:concept-user-behavior.html["用户活动检测"]。
+NOTE: 对于数据泄露、数据销毁和可疑用户行为警报，必须配置link:concept-user-behavior.html["用户活动检测"]。您还可以防止link:task-users-manage.html["特定文件路径和用户"]生成警报。
 
 
 

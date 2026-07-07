@@ -170,5 +170,5 @@ image:screenshot-user-directory-connection.png["用户目录连接的屏幕截�
 
 == 后续步骤
 
-* link:task-users-manage.html["在 NetApp Ransomware Resilience 中管理用户拦截和警报"]
+* link:task-users-manage.html["管理警报设置和阻止的用户"]
 
