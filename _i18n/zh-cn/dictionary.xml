@@ -435,9 +435,7 @@
   <block id="039a0f51fabaf695c33b745ebbd147bf" category="inline-link">如何创建控制台代理</block>
   <block id="f9bf2b4f9267c7961cbfeea4412e4d63" category="paragraph">要使用勒索软件恢复功能创建控制台代理，请联系具有创建控制台代理权限的控制台组织管理员，并参考描述<block ref="a747c66fa3a9e5a767b0d1460e988f0c" category="inline-link-rx"></block>。</block>
   <block id="3b6afbed7c49d679fd061dcc03462ca9" category="admonition">如果您有多个控制台代理，则勒索软件恢复功能会扫描除控制台中当前显示的代理之外的所有控制台代理的数据。该服务发现与该组织相关的所有项目和所有控制台代理。</block>
-  <block id="427b8d3f96436f6a74500df89f6e5e4b" category="summary">通过模拟对新创建的示例工作负载的勒索软件攻击来进行勒索软件准备演习。然后，调查模拟攻击并恢复样本工作负载。您可以多次运行勒索软件准备演习。</block>
   <block id="004823325f4227a58d03f7083e873d82" category="doc">在NetApp Ransomware Resilience中进行勒索软件攻击准备演练</block>
-  <block id="1beda934b3626b55dcd019ee000eb5bb" category="admonition">您的实际工作量数据不会受到影响。</block>
   <block id="b308768da13f40be05907e77ea473622" category="paragraph">您可以对 NFS 和 CIFS (SMB) 工作负载进行准备情况演练。</block>
   <block id="b6db234bfb48479bbe03939977a7b42c" category="section-title">配置勒索软件攻击准备演习</block>
   <block id="008b8b82922cab3483d70d8899f74b5c" category="inline-image-macro">显示“运行准备情况演练”按钮的仪表板页面</block>
@@ -2579,12 +2577,8 @@
   <block id="acd27fc46144e7ce943b73180eb0d3a8" category="paragraph">在 NetApp Ransomware Resilience 中运行勒索软件攻击就绪演练，以测试您应对真实勒索软件攻击的准备情况。借助就绪演练，Ransomware Resilience 可模拟对新示例工作负载的攻击，使您能够调查模拟攻击并在不影响实际生产数据的情况下执行恢复。就绪演练可帮助您熟悉警报通知，并为响应和恢复做好准备。您可以根据需要随时运行演练。</block>
   <block id="537f8bf1cb00339aa74d0eb9f514b0df" category="list-text">在 Readiness drill tile 中，选择 **Configure**。</block>
   <block id="58217f0a1f8bf12ba3006ea914fc528d" category="list-text">选择**就绪演练类型**。</block>
-  <block id="7b1c6c26786355a2591470660c65da62" category="inline-link-macro">自定义 a restore</block>
-  <block id="0f17af467c79e20d3693f219481946ab" category="list-text">**自定义恢复**：此演练将创建一个警报，然后使您能够执行 <block ref="03c74c192711f88b7d0a53dcc4c4539e" category="inline-link-macro-rx"></block>，您可以在其中配置恢复点。</block>
   <block id="65b568f05372e5de535ad8c825aeb375" category="inline-link-macro">干净恢复</block>
-  <block id="c4ea46b930e86e42d84d7d62143805bf" category="list-text">**Clean restore**：此演练将创建警报，然后将带您进入<block ref="d08d369745dba9c2b6dd002a205d6b5a" category="inline-link-macro-rx"></block>恢复过程，该过程将引导您找到优化的恢复点。</block>
   <block id="532361f2ad995113181b7cf1df1c5462" category="inline-link-macro">用户活动代理</block>
-  <block id="735dd28d475e0e047aa789767a8252e0" category="list-text">**数据泄露恢复**：此演练为用户发起的数据泄露事件创建警报。必须先配置 <block ref="ea7722fd5c2c373bdaffcbde2ca3bbf6" category="inline-link-macro-rx"></block>，然后才能启用此演练类型。</block>
   <block id="74e66061c3c27ae398760dc1adda70dc" category="list-text">选择将在其中创建就绪性演练测试的环境。</block>
   <block id="3026f14fd36d3165478399b611373fb8" category="list-text">选择 **Console agent** 和 **System**。</block>
   <block id="7cbdec3ae1628850b555ad8bb540d67e" category="list-text">选择**系统**后，从预填充列表中选择 **Storage VM**。</block>
@@ -2595,7 +2589,6 @@
   <block id="022d85fe9248458ef65cf16481972329" category="list-text">要启动演练：</block>
   <block id="81107e8f37cdb96dee7eb88d136b8e27" category="list-text">从 Ransomware Resilience 控制面板中，选择右上角的 *Run readiness drill* 按钮。</block>
   <block id="b3833f107edd43c29b6874a2a10bef7a" category="list-text">或前往**设置**。在 Readiness drill 磁贴中，选择 *Start*。</block>
-  <block id="f62bfcf4d7189e2ae5caf57497df14b5" category="admonition">无法在演练运行时编辑就绪演练配置。要修改就绪演练，请选择 **Reset**，然后编辑演练。</block>
   <block id="3798ead7c288ba8d157f0c0b116976de" category="list-text">选择带有"Readiness drill"指示的警报。</block>
   <block id="aa888903a6021760fd560a3f35a5fe39" category="paragraph">在审核此事件时，请考虑：</block>
   <block id="aa823a078e061b627817667be59a3966" category="list-text">潜在的攻击严重性。</block>
@@ -2611,4 +2604,18 @@
   <block id="42caf31af7b0b287a88952c8986218ab" category="list-text">通过选择状态旁边的*编辑*来指示状态。将状态更改为以下选项之一：</block>
   <block id="12c6663cbe23396ea86ae553869baab3" category="paragraph">演练完成后，您可以生成并保存演练报告。演练报告是一个 JSON 文件，用于捕获检测策略、警报类型和时间戳、攻击详细信息以及恢复状态等信息。</block>
   <block id="4c5236fa54058c5de2620586b5275209" category="paragraph">工作负载被标记为"需要恢复"后，NetApp Ransomware Resilience 会推荐实际恢复点 (RPA)，并协调工作流程以实现防崩溃恢复。</block>
+  <block id="da60db99c4c18d3244ee8042d2e49214" category="summary">通过模拟对示例工作负载的勒索软件攻击来进行勒索软件就绪演练。然后，调查模拟攻击并恢复示例工作负载。您可以多次运行勒索软件就绪演练。</block>
+  <block id="bc057280e260f0d5b39e389c43a2b1d3" category="section-title">就绪演习的工作原理</block>
+  <block id="695e71e91ef5d7909ee4240515cabbc1" category="inline-link-macro">自定义恢复</block>
+  <block id="01f2f9af50a7c029ac63c2cca055d4c6" category="inline-link-macro">数据泄露恢复</block>
+  <block id="ccfa1479deb2689401eb429cc06854de" category="paragraph">勒索软件弹性支持三种类型的演习：<block ref="d08d369745dba9c2b6dd002a205d6b5a" category="inline-link-macro-rx"></block>、<block ref="aab2f7e4d863babb030e318d1d730c9b" category="inline-link-macro-rx"></block>和<block ref="0a8d14a50d2701efa6ff6a56afe4b8f4" category="inline-link-macro-rx"></block>。干净还原和自定义恢复演练模拟基于加密（熵）的攻击，并提供不同的恢复方法。数据泄露恢复演习通过对数据的异常读取模式模拟数据泄露。</block>
+  <block id="3e2cdf9795c074cd40ede70cbf85a9b9" category="paragraph">配置就绪演练时，Ransomware Resilience 会创建测试卷，使用快照策略对卷应用勒索软件保护，验证连接，挂载卷，复制基线数据，卸载卷，并创建基线快照。</block>
+  <block id="fe2b3b951ec2ee39e3b94a78b27d6b96" category="paragraph">启动演习时，Ransomware Resilience 会挂载卷，然后模拟勒索软件攻击。如果就绪演练用于自定义恢复或清洁恢复，则测试卷的基线数据将替换为已知为勒索软件的文件扩展名以及经过加密/熵修改的文件。对于数据泄露恢复演习，文件不会被替换；相反，Ransomware Resilience 会模拟攻击者系统地读取和泄露数据。无论演习类型如何，Ransomware Resilience 都会触发警报并验证警报是否成功生成。</block>
+  <block id="ec48be06a1fa5ff039c9c72596c427f2" category="paragraph">运行演练时，您可以测试对警报的响应，并可选择在不影响真实数据的情况下逐步完成恢复过程。</block>
+  <block id="5c443c5dabb6ec11bf27dce07c9fd377" category="inline-link-macro">自定义还原</block>
+  <block id="e17d87cf10e73e1e3694a18b0b70c7af" category="list-text">**自定义恢复**：使用<block ref="80fac8a28dde36dd3a08a6d3cf5b9f5b" category="inline-link-macro-rx"></block>响应加密（熵）攻击，您可以在其中配置恢复点。</block>
+  <block id="22db649015dad497d63774a6e7d2af47" category="list-text">**清理还原**：使用<block ref="d08d369745dba9c2b6dd002a205d6b5a" category="inline-link-macro-rx"></block>恢复过程响应加密（熵）攻击，该过程将引导您进入优化的恢复点。</block>
+  <block id="e3b01c4848ac6d1626374e4dee0f0685" category="list-text">**数据泄露恢复**：您必须先配置 <block ref="ea7722fd5c2c373bdaffcbde2ca3bbf6" category="inline-link-macro-rx"></block>，然后才能启用此演练类型。</block>
+  <block id="05d14520f5a3fd970bfca710b43ae17a" category="admonition">无法在演练运行时编辑就绪演练配置。要修改就绪演练，请选择**重置**，然后编辑演练。</block>
+  <block id="7820d7f245e7637e7833faccb183f36d" category="admonition">对于可疑用户行为的自动响应，您只能拍摄快照。不支持将阻止用户作为对可疑用户行为的自动响应。</block>
 </blocks>

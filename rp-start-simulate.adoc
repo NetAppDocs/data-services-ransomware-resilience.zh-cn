@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-start-simulate.html 
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert, simulate, readiness drill, practice, ransomware attack, ransomware attack response, ransomware attack readiness drill 
-summary: 通过模拟对新创建的示例工作负载的勒索软件攻击来进行勒索软件准备演习。然后，调查模拟攻击并恢复样本工作负载。您可以多次运行勒索软件准备演习。 
+summary: 通过模拟对示例工作负载的勒索软件攻击来进行勒索软件就绪演练。然后，调查模拟攻击并恢复示例工作负载。您可以多次运行勒索软件就绪演练。 
 ---
 = 在NetApp Ransomware Resilience中进行勒索软件攻击准备演练
 :hardbreaks:
@@ -14,10 +14,19 @@ summary: 通过模拟对新创建的示例工作负载的勒索软件攻击来�
 [role="lead"]
 在 NetApp Ransomware Resilience 中运行勒索软件攻击就绪演练，以测试您应对真实勒索软件攻击的准备情况。借助就绪演练，Ransomware Resilience 可模拟对新示例工作负载的攻击，使您能够调查模拟攻击并在不影响实际生产数据的情况下执行恢复。就绪演练可帮助您熟悉警报通知，并为响应和恢复做好准备。您可以根据需要随时运行演练。
 
-
-TIP: 您的实际工作量数据不会受到影响。
-
 您可以对 NFS 和 CIFS (SMB) 工作负载进行准备情况演练。
+
+
+
+== 就绪演习的工作原理
+
+勒索软件弹性支持三种类型的演习：link:task-clean-restore-recover.html["干净恢复"]、link:rp-use-recover.html["自定义恢复"]和link:suspicious-user-activity.html["数据泄露恢复"]。干净还原和自定义恢复演练模拟基于加密（熵）的攻击，并提供不同的恢复方法。数据泄露恢复演习通过对数据的异常读取模式模拟数据泄露。
+
+配置就绪演练时，Ransomware Resilience 会创建测试卷，使用快照策略对卷应用勒索软件保护，验证连接，挂载卷，复制基线数据，卸载卷，并创建基线快照。
+
+启动演习时，Ransomware Resilience 会挂载卷，然后模拟勒索软件攻击。如果就绪演练用于自定义恢复或清洁恢复，则测试卷的基线数据将替换为已知为勒索软件的文件扩展名以及经过加密/熵修改的文件。对于数据泄露恢复演习，文件不会被替换；相反，Ransomware Resilience 会模拟攻击者系统地读取和泄露数据。无论演习类型如何，Ransomware Resilience 都会触发警报并验证警报是否成功生成。
+
+运行演练时，您可以测试对警报的响应，并可选择在不影响真实数据的情况下逐步完成恢复过程。
 
 
 
@@ -30,9 +39,9 @@ TIP: 您的实际工作量数据不会受到影响。
 . 在 Readiness drill tile 中，选择 **Configure**。
 . 选择**就绪演练类型**。
 +
-** **自定义恢复**：此演练将创建一个警报，然后使您能够执行 link:rp-use-recover.html["自定义 a restore"]，您可以在其中配置恢复点。
-** **Clean restore**：此演练将创建警报，然后将带您进入link:task-clean-restore-recover.html["干净恢复"]恢复过程，该过程将引导您找到优化的恢复点。
-** **数据泄露恢复**：此演练为用户发起的数据泄露事件创建警报。必须先配置 link:suspicious-user-activity.html["用户活动代理"]，然后才能启用此演练类型。
+** **自定义恢复**：使用link:rp-use-recover.html["自定义还原"]响应加密（熵）攻击，您可以在其中配置恢复点。
+** **清理还原**：使用link:task-clean-restore-recover.html["干净恢复"]恢复过程响应加密（熵）攻击，该过程将引导您进入优化的恢复点。
+** **数据泄露恢复**：您必须先配置 link:suspicious-user-activity.html["用户活动代理"]，然后才能启用此演练类型。
 
 
 . 选择将在其中创建就绪性演练测试的环境。
@@ -73,7 +82,7 @@ image:screen-dashboard.png["显示“运行准备情况演练”按钮的仪表�
 
 
 
-NOTE: 无法在演练运行时编辑就绪演练配置。要修改就绪演练，请选择 **Reset**，然后编辑演练。
+NOTE: 无法在演练运行时编辑就绪演练配置。要修改就绪演练，请选择**重置**，然后编辑演练。
 
 
 

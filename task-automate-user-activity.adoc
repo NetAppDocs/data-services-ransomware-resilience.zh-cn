@@ -22,6 +22,9 @@ NetApp Ransomware Resilience 支持创建对 link:concept-user-behavior.html["�
 
 您只能保护一个存储 VM，且该存储 VM 至少有一个工作负载受可疑用户行为检测策略保护。
 
+
+NOTE: 对于可疑用户行为的自动响应，您只能拍摄快照。不支持将阻止用户作为对可疑用户行为的自动响应。
+
 .步骤
 . 在勒索软件恢复功能中，选择**设置**。
 . 在用户活动监控图块中，选择**管理**。
@@ -53,6 +56,9 @@ NetApp Ransomware Resilience 支持创建对 link:concept-user-behavior.html["�
 
 
 | 数据销毁 | Ransomware Resilience 可发现特定用户对文件的大规模删除。 
+
+
+| 可疑的用户行为 | Ransomware Resilience 可识别数据泄露、数据销毁或加密范围之外的异常行为。 
 |===
 . 选择要应用自动响应的Storage VM。
 . 选择**添加**以创建自动响应。
