@@ -4,6 +4,7 @@
 
 
 
+[[enhanced-flexibility-for-protection-strategies]]
 === 增强保护策略的灵活性
 
 Ransomware Resilience 现在为选择勒索软件检测策略提供了更大的灵活性。以前，所有勒索软件保护策略都必须包括加密检测。现在，您可以仅使用用户行为检测来启用勒索软件保护策略。
@@ -16,6 +17,7 @@ Ransomware Resilience 现在为选择勒索软件检测策略提供了更大的�
 
 
 
+[[soar-playbook-enhancements]]
 === SOAR 战术手册增强功能
 
 Ransomware Resilience SOAR 攻略现在可在您阻止用户或使卷脱机后提供补救步骤。如果操作被认为不是勒索软件威胁，您现在可以将卷恢复联机并取消阻止用户。

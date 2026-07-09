@@ -4,6 +4,7 @@
 
 
 
+[[google-cloud-netapp-volumes-support-preview]]
 === Google Cloud NetApp Volumes 支持（预览）
 
 Ransomware Resilience 现在支持为 Google Cloud NetApp Volumes 系统中的工作负载创建保护组，使您能够将多个工作负载归入一个策略下以简化管理。

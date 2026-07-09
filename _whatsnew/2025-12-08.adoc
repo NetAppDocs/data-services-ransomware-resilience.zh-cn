@@ -4,12 +4,14 @@
 
 
 
+[[extension-blocking-is-enabled-at-the-workload-level]]
 === 扩展程序阻止功能已在工作负载级别启用。
 
 启用扩展阻止功能后，现在是在工作负载级别而不是存储虚拟机级别启用该功能。
 
 
 
+[[edit-user-behavior-alert-status]]
 === 编辑用户行为警报状态
 
 勒索软件恢复功能现在允许您编辑用户行为警报的状态。您可以手动关闭和解决警报。
@@ -18,6 +20,7 @@
 
 
 
+[[support-for-multiple-console-agents]]
 === 支持多个控制台代理
 
 勒索软件恢复功能现在支持使用多个控制台代理来管理同一系统。

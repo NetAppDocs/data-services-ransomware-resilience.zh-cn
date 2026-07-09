@@ -4,6 +4,7 @@
 
 
 
+[[google-cloud-netapp-volumes-support-preview]]
 === Google Cloud NetApp Volumes 支持（预览）
 
 Ransomware Resilience 现在支持 Google Cloud NetApp Volumes 系统，使您能够有效检测和响应 Google Cloud NetApp Volumes 中的勒索软件威胁。当您进行发现时，Ransomware Resilience 会自动显示来自 Google Cloud NetApp Volumes 系统的工作负载。当您发现这些系统时，它们会出现在 Ransomware Resilience 仪表板中。Ransomware Resilience 对 Google Cloud NetApp Volumes 的支持目前处于预览阶段。
@@ -12,6 +13,7 @@ Ransomware Resilience 现在支持 Google Cloud NetApp Volumes 系统，使您�
 
 
 
+[[clean-restore-enhancements]]
 === 清理还原增强功能
 
 清除还原现在支持报告。使用报告，您可以查看和评估清除还原，并将此信息离线保存为 CSV 文件。

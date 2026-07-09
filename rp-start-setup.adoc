@@ -16,6 +16,7 @@ summary: 要使用勒索软件恢复能力，请执行几个步骤进行设置�
 
 
 
+[[prepare-the-backup-destination]]
 == 准备备份目标
 
 准备以下备份目标之一：
@@ -30,12 +31,14 @@ summary: 要使用勒索软件恢复能力，请执行几个步骤进行设置�
 
 
 
+[[prepare-storagegrid-to-become-a-backup-destination]]
 === 准备StorageGRID以成为备份目标
 
 如果要使用StorageGRID作为备份目标，请参阅 https://docs.netapp.com/us-en/storagegrid-117/index.html["StorageGRID文档"^]有关StorageGRID的详细信息。
 
 
 
+[[prepare-aws-to-become-a-backup-destination]]
 === 准备 AWS 成为备份目标
 
 * 在 AWS 中设置一个帐户。
@@ -46,6 +49,7 @@ summary: 要使用勒索软件恢复能力，请执行几个步骤进行设置�
 
 
 
+[[prepare-azure-to-become-a-backup-destination]]
 === 准备 Azure 以成为备份目标
 
 * 在 Azure 中设置一个帐户。
@@ -56,6 +60,7 @@ summary: 要使用勒索软件恢复能力，请执行几个步骤进行设置�
 
 
 
+[[set-up-the-netapp-console]]
 == 设置NetApp Console
 
 下一步是设置控制台和勒索软件恢复能力。
@@ -64,6 +69,7 @@ summary: 要使用勒索软件恢复能力，请执行几个步骤进行设置�
 
 
 
+[[create-a-console-agent]]
 === 创建控制台代理
 
 联系您的NetApp销售代表试用或使用此服务。然后，当您使用控制台代理时，它将包含适当的勒索软件恢复功能。

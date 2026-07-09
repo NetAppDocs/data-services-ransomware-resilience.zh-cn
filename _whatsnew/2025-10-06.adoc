@@ -4,12 +4,14 @@
 
 
 
+[[bluexp-ransomware-protection-is-now-netapp-ransomware-resilience]]
 === BlueXP ransomware protection现已升级NetApp Ransomware Resilience
 
 BlueXP ransomware protection服务已更名为NetApp Ransomware Resilience。
 
 
 
+[[bluexp-is-now-netapp-console]]
 === BlueXP现在是NetApp Console
 
 NetApp Console提供企业级跨本地和云环境的存储和数据服务的集中管理，提供实时洞察、更快的工作流程和简化的管理。
@@ -18,6 +20,7 @@ NetApp Console提供企业级跨本地和云环境的存储和数据服务的集
 
 
 
+[[data-breach-detection]]
 === 数据泄露检测
 
 勒索软件恢复力包括一种新的检测机制，只需几个步骤即可激活，以检测异常用户读取作为数据泄露的早期指标。勒索软件弹性通过创建历史基线来收集和分析用户读取事件，该基线是根据过去数据得出的预期正常行为的概况。当新用户活动明显偏离既定规范（例如意外的阅读激增与可疑的阅读模式相结合）时，就会生成警报。勒索软件恢复力包括一个用于检测可疑读取模式的 AI 模型。

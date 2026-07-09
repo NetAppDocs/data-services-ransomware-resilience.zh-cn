@@ -27,6 +27,7 @@ TIP: Ransomware Resilience 还提供 link:reference-soar.html["安全协调、�
 
 
 
+[[event-data-sent-to-a-siem]]
 == 发送到 SIEM 的事件数据
 
 Ransomware Resilience 可以将以下事件数据发送到您的 SIEM 系统：
@@ -67,6 +68,7 @@ NOTE: 只有在您已配置 xref:concept-user-behavior.adoc[用户行为检测] 
 
 
 
+[[configure-aws-security-hub-for-threat-detection]]
 == 配置 AWS Security Hub 进行威胁检测
 
 在 Ransomware Resilience 中启用 AWS Security Hub 之前，需要在 AWS Security Hub 中执行安全配置：
@@ -124,6 +126,7 @@ image:screen-settings-threat-detection-3options.png["启用威胁检测详细信
 
 
 
+[[configure-google-secops-for-threat-detection]]
 == 配置 Google SecOps 以进行威胁检测
 
 在 Ransomware Resilience 中启用 Google SecOps 之前，您需要在 Google SecOps 中注册日志类型和 webhook 以启用服务之间的连接。
@@ -173,6 +176,7 @@ image:screen-settings-threat-detection-3options.png["启用威胁检测详细信
 
 
 
+[[configure-microsoft-sentinel-for-threat-detection]]
 == 配置 Microsoft Sentinel 进行威胁检测
 
 在 Ransomware Resilience 中启用 Microsoft Sentinel 之前，需要在 Microsoft Sentinel 中执行以下高级步骤：
@@ -304,6 +308,7 @@ image:screen-settings-threat-detection-3options.png["启用威胁检测详细信
 
 
 
+[[configure-splunk-cloud-and-splunk-enterprise-for-threat-detection]]
 == 配置 Splunk Cloud 和 Splunk Enterprise 以进行威胁检测
 
 Ransomware Resilience 支持使用 Splunk Cloud 和 Splunk Enterprise 进行威胁检测。在 Ransomware Resilience 中启用 Splunk 连接之前，您需要：
@@ -357,6 +362,7 @@ image:screen-settings-threat-detection-3options.png["启用威胁检测详细信
 
 
 
+[[next-steps]]
 == 后续步骤
 
 * link:reference-soar.html["整合 SOAR 攻略"]

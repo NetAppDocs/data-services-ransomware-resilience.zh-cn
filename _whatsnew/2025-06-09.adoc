@@ -4,12 +4,14 @@
 
 
 
+[[landing-page-updates]]
 === 登陆页面更新
 
 此版本包括对BlueXP ransomware protection登陆页面的更新，使开始免费试用和发现变得更加容易。
 
 
 
+[[readiness-drill-updates]]
 === 准备演习更新
 
 以前，您可以通过模拟对新样本工作负载的攻击来运行勒索软件准备演练。利用此功能，您可以调查模拟攻击并恢复工作负载。使用此功能来测试警报通知、响应和恢复。根据需要经常运行和安排这些演习。
@@ -22,6 +24,7 @@
 
 
 
+[[enable-bluexp-classification-updates]]
 === 启用BlueXP classification更新
 
 在BlueXP ransomware protection服务中使用BlueXP classification之前，您需要启用BlueXP classification来扫描您的数据。对数据进行分类有助于您找到个人身份信息 (PII)，这可能会增加安全风险。

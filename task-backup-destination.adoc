@@ -29,6 +29,7 @@ NOTE: Amazon FSx for NetApp ONTAP 和 Azure NetApp Files 中的工作负载无�
 
 
 
+[[add-storagegrid-as-a-backup-destination]]
 == 添加StorageGRID作为备份目标
 
 要将NetApp StorageGRID设置为备份目标，请输入以下信息。
@@ -72,6 +73,7 @@ image:screen-settings-backup-destinations-list2.png["备份目标的屏幕截图
 
 
 
+[[add-amazon-web-services-as-a-backup-destination]]
 == 添加 Amazon Web Services 作为备份目标
 
 要将 AWS 设置为备份目标，请输入以下信息。
@@ -129,6 +131,7 @@ image:screen-settings-backup-destinations-list2.png["备份目标页面的“设
 
 
 
+[[add-google-cloud-platform-as-a-backup-destination]]
 == 添加 Google Cloud Platform 作为备份目标
 
 要将 Google Cloud Platform (GCP) 设置为备份目标，请输入以下信息。
@@ -167,6 +170,7 @@ image:screen-settings-backup-destination-gcp.png["备份目标页面"]
 
 
 
+[[add-microsoft-azure-as-a-backup-destination]]
 == 添加 Microsoft Azure 作为备份目标
 
 要将 Azure 设置为备份目标，请输入以下信息。

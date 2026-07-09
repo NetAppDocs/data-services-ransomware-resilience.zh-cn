@@ -2611,7 +2611,6 @@
   <block id="ddebb8e31f83ddb3bde0b3a0292845dc" category="doc">从用户行为警报中排除文件路径</block>
   <block id="33239db9e04a3b1473f3468fd2d9d99b" category="paragraph">NetApp Ransomware Resilience 支持在用户行为监控警报中排除特定的文件路径。如果您知道某些文件路径不存在风险，或者正在对卷中可能触发警报的文件进行操作，则可以排除这些文件路径。</block>
   <block id="f1780a3dd9362a514caa277752b942f2" category="inline-link-macro">从警报中排除文件路径</block>
-  <block id="4cbd1bb5d6b8178b77b88be565a35c9b" category="paragraph">有关详细信息，请参见 <block ref="8c33118b4350e89c06a1a557095207c2" category="inline-link-macro-rx"></block>。</block>
   <block id="1d20fa647694e6811cd363111cf77538" category="inline-link-macro">特定文件路径和用户</block>
   <block id="2e9d0337668c42840413047306ef5b57" category="admonition">对于数据泄露、数据销毁和可疑用户行为警报，必须配置<block ref="9403988536e87b1b5fabe2157e11581a" category="inline-link-macro-rx"></block>。您还可以防止<block ref="bd37368d247ac8892eb2f81e8ff6fc76" category="inline-link-macro-rx"></block>生成警报。</block>
   <block id="75cd3815cc2e90d9679458215fb968dd" category="inline-link-macro">管理警报设置和阻止的用户</block>
@@ -2632,4 +2631,73 @@
   <block id="67510fe1e2eaace9d146396c21a7a119" category="paragraph">当操作成功完成时，Ransomware Resilience 开始从监控中排除所选路径中的文件，以检测可疑的用户行为。您可以随时从"设置"菜单中查看路径列表。如果需要再次启用对文件路径的监控，可以从列表中删除它们。</block>
   <block id="ea1fca7315926f55d77bcab3ed051982" category="section-title">2026年7月7日</block>
   <block id="4c0600f62cb13917f7a785731376b1cb" category="sidebar">管理警报和被阻止的用户</block>
+  <block id="5f2a57952e65084ab1bcb535d4662440" category="paragraph">有关详细信息，请参见 <block ref="8c33118b4350e89c06a1a557095207c2" category="inline-link-macro-rx"></block>。</block>
+  <block id="088851556c5183ba62f78e52f665450d" category="summary">NetApp Ransomware Resilience 在您启用用户活动监控时提供一个脚本，用于测试基于加密的勒索软件攻击和数据泄露事件。</block>
+  <block id="f10a2790decd8276267a9325d2ec853c" category="doc">在 NetApp Ransomware Resilience 中模拟恶意用户行为</block>
+  <block id="4e0329a11fc113704ab597dec933d4f9" category="paragraph">在 NetApp Ransomware Resilience 中配置用户活动监控时，您可以运行测试脚本来模拟可疑的用户行为事件。</block>
+  <block id="48870f5f7ec6a7cd18dda2260f3f863d" category="paragraph">此脚本旨在模拟已知用户执行的基于加密的勒索软件攻击。使用其他命令，您还可以模拟数据泄露或数据销毁攻击。</block>
+  <block id="b61313cb99a86aa7c4af1cfa344ac6cd" category="section-title">关于脚本</block>
+  <block id="da3cedfecf043e3ceb03125c26fecc0d" category="paragraph">当您在计算机上启用用户活动监控时，测试脚本即可使用。您可以使用 shell 或 Python 运行脚本。</block>
+  <block id="7e6f25d1d7385994a39a9ac6707d57d7" category="paragraph">您应该在已创建数据收集器的存储虚拟机的卷上运行脚本。该脚本应在包含多个子目录中至少 100 个文件的测试数据卷上运行；您可以使用该脚本以编程方式生成这些文件。在创建测试数据之前暂停数据收集器，然后在创建完成后恢复。</block>
+  <block id="f2cd23a46c4739df7b265821b029b5e5" category="list-text">该脚本模拟用户加密事件。它只能在 Linux 系统上运行。</block>
+  <block id="44be22ec8c354e86f26878a2e6869a6a" category="list-text">如果您的系统使用 NFSv4.1，则必须运行 ONTAP 9.15.1 或更高版本。</block>
+  <block id="531cbc897b356bf21820a08095b8c1a8" category="list-text">您可以将脚本作为 shell 脚本或使用 Python 运行。</block>
+  <block id="9a1b8a4eb3ef803a3599c362930c48b1" category="admonition">有<block ref="d7c15ecbf1bd0b493d7d802a7d5593c8" category="inline-xref-macro-rx"></block>种方法可以运行 Python 脚本。</block>
+  <block id="bb6ebe7d3cdaa25ff6af3432f080a641" category="inline-link-macro">数据收集器</block>
+  <block id="8c03a22f9c95640c3bb8429f4bf5e109" category="paragraph">您必须已在要进行测试的系统上创建了 <block ref="25255e849fb901c2a60ef562973adcbd" category="inline-link-macro-rx"></block>。这需要创建用户活动代理，然后启用具有可疑用户行为检测的勒索软件保护策略。</block>
+  <block id="0658a5d053bc56d26874c74f4f82eb95" category="section-title">Python 脚本的要求</block>
+  <block id="aa4b3b0dd36ad2480f69ecbf85167a6f" category="paragraph">要在 Python 中运行脚本，必须具有：</block>
+  <block id="8fae4712a65fdfaf48cbde542b2a9ade" category="inline-link-macro">已安装 Python 3.5.2 或更高版本</block>
+  <block id="c16a7f3126c119e01f3735cfa03fcd14" category="list-text"><block ref="c16a7f3126c119e01f3735cfa03fcd14" category="inline-link-macro-rx"></block></block>
+  <block id="930c8d3ab7ccdfb89b6367f3e4c9e33a" category="inline-link-macro">已安装 pip</block>
+  <block id="05150bdac5efcf781bc7dc39187000ff" category="list-text"><block ref="05150bdac5efcf781bc7dc39187000ff" category="inline-link-macro-rx"></block></block>
+  <block id="c494a383b88b41e65ab6a667d5b86eab" category="list-text">已安装 PyCryptodome 库：<block ref="194fc90597125afc86caf1d15cbf368c" prefix=" " category="inline-code"></block></block>
+  <block id="946a47fad0db31bcb1352814f354f62e" category="admonition">您可以使用以下命令检查 Python 版本<block ref="ac719163117fd79e0e5eddf5be2929c4" prefix=" " category="inline-code"></block>。您可以使用以下命令测试 pip 安装<block ref="3327b3fc56e7d8a50b0df977a4c20e3b" prefix=" " category="inline-code"></block>。您可以使用以下命令测试 PyCryptodome 安装<block ref="ee7f1b491d78d8f365fc68f9f583d45a" prefix=" " category="inline-code"></block>。</block>
+  <block id="8f0b614002da860dc1e6531a85cb97f3" category="section-title">模拟加密事件</block>
+  <block id="3eee06b6e6c02b14b6bf0a76a8e1ee71" category="list-title">准备系统</block>
+  <block id="87e2110ce690ce81adb3e713b153b873" category="list-text">将要在其中创建示例文件的目标卷挂载到 Linux 计算机。您可以挂载 NFS 或 CIFS 导出。</block>
+  <block id="1d1a594959ec615f56516f5d0f5e8ddb" category="open-title">NFS</block>
+  <block id="c6546b53840ec8245dd4d4d70fcdbc26" category="open-title">CIFS</block>
+  <block id="f50e5184fb8c928d7117d67711584443" category="inline-link-macro">目标卷</block>
+  <block id="1673cf027945840c2811415d6232efdd" category="list-text">保护 <block ref="3d3c2588c42d776cb353386bd6eee25e" category="inline-link-macro-rx"></block>。</block>
+  <block id="bc979566f738dcfe656a3b320c999839" category="list-text">暂停数据收集器。</block>
+  <block id="8c23ab446281c217db1cff12b27ccfd2" category="paragraph">在 Ransomware Resilience 中，选择**设置**，然后在用户检测监控图块中，选择**管理**。在数据收集器选项卡中，选择存储 VM 的数据收集器，然后选择**暂停**。</block>
+  <block id="a7a3e8f26a5ca674052385b91e2af3f9" category="list-text">添加要加密的文件。可以手动将要加密的文件复制到目标文件夹或卷，也可以使用包含的脚本之一以编程方式创建文件。您必须至少添加 100 个文件。</block>
+  <block id="7e82a47442c59e75e46f9fdd753262f1" category="paragraph">以编程方式创建这些文件：</block>
+  <block id="ea89b68c34ce4a63c0f77e17413c6e30" category="open-title">Shell</block>
+  <block id="c11cbcce6b0ad89ee99892b0be101ae0" category="list-text">登录到运行用户活动代理的主机。</block>
+  <block id="2d58c6f19a717d43f32a96bdf10d6ea3" category="list-text">将 NFS 或 CIFS 共享从文件管理器的存储虚拟机挂载到运行用户活动代理的计算机。将工作目录更改为适当的卷以进行测试。</block>
+  <block id="9b06fa9f212979fe62299f124d940ebb" category="list-text">将脚本从用户目录代理安装目录复制到目标装载位置：</block>
+  <block id="b3caaa68d416a8514777fe70cce61658" category="list-text">使用挂载目录中的脚本执行<block ref="ab2b6c413bb2ed5d0773bf72872cb574" prefix=" " category="inline-code"></block>命令，以创建测试数据集文件夹和文件。此命令在名为"test_dataset"的目录下挂载的文件夹内创建 100 个（非空）具有不同扩展名的文件。</block>
+  <block id="a7f5f35426b927411fc9231b56382173" category="open-title">Python</block>
+  <block id="81241013d4d86f41891746f6aa17b1cb" category="list-text">将脚本从用户目录代理安装目录复制到目标卷：</block>
+  <block id="6c9617bf31efa03703c1d95ebd8ae628" category="list-text">创建测试数据集：<block ref="d9e54f0bcc3f9baa2eba11b3752679fa" prefix=" " category="inline-code"></block>。</block>
+  <block id="e334323c00387f9c7a97f89668f49278" category="paragraph">此命令在名为"test_dataset"的目录下挂载的文件夹中创建 100 个（非空）具有不同扩展名的文件。</block>
+  <block id="5f47ed0572459cd1bd9d24536a91b94f" category="list-text">恢复收集器。</block>
+  <block id="725f6a6f3ce0c97f02d177ac7f5837ea" category="paragraph">在 Ransomware Resilience 中，选择**设置**，然后在用户检测监控图块中，选择**管理**。在数据收集器选项卡中，选择存储 VM 的数据收集器，然后选择**恢复**。</block>
+  <block id="84777a8a48e5db1a305f8031c48714e7" category="paragraph-title">模拟攻击</block>
+  <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">+</block>
+  <block id="a9d5986540c724cee5301f21be69fcdb" category="list-text">将脚本从 Agent 安装目录复制到目标挂载位置：<block ref="494e32253615c0d68d99633322481510" prefix=" " category="inline-code"></block>。</block>
+  <block id="3691873db288ed4131190505aca1ca8b" category="list-text">执行挂载目录中的脚本来加密测试数据集：<block ref="63e7482ce629b80b8af855bab40816a3" prefix=" " category="inline-code"></block>。</block>
+  <block id="d4c261be6751956136d8899a67f73a3a" category="list-text">将脚本从 Agent 安装目录复制到目标挂载位置：<block ref="384ad51ddad01da131e783aa5e8f11c5" prefix=" " category="inline-code"></block>。</block>
+  <block id="79f03c887a5b87f60dc11888eb1912c8" category="list-text">执行脚本以加密"test_dataset"中的数据：<block ref="fb27c7de1224eb6c593d86d443e08cba" prefix=" " category="inline-code"></block></block>
+  <block id="c831854b6d1296b1799fcf60d7b7b23a" category="inline-link-macro">查看 Ransomware Resilience Alerts 菜单中的警报</block>
+  <block id="a356ea555457a50fd1024b72eda469df" category="paragraph">运行脚本后，您可以 <block ref="947e5f30e76a2b5bc4762ca3a4aecff4" category="inline-link-macro-rx"></block>。</block>
+  <block id="ae5bda10485478daa986cdf30bc9e269" category="paragraph-title">在 Ransomware Resilience 中生成其他警报</block>
+  <block id="e05643c8bdde83ac8e66b25523f73c2e" category="paragraph">由于 Ransomware Resilience 会适应用户行为，因此如果用户在 24 小时内对同一数据重复相同操作，它将不会生成后续警报，因此您不能简单地重新加密数据以生成另一个警报。相反，要生成其他警报，您必须重复此过程：重新创建测试数据，然后对其进行加密。</block>
+  <block id="c7c8ba74ff4da532146fafc10096fb17" category="section-title">模拟数据泄露和数据销毁警报</block>
+  <block id="fa99409416aabd6f21788becebea7f8c" category="paragraph">Ransomware Resilience 还支持模拟数据泄露或数据销毁事件。</block>
+  <block id="45bda3ef7e901d33873cbff1e6690379" category="admonition">用户必须在系统中处于活动状态超过七天，才能注册用户警报。</block>
+  <block id="cfad69f39333cee3e161b5244b11653e" category="list-text">装载受保护的卷：</block>
+  <block id="88f75a382c65ffd132afb22173b12253" category="list-text">暂停数据收集器：</block>
+  <block id="60ce062ddaebd3a3bb4145e9ac9ec1cd" category="list-text">创建数据集。此命令创建一个包含 5,000 个文件的数据集：</block>
+  <block id="e50f2b72c469150557983c8e468853cd" category="list-text">恢复数据收集器上的操作：</block>
+  <block id="7f9d9c534a11d35cdc123038548fbc5a" category="list-text">执行批量读取：</block>
+  <block id="a4d1f9df55cc0e951116c0a1ae2a8312" category="list-text">清除缓存：</block>
+  <block id="12db011a51ee87b1a0fba45cff8aeca1" category="list-text">对所有文件进行读取，以模拟数据泄露：</block>
+  <block id="d70072b82ef29f9ccd9b78c13dcb0dd2" category="inline-link-macro">警报控制面板</block>
+  <block id="30c987f189c1203506e252277c182117" category="list-text">请等待数据泄露警报出现。您可以在 <block ref="cd880d4b431a9e359489824093adec00" category="inline-link-macro-rx"></block> 中确认警报是否存在，并调查警报的详细信息。</block>
+  <block id="92e8752dc37f12422b8f4598efa4f75e" category="list-text">从警报中辨别出所需信息后，删除数据：</block>
+  <block id="b30a6af22c230e409ffe8e8aea6d40cd" category="sidebar">模拟攻击</block>
+  <block id="9146963b2f60b37c2a323f89b7563bb7" category="sidebar">模拟恶意用户事件</block>
 </blocks>

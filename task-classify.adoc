@@ -15,6 +15,7 @@ summary: Ransomware Resilience 可以识别您的数据中的隐私暴露，以�
 
 
 
+[[identify-privacy-exposures]]
 == 识别隐私泄露
 
 在 Ransomware Resilience 中识别隐私泄露之前，您需要link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-cloud-compliance.html["启用数据分类来扫描您的数据"^]。
@@ -48,6 +49,8 @@ image:screen-protection-workload-details-privacy-exposure.png["显示隐私暴�
 
 
 
+[[impact-of-privacy-exposure-on-workload-importance]]
+[[privacy-impact]]
 == 隐私暴露对工作负载重要性的影响
 
 隐私暴露的变化可能会影响工作负载的重要性。
@@ -70,6 +73,7 @@ image:screen-protection-workload-details-privacy-exposure.png["显示隐私暴�
 |===
 
 
+[[more-information]]
 == 更多信息
 
 有关修复隐私泄露的信息，请参见 Data Classification 文档：

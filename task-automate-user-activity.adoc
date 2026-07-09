@@ -18,6 +18,7 @@ NetApp Ransomware Resilience 支持创建对 link:concept-user-behavior.html["�
 
 
 
+[[create-an-automated-response]]
 == 创建自动响应
 
 您只能保护一个存储 VM，且该存储 VM 至少有一个工作负载受可疑用户行为检测策略保护。
@@ -66,6 +67,7 @@ NOTE: 对于可疑用户行为的自动响应，您只能拍摄快照。不支�
 
 
 
+[[modify-an-automated-response]]
 == 修改自动响应
 
 创建自动响应后，您可以暂停、重新启动或修改响应。您可以修改响应的名称、触发响应的警报类型、存储 VM 和采取的操作。

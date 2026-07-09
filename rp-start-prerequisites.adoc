@@ -18,6 +18,7 @@ summary: 通过验证对您的环境、网络访问、登录和 Web 浏览器的
 
 
 
+[[supported-systems]]
 == 支持的系统
 
 请确保您使用的是受支持的系统：
@@ -63,6 +64,7 @@ NOTE: Azure NetApp Files 或 Google Cloud NetApp Volumes 不支持用户活动�
 
 
 
+[[netapp-console-requirements]]
 == NetApp Console要求
 
 您的NetApp Console配置需要：
@@ -88,6 +90,7 @@ NOTE: 要在 SAN 工作负载上使用勒索软件恢复功能，您必须运行
 
 
 
+[[ontap-requirements]]
 == ONTAP 要求
 
 * 您必须运行ONTAP 9.11.1 或更高版本，并且在本地ONTAP实例上启用ONTAP One 许可证。有关ONTAP支持的更多信息，请参阅link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索软件防护概述"^]。
@@ -99,6 +102,7 @@ NOTE: 如果您已使用非管理员凭据将 ONTAP 集群连接到控制台，�
 
 
 
+[[data-backups]]
 == 数据备份
 
 * 在NetApp StorageGRID、AWS S3、Azure Blob 或 Google Cloud Platform 中拥有一个帐户，用于备份目标，并配置了适当的访问权限。
@@ -112,18 +116,21 @@ NOTE: 您可以link:task-backup-destination.html["在 Ransomware Resilience 中�
 
 
 
+[[user-behavior-detection-requirements]]
 == 用户行为检测要求
 
 要使 Ransomware Resilience 提供有关用户行为的警报，必须配置用户活动代理。要安装用户活动代理，请确保您的系统满足 link:reference-user-activity-requirements.html["要求"]。
 
 
 
+[[clean-restore-prerequisites]]
 == 清理还原先决条件
 
 Ransomware Resilience 提供干净的恢复，它提供了一个发现最佳恢复路径的指导恢复过程。要使用干净还原，link:task-clean-restore.html["确保满足先决条件"]。
 
 
 
+[[update-non-admin-user-permissions-in-an-ontap-system]]
 == 更新ONTAP系统中的非管理员用户权限
 
 如果需要更新特定系统的非管理员用户权限，请使用以下过程：

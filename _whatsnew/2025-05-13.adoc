@@ -4,6 +4,7 @@
 
 
 
+[[reporting-of-unsupported-working-environments-in-bluexp-ransomware-protection]]
 === BlueXP ransomware protection中不支持的工作环境报告
 
 在发现工作流程期间，当您将鼠标悬停在“支持”或“不支持的工作负载”上时， BlueXP ransomware protection会报告更多详细信息。这将帮助您了解为什么您的某些工作负载未被BlueXP ransomware protection服务发现。

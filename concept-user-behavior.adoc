@@ -25,6 +25,7 @@ IMPORTANT: SAN 工作负载当前不支持用户活动检测。您可以将用�
 
 
 
+[[user-activity-forensics]]
 == 用户活动取证
 
 Ransomware Resilience 为用户行为提供取证：显示何时发生可疑活动以及何时发出通知的列表和图形。这些详细说明了文件、目录、卷和工作负载上可疑活动随时间变化的频率，以帮助绘制事件图表。您还可以观察新文件扩展名的出现。
@@ -37,6 +38,7 @@ image:all-file-activity.png["所有文件活动视图的屏幕截图"]。
 
 
 
+[[components]]
 == 组件
 
 Ransomware Resilience 用户行为检测有三个关键组成部分。
@@ -48,6 +50,7 @@ Ransomware Resilience 用户行为检测有三个关键组成部分。
 
 
 
+[[ransomware-resilience-and-data-infrastructure-insights]]
 == Ransomware Resilience 和 Data Infrastructure Insights
 
 Ransomware Resilience 的用户行为检测是与 Data Infrastructure Insights (DII) Workload Security 的集成，并使用 link:reference-user-activity-requirements.html["DII 端点"]。您无需任何 DII 配置即可在 Ransomware Resilience 中启用用户行为检测。要启用用户行为检测，link:suspicious-user-activity.html["创建所需的代理和收集器，并启用适当的勒索软件保护策略"]。
@@ -56,6 +59,7 @@ Ransomware Resilience 的用户行为检测是与 Data Infrastructure Insights (
 
 
 
+[[next-steps]]
 == 后续步骤
 
 * link:reference-user-activity-requirements.html["用户行为检测要求"]

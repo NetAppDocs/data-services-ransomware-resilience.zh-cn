@@ -29,6 +29,7 @@ NOTE: 如果您已经在使用 NetApp Data Infrastructure Insights (DII) Workloa
 
 
 
+[[before-you-begin]]
 == 开始之前
 
 * 请确保满足 link:reference-user-activity-requirements.html["操作系统、服务器和网络要求"]。
@@ -40,6 +41,7 @@ NOTE: 如果您已经在使用 NetApp Data Infrastructure Insights (DII) Workloa
 
 
 
+[[create-a-user-activity-agent]]
 == 创建用户活动代理
 
 用户活动代理是 link:#add-a-data-collector["数据收集器"] 的可执行环境；数据收集器与 Ransomware Resilience 共享用户活动事件。您必须至少创建一个用户活动代理才能启用用户活动检测。
@@ -78,6 +80,7 @@ image:user-activity-agent.png["添加活动代理界面截图。"]
 
 
 
+[[add-a-data-collector]]
 === 添加数据收集器
 
 当您启用具有用户活动检测的勒索软件保护策略时，会自动创建数据收集器。有关详细信息，请参见 link:rp-use-protect.html#add-a-detection-policy-to-workloads-with-existing-backup-or-snapshot-policies["添加检测策略"]。
@@ -88,6 +91,7 @@ image:user-activity-settings.png["用户活动设置的屏幕截图。"]
 
 
 
+[[create-a-user-directory-connector]]
 == 创建用户目录连接器
 
 要将用户 ID 映射到用户名，您必须创建用户目录连接器。
@@ -148,6 +152,7 @@ image:screenshot-user-directory-connection.png["用户目录连接的屏幕截�
 
 
 
+[[delete-a-user-directory-connector]]
 === 删除用户目录连接器
 
 .步骤
@@ -160,6 +165,7 @@ image:screenshot-user-directory-connection.png["用户目录连接的屏幕截�
 
 
 
+[[respond-to-user-activity-alerts]]
 == 响应用户活动警报
 
 配置用户活动检测后，可以在警报页面中监控事件。有关详细信息，请参见 link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["检测恶意活动和可疑用户行为"]。
@@ -168,6 +174,7 @@ image:screenshot-user-directory-connection.png["用户目录连接的屏幕截�
 
 
 
+[[next-steps]]
 == 后续步骤
 
 * link:task-users-manage.html["管理警报设置和阻止的用户"]

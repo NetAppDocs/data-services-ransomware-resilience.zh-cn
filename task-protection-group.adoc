@@ -18,6 +18,7 @@ NetApp Ransomware Resilience 提供保护组，以便更轻松地管理您的数
 
 
 
+[[create-a-protection-group]]
 == 创建保护组
 
 无论其保护状态如何，您都可以创建组（即未受保护的组和受保护的组）。向保护组添加保护策略时，新保护策略将替换任何现有策略，包括由 NetApp Backup and Recovery 管理的策略。
@@ -62,6 +63,7 @@ TIP: 在 Ransomware Resilience 中查看保护仪表板时，您可以按保护�
 
 
 
+[[edit-group-protection]]
 === 编辑组保护
 
 您可以更改现有组的检测策略。
@@ -77,6 +79,7 @@ TIP: 在 Ransomware Resilience 中查看保护仪表板时，您可以按保护�
 
 
 
+[[remove-workloads-from-a-protection-group]]
 == 从保护组中删除工作负载
 
 稍后可能需要从现有保护组中删除工作负载。
@@ -95,6 +98,7 @@ image:screen-protection-groups-more-workloads.png["保护组详细信息页面"]
 
 
 
+[[delete-a-protection-group]]
 == 删除保护组
 
 删除保护组时，Ransomware Resilience 会删除工作负载上的组和保护策略。它不会删除单个工作负载。

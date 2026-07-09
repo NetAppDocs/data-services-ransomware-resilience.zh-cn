@@ -20,6 +20,7 @@ NetApp Ransomware Resilience 提供干净的恢复，在勒索软件攻击后提
 
 
 
+[[learn-about-clean-restores]]
 == 了解干净还原
 
 当您执行干净恢复时，Ransomware Resilience 将引导您完成优化恢复的多步骤流程。
@@ -48,6 +49,7 @@ NetApp Ransomware Resilience 提供干净的恢复，在勒索软件攻击后提
 
 
 
+[[supported-configurations]]
 == 支持的配置
 
 * 每个 Ransomware Resilience 帐户只能创建一个 IRE。每个 IRE 可以有三个干净的房间。
@@ -92,6 +94,7 @@ NOTE: 在基于云的环境中执行干净恢复可能会产生云提供商的�
 
 
 
+[[considerations]]
 == 注意事项
 
 * 只能对基于加密的勒索软件攻击执行干净还原。
@@ -105,6 +108,7 @@ NOTE: 在基于云的环境中执行干净恢复可能会产生云提供商的�
 
 
 
+[[additional-considerations-for-on-premises-environments]]
 === 本地环境的其他注意事项
 
 如果要部署本地 IRE，则在干净还原中为恢复分析克隆 Windows VM 时，克隆的 VM 将保留与源相同的配置。这可能会导致冲突：
@@ -118,6 +122,7 @@ NOTE: 在基于云的环境中执行干净恢复可能会产生云提供商的�
 
 
 
+[[secondary-sources]]
 === 辅助来源
 
 创建 IRE 时，您可以选择添加辅助源。
@@ -128,6 +133,7 @@ NOTE: 在基于云的环境中执行干净恢复可能会产生云提供商的�
 
 
 
+[[cost-and-licensing]]
 == 成本和许可
 
 作为 Ransomware Resilience 的一部分提供干净恢复。执行干净恢复或创建 IRE 无需额外的许可证。
@@ -142,6 +148,7 @@ NOTE: 在基于云的环境中执行干净恢复可能会产生云提供商的�
 
 
 
+[[prerequisites]]
 == 前提条件
 
 确保已完成所选干净还原部署类型的先决条件。选择所选 IRE 配置的选项卡。
@@ -506,6 +513,7 @@ NFS 访问：* Production Console agent * Console agent VLAN * Clean room VLAN
 ====
 
 
+[[create-an-isolated-recovery-environment]]
 == 创建隔离的恢复环境
 
 在进行清洁恢复之前，您必须创建一个隔离的恢复室。
@@ -593,6 +601,7 @@ TIP: 如果您需要更改 IRE 的任何详细信息，请从 Ransomware Resilie
 
 
 
+[[delete-an-isolated-recovery-environment]]
 == 删除隔离的恢复环境
 
 您不能删除具有活动还原操作的 IRE；您可以取消还原操作或等待还原完成，然后删除 IRE。

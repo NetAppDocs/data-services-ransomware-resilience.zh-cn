@@ -1,0 +1,220 @@
+---
+sidebar: sidebar 
+permalink: task-test-user-activity.html 
+keywords: readiness drill, data breach, data destruction, script, shell, python, user activity detection, simulation 
+summary: NetApp Ransomware Resilience 在您启用用户活动监控时提供一个脚本，用于测试基于加密的勒索软件攻击和数据泄露事件。 
+---
+= 在 NetApp Ransomware Resilience 中模拟恶意用户行为
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+在 NetApp Ransomware Resilience 中配置用户活动监控时，您可以运行测试脚本来模拟可疑的用户行为事件。
+
+此脚本旨在模拟已知用户执行的基于加密的勒索软件攻击。使用其他命令，您还可以模拟数据泄露或数据销毁攻击。
+
+
+
+[[about-the-script]]
+== 关于脚本
+
+当您在计算机上启用用户活动监控时，测试脚本即可使用。您可以使用 shell 或 Python 运行脚本。
+
+您应该在已创建数据收集器的存储虚拟机的卷上运行脚本。该脚本应在包含多个子目录中至少 100 个文件的测试数据卷上运行；您可以使用该脚本以编程方式生成这些文件。在创建测试数据之前暂停数据收集器，然后在创建完成后恢复。
+
+
+
+[[considerations]]
+== 注意事项
+
+* 该脚本模拟用户加密事件。它只能在 Linux 系统上运行。
+* 如果您的系统使用 NFSv4.1，则必须运行 ONTAP 9.15.1 或更高版本。
+* 您可以将脚本作为 shell 脚本或使用 Python 运行。
++
+
+NOTE: 有<<前提条件>>种方法可以运行 Python 脚本。
+
+
+
+
+
+[[before-you-begin]]
+== 开始之前
+
+您必须已在要进行测试的系统上创建了 link:suspicious-user-activity.html["数据收集器"]。这需要创建用户活动代理，然后启用具有可疑用户行为检测的勒索软件保护策略。
+
+
+
+[[requirements-for-python-script]]
+[[prerequisites]]
+=== Python 脚本的要求
+
+要在 Python 中运行脚本，必须具有：
+
+* link:https://www.python.org/["已安装 Python 3.5.2 或更高版本"^]
+* link:https://bootstrap.pypa.io/["已安装 pip"^]
+* 已安装 PyCryptodome 库： `pip install pycryptodome`
+
+
+
+TIP: 您可以使用以下命令检查 Python 版本 `python --version`。您可以使用以下命令测试 pip 安装 `pip --version`。您可以使用以下命令测试 PyCryptodome 安装 `pip show pycryptodome`。
+
+
+
+[[simulate-an-encryption-event]]
+== 模拟加密事件
+
+.准备系统
+. 将要在其中创建示例文件的目标卷挂载到 Linux 计算机。您可以挂载 NFS 或 CIFS 导出。
++
+[role="tabbed-block"]
+====
+.NFS
+--
+[code]
+----
+mount -t nfs -o vers=4.0 <SVM_data_LIF_IP>:/<export_path>/<mountPoint>
+mount -t nfs -o vers=4.0 <SVM_data_LIF_IP>:/<export_path>/<destinationLinuxFolder>
+----
+--
+.CIFS
+--
+[code]
+----
+mount -t cifs //<SVM_data_LIF_IP>/<share_name> /root/destinationfolder/ -o username=<username>
+----
+--
+====
+. 保护 link:suspicious-user-activity.html["目标卷"]。
+. 暂停数据收集器。
++
+在 Ransomware Resilience 中，选择**设置**，然后在用户检测监控图块中，选择**管理**。在数据收集器选项卡中，选择存储 VM 的数据收集器，然后选择**暂停**。
+
+. 添加要加密的文件。可以手动将要加密的文件复制到目标文件夹或卷，也可以使用包含的脚本之一以编程方式创建文件。您必须至少添加 100 个文件。
++
+以编程方式创建这些文件：
+
++
+[role="tabbed-block"]
+====
+.Shell
+--
+.. 登录到运行用户活动代理的主机。
+.. 将 NFS 或 CIFS 共享从文件管理器的存储虚拟机挂载到运行用户活动代理的计算机。将工作目录更改为适当的卷以进行测试。
+.. 将脚本从用户目录代理安装目录复制到目标装载位置：
++
+[code]
+----
+cp <AGENT_INSTALL_DIR>/agent/install/ransomware_simulation/shell/create_dataset.sh
+----
+.. 使用挂载目录中的脚本执行 `./create_dataset.sh`命令，以创建测试数据集文件夹和文件。此命令在名为"test_dataset"的目录下挂载的文件夹内创建 100 个（非空）具有不同扩展名的文件。
+
+
+--
+.Python
+--
+.. 登录到运行用户活动代理的主机。
+.. 将 NFS 或 CIFS 共享从文件管理器的存储虚拟机挂载到运行用户活动代理的计算机。将工作目录更改为适当的卷以进行测试。
+.. 将脚本从用户目录代理安装目录复制到目标卷：
++
+[code]
+----
+cp <AGENT_INSTALL_DIR>/agent/install/ransomware_simulation/python/create_dataset.py
+----
+.. 创建测试数据集： `python create_dataset.py`。
++
+此命令在名为"test_dataset"的目录下挂载的文件夹中创建 100 个（非空）具有不同扩展名的文件。
+
+
+
+--
+====
+. 恢复收集器。
++
+在 Ransomware Resilience 中，选择**设置**，然后在用户检测监控图块中，选择**管理**。在数据收集器选项卡中，选择存储 VM 的数据收集器，然后选择**恢复**。
+
+
+
+.模拟攻击
++
+
+[role="tabbed-block"]
+====
+.Shell
+--
+. 将脚本从 Agent 安装目录复制到目标挂载位置： `<AGENT_INSTALL_DIR>/agent/install/ransomware_simulation/shell/simulate_attack.sh`。
+. 执行挂载目录中的脚本来加密测试数据集： `./simulate_attack.sh`。
+
+
+--
+.Python
+--
+. 将脚本从 Agent 安装目录复制到目标挂载位置： `<AGENT_INSTALL_DIR>/agent/install/ransomware_simulation/shell/simulate_attack.py`。
+. 执行脚本以加密"test_dataset"中的数据： `python simulate_attack.py`
+
+
+--
+====
+.结果
+运行脚本后，您可以 link:rp-use-alert.html["查看 Ransomware Resilience Alerts 菜单中的警报"]。
+
+.在 Ransomware Resilience 中生成其他警报
+由于 Ransomware Resilience 会适应用户行为，因此如果用户在 24 小时内对同一数据重复相同操作，它将不会生成后续警报，因此您不能简单地重新加密数据以生成另一个警报。相反，要生成其他警报，您必须重复此过程：重新创建测试数据，然后对其进行加密。
+
+
+
+[[simulate-data-breach-and-data-destruction-alerts]]
+== 模拟数据泄露和数据销毁警报
+
+Ransomware Resilience 还支持模拟数据泄露或数据销毁事件。
+
+
+NOTE: 用户必须在系统中处于活动状态超过七天，才能注册用户警报。
+
+.步骤
+. 装载受保护的卷：
++
+[code]
+----
+sudo mount -t nfs -o rw,hard,nfsvers=4.0,proto=tcp,noac,actimeo=0,lookupcache=none <SVM_data_LIF_IP>:/<export_path> /root/<volume>
+----
+. 暂停数据收集器：
++
+在 Ransomware Resilience 中，选择**设置**，然后在用户检测监控图块中，选择**管理**。在数据收集器选项卡中，选择存储 VM 的数据收集器，然后选择**暂停**。
+
+. 创建数据集。此命令创建一个包含 5,000 个文件的数据集：
++
+[code]
+----
+mkdir -p ./data5k; seq -w 1 5000 | xargs -n1 -P2 -I{} bash -c 'sz=$((RANDOM%16+5)); LC_ALL=C tr -dc "A-Za-z0-9\n" < /dev/urandom | head -c "$((sz*1024))" > ./data5k/file_{}.txt'
+----
+. 恢复数据收集器上的操作：
++
+在 Ransomware Resilience 中，选择**设置**，然后在用户检测监控图块中，选择**管理**。在数据收集器选项卡中，选择存储 VM 的数据收集器，然后选择**恢复**。
+
+. 执行批量读取：
++
+.. 清除缓存：
++
+[code]
+----
+sudo sync && echo 3 | sudo tee /proc/sys/vm/drop_caches >/dev/null
+----
+.. 对所有文件进行读取，以模拟数据泄露：
++
+[code]
+----
+find ./data5k -type f -print0 | xargs -0 -n1 -P4 -I{} dd if={} of=/dev/null bs=1M iflag=direct status=none
+----
+
+
+. 请等待数据泄露警报出现。您可以在 link:rp-use-alert.html["警报控制面板"] 中确认警报是否存在，并调查警报的详细信息。
+. 从警报中辨别出所需信息后，删除数据：
++
+[code]
+----
+ sudo setpriv --reuid 60001 --regid 60001 --groups 60001 bash -lc 'id -u; id -g; id -G; rm -rf ./data5k'
+----
+

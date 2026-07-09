@@ -4,6 +4,7 @@
 
 
 
+[[detect-anomalous-user-behavior-using-data-infrastructure-insights-storage-workload-security]]
 === 使用Data Infrastructure Insights存储工作负载安全检测异常用户行为
 
 在此版本中，您可以使用Data Infrastructure Insights存储工作负载安全来检测存储工作负载中的异常用户行为。此功能可帮助您识别潜在的安全威胁并阻止潜在的恶意用户以保护您的数据。
@@ -16,6 +17,7 @@
 
 
 
+[[select-workloads-to-discover-and-protect]]
 === 选择要发现和保护的工作负载
 
 在此版本中，您现在可以执行以下操作：

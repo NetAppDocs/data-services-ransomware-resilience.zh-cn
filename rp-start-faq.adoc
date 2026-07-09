@@ -16,6 +16,7 @@ summary: 查找有关NetApp Ransomware Resilience的常见问题的答案。
 
 
 
+[[deployment]]
 == 部署
 
 .使用勒索软件恢复功能需要许可证吗？
@@ -49,6 +50,7 @@ summary: 查找有关NetApp Ransomware Resilience的常见问题的答案。
 
 
 
+[[access]]
 == 使用权
 
 .勒索软件恢复能力网址是什么？
@@ -65,6 +67,7 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 
 
 
+[[interoperability]]
 == 互操作性
 
 .Ransomware Resilience 是否了解ONTAP中的保护设置？
@@ -77,6 +80,7 @@ Ransomware Resilience 与 Backup and Recovery 配合使用，发现并设置文�
 
 
 
+[[workloads]]
 == 工作负载
 
 .在勒索软件防御的语境下，什么是工作负载？
@@ -104,6 +108,7 @@ link:rp-use-protect.html["了解工作负载优先级或重要性"] 。
 
 
 
+[[protection-policies]]
 == 保护策略
 
 .勒索软件恢复策略是否可以与其他类型的工作负载策略共存？

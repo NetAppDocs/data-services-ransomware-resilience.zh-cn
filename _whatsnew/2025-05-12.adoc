@@ -4,6 +4,7 @@
 
 
 
+[[support-for-amazon-fsx-for-netapp-ontap]]
 === 支持Amazon FSx for NetApp ONTAP
 
 此版本支持Amazon FSx for NetApp ONTAP 。此功能可帮助您使用BlueXP ransomware protection来保护 FSx for ONTAP工作负载。
@@ -27,6 +28,7 @@ TIP: 无法在BlueXP中设置在 FSx for ONTAP上运行的工作负载的备份�
 
 
 
+[[bluexp-access-role-needed]]
 === 需要BlueXP访问角色
 
 您现在需要以下访问角色之一来查看、发现或管理BlueXP ransomware protection：组织管理员、文件夹或项目管理员、勒索软件保护管理员或勒索软件保护查看器。

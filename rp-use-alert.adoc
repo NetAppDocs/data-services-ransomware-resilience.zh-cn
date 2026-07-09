@@ -27,6 +27,7 @@ TIP: 如果忽略此警报，Ransomware Resilience 将了解此行为，将其�
 
 
 
+[[how-alerts-are-generated]]
 == 如何生成警报
 
 Ransomware Resilience 依赖于有关数据熵模式、文件扩展名类型和加密的证据来生成警报。警报基于以下事件：
@@ -45,6 +46,7 @@ NOTE: 对于数据泄露、数据销毁和可疑用户行为警报，必须配�
 
 
 
+[[alert-types-and-statuses]]
 === 警报类型和状态
 
 提醒具有两种状态之一：*新建* 或 *未激活*。
@@ -74,6 +76,7 @@ NOTE: 对于 SAN 环境，警告仅基于高熵值。
 
 
 
+[[alert-states]]
 === 警报状态
 
 警报事件可以具有以下几种状态：
@@ -106,6 +109,7 @@ NOTE: 如果您有一个现有的保护策略，然后在其上禁用了一种�
 
 
 
+[[view-alerts]]
 == 查看警报
 
 您可以从 Ransomware Resilience 仪表板或*警报*选项卡访问警报。
@@ -132,6 +136,7 @@ image:screen-alerts.png["警报页面"]
 
 
 
+[[respond-to-an-alert-email]]
 == 回复警报电子邮件
 
 当 Ransomware Resilience 检测到潜在的攻击时，它会根据在 NetApp Console 设置中配置的订阅通知首选项向订阅用户发送电子邮件通知。电子邮件包含有关警报的信息，包括严重程度和受影响的资源。
@@ -160,6 +165,7 @@ TIP: 要在 Console 中设置电子邮件通知，请参见 link:https://docs.ne
 
 
 
+[[detect-malicious-activity-and-anomalous-user-behavior]]
 == 检测恶意活动和异常用户行为
 
 查看“警报”选项卡，您可以识别是否存在恶意活动或异常用户行为。
@@ -168,6 +174,7 @@ TIP: 要在 Console 中设置电子邮件通知，请参见 link:https://docs.ne
 
 
 
+[[view-malicious-activity]]
 === 查看恶意活动
 
 当 Autonomous Ransomware Protection 在 Ransomware Resilience 中触发警报时，您可以查看以下详细信息：
@@ -196,6 +203,7 @@ image:screen-alerts-incidents3.png["警报事件页面"]
 
 
 
+[[view-anomalous-user-behavior]]
 === 查看异常用户行为
 
 如果您已配置用户行为检测，则可以查看用户级数据并阻止特定用户。要启用用户活动检测，请参见 link:suspicious-user-activity.html["配置代理和收集器"]。
@@ -218,6 +226,7 @@ TIP: 要为用户重新启用警报，请返回警报。选择三个点，然后
 
 
 
+[[mark-ransomware-incidents-as-ready-for-recovery-after-incidents-are-neutralized]]
 == 将勒索软件事件标记为准备恢复（事件被消除后）
 
 停止攻击后，通知您的存储管理员数据已准备就绪，以便他们可以启动恢复过程。
@@ -244,6 +253,7 @@ image:screen-alerts-incidents3.png["警报事件页面"]
 
 
 
+[[dismiss-incidents-that-are-not-potential-attacks]]
 == 忽略不属于潜在攻击的事件
 
 审查事件后，您需要确定该事件是否是潜在的攻击。如果它们不构成实际威胁，就可以忽略不计。
@@ -288,6 +298,7 @@ image:screen-alerts-status-edit.png["警报编辑状态页面"]
 
 
 
+[[view-a-list-of-impacted-files]]
 == 查看受影响文件的列表
 
 在文件级别还原工作负载之前，您可以查看受影响文件的列表。您可以访问"提醒"页面，下载受影响文件的列表。然后使用恢复页面上传列表并选择要还原的文件。

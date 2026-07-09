@@ -4,6 +4,7 @@
 
 
 
+[[clean-restore]]
 === 清理还原
 
 Ransomware Resilience 现在支持 clean restores，这是一种新的恢复选项，可帮助您快速轻松地从勒索软件攻击中恢复。Clean restores 提供指导性工作流程，可识别最佳还原点以启动和运行您的工作负载，同时最大限度地减少停机时间。Clean restore 中的工作流程还提供对数据的文件级见解，确保您可以还原无恶意软件的工作负载，从而防止再次感染并最大限度地减少数据丢失。
@@ -12,6 +13,7 @@ Ransomware Resilience 现在支持 clean restores，这是一种新的恢复选�
 
 
 
+[[siem-support-for-splunk-enterprise]]
 === Splunk Enterprise 的 SIEM 支持
 
 Ransomware Resilience 现在为 Splunk Enterprise 提供安全信息事件管理 (SIEM) 支持，使您能够集中日志和事件数据，并简化威胁分析和检测。
@@ -20,6 +22,7 @@ Ransomware Resilience 现在为 Splunk Enterprise 提供安全信息事件管理
 
 
 
+[[user-behavior-detection-enhancement]]
 === 用户行为检测增强
 
 对数据泄露事件的洞察现在可以在事件发生后保留 13 个月，从而可以根据您的报告需求进行更长时间的记录保存。

@@ -18,6 +18,7 @@ NetApp Ransomware Resilience 用户行为检测使您能够对用户级别的勒
 
 
 
+[[cloud-provider-support]]
 == 云提供商支持
 
 用户行为数据可以存储在以下区域的 AWS 和 Azure 中：
@@ -38,6 +39,7 @@ NetApp Ransomware Resilience 用户行为检测使您能够对用户级别的勒
 |===
 
 
+[[operating-system-requirements]]
 == 操作系统要求
 
 以下操作系统支持可疑用户行为检测：
@@ -80,6 +82,7 @@ NOTE: 用于用户活动代理的计算机不应运行其他应用程序级软�
 
 
 
+[[server-requirements]]
 == 服务器要求
 
 服务器必须满足以下最低要求：
@@ -91,6 +94,7 @@ NOTE: 用于用户活动代理的计算机不应运行其他应用程序级软�
 
 
 
+[[server-recommendations]]
 === 服务器建议
 
 * 分配额外的磁盘空间以用于创建文件系统。请确保文件系统中至少有 35 GB 的可用空间。+ 如果 `/opt` 这是从 NAS 存储设备挂载的文件夹，本地用户必须有权限访问此文件夹。如果本地用户没有必要的权限，则用户活动代理创建可能会失败。
@@ -100,6 +104,7 @@ NOTE: 用于用户活动代理的计算机不应运行其他应用程序级软�
 
 
 
+[[sizing-recommendations]]
 === 规模建议
 
 收集用户事件时，请确保托管用户活动代理的计算机大小能够适应您的事件率。这意味着确保在托管用户活动代理的计算机上有足够的数据收集器和足够的 CPU 和 RAM 来容忍每秒的事件数。要增加数据收集器的数量，您可能需要增加 RAM 或 CPU 容量。Ransomware Resilience 每个用户活动代理最多支持 50 个数据收集器。
@@ -146,6 +151,7 @@ Ransomware Resilience 提供了一个可以在系统上运行的脚本来计算�
 ====
 
 
+[[cloud-network-access-rules]]
 == 云网络访问规则
 
 查看您所在地区（亚太地区、欧洲或美国）的云网络访问规则。
@@ -158,6 +164,7 @@ NOTE: 用户活动代理使用 NetApp Data Infrastructure Insights 技术，因�
 
 
 
+[[apac-based-user-activity-agent-deployments]]
 === 基于 APAC 的用户活动代理部署
 
 [cols="1,1,1,3,1"]
@@ -175,6 +182,7 @@ NOTE: 用户活动代理使用 NetApp Data Infrastructure Insights 技术，因�
 |===
 
 
+[[europe-based-user-activity-agent-deployments]]
 === 基于欧洲的用户活动代理部署
 
 [cols="1,1,1,3,1"]
@@ -192,6 +200,7 @@ NOTE: 用户活动代理使用 NetApp Data Infrastructure Insights 技术，因�
 |===
 
 
+[[us-based-user-activity-agent-deployments]]
 === 基于美国的用户活动代理部署
 
 [cols="1,1,1,3,1"]
@@ -209,6 +218,7 @@ NOTE: 用户活动代理使用 NetApp Data Infrastructure Insights 技术，因�
 |===
 
 
+[[in-network-rules]]
 == 网络内规则
 
 [cols="5*"]
@@ -234,6 +244,7 @@ SVM 数据 LIF IP 地址
 |===
 
 
+[[next-step]]
 == 下一步
 
 * link:suspicious-user-activity.html["配置用户活动代理和收集器"]

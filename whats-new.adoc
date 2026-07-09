@@ -18,10 +18,12 @@ summary: 了解NetApp Ransomware Resilience的新功能。
 
 
 
+[[07-july-2026]]
 == 2026年7月7日
 
 
 
+[[exclude-file-paths-from-user-behavior-alerts]]
 === 从用户行为警报中排除文件路径
 
 NetApp Ransomware Resilience 支持在用户行为监控警报中排除特定的文件路径。如果您知道某些文件路径不存在风险，或者正在对卷中可能触发警报的文件进行操作，则可以排除这些文件路径。
@@ -30,10 +32,12 @@ NetApp Ransomware Resilience 支持在用户行为监控警报中排除特定的
 
 
 
+[[29-june-2026]]
 == 2026 年 6 月 29 日
 
 
 
+[[automated-responses-to-user-activity-alerts]]
 === 自动响应用户活动警报
 
 Ransomware Resilience 现在支持在生成用户活动警报时自动创建快照和阻止用户。通过自动响应，您可以在生成警告后立即阻止用户，并创建快照进行恢复，从而无需手动干预即可更快地响应。
@@ -42,10 +46,12 @@ Ransomware Resilience 现在支持在生成用户活动警报时自动创建快�
 
 
 
+[[08-june-2026]]
 == 2026 年 6 月 08 日
 
 
 
+[[enhanced-flexibility-for-protection-strategies]]
 === 增强保护策略的灵活性
 
 Ransomware Resilience 现在为选择勒索软件检测策略提供了更大的灵活性。以前，所有勒索软件保护策略都必须包括加密检测。现在，您可以仅使用用户行为检测来启用勒索软件保护策略。
@@ -58,6 +64,7 @@ Ransomware Resilience 现在为选择勒索软件检测策略提供了更大的�
 
 
 
+[[soar-playbook-enhancements]]
 === SOAR 战术手册增强功能
 
 Ransomware Resilience SOAR 攻略现在可在您阻止用户或使卷脱机后提供补救步骤。如果操作被认为不是勒索软件威胁，您现在可以将卷恢复联机并取消阻止用户。
@@ -66,10 +73,12 @@ link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/reference
 
 
 
+[[26-may-2026]]
 == 2026 年 5 月 26 日
 
 
 
+[[google-cloud-netapp-volumes-support-preview]]
 === Google Cloud NetApp Volumes 支持（预览）
 
 Ransomware Resilience 现在支持为 Google Cloud NetApp Volumes 系统中的工作负载创建保护组，使您能够将多个工作负载归入一个策略下以简化管理。
@@ -78,10 +87,12 @@ Ransomware Resilience 现在支持为 Google Cloud NetApp Volumes 系统中的�
 
 
 
+[[18-may-2026]]
 == 2026 年 5 月 18 日
 
 
 
+[[google-cloud-netapp-volumes-support-preview]]
 === Google Cloud NetApp Volumes 支持（预览）
 
 Ransomware Resilience 现在支持 Google Cloud NetApp Volumes 系统，使您能够有效检测和响应 Google Cloud NetApp Volumes 中的勒索软件威胁。当您进行发现时，Ransomware Resilience 会自动显示来自 Google Cloud NetApp Volumes 系统的工作负载。当您发现这些系统时，它们会出现在 Ransomware Resilience 仪表板中。Ransomware Resilience 对 Google Cloud NetApp Volumes 的支持目前处于预览阶段。
@@ -90,6 +101,7 @@ Ransomware Resilience 现在支持 Google Cloud NetApp Volumes 系统，使您�
 
 
 
+[[clean-restore-enhancements]]
 === 清理还原增强功能
 
 清除还原现在支持报告。使用报告，您可以查看和评估清除还原，并将此信息离线保存为 CSV 文件。
@@ -100,10 +112,12 @@ Ransomware Resilience 现在支持 Google Cloud NetApp Volumes 系统，使您�
 
 
 
+[[11-may-2026]]
 == 2026 年 5 月 11 日
 
 
 
+[[clean-restore-enhancements]]
 === 清理还原增强功能
 
 清理还原现在支持恢复到备用位置，使您能够将卷还原到由同一 Console 代理管理的不同系统、存储 VM 和聚合。此外，清理还原已取消了搜索可行快照进行恢复的七天限制。清理还原现在会继续查看可用快照以寻找可行的恢复点，无论距离勒索软件事件有多远。
@@ -112,6 +126,7 @@ link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clea
 
 
 
+[[google-secops-siem-support]]
 === Google SecOps SIEM 支持
 
 Ransomware Resilience 现在支持 Google SecOps 的安全信息和事件管理 (SIEM)，使您能够将数据自动发送到 Google SecOps 以简化威胁分析和检测。
@@ -120,6 +135,7 @@ Ransomware Resilience 现在支持 Google SecOps 的安全信息和事件管理 
 
 
 
+[[azure-netapp-files-support-is-now-generally-available]]
 === Azure NetApp Files 支持现已全面推出
 
 Ransomware Resilience 现在支持 Azure NetApp Files 系统，使您能够有效检测和响应 Azure NetApp Files 中的勒索软件威胁。当您发现工作负载时，Ransomware Resilience 现在会显示 Azure NetApp Files 并将其显示在保护仪表板中。Ransomware Resilience 对 Azure NetApp Files 的支持包括仅使用快照的检测和保护策略。对 Azure NetApp Files 的支持现已全面推出 (GA)。
@@ -128,6 +144,7 @@ Ransomware Resilience 现在支持 Azure NetApp Files 系统，使您能够有�
 
 
 
+[[soar-support-for-blocking-users]]
 === SOAR 对屏蔽用户的支持
 
 Ransomware Resilience 现在支持使用 Google SecOps 和 Splunk SOAR playbooks 阻止个人用户。借助此功能，当 Ransomware Resilience 检测到数据泄露或大规模删除数据等可疑用户活动时，您可以自动阻止用户。
@@ -136,10 +153,12 @@ link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/reference
 
 
 
+[[13-april-2026]]
 == 2026 年 4 月 13 日
 
 
 
+[[clean-restore]]
 === 清理还原
 
 Ransomware Resilience 现在支持 clean restores，这是一种新的恢复选项，可帮助您快速轻松地从勒索软件攻击中恢复。Clean restores 提供指导性工作流程，可识别最佳还原点以启动和运行您的工作负载，同时最大限度地减少停机时间。Clean restore 中的工作流程还提供对数据的文件级见解，确保您可以还原无恶意软件的工作负载，从而防止再次感染并最大限度地减少数据丢失。
@@ -148,6 +167,7 @@ Ransomware Resilience 现在支持 clean restores，这是一种新的恢复选�
 
 
 
+[[siem-support-for-splunk-enterprise]]
 === Splunk Enterprise 的 SIEM 支持
 
 Ransomware Resilience 现在为 Splunk Enterprise 提供安全信息事件管理 (SIEM) 支持，使您能够集中日志和事件数据，并简化威胁分析和检测。
@@ -156,6 +176,7 @@ Ransomware Resilience 现在为 Splunk Enterprise 提供安全信息事件管理
 
 
 
+[[user-behavior-detection-enhancement]]
 === 用户行为检测增强
 
 对数据泄露事件的洞察现在可以在事件发生后保留 13 个月，从而可以根据您的报告需求进行更长时间的记录保存。
@@ -164,10 +185,12 @@ Ransomware Resilience 现在为 Splunk Enterprise 提供安全信息事件管理
 
 
 
+[[31-march-2026]]
 == 2026 年 3 月 31 日
 
 
 
+[[soar-playbook-for-google-secops]]
 === Google SecOps 的 SOAR 攻略
 
 Ransomware Resilience 现在为 link:https://github.com/chronicle/content-hub/tree/main/content/response_integrations/third_party/partner/netappransomwareresilience["Google SecOps"^] 提供安全编排、自动化和响应 (SOAR) 攻略。该攻略可以更轻松地管理威胁响应，自动化任务和测试，并支持基本的勒索软件响应工作，包括创建快照和使卷脱机。
@@ -176,10 +199,12 @@ Ransomware Resilience 现在为 link:https://github.com/chronicle/content-hub/tr
 
 
 
+[[12-march-2026]]
 == 2026 年 3 月 12 日
 
 
 
+[[soar-playbooks-for-microsoft-sentinel-and-splunk]]
 === 适用于 Microsoft Sentinel 和 Splunk 的 SOAR playbook
 
 Ransomware Resilience 现在为 link:https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks["Microsoft Sentinel"^] 和 link:https://github.com/splunk-soar-connectors/netappransomwareresilience["Splunk"^] 提供安全编排、自动化和响应 (SOAR) 攻略。这些攻略能够简化威胁响应管理、自动化任务测试和基本勒索软件响应工作，包括创建快照和让卷脱机。
@@ -188,10 +213,12 @@ Ransomware Resilience 现在为 link:https://github.com/Azure/Azure-Sentinel/tre
 
 
 
+[[09-march-2026]]
 == 2026 年 3 月 09 日
 
 
 
+[[bulk-exclude-users-from-user-behavior-alerts]]
 === 从用户行为警报中批量排除用户
 
 除了现有的基于 UI 和 CSV 的选项之外，Ransomware Resilience 现在还支持上传要从用户行为警报中排除的用户的 JSON 列表。
@@ -200,6 +227,7 @@ Ransomware Resilience 现在为 link:https://github.com/Azure/Azure-Sentinel/tre
 
 
 
+[[user-behavior-detection-enhancements]]
 === 用户行为检测增强功能
 
 Ransomware Resilience 通过添加电子邮件警报并在受支持的 SIEM 事件数据（AWS Security Hub、Microsoft Sentinel 和 Splunk Cloud）中包含用户行为事件，提高了对用户行为的洞察力。这些增强功能可为您的安全和合规性监控提供更准确的见解。
@@ -208,10 +236,12 @@ Ransomware Resilience 通过添加电子邮件警报并在受支持的 SIEM 事�
 
 
 
+[[16-february-2026]]
 == 2026 年 2 月 16 日
 
 
 
+[[azure-netapp-files-support]]
 === Azure NetApp Files 支持
 
 Ransomware Resilience 现在支持 Azure NetApp Files 系统，使您能够有效检测和响应 Azure NetApp Files 中的勒索软件威胁。当您发现工作负载时，Ransomware Resilience 现在会显示 Azure NetApp Files 并将其显示在保护仪表板中。Ransomware Resilience 对 Azure NetApp Files 的支持仅包括快照检测和保护策略。对 Azure NetApp Files 的支持当前处于预览状态。
@@ -220,6 +250,7 @@ Ransomware Resilience 现在支持 Azure NetApp Files 系统，使您能够有�
 
 
 
+[[exclude-users-from-user-behavior-alerts]]
 === 从用户行为警报中排除用户
 
 Ransomware Resilience 现在允许您从用户行为警报中排除特定用户。排除受信任的用户可以防止误报和不必要的警报。
@@ -228,6 +259,7 @@ Ransomware Resilience 现在允许您从用户行为警报中排除特定用户�
 
 
 
+[[protection-group-support-for-user-behavior-detection]]
 === 保护组支持用户行为检测
 
 Ransomware Resilience 保护组现在支持可疑用户行为检测的检测策略。当您将勒索软件保护策略应用于保护组时，它会跨工作负载应用策略，从而简化对网络安全态势的管理。
@@ -236,10 +268,12 @@ Ransomware Resilience 保护组现在支持可疑用户行为检测的检测策�
 
 
 
+[[19-january-2026]]
 == 2026年1月19日
 
 
 
+[[unsupported-volumes]]
 === 不支持的卷
 
 Ransomware Resilience 报告现在可以在**摘要**报告中捕获有关受支持和不受支持卷的信息。使用此信息可诊断系统中的卷可能不符合勒索软件保护条件的原因。
@@ -248,10 +282,12 @@ Ransomware Resilience 报告现在可以在**摘要**报告中捕获有关受支
 
 
 
+[[12-january-2026]]
 == 2026年1月12日
 
 
 
+[[replicate-snapshots-to-ontap]]
 === 将快照复制到ONTAP
 
 Ransomware Resilience 现在支持将快照复制添加到辅助 ONTAP 站点。使用复制策略的保护组，您可以为每个工作负载复制到相同的目标或不同的目标。您可以创建包括复制的勒索软件保护策略或使用预定义策略。
@@ -260,6 +296,7 @@ Ransomware Resilience 现在支持将快照复制添加到辅助 ONTAP 站点。
 
 
 
+[[exclude-workloads-from-ransomware-resilience]]
 === 将工作负载排除在勒索软件恢复能力之外
 
 勒索软件恢复功能现在支持将系统中的特定工作负载从保护范围和勒索软件恢复仪表板中排除。发现工作负载后，您可以将其排除在外；如果想要添加勒索软件防护，则可以重新将其包含在内。排除在外的工作负载无需付费。
@@ -268,6 +305,7 @@ Ransomware Resilience 现在支持将快照复制添加到辅助 ONTAP 站点。
 
 
 
+[[mark-alerts-as-in-review]]
 === 标记提醒，如正在审核中
 
 勒索软件恢复功能现在允许您将警报标记为“审核中”。使用“审核中”标签可以提高团队在对活跃的勒索软件威胁进行分类和管理时的清晰度。
@@ -276,16 +314,19 @@ Ransomware Resilience 现在支持将快照复制添加到辅助 ONTAP 站点。
 
 
 
+[[08-december-2025]]
 == 2025年12月8日
 
 
 
+[[extension-blocking-is-enabled-at-the-workload-level]]
 === 扩展程序阻止功能已在工作负载级别启用。
 
 启用扩展阻止功能后，现在是在工作负载级别而不是存储虚拟机级别启用该功能。
 
 
 
+[[edit-user-behavior-alert-status]]
 === 编辑用户行为警报状态
 
 勒索软件恢复功能现在允许您编辑用户行为警报的状态。您可以手动关闭和解决警报。
@@ -294,6 +335,7 @@ Ransomware Resilience 现在支持将快照复制添加到辅助 ONTAP 站点。
 
 
 
+[[support-for-multiple-console-agents]]
 === 支持多个控制台代理
 
 勒索软件恢复功能现在支持使用多个控制台代理来管理同一系统。
@@ -302,22 +344,26 @@ Ransomware Resilience 现在支持将快照复制添加到辅助 ONTAP 站点。
 
 
 
+[[10-november-2025]]
 == 2025年11月10日
 
 该版本包括一般增强功能和改进功能。
 
 
 
+[[06-october-2025]]
 == 2025年10月6日
 
 
 
+[[bluexp-ransomware-protection-is-now-netapp-ransomware-resilience]]
 === BlueXP ransomware protection现已升级NetApp Ransomware Resilience
 
 BlueXP ransomware protection服务已更名为NetApp Ransomware Resilience。
 
 
 
+[[bluexp-is-now-netapp-console]]
 === BlueXP现在是NetApp Console
 
 NetApp Console提供企业级跨本地和云环境的存储和数据服务的集中管理，提供实时洞察、更快的工作流程和简化的管理。
@@ -326,6 +372,7 @@ NetApp Console提供企业级跨本地和云环境的存储和数据服务的集
 
 
 
+[[data-breach-detection]]
 === 数据泄露检测
 
 勒索软件恢复力包括一种新的检测机制，只需几个步骤即可激活，以检测异常用户读取作为数据泄露的早期指标。勒索软件弹性通过创建历史基线来收集和分析用户读取事件，该基线是根据过去数据得出的预期正常行为的概况。当新用户活动明显偏离既定规范（例如意外的阅读激增与可疑的阅读模式相结合）时，就会生成警报。勒索软件恢复力包括一个用于检测可疑读取模式的 AI 模型。
@@ -360,16 +407,19 @@ IMPORTANT: 您必须使用新的link:#new-user-roles-for-data-breach-detection["
 
 
 
+[[12-august-2025]]
 == 2025年8月12日
 
 该版本包括一般增强功能和改进功能。
 
 
 
+[[15-july-2025]]
 == 2025年7月15日
 
 
 
+[[san-workload-support]]
 === SAN 工作负载支持
 
 此版本包括对BlueXP ransomware protection中的 SAN 工作负载的支持。现在，除了 NFS 和 CIFS 工作负载之外，您还可以保护 SAN 工作负载。
@@ -378,6 +428,7 @@ IMPORTANT: 您必须使用新的link:#new-user-roles-for-data-breach-detection["
 
 
 
+[[improved-workload-protection]]
 === 改进的工作负载保护
 
 此版本改进了使用其他 NetApp 工具（如 BlueXP backup and recovery）的快照和备份策略的工作负载配置流程。在以前的版本中，BlueXP ransomware protection 发现了其他工具的策略，只允许您更改检测策略。在此版本中，您现在可以使用 BlueXP ransomware protection 策略替换快照和备份策略，或继续使用其他工具的策略。
@@ -386,6 +437,7 @@ IMPORTANT: 您必须使用新的link:#new-user-roles-for-data-breach-detection["
 
 
 
+[[email-notifications]]
 === 电子邮件通知
 
 如果BlueXP ransomware protection检测到可能的攻击， BlueXP通知中会出现通知，并且会向您配置的电子邮件地址发送电子邮件。
@@ -398,16 +450,19 @@ IMPORTANT: 您必须使用新的link:#new-user-roles-for-data-breach-detection["
 
 
 
+[[09-june-2025]]
 == 2025 年 6 月 9 日
 
 
 
+[[landing-page-updates]]
 === 登陆页面更新
 
 此版本包括对BlueXP ransomware protection登陆页面的更新，使开始免费试用和发现变得更加容易。
 
 
 
+[[readiness-drill-updates]]
 === 准备演习更新
 
 以前，您可以通过模拟对新样本工作负载的攻击来运行勒索软件准备演练。利用此功能，您可以调查模拟攻击并恢复工作负载。使用此功能来测试警报通知、响应和恢复。根据需要经常运行和安排这些演习。
@@ -420,6 +475,7 @@ IMPORTANT: 您必须使用新的link:#new-user-roles-for-data-breach-detection["
 
 
 
+[[enable-bluexp-classification-updates]]
 === 启用BlueXP classification更新
 
 在BlueXP ransomware protection服务中使用BlueXP classification之前，您需要启用BlueXP classification来扫描您的数据。对数据进行分类有助于您找到个人身份信息 (PII)，这可能会增加安全风险。
@@ -430,10 +486,12 @@ IMPORTANT: 您必须使用新的link:#new-user-roles-for-data-breach-detection["
 
 
 
+[[13-may-2025]]
 == 2025年5月13日
 
 
 
+[[reporting-of-unsupported-working-environments-in-bluexp-ransomware-protection]]
 === BlueXP ransomware protection中不支持的工作环境报告
 
 在发现工作流程期间，当您将鼠标悬停在“支持”或“不支持的工作负载”上时， BlueXP ransomware protection会报告更多详细信息。这将帮助您了解为什么您的某些工作负载未被BlueXP ransomware protection服务发现。
@@ -446,10 +504,12 @@ IMPORTANT: 您必须使用新的link:#new-user-roles-for-data-breach-detection["
 
 
 
+[[29-april-2025]]
 == 2025年4月29日
 
 
 
+[[support-for-amazon-fsx-for-netapp-ontap]]
 === 支持Amazon FSx for NetApp ONTAP
 
 此版本支持Amazon FSx for NetApp ONTAP 。此功能可帮助您使用BlueXP ransomware protection来保护 FSx for ONTAP工作负载。
@@ -473,6 +533,7 @@ TIP: 无法在BlueXP中设置在 FSx for ONTAP上运行的工作负载的备份�
 
 
 
+[[bluexp-access-role-needed]]
 === 需要BlueXP访问角色
 
 您现在需要以下访问角色之一来查看、发现或管理BlueXP ransomware protection：组织管理员、文件夹或项目管理员、勒索软件保护管理员或勒索软件保护查看器。
@@ -481,10 +542,12 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 
 
 
+[[14-april-2025]]
 == 2025年4月14日
 
 
 
+[[readiness-drill-reports]]
 === 准备演习报告
 
 通过此版本，您可以查看勒索软件攻击准备演习报告。准备演练使您能够模拟对新创建的示例工作负载的勒索软件攻击。然后，调查模拟攻击并恢复样本工作负载。此功能可帮助您通过测试警报通知、响应和恢复过程来了解在发生实际勒索软件攻击时您是否已做好准备。
@@ -493,6 +556,7 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 
 
 
+[[new-role-based-access-control-roles-and-permissions]]
 === 新的基于角色的访问控制角色和权限
 
 以前，您可以根据用户的职责为其分配角色和权限，这有助于您管理用户对BlueXP ransomware protection的访问。在此版本中，有两个特定于BlueXP ransomware protection的新角色具有更新的权限。新角色如下：
@@ -505,6 +569,7 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 
 
 
+[[payment-improvements]]
 === 付款改进
 
 此版本对支付流程进行了多项改进。
@@ -513,10 +578,12 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 
 
 
+[[10-march-2025]]
 == 2025年3月10日
 
 
 
+[[simulate-an-attack-and-respond]]
 === 模拟攻击并做出响应
 
 通过此版本，模拟勒索软件攻击来测试您对勒索软件警报的响应。此功能可帮助您通过测试警报通知、响应和恢复过程来了解在发生实际勒索软件攻击时您是否已做好准备。
@@ -525,6 +592,7 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 
 
 
+[[enhancements-to-discovery-process]]
 === 发现过程的增强
 
 此版本包括对选择性发现和重新发现过程的增强：
@@ -538,6 +606,7 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 
 
 
+[[alerts-raised-when-high-encryption-is-detected]]
 === 检测到高度加密时发出警报
 
 在此版本中，即使没有高文件扩展名更改，您也可以在工作负载上检测到高加密时查看警报。此功能使用ONTAP自主勒索软件防护 (ARP) AI，可帮助您识别面临勒索软件攻击风险的工作负载。使用此功能并下载受影响文件的完整列表（无论扩展名是否更改）。
@@ -546,10 +615,12 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 
 
 
+[[16-december-2024]]
 == 2024年12月16日
 
 
 
+[[detect-anomalous-user-behavior-using-data-infrastructure-insights-storage-workload-security]]
 === 使用Data Infrastructure Insights存储工作负载安全检测异常用户行为
 
 在此版本中，您可以使用Data Infrastructure Insights存储工作负载安全来检测存储工作负载中的异常用户行为。此功能可帮助您识别潜在的安全威胁并阻止潜在的恶意用户以保护您的数据。
@@ -562,6 +633,7 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 
 
 
+[[select-workloads-to-discover-and-protect]]
 === 选择要发现和保护的工作负载
 
 在此版本中，您现在可以执行以下操作：
@@ -575,10 +647,12 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 
 
 
+[[07-november-2024]]
 == 2024 年 11 月 7 日
 
 
 
+[[enable-data-classification-and-scan-for-personally-identifiable-information-pii]]
 === 启用数据分类并扫描个人身份信息 (PII)
 
 在此版本中，您可以启用BlueXP classification（ BlueXP系列的核心组件）来扫描和分类文件共享工作负载中的数据。对数据进行分类可以帮助您识别数据是否包含个人信息或私人信息，这可能会增加安全风险。此过程还会影响工作负载的重要性，并帮助您确保使用适当的保护级别来保护工作负载。
@@ -589,6 +663,7 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 
 
 
+[[siem-integration-with-microsoft-sentinel]]
 === SIEM 与 Microsoft Sentinel 集成
 
 现在，您可以使用 Microsoft Sentinel 将数据发送到安全和事件管理系统 (SIEM) 以进行威胁分析和检测。以前，您可以选择 AWS Security Hub 或 Splunk Cloud 作为您的 SIEM。
@@ -597,16 +672,19 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html
 
 
 
+[[free-trial-now-30-days]]
 === 立即免费试用 30 天
 
 随着此版本的发布， BlueXP ransomware protection的新部署现在有 30 天的免费试用期。此前， BlueXP ransomware protection提供 90 天的免费试用。如果您已享受 90 天免费试用，则该优惠将持续 90 天。
 
 
 
+[[30-september-2024]]
 == 2024年9月30日
 
 
 
+[[custom-grouping-of-file-share-workloads]]
 === 文件共享工作负载的自定义分组
 
 在此版本中，您现在可以将文件共享分组，以便更轻松地保护您的数据资产。该服务可以同时保护组中的所有卷。以前，您需要单独保护每个卷。
@@ -615,10 +693,12 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 
 
 
+[[02-september-2024]]
 == 2024 年 9 月 2 日
 
 
 
+[[security-risk-assessment-from-digital-advisor]]
 === 来自Digital Advisor的安全风险评估
 
 BlueXP ransomware protection 现在从 NetApp Digital Advisor 收集有关集群的高风险和严重安全风险的信息。如果发现任何风险，BlueXP ransomware protection 会在仪表板的*推荐操作*窗格中提供建议："修复集群上的已知安全漏洞<name>。"从仪表板上的建议中，选择*查看和修复*建议查看 Digital Advisor 和常见漏洞和暴露 (CVE) 文章，以解决安全风险。如果存在多重安全风险，请在 Digital Advisor 中查看信息。
@@ -627,6 +707,7 @@ BlueXP ransomware protection 现在从 NetApp Digital Advisor 收集有关集群
 
 
 
+[[back-up-to-google-cloud-platform]]
 === 备份到 Google Cloud Platform
 
 在此版本中，您可以将备份目标设置为 Google Cloud Platform 存储桶。以前，您只能将备份目标添加到NetApp StorageGRID、Amazon Web Services 和 Microsoft Azure。
@@ -635,6 +716,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-de
 
 
 
+[[support-for-google-cloud-platform]]
 === 支持 Google Cloud Platform
 
 该服务现在支持适用于 Google Cloud Platform 的Cloud Volumes ONTAP进行存储保护。此前，该服务仅支持适用于 Amazon Web Services 和 Microsoft Azure 的Cloud Volumes ONTAP以及本地 NAS。
@@ -643,6 +725,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransom
 
 
 
+[[role-based-access-control]]
 === 基于角色的访问控制
 
 您现在可以使用基于角色的访问控制 (RBAC) 限制对特定活动的访问。  BlueXP ransomware protection使用BlueXP的两个角色： BlueXP帐户管理员和非帐户管理员（查看者）。
@@ -651,10 +734,12 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransom
 
 
 
+[[05-august-2024]]
 == 2024 年 8 月 5 日
 
 
 
+[[threat-detection-with-splunk-cloud]]
 === 使用 Splunk Cloud 进行威胁检测
 
 您可以自动将数据发送到您的安全和事件管理系统 (SIEM) 进行威胁分析和检测。在以前的版本中，您只能选择 AWS Security Hub 作为您的 SIEM。在此版本中，您可以选择 AWS Security Hub 或 Splunk Cloud 作为您的 SIEM。
@@ -663,10 +748,12 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html
 
 
 
+[[01-july-2024]]
 == 2024 年 7 月 1 日
 
 
 
+[[bring-your-own-license-byol]]
 === 自带许可证 (BYOL)
 
 在此版本中，您可以使用 BYOL 许可证，它是您从NetApp销售代表处获得的NetApp许可证文件 (NLF)。
@@ -675,6 +762,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-licen
 
 
 
+[[restore-workload-at-the-file-level]]
 === 在文件级别还原工作负载
 
 现在，在还原文件级别的工作负载之前，您可以查看可能受攻击影响的文件列表，并确定要还原的文件。您可以让 BlueXP 勒索软件保护选择要还原的文件，也可以上传列出受警报影响的所有文件的 CSV 文件，也可以手动确定要还原的文件。
@@ -686,6 +774,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover
 
 
 
+[[download-a-list-of-impacted-files]]
 === 下载受影响文件的列表
 
 现在，在还原文件级别的工作负载之前，您可以访问"提醒"页面，下载 CSV 文件中的受影响文件列表，然后使用"恢复"页面上传 CSV 文件。
@@ -694,6 +783,7 @@ link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-re
 
 
 
+[[delete-protection-plan]]
 === 删除保护计划
 
 通过此版本，您现在可以删除勒索软件保护策略。
@@ -702,10 +792,12 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 
 
 
+[[10-june-2024]]
 == 2024年6月10日
 
 
 
+[[snapshot-copy-locking-on-primary-storage]]
 === 主存储上的快照副本锁定
 
 启用此功能可锁定主存储上的快照副本，以便即使勒索软件攻击进入备份存储目标，它们在一定时间内也无法被修改或删除。
@@ -714,6 +806,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 
 
 
+[[support-for-cloud-volumes-ontap-for-microsoft-azure]]
 === 支持适用于 Microsoft Azure 的Cloud Volumes ONTAP
 
 此版本除了支持适用于 AWS 的Cloud Volumes ONTAP和本地ONTAP NAS 之外，还支持适用于 Microsoft Azure 的Cloud Volumes ONTAP作为系统。
@@ -724,6 +817,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransom
 
 
 
+[[microsoft-azure-added-as-a-backup-destination]]
 === Microsoft Azure 添加为备份目标
 
 您现在可以将 Microsoft Azure 与 AWS 和NetApp StorageGRID一起添加为备份目标。
@@ -732,10 +826,12 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-de
 
 
 
+[[14-may-2024]]
 == 2024年5月14日
 
 
 
+[[licensing-updates]]
 === 许可更新
 
 您可以注册 90 天免费试用。很快您将能够通过 Amazon Web Services Marketplace 购买即用即付订阅或自带NetApp许可证。
@@ -744,12 +840,14 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-licen
 
 
 
+[[cifs-protocol]]
 === CIFS 协议
 
 该服务现在支持使用 NFS 和 CIFS 协议的 AWS 系统中的本地ONTAP和Cloud Volumes ONTAP 。以前的版本仅支持 NFS 协议。
 
 
 
+[[workload-details]]
 === 工作负载详情
 
 此版本现在在保护和其他页面的工作负载信息中提供了更多详细信息，以改进工作负载保护评估。从工作负载详细信息中，您可以查看当前分配的策略并查看配置的备份目标。
@@ -758,6 +856,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 
 
 
+[[ransomware-protection-strategies]]
 === 勒索软件防护策略
 
 如果工作负载上不存在快照或备份策略，您可以创建勒索软件防护策略，其中可以包含您在此服务中创建的以下策略：
@@ -772,6 +871,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 
 
 
+[[threat-detection]]
 === 威胁检测
 
 现在可以使用第三方安全和事件管理 (SIEM) 系统启用威胁检测。仪表板现在显示“启用威胁检测”的新建议，可以在“设置”页面上进行配置。
@@ -780,6 +880,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html
 
 
 
+[[dismiss-false-positive-alerts]]
 === 消除误报
 
 从“警报”选项卡中，您现在可以消除误报或决定立即恢复数据。
@@ -788,6 +889,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.h
 
 
 
+[[detection-status]]
 === 检测状态
 
 新的检测状态出现在“保护”页面上，显示应用于工作负载的勒索软件检测的状态。
@@ -796,6 +898,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 
 
 
+[[download-csv-files]]
 === 下载 CSV 文件
 
 您可以从保护、警报和恢复页面下载 CSV 文件*。
@@ -804,18 +907,21 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports
 
 
 
+[[documentation-link]]
 === 文档链接
 
 查看文档链接现在包含在 UI 中。您可以从仪表板垂直*操作*访问此文档image:button-actions-vertical.png["垂直操作选项"]选项。选择“*新增功能*”查看发行说明中的​​详细信息，或选择“*文档*”查看BlueXP ransomware protection文档主页。
 
 
 
+[[bluexp-backup-and-recovery]]
 === BlueXP backup and recovery
 
 系统上不再需要预先启用 BlueXP 备份和恢复服务。请参阅 link:rp-start-prerequisites.html["前提条件"]。BlueXP 勒索软件保护服务有助于通过"设置"选项配置备份目标。请参阅 link:task-backup-destination.html["配置设置"]。
 
 
 
+[[settings-option]]
 === 设置选项
 
 您现在可以在BlueXP ransomware protection设置中设置备份目的地。
@@ -824,34 +930,40 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-de
 
 
 
+[[05-march-2024]]
 == 2024 年 3 月 05 日
 
 
 
+[[protection-policy-management]]
 === 保护策略管理
 
 除了使用预定义策略之外，您现在还可以创建策略。 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["了解有关管理策略的更多信息"] 。
 
 
 
+[[immutability-on-secondary-storage-datalock]]
 === 二级存储的不变性（DataLock）
 
 现在，您可以使用对象存储中的NetApp DataLock 技术使备份在二级存储中不可变。 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["了解有关创建保护策略的更多信息"] 。
 
 
 
+[[automatic-backup-to-netapp-storagegrid]]
 === 自动备份到NetApp StorageGRID
 
 现在，除了使用 AWS，您还可以选择 StorageGRID 作为备份目标 https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-destination.html["了解有关配置备份目标的更多信息"]。
 
 
 
+[[additional-features-to-investigate-potential-attacks]]
 === 调查潜在攻击的附加功能
 
 您现在可以查看更多取证详细信息来调查检测到的潜在攻击。 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html["详细了解如何响应检测到的勒索软件警报"] 。
 
 
 
+[[recovery-process]]
 === 恢复过程
 
 恢复过程得到了加强。现在，您可以按卷或所有卷恢复工作负载。 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["了解有关从勒索软件攻击中恢复的更多信息（事件被消除后）"] 。
@@ -860,6 +972,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransom
 
 
 
+[[06-october-2023]]
 == 2023 年 10 月 6 日
 
 BlueXP ransomware protection服务是一种用于保护数据、检测潜在攻击以及从勒索软件攻击中恢复数据的 SaaS 解决方案。

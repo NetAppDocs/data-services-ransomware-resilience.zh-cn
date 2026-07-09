@@ -25,6 +25,7 @@ Ransomware Resilience 会检查您当前的备份保护、快照副本和 NetApp
 
 
 
+[[select-workloads-to-discover]]
 == 选择要发现的工作负载
 
 在每个 Console 代理中，选择要标识工作负载的系统。
@@ -69,6 +70,7 @@ link:rp-use-dashboard.html["了解控制面板显示的内容。"]
 
 
 
+[[discover-newly-created-workloads-for-previously-selected-systems]]
 == 发现先前选定的系统新创建的工作负载
 
 如果您已向先前发现的系统添加了工作负载，则需要重新启动发现以保护新的工作负载。
@@ -83,6 +85,7 @@ TIP: 如果您发现已发现的系统中存在未显示的卷，则这些卷可
 
 
 
+[[discover-new-systems]]
 == 发现新系统
 
 如果您已经在系统上执行了发现，并且此后向其添加了工作负载，请再次执行发现以识别工作负载。
@@ -96,6 +99,7 @@ TIP: 如果您发现已发现的系统中存在未显示的卷，则这些卷可
 
 
 
+[[exclude-workloads]]
 == 排除工作负载
 
 勒索软件恢复功能允许您将系统中的特定工作负载排除在勒索软件保护和检测之外。

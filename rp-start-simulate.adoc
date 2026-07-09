@@ -18,6 +18,7 @@ summary: 通过模拟对示例工作负载的勒索软件攻击来进行勒索�
 
 
 
+[[how-readiness-drills-work]]
 == 就绪演习的工作原理
 
 勒索软件弹性支持三种类型的演习：link:task-clean-restore-recover.html["干净恢复"]、link:rp-use-recover.html["自定义恢复"]和link:suspicious-user-activity.html["数据泄露恢复"]。干净还原和自定义恢复演练模拟基于加密（熵）的攻击，并提供不同的恢复方法。数据泄露恢复演习通过对数据的异常读取模式模拟数据泄露。
@@ -30,6 +31,7 @@ summary: 通过模拟对示例工作负载的勒索软件攻击来进行勒索�
 
 
 
+[[configure-a-ransomware-attack-readiness-drill]]
 == 配置勒索软件攻击准备演习
 
 *需要控制台角色* 要执行此任务，需要 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["超级管理员"^] 或 Ransomware Resilience 管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^]。
@@ -63,6 +65,7 @@ TIP: 您可以稍后使用“设置”页面编辑准备演练配置。
 
 
 
+[[start-a-readiness-drill]]
 == 开始准备演习
 
 配置准备情况演练后，即可开始演练。
@@ -86,6 +89,7 @@ NOTE: 无法在演练运行时编辑就绪演练配置。要修改就绪演练�
 
 
 
+[[respond-to-a-readiness-drill-alert]]
 == 响应战备演习警报
 
 通过响应准备演习警报来测试您的准备情况。
@@ -124,6 +128,7 @@ image:screen-alerts-readiness-incidents2.png["显示准备演习警报的事件�
 
 
 
+[[restore-the-test-workload]]
 == 恢复测试工作负载
 
 审查准备情况演习警报后，如有必要，恢复测试工作量。
@@ -146,6 +151,7 @@ image:screen-alerts-readiness-incidents2.png["显示准备演习警报的事件�
 
 
 
+[[change-the-alert-status-after-the-readiness-drill]]
 == 准备演练后更改警报状态
 
 审查准备情况演习警报并恢复工作量后，根据需要更改警报状态。
@@ -169,6 +175,7 @@ IMPORTANT: 击退攻击后，无法将其更改回去。如果关闭工作负载
 
 
 
+[[review-reports-on-the-readiness-drill]]
 == 审查准备演习报告
 
 演练完成后，您可以生成并保存演练报告。演练报告是一个 JSON 文件，用于捕获检测策略、警报类型和时间戳、攻击详细信息以及恢复状态等信息。

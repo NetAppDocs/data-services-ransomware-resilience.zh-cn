@@ -20,6 +20,7 @@ NetApp Ransomware Resilience 可保护您的数据免受勒索软件攻击。在
 
 
 
+[[ransomware-resilience-at-the-data-layer]]
 == 数据层的勒索软件抵御能力
 
 您的安全态势通常包含多层防御，以防御一系列网络威胁。
@@ -34,6 +35,7 @@ image:concept-security-layer-diagram.png["安全层图"]
 
 
 
+[[what-you-can-do-with-ransomware-resilience]]
 == 勒索软件恢复能力可以做什么
 
 勒索软件恢复功能充分利用了多种NetApp技术，以便您的存储管理员、数据安全管理员或安全运营工程师可以实现以下目标：
@@ -50,6 +52,7 @@ image:diagram-rp-features-phases3.png["图表展示了勒索软件抵御攻击�
 
 
 
+[[benefits-of-using-ransomware-resilience]]
 == 使用勒索软件恢复能力的好处
 
 勒索软件恢复能力具有以下优势：
@@ -66,6 +69,7 @@ image:diagram-rp-features-phases3.png["图表展示了勒索软件抵御攻击�
 
 
 
+[[cost]]
 == 成本
 
 您可以免费试用 Ransomware Resilience 30 天。NetApp不会向您收取使用 Ransomware Resilience 试用版的费用。
@@ -80,6 +84,7 @@ image:diagram-rp-features-phases3.png["图表展示了勒索软件抵御攻击�
 
 
 
+[[licensing]]
 == 许可
 
 借助 Ransomware Resilience，您可以使用不同的许可计划，包括免费试用、即用即付订阅或自带许可证。
@@ -94,6 +99,7 @@ image:diagram-rp-features-phases3.png["图表展示了勒索软件抵御攻击�
 
 
 
+[[netapp-console]]
 == NetApp Console
 
 可通过NetApp Console访问勒索软件恢复功能。
@@ -106,6 +112,7 @@ NetApp Console提供企业级跨本地和云环境的NetApp存储和数据服务
 
 
 
+[[how-ransomware-resilience-works]]
 == 勒索软件抵御能力的工作原理
 
 Ransomware Resilience 可与您现有的 Console 和 ONTAP 设置配合使用，以识别勒索软件威胁、保护您的工作负载并实现快速恢复。
@@ -162,6 +169,7 @@ image:diagram-rp-architecture-preview3.png["勒索软件抵御能力架构图"]
 |===
 
 
+[[attack-types]]
 === 攻击类型
 
 Ransomware Resilience 可识别五种类型的攻击：
@@ -190,12 +198,14 @@ NOTE: 要识别应对攻击负责的特定用户，必须配置 link:concept-use
 
 
 
+[[supported-backup-targets-systems-and-workload-data-sources]]
 == 支持的备份目标、系统和工作负载数据源
 
 勒索软件恢复支持以下备份目标、系统和数据源：
 
 
 
+[[supported-backup-targets]]
 === 支持的备份目标
 
 * 亚马逊网络服务（AWS）S3
@@ -206,6 +216,7 @@ NOTE: 要识别应对攻击负责的特定用户，必须配置 link:concept-use
 
 
 
+[[supported-systems]]
 === 支持的系统
 
 |===
@@ -252,6 +263,7 @@ NOTE: 在ONTAP中使用 ARP/AI 需要ONTAP 9.16 或更高版本。+ ONTAP不为F
 
 
 
+[[supported-workload-data-sources]]
 === 支持的工作负载数据源
 
 Ransomware Resilience 可保护主数据卷上的以下工作负载：
@@ -269,6 +281,7 @@ Ransomware Resilience 可保护主数据卷上的以下工作负载：
 
 
 
+[[key-terms]]
 == 关键术语
 
 了解一些与勒索软件保护相关的术语可能会对您有所帮助。

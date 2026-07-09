@@ -18,6 +18,7 @@ NetApp Ransomware Resilience 提供不同的许可证计划，使您能够订阅
 
 
 
+[[license-types]]
 == 许可证类型
 
 勒索软件防护功能提供以下几种许可类型：
@@ -38,6 +39,7 @@ NetApp Ransomware Resilience 提供不同的许可证计划，使您能够订阅
 
 
 
+[[other-licenses]]
 == 其他许可证
 
 勒索软件恢复许可证不包括其他NetApp产品。但是，即使您没有单独的备份和恢复许可证，勒索软件恢复能力也可以与NetApp Backup and Recovery集成。
@@ -47,6 +49,7 @@ NOTE: 如果您同时拥有备份和恢复以及勒索软件恢复功能，则�
 
 
 
+[[cost]]
 == 成本
 
 如果您同时拥有备份和恢复以及勒索软件恢复功能，则受这两种产品保护的任何公共数据仅由勒索软件恢复功能计费。
@@ -62,6 +65,7 @@ TIP: 在勒索软件弹性保护仪表板中监控受保护数据的大小。要
 
 
 
+[[try-ransomware-resilience-with-a-30-day-free-trial]]
 == 试用 Ransomware Resilience 30 天免费试用版
 
 您可以免费试用 Ransomware Resilience 30 天。您必须是控制台组织管理员才能开始免费试用。
@@ -101,6 +105,7 @@ NOTE: 仅当您成功安装了控制台代理后，此选项才可用。
 
 
 
+[[subscribe-through-aws-marketplace]]
 == 通过 AWS Marketplace 订阅
 
 此过程提供了如何在 AWS Marketplace 中直接订阅的高级概述。
@@ -143,6 +148,7 @@ image:screen-license-dw-add-license.png["添加许可证页面的屏幕截图。
 
 
 
+[[subscribe-through-microsoft-azure-marketplace]]
 == 通过 Microsoft Azure Marketplace 订阅
 
 此过程提供了如何在 Azure 市场中直接订阅的高级概述。
@@ -185,6 +191,7 @@ image:screen-license-dw-add-license.png["添加许可证页面的屏幕截图。
 
 
 
+[[subscribe-through-google-cloud-platform-marketplace]]
 == 通过 Google Cloud Platform Marketplace 订阅
 
 此过程概述了如何在 Google Cloud Platform Marketplace 中直接订阅。
@@ -227,6 +234,7 @@ image:screen-license-dw-add-license.png["添加许可证页面的屏幕截图。
 
 
 
+[[bring-your-own-license-byol]]
 == 自带许可证 (BYOL)
 
 如果您想自带许可证 (BYOL)，则需要购买许可证，获取NetApp许可证文件 (NLF)，然后将许可证添加到控制台。
@@ -262,6 +270,7 @@ Licenses and subscriptions页面显示 Ransomware Resilience 已获得许可证�
 
 
 
+[[update-your-console-license-when-it-expires]]
 == 控制台许可证到期后请更新
 
 如果您的许可期限即将到期，或者您的许可容量已达到限制，您将在勒索软件恢复 UI 中收到通知。您可以在勒索软件恢复许可证到期之前进行更新，这样您访问扫描数据的能力就不会受到干扰。
@@ -285,6 +294,7 @@ TIP: 此消息也出现在Licenses and subscriptions以及 https://docs.netapp.c
 
 
 
+[[end-the-paygo-subscription]]
 == 结束 PAYGO 订阅
 
 如果您想终止 PAYGO 订阅，您可以随时终止。
@@ -298,6 +308,7 @@ TIP: 此消息也出现在Licenses and subscriptions以及 https://docs.netapp.c
 
 
 
+[[more-information]]
 == 更多信息
 
 * link:https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html["NetApp Console许可证和订阅文档"^]

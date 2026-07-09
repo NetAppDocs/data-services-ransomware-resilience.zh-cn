@@ -18,6 +18,7 @@ summary: Ransomware Resilience 使您能够通过干净恢复来控制和消毒�
 
 
 
+[[before-you-begin]]
 == 开始之前
 
 *需要控制台角色* 要执行此任务，需要 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["超级管理员"^] 或 Ransomware Resilience 管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^]。
@@ -26,6 +27,7 @@ summary: Ransomware Resilience 使您能够通过干净恢复来控制和消毒�
 
 
 
+[[considerations]]
 == 注意事项
 
 * 只能对基于加密的勒索软件攻击执行干净还原。
@@ -39,6 +41,7 @@ summary: Ransomware Resilience 使您能够通过干净恢复来控制和消毒�
 
 
 
+[[considerations-for-restoring-to-an-alternate-location]]
 === 恢复到其他位置的注意事项
 
 使用干净还原还原卷时，可以选择还原到由同一 Console 代理管理的备用位置。新位置可以位于相同或不同的系统、存储 VM 或聚合上。还原到备用位置时：
@@ -51,6 +54,7 @@ summary: Ransomware Resilience 使您能够通过干净恢复来控制和消毒�
 
 
 
+[[perform-a-clean-restore]]
 == 执行干净还原
 
 . 在 **恢复** 部分，确定要还原的工作负载。选择 **还原**。

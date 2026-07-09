@@ -20,6 +20,7 @@ NetApp Ransomware Resilience 仪表板可一目了然地显示您的工作负载
 
 
 
+[[review-workload-health-using-the-dashboard]]
 == 使用控制面板查看工作负载运行状况
 
 .步骤
@@ -78,6 +79,7 @@ Ransomware Resilience 使用"New"标签显示自您上次访问仪表板以来 2
 
 
 
+[[review-protection-recommendations-on-the-dashboard]]
 == 在控制面板上查看防护建议
 
 勒索软件恢复能力会评估您工作负载的保护情况，并建议采取措施来改善保护。
@@ -129,6 +131,7 @@ TIP: 您稍后可以将已消除的项目更改为待办事项。当您将某项
 
 
 
+[[export-protection-data-to-csv-files]]
 == 将保护数据导出到 CSV 文件
 
 您可以导出数据并下载显示保护、警报和恢复详细信息的 CSV 文件。
@@ -157,6 +160,7 @@ CSV 文件包含所有控制台系统上所有工作负载的数据。
 
 
 
+[[access-technical-documentation]]
 == 访问技术文档
 
 您可以从以下位置访问勒索软件恢复技术文档link:https://docs.netapp.com["docs.netapp.com"^]或从勒索软件恢复力内部。

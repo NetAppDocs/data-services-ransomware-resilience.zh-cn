@@ -16,12 +16,14 @@ summary: 已知限制标识了该产品的此版本不支持的平台、设备�
 
 
 
+[[readiness-drill-reset-option-issue]]
 == 准备演习重置选项问题
 
 如果您选择ONTAP 9.11.1 卷进行勒索软件攻击准备演习，勒索软件恢复能力会发送警报。如果您使用“克隆到卷”选项恢复数据并重置钻机，则重置操作将失败。
 
 
 
+[[amazon-fsx-for-netapp-ontap-limitations]]
 == Amazon FSx for NetApp ONTAP限制
 
 以下限制适用于 Amazon FSx for ONTAP：
@@ -32,6 +34,7 @@ summary: 已知限制标识了该产品的此版本不支持的平台、设备�
 
 
 
+[[azure-netapp-files-limitations]]
 == Azure NetApp Files 限制
 
 以下限制适用于 Azure NetApp Files：
@@ -46,6 +49,7 @@ summary: 已知限制标识了该产品的此版本不支持的平台、设备�
 
 
 
+[[google-cloud-netapp-volumes-limitations]]
 == Google Cloud NetApp Volumes 限制
 
 以下限制适用于 Google Cloud NetApp Volumes：

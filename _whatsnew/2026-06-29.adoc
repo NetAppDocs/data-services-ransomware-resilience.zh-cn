@@ -4,6 +4,7 @@
 
 
 
+[[automated-responses-to-user-activity-alerts]]
 === 自动响应用户活动警报
 
 Ransomware Resilience 现在支持在生成用户活动警报时自动创建快照和阻止用户。通过自动响应，您可以在生成警告后立即阻止用户，并创建快照进行恢复，从而无需手动干预即可更快地响应。

@@ -18,6 +18,7 @@ NetApp Ransomware Resilience 的保护仪表板概述了工作负载的保护状
 
 
 
+[[view-protection-on-a-workload]]
 == 查看工作负载的保护
 
 保护工作负载的第一步是查看当前工作负载及其保护状态。您可以看到以下类型的工作负载：
@@ -46,6 +47,7 @@ NOTE: 请参阅 link:rp-use-protect.html#add-a-ransomware-protection-strategy["�
 
 
 
+[[understand-the-protection-dashboard]]
 == 了解保护信息板
 
 Ransomware Resilience 中的保护仪表板显示有关工作负载的详细信息（例如，工作负载名称和类型、Console 代理、系统和存储 VM）以及有关保护状态的见解。使用保护仪表板查看和管理针对工作负载的勒索软件准备情况。以下列尤其有助于了解您的保护姿势：
@@ -86,6 +88,7 @@ Ransomware Resilience 中的保护仪表板显示有关工作负载的详细信�
 
 
 
+[[next-steps]]
 == 后续步骤
 
 * link:rp-use-protect.html["使用勒索软件保护策略保护工作负载"]

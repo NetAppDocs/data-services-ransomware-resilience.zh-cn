@@ -19,6 +19,7 @@ TIP: Ransomware Resilience 还支持 xref:task-clean-restore.html[clean restore 
 
 
 
+[[restore-a-workload]]
 == 还原工作负载
 
 *必需的控制台角色* 组织管理员、文件夹或项目管理员或 Ransomware protection 管理员。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服务的控制台访问角色"^].
@@ -58,6 +59,7 @@ TIP: 您最多可以选择 100 个文件或一个文件夹。
 
 
 
+[[restore-all-volumes]]
 === 恢复所有卷
 
 . 从勒索软件恢复菜单中，选择*恢复*。
@@ -97,6 +99,7 @@ TIP: 新卷名称显示为前缀+原始卷名称+备份名称+备份日期。
 
 
 
+[[restore-a-workload-at-the-volume-level]]
 === 在卷级别还原工作负载
 
 . 从勒索软件恢复菜单中，选择*恢复*。
@@ -137,6 +140,7 @@ TIP: 新的卷名称显示为原始卷名称+备份名称+备份日期。
 
 
 
+[[restore-a-workload-at-the-file-level]]
 === 在文件级别还原工作负载
 
 在文件级别还原工作负载之前，您可以查看受影响文件的列表。您可以访问"提醒"页面，下载受影响文件的列表。然后使用恢复页面上传列表并选择要还原的文件。
@@ -223,6 +227,7 @@ TIP: 如果您没有指定还原路径，文件将被还原到顶级目录的新
 
 
 
+[[restore-a-file-share-or-datastore]]
 === 恢复文件共享或数据存储
 
 . 选择要还原的文件共享或数据存储后，在“还原”页面的“还原范围”中，选择“按卷”。
@@ -263,6 +268,7 @@ TIP: 如果您没有指定还原路径，文件将被还原到顶级目录的新
 
 
 
+[[restore-a-vm-file-share-at-the-vm-level]]
 === 在 VM 级别还原 VM 文件共享
 
 在选择要还原的虚拟机后，在“恢复”页面上继续执行以下步骤。
