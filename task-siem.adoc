@@ -17,10 +17,12 @@ Ransomware Resilience 支持以下 SIEM 系统：
 
 * AWS Security Hub
 * Google SecOps
-* Microsoft Sentinel
+* Microsoft Sentinel*
 * Splunk Cloud
 * Splunk Enterprise
 
+
+{asterisk} Ransomware Resilience 还为 Microsoft Sentinel 提供了 Azure Resource Manager (ARM) 模板。
 
 
 TIP: Ransomware Resilience 还提供 link:reference-soar.html["安全协调、自动化和响应 (SOAR) 攻略"^]。
