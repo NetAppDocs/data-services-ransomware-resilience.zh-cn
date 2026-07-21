@@ -13,7 +13,7 @@ summary: '您可以自动将数据从 NetApp Ransomware Resilience 发送到您�
 [role="lead"]
 安全信息和事件管理 (SIEM) 系统集中日志和事件数据，以提供有关安全事件和合规性的见解。NetApp Ransomware Resilience 支持自动将数据发送到您的 SIEM，以简化威胁分析和检测。
 
-Ransomware Resilience 支持以下 SIEM 系统：
+Ransomware Resilience 支持使用 <<Webhook,Webhook>> 配置任何 SIEM 系统。此外，Ransomware Resilience 还为以下 SIEM 系统提供本机支持：
 
 * AWS Security Hub
 * Google SecOps
@@ -35,34 +35,28 @@ TIP: Ransomware Resilience 还提供 link:reference-soar.html["安全协调、�
 Ransomware Resilience 可以将以下事件数据发送到您的 SIEM 系统：
 
 * *语境*：
-+
-** *os*：这是一个具有ONTAP值的常量。
-** *os_version*：系统上运行的ONTAP版本。
-** *connector_id*：管理系统的控制台代理的 ID。
-** *cluster_id*： ONTAP为系统报告的集群 ID。
-** *svm_name*：发现警报的 SVM 的名称。
-** *volume_name*：发现警报的卷的名称。
-** *volume_id*： ONTAP为系统报告的卷的 ID。
-
-
+* *os*：这是一个具有ONTAP值的常量。
+* *os_version*：系统上运行的ONTAP版本。
+* *connector_id*：管理系统的控制台代理的 ID。
+* *cluster_id*： ONTAP为系统报告的集群 ID。
+* *svm_name*：发现警报的 SVM 的名称。
+* *volume_name*：发现警报的卷的名称。
+* *volume_id*： ONTAP为系统报告的卷的 ID。
 * *事件*：
-+
-** *incident_id*：勒索软件恢复力针对勒索软件恢复力中受到攻击的卷生成的事件 ID。
-** *alert_id*：勒索软件恢复能力为工作负载生成的 ID。
-** *severity*：警报级别的严重程度："CRITICAL"、"HIGH"、"MEDIUM"、"LOW"。
-** *描述*：有关检测到的警报的详细信息，例如“在工作负载 arp_learning_mode_test_2630 上检测到潜在的勒索软件攻击”
-** *title*：检测到的警报的显示名称。
-** *criticality*：对您环境中卷关键性的评估："CRITICAL"、"IMPORTANT"、"STANDARD"。
-** *incident_status*：事件的活动状态，可以是："NEW"、"RESOLVED"、"DISMISSED"、"AUTO_RESOLVED"。
-** *first_detected*：表示 Ransomware Resilience 首次检测到事件的时间戳。
-** *is_readiness_drill*：指示警报是演习还是实际事件的布尔值。
-** *protocol*：卷使用的协议。可能的值为"iSCSI"、"NFS"和"SMB"。
-** *alert_type*：检测到的威胁类型。可能的值为"Encryption"、"Data destruction"、"Data breach"和"Suspicious user behavior"。
-** *user_name*：与此警报关联的可疑用户的用户名。
-** *user_id*：与警报关联的可疑用户的用户 ID。
-** *client_ips*：与可疑活动关联的客户端 IP 地址列表，仅适用于 NFS 警报。
-
-
+* *incident_id*：勒索软件恢复力针对勒索软件恢复力中受到攻击的卷生成的事件 ID。
+* *alert_id*：勒索软件恢复能力为工作负载生成的 ID。
+* *severity*：警报级别的严重程度："CRITICAL"、"HIGH"、"MEDIUM"、"LOW"。
+* *description*：有关检测到的警报的详细信息，例如，"在工作负载 arp_learning_mode_test_2630 上检测到潜在的勒索软件攻击"
+* *title*：检测到的警报的显示名称。
+* *criticality*：对您环境中卷关键性的评估："CRITICAL"、"IMPORTANT"、"STANDARD"。
+* *incident_status*：事件的活动状态，可以是："NEW"、"RESOLVED"、"DISMISSED"、"AUTO_RESOLVED"。
+* *first_detected*：表示 Ransomware Resilience 首次检测到事件的时间戳。
+* *is_readiness_drill*：指示警报是演习还是实际事件的布尔值。
+* *protocol*：卷使用的协议。可能的值为"iSCSI"、"NFS"和"SMB"。
+* *alert_type*：检测到的威胁类型。可能的值为"Encryption"、"Data destruction"、"Data breach"和"Suspicious user behavior"。
+* *user_name*：与此警报关联的可疑用户的用户名。
+* *user_id*：与警报关联的可疑用户的用户 ID。
+* *client_ips*：与可疑活动关联的客户端 IP 地址列表，仅适用于 NFS 警报。
 
 
 
@@ -76,7 +70,7 @@ NOTE: 只有在您已配置 xref:concept-user-behavior.adoc[用户行为检测] 
 在 Ransomware Resilience 中启用 AWS Security Hub 之前，需要在 AWS Security Hub 中执行安全配置：
 
 * 在 AWS Security Hub 中设置权限。
-* 在 AWS Security Hub 中设置身份验证访问密钥和密钥。  （此处未提供这些步骤。）
+* 在 AWS Security Hub 中设置访问密钥和密钥以进行身份验证。（此处未提供这些步骤。）
 
 
 .在 AWS Security Hub 中设置权限
@@ -111,11 +105,10 @@ NOTE: 只有在您已配置 xref:concept-user-behavior.adoc[用户行为检测] 
 +
 image:screen-settings2.png["设置页面"]
 
-. 在“设置”页面中，选择 SIEM 连接图块中的“*连接*”。
+. 在设置页面中，在 SIEM 连接图块中选择 *Connect*，然后在下拉菜单中选择 *AWS Security Hub*。
 +
 image:screen-settings-threat-detection-3options.png["启用威胁检测详细信息页面"]
 
-. 选择 *AWS Security Hub* 作为 SIEM 提供程序。
 . 查看 *Permissions* 部分。
 . 展开 *Authentication* 部分。
 +
@@ -131,7 +124,7 @@ image:screen-settings-threat-detection-3options.png["启用威胁检测详细信
 [[configure-google-secops-for-threat-detection]]
 == 配置 Google SecOps 以进行威胁检测
 
-在 Ransomware Resilience 中启用 Google SecOps 之前，您需要在 Google SecOps 中注册日志类型和 webhook 以启用服务之间的连接。
+在 Ransomware Resilience 中启用 Google SecOps 之前，您需要在 Google SecOps 中注册日志类型和 webhook，以启用服务之间的连接。
 
 .创建日志类型
 . 转至 Google SecOps。
@@ -161,11 +154,10 @@ image:screen-settings-threat-detection-3options.png["启用威胁检测详细信
 +
 image:screen-settings2.png["设置页面"]
 
-. 在“设置”页面中，选择 SIEM 连接图块中的“*连接*”。
+. 在设置页面中，在 SIEM 连接图块中选择*连接*，然后从下拉菜单中选择 *Google SecOps*。
 +
 image:screen-settings-threat-detection-3options.png["启用威胁检测详细信息页面"]
 
-. 选择 *Google SecOps* 作为 SIEM 提供商。
 . 查看 *先决条件* 和 *Webhook 源* 部分。
 . 展开 *Authentication* 部分。
 +
@@ -184,17 +176,11 @@ image:screen-settings-threat-detection-3options.png["启用威胁检测详细信
 在 Ransomware Resilience 中启用 Microsoft Sentinel 之前，需要在 Microsoft Sentinel 中执行以下高级步骤：
 
 * *先决条件*
-+
-** 启用 Microsoft Sentinel。
-** 在 Microsoft Sentinel 中创建自定义角色。
-
-
+* 启用 Microsoft Sentinel。
+* 在 Microsoft Sentinel 中创建自定义角色。
 * *登记*
-+
-** 注册 Ransomware Resilience 以接收来自 Microsoft Sentinel 的事件。
-** 为注册创建一个秘密。
-
-
+* 注册 Ransomware Resilience 以接收来自 Microsoft Sentinel 的事件。
+* 为注册创建一个秘密。
 * *权限*：为应用程序分配权限。
 * *身份验证*：输入应用程序的身份验证凭据。
 
@@ -293,11 +279,10 @@ NOTE: 认证成功后，会出现“已认证”的信息。
 +
 image:screen-settings2.png["设置页面"]
 
-. 在“设置”页面中，选择 SIEM 连接图块中的“*连接*”。
+. 在设置页面中，在 SIEM 连接图块中选择*连接*，然后从下拉菜单中选择 *Microsoft Sentinel*。
 +
 image:screen-settings-threat-detection-3options.png["启用威胁检测详细信息页面"]
 
-. 选择 *Microsoft Sentinel* 作为 SIEM 提供程序。
 . 查看*先决条件*、*注册*和*权限*部分，以确保您已成功完成每个步骤。
 . 展开 *Authentication* 部分。
 +
@@ -320,7 +305,7 @@ Ransomware Resilience 支持使用 Splunk Cloud 和 Splunk Enterprise 进行威�
 
 
 
-NOTE: 对于 Splunk Enterprise，您必须允许入站公共互联网流量，以便 Ransomware Resilience 能够使用提供的 HTTP 事件收集器详细信息推送事件。
+NOTE: 对于 Splunk Enterprise，您必须允许入站公共互联网流量，以便 Ransomware Resilience 能够使用提供给它的 HTTP 事件收集器详细信息推送事件。
 
 .在 Splunk 中启用 HTTP Event Collector
 . 转到您选择的 Splunk 环境：云或企业。
@@ -354,13 +339,40 @@ image:screen-settings-threat-detection-3options.png["启用威胁检测详细信
 . 查看 *Event collector* 和 *Token* 部分，以确认您拥有正确的信息。
 . 展开 *Authentication* 部分。
 +
-.. 为 HTTP Event Collector 选择**协议**。建议使用 HTTPS，但如果 HTTP Event Collector 未启用 SSL，请选择 *HTTP*。
+.. 为 HTTP Event Collector 选择*协议*。建议使用 HTTPS，但如果 HTTP Event Collector 未启用 SSL，请选择 *HTTP*。
 .. 为运行 HTTP Event Collector 的 Splunk Cloud 实例输入 *Host* 和 *Port*。端口应与您在 HTTP event collector 进程中输入的内容相匹配。
 .. 输入您在 Splunk 中创建的事件收集器令牌。
 
 
 . 选择 *Connect* 以开始发送 SIEM 数据。
 
+
+
+
+[[configure-a-siem-with-webhooks]]
+[[webhooks]]
+== 使用 Webhook 配置 SIEM
+
+在使用 Ransomware Resilience 创建 SIEM 连接之前，必须在其自身平台上配置 SIEM。按照以下步骤配置与 Ransomware Resilience 的通信。
+
+.步骤
+. 在 Ransomware Resilience 中，选择 *Settings*。
+. 在 *SIEM* 图块中，如果这是您第一次配置 SIEM，请选择 *Connect*，然后选择 *Webhooks*。否则，请选择 *Manage*。在概述页面上，依次选择 *+ Connect* 和 *Webhook*。
+. 提供 SIEM 产品的*名称*和连接的 *URL*。URL 不能编码。
+. 使用"Key: Value"格式输入 *Custom headers*。每个键值对必须在单独的行中输入。
+. 查看 JSON 格式的*消息*模板。
++
+要添加其他参数，请从输入字段旁边的列表中复制它们，然后粘贴到消息的相应部分。您还可以添加自定义参数：在自定义参数中，选择 *Add*，然后输入 *Name*、*Value* 和 *Description*。复制并粘贴到消息部分。
+
++
+image:siem-webhook.png["SIEM webhook 配置的屏幕截图。"]
+
+. （可选）选择*发送测试消息*以测试连通性。
+. 选择*连接*以启动与 Ransomware Resilience 的连接。
+
+
+
+NOTE: 您可以在创建 SIEM 配置后对其进行编辑。您可以编辑除名称以外的所有字段。
 
 
 
