@@ -1481,10 +1481,8 @@
   <block id="d51c0020ded66c680ed4bf4dab57a782" category="paragraph">勒索软件弹性通过分析ONTAP中 FPolicy 生成的用户活动事件来检测可疑的用户活动。要收集用户活动数据，您需要部署一个或多个用户活动代理。该代理是可连接到租户上的设备的 Linux 服务器或 VM。</block>
   <block id="b9300e15e3fa20c1dc3ecfabbbb96a7b" category="section-title">操作系统要求</block>
   <block id="afea8c44acd019a3a489f7a3ddeb5c8e" category="admonition">用于用户活动代理的计算机不应运行其他应用程序级软件。建议使用专用服务器。</block>
-  <block id="19edca9ea70315410039bf08b3ffecda" category="paragraph">这<block ref="0a342b59ecdcede0571340b9ed11633f" prefix=" " category="inline-code"></block> 安装需要该命令。这<block ref="beb493211c3135923a11284ef26bf909" prefix=" " category="inline-code"></block> 该命令用于安装、运行脚本和卸载。</block>
   <block id="a54c13ad42512dbfec4e8a44d793a52e" category="section-title">服务器要求</block>
   <block id="34af15b56c0def7a2806fd4b03537e12" category="list-text">**磁盘空间**：36 GB 可用磁盘空间</block>
-  <block id="68eda0e29d8e074409c51f53581f3a64" category="admonition">分配额外的磁盘空间以用于创建文件系统。请确保文件系统中至少有 35 GB 的可用空间。+ 如果<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block> 这是从 NAS 存储设备挂载的文件夹，本地用户必须有权限访问此文件夹。如果本地用户没有必要的权限，则用户活动代理创建可能会失败。</block>
   <block id="52554f7429cd5c72cd3c3e9561412160" category="admonition">建议您使用网络时间协议 (NTP) 或简单网络时间协议 (SNTP) 同步ONTAP系统和用户活动代理计算机上的时间。</block>
   <block id="77469c598ab2b5984e8dafd3d15a2315" category="section-title">云网络访问规则</block>
   <block id="c793f078b8fd1dcce9dfd5ae57f2a51c" category="paragraph">查看您所在地区（亚太地区、欧洲或美国）的云网络访问规则。</block>
@@ -1496,14 +1494,12 @@
   <block id="f2ca52b87225d79d40f899aebabeec45" category="cell">用户活动代理</block>
   <block id="b7169d36c5259a3a051359ca51dbd682" category="cell">获得勒索软件恢复能力</block>
   <block id="0cd58d8585970b5311e84ca2c34ba5ef" category="section-title">网络内规则</block>
-  <block id="1b09a58921479be87f9dae639915150f" category="cell">389（LDAP） 636（LDAP/启动-tls）</block>
   <block id="84caee864977bc98db0b0df24853f63c" category="cell">LDAP Server URL</block>
   <block id="b272c206ad7d80ebc1e17385c8d4450c" category="cell">连接到 LDAP</block>
   <block id="3e1d4f7104327b6aa02e8d988c873b86" category="cell">集群或SVM管理IP地址（取决于SVM收集器配置）</block>
   <block id="9bf305870fa281c6eff0d16d2e8d6b6d" category="cell">API 与ONTAP进行通信</block>
   <block id="c1d0965e767c67506aa60bc80d5b716e" category="cell">35000 - 55000</block>
   <block id="4f1eb19420b75b94e053a805cd0feb1d" category="paragraph">SVM 数据 LIF IP 地址</block>
-  <block id="3b04fff3171347ca78c0c2fb925106dd" category="cell">ONTAP与用户活动代理之间关于 Fpolicy 事件的通信。为了让ONTAP能够向用户活动代理发送事件，必须向其开放这些端口，包括用户活动代理本身上的任何防火墙（如果存在）。+ **注意：**您不需要预留*所有*这些端口，但您为此预留的端口必须在此范围内。建议您先预留 100 个端口，如有必要再增加。</block>
   <block id="3756ac460c094adc890ad7f26460010b" category="cell">35000-55000</block>
   <block id="0e948943e8277507eeeec08bbb91d3b4" category="cell">集群管理 IP</block>
   <block id="f41a23af01b3d7e16d16141a3f6003df" category="cell">ONTAP集群管理 IP 与用户活动代理之间关于 *EMS 事件* 的通信。为了让ONTAP能够向用户活动代理发送 EMS 事件，必须向用户活动代理开放这些端口，包括用户活动代理本身上的任何防火墙。+ **注意：**您不需要预留*所有*这些端口，但您为此预留的端口必须在此范围内。建议您先预留 100 个端口，如有必要再增加。</block>
@@ -1584,7 +1580,6 @@
   <block id="e7d932b2a7bf9471a38ac8c68fbf83ad" category="list-text">&lt;site_name&gt;.cs01-ap-1.cloudinsights.netapp.com/cn</block>
   <block id="8f31785e58dfdc396495a127fdd7d7dd" category="list-text">&lt;site_name&gt;.c01-ap-1.cloudinsights.netapp.com/cn</block>
   <block id="edc2894193def90c2ccbb8f855d6f564" category="list-text">&lt;site_name&gt;.c02-ap-1.cloudinsights.netapp.com/cn</block>
-  <block id="b7293bd6a9f7cb8e5890a221fe74d3cb" category="list-text">gentlogin.cs01-ap-1.cloudinsights.netapp.com/cn</block>
   <block id="00c7e633a09840b7e60ee5de5aec797b" category="list-text">&lt;site_name&gt;.cs01-eu-1.cloudinsights.netapp.com/cn</block>
   <block id="54d1f56395e5ec9d39e9a416c61b311a" category="list-text">&lt;site_name&gt;.c01-eu-1.cloudinsights.netapp.com/cn</block>
   <block id="0ba615943513b9683a0e9b145f96e5b2" category="list-text">&lt;site_name&gt;.c02-eu-1.cloudinsights.netapp.com/cn</block>
@@ -1612,12 +1607,9 @@
   <block id="75a6a9319b6e0275c06122285e74cd15" category="inline-link-macro">创建所需的代理和收集器，并启用适当的勒索软件保护策略</block>
   <block id="cce78dc6ebbec7385a01f2146d6d01c8" category="section-title">后续步骤</block>
   <block id="92df6f183b2e1cfcc696af23c1edd4cb" category="summary">在创建用户活动代理和其他收集器之前，必须确保满足概述的操作系统、服务器和网络要求。</block>
-  <block id="fc36a1ad1399ea3c897ac2b166f590bc" category="section-title">云提供商支持</block>
   <block id="3156b4b992dec700b60fedaa2eca010c" category="paragraph">以下操作系统支持可疑用户行为检测：</block>
   <block id="92adf790b863484fc83be969039ec890" category="section-title">服务器建议</block>
-  <block id="28296e91eb448ead6c0f37548d3101a8" category="list-text">建议您在与 Ransomware Resilience 环境分开的系统中安装用户活动代理。如果您将它们安装在同一台计算机上，则应允许 50 到 55 GB 的磁盘空间。对于 Linux，分配 25-30 GB 的空间到<block ref="4bf2f0d069734974e4d76e679433aa07" prefix=" " category="inline-code"></block>，分配 25 GB 的空间到<block ref="ea5f88360fb7c06d3270b165b4dad226" prefix=" " category="inline-code"></block>。</block>
   <block id="b81a18d778d8d2491614ae90532db84f" category="admonition">在初始安装期间，将<block ref="50cff7c5933e29331b88e32e4f2a101d" prefix=" " category="inline-code"></block>替换为通配符<block ref="3389dae361af79b04c9c8e7057f60cc6" prefix="(" category="inline-code"></block>）权限。激活代理并完全运行后，您可以将权限替换为站点名称。有关站点名称，请联系您的 NetApp 代表。</block>
-  <block id="9625968bd02420d60f939947dec5ee63" category="admonition">用户活动代理使用 NetApp Data Infrastructure Insights 技术，因此使用<block ref="08f7b82cf54cd7bdcab171ad9bd445cc" prefix=" " category="inline-code"></block>端点。有关详细信息，请参见</block>
   <block id="c4f09ee186bb94e99b8c3f938adf8816" category="section-title">基于 APAC 的用户活动代理部署</block>
   <block id="869af1b4577e081268bf8ee592a6018e" category="section-title">基于欧洲的用户活动代理部署</block>
   <block id="ae6cc9c44044939bcbbefd693857f742" category="section-title">基于美国的用户活动代理部署</block>
@@ -2369,7 +2361,6 @@
   <block id="3b35700f5db77466b9829093b579bafc" category="list-text">集群管理员用户名和密码</block>
   <block id="8357c5714e49295e422957fed4ec2caa" category="list-text">安装<block ref="2fa62e05d832f87969a8d99226be5a74" prefix=" " category="inline-code"></block>在 Linux 机器上（可以使用命令安装<block ref="bd20ec476e804fab40ab36d6175d1936" prefix=" " category="inline-code"></block>）</block>
   <block id="361ccd8284c6f49a106851d9aeaab8b2" category="list-text">从托管用户活动代理的集群中，以管理员身份运行脚本：<block ref="3b9c122b681f59f04f03105e338591ce" prefix=" " category="inline-code"></block></block>
-  <block id="e0e0df3692200b73a8808571748906b3" category="list-text">出现提示时，请提供 cluter IP 地址、管理员用户名和管理员密码。</block>
   <block id="2757451d7ac78a3fd169d2600d54a8ad" category="list-text">脚本运行大约需要五分钟。完成后，命令行将显示事件速率，例如"Svm svm_rate 正在生成 100 个事件/秒"。</block>
   <block id="73e368716ffe1eef8733ba4acf297472" category="paragraph">使用事件率来计算您的规模。</block>
   <block id="caa617e3833cdf64d33905efb6a82682" category="paragraph">如果您_不_使用 DII，请继续执行此处的配置说明。</block>
@@ -2405,7 +2396,6 @@
   <block id="73ec7da766dca94cf1c4b669985cd2a5" category="list-text"><block ref="73ec7da766dca94cf1c4b669985cd2a5" category="inline-link-macro-rx"></block></block>
   <block id="f2947fbfc4001f394585c42e28740767" category="inline-link-macro">配置用户行为代理和检测器</block>
   <block id="ad709ceaf0cfdbb15b5cbf9fdce90fd8" category="list-text"><block ref="ad709ceaf0cfdbb15b5cbf9fdce90fd8" category="inline-link-macro-rx"></block></block>
-  <block id="f79eb8967b3c8df9a5242b71bfa6765b" category="paragraph">用户行为数据可以存储在以下区域的 AWS 和 Azure 中：</block>
   <block id="f7d8c82b937f1272bcd68f037f70dcbb" category="list-text">Azure NetApp Files 不支持 FPolicy 或用户行为检测。Azure NetApp Files 也不支持熵取证。</block>
   <block id="30d4c1b67b11bb42e2278b195f299c80" category="list-text">目前，您只能将基于加密和 FPolicy 的保护策略应用于 Google Cloud NetApp Volumes 工作负载。您无法应用用户行为保护策略。</block>
   <block id="37377fd884c4cf3b9e7e8e0ed97e4865" category="paragraph-title">Ransomware Resilience 可以识别哪些类型的攻击？</block>
@@ -2480,7 +2470,6 @@
   <block id="7eba97a8ef53163c9fd30177df926301" category="admonition">如果要配置源位于 Amazon FSx for NetApp ONTAP 中的 IRE，请跳过此洁净室 SVM 数据 LIF IP 要求。</block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="cell">Amazon FSx for NetApp ONTAP</block>
   <block id="7e04984fc8cb78806e36cbf9552342fd" category="admonition">SAN 工作负载当前不支持用户活动检测。您可以将用户活动检测与 Amazon FSx for NetApp ONTAP、Cloud Volumes ONTAP 和 ONTAP 中的 NAS 工作负载结合使用。</block>
-  <block id="d3009064cbb364032ea2a7bc94ab246b" category="paragraph">用户行为检测在 Ransomware Resilience 中受支持，适用于本地 ONTAP 系统中的工作负载，以及与 <block ref="12d7be4f3da31a90f0de3bba45ddeec1" category="inline-xref-macro-rx"></block> 保持一致的 Amazon FSx for NetApp ONTAP 和 Cloud Volumes ONTAP 系统。</block>
   <block id="0270ec13158ac8d81c5022ad41a38235" category="admonition">如果要为 Amazon FSx for NetApp ONTAP 和 Azure NetApp Files 配置保护策略，请参阅 <block ref="f35eaad9edb95ec2be22c4403bf0d360" category="inline-link-macro-rx"></block>。</block>
   <block id="b70244907e8a4cb4fbb47d6e9fdda53a" category="cell">云：Amazon FSx for NetApp ONTAP</block>
   <block id="b4bada7d854e6650f9cc28e404fe40fb" category="admonition">对于部署到 Amazon FSx for NetApp ONTAP 的 IRE，无需提供此信息。</block>
@@ -2726,4 +2715,16 @@
   <block id="d17b23053b2c8905a1374dfbb3177a6c" category="list-text">选择*连接*以启动与 Ransomware Resilience 的连接。</block>
   <block id="256edba68011601436675d5223414692" category="admonition">您可以在创建 SIEM 配置后对其进行编辑。您可以编辑除名称以外的所有字段。</block>
   <block id="ac750267020c9b3c0e32de825d9b57fc" category="section-title">2026年7月20日</block>
+  <block id="65e105b8a7c994c340c0237dcf7e5970" category="section-title">用户活动代理云提供商支持</block>
+  <block id="9ebc4352a5afdb84f0bff93ebd15df5b" category="paragraph">要启用用户行为检测，必须创建用户活动代理。用户活动代理是数据收集器的可执行环境，它与 Ransomware Resilience 共享用户活动事件。</block>
+  <block id="b176415a669a2bcfa34dd5a6868e1756" category="paragraph">可以在以下区域的 AWS 和 Azure 中部署用户活动代理：</block>
+  <block id="6cf349ef77d3b894c407f147f9b0f9a7" category="admonition">用户活动代理的区域部署对控制台代理没有影响。控制台代理部署独立于这些区域。</block>
+  <block id="a17da1e1013a5f5e4cb001153fe98736" category="paragraph">安装需要<block ref="0a342b59ecdcede0571340b9ed11633f" prefix=" " category="inline-code"></block>命令。安装、运行脚本和卸载需要<block ref="beb493211c3135923a11284ef26bf909" prefix=" " category="inline-code"></block>命令。</block>
+  <block id="c9636848fc1b9b62740a33de6f0bad1f" category="list-text">分配额外的磁盘空间以允许创建文件系统。请确保文件系统中至少有 35 GB 的可用空间。+ 如果<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block>是来自 NAS 存储的已挂载文件夹，则本地用户必须能够访问此文件夹。如果本地用户没有必要的权限，则用户活动代理的创建可能会失败。</block>
+  <block id="1a283fc89a251e8e273bf67b6e692071" category="list-text">建议您在与勒索软件弹性环境分开的系统上安装用户活动代理。如果您确实在同一台计算机上安装了代理和勒索软件弹性，请预留 50 至 55 GB 的磁盘空间。对于 Linux，请为<block ref="4bf2f0d069734974e4d76e679433aa07" prefix=" " category="inline-code"></block>分配 25 至 30 GB 的空间，为<block ref="ea5f88360fb7c06d3270b165b4dad226" prefix=" " category="inline-code"></block>分配 25 GB 的空间。</block>
+  <block id="ccde7d5f2c38977ff57bfa0294ad83d7" category="list-text">出现提示时，请提供集群 IP 地址、管理员用户名和管理员密码。</block>
+  <block id="2c04ca6afac47fae351d7176c354ba9b" category="admonition">用户活动代理使用 NetApp Data Infrastructure Insights 技术，因此使用<block ref="08f7b82cf54cd7bdcab171ad9bd445cc" prefix=" " category="inline-code"></block>端点。有关详细信息，请参见<block ref="12c485f306c08c5a6939aa54065b62ed" category="inline-link-macro-rx"></block>。</block>
+  <block id="012f0abca78822d24d27455403c3d089" category="list-text">agentlogin.cs01-ap-1.cloudinsights.netapp.com/cn</block>
+  <block id="dcac1ae04e45c773239f95ecd0c5f082" category="cell">389(LDAP) 636 (LDAPS / start-tls)</block>
+  <block id="c44e1219325e37378db9611536ddafc3" category="cell">从 ONTAP 到 Fpolicy 事件的用户活动代理的通信。这些端口必须向用户活动代理开放，以便 ONTAP 向其发送事件，包括用户活动代理本身的任何防火墙（如果存在）。+ **注意：**您无需预留*所有*这些端口，但为此预留的端口必须在此范围内。建议您首先预留 100 个端口，并在必要时增加。</block>
 </blocks>
