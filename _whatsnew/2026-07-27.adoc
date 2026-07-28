@@ -1,0 +1,32 @@
+= 根据工作负载和系统类型标准化保护组
+:allow-uri-read: 
+
+
+
+
+[[standardize-protection-groups-based-on-workload-and-system-type]]
+=== 根据工作负载和系统类型标准化保护组
+
+Ransomware Resilience 现在强制要求保护组仅包含一种工作负载类型和系统类型。创建新的保护组时，必须指定工作负载类型（文件系统或块）以及工作负载的系统。此增强功能可确保为保护组选择的勒索软件保护策略能够成功应用于组中的所有工作负载。
+
+如果现有的保护组混合使用系统和工作负载类型，则可以继续使用它们，但无法将工作负载添加到保护组。
+
+有关详细信息，请参见link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-protection-group.html["创建保护组"^]。
+
+
+
+[[readiness-drill-enhancement]]
+=== 就绪演练增强
+
+Ransomware Resilience 现在使您能够根据攻击类型进行准备演习。Ransomware Resilience 可检测五种类型的攻击，您可以针对每种类型执行准备演练，以模拟攻击和恢复过程，从而了解您应对勒索软件攻击的准备情况。
+
+有关详细信息，请参见link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-simulate.html["进行准备演习"^]。
+
+
+
+[[pause-or-delete-a-siem-system]]
+=== 暂停或删除 SIEM 系统
+
+Ransomware Resilience 现在在 UI 中包含暂停或删除 SIEM 系统的选项。此增强功能使您可以更轻松地暂时禁用系统以进行故障排除或维护，或将其完全移除。
+
+有关详细信息，请参见link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html#disable-a-siem-system["禁用 SIEM 系统"^]。

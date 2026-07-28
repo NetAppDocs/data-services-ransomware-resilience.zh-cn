@@ -56,5 +56,17 @@ summary: 已知限制标识了该产品的此版本不支持的平台、设备�
 
 * 来自 Google Cloud NetApp Volumes 的 SAN 工作负载目前在 Ransomware Resilience 中不受支持。
 * 目前，您只能将基于加密和 FPolicy 的保护策略应用于 Google Cloud NetApp Volumes 工作负载。您无法应用用户行为保护策略。
-* 具有复制的保护策略目前不支持 Google Cloud NetApp Volumes
+* Google Cloud NetApp Volumes 目前不支持带有复制的保护策略
+
+
+
+
+[[san-storage-limitations]]
+== SAN存储限制
+
+以下限制适用于 SAN（块存储）工作负载：
+
+* Ransomware Resilience目前不支持来自Google Cloud NetApp Volumes的SAN工作负载。
+* 当 Ransomware Resilience 为 SAN 工作负载生成警告时，这些警告仅基于高熵。
+* SAN 工作负载只能使用 link:task-custom-restore.html["自定义还原"] 进行还原。清除还原当前不适用于 SAN 工作负载。
 

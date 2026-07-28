@@ -34,12 +34,39 @@ summary: 通过模拟对示例工作负载的勒索软件攻击来进行勒索�
 [[configure-a-ransomware-attack-readiness-drill]]
 == 配置勒索软件攻击准备演习
 
+在运行模拟之前，必须配置就绪演练。必须为特定类型的勒索软件攻击创建就绪演练。Ransomware Resilience 可识别五种类型的攻击：
+
+[cols="25,75"]
+|===
+| 攻击类型 | 描述 
+
+
+| 加密（熵） | Ransomware Resilience 可识别异常 IOPS 模式、数据熵和非标准文件后缀。 
+
+
+| 加密（用户行为） | Ransomware Resilience 可识别特定用户执行的异常文件读取、写入和重命名活动。 
+
+
+| 数据泄露 | NetApp Ransomware Resilience 检测特定用户执行的异常文件读取访问模式。 
+
+
+| 数据销毁 | Ransomware Resilience 可发现特定用户对文件的大规模删除。 
+
+
+| 可疑的用户行为 | Ransomware Resilience 可识别数据泄露、数据销毁或加密范围之外的异常行为。 
+|===
 *需要控制台角色* 要执行此任务，需要 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["超级管理员"^] 或 Ransomware Resilience 管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^]。
 
 .步骤
 . 在勒索软件恢复功能中，选择**设置**。
-. 在 Readiness drill tile 中，选择 **Configure**。
-. 选择**就绪演练类型**。
+. 在"设置"页面的"就绪演练"卡中，选择*配置*。
++
+控制台(Console)将显示"配置就绪性演练"页面。
+
++
+image:screen-settings-alert-drill-configure.png["配置就绪性演练页面"]
+
+. 选择*勒索软件攻击类型*。
 +
 ** **自定义恢复**：使用link:rp-use-recover.html["自定义还原"]响应加密（熵）攻击，您可以在其中配置恢复点。
 ** **清理还原**：使用link:task-clean-restore-recover.html["干净恢复"]恢复过程响应加密（熵）攻击，该过程将引导您进入优化的恢复点。
@@ -52,16 +79,13 @@ summary: 通过模拟对示例工作负载的勒索软件攻击来进行勒索�
 .. 选择**系统**后，从预填充列表中选择 **Storage VM**。
 .. 提供**New test workload**的名称。测试工作负载将以"rps_test_"为前缀。
 .. 如果准备演练是为了数据泄露恢复，请为演练环境选择 **User activity agent**。
-+
-image:screen-settings-alert-drill-configure.png["就绪演练配置选项的屏幕截图。"]
-
 
 
 . 选择*保存*。
 
 
 
-TIP: 您可以稍后使用“设置”页面编辑准备演练配置。
+TIP: 您可以稍后从"设置"页面编辑就绪演练配置。
 
 
 
@@ -73,15 +97,8 @@ TIP: 您可以稍后使用“设置”页面编辑准备演练配置。
 *需要控制台角色* 要执行此任务，需要 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["超级管理员"^] 或 Ransomware Resilience 管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^]。
 
 .步骤
-. 要启动演练：
-+
-** 从 Ransomware Resilience 控制面板中，选择右上角的 *Run readiness drill* 按钮。
-+
-image:screen-dashboard.png["显示“运行准备情况演练”按钮的仪表板页面"]
-
-** 或前往**设置**。在 Readiness drill 磁贴中，选择 *Start*。
-
-
+. 在勒索软件恢复功能中，选择**设置**。
+. 在"设置"页面中，选择 *Start*。
 
 
 
@@ -98,13 +115,7 @@ NOTE: 无法在演练运行时编辑就绪演练配置。要修改就绪演练�
 
 .步骤
 . 从勒索软件恢复菜单中，选择*警报*。
-+
-控制台显示警报页面。在警报 ID 列中，您会在 ID 旁边看到“准备情况演练”。
-
-+
-image:screen-alerts-readiness.png["显示准备演习警报的警报页面"]
-
-. 选择带有"Readiness drill"指示的警报。
+. 选择带有"Readiness drill"指示的警报。事件警报列表将显示在警报详细信息页面上。
 +
 image:screen-alerts-readiness-details.png["显示准备演习警报的警报详细信息页面"]
 
@@ -121,8 +132,15 @@ image:screen-alerts-readiness-incidents2.png["显示准备演习警报的事件�
 +
 如果严重性表明用户涉嫌恶意活动，请检查用户名。您还可以link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["阻止该用户。"]
 
-* 文件活动与预期速率。这包括读/写速率、文件创建、文件重命名和删除。
-* 受影响的文件列表。查看可能导致攻击的扩展名。
+* 查看文件活动和可疑流程：
++
+** 查看与预期数据相比的传入检测数据。
+** 查看检测到的文件创建速率与预期速率的对比。
+** 查看检测到的文件重命名速率与预期速率的对比。
+** 将删除率与预期率进行比较。
+
+
+* 查看受影响的文件列表。查看可能导致此次攻击的扩展。
 * 通过查看受影响的文件和目录的数量来确定攻击的影响和广度。
 
 

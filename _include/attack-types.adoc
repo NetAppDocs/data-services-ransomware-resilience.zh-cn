@@ -1,0 +1,23 @@
+= 
+:allow-uri-read: 
+
+
+[cols="25,75"]
+|===
+| 攻击类型 | 描述 
+
+
+| 加密（熵） | Ransomware Resilience 可识别异常 IOPS 模式、数据熵和非标准文件后缀。 
+
+
+| 加密（用户行为） | Ransomware Resilience 可识别特定用户执行的异常文件读取、写入和重命名活动。 
+
+
+| 数据泄露 | NetApp Ransomware Resilience 检测特定用户执行的异常文件读取访问模式。 
+
+
+| 数据销毁 | Ransomware Resilience 可发现特定用户对文件的大规模删除。 
+
+
+| 可疑的用户行为 | Ransomware Resilience 可识别数据泄露、数据销毁或加密范围之外的异常行为。 
+|===

@@ -172,7 +172,7 @@ image:diagram-rp-architecture-preview3.png["勒索软件抵御能力架构图"]
 [[attack-types]]
 === 攻击类型
 
-Ransomware Resilience 可识别五种类型的攻击：
+Ransomware Resilience 可识别五种类型的勒索软件攻击：
 
 [cols="25,75"]
 |===
