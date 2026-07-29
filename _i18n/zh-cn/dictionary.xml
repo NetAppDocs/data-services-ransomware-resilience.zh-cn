@@ -197,7 +197,6 @@
   <block id="5fefe6c4ada89d95390ae77eba79e7db" category="cell">*恢复*</block>
   <block id="059d032d5bb8125e3e1681f7d9ce6023" category="list-text">通过使用备份和恢复、 ONTAP、自主勒索软件防护（ARP 或 ARP/AI，取决于您的ONTAP版本）以及 FPolicy 技术和服务，确定最佳快照或备份并推荐最佳恢复点实际 (RPA)。</block>
   <block id="4ddd3abee434eb92eb13e6cac3e1ad1d" category="cell">*治理*</block>
-  <block id="cc4378b1dc9af2e69cb13a88397e2aa7" category="list-text">分配勒索软件保护策略</block>
   <block id="4f743c093ec077920561596aa32a74f6" category="section-title">支持的备份目标、系统和工作负载数据源</block>
   <block id="b45c27598e81de132cbcf41c4f6124d9" category="paragraph">勒索软件恢复支持以下备份目标、系统和数据源：</block>
   <block id="736ca911d7d143d01bd8cbfe0d4afbca" category="list-text">亚马逊网络服务（AWS）S3</block>
@@ -521,7 +520,6 @@
   <block id="6faff9d182a89c619b1ad36913af4fa5" category="list-text">要启动工作负载恢复，请在消息中选择“*恢复*工作负载”或选择“*恢复*”选项卡。</block>
   <block id="dbb2ae89216b8dfda3662d01ab32469f" category="paragraph">将警报标记为恢复后，警报将从“警报”选项卡移至“恢复”选项卡。</block>
   <block id="d3870301348c9947a819b7a9ed0c25df" category="section-title">忽略不属于潜在攻击的事件</block>
-  <block id="5a5533258cfacee641d19f7f201b727f" category="paragraph">如果您解除工作负载，则为应对潜在勒索软件攻击而自动获取的所有快照副本都将被永久删除。</block>
   <block id="c4229f2836db3c8f0198619d853bad27" category="list-text">如果您确定该事件不构成威胁，请将其视为误报：</block>
   <block id="a20ff2150b7b9f34f30c94111d0f2672" category="list-text">选择事件。</block>
   <block id="4c8220d9b08f6a99b99ca2a31e910796" category="list-text">选择表格上方的*编辑状态*按钮。</block>
@@ -1446,8 +1444,6 @@
   <block id="be8cc003074f86f2bc2b3ef0d2f3a334" category="list-text">发现每个卷的当前NetApp快照副本和备份策略的保护级别以及任何机上检测功能。然后，勒索软件恢复能力通过使用备份和恢复、 ONTAP服务以及NetApp技术（例如自主勒索软件保护（ARP 或 ARP/AI，具体取决于您的ONTAP版本）、FPolicy、备份策略和快照策略）将此保护状态与工作负载关联起来。了解更多<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="inline-link-rx"></block>，<block ref="2b1b7f994c6938347657a18d8edc7db7" category="inline-link-rx"></block> ， 和<block ref="591ebe16737e602cc342b68e859c040e" category="inline-link-rx"></block>。</block>
   <block id="ee1bc5da2dde4f02ef7aa47df921506a" category="doc">在NetApp Ransomware Resilience中管理警报</block>
   <block id="6fe459ab097d6c4270e2ad317a017b93" category="paragraph">警报事件可以具有以下几种状态：</block>
-  <block id="c95e7dd9856afddc701e5bf3b384f093" category="paragraph">审查事件后，您需要确定该事件是否是潜在的攻击。如果它们不构成实际威胁，就可以忽略不计。</block>
-  <block id="c73a9fafaefc34f0b97adbaba4200dc9" category="paragraph">您可以忽略误报或决定立即恢复数据。如果您忽略警报，勒索软件恢复功能会学习此行为并将其与正常操作关联起来，并且不会再次针对此类行为发出警报。</block>
   <block id="ea3cf0f8eb2106f78fd9e62d674bd7c0" category="list-text">选择一个或多个事件。或者，选择表格左上角的“事件 ID”框，即可选择所有事件。</block>
   <block id="845279243191f55592e2d4438456de67" category="list-text">在“编辑状态”框中，选择“已解雇”状态。</block>
   <block id="c66f0ec622b69a240be9821f2dbbb082" category="paragraph">显示了有关工作负载和快照副本被删除的更多信息。</block>
@@ -1881,7 +1877,6 @@
   <block id="dbc85b383817f560c0d1b083f4449627" category="list-text">测试连接性</block>
   <block id="870d0fb8b0bf7879e6ada101131c6864" category="list-text">查看富化作业的状态</block>
   <block id="5156f3fe3404db2816f53b4f01711a75" category="section-title">操作手册</block>
-  <block id="8ab0c1a60a7c0ca7e1eee721cf8a8924" category="list-text"><block ref="8ab0c1a60a7c0ca7e1eee721cf8a8924" category="inline-link-macro-rx"></block></block>
   <block id="4655146bfbabab7fd679c2d1ca7a8d15" category="list-text"><block ref="4655146bfbabab7fd679c2d1ca7a8d15" category="inline-link-macro-rx"></block></block>
   <block id="fcd13f38c6a87165a33577bfdd3654b4" category="inline-link-macro">Splunkbase</block>
   <block id="2a89449caab8a2ca7d825a1c6a44640c" category="admonition">对于 Splunk Cloud，您必须运行平台版本 7.0、7.1、7.2、8.0 或 8.4。有关详细信息，请参见<block ref="258077ff9a23292548ab7c25d009028a" category="inline-link-macro-rx"></block>。</block>
@@ -1901,7 +1896,6 @@
   <block id="895dff905f51ff367d108afbf6e634a7" category="inline-link-macro">SOAR 攻略</block>
   <block id="d8fdc2681cdec613a02ac551c44a6e8c" category="section-title">2026 年 3 月 31 日</block>
   <block id="d0c1ba6e120f697911d5bd92a51f0322" category="paragraph">Ransomware Resilience 现在为 <block ref="d942356c034f7ad3c314a5fae7d11e1d" category="inline-link-macro-rx"></block> 提供安全编排、自动化和响应 (SOAR) 攻略。该攻略可以更轻松地管理威胁响应，自动化任务和测试，并支持基本的勒索软件响应工作，包括创建快照和使卷脱机。</block>
-  <block id="dce0959f50faa93a47d141f615365404" category="paragraph">Ransomware Resilience 为 Google SecOps、Microsoft Sentinel 和 Splunk 提供操作手册。查看相应的 GitHub 页面以了解设置详细信息。</block>
   <block id="4f61a1c38b74708d0982090b3ace3f21" category="list-text">由于 Azure NetApp Files API 会阻止自动操作，因此建议不要将 <block ref="237628f5d72273fb0e39c8149431292e" category="inline-link-macro-rx"></block> 与 Azure NetApp Files 一起使用。</block>
   <block id="3aecb1c0d4a2579d6c2b4487309b2cdc" category="admonition">击退攻击后，无法将其更改回去。如果关闭工作负载，则为响应潜在的勒索软件攻击而自动创建的所有快照副本都将被永久删除。如果忽略警报，则认为准备演习已完成。</block>
   <block id="5dba46907e72d7502229329d2aafd8a2" category="list-text">Splunk Enterprise</block>
@@ -2752,4 +2746,12 @@
   <block id="4f453d8498e817d93a2c0554465ba5c9" category="list-text">选择要停止的 SIEM 系统的操作菜单（<block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>），然后选择*暂停*或*删除*。</block>
   <block id="38ddf84a5ab8383176b784d60f3f4942" category="paragraph">如果您要删除，请在确认对话框中选择*删除*以完成此操作。</block>
   <block id="24cebcb9541a6a3a7ee2888a734c6961" category="section-title">2026年7月27日</block>
+  <block id="3ac6600c6085e72cacdcb1dd48274907" category="list-text">识别用户行为模式以识别恶意用户活动。</block>
+  <block id="cea7288c4707622a327049f1efc1f09a" category="list-text">分配勒索软件防护策略。</block>
+  <block id="9853f1beb4647abf8719e30889039648" category="paragraph">Ransomware Resilience 为 Google SecOps、Microsoft Sentinel 和 Splunk 提供 playbook。请查看相关页面以了解设置详细信息。</block>
+  <block id="3eea574b43f2f6412368381aa7e9dc8a" category="inline-link-macro">GitHub 链接</block>
+  <block id="29b5adbc7a04c877456d237755b1e5e1" category="list-text"><block ref="f35f69abcb839f30e64f7800ed807b52" category="inline-link-macro-rx"></block> | <block ref="c3163b3c34297c2188fd1502baa6be3c" category="inline-link-macro-rx"></block></block>
+  <block id="843273e8b4d640d7a2b23ee18e37263a" category="paragraph">审核事件后，您需要确定这些事件是否为潜在攻击。如果它们不是实际威胁，则可以将其忽略。如果您忽略警报，则会永久删除为响应潜在勒索软件攻击而自动创建的所有快照副本。</block>
+  <block id="16f166ba2ceaca92e52aea587fb0114f" category="inline-link-macro">其他事件</block>
+  <block id="b7c7e492cc2a239de36bc7e713a56532" category="paragraph">对于由加密（熵）事件触发的警报，Ransomware Resilience 会从您解除警报的操作中学习，将该活动与正常操作相关联；将来，您将不会收到基于此类活动的警报。这是因为加密（熵）事件由 ARP/AI 管理。对于由<block ref="69f4bf74babfcd1e97eceb84702fb4ae" category="inline-link-macro-rx"></block>触发的警报，Ransomware Resilience 不会从解除操作中学习，因为这些警报基于用户活动模式。</block>
 </blocks>
