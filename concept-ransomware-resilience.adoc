@@ -195,6 +195,9 @@ Ransomware Resilience 可识别五种类型的勒索软件攻击：
 | 可疑的用户行为 | Ransomware Resilience 可识别数据泄露、数据销毁或加密范围之外的异常行为。 
 |===
 
+NOTE: 必须配置link:concept-user-behavior.html["用户活动检测"]以检测加密（用户行为）、数据泄露、数据销毁和可疑用户行为攻击。
+
+
 NOTE: 要识别应对攻击负责的特定用户，必须配置 link:concept-user-behavior.html["用户行为检测。"] Review link:rp-reference-limitations.html["限制"] 以查看您的系统是否支持用户活动检测。
 
 

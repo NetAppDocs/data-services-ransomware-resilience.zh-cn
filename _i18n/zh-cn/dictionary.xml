@@ -2529,12 +2529,7 @@
   <block id="f210e90dbf694c894759f78cc6d8b222" category="section-title">2026 年 6 月 29 日</block>
   <block id="acd27fc46144e7ce943b73180eb0d3a8" category="paragraph">在 NetApp Ransomware Resilience 中运行勒索软件攻击就绪演练，以测试您应对真实勒索软件攻击的准备情况。借助就绪演练，Ransomware Resilience 可模拟对新示例工作负载的攻击，使您能够调查模拟攻击并在不影响实际生产数据的情况下执行恢复。就绪演练可帮助您熟悉警报通知，并为响应和恢复做好准备。您可以根据需要随时运行演练。</block>
   <block id="65b568f05372e5de535ad8c825aeb375" category="inline-link-macro">干净恢复</block>
-  <block id="532361f2ad995113181b7cf1df1c5462" category="inline-link-macro">用户活动代理</block>
   <block id="74e66061c3c27ae398760dc1adda70dc" category="list-text">选择将在其中创建就绪性演练测试的环境。</block>
-  <block id="3026f14fd36d3165478399b611373fb8" category="list-text">选择 **Console agent** 和 **System**。</block>
-  <block id="7cbdec3ae1628850b555ad8bb540d67e" category="list-text">选择**系统**后，从预填充列表中选择 **Storage VM**。</block>
-  <block id="3db3fb74a2b36310b9059bb1932ec7ce" category="list-text">提供**New test workload**的名称。测试工作负载将以"rps_test_"为前缀。</block>
-  <block id="c30460d790febc2f1a11000f7e9dae5a" category="list-text">如果准备演练是为了数据泄露恢复，请为演练环境选择 **User activity agent**。</block>
   <block id="aa888903a6021760fd560a3f35a5fe39" category="paragraph">在审核此事件时，请考虑：</block>
   <block id="aa823a078e061b627817667be59a3966" category="list-text">潜在的攻击严重性。</block>
   <block id="993613047b942198cc7322f8e11f7420" category="list-text">如果应还原测试工作负载，请选择**标记需要还原**，然后在确认对话框中再次选择该按钮。</block>
@@ -2556,9 +2551,6 @@
   <block id="fe2b3b951ec2ee39e3b94a78b27d6b96" category="paragraph">启动演习时，Ransomware Resilience 会挂载卷，然后模拟勒索软件攻击。如果就绪演练用于自定义恢复或清洁恢复，则测试卷的基线数据将替换为已知为勒索软件的文件扩展名以及经过加密/熵修改的文件。对于数据泄露恢复演习，文件不会被替换；相反，Ransomware Resilience 会模拟攻击者系统地读取和泄露数据。无论演习类型如何，Ransomware Resilience 都会触发警报并验证警报是否成功生成。</block>
   <block id="ec48be06a1fa5ff039c9c72596c427f2" category="paragraph">运行演练时，您可以测试对警报的响应，并可选择在不影响真实数据的情况下逐步完成恢复过程。</block>
   <block id="5c443c5dabb6ec11bf27dce07c9fd377" category="inline-link-macro">自定义还原</block>
-  <block id="e17d87cf10e73e1e3694a18b0b70c7af" category="list-text">**自定义恢复**：使用<block ref="80fac8a28dde36dd3a08a6d3cf5b9f5b" category="inline-link-macro-rx"></block>响应加密（熵）攻击，您可以在其中配置恢复点。</block>
-  <block id="22db649015dad497d63774a6e7d2af47" category="list-text">**清理还原**：使用<block ref="d08d369745dba9c2b6dd002a205d6b5a" category="inline-link-macro-rx"></block>恢复过程响应加密（熵）攻击，该过程将引导您进入优化的恢复点。</block>
-  <block id="e3b01c4848ac6d1626374e4dee0f0685" category="list-text">**数据泄露恢复**：您必须先配置 <block ref="ea7722fd5c2c373bdaffcbde2ca3bbf6" category="inline-link-macro-rx"></block>，然后才能启用此演练类型。</block>
   <block id="05d14520f5a3fd970bfca710b43ae17a" category="admonition">无法在演练运行时编辑就绪演练配置。要修改就绪演练，请选择**重置**，然后编辑演练。</block>
   <block id="7820d7f245e7637e7833faccb183f36d" category="admonition">对于可疑用户行为的自动响应，您只能拍摄快照。不支持将阻止用户作为对可疑用户行为的自动响应。</block>
   <block id="ddebb8e31f83ddb3bde0b3a0292845dc" category="doc">从用户行为警报中排除文件路径</block>
@@ -2714,8 +2706,6 @@
   <block id="90c6a30d04a39029a6e718b3311fb6ab" category="inline-link-macro">禁用 SIEM 系统</block>
   <block id="904e41b296efab284eaa1062cf1e6a27" category="paragraph">有关详细信息，请参见<block ref="1d48f23238788ac75029406ac49f8f92" category="inline-link-macro-rx"></block>。</block>
   <block id="684a7ad3aa334bfb6a33e395013bd6dc" category="paragraph">Ransomware Resilience 可识别五种类型的勒索软件攻击：</block>
-  <block id="c561c7b7a5170672935dea9403fc0a6f" category="inline-link-macro">DII webhook</block>
-  <block id="ce4bce909d8d6789b9f388dbbef0758a" category="admonition">如果您已配置工作负载安全，则可以通过 <block ref="23692858bbea3b07ede2665f2c7f119e" category="inline-link-macro-rx"></block> 配置警报。</block>
   <block id="c6bd820ffcfcad26c449f0454fae72c1" category="list-text">Google Cloud NetApp Volumes 目前不支持带有复制的保护策略</block>
   <block id="392d723534b3a09775f3b6831eba4f37" category="section-title">SAN存储限制</block>
   <block id="eecebb362641b58fec88bb08c4168447" category="paragraph">以下限制适用于 SAN（块存储）工作负载：</block>
@@ -2724,7 +2714,6 @@
   <block id="41bc5402792c9ae6e031743791c37485" category="list-text">SAN 工作负载只能使用 <block ref="f4ee3b399c8cc5fca837364c0d9badb9" category="inline-link-macro-rx"></block> 进行还原。清除还原当前不适用于 SAN 工作负载。</block>
   <block id="2428514fe4a71be9aaa049c0588b7a22" category="paragraph">在运行模拟之前，必须配置就绪演练。必须为特定类型的勒索软件攻击创建就绪演练。Ransomware Resilience 可识别五种类型的攻击：</block>
   <block id="e820571d07203de22d81bf2d3a43c57d" category="list-text">在"设置"页面的"就绪演练"卡中，选择*配置*。</block>
-  <block id="5a6ea2c21bfdd4f145b28691ccbbba4f" category="paragraph">控制台(Console)将显示"配置就绪性演练"页面。</block>
   <block id="f39a3376d8471d16df7b03506f1e81b3" category="inline-image-macro">配置就绪性演练页面</block>
   <block id="4733f8632e3639026823ab315aa1fde4" category="paragraph"><block ref="4733f8632e3639026823ab315aa1fde4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="041d149b109ce93c233e52cd24f679bf" category="list-text">选择*勒索软件攻击类型*。</block>
@@ -2754,4 +2743,12 @@
   <block id="843273e8b4d640d7a2b23ee18e37263a" category="paragraph">审核事件后，您需要确定这些事件是否为潜在攻击。如果它们不是实际威胁，则可以将其忽略。如果您忽略警报，则会永久删除为响应潜在勒索软件攻击而自动创建的所有快照副本。</block>
   <block id="16f166ba2ceaca92e52aea587fb0114f" category="inline-link-macro">其他事件</block>
   <block id="b7c7e492cc2a239de36bc7e713a56532" category="paragraph">对于由加密（熵）事件触发的警报，Ransomware Resilience 会从您解除警报的操作中学习，将该活动与正常操作相关联；将来，您将不会收到基于此类活动的警报。这是因为加密（熵）事件由 ARP/AI 管理。对于由<block ref="69f4bf74babfcd1e97eceb84702fb4ae" category="inline-link-macro-rx"></block>触发的警报，Ransomware Resilience 不会从解除操作中学习，因为这些警报基于用户活动模式。</block>
+  <block id="7f45ddc4c3a6264fe6af09d0feee6f8d" category="admonition">必须配置<block ref="9403988536e87b1b5fabe2157e11581a" category="inline-link-macro-rx"></block>以检测加密（用户行为）、数据泄露、数据销毁和可疑用户行为攻击。</block>
+  <block id="b9ccc4643a22220649cf7d8c1358ebd7" category="list-text">要为除加密（熵）之外的任何勒索软件攻击类型配置就绪性演练，必须已配置 <block ref="9403988536e87b1b5fabe2157e11581a" category="inline-link-macro-rx"></block>。</block>
+  <block id="f0bfc00f8922a4e1668398e3aee15cb8" category="list-text">为 CIFS 工作负载创建就绪演练时，必须输入用户凭据。您应该为就绪演练创建一个专用的非生产测试用户，特别是在测试用户活动攻击类型（即数据泄露）时。如果使用真实的生产用户，Ransomware Resilience 会标记该用户，这可能会导致用户无法访问生产数据。如果使用测试用户，则所有用户都会保持对数据的正常访问。</block>
+  <block id="19783acd6c7b7340a835a629f68c513c" category="list-text">选择**控制台代理**和**主系统**。</block>
+  <block id="304fbd9397bc28472932705b6e4b3a45" category="list-text">选择主系统后，从预填充列表中选择 **Storage VM**。</block>
+  <block id="ee17fa61bd4957effe2be9aad90f9b39" category="list-text">如果存储虚拟机使用 CIFS 协议，请输入 Active Directory 凭据。您可以选择输入 **Active Directory domain**；您必须输入 **User name** 和 **Password**。建议您输入专用测试用户的凭据。</block>
+  <block id="2bc2801a047dbf24f0ad5f6ab66903a3" category="list-text">提供 **New test workload** 的名称。测试工作负载的前缀为<block ref="4d57df3ec0851a6b7ee80abd6c45cb4f" prefix=" " category="inline-code"></block>。</block>
+  <block id="bcb62c4e0257dc7f7e53d4080b48c067" category="list-text">如果就绪演练适用于用户活动攻击类型，请为演练环境选择**用户活动代理**。</block>
 </blocks>

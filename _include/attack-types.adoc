@@ -21,3 +21,5 @@
 
 | 可疑的用户行为 | Ransomware Resilience 可识别数据泄露、数据销毁或加密范围之外的异常行为。 
 |===
+
+NOTE: 必须配置link:concept-user-behavior.html["用户活动检测"]以检测加密（用户行为）、数据泄露、数据销毁和可疑用户行为攻击。

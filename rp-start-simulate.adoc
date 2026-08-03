@@ -55,30 +55,30 @@ summary: 通过模拟对示例工作负载的勒索软件攻击来进行勒索�
 
 | 可疑的用户行为 | Ransomware Resilience 可识别数据泄露、数据销毁或加密范围之外的异常行为。 
 |===
+
+NOTE: 必须配置link:concept-user-behavior.html["用户活动检测"]以检测加密（用户行为）、数据泄露、数据销毁和可疑用户行为攻击。
+
 *需要控制台角色* 要执行此任务，需要 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["超级管理员"^] 或 Ransomware Resilience 管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^]。
+
+.开始之前
+* 要为除加密（熵）之外的任何勒索软件攻击类型配置就绪性演练，必须已配置 link:concept-user-behavior.html["用户活动检测"]。
+* 为 CIFS 工作负载创建就绪演练时，必须输入用户凭据。您应该为就绪演练创建一个专用的非生产测试用户，特别是在测试用户活动攻击类型（即数据泄露）时。如果使用真实的生产用户，Ransomware Resilience 会标记该用户，这可能会导致用户无法访问生产数据。如果使用测试用户，则所有用户都会保持对数据的正常访问。
+
 
 .步骤
 . 在勒索软件恢复功能中，选择**设置**。
 . 在"设置"页面的"就绪演练"卡中，选择*配置*。
 +
-控制台(Console)将显示"配置就绪性演练"页面。
-
-+
 image:screen-settings-alert-drill-configure.png["配置就绪性演练页面"]
 
 . 选择*勒索软件攻击类型*。
-+
-** **自定义恢复**：使用link:rp-use-recover.html["自定义还原"]响应加密（熵）攻击，您可以在其中配置恢复点。
-** **清理还原**：使用link:task-clean-restore-recover.html["干净恢复"]恢复过程响应加密（熵）攻击，该过程将引导您进入优化的恢复点。
-** **数据泄露恢复**：您必须先配置 link:suspicious-user-activity.html["用户活动代理"]，然后才能启用此演练类型。
-
-
 . 选择将在其中创建就绪性演练测试的环境。
 +
-.. 选择 **Console agent** 和 **System**。
-.. 选择**系统**后，从预填充列表中选择 **Storage VM**。
-.. 提供**New test workload**的名称。测试工作负载将以"rps_test_"为前缀。
-.. 如果准备演练是为了数据泄露恢复，请为演练环境选择 **User activity agent**。
+.. 选择**控制台代理**和**主系统**。
+.. 选择主系统后，从预填充列表中选择 **Storage VM**。
+.. 如果存储虚拟机使用 CIFS 协议，请输入 Active Directory 凭据。您可以选择输入 **Active Directory domain**；您必须输入 **User name** 和 **Password**。建议您输入专用测试用户的凭据。
+.. 提供 **New test workload** 的名称。测试工作负载的前缀为 `rps_test_`。
+.. 如果就绪演练适用于用户活动攻击类型，请为演练环境选择**用户活动代理**。
 
 
 . 选择*保存*。

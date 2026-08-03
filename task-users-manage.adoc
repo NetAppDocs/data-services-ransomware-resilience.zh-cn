@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-users-manage.html 
-keywords: user activity detection, 
+keywords: user activity detection, block user, stop alerts, exclude users, alert management 
 summary: 在 NetApp Ransomware Resilience 中创建用户目录连接器后，您可以阻止和取消阻止用户，并从警报中排除用户。您还可以从生成警报中排除文件路径。 
 ---
 = 在 NetApp Ransomware Resilience 中管理警报和阻止的用户
