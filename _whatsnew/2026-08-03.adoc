@@ -1,0 +1,21 @@
+= Google Cloud NetApp Volumes 的 SAN 支持（预览）
+:allow-uri-read: 
+
+
+
+
+[[san-support-for-google-cloud-netapp-volumes-preview]]
+=== Google Cloud NetApp Volumes 的 SAN 支持（预览）
+
+Ransomware Resilience 现在为来自 Google Cloud NetApp Volumes 的 SAN 工作负载提供支持，使您能够检测针对 SAN 工作负载的基于加密的勒索软件攻击。Google Cloud NetApp Volumes 中对 SAN 的支持目前处于预览阶段。
+
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html#supported-systems["支持的系统"^] 和 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-limitations.html#azure-netapp-files-limitations["勒索软件弹性中的 SAN 存储"^]。
+
+
+
+[[streamlined-interface-for-user-blocking]]
+=== 用于用户屏蔽的简化界面
+
+Ransomware Resilience现在提供简化的用户体验来阻止用户和管理被阻止的用户。通过此更新，您可以轻松查看和修改已阻止的用户。您必须已配置 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-user-behavior.html["用户活动检测"^] 才能阻止用户。
+
+有关详细信息，请参见link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-users-manage.html#manage-blocked-users["管理被阻止的用户"^]。

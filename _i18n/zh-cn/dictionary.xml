@@ -1619,7 +1619,6 @@
   <block id="f31838bfd1a4d7d1cc348bb0e79249aa" category="sidebar">了解用户活动检测</block>
   <block id="851ba516be036ed05e26d4e1aa17e994" category="sidebar">配置代理和收集器</block>
   <block id="f00a921e7dbbed8405cd9ce5fce914d3" category="list-text">*VM SSH Key* - 使用以下格式输入 SSH 密钥：</block>
-  <block id="6180003c782f1663eb2df1464acac0bd" category="cell">CIFS、NFS 和 SAN</block>
   <block id="691a3e8e2059e924160a8104310f552d" category="paragraph">Ransomware Resilience 现在支持将快照复制添加到辅助 ONTAP 站点。使用复制策略的保护组，您可以为每个工作负载复制到相同的目标或不同的目标。您可以创建包括复制的勒索软件保护策略或使用预定义策略。</block>
   <block id="17dfbc312023bdd4da992d8e751e72ac" category="doc">Azure NetApp Files 支持</block>
   <block id="ea2f778dfb597a4b527dac7e944ad95b" category="paragraph">Ransomware Resilience 现在支持 Azure NetApp Files 系统，使您能够有效检测和响应 Azure NetApp Files 中的勒索软件威胁。当您发现工作负载时，Ransomware Resilience 现在会显示 Azure NetApp Files 并将其显示在保护仪表板中。Ransomware Resilience 对 Azure NetApp Files 的支持仅包括快照检测和保护策略。对 Azure NetApp Files 的支持当前处于预览状态。</block>
@@ -2460,7 +2459,6 @@
   <block id="b4bada7d854e6650f9cc28e404fe40fb" category="admonition">对于部署到 Amazon FSx for NetApp ONTAP 的 IRE，无需提供此信息。</block>
   <block id="f5b6822ed53c8f99c424ea0e8e011bf7" category="admonition">Ransomware Resilience 每个控制台代理最多只能发现 3,000 个工作负载。</block>
   <block id="bb4393b6187d55f98dbeb4c5bb8add00" category="list-text">每个 Console 代理的工作负载上限为 3,000 个。</block>
-  <block id="8df5e57d843114bbbb53a4c85f76cb68" category="list-text">来自 Google Cloud NetApp Volumes 的 SAN 工作负载目前在 Ransomware Resilience 中不受支持。</block>
   <block id="afce532bad172bcef50d75935d2ed43b" category="list-text">复制策略</block>
   <block id="fb9721f24a420ba827ac36665b13797e" category="doc">自动响应用户活动警报</block>
   <block id="5b29c2b1307b96a1557ab05a56715041" category="paragraph">Ransomware Resilience 现在支持在生成用户活动警报时自动创建快照和阻止用户。通过自动响应，您可以在生成警告后立即阻止用户，并创建快照进行恢复，从而无需手动干预即可更快地响应。</block>
@@ -2513,12 +2511,10 @@
   <block id="93e35e2f3f7138fcbfc327d758e1ec96" category="list-text">在设置仪表板中，找到用户活动监控图块，然后选择**管理**。</block>
   <block id="2361358ff14122114e736beff61c48a2" category="list-text">选择**Users**选项卡。</block>
   <block id="766067e25ac4a8f22dad6344937ca56d" category="list-text">选择**Block users**。</block>
-  <block id="b00b5ebe4a8164319e36e4bbef8f727f" category="list-text">选择屏蔽持续时间：可以是1小时到24小时，也可以是永久屏蔽。</block>
   <block id="50d68502e7fbfa82f99e1abb688a948f" category="list-text">选中要阻止的用户名称旁边的复选框。</block>
   <block id="126b3c7582135a76321582de4bcad51d" category="list-text">选择 **Block**。</block>
   <block id="23e9aa0fec2a06ec7f4b6f9076d62992" category="list-title">修改阻止的用户列表</block>
   <block id="3d06dabf3eaa23797059f7fffa998cfd" category="list-text">选择**编辑用户屏蔽**。</block>
-  <block id="e2d552c6afc3cd9e9e5367d429f832c4" category="list-text">选择修改。要修改阻止的持续时间，请选择 **被阻止用户的时间段**，然后修改持续时间。要从阻止的用户列表中删除用户，请选择 **取消阻止用户**。</block>
   <block id="4ecd815bab325d10795007a2e86d0a31" category="list-text">选中要更改其状态的被阻止用户的名称旁边的复选框。</block>
   <block id="8d5311b8775f8a9ea8945d76095bb698" category="list-text">选择**保存**。</block>
   <block id="bf21122a37b943f2b70a86b30f0af377" category="list-text">选择 **Excluded from monitoring** 选项卡。</block>
@@ -2709,7 +2705,6 @@
   <block id="c6bd820ffcfcad26c449f0454fae72c1" category="list-text">Google Cloud NetApp Volumes 目前不支持带有复制的保护策略</block>
   <block id="392d723534b3a09775f3b6831eba4f37" category="section-title">SAN存储限制</block>
   <block id="eecebb362641b58fec88bb08c4168447" category="paragraph">以下限制适用于 SAN（块存储）工作负载：</block>
-  <block id="aff0472c8383011d738831a8c39c42c6" category="list-text">Ransomware Resilience目前不支持来自Google Cloud NetApp Volumes的SAN工作负载。</block>
   <block id="2d2a397baa743b0954cf57d074ff1a05" category="list-text">当 Ransomware Resilience 为 SAN 工作负载生成警告时，这些警告仅基于高熵。</block>
   <block id="41bc5402792c9ae6e031743791c37485" category="list-text">SAN 工作负载只能使用 <block ref="f4ee3b399c8cc5fca837364c0d9badb9" category="inline-link-macro-rx"></block> 进行还原。清除还原当前不适用于 SAN 工作负载。</block>
   <block id="2428514fe4a71be9aaa049c0588b7a22" category="paragraph">在运行模拟之前，必须配置就绪演练。必须为特定类型的勒索软件攻击创建就绪演练。Ransomware Resilience 可识别五种类型的攻击：</block>
@@ -2745,10 +2740,23 @@
   <block id="b7c7e492cc2a239de36bc7e713a56532" category="paragraph">对于由加密（熵）事件触发的警报，Ransomware Resilience 会从您解除警报的操作中学习，将该活动与正常操作相关联；将来，您将不会收到基于此类活动的警报。这是因为加密（熵）事件由 ARP/AI 管理。对于由<block ref="69f4bf74babfcd1e97eceb84702fb4ae" category="inline-link-macro-rx"></block>触发的警报，Ransomware Resilience 不会从解除操作中学习，因为这些警报基于用户活动模式。</block>
   <block id="7f45ddc4c3a6264fe6af09d0feee6f8d" category="admonition">必须配置<block ref="9403988536e87b1b5fabe2157e11581a" category="inline-link-macro-rx"></block>以检测加密（用户行为）、数据泄露、数据销毁和可疑用户行为攻击。</block>
   <block id="b9ccc4643a22220649cf7d8c1358ebd7" category="list-text">要为除加密（熵）之外的任何勒索软件攻击类型配置就绪性演练，必须已配置 <block ref="9403988536e87b1b5fabe2157e11581a" category="inline-link-macro-rx"></block>。</block>
-  <block id="f0bfc00f8922a4e1668398e3aee15cb8" category="list-text">为 CIFS 工作负载创建就绪演练时，必须输入用户凭据。您应该为就绪演练创建一个专用的非生产测试用户，特别是在测试用户活动攻击类型（即数据泄露）时。如果使用真实的生产用户，Ransomware Resilience 会标记该用户，这可能会导致用户无法访问生产数据。如果使用测试用户，则所有用户都会保持对数据的正常访问。</block>
   <block id="19783acd6c7b7340a835a629f68c513c" category="list-text">选择**控制台代理**和**主系统**。</block>
   <block id="304fbd9397bc28472932705b6e4b3a45" category="list-text">选择主系统后，从预填充列表中选择 **Storage VM**。</block>
   <block id="ee17fa61bd4957effe2be9aad90f9b39" category="list-text">如果存储虚拟机使用 CIFS 协议，请输入 Active Directory 凭据。您可以选择输入 **Active Directory domain**；您必须输入 **User name** 和 **Password**。建议您输入专用测试用户的凭据。</block>
   <block id="2bc2801a047dbf24f0ad5f6ab66903a3" category="list-text">提供 **New test workload** 的名称。测试工作负载的前缀为<block ref="4d57df3ec0851a6b7ee80abd6c45cb4f" prefix=" " category="inline-code"></block>。</block>
   <block id="bcb62c4e0257dc7f7e53d4080b48c067" category="list-text">如果就绪演练适用于用户活动攻击类型，请为演练环境选择**用户活动代理**。</block>
+  <block id="25d6353f95c07b9bbb1938a285d3c2ec" category="cell">CIFS、NFS 和 SAN（iSCSI &amp; NVMe）</block>
+  <block id="ae5d941662c7f934b5502d0e4416f1af" category="doc">Google Cloud NetApp Volumes 的 SAN 支持（预览）</block>
+  <block id="6d44daef9f0109d0d9941a1214218bd6" category="paragraph">Ransomware Resilience 现在为来自 Google Cloud NetApp Volumes 的 SAN 工作负载提供支持，使您能够检测针对 SAN 工作负载的基于加密的勒索软件攻击。Google Cloud NetApp Volumes 中对 SAN 的支持目前处于预览阶段。</block>
+  <block id="b49d323c627c43fecd97c8db6ea7f66c" category="inline-link-macro">支持的系统</block>
+  <block id="fa83a4a163069ca1ab2dcb9be3c41063" category="inline-link-macro">勒索软件弹性中的 SAN 存储</block>
+  <block id="2f244f2c363848263100f25323c23895" category="paragraph">有关详细信息，请参见 <block ref="3a3cd00a16a1bca6c18ece5051fc5ba1" category="inline-link-macro-rx"></block> 和 <block ref="740b3aa4325052238b6cf8ff4cb1a868" category="inline-link-macro-rx"></block>。</block>
+  <block id="053cc8d4a507db8f7d33d7c9eb844923" category="section-title">用于用户屏蔽的简化界面</block>
+  <block id="16d39f5d27761daa66696ada0758791c" category="paragraph">Ransomware Resilience现在提供简化的用户体验来阻止用户和管理被阻止的用户。通过此更新，您可以轻松查看和修改已阻止的用户。您必须已配置 <block ref="0a9171a9aac1e029e209b0c543045273" category="inline-link-macro-rx"></block> 才能阻止用户。</block>
+  <block id="21d100db43907eec54cab4e115af7c6b" category="inline-link-macro">管理被阻止的用户</block>
+  <block id="9d82773616a9fd5b52190dd3b03a9d0d" category="paragraph">有关详细信息，请参见<block ref="c715c16e5dd5464a8f58103938ef0f46" category="inline-link-macro-rx"></block>。</block>
+  <block id="32b39b7e5c37ca140c51e2bebb918db4" category="list-text">为 CIFS 工作负载创建就绪演练时，必须输入用户凭据。应为就绪演练创建一个专用的非生产测试用户，尤其是在测试用户活动攻击类型（即数据泄露）时。如果使用真实的生产用户，并且该用户在其他生产卷上存在可疑行为，则这些警报可能会显示在就绪演练下，而不会生成真实的警报。</block>
+  <block id="a4eaf16125aa6fca833d794fb9973715" category="list-text">选择阻止的持续时间。您可以永久阻止用户，也可以指定持续 1 到 24 小时的阻止。</block>
+  <block id="13c987b30f267e394b26e24839fb92c5" category="list-text">选择要更改的用户屏蔽类型。要修改屏蔽的持续时间，请选择**被屏蔽用户的时间段**，然后修改**时间段**。要从被屏蔽用户列表中删除用户，请选择**取消屏蔽用户**。</block>
+  <block id="91d90ea5487ed9ed44e834f42f272ccb" category="section-title">2026年8月3日</block>
 </blocks>
