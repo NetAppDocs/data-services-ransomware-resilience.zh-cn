@@ -2759,4 +2759,46 @@
   <block id="a4eaf16125aa6fca833d794fb9973715" category="list-text">选择阻止的持续时间。您可以永久阻止用户，也可以指定持续 1 到 24 小时的阻止。</block>
   <block id="13c987b30f267e394b26e24839fb92c5" category="list-text">选择要更改的用户屏蔽类型。要修改屏蔽的持续时间，请选择**被屏蔽用户的时间段**，然后修改**时间段**。要从被屏蔽用户列表中删除用户，请选择**取消屏蔽用户**。</block>
   <block id="91d90ea5487ed9ed44e834f42f272ccb" category="section-title">2026年8月3日</block>
+  <block id="b700da57cfa6064a3a99f16451783306" category="inline-link-macro">排查用户活动代理故障</block>
+  <block id="ab0f1d5b53a905133ff0037803d03914" category="list-text"><block ref="ab0f1d5b53a905133ff0037803d03914" category="inline-link-macro-rx"></block></block>
+  <block id="6530773a15d5d00aace1c113ea2f2033" category="summary">如果您在 NetApp Ransomware Resilience 中安装用户活动代理时遇到问题，请查看以下常见方案和解决方案。</block>
+  <block id="05c2ede621cda31177de66257857caaa" category="doc">对 NetApp Ransomware Resilience 中的用户活动代理问题进行故障排除</block>
+  <block id="0bf1ea5135b77a15f13a18e7a5e55640" category="paragraph">如果您在 NetApp Ransomware Resilience 中安装或运行用户活动代理时遇到问题，请查看以下常见方案和解决方案。</block>
+  <block id="138c9c632fafe7daee2879cfb941a53e" category="section-title">安装问题</block>
+  <block id="642facf67e0ad311eee88b3ab8381590" category="cell">问题描述</block>
+  <block id="b5a4b64b2aa505bd7c11f79b8a9f458d" category="cell">解决方法</block>
+  <block id="95554c9d3da4ed0c2b0d1af3ab79b5f6" category="cell">用户活动代理安装无法创建 /opt/netapp/cloudsecure/agent/logs/agent.log 文件夹，且 install.log 文件未提供相关信息。</block>
+  <block id="3cf70191a495e63bca49de4740b52983" category="cell">此错误发生在代理的引导过程中。该错误未记录在日志文件中，因为它发生在初始化之前。该错误被重定向到标准输出。使用命令<block ref="f66ee45f9a926233b13f330bfa05ee2e" prefix=" " category="inline-code"></block>查看错误。</block>
+  <block id="3e5ab7bd9ff230d70540950bbe6a7b81" category="cell">用户活动代理安装失败，错误为"不支持此 Linux 发行版。正在退出安装。"</block>
+  <block id="ff2d7bdfcf9a7b38e98593543f56cf87" category="cell">此错误表示您的系统不符合系统要求。在尝试安装之前，请查看系统要求并进行任何必要的更新。</block>
+  <block id="cb4cc8adb937ce18d121568482834d4b" category="cell">用户活动代理安装失败，错误为"-bash: unzip: command not found."</block>
+  <block id="aebdd17ea52ec903d297f4e7016367be" category="cell">请确保已安装 unzip；如果已安装 Yum，请运行<block ref="009949454ea71ce7b73894952ca76734" prefix=" " category="inline-code"></block>以安装 unzip。然后，再次尝试安装。</block>
+  <block id="6ee47dac78e58461f858c2a400f8fbd8" category="cell">用户活动代理 VM 位于 Zscaler 代理后面，安装失败。</block>
+  <block id="b682ff357c62aafced1876d9c1a79f3a" category="cell">在 Zscaler 代理中禁用 *.cloudinsights.netapp.com URL 的 SSL 检查。</block>
+  <block id="546fa2913bb5c5d549cb469cd67b0e9d" category="cell">安装代理时，解压后安装挂起。</block>
+  <block id="66aeb84510c68ebec2d42a85eecac870" category="cell">如果在代理安装期间<block ref="f6d34abde2f21c955bd3e456645a2197" prefix=" " category="inline-code"></block>命令失败，则该命令由非根<block ref="d338b3f0f405eb5e51c8cc1e5ca66f02" prefix=" " category="inline-code"></block>用户运行，其工作目录中的文件属于其他用户，并且无法更改权限。因此，安装失败。要解决此问题，请创建一个名为"cloudsecure"的新目录，输入该目录，复制并粘贴完整<block ref="d15129fe161ca35e7d0c7ae58af9624e" prefix=" " category="inline-code"></block>安装命令，然后按 Enter 键。安装应继续进行。如果安装仍然失败，请打开支持案例。</block>
+  <block id="3b3ea4b9d9acd87513a766f3da2c5f19" category="cell">cloudsecure-agent-symptom-collector.sh 脚本失败，错误为"ERROR: Failed to create /tmp/cloudsecure-agent-symptoms.zip"</block>
+  <block id="8f5c411082a9edb45e09aae7eb113f08" category="cell">使用命令<block ref="50a148cc0ca623b1f92ea86676730f9c" prefix=" " category="inline-code"></block>安装 zip 工具，然后再次运行<block ref="eac544ce8c128848269701508d796823" prefix=" " category="inline-code"></block>。</block>
+  <block id="dfe80d67171c6864a41131519bde31c6" category="cell">用户活动代理安装失败，错误为"useradd: cannot create directory /home/cssys."</block>
+  <block id="6ebfb63994f720f414d7cd0c1ce9394b" category="cell">由于权限错误，无法在 /home 目录下创建用户的登录目录。使用命令<block ref="d5ba9a9474fc171d7c8d8e0ad71f99d9" prefix=" " category="inline-code"></block>创建 cssys 用户并手动添加其登录目录。在此命令中，<block ref="67dd1c0d4e68c367b980f8723c781cb1" prefix=" " category="inline-code"></block>用于在主目录不存在时创建主目录；<block ref="9b017020b9d48d433ec90c548e6b5c70" prefix=" " category="inline-code"></block>将 HOME_DIR 指定为登录目录。</block>
+  <block id="42d43cc689659f07ff3b2ee6aefe325f" category="section-title">安装后问题</block>
+  <block id="df68cb1932706c8ebd7f20481ae974ea" category="paragraph">安装后用户活动代理未运行。运行命令<block ref="67e0ddefd3ec3e28b4e12105cb34b420" prefix=" " category="inline-code"></block>后，输出显示：</block>
+  <block id="ddfe2967e6e4d9a543ac7c4fb69565f8" category="paragraph">如果 /opt/netapp 是 NFS 挂载，并且 cssys 用户没有此文件夹的访问权限，则安装将失败。用户 cssys 是由用户活动代理安装程序创建的本地用户，可能没有访问已挂载共享的权限。</block>
+  <block id="ccb8614448c8a3dd288d1c4a6d113fc9" category="paragraph">您可以通过尝试使用 cssys 用户访问<block ref="a4640d7e192f303c62b212c51749701f" prefix=" " category="inline-code"></block>来检查权限。如果返回"Permission denied"，则表示尚未设置相应的权限。安装在计算机的本地目录上，而不是挂载的文件夹上。</block>
+  <block id="2e2b00887898ca1100fef35d85ca907a" category="cell">代理已通过代理服务器连接，但自安装以来代理服务器已更改。如何更改代理配置？</block>
+  <block id="e4418c3e313b07109294854b13046e50" category="paragraph">编辑 agent.properties 代理设置：</block>
+  <block id="7324f0c1af695de16c5df9b86e6daff8" category="list-text">更改为包含属性文件的文件夹：<block ref="671d5ae47ef48cbcb95a674f7f707149" prefix=" " category="inline-code"></block></block>
+  <block id="f6910ffb5e1be669394adba937beaedc" category="list-text">在文本编辑器中打开 agent.properties 文件。</block>
+  <block id="bef62bbed6bbdd85b19a2b5e475bbc0c" category="list-text">添加或修改以下行：</block>
+  <block id="01d3a32280cc94c7c057cd3d14488785" category="list-text">保存文件。</block>
+  <block id="502681bb78d68cfa1b3c961db02d4357" category="list-text">重新启动代理：<block ref="93ef545658eafd48b45fa315628953ae" prefix=" " category="inline-code"></block>。</block>
+  <block id="d15b2119678954d1978297a28988a5b1" category="cell">代理已成功安装并正在运行，但已意外停止。</block>
+  <block id="7fdfc836a49d0bf719b937df1f9859b1" category="list-text">通过 SSH 在代理计算机上进行身份验证，以检查服务的状态。通过<block ref="de0bfd4520e6fec9f1a67c5c65dc2b8c" prefix=" " category="inline-code"></block>检查代理服务的状态。</block>
+  <block id="16d0e3faf3ba4d341ffb49cf55130fd1" category="list-text">检查日志中是否有消息"Failed to start Workload Security daemon service."</block>
+  <block id="1e9e268f828d80c922c9288d979ddad8" category="list-text">检查 cssys 用户是否存在于用户活动代理计算机上。执行以下命令分别检查 cssys 用户和组是否存在：<block ref="3fbe5fb69735e2e03c1033b5d770f987" prefix=" " category="inline-code"></block> then<block ref="90fbe621dbd81400f16a0b008b94bf8e" prefix=" " category="inline-code"></block>。</block>
+  <block id="d3c2be43961c54361b292c3fc26207b5" category="list-text">如果该用户或组不存在，则可能是集中式监控策略删除了 cssys 用户。通过执行以下命令手动创建 cssys 用户和组：<block ref="8937b77ac48c04b1a59db03ac67cc0ab" prefix=" " category="inline-code"></block> then<block ref="52c7bef22d9584c015612923423826d7" prefix=" " category="inline-code"></block>。</block>
+  <block id="07f76ac553d5513ea3f3f1e4bef7ac2a" category="list-text">重新启动代理服务：<block ref="93ef545658eafd48b45fa315628953ae" prefix=" " category="inline-code"></block>。</block>
+  <block id="6ad1cd924ce29ff4da20eeb96e077f1d" category="cell">此用户活动代理状态未连接</block>
+  <block id="39c8406466e54746b73ade6daa657064" category="cell">重新启动代理。通过 SSH 向用户活动代理计算机进行身份验证，然后使用命令<block ref="93ef545658eafd48b45fa315628953ae" prefix=" " category="inline-code"></block>重新启动代理。重新启动后，使用命令<block ref="de0bfd4520e6fec9f1a67c5c65dc2b8c" prefix=" " category="inline-code"></block>检查代理的状态。如果重新启动操作成功，则输出显示"CONNECTED"</block>
+  <block id="713ea46594970b91c034ec702b329399" category="sidebar">排查用户活动代理故障</block>
 </blocks>

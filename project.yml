@@ -58,6 +58,8 @@ sidebar:
           url: "/suspicious-user-activity.html"
         - title: 管理警报和被阻止的用户
           url: "/task-users-manage.html"
+        - title: 排查用户活动代理故障
+          url: "/troubleshoot-user-activity.html"
       - title: 管理保护组
         url: "/task-protection-group.html"
       - title: 扫描个人身份信息

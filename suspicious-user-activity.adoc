@@ -178,4 +178,5 @@ image:screenshot-user-directory-connection.png["用户目录连接的屏幕截�
 == 后续步骤
 
 * link:task-users-manage.html["管理警报设置和阻止的用户"]
+* link:troubleshoot-user-activity.html["排查用户活动代理故障"]
 
