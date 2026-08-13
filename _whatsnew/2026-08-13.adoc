@@ -1,0 +1,12 @@
+= 删除数据收集器
+:allow-uri-read: 
+
+
+
+
+[[delete-a-data-collector]]
+=== 删除数据收集器
+
+勒索软件弹性现在支持删除数据收集器。对工作负载启用用户活动检测时，将自动创建数据收集器；如果数据收集器过时，您现在可以手动删除它。
+
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#delete-a-data-collector["删除数据收集器"^]。
