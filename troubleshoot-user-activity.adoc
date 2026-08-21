@@ -11,7 +11,7 @@ summary: 如果您在 NetApp Ransomware Resilience 中安装用户活动代理�
 
 
 [role="lead"]
-如果您在 NetApp Ransomware Resilience 中安装或运行用户活动代理时遇到问题，请查看以下常见方案和解决方案。
+如果您在 NetApp Ransomware Resilience 中安装或运行用户活动代理时遇到问题，请查看这些常见方案和解决方案。
 
 
 

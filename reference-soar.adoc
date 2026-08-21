@@ -11,7 +11,7 @@ summary: 集成和使用 SOAR 攻略，实现 NetApp Ransomware Resilience 威�
 
 
 [role="lead"]
-Ransomware Resilience 提供安全编排、自动化和响应 (SOAR) 攻略，使您能够自动执行威胁响应等任务。
+NetApp Ransomware Resilience 提供安全编排、自动化和响应 (SOAR) 攻略，使您能够自动执行威胁响应等任务。
 
 Ransomware Resilience 攻略提供以下功能：
 

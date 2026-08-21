@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-clean-restore.html 
 keywords: clean room, clean restore, secure recovery, restore, isolated recovery environment 
-summary: 在 NetApp Ransomware Resilience 中进行清洁恢复之前，您必须创建一个隔离的恢复环境来隔离和清洁环境。 
+summary: 在 NetApp Ransomware Resilience 中执行干净恢复之前，您必须创建一个隔离的恢复环境，以隔离并清理该环境。 
 ---
 = 在 NetApp Ransomware Resilience 中配置环境以进行干净恢复
 :hardbreaks:
@@ -23,7 +23,7 @@ NetApp Ransomware Resilience 提供干净的恢复，在勒索软件攻击后提
 [[learn-about-clean-restores]]
 == 了解干净还原
 
-当您执行干净恢复时，Ransomware Resilience 将引导您完成优化恢复的多步骤流程。
+执行干净恢复时，Ransomware Resilience 将引导您完成优化恢复的多步骤流程。
 
 * **设置**：要执行干净还原，您必须首先创建 IRE，然后选择要还原的工作负载。Ransomware Resilience 创建了一个针对工作负载执行所有操作的洁净室。
 * **分析**：在洁净室中，Ransomware Resilience 会分析所有快照，以查看是否存在加密。清洁恢复确定恢复映射以确定最佳恢复计划。
@@ -44,7 +44,7 @@ NetApp Ransomware Resilience 提供干净的恢复，在勒索软件攻击后提
 
 * **清理**：Ransomware Resilience 从恢复点删除恶意软件。如果无法清理任何文件，则会将其从恢复中排除，并隔离到单独的位置。
 * **还原**：Ransomware Resilience 将干净的数据还原到源环境中。
-* **END**：Ransomware Resilience 提供流程的详细摘要并关闭洁净室，释放设置期间配置的资源，以消除未来的计量成本。
+* **结束**：Ransomware Resilience 提供流程的详细摘要并关闭洁净室，释放设置期间配置的资源，以消除未来的计量成本。
 
 
 

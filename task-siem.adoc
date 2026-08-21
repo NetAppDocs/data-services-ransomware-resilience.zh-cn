@@ -11,7 +11,7 @@ summary: '您可以自动将数据从 NetApp Ransomware Resilience 发送到您�
 
 
 [role="lead"]
-安全信息和事件管理 (SIEM) 系统集中日志和事件数据，以提供有关安全事件和合规性的见解。NetApp Ransomware Resilience 支持自动将数据发送到您的 SIEM，以简化威胁分析和检测。
+将 NetApp Ransomware Resilience 连接到安全信息和事件管理 (SIEM) 系统，以自动发送事件数据进行威胁分析和检测。
 
 Ransomware Resilience 支持使用 <<Webhook,Webhook>> 配置任何 SIEM 系统。此外，Ransomware Resilience 还为以下 SIEM 系统提供本机支持：
 

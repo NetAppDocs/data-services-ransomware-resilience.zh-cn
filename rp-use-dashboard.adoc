@@ -12,9 +12,9 @@ summary: 使用 Ransomware Resilience 来确定哪些工作负载需要保护或
 
 
 [role="lead"]
-NetApp Ransomware Resilience 仪表板可一目了然地显示您的工作负载保护健康状况。您可以快速确定处于风险或受保护状态的工作负载，识别受事件影响或正在恢复的工作负载，并通过查看受保护或处于风险状态的存储量来评估保护范围。
+使用 NetApp Ransomware Resilience 仪表板可以快速查看工作负载保护运行状况，识别存在风险或正在恢复的工作负载，并衡量受保护的存储量。
 
-使用仪表板查看保护建议、更改设置和下载报告。
+使用控制面板查看保护建议、更改设置和下载报告。
 
 *必需的控制台角色* 要执行此任务，您需要 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["超级管理员"^]、Ransomware Resilience 管理员或 Ransomware Resilience 查看器角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^]。
 
@@ -61,7 +61,7 @@ TIP: 选择“i”工具提示即可查看有关此数据的提示。要增加�
 
 
 
-** *推荐的措施*：为了增强保护，请查看每项建议，然后选择*查看并修复*。
+** *建议措施*：要增加保护，请查看每个建议并选择*查看并修复*。
 +
 请参见 link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard["在控制面板上查看保护建议"] 或 link:rp-use-protect.html["保护工作负载"]。
 

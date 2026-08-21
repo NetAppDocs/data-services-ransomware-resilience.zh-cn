@@ -12,7 +12,7 @@ summary: 您可以通过在NetApp Ransomware Resilience中为工作负载分配�
 
 
 [role="lead"]
-NetApp Ransomware Resilience 的保护仪表板概述了工作负载的保护状态和准备情况。使用保护仪表板，深入了解受保护的内容、需要保护的内容以及保护范围。
+使用 NetApp Ransomware Resilience 中的防护仪表板来查看工作负载防护状态，确定需要注意的工作负载，并了解您的整体防护范围。
 
 一旦您了解了当前保护的范围，link:rp-use-protect.html["您可以创建勒索软件保护策略并将其应用于您的工作负载"]。
 

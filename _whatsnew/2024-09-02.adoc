@@ -7,7 +7,7 @@
 [[security-risk-assessment-from-digital-advisor]]
 === 来自Digital Advisor的安全风险评估
 
-BlueXP ransomware protection 现在从 NetApp Digital Advisor 收集有关集群的高风险和严重安全风险的信息。如果发现任何风险，BlueXP ransomware protection 会在仪表板的*推荐操作*窗格中提供建议："修复集群上的已知安全漏洞<name>。"从仪表板上的建议中，选择*查看和修复*建议查看 Digital Advisor 和常见漏洞和暴露 (CVE) 文章，以解决安全风险。如果存在多重安全风险，请在 Digital Advisor 中查看信息。
+BlueXP 勒索软件防护现在从 NetApp Digital Advisor 收集有关高危和严重集群安全风险的信息。如果发现风险，BlueXP 勒索软件防护会在仪表板的*建议操作*窗格中显示以下建议："修复集群 <name> 上的已知安全漏洞。"从仪表板建议中，选择*查看并修复*以查看 Digital Advisor 和相关的常见漏洞与披露 (CVE) 文章。如果存在多个安全风险，请在 Digital Advisor 中查看详细信息。
 
 参考 https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisor文档"^]。
 

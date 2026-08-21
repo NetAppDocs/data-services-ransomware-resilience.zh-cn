@@ -9,7 +9,7 @@ summary: Ransomware Resilience 可以识别您的数据中的隐私暴露，以�
 
 
 [role="lead"]
-在 NetApp Ransomware Resilience 中，您可以使用 NetApp Data Classification 来识别隐私泄露并主动保护您的数据。识别隐私泄露可揭示数据集是否包含个人身份信息 (PII)。隐私泄露可能会增加安全风险并改变工作负载的重要性指定。
+使用 NetApp Ransomware Resilience 中的 NetApp Data Classification 来识别隐私暴露，查找个人身份信息 (PII)，并了解这些暴露如何影响工作负载的重要性。
 
 *需要控制台角色* 要执行此任务，需要 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["超级管理员"^] 或 Ransomware Resilience 管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^]。
 

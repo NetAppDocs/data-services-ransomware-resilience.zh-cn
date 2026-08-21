@@ -12,9 +12,9 @@ summary: '遭受攻击后， NetApp Ransomware Resilience会验证二级存储�
 
 
 [role="lead"]
-工作负载被标记为"需要恢复"后，NetApp Ransomware Resilience 会推荐实际恢复点 (RPA)，并协调工作流程以实现防崩溃恢复。
+将工作负载标记为*需要恢复*后，NetApp Ransomware Resilience 会推荐实际恢复点 (RPA)，并指导您完成恢复工作流程。
 
-* 如果虚拟机由 NetApp Backup and Recovery 或 Ransomware Resilience 管理，Ransomware Resilience 会执行崩溃一致性恢复，即恢复同一时间点卷中的所有数据，例如，如果系统崩溃。
+* 如果虚拟机由 NetApp Backup and Recovery 或 Ransomware Resilience 管理，则 Ransomware Resilience 会执行崩溃一致性恢复，以便恢复来自同一时间点的所有数据，就像系统崩溃后那样。
 +
 您可以通过选择所有卷、特定卷或特定文件来恢复工作负载。
 

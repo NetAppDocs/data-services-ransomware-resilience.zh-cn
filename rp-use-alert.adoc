@@ -12,16 +12,16 @@ summary: 如果 Ransomware Resilience 检测到可能的攻击，则 Ransomware 
 
 
 [role="lead"]
-当 NetApp Ransomware Resilience 检测到可能的攻击时，它会在仪表板和"通知"菜单中显示警报。Ransomware Resilience 立即拍摄快照。收到警报时，请查看 Ransomware Resilience *警报*选项卡中的潜在风险，以评估对数据的影响并防止潜在的勒索软件攻击。
+当 NetApp Ransomware Resilience 检测到可能的攻击时，它会在仪表板和"通知"菜单中显示警报，并立即创建快照。查看*警报*选项卡中的警报，以评估数据面临的风险并决定响应措施。
 
 如果 Ransomware Resilience 检测到可能的攻击，则会在 Console Notification 设置中显示通知，并向配置的地址发送电子邮件。电子邮件包括有关严重程度、受影响工作负载的信息，以及 Ransomware Resilience *Alerts* 选项卡中警报的链接。
 
-您可以忽略误报或决定立即恢复数据。
+您可以忽略误报或立即开始恢复。
 
 
 TIP: 如果忽略此警报，Ransomware Resilience 将了解此行为，将其与正常操作相关联，并停止发送类似事件的警报。
 
-要开始恢复数据，请将警报标记为准备好恢复，以便存储管理员可以开始恢复过程。
+若要开始恢复，请将警报标记为已准备好恢复，以便存储管理员可以启动恢复过程。
 
 每个警报可能包含不同数量和状态的多个事件。审查所有事件。
 
