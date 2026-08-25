@@ -1,0 +1,14 @@
+= 通过 Console 代理交付 SIEM 事件
+:allow-uri-read: 
+
+
+
+
+[[siem-event-delivery-through-the-console-agent]]
+=== 通过 Console 代理交付 SIEM 事件
+
+Ransomware Resilience 现在支持通过 Console 代理传送 SIEM 事件，以及通过 NetApp Console 传送事件的现有选项。
+
+当您通过 Console 代理交付 SIEM 事件时，您可以将 SIEM 事件交付保持在您的网络边界内。这简化了具有严格 IP 地址允许列表的本地环境的部署，并且可以更好地与现有安全控制保持一致。要使用此选项，请确保 Console 代理能够通过任何防火墙或代理控件解析并连接到所需端口上的 SIEM 端点。
+
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["配置 SIEM 系统"^]。
