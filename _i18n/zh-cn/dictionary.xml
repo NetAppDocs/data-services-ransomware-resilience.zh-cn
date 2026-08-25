@@ -2809,4 +2809,7 @@
   <block id="c0bdc8b4b8a3be2684cfe6108f6978ae" category="paragraph">在 NetApp Ransomware Resilience 中配置用户活动监控时，您可以运行测试脚本来模拟可疑的用户行为事件以进行验证和测试。</block>
   <block id="c120d673c7fb209814b49c9420ea9cee" category="paragraph">在 NetApp Ransomware Resilience 中配置用户活动检测后，您可以管理被阻止的用户并自定义警报。您可以从警报中排除特定用户或文件路径，也可以阻止用户响应勒索软件事件，以帮助防止恶意活动。</block>
   <block id="89decfaa1b470ead2915f39754702fde" category="paragraph">如果您在 NetApp Ransomware Resilience 中安装或运行用户活动代理时遇到问题，请查看这些常见方案和解决方案。</block>
+  <block id="cb93ad4589e6e6834d2627d2ef8c8456" category="section-title">多管理员验证</block>
+  <block id="c77edebaabc370e372cc7bd8a3946ec4" category="inline-link-macro">ONTAP 中的多管理员验证</block>
+  <block id="4fe568bb5fe11f3f2a80f6dbbcb77a58" category="paragraph">Ransomware Resilience 或 NetApp Console 不支持多管理员验证。如果您已配置 <block ref="67e9d4830abb18c6f9ecab2abb6d5c08" category="inline-link-macro-rx"></block>，某些工作流程可能无法在 Ransomware Resilience 中按预期运行。</block>
 </blocks>

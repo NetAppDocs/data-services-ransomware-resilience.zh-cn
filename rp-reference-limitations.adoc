@@ -68,3 +68,10 @@ summary: 已知限制标识了该产品的此版本不支持的平台、设备�
 * 当 Ransomware Resilience 为 SAN 工作负载生成警告时，这些警告仅基于高熵。
 * SAN 工作负载只能使用 link:task-custom-restore.html["自定义还原"] 进行还原。清除还原当前不适用于 SAN 工作负载。
 
+
+
+
+[[multi-admin-verification]]
+== 多管理员验证
+
+Ransomware Resilience 或 NetApp Console 不支持多管理员验证。如果您已配置 link:https://docs.netapp.com/us-en/ontap/multi-admin-verify/["ONTAP 中的多管理员验证"^]，某些工作流程可能无法在 Ransomware Resilience 中按预期运行。
