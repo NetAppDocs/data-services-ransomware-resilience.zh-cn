@@ -89,7 +89,7 @@ Ransomware Resilience 支持通过 NetApp Console 和 Console 代理传送 SIEM 
 . 选择*政策*。
 . 使用以下 JSON 格式的代码创建策略：
 +
-[listing]
+[source, json]
 ----
 {
   "Version": "2012-10-17",
@@ -113,9 +113,6 @@ Ransomware Resilience 支持通过 NetApp Console 和 Console 代理传送 SIEM 
 
 .在 Ransomware Resilience 中验证 AWS Security Hub
 . 在 Ransomware Resilience 中，选择侧边栏中的 *Settings*。
-+
-image:screen-settings2.png["设置页面"]
-
 . 在设置页面中，在 SIEM 连接图块中选择 *Connect*，然后在下拉菜单中选择 *AWS Security Hub*。
 +
 image:screen-settings-threat-detection-3options.png["启用威胁检测详细信息页面"]
@@ -162,9 +159,6 @@ image:screen-settings-threat-detection-3options.png["启用威胁检测详细信
 
 .在 Ransomware Resilience 中验证 Google SecOps
 . 在 Ransomware Resilience 中，选择侧边栏中的 *Settings*。
-+
-image:screen-settings2.png["设置页面"]
-
 . 在设置页面中，在 SIEM 连接图块中选择*连接*，然后从下拉菜单中选择 *Google SecOps*。
 +
 image:screen-settings-threat-detection-3options.png["启用威胁检测详细信息页面"]
@@ -212,7 +206,7 @@ image:screen-settings-threat-detection-3options.png["启用威胁检测详细信
 . 输入自定义角色名称。使用名称 *Ransomware Resilience Sentinel Configurator*。
 . 复制以下 JSON 并将其粘贴到 *JSON* 选项卡中。
 +
-[listing]
+[source, json]
 ----
 {
   "roleName": "Ransomware Resilience Sentinel Configurator",
@@ -335,7 +329,7 @@ image:screen-settings-threat-detection-3options.png["启用威胁检测详细信
 .. *Review + assign*。
 
 
-. 返回 Ransomware Resilience UI。复制 ARM 模板的 JSON，以在 Azure 环境中创建 Log Analytics 自定义表、数据收集端点 (DCE)、数据收集规则 (DCR) 和 Sentinel 分析规则。
+. 返回勒索软件弹性。复制 ARM 模板的 JSON，以在 Azure 环境中创建 Log Analytics 自定义表、数据收集端点 (DCE)、数据收集规则 (DCR) 和 Sentinel 分析规则。
 . 在 Azure 门户中，搜索 *Deploy a custom template*。
 . 在编辑器中选择 *Build your own template*。
 . 将复制的 JSON 粘贴到编辑器中。选择 *保存*。
@@ -393,9 +387,6 @@ NOTE: 对于 Splunk Enterprise，您必须允许入站公共互联网流量，�
 
 .使用 Ransomware Resilience 验证 Splunk
 . 在 Ransomware Resilience 中，选择侧边栏中的 *Settings*。
-+
-image:screen-settings2.png["设置页面"]
-
 . 在“设置”页面中，选择 SIEM 连接图块中的“*连接*”。
 +
 image:screen-settings-threat-detection-3options.png["启用威胁检测详细信息页面"]

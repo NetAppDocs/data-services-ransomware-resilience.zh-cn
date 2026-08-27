@@ -2832,7 +2832,6 @@
   <block id="e6ec36efa0bbdf10fd60a8a6852a644c" category="list-text">搜索并选择 *Monitoring Metrics Publisher*。</block>
   <block id="73e02342b0fefad869141a2cc487f962" category="list-text">将角色分配添加到在注册步骤中创建的应用程序注册的服务主体。</block>
   <block id="b0802f3f26bd5c4a23f49c39d352174a" category="list-text">*Review + assign*。</block>
-  <block id="6f1c2a09c472f2a1bfe8859795a99f57" category="list-text">返回 Ransomware Resilience UI。复制 ARM 模板的 JSON，以在 Azure 环境中创建 Log Analytics 自定义表、数据收集端点 (DCE)、数据收集规则 (DCR) 和 Sentinel 分析规则。</block>
   <block id="a7656865ad634af8f75799041e4e11e9" category="list-text">在 Azure 门户中，搜索 *Deploy a custom template*。</block>
   <block id="c5fc6c378447cbf81248f4df4fa19d5c" category="list-text">在编辑器中选择 *Build your own template*。</block>
   <block id="0e50b795f9b35da566dbb3463a0e930d" category="list-text">将复制的 JSON 粘贴到编辑器中。选择 *保存*。</block>
@@ -2844,4 +2843,5 @@
   <block id="31181df1565380de486e372742d4ec62" category="list-text">请输入您之前复制的 *Log Ingestion Endpoint* 和 *DCR immutable ID*。</block>
   <block id="38ed29f4cd44c37378781f175f5b1752" category="list-text">选择*Connect*以创建连接。</block>
   <block id="f6bbe5efd3f2141104f822ac01ed3102" category="section-title">2026年8月25日</block>
+  <block id="bb23df37e6fe74c9adce400b2dce40db" category="list-text">返回勒索软件弹性。复制 ARM 模板的 JSON，以在 Azure 环境中创建 Log Analytics 自定义表、数据收集端点 (DCE)、数据收集规则 (DCR) 和 Sentinel 分析规则。</block>
 </blocks>
