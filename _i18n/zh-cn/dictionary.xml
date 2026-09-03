@@ -523,7 +523,6 @@
   <block id="2711b34ed6f854164ab28f6ba7d757fc" category="list-text">控制台发现您的工作负载后，勒索软件恢复仪表板将显示工作负载数据保护健康状况。</block>
   <block id="1de66de0484295c7b0e311cd3746dab8" category="inline-image-macro">信息板页面</block>
   <block id="1541b6face8479b500e3accafb066eee" category="paragraph"><block ref="1541b6face8479b500e3accafb066eee" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5cf652b0493bef09f6f5bcbd5925413f" category="list-text">*工作负载数据保护*：选择*查看全部*可在保护页面上查看所有处于危险中或受保护的工作负载。当保护级别与保护策略不匹配时，工作负载就会面临风险。请参阅<block ref="2b2daeeb32402291362fa9fa843a5c7e" category="inline-link-macro-rx"></block> 。</block>
   <block id="7946ca9134fecb1e363f88a194b4e259" category="inline-link-macro">响应检测到的警报</block>
   <block id="3e68731452668c74a209b358c132dbaa" category="list-text">*警报和工作负载数据恢复*：选择*查看全部*可查看已影响您的工作负载的活动事件、在事件消除后准备恢复的事件或正在恢复的事件。请参阅<block ref="a57b82018dcad508c33f5a5c54351028" category="inline-link-macro-rx"></block> 。</block>
   <block id="8cdbaff59230fdce1ca498813a54b0c1" category="list-text">事件分为以下状态之一：</block>
@@ -1840,7 +1839,6 @@
   <block id="450000aaa83625b4284af1b1791c4576" category="list-text"><block ref="450000aaa83625b4284af1b1791c4576" category="inline-link-macro-rx"></block></block>
   <block id="462a6e98fbd2a13cda63645b676477e3" category="section-title">2026 年 3 月 12 日</block>
   <block id="cb4ae29d8762239c8dfdfc76bdb65d37" category="paragraph">Ransomware Resilience 现在为 <block ref="8ab0c1a60a7c0ca7e1eee721cf8a8924" category="inline-link-macro-rx"></block> 和 <block ref="4655146bfbabab7fd679c2d1ca7a8d15" category="inline-link-macro-rx"></block> 提供安全编排、自动化和响应 (SOAR) 攻略。这些攻略能够简化威胁响应管理、自动化任务测试和基本勒索软件响应工作，包括创建快照和让卷脱机。</block>
-  <block id="7a62bbe1752bad34a2882c1488855472" category="paragraph">当工作负载被归类为受保护时，它将计入购买的容量或 PAYGO 订阅。当检测策略启用了至少一个快照或备份策略时，Ransomware Resilience 会将工作负载分类为受保护。使用检测策略发现但_没有_任何备份或快照策略的工作负载被归类为存在风险。存在风险的工作负载不计入购买的容量。</block>
   <block id="0a444369e66f3a256a69eec8c1934071" category="paragraph">在考虑大小时，许可成本基于活动文件系统的逻辑容量（意味着不包括占用空间的快照）。</block>
   <block id="ed300adca180c1e33d800707367434a6" category="doc">Google SecOps 的 SOAR 攻略</block>
   <block id="d6e96acd595d94a4f4fd9727f77f8f89" category="inline-link-macro">Google SecOps</block>
@@ -2364,16 +2362,12 @@
   <block id="262d414194517bdfa67b048201f2b424" category="paragraph">您的检测策略可以包括所有三个选项，也可以包括这三个选项的组合。它必须包括加密检测或 <block ref="0c1271458a5eed3dcf0b345a743161db" category="inline-link-macro-rx"></block>。</block>
   <block id="38cfc49361136d6f7410fbe2c3b7430a" category="list-text">*保护更改*：包括审查工作负载保护策略在一段时间内的更改：30 天、60 天、90 天或 1 年。</block>
   <block id="3e323562bd488e4cbd90a025b9424181" category="section-title">2026 年 6 月 08 日</block>
-  <block id="8301d3df17a7d3b229e97daa256bc551" category="paragraph">在 Ransomware Resilience 中，当启用 _detection_ 策略时，工作负载显示 *protected* 状态。检测策略必须由加密检测或可疑用户行为检测（或两者）组成。它还可以包括可疑文件扩展名检测。有关详细信息，请参见 <block ref="ffe6233ab872c39a610f87efd1e90b37" category="inline-link-macro-rx"></block>。</block>
-  <block id="6c6097f9e44fb30ef0bc0a6e210dce9b" category="paragraph">如果工作负载未启用检测策略，即使启用了备份和快照策略，也会标记为"有风险"。为了防范勒索软件，您应该启用 <block ref="ffe6233ab872c39a610f87efd1e90b37" category="inline-link-macro-rx"></block>。</block>
   <block id="fec111d809c49ffc75c21732e808fe2d" category="admonition">如果忽略此警报，Ransomware Resilience 将了解此行为，将其与正常操作相关联，并停止发送类似事件的警报。</block>
   <block id="7f2998da36c9b089182a98b4c6ff6c5d" category="admonition">如果您有一个现有的保护策略，然后在其上禁用了一种检测形式，则在策略的上一次迭代下创建的任何警报只能标记为"已解决"而不是"已忽略"。例如，如果您有一个包含加密检测和可疑用户行为的保护策略的活动警报，但随后禁用了加密检测，则只能将该警报标记为"已解决"。</block>
   <block id="5e37428a91a220042e4764361ae6e656" category="list-text">*加密检测*：启用 Ransomware Resilience 以检测基于加密的攻击。</block>
   <block id="83b90da4f4a4213417bbdd607b6813c9" category="list-text">*可疑用户行为检测*：启用用户行为检测，将用户活动事件传输到 Ransomware Resilience，并检测数据泄露或数据销毁等可疑事件。</block>
   <block id="8d9e80b9523ae8e43c09fee979fbfe13" category="list-text">*阻止文件扩展名*：启用 Ransomware Resilience 以阻止已知的可疑文件扩展名。</block>
   <block id="87c5b70bcda4f0448400bb7245e5d975" category="admonition">您可以选择检测策略的任意组合。检测策略必须包括加密检测或可疑用户行为检测。</block>
-  <block id="18282a82722e35ec83f6634f6933e908" category="list-text">*受保护*：应用检测策略。</block>
-  <block id="689a050b69b980dbe9c67ea9fdaeb981" category="list-text">*存在风险*：不适用任何策略。如果工作负载未启用检测策略，则即使启用了快照和备份策略，也会"面临风险"。</block>
   <block id="1c2f725024e8db3f57c9ffb6c1869a4f" category="list-text">*进行中*：正在应用策略，但操作尚未完成。</block>
   <block id="7f2fe4ecc84891950d87f953f70363aa" category="list-text">*Failed*：已配置策略，但出现错误。</block>
   <block id="ed3c60417302240ba271d87f011c0f32" category="paragraph">在 Ransomware Resilience 中启用 AWS Security Hub 之前，需要在 AWS Security Hub 中执行安全配置：</block>
@@ -2844,4 +2838,12 @@
   <block id="38ed29f4cd44c37378781f175f5b1752" category="list-text">选择*Connect*以创建连接。</block>
   <block id="f6bbe5efd3f2141104f822ac01ed3102" category="section-title">2026年8月25日</block>
   <block id="bb23df37e6fe74c9adce400b2dce40db" category="list-text">返回勒索软件弹性。复制 ARM 模板的 JSON，以在 Azure 环境中创建 Log Analytics 自定义表、数据收集端点 (DCE)、数据收集规则 (DCR) 和 Sentinel 分析规则。</block>
+  <block id="625e7b50d0584bc4bde48651c8cfc7ee" category="paragraph">当工作负载被归类为受保护时，它将计入购买的容量或 PAYGO 订阅。当启用加密或用户活动检测策略时，Ransomware Resilience 会将工作负载分类为受保护。如果没有这些检测策略中的至少一个，工作负载将被归类为存在风险。存在风险的工作负载不计入购买的容量。</block>
+  <block id="f6a2fb2a5374a593874b657ed729f82b" category="paragraph">在 Ransomware Resilience 中，当启用 _detection_ 策略时，工作负载显示 *protected* 状态。检测策略必须由加密检测或可疑用户行为检测（或两者）组成。有关详细信息，请参见 <block ref="ffe6233ab872c39a610f87efd1e90b37" category="inline-link-macro-rx"></block>。</block>
+  <block id="2850e23cea54ee88036b5a17e51dc5dd" category="paragraph">工作负载必须具有启用了加密检测或用户行为检测的勒索软件保护策略，才能被视为受保护。如果没有这些检测策略中的至少一种，则工作负载将被标记为存在风险。如果工作负载具有备份或快照策略，但未启用加密检测或用户行为检测，则该工作负载将被视为存在风险。</block>
+  <block id="6320d906c420ff6393e8f0fd47eaf876" category="paragraph">Ransomware Resilience 还提供可疑文件扩展名检测。如果可疑文件扩展名检测是唯一启用的检测策略，则工作负载将被标记为存在风险。</block>
+  <block id="eca582e2a6a980264db3e5c92d632da6" category="paragraph">为了防范勒索软件，您应该启用 <block ref="ffe6233ab872c39a610f87efd1e90b37" category="inline-link-macro-rx"></block>。</block>
+  <block id="15970e7cc58cf4e7b2b7962f63826587" category="list-text">*工作负载数据保护*：选择*查看全部*以在"保护"页面上查看存在风险或受保护的所有工作负载。如果没有加密检测或用户活动检测，则认为工作负载存在风险。请参阅 <block ref="2b2daeeb32402291362fa9fa843a5c7e" category="inline-link-macro-rx"></block>。</block>
+  <block id="345292bfa93053446c9594b577a0b1d6" category="list-text">*受保护*：已启用加密或用户活动检测策略。</block>
+  <block id="79563997a2b58683d0d7ab2eb9e9f1fb" category="list-text">*存在风险*：如果工作负载没有启用加密检测或用户活动检测的保护策略，则将其标记为存在风险。即使工作负载具有快照和备份保护以及文件扩展名阻止，如果未启用加密检测或用户行为检测，仍会被视为存在风险。</block>
 </blocks>
