@@ -17,7 +17,7 @@ summary: 已知限制标识了该产品的此版本不支持的平台、设备�
 
 
 [[readiness-drill-reset-option-issue]]
-== 准备演习重置选项问题
+== 准备情况演练重置选项问题
 
 如果您选择ONTAP 9.11.1 卷进行勒索软件攻击准备演习，勒索软件恢复能力会发送警报。如果您使用“克隆到卷”选项恢复数据并重置钻机，则重置操作将失败。
 
@@ -28,7 +28,7 @@ summary: 已知限制标识了该产品的此版本不支持的平台、设备�
 
 以下限制适用于 Amazon FSx for ONTAP：
 
-* Amazon FSx for ONTAP 不支持备份策略。在此环境中，您应使用 Amazon FSx 执行备份操作。您可以使用 Ransomware Resilience 恢复这些工作负载。
+* Amazon FSx for ONTAP 不支持备份策略。在此环境中，应使用 Amazon FSx 备份执行备份操作。您可以使用 Ransomware Resilience 恢复这些工作负载。
 * 恢复操作仅从快照执行。
 
 
@@ -55,7 +55,7 @@ summary: 已知限制标识了该产品的此版本不支持的平台、设备�
 以下限制适用于 Google Cloud NetApp Volumes：
 
 * 目前，您只能将基于加密和 FPolicy 的保护策略应用于 Google Cloud NetApp Volumes 工作负载。您无法应用用户行为保护策略。
-* Google Cloud NetApp Volumes 目前不支持带有复制的保护策略
+* Google Cloud NetApp Volumes 目前不支持具有复制功能的保护策略。
 
 
 
@@ -74,4 +74,4 @@ summary: 已知限制标识了该产品的此版本不支持的平台、设备�
 [[multi-admin-verification]]
 == 多管理员验证
 
-Ransomware Resilience 或 NetApp Console 不支持多管理员验证。如果您已配置 link:https://docs.netapp.com/us-en/ontap/multi-admin-verify/["ONTAP 中的多管理员验证"^]，某些工作流程可能无法在 Ransomware Resilience 中按预期运行。
+Ransomware Resilience 或 NetApp Console 不支持多管理员验证。如果您已配置 link:https://docs.netapp.com/us-en/ontap/multi-admin-verify/["ONTAP 中的多管理员验证"^]，则将无法启用保护、进行就绪性演练或执行任何恢复操作。在尝试进行任何此类操作之前，您应禁用多管理员验证。
