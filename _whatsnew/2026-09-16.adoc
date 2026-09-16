@@ -1,0 +1,21 @@
+= 增强对干净还原的支持
+:allow-uri-read: 
+
+
+
+
+[[enhanced-support-for-clean-restores]]
+=== 增强对干净还原的支持
+
+现在，针对可疑用户行为和基于用户的加密攻击，可以使用干净还原进行恢复。此增强功能在现有基础上新增了对基于加密（熵）攻击的支持。这项增强功能使您能够充分利用 clean restore 的引导式方法，确定最佳还原点，从而最大限度地减少数据丢失并加快恢复速度。
+
+有关详细信息，请参见link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["为干净还原创建隔离的恢复环境"^]。
+
+
+
+[[san-support-for-google-cloud-netapp-volumes]]
+=== Google Cloud NetApp Volumes 的 SAN 支持
+
+Ransomware Resilience 现在为来自 Google Cloud NetApp Volumes 的 SAN 工作负载提供支持，使您能够检测针对 SAN 工作负载的基于加密的勒索软件攻击。Google Cloud NetApp Volumes 中对 SAN 的支持现已全面推出。
+
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html#supported-systems["支持的系统"^] 和 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-limitations.html["勒索软件弹性中的 SAN 存储"^]。

@@ -18,6 +18,29 @@ summary: 了解NetApp Ransomware Resilience的新功能。
 
 
 
+[[16-september-2026]]
+== 2026年9月16日
+
+
+
+[[enhanced-support-for-clean-restores]]
+=== 增强对干净还原的支持
+
+现在，针对可疑用户行为和基于用户的加密攻击，可以使用干净还原进行恢复。此增强功能在现有基础上新增了对基于加密（熵）攻击的支持。这项增强功能使您能够充分利用 clean restore 的引导式方法，确定最佳还原点，从而最大限度地减少数据丢失并加快恢复速度。
+
+有关详细信息，请参见link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["为干净还原创建隔离的恢复环境"^]。
+
+
+
+[[san-support-for-google-cloud-netapp-volumes]]
+=== Google Cloud NetApp Volumes 的 SAN 支持
+
+Ransomware Resilience 现在为来自 Google Cloud NetApp Volumes 的 SAN 工作负载提供支持，使您能够检测针对 SAN 工作负载的基于加密的勒索软件攻击。Google Cloud NetApp Volumes 中对 SAN 的支持现已全面推出。
+
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html#supported-systems["支持的系统"^] 和 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-limitations.html["勒索软件弹性中的 SAN 存储"^]。
+
+
+
 [[25-august-2026]]
 == 2026年8月25日
 
@@ -159,7 +182,7 @@ Ransomware Resilience 现在提供 Azure Resource Manager (ARM) 模板，用于�
 [[automated-responses-to-user-activity-alerts]]
 === 自动响应用户活动警报
 
-Ransomware Resilience 现在支持在生成用户活动警报时自动创建快照和阻止用户。通过自动响应，您可以在生成警告后立即阻止用户，并创建快照进行恢复，从而无需手动干预即可更快地响应。
+NetApp Ransomware Resilience 现在支持对用户活动事件的自动响应。您可以在生成用户活动警报时自动阻止用户并创建快照。这些操作可实现更快的响应，而无需人工干预。
 
 有关详细信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-automate-user-activity.html["自动响应用户活动警报"^]。
 
@@ -197,8 +220,8 @@ link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/reference
 
 
 
-[[google-cloud-netapp-volumes-support-preview]]
-=== Google Cloud NetApp Volumes 支持（预览）
+[[protection-groups-in-google-cloud-netapp-volumes-support-preview]]
+=== Google Cloud NetApp Volumes 中的保护组支持（预览）
 
 Ransomware Resilience 现在支持为 Google Cloud NetApp Volumes 系统中的工作负载创建保护组，使您能够将多个工作负载归入一个策略下以简化管理。
 

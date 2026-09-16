@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-automate-user-activity.html 
-keywords: data breach detection, data breach, user activity, automated response 
+keywords: data breach detection, data breach, user activity, automated response, block user, automate, ransomware response 
 summary: NetApp Ransomware Resilience 支持创建对用户活动事件的自动响应，使您能够自动创建快照或阻止用户。 
 ---
 = 自动响应 NetApp Ransomware Resilience 中的用户活动警报
@@ -12,9 +12,16 @@ summary: NetApp Ransomware Resilience 支持创建对用户活动事件的自动
 
 
 [role="lead"]
-借助 NetApp Ransomware Resilience，您可以自动响应link:concept-user-behavior.html["用户活动事件"]。通过自动响应，Ransomware Resilience 可以在检测到攻击或警告时创建快照或阻止用户，从而更快地响应勒索软件事件。
+借助 NetApp Ransomware Resilience，您可以自动响应link:concept-user-behavior.html["用户活动事件"]。当触发用户活动警报时，Ransomware Resilience 可以：
+
+* 阻止用户
+* 创建快照
+
 
 加密（用户行为）、数据泄露和数据销毁事件支持自动响应。在创建自动响应之前，您必须具有 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent["配置了用户活动代理，启用了具有用户活动检测的策略，并创建了用户目录连接器"]。当自动响应被触发时，Ransomware Resilience 会发送电子邮件警报。
+
+
+NOTE: 如果警报是由可疑的用户行为触发的，则只能拍摄快照。阻止用户不能作为对可疑用户行为的自动响应。
 
 
 
@@ -22,9 +29,6 @@ summary: NetApp Ransomware Resilience 支持创建对用户活动事件的自动
 == 创建自动响应
 
 您只能保护一个存储 VM，且该存储 VM 至少有一个工作负载受可疑用户行为检测策略保护。
-
-
-NOTE: 对于可疑用户行为的自动响应，您只能拍摄快照。不支持将阻止用户作为对可疑用户行为的自动响应。
 
 .步骤
 . 在勒索软件恢复功能中，选择**设置**。
@@ -84,3 +88,10 @@ NOTE: 对于可疑用户行为的自动响应，您只能拍摄快照。不支�
 . 您可以修改警报严重性以外的任何设置。
 . 选择**保存**以保存更改。
 
+
+
+
+[[next-steps]]
+== 后续步骤
+
+link:task-users-manage.html["管理被屏蔽的用户"]

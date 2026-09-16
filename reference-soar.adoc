@@ -24,7 +24,7 @@ Ransomware Resilience 攻略提供以下功能：
 * 查看富化作业的状态
 
 
-{asterisk} 只有 Splunk 和 Google SecOps SOAR 攻略才支持屏蔽/取消屏蔽用户。您必须在受支持的系统上配置 link:concept-user-behavior["用户行为检测"] 才能阻止用户。
+{asterisk} 只有 Splunk 和 Google SecOps SOAR 攻略才支持屏蔽/取消屏蔽用户。您必须在受支持的系统上配置 link:concept-user-behavior.html["用户行为检测"] 才能阻止用户。
 
 
 
@@ -34,7 +34,7 @@ Ransomware Resilience 攻略提供以下功能：
 Ransomware Resilience 为 Google SecOps、Microsoft Sentinel 和 Splunk 提供 playbook。请查看相关页面以了解设置详细信息。
 
 * link:https://github.com/chronicle/content-hub/tree/main/content/response_integrations/third_party/partner/netappransomwareresilience["Google SecOps"^]
-* link:https://marketplace.microsoft.com/en-us/product/netapp.azure-sentinel-solution-netapprrs?tab=Overview["Microsoft Sentinel"^] | link:https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks["GitHub 链接"^]
+* link:https://marketplace.microsoft.com/en-us/product/netapp.azure-sentinel-solution-netapprrs["Microsoft Sentinel"^] | link:https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks["GitHub 链接"^]
 * link:https://github.com/splunk-soar-connectors/netappransomwareresilience["Splunk"^]
 +
 对于 Splunk Cloud，您必须运行平台版本 7.0、7.1、7.2、8.0 或 8.4。有关详细信息，请参见link:https://splunkbase.splunk.com/app/8483["Splunkbase"^]。

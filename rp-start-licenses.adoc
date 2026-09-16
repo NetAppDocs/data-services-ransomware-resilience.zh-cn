@@ -30,7 +30,12 @@ summary: 确保您满足 Ransomware Resilience 的许可要求，以保护您的
 
 设置 BYOL 或购买 PAYGO 订阅后，您可以在控制台的Licenses and subscriptions部分看到许可证。
 
-免费试用期结束或者许可证或订阅到期后，您仍然可以：
+
+
+[[expired-licenses]]
+=== 已过期许可证
+
+免费试用期结束或许可证或订阅到期后，除非您将其排除在外，否则工作负载在 Ransomware Resilience 上仍然可见。使用过期的许可证或试用版，您可以：
 
 * 查看工作负载和工作负载健康状况
 * 删除策略等资源
