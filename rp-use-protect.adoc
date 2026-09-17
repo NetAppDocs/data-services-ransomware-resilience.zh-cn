@@ -82,9 +82,7 @@ NOTE: Amazon FSx for NetApp ONTAP 或 Azure NetApp Files 中的工作负载无�
 您可以选择以下勒索软件恢复预定义策略之一，这些策略与工作负载重要性相一致。
 
 
-NOTE: **加密用户扩展**策略是唯一支持可疑用户行为检测的预定义策略。
-
-+ **关键复制策略** 是唯一支持将快照复制到ONTAP 的预定义策略。
+NOTE: **Encryption user extension** 策略是唯一支持可疑用户行为检测的预定义策略。+ **Critical replication policy** 是唯一支持将快照复制到 ONTAP 的预定义策略。
 
 [cols="10,15a,20,15,15,15"]
 |===

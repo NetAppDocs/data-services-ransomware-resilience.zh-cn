@@ -638,7 +638,6 @@
   <block id="ce4ef271bc40fcdcc146584fcac5d544" category="paragraph">*保护状态*：工作负载可以显示以下保护状态之一，以指示是否应用了策略：</block>
   <block id="0882532dc9eb74e24a8b137f1e6a0b39" category="paragraph">勒索软件恢复能力根据对每个工作负载的分析，在发现过程中为每个工作负载分配重要性或优先级。工作负载重要性由以下快照频率决定：</block>
   <block id="58adba48bf0678c3abb71d1fdf829602" category="paragraph">您可以选择以下勒索软件恢复预定义策略之一，这些策略与工作负载重要性相一致。</block>
-  <block id="4d293abd3f96b37c9afdf90f01855f8b" category="admonition">**加密用户扩展**策略是唯一支持可疑用户行为检测的预定义策略。</block>
   <block id="a2c5d5541ff19f8df63922963356ec16" category="cell">政策层面</block>
   <block id="d4e2713d1b1725a1592f9268589f990d" category="cell">Snapshot</block>
   <block id="7cf395303ce3665a9834721d4b748e4b" category="cell">频率</block>
@@ -1503,7 +1502,6 @@
   <block id="0bec43abfdb99f043ac56e20931d1899" category="list-text">*重要提示*：快照副本的创建频率低于每小时一次，但高于每天一次。</block>
   <block id="890ca6db61a7d84b3c2f7e8b21560ff7" category="list-text">*标准*：每天拍摄多次快照副本</block>
   <block id="da4aa80a5402fe8991327699e5421e28" category="section-title">预定义的检测策略</block>
-  <block id="b267816a1724e79c894aa7e4509e18b2" category="paragraph">+ **关键复制策略** 是唯一支持将快照复制到ONTAP 的预定义策略。</block>
   <block id="0d6a90889ade51e4252ba8bbf1ad155e" category="cell">保留时间（天）</block>
   <block id="b5b7fab63026325a379913c2a05751c2" category="cell">快照副本数量</block>
   <block id="aa9adfa847815670c9bd986dafc8c79c" category="cell">快照副本的最大数量</block>
@@ -1532,7 +1530,6 @@
   <block id="49c6535c126789c87c5cd609fbdb3a3f" category="paragraph">确保每个角色都应用于组织级别。</block>
   <block id="426b9957bbb31fa730d0ddd4241a548c" category="paragraph">如果 Ransomware Resilience 检测到可能的攻击，则会在 Console Notification 设置中显示通知，并向配置的地址发送电子邮件。电子邮件包括有关严重程度、受影响工作负载的信息，以及 Ransomware Resilience *Alerts* 选项卡中警报的链接。</block>
   <block id="ea6028617b2209ac986a738b1b26840a" category="admonition">对于 SAN 环境，警告仅基于高熵值。</block>
-  <block id="53140a5b1fd2965a3ae256fca48ef979" category="paragraph">当 Ransomware Resilience 检测到潜在的攻击时，它会根据在 NetApp Console 设置中配置的订阅通知首选项向订阅用户发送电子邮件通知。电子邮件包含有关警报的信息，包括严重程度和受影响的资源。</block>
   <block id="a2079b2871fe8072cb3a3a5245ad0458" category="admonition">要在 Console 中设置电子邮件通知，请参见 <block ref="7a8deb9a674d2246166ab2113d0b6247" category="inline-link-macro-rx"></block>。</block>
   <block id="22b921337bb720d655059859772c0131" category="paragraph">停止攻击后，通知您的存储管理员数据已准备就绪，以便他们可以启动恢复过程。</block>
   <block id="e7d932b2a7bf9471a38ac8c68fbf83ad" category="list-text">&lt;site_name&gt;.cs01-ap-1.cloudinsights.netapp.com/cn</block>
@@ -1729,7 +1726,6 @@
   <block id="91437eaac9ac7d1f1da9a4e4751cbaa6" category="paragraph">是的，Ransomware Resilience 会发现在 ONTAP 中设置的快照计划。它还会发现是否在发现的工作负载中的所有卷上启用了 ARP 和 FPolicy。您在 Ransomware Resilience 控制面板中看到的信息是从其他 NetApp 解决方案和产品中汇总而来的。</block>
   <block id="c4550c3db972a64a4938aff3fdcc3f3d" category="paragraph">在备份目标本身中配置选项后，您稍后将在 Ransomware Resilience 中将其配置为备份目标。有关如何在 Ransomware Resilience 中配置备份目标的详细信息，请参阅 <block ref="e0972ac2b24cae233c2035120c295c6d" category="inline-link-macro-rx"></block>。</block>
   <block id="bc46a0ba0f385a3e46fe17c4f792de15" category="summary">如果 Ransomware Resilience 检测到可能的攻击，则 Ransomware Resilience 仪表板上会出现警报，指示可能的攻击。此时，您应该在 Ransomware Resilience Alerts 选项卡中查看潜在风险。</block>
-  <block id="0b24c011fc6a43f772b1630fb31bc484" category="list-text">在 Ransomware Resilience 控制面板中，查看 Alerts 窗格。</block>
   <block id="e29621dc2c0ac79f9d5888f0d3d7b097" category="summary">使用 Ransomware Resilience 来确定哪些工作负载需要保护或关注，并通过查看有多少存储受到保护或存在风险来评估保护程度。</block>
   <block id="e094e26183004c53cd65819096b01e61" category="section-title">使用控制面板查看工作负载运行状况</block>
   <block id="43373e9864a15885db684cef91b5ba4b" category="inline-link-macro">在控制面板上查看保护建议</block>
@@ -2680,7 +2676,6 @@
   <block id="3b3ea4b9d9acd87513a766f3da2c5f19" category="cell">cloudsecure-agent-symptom-collector.sh 脚本失败，错误为"ERROR: Failed to create /tmp/cloudsecure-agent-symptoms.zip"</block>
   <block id="8f5c411082a9edb45e09aae7eb113f08" category="cell">使用命令<block ref="50a148cc0ca623b1f92ea86676730f9c" prefix=" " category="inline-code"></block>安装 zip 工具，然后再次运行<block ref="eac544ce8c128848269701508d796823" prefix=" " category="inline-code"></block>。</block>
   <block id="dfe80d67171c6864a41131519bde31c6" category="cell">用户活动代理安装失败，错误为"useradd: cannot create directory /home/cssys."</block>
-  <block id="6ebfb63994f720f414d7cd0c1ce9394b" category="cell">由于权限错误，无法在 /home 目录下创建用户的登录目录。使用命令<block ref="d5ba9a9474fc171d7c8d8e0ad71f99d9" prefix=" " category="inline-code"></block>创建 cssys 用户并手动添加其登录目录。在此命令中，<block ref="67dd1c0d4e68c367b980f8723c781cb1" prefix=" " category="inline-code"></block>用于在主目录不存在时创建主目录；<block ref="9b017020b9d48d433ec90c548e6b5c70" prefix=" " category="inline-code"></block>将 HOME_DIR 指定为登录目录。</block>
   <block id="42d43cc689659f07ff3b2ee6aefe325f" category="section-title">安装后问题</block>
   <block id="df68cb1932706c8ebd7f20481ae974ea" category="paragraph">安装后用户活动代理未运行。运行命令<block ref="67e0ddefd3ec3e28b4e12105cb34b420" prefix=" " category="inline-code"></block>后，输出显示：</block>
   <block id="ddfe2967e6e4d9a543ac7c4fb69565f8" category="paragraph">如果 /opt/netapp 是 NFS 挂载，并且 cssys 用户没有此文件夹的访问权限，则安装将失败。用户 cssys 是由用户活动代理安装程序创建的本地用户，可能没有访问已挂载共享的权限。</block>
@@ -2791,7 +2786,6 @@
   <block id="aa1680de6fa426cea529c4dfecdc015e" category="doc">通过 Console 代理交付 SIEM 事件</block>
   <block id="64cbd2542074b8251a3a9a4207763f2a" category="paragraph">Ransomware Resilience 现在支持通过 Console 代理传送 SIEM 事件，以及通过 NetApp Console 传送事件的现有选项。</block>
   <block id="bb6efadd7c4367d935879bb3d0cb1872" category="paragraph">当您通过 Console 代理交付 SIEM 事件时，您可以将 SIEM 事件交付保持在您的网络边界内。这简化了具有严格 IP 地址允许列表的本地环境的部署，并且可以更好地与现有安全控制保持一致。要使用此选项，请确保 Console 代理能够通过任何防火墙或代理控件解析并连接到所需端口上的 SIEM 端点。</block>
-  <block id="b5c84596d34fbfb280405940a634b156" category="cell">从 ONTAP 到 FPolicy 事件的用户活动代理的通信。这些端口必须向用户活动代理开放，以便 ONTAP 向其发送事件，包括用户活动代理本身的任何防火墙（如果存在）。+ **注意：** 您无需预留*所有*这些端口，但为此预留的端口必须在此范围内。建议您首先预留 100 个端口，并在必要时增加。</block>
   <block id="49e0f8b47eab0f640ee82845d459cd21" category="list-text">如果您选择*可疑用户行为检测*作为检测设置，请选择用户活动代理或 <block ref="0fcb9e48262f104799fbf49d6c09d7d5" category="inline-link-macro-rx"></block>。</block>
   <block id="08fa66584afbf1283c833b5a59619296" category="section-title">事件传递路由</block>
   <block id="eb60dc6e31962c5336f25788a8e1f1f5" category="paragraph">Ransomware Resilience 支持通过 NetApp Console 和 Console 代理传送 SIEM 事件。您可以在配置过程中选择首选的传送路由。</block>
@@ -2838,7 +2832,6 @@
   <block id="a30aeba8ba2c25a2b618d315e085ffc3" category="list-text">Google Cloud NetApp Volumes 目前不支持具有复制功能的保护策略。</block>
   <block id="f893ad58389f4e0375b875c84e5cfbf4" category="list-text">当 Ransomware Resilience 为 SAN 工作负载生成警告时，这些警告仅基于高熵。</block>
   <block id="093dd5295e9562a1e47c2e57b91a5d58" category="paragraph">Ransomware Resilience 或 NetApp Console 不支持多管理员验证。如果您已配置 <block ref="67e9d4830abb18c6f9ecab2abb6d5c08" category="inline-link-macro-rx"></block>，则将无法启用保护、进行就绪性演练或执行任何恢复操作。在尝试进行任何此类操作之前，您应禁用多管理员验证。</block>
-  <block id="3ce27a742d1f48d7e244df4e0153e8bf" category="list-text">只能对基于加密的攻击（包括用户行为和熵）以及可疑的用户行为攻击执行干净还原。数据泄露和数据销毁攻击不支持干净还原。</block>
   <block id="c683448e4869d680e8543440db43e3ab" category="paragraph">*必需的控制台角色* 要执行此任务，您需要 Ransomware Resilience 用户行为管理员角色。您无法使用 <block ref="91fb5ef1173b6f41fdaa815d28743781" category="inline-link-macro-rx"></block> 或 Ransomware Resilience 管理员角色执行此任务。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
   <block id="96176a5ef40ffd580483770b758cb2b9" category="doc">Google Cloud NetApp Volumes 中的保护组支持（预览）</block>
   <block id="bf243787cd494f22987c64c448019324" category="paragraph">NetApp Ransomware Resilience 现在支持对用户活动事件的自动响应。您可以在生成用户活动警报时自动阻止用户并创建快照。这些操作可实现更快的响应，而无需人工干预。</block>
@@ -2861,4 +2854,10 @@
   <block id="dc33acebba1d27abf28977cc5a12db48" category="admonition">如果警报是由可疑的用户行为触发的，则只能拍摄快照。阻止用户不能作为对可疑用户行为的自动响应。</block>
   <block id="15033b064af1493a291f43131186f596" category="paragraph"><block ref="15033b064af1493a291f43131186f596" category="inline-link-macro-rx"></block></block>
   <block id="9d26347bf9049c082d482aa87b79d702" category="section-title">2026年9月16日</block>
+  <block id="fb35058960a1e35968261f71b2bf3883" category="list-text">只能对基于加密的攻击（包括用户行为和熵）以及可疑的用户行为攻击执行干净还原。数据泄露和数据销毁攻击不支持干净还原。</block>
+  <block id="f162f526fe9a4312ce833ccc6262c43c" category="cell">从 ONTAP 到 FPolicy 事件的用户活动代理的通信。这些端口必须向用户活动代理开放，以便 ONTAP 向其发送事件，包括用户活动代理本身的任何防火墙（如果存在）。+ **注意：** 您无需预留*所有*这些端口，但为此预留的端口必须在此范围内。建议您首先预留 100 个端口，并在必要时增加。</block>
+  <block id="836e56ef7ecb008a36ab89b0620d32b3" category="list-text">在 Ransomware Resilience 控制面板中，查看 Alerts 窗格。</block>
+  <block id="2bf784d30957b3ec7d6ebc12ece51af1" category="paragraph">当 Ransomware Resilience 检测到潜在的攻击时，它会根据在 NetApp Console 设置中配置的订阅通知首选项向订阅用户发送电子邮件通知。电子邮件包含有关警报的信息，包括严重程度和受影响的资源。</block>
+  <block id="f642b6f4e49c47514e5e24cda6578784" category="admonition">**Encryption user extension** 策略是唯一支持可疑用户行为检测的预定义策略。+ **Critical replication policy** 是唯一支持将快照复制到 ONTAP 的预定义策略。</block>
+  <block id="a7cc27b78a2a959c7d443e41e9734a78" category="cell">由于权限错误，无法在 /home 目录下创建用户的登录目录。使用命令<block ref="d5ba9a9474fc171d7c8d8e0ad71f99d9" prefix=" " category="inline-code"></block>创建 cssys 用户并手动添加其登录目录。在此命令中，<block ref="67dd1c0d4e68c367b980f8723c781cb1" prefix=" " category="inline-code"></block>用于在主目录不存在时创建主目录；<block ref="9b017020b9d48d433ec90c548e6b5c70" prefix=" " category="inline-code"></block>将 HOME_DIR 指定为登录目录。</block>
 </blocks>
