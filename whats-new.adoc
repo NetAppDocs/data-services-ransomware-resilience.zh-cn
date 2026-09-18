@@ -32,15 +32,6 @@ summary: 了解NetApp Ransomware Resilience的新功能。
 
 
 
-[[san-support-for-google-cloud-netapp-volumes]]
-=== Google Cloud NetApp Volumes 的 SAN 支持
-
-Ransomware Resilience 现在为来自 Google Cloud NetApp Volumes 的 SAN 工作负载提供支持，使您能够检测针对 SAN 工作负载的基于加密的勒索软件攻击。Google Cloud NetApp Volumes 中对 SAN 的支持现已全面推出。
-
-有关详细信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html#supported-systems["支持的系统"^] 和 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-limitations.html["勒索软件弹性中的 SAN 存储"^]。
-
-
-
 [[25-august-2026]]
 == 2026年8月25日
 
