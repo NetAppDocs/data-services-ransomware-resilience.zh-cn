@@ -1,0 +1,80 @@
+---
+sidebar: sidebar 
+permalink: task-siem-splunk.html 
+keywords: ransomware protection, SIEM, security event management system, orchestration, event management, splunk cloud, splunk enterprise, splunk 
+summary: 通过将 Splunk Cloud 或 Splunk Enterprise 连接为您的 SIEM，简化 NetApp Ransomware Resilience 中的威胁分析和事件管理。 
+---
+= 在 NetApp Ransomware Resilience 中配置 Splunk SIEM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilience 通过 Splunk Cloud 和 Splunk Enterprise 为安全信息和事件管理 (SIEM) 提供原生支持。通过将 Ransomware Resilience 连接到 Splunk SIEM，您可以自动发送事件数据以进行威胁分析和检测，从而简化勒索软件防护和事件管理。
+
+
+
+[[configure-splunk-cloud-and-splunk-enterprise-for-threat-detection]]
+== 配置 Splunk Cloud 和 Splunk Enterprise 以进行威胁检测
+
+在 Ransomware Resilience 中验证 SIEM 系统之前，必须在 Splunk Cloud 或 Splunk Enterprise 中执行配置。
+
+.开始之前
+Ransomware Resilience 支持使用 Splunk Cloud 和 Splunk Enterprise 进行威胁检测。在 Ransomware Resilience 中启用 Splunk 连接之前，您需要：
+
+* 在 Splunk Cloud 或 Enterprise 中启用 HTTP Event Collector，以通过 HTTP 或 HTTPS 从 Console 接收事件数据。
+* 在 Splunk Cloud 或 Enterprise 中创建事件收集器令牌。
+* 对于 *Splunk Enterprise*，如果您选择 *Deliver via NetApp Console*，请允许入站公共互联网流量，以便 NetApp Ransomware Resilience 可以将事件推送到 HTTP Event Collector。如果您选择 *Deliver via Console agent*，则 Console agent 必须能够访问 HTTP Event Collector。
+
+
+.在 Splunk 中启用 HTTP Event Collector
+. 在 Splunk Cloud 或 Enterprise 中，选择 *设置* > *数据输入*。
+. 选择 *HTTP 事件收集器* > *全局设置*。
+. 在所有令牌切换上，选择*已启用*。
+. 要让事件收集器通过 HTTPS 而不是 HTTP 进行监听和通信，请选择“启用 SSL”。
+. 在 *HTTP Port Number* 中为 HTTP Event Collector 输入端口。保存端口号以用于身份验证过程。
+
+
+.在 Splunk 中创建 Event Collector 令牌
+. 在 Splunk Cloud 或 Enterprise 中，选择 *设置* > *添加数据*。
+. 选择*监控* > *HTTP 事件收集器*。
+. 为令牌输入*名称*，然后选择*下一步*。
+. 选择将推送事件的*默认索引*，然后选择*审核*。
+. 确认终结点的所有设置都是正确的。选择后退按钮进行更改，否则选择*提交*。
+. 复制令牌并将其粘贴到另一个文档中，以准备进行身份验证步骤。
+
+
+
+
+[[authenticate-splunk-with-ransomware-resilience]]
+== 使用 Ransomware Resilience 验证 Splunk
+
+. 在 Ransomware Resilience 中，选择侧边栏中的 *Settings*。
+. 在“设置”页面中，选择 SIEM 连接图块中的“*连接*”。
++
+image:screen-settings-threat-detection-3options.png["SIEM 连接选项的屏幕截图"]
+
+. 选择 *Splunk* 作为 SIEM 提供程序。
+. 查看 *Event collector* 和 *Token* 部分，以确认您拥有正确的信息。
+. 展开 *Authentication* 部分。
++
+.. 为 HTTP Event Collector 选择*协议*。建议使用 HTTPS，但如果 HTTP Event Collector 未启用 SSL，请选择 *HTTP*。
+.. 输入运行 HTTP Event Collector 的 Splunk 实例的*主机*和*端口*。该端口应与您在 HTTP Event Collector 进程中输入的内容相匹配。
+.. 输入您在 Splunk 中创建的事件收集器令牌。
+
+
+. 选择link:task-siem.html#event-delivery-route["事件传递路线"]。要将 SIEM 事件传送到您的 SIEM 端点，请选择 *Deliver via NetApp Console*。要通过网络上已有的 Console 代理路由事件，请选择 *Deliver via Console agent*。
++
+如果您选择了*通过控制台代理交付*，请从下拉菜单中选择要使用的控制台代理。
+
+. 选择 *Connect* 以开始发送 SIEM 数据。
+
+
+
+
+[[next-steps]]
+== 后续步骤
+
+* link:reference-soar.html["整合 SOAR 攻略"]
+

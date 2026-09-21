@@ -53,7 +53,6 @@ summary: 只需几个步骤，即可开始使用 NetApp Ransomware Resilience。
 
 * （可选）配置备份目标：
 +
-** link:rp-start-setup.html["准备NetApp StorageGRID、Amazon Web Services、Google Cloud Platform 或 Microsoft Azure 作为备份目标"] 。
 ** link:rp-start-setup.html["配置备份目标"]
 
 

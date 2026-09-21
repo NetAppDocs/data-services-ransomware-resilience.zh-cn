@@ -87,7 +87,19 @@ sidebar:
       - title: 模拟恶意用户事件
         url: "/task-test-user-activity.html"
     - title: 配置 SIEM
-      url: "/task-siem.html"
+      entries:
+      - title: 了解 SIEM 支持
+        url: "/task-siem.html"
+      - title: 配置 AWS Security Hub
+        url: "/task-siem-security-hub.html"
+      - title: 配置Google SecOps
+        url: "/task-siem-secops.html"
+      - title: 配置 Microsoft Sentinel
+        url: "/task-siem-sentinel.html"
+      - title: 配置 Splunk Cloud & Enterprise
+        url: "/task-siem-splunk.html"
+      - title: 使用 Webhook 配置 SIEM
+        url: "/task-siem-webhook.html"
     - title: 整合 SOAR 攻略
       url: "/reference-soar.html"
     - title: 下载报告

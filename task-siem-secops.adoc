@@ -1,0 +1,81 @@
+---
+sidebar: sidebar 
+permalink: task-siem-secops.html 
+keywords: ransomware protection, SIEM, security event management system, orchestration, event management, google, secops, security operations 
+summary: 通过连接 Google SecOps SIEM，简化 NetApp Ransomware Resilience 中的威胁分析和事件管理。 
+---
+= 在 NetApp Ransomware Resilience 中配置 Google SecOps SIEM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilience 为安全信息和事件管理 (SIEM) 提供对 Google SecOps 的原生支持。通过将 Ransomware Resilience 连接到 Google SecOps，您可以自动发送事件数据以进行威胁分析和检测，从而简化勒索软件保护和事件管理。
+
+
+
+[[before-you-begin]]
+== 开始之前
+
+在 NetApp Ransomware Resilience 中启用 Google SecOps 之前，您必须在 Google SecOps 中注册日志类型和 webhook，以启用服务之间的连接。
+
+
+
+[[configure-google-secops]]
+== 配置Google SecOps
+
+请在 Google SecOps 中执行以下步骤：
+
+.创建日志类型
+. 在 Google SecOps 中，导航到*设置* > *SIEM 设置* > *可用日志类型*。
++
+建议您使用 NETAPP_RANSOMWARE_RESILIENCE 日志类型。如果您不想使用此功能，请创建自定义日志类型。
+
+. 如果使用 NETAPP_RANSOMWARE_RESILIENCE 日志类型，则它包含预构建的解析器，无需执行任何进一步的操作。
++
+如果使用自定义日志类型，则必须创建解析器。前往 *SIEM 设置* > *解析器* > *创建解析器* 以创建解析器。
+
+
+
+.注册 webhook
+. 在 Google SecOps 中，导航到 *设置* > *SIEM 设置* > *Feeds*。
+. 选择 *Add new feed*。
+. 选择在创建日志类型工作流程中使用的日志类型。
+. 将*源类型*设置为 Webhook，然后保存源。
+. 打开*详细信息*选项卡。复制 *Webhook 端点 URL*，以便在 Ransomware Resilience 中进行身份验证时使用。
+. 打开 *Secret key* 选项卡。生成 secret key 或复制它（如果您已经创建了一个）。保存密钥以在 Ransomware Resilience 中进行身份验证时使用。
+. 使用您组织的 Google API 密钥流程创建 *API 密钥*。
+
+
+
+
+[[authenticate-google-secops-in-ransomware-resilience]]
+== 在 Ransomware Resilience 中验证 Google SecOps
+
+. 在 Ransomware Resilience 中，选择侧边栏中的 *Settings*。
+. 在设置页面中，在 SIEM 连接图块中选择*连接*，然后从下拉菜单中选择 *Google SecOps*。
++
+image:screen-settings-threat-detection-3options.png["SIEM 连接选项的屏幕截图"]
+
+. 查看 *先决条件* 和 *Webhook 源* 部分。
+. 展开 *Authentication* 部分。
++
+.. 输入您从 Google SecOps 复制的 *Webhook URL*。
+.. 输入来自 Google SecOps 的 *Secret key* 和 *API key*。
+
+
+. 选择link:task-siem.html#event-delivery-route["事件传递路线"]。要将 SIEM 事件传送到您的 SIEM 端点，请选择 *Deliver via NetApp Console*。要通过网络上已有的 Console 代理路由事件，请选择 *Deliver via Console agent*。
++
+如果您选择了*通过控制台代理交付*，请从下拉菜单中选择要使用的控制台代理。
+
+. 选择 *Connect* 以开始发送 SIEM 数据。
+
+
+
+
+[[next-steps]]
+== 后续步骤
+
+* link:reference-soar.html["整合 SOAR 攻略"]
+

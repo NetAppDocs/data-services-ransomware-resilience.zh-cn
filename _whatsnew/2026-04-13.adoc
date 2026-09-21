@@ -18,7 +18,7 @@ Ransomware Resilience 现在支持 clean restores，这是一种新的恢复选�
 
 Ransomware Resilience 现在为 Splunk Enterprise 提供安全信息事件管理 (SIEM) 支持，使您能够集中日志和事件数据，并简化威胁分析和检测。
 
-有关详细信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["将勒索软件弹性连接到 SIEM"^]。
+有关详细信息，请参见link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-splunk.html["配置 Splunk SIEM"^]。
 
 
 

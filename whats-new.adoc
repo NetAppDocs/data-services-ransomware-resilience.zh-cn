@@ -129,7 +129,7 @@ Ransomware Resilience 现在在 UI 中包含暂停或删除 SIEM 系统的选项
 
 Ransomware Resilience 现在支持通过 Ransomware Resilience UI 中的 Webhook 配置安全信息和事件管理 (SIEM) 系统。通过 Webhook，您可以使用首选的 SIEM 系统来组织勒索软件监控。
 
-有关详细信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["配置 SIEM 系统"^]。
+有关详细信息，请参见link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-webhook.html["使用 Webhook 配置 SIEM 系统"^]。
 
 
 
@@ -161,7 +161,7 @@ NetApp Ransomware Resilience 支持在用户行为监控警报中排除特定的
 
 Ransomware Resilience 现在提供 Azure Resource Manager (ARM) 模板，用于连接到 Microsoft Sentinel 作为 SIEM，提供辅助方法以简化部署。
 
-有关详细信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["连接到 SIEM 以进行威胁检测和分析"^]。
+有关详细信息，请参见link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-sentinel.html["在 Ransomware Resilience 中配置 Microsoft Sentinel SIEM"^]。
 
 
 
@@ -264,7 +264,7 @@ link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clea
 
 Ransomware Resilience 现在支持 Google SecOps 的安全信息和事件管理 (SIEM)，使您能够将数据自动发送到 Google SecOps 以简化威胁分析和检测。
 
-有关配置信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["将勒索软件弹性连接到 SIEM"^]。
+有关配置信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-secops.html["在 Ransomware Resilience 中配置 Google SecOps SIEM"^]。
 
 
 
@@ -305,7 +305,7 @@ Ransomware Resilience 现在支持 clean restores，这是一种新的恢复选�
 
 Ransomware Resilience 现在为 Splunk Enterprise 提供安全信息事件管理 (SIEM) 支持，使您能够集中日志和事件数据，并简化威胁分析和检测。
 
-有关详细信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["将勒索软件弹性连接到 SIEM"^]。
+有关详细信息，请参见link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-splunk.html["配置 Splunk SIEM"^]。
 
 
 
@@ -801,7 +801,7 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 
 现在，您可以使用 Microsoft Sentinel 将数据发送到安全和事件管理系统 (SIEM) 以进行威胁分析和检测。以前，您可以选择 AWS Security Hub 或 Splunk Cloud 作为您的 SIEM。
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["了解有关配置BlueXP ransomware protection设置的更多信息"]。
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-sentinel.html["了解有关配置BlueXP ransomware protection设置的更多信息"]。
 
 
 
