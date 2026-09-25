@@ -150,8 +150,8 @@ TIP: 客户端密钥的有效期限制为两年（24 个月）或更短。Micros
 
 
 
-[[authenticate-microsoft-sentinel-in-ransomware-resilience]]
-== 在 Ransomware Resilience 中验证 Microsoft Sentinel
+[[add-roles-in-azure-and-authenticate-microsoft-sentinel-in-ransomware-resilience]]
+== 在 Azure 中添加角色，并在 Ransomware Resilience 中验证 Microsoft Sentinel
 
 对于 Microsoft Sentinel SIEM，您可以选择自动部署，其中 Ransomware Resilience 根据您提供的权限部署资源。或者，您可以执行手动部署，其中根据提供的 ARM 模板部署资源。这两个选项都要求您在 Azure 门户中设置权限，然后在 Ransomware Resilience 中验证连接，尽管步骤有所不同。请选择最适合您需求的工作流程。
 

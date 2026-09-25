@@ -45,6 +45,7 @@ summary: 已知限制标识了该产品的此版本不支持的平台、设备�
 * 选择保护策略时，请确保其快照计划与 Azure NetApp Files 兼容。Azure NetApp Files 中最常用的快照计划是每小时一次。
 * 由于 Azure NetApp Files API 会阻止自动操作，因此建议不要将 link:reference-soar.html["SOAR 攻略"] 与 Azure NetApp Files 一起使用。
 * 某些事件数据未包含在 link:task-siem.html["SIEM 报告"] 中，适用于 Azure NetApp Files 配置。
+* 当您为 Azure NetApp Files link:task-custom-restore.html["还原工作负载"] 时，文件级还原不可用。
 
 
 
