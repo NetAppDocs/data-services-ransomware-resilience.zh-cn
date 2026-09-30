@@ -2244,7 +2244,6 @@
   <block id="aafdf7d684cdbc06940987bf451e6069" category="section-title">用户行为检测要求</block>
   <block id="8258c7e67c72fe5a72748135c6b87a68" category="paragraph">要使 Ransomware Resilience 提供有关用户行为的警报，必须配置用户活动代理。要安装用户活动代理，请确保您的系统满足 <block ref="423b5fb22336ee99727442d2bf2268c5" category="inline-link-macro-rx"></block>。</block>
   <block id="88e7bcbfec161904679f03f8797894a6" category="inline-link-macro">检测可疑用户行为</block>
-  <block id="b499f45630896bc77ad77d6591c41b0f" category="list-text">还请查看 <block ref="019fa8a22de443e4055edc5a56d223fe" category="inline-link-macro-rx"></block> 和 <block ref="5909784b16712ef276fd16aaaa47a088" category="inline-link-macro-rx"></block> 的要求。</block>
   <block id="63fde6d770b2c8ba714c1f08a582c093" category="inline-link-macro">通过配置用户行为检测来增强保护</block>
   <block id="8c1efc202ff8276c615ec5ce66929176" category="list-text">或者，<block ref="6775eab4a283e419045522f21b7d2960" category="inline-link-macro-rx"></block></block>
   <block id="109acfe0b7e8d2f9308c5731f4ac86cf" category="inline-link-macro">配置 SOAR 剧本</block>
@@ -2670,7 +2669,6 @@
   <block id="cfb664a7c55a4ffead74e1674d2f33eb" category="summary">只需几个步骤，即可开始使用 NetApp Ransomware Resilience。</block>
   <block id="b6d95b844bfe25407e74be4d50d288fa" category="paragraph">使用此快速入门设置 NetApp Ransomware Resilience、发现工作负载并配置保护。</block>
   <block id="116246596fad0beb7ffba5f0c89883e1" category="inline-link-macro">查看 Ransomware Resilience 用户角色，并为访问该服务的用户分配权限</block>
-  <block id="5809338b3950a9c2eb01defed9f67578" category="list-text"><block ref="5809338b3950a9c2eb01defed9f67578" category="inline-link-macro-rx"></block></block>
   <block id="177f71f748fd13cdfe5346fed8eb6369" category="paragraph">这些任务需要 _Ransomware Resilience admin_ 角色。要配置用户行为检测，您还需要 _Ransomware Resilience user behavior admin_ 角色。</block>
   <block id="520186e595ac4a2b12f766d5e60dae3a" category="paragraph">配置保护后，您可以：</block>
   <block id="16f66cf83117826af1028c7315808f5b" category="paragraph">通过准备备份目标、查看先决条件以及配置 NetApp Console 和 Console 代理来设置 NetApp Ransomware Resilience。</block>
@@ -2873,4 +2871,6 @@
   <block id="e9cbe0aaa0ffb3834bf6a16e6c4f6881" category="inline-link-macro">还原工作负载</block>
   <block id="1b4c5e5585c892abb8e8dd8b4b4145d8" category="list-text">当您为 Azure NetApp Files <block ref="825823111b1491b7b84194a9322124b7" category="inline-link-macro-rx"></block> 时，文件级还原不可用。</block>
   <block id="be477216a2a05782605c951939d5638a" category="section-title">在 Azure 中添加角色，并在 Ransomware Resilience 中验证 Microsoft Sentinel</block>
+  <block id="dedb015aaf7f105f1187fe35f028dd0f" category="list-text">请查看 <block ref="019fa8a22de443e4055edc5a56d223fe" category="inline-link-macro-rx"></block> 和 <block ref="5909784b16712ef276fd16aaaa47a088" category="inline-link-macro-rx"></block> 的要求。</block>
+  <block id="823ff360f4694fe5d6e7799f5cab531b" category="list-text"><block ref="823ff360f4694fe5d6e7799f5cab531b" category="inline-link-macro-rx"></block></block>
 </blocks>
