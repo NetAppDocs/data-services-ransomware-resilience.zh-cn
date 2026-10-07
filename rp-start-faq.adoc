@@ -32,6 +32,11 @@ summary: 查找有关NetApp Ransomware Resilience的常见问题的答案。
 
 有关详细信息，请参阅link:rp-start-login.html["访问勒索软件弹性"]和link:rp-start-quick-start.html["勒索软件抵御能力快速入门指南"]。
 
+.勒索软件弹性有哪些控制台代理要求？
+link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["查看并为用户设置适当的权限。"] 请确保您的 Console 组织中至少有一个活动的 Console 代理连接到受支持的系统。Console 代理必须使 `cloudmanager-ransomware-protection`容器处于活动状态。
+
+此外，每个 Console 代理的工作负载限制为 3,000 个。您可以提交请求以提高此限制。
+
 .勒索软件防护是否提供标准模式、受限模式和私有模式？
 勒索软件恢复功能目前仅在标准模式下可用。
 
@@ -56,7 +61,7 @@ summary: 查找有关NetApp Ransomware Resilience的常见问题的答案。
 * 运行在试用期间或许可证下创建的所有计划操作
 
 
-要停用 Ransomware Resilience，请提交支持请求。请求必须包含您的组织 ID，并注明您要停用该服务。
+要停用 Ransomware Resilience，请提交支持请求。该请求必须包含您的组织 ID，并注明您要停用该服务。
 
 
 
@@ -111,7 +116,7 @@ link:rp-use-protect.html["了解工作负载优先级或重要性"] 。
 在 Ransomware Resilience 中，当启用 _detection_ 策略时，工作负载显示 *protected* 状态。检测策略必须由加密检测或可疑用户行为检测（或两者）组成。有关详细信息，请参见 link:rp-use-protect.html#add-a-ransomware-protection-strategy["检测策略"]。
 
 .什么是“高风险”工作量？
-工作负载必须具有启用了加密检测或用户行为检测的勒索软件保护策略，才能被视为受保护。如果没有这些检测策略中的至少一种，则工作负载将被标记为存在风险。如果工作负载具有备份或快照策略，但未启用加密检测或用户行为检测，则该工作负载将被视为存在风险。
+工作负载必须具有启用了加密检测或用户行为检测的勒索软件保护策略，才能被视为受保护。如果没有这些检测策略中的至少一种，工作负载将被标记为存在风险。如果工作负载具有备份或快照策略，但未启用加密检测或用户行为检测，则会被视为存在风险。
 
 Ransomware Resilience 还提供可疑文件扩展名检测。如果可疑文件扩展名检测是唯一启用的检测策略，则工作负载将被标记为存在风险。
 
@@ -155,13 +160,13 @@ Ransomware Resilience 可识别五种攻击类型：
 是的，Ransomware Resilience 会发现在 ONTAP 中设置的快照计划。它还会发现是否在发现的工作负载中的所有卷上启用了 ARP 和 FPolicy。您在 Ransomware Resilience 控制面板中看到的信息是从其他 NetApp 解决方案和产品中汇总而来的。
 
 .Ransomware Resilience 是否了解 Backup and Recovery 中已经制定的策略？
-是的，如果您在 Backup and Recovery 中管理工作负载，则由这些产品管理的策略将被纳入 Ransomware Resilience。
+是的，如果您在 Backup and Recovery 中管理工作负载，则这些策略将被纳入 Ransomware Resilience。
 
 .是否可以修改从 NetApp Backup and Recovery 结转的策略？
 不可以，您无法修改由 Backup and Recovery from Ransomware Resilience 管理的策略。您可以在 Backup and Recovery 中管理对这些策略的任何更改。
 
-.如果ONTAP中存在策略（例如 ARP、FPolicy 和快照），这些策略是否会在勒索软件恢复功能中更改？
-不会。勒索软件恢复不会修改ONTAP中的任何现有检测策略（ARP、FPolicy 设置）。
+.如果 ONTAP 中存在策略（例如 ARP、FPolicy 和快照），勒索软件弹性是否会更改它们？
+Ransomware Resilience 不会修改 ONTAP 中的任何现有检测策略（ARP、FPolicy 设置）。如果您修改 Ransomware Resilience 中的任何设置，则可以覆盖 ONTAP 设置。
 
 .注册 Ransomware Resilience 后，如果在 Backup and Recovery 中添加新策略，会发生什么情况？
 Ransomware Resilience 可识别 Backup and Recovery 中新创建的策略和策略更改。
