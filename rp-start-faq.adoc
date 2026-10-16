@@ -88,10 +88,18 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 .Ransomware Resilience 是否了解ONTAP中的保护设置？
 是的，Ransomware Resilience 发现了在ONTAP中设置的快照计划。
 
-.勒索软件弹性如何与 NetApp Backup and Recovery 交互？
-Ransomware Resilience 与 Backup and Recovery 配合使用，发现并设置文件共享工作负载的快照和备份策略。Ransomware Resilience 还与 Backup and Recovery 配合使用，以执行文件和工作负载一致的恢复。
+.勒索软件弹性许可证是否包含 NetApp 其他产品？
+不，勒索软件弹性许可证不包括其他 NetApp 产品。
 
-对于许可和计费，即使您没有单独的备份和恢复许可证，勒索软件恢复功能也可以与备份和恢复功能集成。如果您同时拥有备份和恢复以及勒索软件恢复功能，则受这两种产品保护的任何公共数据仅由勒索软件恢复功能计费。
+.勒索软件弹性如何与 NetApp Backup and Recovery 交互？
+如果您拥有有效的 Backup and Recovery 许可证和 Ransomware Resilience，Ransomware Resilience 会发现 Backup and Recovery 中设置的快照和备份策略。您无法在 Ransomware Resilience 中编辑 Backup and Recovery 策略，但可以替换它们。
+
+Ransomware Resilience 还与 Backup and Recovery 配合使用，以执行文件和工作负载一致的恢复。对于由 Ransomware Resilience 和 Backup and Recovery 发现并保护的工作负载，您可以从任一服务执行恢复。
+
+如果您同时拥有备份和恢复以及勒索软件恢复功能，则受这两种产品保护的任何公共数据仅由勒索软件恢复功能计费。
+
+.如果我之前通过 Data Infrastructure Insights Workload Security 启用过用户活动检测，我需要知道什么？
+如果您已经在使用 NetApp Data Infrastructure Insights (DII) Workload Security，请使用相同的 Workload Security 代理来实现 Ransomware Resilience。您无需为 Ransomware Resilience 部署单独的 Workload Security 代理。但是，使用相同的 Workload Security 代理需要在 Ransomware Resilience Console 组织和 DII Storage Workload Security 租户之间建立配对关系。请联系您的客户代表以启用此配对。
 
 
 
