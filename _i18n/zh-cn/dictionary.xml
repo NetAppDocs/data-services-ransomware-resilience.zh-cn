@@ -2881,4 +2881,6 @@
   <block id="a8e75ad6008293b62f2f0e9d9831a35d" category="paragraph-title">如果我之前通过 Data Infrastructure Insights Workload Security 启用过用户活动检测，我需要知道什么？</block>
   <block id="1d1aa737543f7a38b5529fc14884bb9a" category="paragraph">Ransomware Resilience 许可证不包括其他 NetApp 产品。</block>
   <block id="806ec63eaaf32091114d52559b568902" category="section-title">Data Infrastructure Insights (DII) Workload Security 用户注意事项</block>
+  <block id="7d20abced2097011f465f4a9fe86d1f4" category="paragraph">当您在 Ransomware Resilience 中激活用户活动检测时，它会使用当前保存在控制台中的凭据来管理您的数据收集器。如果您之前通过 Data Infrastructure Insights （DII） Workload Security 启用了用户活动检测，则控制台凭据将替换您之前在 DII 中用于管理数据收集器的凭据。</block>
+  <block id="cbb0b1774db28ef79ba2a2fa819d9cfb" category="list-text">当前正在预览对 Google Cloud NetApp Volumes 的 Flex 服务级别的支持。</block>
 </blocks>

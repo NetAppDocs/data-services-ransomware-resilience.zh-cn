@@ -57,6 +57,7 @@ summary: 已知限制标识了该产品的此版本不支持的平台、设备�
 
 * 目前，您只能将基于加密和 FPolicy 的保护策略应用于 Google Cloud NetApp Volumes 工作负载。您无法应用用户行为保护策略。
 * Google Cloud NetApp Volumes 目前不支持具有复制功能的保护策略。
+* 当前正在预览对 Google Cloud NetApp Volumes 的 Flex 服务级别的支持。
 
 
 

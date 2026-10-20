@@ -43,6 +43,8 @@ summary: NetApp Ransomware Resilience 中的用户活动检测使您能够检测
 
 如果您已经在使用 NetApp Data Infrastructure Insights (DII) Workload Security，请使用相同的 Workload Security 代理来实现 Ransomware Resilience。您无需为 Ransomware Resilience 部署单独的 Workload Security 代理。但是，使用相同的 Workload Security 代理需要在 Ransomware Resilience Console 组织和 DII Storage Workload Security 租户之间建立配对关系。请联系您的客户代表以启用此配对。
 
+当您在 Ransomware Resilience 中激活用户活动检测时，它会使用当前保存在控制台中的凭据来管理您的数据收集器。如果您之前通过 Data Infrastructure Insights （DII） Workload Security 启用了用户活动检测，则控制台凭据将替换您之前在 DII 中用于管理数据收集器的凭据。
+
 
 
 [[create-a-user-activity-agent]]
