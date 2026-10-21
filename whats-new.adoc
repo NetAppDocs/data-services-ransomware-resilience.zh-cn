@@ -18,6 +18,27 @@ summary: 了解NetApp Ransomware Resilience的新功能。
 
 
 
+[[20-october-2026]]
+== 2026年10月20日
+
+
+
+[[enhanced-isolated-recovery-environment-configuration]]
+=== 增强的隔离恢复环境配置
+
+Ransomware Resilience 现在提供增强的隔离恢复环境配置工作流程。新的工作流程明确并简化了为云或本地环境设置隔离恢复环境的流程。
+
+有关详细信息，请参见link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["为干净还原创建隔离的恢复环境"^]。
+
+
+
+[[google-cloud-netapp-volumes-flex-service-level-generally-available]]
+=== Google Cloud NetApp Volumes Flex 服务级别正式推出
+
+Ransomware Resilience 中 Google Cloud NetApp Volumes 对 Flex 服务级别的支持现已全面推出（GA）。
+
+
+
 [[16-september-2026]]
 == 2026年9月16日
 

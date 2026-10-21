@@ -527,27 +527,31 @@ NFS 访问：* Production Console agent * Console agent VLAN * Clean room VLAN
 . 在勒索软件恢复功能中，选择**设置**。
 . 在隔离清理和恢复卡中，选择**添加**以创建隔离恢复环境。
 . 在类型部分，选择 *On-demand cleaning*。
-. 展开 **名称** 部分。输入环境的 **名称**。
-. 对于基于云的 IRE，请选择 **Amazon Web Services**。
-. 展开*系统*部分。选择要连接到 IRE 的系统。对于您选择的每个系统，必须提供存储 VM 的 IP 地址、子网掩码和网关。
+. 对于基于云的 IRE，请选择 **Amazon Web Services** 作为位置。
+. 输入环境的 **名称**。
+. 选择“下一步”。
+. 展开*系统*部分。选择要连接到 IRE 的系统。对于您选择的每个系统。每个系统必须具有到 IRE 的网络连接。您可能需要为每个系统提供数据 LIF IP 地址，以建立干净还原恢复点。
 +
 
 NOTE: 对于部署到 Amazon FSx for NetApp ONTAP 的 IRE，无需提供此信息。
 
+. 对于您添加的除 Amazon FSx for NetApp ONTAP 之外的每个系统，请选择*编辑存储虚拟机*。在弹出窗口中，输入*存储虚拟机 IP 地址*和*存储虚拟机子网掩码*。对于*广播域*，选择默认或管理。您可以选择输入*存储虚拟机网关*。
 +
 image::clean-restore-systems.png[系统选择界面的屏幕截图。]
 
-. 展开 **Authentication** 部分。
+. 选择“下一步”。
+. 在 *身份验证* 部分，输入云 **帐户** ID，然后从下拉菜单中选择帐户的 **区域**。您只能在受支持的区域中部署 IRE。
+. 输入帐户的 **Access key** 和 **Secret key**。
 +
-** 输入云 **Account** ID，然后从下拉菜单中选择该账户的 **Region**。您只能在受支持的区域中部署 IRE。
-** 输入帐户的 **Access key** 和 **Secret key**。
+
+NOTE: 该帐户必须具有必要的权限，才能允许 Ransomware Resilience 部署控制台代理并创建按需洁净室。
+
 +
 image::screenshot-set-up-recovery-environment.png[IRE 身份验证设置的屏幕截图。]
 
-
-
-. 展开 *Virtual private cloud (VPC)* 部分。输入要部署 IRE 的 VPC ID。
-. 选择 **添加** 以创建 IRE。
+. 展开 *Amazon VPC* 部分。输入要部署 IRE 的虚拟私有云 ID。（这是您在先决条件中建立的 VPC。）
+. 选择*下一步*以查看配置。
+. 查看配置。选择*添加*以创建 IRE。
 +
 选择添加后，Ransomware Resilience 会测试连接，这可能需要几分钟的时间。当 IRE 的状态显示为"已部署"时，IRE 已成功部署。
 
@@ -559,31 +563,30 @@ image::screenshot-set-up-recovery-environment.png[IRE 身份验证设置的屏�
 . 在勒索软件恢复功能中，选择**设置**。
 . 在 Clean restores 卡中，如果这是您的第一个环境，请选择 **Add**；如果已经创建了环境，请选择 **Manage**。
 . 在类型部分，选择 *On-demand cleaning*。
-. 展开 *Name* 部分。为 IRE 分配 **Name**。
 . 对于位置，选择 **On-premises**。
-. 展开*系统*部分。选择要连接到 IRE 的系统。为具有要在 IRE 中恢复的工作负载的每个系统分配存储 VM IP、子网掩码和网关。
+. 输入*隔离恢复环境名称*。
+. 选择“下一步”。
+. 展开*系统*部分。选择要连接到 IRE 的系统。
 +
 您选择的每个系统都必须具有分配的 IP 地址。您可以选择主系统或辅助系统。如果主系统没有未加密的快照或不可用，则可以使用辅助系统进行分析和恢复。
 
-. 展开 **Console agent** 部分。从 IRE 中部署的下拉菜单中选择 Console agent。
-. 展开*Clean room compute*部分。
+. 对于已添加的每个系统，选择*编辑存储虚拟机*。在弹出窗口中，输入*存储虚拟机 IP 地址*和*存储虚拟机子网掩码*。对于*广播域*，选择默认或管理。您可以选择输入*存储虚拟机网关*。
+. 选择“下一步”。
+. 从 IRE 中部署的下拉菜单中选择 Console agent。
+. 提供对 vCenter 服务器进行身份验证的凭据：*IP 地址或完全限定域名（FQDN）*、*端口*、*用户名*和*密码*。
+. 选择 **Authenticate** 以确认凭据。请等待 UI 确认您的凭据后再继续。
+. 展开*洁净室计算部分*。
+. 选择要部署 VM 的 *Datacenter* 和 *Cluster*。
+. 为 ESXi 主机选择*数据存储区*和*网络*。
+. 为虚拟机输入 CIDR 格式的 *IP 地址范围*（例如 10.0.0.1/24）、*子网掩码*和*网关*。
+. 选择位于 ESXi 主机上的虚拟机，该虚拟机将在恢复过程中用作克隆的基本虚拟机。
 +
-.. 提供对 vCenter 服务器进行身份验证的凭据：*IP 地址*或完全限定的域名 (FQDN)、*端口*、*用户名*和*密码*。
-.. 选择 **Authenticate** 以确认凭据。请等待 UI 确认您的凭据后再继续。
-.. 选择要部署 VM 的 *Datacenter* 和 *Cluster*。
-.. 为 ESXi 主机选择*数据存储区*和*网络*。
-.. 为虚拟机输入 CIDR 格式的 *IP 地址范围*（例如 10.0.0.1/24）、*子网掩码*和*网关*。
+对于 Ransomware Resilience 用于扫描勒索软件的 Linux VM，请从下拉菜单中选择 VM，然后输入 VM 的*用户名*和*密码*。
+
 +
-image:clean-restore-compute.png["计算选择界面的屏幕截图。"]
+对于用于扫描的 Windows VM，请从下拉菜单中选择 VM，然后输入 VM 的*用户名*和*密码*。
 
-
-
-. 展开 *Clean room VMs* 部分，该部分根据您在 *Compute* 部分中的输入填充。
-+
-.. 对于 Ransomware Resilience 用于扫描勒索软件的 Linux VM，请从下拉菜单中选择 VM，然后输入 VM 的*用户名*和*密码*。
-.. 对于用于扫描的 Windows VM，请从下拉菜单中选择 VM，然后输入 VM 的*用户名*和*密码*。
-
-
+. 选择*下一步*以查看配置。
 . 选择 **Add** 创建 IRE。选择添加后，Ransomware Resilience 会测试连接；此过程可能需要几分钟。当 IRE 的状态显示为"deployed"时，IRE 已成功部署。
 
 
