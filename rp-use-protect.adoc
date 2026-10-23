@@ -12,7 +12,7 @@ summary: 您可以通过在NetApp Ransomware Resilience中为工作负载分配�
 
 
 [role="lead"]
-勒索软件防护策略是 NetApp Ransomware Resilience 的一个关键特征：它们支持检测、保护和复制。保护策略是网络安全态势的重要组成部分。
+勒索软件防护策略是 NetApp Ransomware Resilience 的一个关键功能：它们支持检测、保护和复制。启用勒索软件防护策略以检测勒索软件攻击，并确保您拥有用于恢复的保护基准。
 
 *需要控制台角色* 要执行此任务，需要 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["超级管理员"^] 或 Ransomware Resilience 管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^]。
 
