@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: rp-use-protect.html 
-keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, detection, protection, policy, malware 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, detection, protection, policy, malware, replication, snapshot policy, backup policy, protection strategy 
 summary: 您可以通过在NetApp Ransomware Resilience中为工作负载分配策略来保护工作负载免受勒索软件攻击。 
 ---
 = 使用NetApp Ransomware Resilience保护策略保护工作负载
@@ -12,182 +12,17 @@ summary: 您可以通过在NetApp Ransomware Resilience中为工作负载分配�
 
 
 [role="lead"]
-勒索软件防护策略是 NetApp Ransomware Resilience 的一个关键功能：它们支持检测、保护和复制。启用勒索软件防护策略以检测勒索软件攻击，并确保您拥有用于恢复的保护基准。
+在 NetApp Ransomware Resilience 中发现工作负载后，必须将 link:concept-strategy.html["保护策略"] 应用于您的工作负载，以配置勒索软件检测、保护和复制的组合。启用勒索软件保护策略以检测勒索软件攻击，并确保您拥有用于恢复的保护基准。
 
 *需要控制台角色* 要执行此任务，需要 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["超级管理员"^] 或 Ransomware Resilience 管理员角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索软件恢复角色"^]。
 
 
 
-[[understand-ransomware-protection-strategies]]
-== 了解勒索软件防护策略
+[[before-you-begin]]
+== 开始之前
 
-勒索软件防护策略包括_检测_、_保护_和_复制_策略。
+如果您打算创建具有可疑用户行为检测功能的保护策略，请确保您已link:suspicious-user-activity.html["执行了必要的设置"]以进行用户活动监控。
 
-* **检测策略**识别勒索软件威胁。您有三个检测选项：
-+
-** 加密检测
-** 可疑的用户活动
-** 阻止可疑文件扩展名
-+
-您的检测策略可以包括所有三个选项，也可以包括这三个选项的组合。它必须包括加密检测或 link:suspicious-user-activity.html["可疑用户活动（需要额外配置）"]。
-
-
-
-* **保护策略**包括快照和备份策略。保护策略中需要检测和快照策略。备份策略是可选的。
-+
-如果您使用其他NetApp产品来保护您的工作负载，勒索软件恢复能力会发现这些产品并提供以下选项：
-
-+
-** 使用勒索软件检测策略并继续使用其他NetApp工具创建的快照和备份策略，或者
-** 使用勒索软件弹性来管理检测、快照和备份。
-
-
-* **复制策略** 使您能够将勒索软件恢复功能的快照复制到辅助站点。复制计划可以设置为每小时、每天、每周或每月一次的频率。
-+
-目前，您只能将快照复制到本地ONTAP存储。
-
-
-
-
-NOTE: 如果要为 Amazon FSx for NetApp ONTAP 和 Azure NetApp Files 配置保护策略，请参阅 link:rp-reference-limitations.html["每项服务的限制"]。
-
-
-TIP: 为了增强对数据资产的管理和保护，您可以创建link:task-protection-group.html["组工作负载"]来在一个策略下共同保护卷。
-
-
-
-[[protection-policies-with-other-netapp-managed-services]]
-=== 与其他NetApp托管服务结合的保护策略
-
-除了 Ransomware Resilience 之外，您还可以使用 NetApp Backup and Recovery 来管理文件共享、VM 文件共享的保护。
-
-来自 Backup & Recovery 服务的保护信息显示在 Ransomware Resilience 中。您可以使用 Ransomware Resilience 向这些服务添加检测策略。使用 Ransomware Resilience 添加保护策略将取代现有的保护策略。
-
-如果勒索软件检测策略由ONTAP中的自主勒索软件防护（ARP 或 ARP/AI，取决于ONTAP版本）和 FPolicy 管理，则这些工作负载将受到保护并将继续由 ARP 和 FPolicy 管理。
-
-
-NOTE: Amazon FSx for NetApp ONTAP 或 Azure NetApp Files 中的工作负载无法使用备份目标。使用 FSx for ONTAP 备份服务执行备份操作。您可以在 AWS 中为 FSx for ONTAP 中的工作负载设置备份策略，而不是在 Ransomware Resilience 中。备份策略显示在 Ransomware Resilience 中，并且与 AWS 保持不变。
-
-
-
-==== 针对不受NetApp应用程序保护的工作负载的保护策略
-
-如果您的工作负载不是由 Backup and Recovery 或 Ransomware Resilience 管理，则可能有作为 ONTAP 或其他产品的一部分拍摄的快照。如果 ONTAP FPolicy 保护到位，则可以使用 ONTAP 更改 FPolicy 保护。
-
-
-
-[[predefined-detection-policies]]
-=== 预定义的检测策略
-
-您可以选择以下勒索软件恢复预定义策略之一，这些策略与工作负载重要性相一致。
-
-
-NOTE: **Encryption user extension** 策略是唯一支持可疑用户行为检测的预定义策略。+ **Critical replication policy** 是唯一支持将快照复制到 ONTAP 的预定义策略。
-
-[cols="10,15a,20,15,15,15"]
-|===
-| 政策层面 | Snapshot | 频率 | 保留时间（天） | 快照副本数量 | 快照副本的最大数量 
-
-
-.4+| *关键工作量政策*  a| 
-每刻钟
-| 每15分钟 | 3 | 288 | 309 
-
-
-| 每日  a| 
-每 1 天
-| 14 | 14 | 309 
-
-
-| 每周  a| 
-每 1 周
-| 35 | 5 | 309 
-
-
-| 每月  a| 
-每 30 天
-| 60 | 2 | 309 
-
-
-.4+| *重要的工作量政策*  a| 
-每刻钟
-| 每30分钟一班 | 3 | 144 | 165 
-
-
-| 每日  a| 
-每 1 天
-| 14 | 14 | 165 
-
-
-| 每周  a| 
-每 1 周
-| 35 | 5 | 165 
-
-
-| 每月  a| 
-每 30 天
-| 60 | 2 | 165 
-
-
-.4+| *标准工作量政策*  a| 
-每刻钟
-| 每30分钟 | 3 | 72 | 93 
-
-
-| 每日  a| 
-每 1 天
-| 14 | 14 | 93 
-
-
-| 每周  a| 
-每 1 周
-| 35 | 5 | 93 
-
-
-| 每月  a| 
-每 30 天
-| 60 | 2 | 93 
-
-
-.4+| *加密用户扩展*  a| 
-每刻钟
-| 每30分钟 | 3 | 72 | 93 
-
-
-| 每日  a| 
-每 1 天
-| 14 | 14 | 93 
-
-
-| 每周  a| 
-每 1 周
-| 35 | 5 | 93 
-
-
-| 每月  a| 
-每 30 天
-| 60 | 2 | 93 
-
-
-.4+| *关键复制策略*  a| 
-每刻钟
-| 每15分钟 | 3 | 288 | 309 
-
-
-| 每日  a| 
-每 1 天
-| 14 | 14 | 309 
-
-
-| 每周  a| 
-每 1 周
-| 35 | 5 | 309 
-
-
-| 每月  a| 
-每 30 天
-| 60 | 2 | 309 
-|===
 
 
 [[add-a-ransomware-protection-strategy]]
@@ -247,64 +82,56 @@ image:screen-protection.png["管理策略页面"]
 +
 image:screen-protection-strategy-add.png["添加显示快照部分的策略页面"]
 
-. 输入新的策略名称，或输入现有名称进行复制。如果您输入的是现有名称，请选择要复制的名称并选择*复制*。
-+
-
-NOTE: 如果您选择复制并修改现有策略，Ransomware Resilience 会在原始名称后附加“_copy”。您应该更改名称和至少一个设置以使其唯一。
-
+. 输入新的策略名称。策略名称不能包含空格。
+. （可选）选择现有的保护策略作为新策略的基础。在*从现有 Ransomware Resilience 策略复制*中，选择*选择*。选择现有策略，然后选择*复制*。
 . 对于每个项目，选择*向下箭头*。
+. 选择*检测策略*设置：
 +
-** *检测政策*：
-+
-*** *策略*：选择预先设计的检测策略之一。
-*** *加密检测*：启用 Ransomware Resilience 以检测基于加密的攻击。
-*** *可疑用户行为检测*：启用用户行为检测，将用户活动事件传输到 Ransomware Resilience，并检测数据泄露或数据销毁等可疑事件。
-*** *阻止文件扩展名*：启用 Ransomware Resilience 以阻止已知的可疑文件扩展名。
+** *加密检测*：启用 Ransomware Resilience 以检测基于加密的攻击。
+** *可疑用户行为检测*：启用用户行为检测，将用户活动事件传输到 Ransomware Resilience，并检测数据泄露或数据销毁等可疑事件。
+** *阻止文件扩展名*：启用 Ransomware Resilience 以阻止已知的可疑文件扩展名。
 +
 如果您想更改被阻止的文件扩展名，请在系统管理器中编辑它们。
 
-
-
-
-
-
-
++
 
 NOTE: 您可以选择检测策略的任意组合。检测策略必须包括加密检测或可疑用户行为检测。
 
-* *快照策略*：
+
+
+. 设置 *Snapshot 策略*。要从 link:concept-strategy.html#predefined-policies["预定义策略"] 导入快照设置，请选择 *选择* 单选按钮，然后从下拉列表中选择策略。如果导入策略，则不需要其他快照配置。
 +
-** *快照策略基础名称*：选择一个策略或选择*创建*并输入快照策略的名称。
-** *快照锁定*：启用此功能可锁定主存储上的快照副本，以便即使勒索软件攻击进入备份存储目标，它们在一定时间内也无法被修改或删除。这也称为_不可变存储_。这使得恢复时间更快。
+要配置自己的设置，请选择*创建*，然后输入*快照基准名称*。基准名称是附加到每个快照的前缀。
+
+. 如果您正在配置自己的快照设置，则可以启用*快照锁定*。如果启用快照锁定，请设置*锁定保留天数*的值（即快照锁定的时间）。
 +
-当快照被锁定时，卷的过期时间设置为快照副本的过期时间。
+快照锁定通过锁定主存储上的快照副本来创建不可变存储，这样即使勒索软件攻击侵入备份存储目标，在一段时间内也无法修改或删除这些副本。这样可以缩短恢复时间。当快照被锁定时，卷过期时间将设置为快照副本的过期时间。
 
 +
-Snapshot 副本锁定适用于ONTAP 9.12.1 及更高版本。要了解有关SnapLock 的更多信息，请参阅 https://docs.netapp.com/us-en/ontap/snaplock/index.html["ONTAP中的SnapLock"^]。
+Snapshot 副本锁定在 ONTAP 9.12.1 及更高版本中可用。要了解有关 SnapLock 的更多信息，请参阅 link:https://docs.netapp.com/us-en/ontap/snaplock/index.html["适用于 SnapLock 的 ONTAP 文档"^]。
 
-** *快照计划*：选择计划选项、要保留的快照副本数量，然后选择启用计划。
-
-
-* *复制策略*：
 +
-** *复制策略基本名称*：输入新名称或选择现有名称。基本名称是附加到所有快照的前缀。
-** *复制计划*：切换要启用的频率（每小时、每天、每周或每月），并为每个启用的计划设置保留值（要保留的复制快照的数量）。
+如果要配置自己的快照设置，请设置快照计划选项。选择是以分钟、小时、天、周还是月为频率创建快照。对于除每天以外的所有选项，请选择在一天、一周或一月中的什么时间创建快照。此外，在*保留*字段中选择要保留的每种快照类型的副本数。
 
-
-* *备份策略*：
 +
-** *备份策略基本名称*：输入新名称或选择现有名称。
-** *备份计划*：选择二级存储的计划选项并启用该计划。
+image:add-policy-snapshot.png["Snapshot 策略选项的屏幕截图。"]
+
+. 对于本地工作负载，您可以选择设置*复制策略*以将工作负载复制到 ONTAP 存储。
++
+要导入系统定义的策略，请选择*选择*单选按钮，然后从下拉菜单中选择 link:concept-strategy.html#predefined-policies["预定义策略"]。
+
++
+要创建自己的复制设置，请选择*创建*，然后输入*复制策略基本名称*，这是附加到所有快照的前缀。设置*复制计划*。切换要启用的频率（每小时、每天、每周或每月），并为启用的每个计划设置保留值（要保留的复制快照数）。
+
+. （可选）设置*备份策略*。要导入现有策略，请选择*选择*单选按钮，然后从下拉菜单中选择 link:concept-strategy.html#predefined-policies["预定义策略"]。
++
+要创建自己的策略，请选择*创建*并输入*备份策略基本名称*。通过切换不同的频率（每小时、每天、每周和每月）来设置*备份计划*，然后为每个频率设置保留计数。
+
 +
 
 TIP: 要启用辅助存储上的备份锁定，请使用 *Settings* 选项配置备份目标。有关详细信息，请参见 link:task-backup-destination.html["配置设置"]。
 
-+
-... 选择“*添加*”。
-
-
-
-
+. 选择“*添加*”。
 
 
 
@@ -362,7 +189,7 @@ image:screen-protection.png["管理策略页面"]
 . 如果您的策略包含复制，请选择**目标系统**和**目标存储虚拟机**。选择**下一步**。
 . 选择备份目标或创建一个新的备份目标。选择**下一步**。
 +
-.. 如果您的保护策略包括用户行为检测，请在您的环境中选择一个用户活动代理来托管新的数据收集器。Ransomware Resilience 自动创建数据收集器，将用户活动事件传输到 Ransomware Resilience 以检测异常用户行为。
+.. 如果您的保护策略包括用户行为检测，请在您的环境中选择一个*用户活动代理*来托管新的数据收集器。Ransomware Resilience 会自动创建数据收集器，将用户活动事件传输到 Ransomware Resilience，以检测异常的用户行为。
 
 
 . 查看新的保护策略，然后选择**保护**来应用它。
@@ -387,36 +214,8 @@ image:screen-protection.png["管理策略页面"]
 
 
 
-[[manage-ransomware-protection-strategies]]
-== 管理勒索软件防护策略
-
-您可以删除勒索软件策略。
-
-
-
-[[view-workloads-protected-by-a-ransomware-protection-strategy]]
-=== 查看受勒索软件保护策略保护的工作负载
-
-在删除勒索软件保护策略之前，您可能需要查看哪些工作负载受该策略保护。
-
-您可以从策略列表中或在编辑特定策略时查看工作负载。
-
-.查看策略的步骤
-. 从勒索软件恢复菜单中，选择*保护*。
-. 在“保护”页面中，选择“管理保护策略”。
-+
-勒索软件防护策略页面显示策略列表。
-
-+
-image:screen-protection-strategy-list.png["勒索软件保护策略屏幕显示策略列表"]
-
-. 在“勒索软件保护策略”页面的“受保护的工作负载”列中，选择行末的向下箭头。
-
-
-
-
 [[delete-a-ransomware-protection-strategy]]
-=== 删除勒索软件防护策略
+== 删除勒索软件防护策略
 
 您可以删除当前未与任何工作负载关联的保护策略。
 
@@ -425,4 +224,15 @@ image:screen-protection-strategy-list.png["勒索软件保护策略屏幕显示�
 . 在“保护”页面中，选择“管理保护策略”。
 . 在“管理策略”页面中，选择“操作”image:screenshot_horizontal_more_button.gif["操作按钮"]您想要删除的策略的选项。
 . 从操作菜单中，选择*删除策略*。
+
+
+
+
+[[next-steps]]
+== 后续步骤
+
+* link:concept-strategy.html["了解保护策略"]
+* link:task-protection-group.html["管理保护组"]
+* link:task-backup-destination.html["管理备份目标"]
+* link:suspicious-user-activity.html["配置用户活动检测"]
 

@@ -46,6 +46,8 @@ sidebar:
         url: "/task-review-protection.html"
       - title: 配置备份目标
         url: "/task-backup-destination.html"
+      - title: 了解保护策略
+        url: "/concept-strategy.html"
       - title: 保护工作负载
         url: "/rp-use-protect.html"
       - title: 配置用户活动检测

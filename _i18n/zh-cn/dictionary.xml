@@ -615,11 +615,8 @@
   <block id="f5bfc54a73042ca571add47438fea77e" category="cell">从标准或重要变为关键</block>
   <block id="903c9d0250ec5956f3a9e1f0a3469c20" category="summary">您可以通过在NetApp Ransomware Resilience中为工作负载分配策略来保护工作负载免受勒索软件攻击。</block>
   <block id="54a418aa76c7e9afaa77a58a34a3d3ed" category="doc">使用NetApp Ransomware Resilience保护策略保护工作负载</block>
-  <block id="9d76fd8cddbcb128567856bd698d409e" category="section-title">了解勒索软件防护策略</block>
   <block id="b5728c1f0d5859e4bf3e89712b5ddbdf" category="list-text">**保护策略**包括快照和备份策略。保护策略中需要检测和快照策略。备份策略是可选的。</block>
   <block id="7646c296ea1b221cbb826893afaa224e" category="paragraph">如果您使用其他NetApp产品来保护您的工作负载，勒索软件恢复能力会发现这些产品并提供以下选项：</block>
-  <block id="0e468f869572effeac4af4bbea21ed06" category="list-text">使用勒索软件检测策略并继续使用其他NetApp工具创建的快照和备份策略，或者</block>
-  <block id="47751183709636889e320f1a849dd584" category="list-text">使用勒索软件弹性来管理检测、快照和备份。</block>
   <block id="be96aa820e4d4c79150a1ea86f47ceb0" category="section-title">与其他NetApp托管服务结合的保护策略</block>
   <block id="f37d79a56cb20cdcf206acc1cfa8be14" category="paragraph">如果勒索软件检测策略由ONTAP中的自主勒索软件防护（ARP 或 ARP/AI，取决于ONTAP版本）和 FPolicy 管理，则这些工作负载将受到保护并将继续由 ARP 和 FPolicy 管理。</block>
   <block id="d62f06f1ca9fb020be7953fe3101f0a3" category="section-title">针对不受NetApp应用程序保护的工作负载的保护策略</block>
@@ -656,11 +653,9 @@
   <block id="072b030ba126b2f4b2374f342be9ed44" category="cell">60</block>
   <block id="c81e728d9d4c2f636f067f89cc14862c" category="cell">2</block>
   <block id="f543761d662a5051911ae04c98a64d2a" category="cell">*重要的工作量政策*</block>
-  <block id="a99b6d6970ec523cbdaf4eef268b8c6f" category="cell">每30分钟一班</block>
   <block id="0a09c8844ba8f0936c20bd791130d6b6" category="cell">144</block>
   <block id="9766527f2b5d3e95d4a733fcfb77bd7e" category="cell">165</block>
   <block id="48a3fd80fe94fd5fab8bd8b5d0983950" category="cell">*标准工作量政策*</block>
-  <block id="f4e76e01f80db61a6180d7fa5d9656c3" category="cell">每30分钟</block>
   <block id="32bb90e8976aab5298d5da10fe66f21d" category="cell">72</block>
   <block id="98dce83da57b0395e163467c9dae521b" category="cell">93</block>
   <block id="0396743cd11b926055aa9c4e3fc5eb14" category="cell">*加密用户扩展*</block>
@@ -681,22 +676,8 @@
   <block id="197c283a01f19c77a4081693cf2ef5bf" category="list-text">在勒索软件防护策略页面中，选择*添加*。</block>
   <block id="a5be5d648ce22c25337cedcc760abd3c" category="inline-image-macro">添加显示快照部分的策略页面</block>
   <block id="3c47a09fd51a5bf078b6b75c88195ad8" category="paragraph"><block ref="3c47a09fd51a5bf078b6b75c88195ad8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2eaf03a47e19fb4342355aea7247f987" category="list-text">输入新的策略名称，或输入现有名称进行复制。如果您输入的是现有名称，请选择要复制的名称并选择*复制*。</block>
-  <block id="2b83c0c36fa2002a1fbc43f8f9192b43" category="admonition">如果您选择复制并修改现有策略，Ransomware Resilience 会在原始名称后附加“_copy”。您应该更改名称和至少一个设置以使其唯一。</block>
   <block id="e4574be2aa1d855d0a159fa734c028b7" category="list-text">对于每个项目，选择*向下箭头*。</block>
-  <block id="b77a56354e9e39a76b1a118e9bfa09d3" category="list-text">*检测政策*：</block>
-  <block id="949db64066489b0349a4ff1451832808" category="list-text">*策略*：选择预先设计的检测策略之一。</block>
   <block id="7c06fadd4f73e4b63eb519df7d9880fc" category="paragraph">如果您想更改被阻止的文件扩展名，请在系统管理器中编辑它们。</block>
-  <block id="c8499d03897189696e5af26fc5ab9f45" category="list-text">*快照策略*：</block>
-  <block id="007ac2633329ecdb55692304050d9260" category="list-text">*快照策略基础名称*：选择一个策略或选择*创建*并输入快照策略的名称。</block>
-  <block id="db1a1db15ec89ce3f1720ebaa5e16708" category="list-text">*快照锁定*：启用此功能可锁定主存储上的快照副本，以便即使勒索软件攻击进入备份存储目标，它们在一定时间内也无法被修改或删除。这也称为_不可变存储_。这使得恢复时间更快。</block>
-  <block id="adffa2f644199b61c95070a8e5f0b6a4" category="paragraph">当快照被锁定时，卷的过期时间设置为快照副本的过期时间。</block>
-  <block id="2a81a6cd6ac2a1bf9226055bf00ceada" category="inline-link">ONTAP中的SnapLock</block>
-  <block id="df0d3afa881e0dbd0a73d2a79b4d08de" category="paragraph">Snapshot 副本锁定适用于ONTAP 9.12.1 及更高版本。要了解有关SnapLock 的更多信息，请参阅<block ref="4a9cf5e778f625195d7ada1c294fe592" category="inline-link-rx"></block>。</block>
-  <block id="32d9d253b967fa9a09765582b443ab9f" category="list-text">*快照计划*：选择计划选项、要保留的快照副本数量，然后选择启用计划。</block>
-  <block id="bec83ad5f3237718ad523140fca8ac2b" category="list-text">*备份策略*：</block>
-  <block id="4c2335d5c61b4722f3bc7508bd4a0ada" category="list-text">*备份策略基本名称*：输入新名称或选择现有名称。</block>
-  <block id="589d15d214feb500a590692bf3a50f04" category="list-text">*备份计划*：选择二级存储的计划选项并启用该计划。</block>
   <block id="fa12509cfb8e8ccded16e2a254e988c4" category="list-text">选择“*添加*”。</block>
   <block id="1a068d6a85d666ea306209409d3e8bca" category="section-title">向具有现有备份或快照策略的工作负载添加检测策略</block>
   <block id="8ffd4321390a5a9174c14e023f8f68f8" category="inline-xref">利用勒索软件抵御能力进行保护</block>
@@ -711,7 +692,6 @@
   <block id="df03f91b3a74d5ec2baa41276e3a16de" category="inline-xref">创建保护策略</block>
   <block id="6254fbe0af1c355b3b21ba0edff9f802" category="list-text">选择保护策略。如果不存在保护策略，请选择**添加**来创建新策略。有关创建策略的信息，请参阅<block ref="176be3a772dd966966fe67b132b5ec7b" category="inline-xref-macro-rx"></block>。选择**下一步**。</block>
   <block id="375396793fa0187dd9b04e12d4a0a7b3" category="list-text">选择备份目标或创建一个新的备份目标。选择**下一步**。</block>
-  <block id="1f47983fe74a4f8bc9fa8a9706708fe6" category="list-text">如果您的保护策略包括用户行为检测，请在您的环境中选择一个用户活动代理来托管新的数据收集器。Ransomware Resilience 自动创建数据收集器，将用户活动事件传输到 Ransomware Resilience 以检测异常用户行为。</block>
   <block id="bd320a2d0a55e1edf2c57054719c7c15" category="list-text">查看新的保护策略，然后选择**保护**来应用它。</block>
   <block id="82f3ca7fa2e1f82d7f077e15af9747a4" category="section-title">分配不同的策略</block>
   <block id="0fd65377e78b78ae68af3a3a26d93972" category="paragraph">您可以用其他策略替换现有策略。</block>
@@ -746,17 +726,7 @@
   <block id="05d9024c9e1747e3e7428ac3d6598aec" category="list-text">确认您要删除工作负载并选择*删除*。</block>
   <block id="45a84df973de2cf5ebebbbb483cfdc19" category="list-text">在选定的保护组页面的右上角，选择“*删除保护组*”。</block>
   <block id="923d9e45e363794e64a67b73838142ac" category="list-text">确认您要删除该组并选择*删除*。</block>
-  <block id="f3d0cde08790f065a5bc8c494e512b95" category="section-title">管理勒索软件防护策略</block>
-  <block id="e299818a27e1f0221ee8f26b09166030" category="paragraph">您可以删除勒索软件策略。</block>
-  <block id="b7c78f5e474c6b8d64bb9440e0c2207c" category="section-title">查看受勒索软件保护策略保护的工作负载</block>
-  <block id="74c3d5e9f3c5f4a3eb1732ac96ae76d8" category="paragraph">在删除勒索软件保护策略之前，您可能需要查看哪些工作负载受该策略保护。</block>
-  <block id="ce1be6d505f661c5110f1445e0bf19ba" category="paragraph">您可以从策略列表中或在编辑特定策略时查看工作负载。</block>
-  <block id="8e872201a9f1d2d9ce53cb5399ef0085" category="list-title">查看策略的步骤</block>
   <block id="90f081941b9ec4d54a22065d524e3c77" category="list-text">在“保护”页面中，选择“管理保护策略”。</block>
-  <block id="5c5c4c2893639638b243a5ebcf096a91" category="paragraph">勒索软件防护策略页面显示策略列表。</block>
-  <block id="b4591df76e4afaf6201f5ab62904e7c9" category="inline-image-macro">勒索软件保护策略屏幕显示策略列表</block>
-  <block id="41bd5eb706037d556691ac8ba68c41a4" category="paragraph"><block ref="41bd5eb706037d556691ac8ba68c41a4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b4f3b22ae011fb04bce785386b9d1062" category="list-text">在“勒索软件保护策略”页面的“受保护的工作负载”列中，选择行末的向下箭头。</block>
   <block id="ccf23ad1bfca8f3c51caa8c9d8745378" category="section-title">删除勒索软件防护策略</block>
   <block id="1eade84fa2646ea13dc54a4b35f61c1c" category="paragraph">您可以删除当前未与任何工作负载关联的保护策略。</block>
   <block id="571f33f6eea9a8d4cbc40d9ea733c1e9" category="list-text">在“管理策略”页面中，选择“操作”<block ref="c25b92b317848c2a66dcfecc2a02ad99" category="inline-image-macro-rx" type="image"></block>您想要删除的策略的选项。</block>
@@ -1456,15 +1426,11 @@
   <block id="705d8898c1c055eb3bff9939a87b6812" category="list-text">*关键*：每小时会创建多个快照副本（高度激进的保护计划）</block>
   <block id="0bec43abfdb99f043ac56e20931d1899" category="list-text">*重要提示*：快照副本的创建频率低于每小时一次，但高于每天一次。</block>
   <block id="890ca6db61a7d84b3c2f7e8b21560ff7" category="list-text">*标准*：每天拍摄多次快照副本</block>
-  <block id="da4aa80a5402fe8991327699e5421e28" category="section-title">预定义的检测策略</block>
   <block id="0d6a90889ade51e4252ba8bbf1ad155e" category="cell">保留时间（天）</block>
   <block id="b5b7fab63026325a379913c2a05751c2" category="cell">快照副本数量</block>
   <block id="aa9adfa847815670c9bd986dafc8c79c" category="cell">快照副本的最大数量</block>
   <block id="cf9344351eb239ccd95661876c4d97ee" category="cell">*关键复制策略*</block>
   <block id="ad53fda1a18da9db9d8aa1d460952aa5" category="list-text">二次复制到ONTAP</block>
-  <block id="50723c157cd9ea132a02f421411e273d" category="list-text">*复制策略*：</block>
-  <block id="f84245dfb1fc8217e62c0934102ba606" category="list-text">*复制策略基本名称*：输入新名称或选择现有名称。基本名称是附加到所有快照的前缀。</block>
-  <block id="d230465858c85552b6c5a5b1ef3bb21f" category="list-text">*复制计划*：切换要启用的频率（每小时、每天、每周或每月），并为每个启用的计划设置保留值（要保留的复制快照的数量）。</block>
   <block id="447fce6406d4a8e99de98a2d5d107536" category="list-text">如果您的策略包含复制，请选择**目标系统**和**目标存储虚拟机**。选择**下一步**。</block>
   <block id="6f540707e47351a26c8e3c79ccce18ea" category="list-text">*保护*：包括所有工作负载的状态和详细信息，包括受保护的工作负载总数和面临风险的工作负载总数。</block>
   <block id="38fc1b337c0ea26463916fc2913205c1" category="paragraph"><block ref="38fc1b337c0ea26463916fc2913205c1" category="inline-image-macro-rx" type="image"></block></block>
@@ -1498,7 +1464,6 @@
   <block id="ce47b0513e6a5635f603be8cc52f392d" category="list-text">&lt;site_name&gt;.c01.cloudinsights.netapp.com/cn</block>
   <block id="906a7644c76f341f29012680a39f7225" category="list-text">&lt;site_name&gt;.c02.cloudinsights.netapp.com/cn</block>
   <block id="142b47c359d647af9faff9ef084152c7" category="list-text">agentlogin.cs01.cloudinsights.netapp.com</block>
-  <block id="9d710e8874b82a90107c10683350b48a" category="paragraph">勒索软件防护策略包括_检测_、_保护_和_复制_策略。</block>
   <block id="7923de3f0c836263e77d3ef5585b2ee7" category="cell">HTTPS（TCP）</block>
   <block id="27db5f7ea4fbef607be3e5580d6023dd" category="paragraph">开始使用 NetApp Console 无需许可证或订阅，仅在云中部署 Console 代理以确保连接到存储系统或 NetApp 数据服务时才会产生费用。但是，从 Console 访问的一些 NetApp 数据服务是许可或基于订阅的。</block>
   <block id="354ccfdcbf26f407e895a47f9d8a503b" category="section-title">关键术语</block>
@@ -1570,9 +1535,6 @@
   <block id="c7508e265b893e4d518594502d79c380" category="list-text">主动监控工作负载并通过将策略应用于每个已识别的工作负载来协调 Backup and Recovery 和 ONTAP API 的使用。</block>
   <block id="e47b008a3c9b07db3a7f7c525eeccc5a" category="cell">为每个工作负载分配一个策略。请参阅 <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block>。请参阅 <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block>。请参阅 <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block>。</block>
   <block id="402b250b6b0cd33bf0396353ed30be82" category="inline-link-macro">组工作负载</block>
-  <block id="c35d66439764aa49afc7babd31dd817e" category="admonition">为了增强对数据资产的管理和保护，您可以创建<block ref="f976640ede437bd07da0e62885caa3e9" category="inline-link-macro-rx"></block>来在一个策略下共同保护卷。</block>
-  <block id="32fcd2ee690f5f3556594e0a5c86b657" category="paragraph">除了 Ransomware Resilience 之外，您还可以使用 NetApp Backup and Recovery 来管理文件共享、VM 文件共享的保护。</block>
-  <block id="19df373c6eb28e440c7376f7b6153ac6" category="paragraph">来自 Backup &amp; Recovery 服务的保护信息显示在 Ransomware Resilience 中。您可以使用 Ransomware Resilience 向这些服务添加检测策略。使用 Ransomware Resilience 添加保护策略将取代现有的保护策略。</block>
   <block id="5faff4d5da024e537f30a6f61e63b11d" category="paragraph">如果您的工作负载不是由 Backup and Recovery 或 Ransomware Resilience 管理，则可能有作为 ONTAP 或其他产品的一部分拍摄的快照。如果 ONTAP FPolicy 保护到位，则可以使用 ONTAP 更改 FPolicy 保护。</block>
   <block id="294bdeaab3c13eeb5476a96b2a4d7991" category="list-text">**将 Backup and Recovery 保护中的现有快照或备份策略替换为由 Ransomware Resilience 管理的保护策略。**</block>
   <block id="f9dbe879fedc698e4cd50df0431ab680" category="section-title">将检测策略添加到具有由 Backup and Recovery 管理的现有快照和备份策略的工作负载</block>
@@ -2239,8 +2201,6 @@
   <block id="495dc566c29577d14a3418e529c90d3c" category="list-text">**检测策略**识别勒索软件威胁。您有三个检测选项：</block>
   <block id="b3b96411f9486bb0c2c8a4e2b07e7d35" category="list-text">加密检测</block>
   <block id="2b694a9a00b006682bcbea870c2ca4fb" category="list-text">阻止可疑文件扩展名</block>
-  <block id="a1c735fa1a87c7cfca09d994cfe02048" category="inline-link-macro">可疑用户活动（需要额外配置）</block>
-  <block id="262d414194517bdfa67b048201f2b424" category="paragraph">您的检测策略可以包括所有三个选项，也可以包括这三个选项的组合。它必须包括加密检测或 <block ref="0c1271458a5eed3dcf0b345a743161db" category="inline-link-macro-rx"></block>。</block>
   <block id="38cfc49361136d6f7410fbe2c3b7430a" category="list-text">*保护更改*：包括审查工作负载保护策略在一段时间内的更改：30 天、60 天、90 天或 1 年。</block>
   <block id="3e323562bd488e4cbd90a025b9424181" category="section-title">2026 年 6 月 08 日</block>
   <block id="fec111d809c49ffc75c21732e808fe2d" category="admonition">如果忽略此警报，Ransomware Resilience 将了解此行为，将其与正常操作相关联，并停止发送类似事件的警报。</block>
@@ -2256,7 +2216,6 @@
   <block id="7eba97a8ef53163c9fd30177df926301" category="admonition">如果要配置源位于 Amazon FSx for NetApp ONTAP 中的 IRE，请跳过此洁净室 SVM 数据 LIF IP 要求。</block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="cell">Amazon FSx for NetApp ONTAP</block>
   <block id="7e04984fc8cb78806e36cbf9552342fd" category="admonition">SAN 工作负载当前不支持用户活动检测。您可以将用户活动检测与 Amazon FSx for NetApp ONTAP、Cloud Volumes ONTAP 和 ONTAP 中的 NAS 工作负载结合使用。</block>
-  <block id="0270ec13158ac8d81c5022ad41a38235" category="admonition">如果要为 Amazon FSx for NetApp ONTAP 和 Azure NetApp Files 配置保护策略，请参阅 <block ref="f35eaad9edb95ec2be22c4403bf0d360" category="inline-link-macro-rx"></block>。</block>
   <block id="b70244907e8a4cb4fbb47d6e9fdda53a" category="cell">云：Amazon FSx for NetApp ONTAP</block>
   <block id="b4bada7d854e6650f9cc28e404fe40fb" category="admonition">对于部署到 Amazon FSx for NetApp ONTAP 的 IRE，无需提供此信息。</block>
   <block id="f5b6822ed53c8f99c424ea0e8e011bf7" category="admonition">Ransomware Resilience 每个控制台代理最多只能发现 3,000 个工作负载。</block>
@@ -2725,7 +2684,6 @@
   <block id="f162f526fe9a4312ce833ccc6262c43c" category="cell">从 ONTAP 到 FPolicy 事件的用户活动代理的通信。这些端口必须向用户活动代理开放，以便 ONTAP 向其发送事件，包括用户活动代理本身的任何防火墙（如果存在）。+ **注意：** 您无需预留*所有*这些端口，但为此预留的端口必须在此范围内。建议您首先预留 100 个端口，并在必要时增加。</block>
   <block id="836e56ef7ecb008a36ab89b0620d32b3" category="list-text">在 Ransomware Resilience 控制面板中，查看 Alerts 窗格。</block>
   <block id="2bf784d30957b3ec7d6ebc12ece51af1" category="paragraph">当 Ransomware Resilience 检测到潜在的攻击时，它会根据在 NetApp Console 设置中配置的订阅通知首选项向订阅用户发送电子邮件通知。电子邮件包含有关警报的信息，包括严重程度和受影响的资源。</block>
-  <block id="f642b6f4e49c47514e5e24cda6578784" category="admonition">**Encryption user extension** 策略是唯一支持可疑用户行为检测的预定义策略。+ **Critical replication policy** 是唯一支持将快照复制到 ONTAP 的预定义策略。</block>
   <block id="a7cc27b78a2a959c7d443e41e9734a78" category="cell">由于权限错误，无法在 /home 目录下创建用户的登录目录。使用命令<block ref="d5ba9a9474fc171d7c8d8e0ad71f99d9" prefix=" " category="inline-code"></block>创建 cssys 用户并手动添加其登录目录。在此命令中，<block ref="67dd1c0d4e68c367b980f8723c781cb1" prefix=" " category="inline-code"></block>用于在主目录不存在时创建主目录；<block ref="9b017020b9d48d433ec90c548e6b5c70" prefix=" " category="inline-code"></block>将 HOME_DIR 指定为登录目录。</block>
   <block id="dafa465aa4f684cd34125edc375ebf59" category="paragraph"><block ref="2a4fc232baf441f054526df5220063f3" category="inline-link-rx"></block>。</block>
   <block id="bab7cd99622d9058ad65108d51915a15" category="inline-link-macro">配置 Splunk SIEM</block>
@@ -2862,8 +2820,6 @@
   <block id="07405e58de7ae5291e2723155a5869b4" category="section-title">用于启用用户活动监控的增强型工作流程</block>
   <block id="dd9dd4a4b292f36f08cee46f9ba3ffa3" category="paragraph">Ransomware Resilience 改进了启用用户活动监控的工作流程。以前，每次在工作负载上启用带有用户活动监控的勒索软件保护策略时，Ransomware Resilience 都会测试数据收集器的连接。借助该更新，如果存储 VM 存在数据收集器且处于“正在运行”状态，则现在会跳过该检查，从而加快保护工作流程。</block>
   <block id="b79c3e2214dfd55d5e8b57ef1d6ae5bb" category="inline-link-macro">保护工作负载</block>
-  <block id="5f705092fbb64e2adcc5b83793eed660" category="paragraph">有关详细信息，请参见 <block ref="f5df6f8f09e7648e9d6889e3e6e725cb" category="inline-link-macro-rx"></block>。</block>
-  <block id="d64a907f57f420b81a119fce287ff09f" category="paragraph">勒索软件防护策略是 NetApp Ransomware Resilience 的一个关键功能：它们支持检测、保护和复制。启用勒索软件防护策略以检测勒索软件攻击，并确保您拥有用于恢复的保护基准。</block>
   <block id="233adc8ca42f7a8097ed29533bfab815" category="list-text">**分析**：在洁净室中，Ransomware Resilience 会分析所有快照，以查看是否存在加密。干净恢复会确定具有最佳恢复计划的恢复映射。</block>
   <block id="3cfd0b2a1a1f7eb6f8f17ddc0f73fc96" category="paragraph">您还可以在规划步骤中查看文件历史记录，以了解勒索软件事件何时影响了文件，以及恢复点与该事件的时间关系。</block>
   <block id="2167a2d55f36099e0735c5707e3b71bb" category="list-text">使用干净还原，您只能还原到源环境。</block>
@@ -2893,4 +2849,51 @@
   <block id="6f4030f935741207e6077271ec4c7fcd" category="list-text">为虚拟机输入 CIDR 格式的 *IP 地址范围*（例如 100.100.0.0/24）、*子网掩码*和*网关*。</block>
   <block id="0ad38e8473db5155eec04c6689ae2fed" category="list-text">选择位于 ESXi 主机上的虚拟机，这些虚拟机将在恢复过程中用作克隆的基础虚拟机。</block>
   <block id="41195e5d1530c08998754564c86f0814" category="image-alt">清理还原计算配置步骤的屏幕截图。</block>
+  <block id="a2796a8db571ead965c0a0f1d62135a3" category="paragraph">有关详细信息，请参见 <block ref="092a9715a1fcee9c7af4662f48f0f290" category="inline-link-macro-rx"></block>。</block>
+  <block id="140820d94a267dbe5867680c67a5798d" category="summary">了解 NetApp Ransomware Resilience 中的勒索软件保护策略。保护策略支持检测以及快照、备份和复制，以创建恢复基线。</block>
+  <block id="de38341d386aac0e035b857d1e5a3ccd" category="doc">了解 NetApp Ransomware Resilience 中的保护策略</block>
+  <block id="bc92d7f1a44cfd18f7c5f445b25d55b9" category="paragraph">在 NetApp Ransomware Resilience 中，保护策略是勒索软件防御态势的重要组成部分。保护策略包括_检测_、_保护_和_复制_，使您能够检测勒索软件攻击、防范勒索软件攻击并建立恢复基线。</block>
+  <block id="b742b0ec247c3cdcc191f1d822fb5b29" category="section-title">保护策略元素</block>
+  <block id="1dcd854bf756bc93beadebb594120427" category="paragraph">保护策略包括三个要素：检测、保护和复制。</block>
+  <block id="ac1b8bba2f610b7935e7424342a0ec1f" category="inline-link-macro">可疑用户活动（需要额外配置）</block>
+  <block id="a3a4bfca25ee9bd823c50f83c3b1cdb0" category="paragraph">您的检测策略可以包括所有三个选项，也可以包括这三个选项的组合。它必须包括加密检测或 <block ref="abbfcb2a99b09ad39603d2f80be3fec7" category="inline-link-macro-rx"></block>。</block>
+  <block id="a08b60b067cfccd8d9f87d57ea4bf995" category="list-text">使用勒索软件检测策略并继续使用 NetApp 其他工具创建的快照和备份策略，或</block>
+  <block id="9c864d59c7a41fa01f3cfe3c8f413487" category="list-text">使用 Ransomware Resilience 来管理检测、快照和备份。</block>
+  <block id="aacfe2994af49daf45b1e3f0121af4bf" category="admonition">如果要为 Amazon FSx for NetApp ONTAP 或 Azure NetApp Files 配置保护策略，请参阅 <block ref="f35eaad9edb95ec2be22c4403bf0d360" category="inline-link-macro-rx"></block>。</block>
+  <block id="c90079c45ff924b0cb15b35d000c9ade" category="admonition">为了增强对数据资产的管理和保护，您可以 <block ref="f976640ede437bd07da0e62885caa3e9" category="inline-link-macro-rx"></block> 以在一个策略下共同保护卷。</block>
+  <block id="eb0f013f3748a5c33bbc7b5948baf26e" category="paragraph">除了 Ransomware Resilience 之外，您还可以使用 NetApp Backup and Recovery 来管理文件共享的保护。</block>
+  <block id="c036804c8db0bc110afe05b3cdd5b86c" category="paragraph">来自 Backup and Recovery 服务的保护信息显示在 Ransomware Resilience 中。您可以将勒索软件检测策略添加到现有的 Backup and Recovery 策略中。您还可以通过 Ransomware Resilience 添加备份策略，这将取代 Backup and Recovery 中的现有保护策略。</block>
+  <block id="172504408a355f366017244a5b384ba8" category="section-title">预定义策略</block>
+  <block id="54b0e51980ebec464c2fd19bbec7d8a9" category="admonition">**加密用户扩展**策略是唯一支持可疑用户活动检测的预定义策略。+ **关键复制策略**是唯一支持将快照复制到 ONTAP 的预定义策略。</block>
+  <block id="7e0b491310b68d825e272ba1bb842550" category="paragraph">每半小时</block>
+  <block id="4f6969a7095a445329e6510879d4e23a" category="cell">每 30 分钟</block>
+  <block id="5c8ced3e31f752b34df3c4592d6ab71f" category="list-text"><block ref="5c8ced3e31f752b34df3c4592d6ab71f" category="inline-link-macro-rx"></block></block>
+  <block id="d2965551e1afdc691102350337341b9c" category="inline-link-macro">保护策略</block>
+  <block id="6e67000bd0dfb478ab8f86ae1400fcf0" category="paragraph">在 NetApp Ransomware Resilience 中发现工作负载后，必须将 <block ref="816a63b3c576ffe370f29988014c79a0" category="inline-link-macro-rx"></block> 应用于您的工作负载，以配置勒索软件检测、保护和复制的组合。启用勒索软件保护策略以检测勒索软件攻击，并确保您拥有用于恢复的保护基准。</block>
+  <block id="c805a7ccdfbefcb95c3e5d3eb799559f" category="inline-link-macro">执行了必要的设置</block>
+  <block id="a5305c2f9c4859bf06df996bb447f1a0" category="paragraph">如果您打算创建具有可疑用户行为检测功能的保护策略，请确保您已<block ref="d7ebceebd961973af1512cc719357652" category="inline-link-macro-rx"></block>以进行用户活动监控。</block>
+  <block id="f5ef2630931c51549af3e623d4f63fcd" category="list-text">输入新的策略名称。策略名称不能包含空格。</block>
+  <block id="344f7e8a6617b537a56be4e2326d7628" category="list-text">（可选）选择现有的保护策略作为新策略的基础。在*从现有 Ransomware Resilience 策略复制*中，选择*选择*。选择现有策略，然后选择*复制*。</block>
+  <block id="b99ea56cd0937e71402758b90941afba" category="list-text">选择*检测策略*设置：</block>
+  <block id="368cc5f046a5decdd8a63b189def027d" category="inline-link-macro">预定义策略</block>
+  <block id="35818e1bdf8572310be62fbe70d83fbd" category="list-text">设置 *Snapshot 策略*。要从 <block ref="acb8cd429652c09fe35d5de4c302f2ae" category="inline-link-macro-rx"></block> 导入快照设置，请选择 *选择* 单选按钮，然后从下拉列表中选择策略。如果导入策略，则不需要其他快照配置。</block>
+  <block id="cb67299b59d7a0a794b01e3933723fc2" category="paragraph">要配置自己的设置，请选择*创建*，然后输入*快照基准名称*。基准名称是附加到每个快照的前缀。</block>
+  <block id="3f1b170bc65d3a2a562b87c762c823cf" category="list-text">如果您正在配置自己的快照设置，则可以启用*快照锁定*。如果启用快照锁定，请设置*锁定保留天数*的值（即快照锁定的时间）。</block>
+  <block id="227b3727877936fe36a5c3408d154e37" category="paragraph">快照锁定通过锁定主存储上的快照副本来创建不可变存储，这样即使勒索软件攻击侵入备份存储目标，在一段时间内也无法修改或删除这些副本。这样可以缩短恢复时间。当快照被锁定时，卷过期时间将设置为快照副本的过期时间。</block>
+  <block id="70f359f752aadf5bf7a021c260016eae" category="inline-link-macro">适用于 SnapLock 的 ONTAP 文档</block>
+  <block id="e2c8c1fbfb2e418d03e83af4d5e791b3" category="paragraph">Snapshot 副本锁定在 ONTAP 9.12.1 及更高版本中可用。要了解有关 SnapLock 的更多信息，请参阅 <block ref="4ca7d4cccee9eba6047bb73bae1d4bb0" category="inline-link-macro-rx"></block>。</block>
+  <block id="d07faab816e99d4553ba7bf5cb72f7bd" category="paragraph">如果要配置自己的快照设置，请设置快照计划选项。选择是以分钟、小时、天、周还是月为频率创建快照。对于除每天以外的所有选项，请选择在一天、一周或一月中的什么时间创建快照。此外，在*保留*字段中选择要保留的每种快照类型的副本数。</block>
+  <block id="99cf9bfc9df3b53a2612d01dea4a5f59" category="inline-image-macro">Snapshot 策略选项的屏幕截图。</block>
+  <block id="b0a1cedd2277ba2ec3327d537c1e0a4b" category="paragraph"><block ref="b0a1cedd2277ba2ec3327d537c1e0a4b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="199641835a7fed0b2247051b07a065cc" category="list-text">对于本地工作负载，您可以选择设置*复制策略*以将工作负载复制到 ONTAP 存储。</block>
+  <block id="4978e3b9001301d839fc0946f4ba3f67" category="paragraph">要导入系统定义的策略，请选择*选择*单选按钮，然后从下拉菜单中选择 <block ref="acb8cd429652c09fe35d5de4c302f2ae" category="inline-link-macro-rx"></block>。</block>
+  <block id="60e573bc37b98bd9fd792830cf42a815" category="paragraph">要创建自己的复制设置，请选择*创建*，然后输入*复制策略基本名称*，这是附加到所有快照的前缀。设置*复制计划*。切换要启用的频率（每小时、每天、每周或每月），并为启用的每个计划设置保留值（要保留的复制快照数）。</block>
+  <block id="0ac700a6fce8da97bdad86b3f0e2e13d" category="list-text">（可选）设置*备份策略*。要导入现有策略，请选择*选择*单选按钮，然后从下拉菜单中选择 <block ref="acb8cd429652c09fe35d5de4c302f2ae" category="inline-link-macro-rx"></block>。</block>
+  <block id="c7915346ee91e7b7da0689c8b96c3c65" category="paragraph">要创建自己的策略，请选择*创建*并输入*备份策略基本名称*。通过切换不同的频率（每小时、每天、每周和每月）来设置*备份计划*，然后为每个频率设置保留计数。</block>
+  <block id="9830c7d8e813511d60d4ac7532561b5d" category="list-text">如果您的保护策略包括用户行为检测，请在您的环境中选择一个*用户活动代理*来托管新的数据收集器。Ransomware Resilience 会自动创建数据收集器，将用户活动事件传输到 Ransomware Resilience，以检测异常的用户行为。</block>
+  <block id="9e22bb022357fb45ccf2d21570594214" category="inline-link-macro">了解保护策略</block>
+  <block id="ca8c59331fa4e2672fad0627fd8a1afc" category="list-text"><block ref="ca8c59331fa4e2672fad0627fd8a1afc" category="inline-link-macro-rx"></block></block>
+  <block id="16cc2aca7cc498abeffc42549cad2598" category="inline-link-macro">管理备份目标</block>
+  <block id="25b72bfc4abf024dd9a87b63b6ca2a88" category="list-text"><block ref="25b72bfc4abf024dd9a87b63b6ca2a88" category="inline-link-macro-rx"></block></block>
+  <block id="b41cfa2f28f2dfb717d6f9b7ebc066af" category="list-text"><block ref="b41cfa2f28f2dfb717d6f9b7ebc066af" category="inline-link-macro-rx"></block></block>
 </blocks>

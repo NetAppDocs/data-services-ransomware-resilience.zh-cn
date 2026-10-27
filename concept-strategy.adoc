@@ -1,0 +1,196 @@
+---
+sidebar: sidebar 
+permalink: concept-strategy.html 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, detection, protection, policy, malware 
+summary: 了解 NetApp Ransomware Resilience 中的勒索软件保护策略。保护策略支持检测以及快照、备份和复制，以创建恢复基线。 
+---
+= 了解 NetApp Ransomware Resilience 中的保护策略
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+在 NetApp Ransomware Resilience 中，保护策略是勒索软件防御态势的重要组成部分。保护策略包括_检测_、_保护_和_复制_，使您能够检测勒索软件攻击、防范勒索软件攻击并建立恢复基线。
+
+
+
+[[protection-strategy-elements]]
+== 保护策略元素
+
+保护策略包括三个要素：检测、保护和复制。
+
+* **检测策略**识别勒索软件威胁。您有三个检测选项：
++
+** 加密检测
+** 可疑的用户活动
+** 阻止可疑文件扩展名
++
+您的检测策略可以包括所有三个选项，也可以包括这三个选项的组合。它必须包括加密检测或 link:suspicious-user-activity.html["可疑用户活动（需要额外配置）"]。
+
+
+
+* **保护策略**包括快照和备份策略。保护策略中需要检测和快照策略。备份策略是可选的。
++
+如果您使用其他NetApp产品来保护您的工作负载，勒索软件恢复能力会发现这些产品并提供以下选项：
+
++
+** 使用勒索软件检测策略并继续使用 NetApp 其他工具创建的快照和备份策略，或
+** 使用 Ransomware Resilience 来管理检测、快照和备份。
+
+
+* **复制策略** 使您能够将勒索软件恢复功能的快照复制到辅助站点。复制计划可以设置为每小时、每天、每周或每月一次的频率。
++
+目前，您只能将快照复制到本地ONTAP存储。
+
+
+
+
+NOTE: 如果要为 Amazon FSx for NetApp ONTAP 或 Azure NetApp Files 配置保护策略，请参阅 link:rp-reference-limitations.html["每项服务的限制"]。
+
+
+TIP: 为了增强对数据资产的管理和保护，您可以 link:task-protection-group.html["组工作负载"] 以在一个策略下共同保护卷。
+
+
+
+[[protection-policies-with-other-netapp-managed-services]]
+== 与其他NetApp托管服务结合的保护策略
+
+除了 Ransomware Resilience 之外，您还可以使用 NetApp Backup and Recovery 来管理文件共享的保护。
+
+来自 Backup and Recovery 服务的保护信息显示在 Ransomware Resilience 中。您可以将勒索软件检测策略添加到现有的 Backup and Recovery 策略中。您还可以通过 Ransomware Resilience 添加备份策略，这将取代 Backup and Recovery 中的现有保护策略。
+
+如果勒索软件检测策略由ONTAP中的自主勒索软件防护（ARP 或 ARP/AI，取决于ONTAP版本）和 FPolicy 管理，则这些工作负载将受到保护并将继续由 ARP 和 FPolicy 管理。
+
+
+NOTE: Amazon FSx for NetApp ONTAP 或 Azure NetApp Files 中的工作负载无法使用备份目标。使用 FSx for ONTAP 备份服务执行备份操作。您可以在 AWS 中为 FSx for ONTAP 中的工作负载设置备份策略，而不是在 Ransomware Resilience 中。备份策略显示在 Ransomware Resilience 中，并且与 AWS 保持不变。
+
+
+
+[[protection-policies-for-workloads-not-protected-by-netapp-applications]]
+=== 针对不受NetApp应用程序保护的工作负载的保护策略
+
+如果您的工作负载不是由 Backup and Recovery 或 Ransomware Resilience 管理，则可能有作为 ONTAP 或其他产品的一部分拍摄的快照。如果 ONTAP FPolicy 保护到位，则可以使用 ONTAP 更改 FPolicy 保护。
+
+
+
+[[predefined-policies]]
+== 预定义策略
+
+您可以选择以下勒索软件恢复预定义策略之一，这些策略与工作负载重要性相一致。
+
+
+NOTE: **加密用户扩展**策略是唯一支持可疑用户活动检测的预定义策略。+ **关键复制策略**是唯一支持将快照复制到 ONTAP 的预定义策略。
+
+[cols="10,15a,20,15,15,15"]
+|===
+| 政策层面 | Snapshot | 频率 | 保留时间（天） | 快照副本数量 | 快照副本的最大数量 
+
+
+.4+| *关键工作量政策*  a| 
+每刻钟
+| 每15分钟 | 3 | 288 | 309 
+
+
+| 每日  a| 
+每 1 天
+| 14 | 14 | 309 
+
+
+| 每周  a| 
+每 1 周
+| 35 | 5 | 309 
+
+
+| 每月  a| 
+每 30 天
+| 60 | 2 | 309 
+
+
+.4+| *重要的工作量政策*  a| 
+每半小时
+| 每 30 分钟 | 3 | 144 | 165 
+
+
+| 每日  a| 
+每 1 天
+| 14 | 14 | 165 
+
+
+| 每周  a| 
+每 1 周
+| 35 | 5 | 165 
+
+
+| 每月  a| 
+每 30 天
+| 60 | 2 | 165 
+
+
+.4+| *标准工作量政策*  a| 
+每半小时
+| 每 30 分钟 | 3 | 72 | 93 
+
+
+| 每日  a| 
+每 1 天
+| 14 | 14 | 93 
+
+
+| 每周  a| 
+每 1 周
+| 35 | 5 | 93 
+
+
+| 每月  a| 
+每 30 天
+| 60 | 2 | 93 
+
+
+.4+| *加密用户扩展*  a| 
+每半小时
+| 每 30 分钟 | 3 | 72 | 93 
+
+
+| 每日  a| 
+每 1 天
+| 14 | 14 | 93 
+
+
+| 每周  a| 
+每 1 周
+| 35 | 5 | 93 
+
+
+| 每月  a| 
+每 30 天
+| 60 | 2 | 93 
+
+
+.4+| *关键复制策略*  a| 
+每刻钟
+| 每15分钟 | 3 | 288 | 309 
+
+
+| 每日  a| 
+每 1 天
+| 14 | 14 | 309 
+
+
+| 每周  a| 
+每 1 周
+| 35 | 5 | 309 
+
+
+| 每月  a| 
+每 30 天
+| 60 | 2 | 309 
+|===
+
+
+[[next-steps]]
+== 后续步骤
+
+* link:rp-use-protect.html["在勒索软件恢复中保护工作负载"]
+
