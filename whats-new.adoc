@@ -18,6 +18,20 @@ summary: 了解NetApp Ransomware Resilience的新功能。
 
 
 
+[[26-october-2026]]
+== 2026年10月26日
+
+
+
+[[new-manual-workflow-for-creating-a-user-activity-agent]]
+== 用于创建用户活动代理的新手动工作流程
+
+Ransomware Resilience 现在提供手动用户活动代理创建工作流程，使您能够更好地控制如何在虚拟机上创建用户活动代理。使用此新工作流程，您可以直接安装用户活动代理并配置代理设置，而无需提供 VM SSH 密钥。
+
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent["创建用户活动代理"^]。
+
+
+
 [[20-october-2026]]
 == 2026年10月20日
 
@@ -32,8 +46,8 @@ Ransomware Resilience 现在提供增强的隔离恢复环境配置工作流程�
 
 
 
-[[enhanced-workflow-for-enabling-user-activity-monitoring]]
-=== 用于启用用户活动监控的增强型工作流程
+[[improved-workflow-for-enabling-user-activity-monitoring]]
+=== 用于启用用户活动监控的改进工作流程
 
 Ransomware Resilience 改进了启用用户活动监控的工作流程。以前，每次在工作负载上启用带有用户活动监控的勒索软件保护策略时，Ransomware Resilience 都会测试数据收集器的连接。借助该更新，如果存储 VM 存在数据收集器且处于“正在运行”状态，则现在会跳过该检查，从而加快保护工作流程。
 
@@ -53,8 +67,8 @@ Ransomware Resilience 中 Google Cloud NetApp Volumes 对 Flex 服务级别的�
 
 
 
-[[enhanced-support-for-clean-restores]]
-=== 增强对干净还原的支持
+[[clean-restore-support-for-suspicious-user-behavior-and-user-based-encryption-attacks]]
+=== 针对可疑用户行为和基于用户的加密攻击的干净还原支持
 
 现在，针对可疑用户行为和基于用户的加密攻击，可以使用干净还原进行恢复。此增强功能在现有基础上新增了对基于加密（熵）攻击的支持。这项增强功能使您能够充分利用 clean restore 的引导式方法，确定最佳还原点，从而最大限度地减少数据丢失并加快恢复速度。
 
