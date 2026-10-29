@@ -905,7 +905,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransom
 [[threat-detection-with-splunk-cloud]]
 === 使用 Splunk Cloud 进行威胁检测
 
-您可以自动将数据发送到您的安全和事件管理系统 (SIEM) 进行威胁分析和检测。在以前的版本中，您只能选择 AWS Security Hub 作为您的 SIEM。在此版本中，您可以选择 AWS Security Hub 或 Splunk Cloud 作为您的 SIEM。
+您可以自动将数据发送到您的安全和事件管理系统（SIEM），以便进行威胁分析和检测。在以前的版本中，您只能选择 AWS Security Hub 作为 SIEM。在此版本中，您可以选择 AWS Security Hub 或 Splunk Cloud 作为 SIEM。
 
 https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["了解有关配置BlueXP ransomware protection设置的更多信息"]。
 
@@ -985,7 +985,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransom
 
 您现在可以将 Microsoft Azure 与 AWS 和NetApp StorageGRID一起添加为备份目标。
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-destination.html["了解有关如何配置保护设置的更多信息"]。
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-destination.html["了解如何配置保护设置"]。
 
 
 
@@ -1037,7 +1037,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 [[threat-detection]]
 === 威胁检测
 
-现在可以使用第三方安全和事件管理 (SIEM) 系统启用威胁检测。仪表板现在显示“启用威胁检测”的新建议，可以在“设置”页面上进行配置。
+现在可以使用第三方安全和事件管理 (SIEM) 系统进行威胁检测。控制面板现在显示了“启用威胁检测”的新建议，可以在“设置”页面上进行配置。
 
 https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["了解有关配置“设置”选项的详细信息"]。
 
@@ -1064,16 +1064,16 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 [[download-csv-files]]
 === 下载 CSV 文件
 
-您可以从保护、警报和恢复页面下载 CSV 文件*。
+您可以从保护、警报和恢复页面下载 CSV 文件。
 
 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports.html["详细了解如何从仪表板和其他页面下载 CSV 文件"] 。
 
 
 
-[[documentation-link]]
+[[documentation-links]]
 === 文档链接
 
-查看文档链接现在包含在 UI 中。您可以从仪表板垂直*操作*访问此文档image:button-actions-vertical.png["垂直操作选项"]选项。选择“*新增功能*”查看发行说明中的​​详细信息，或选择“*文档*”查看BlueXP ransomware protection文档主页。
+用户界面中现在提供了指向文档的直接链接。您可以从仪表板垂直的 *操作* image:button-actions-vertical.png["垂直操作选项"] 选项访问此文档。选择 *新增功能* 以查看发行说明中的详细信息，或选择 *文档* 以查看 BlueXP 勒索软件保护文档主页。
 
 
 
@@ -1129,7 +1129,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-de
 [[recovery-process]]
 === 恢复过程
 
-恢复过程得到了加强。现在，您可以按卷或所有卷恢复工作负载。 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["了解有关从勒索软件攻击中恢复的更多信息（事件被消除后）"] 。
+恢复过程已得到增强。您现在可以一次恢复一个卷或一次恢复所有卷 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["了解有关从勒索软件攻击中恢复的更多信息（事件被消除后）"]。
 
 https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["了解BlueXP ransomware protection"] 。
 

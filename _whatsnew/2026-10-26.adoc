@@ -1,0 +1,12 @@
+= 用于创建用户活动代理的新手动工作流程
+:allow-uri-read: 
+
+
+
+
+[[new-manual-workflow-for-creating-a-user-activity-agent]]
+== 用于创建用户活动代理的新手动工作流程
+
+Ransomware Resilience 现在提供手动用户活动代理创建工作流程，使您能够更好地控制如何在虚拟机上创建用户活动代理。使用此新工作流程，您可以直接安装用户活动代理并配置代理设置，而无需提供 VM SSH 密钥。
+
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent["创建用户活动代理"^]。
