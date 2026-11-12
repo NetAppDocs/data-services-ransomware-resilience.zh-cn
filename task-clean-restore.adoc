@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-clean-restore.html 
 keywords: clean room, clean restore, secure recovery, restore, isolated recovery environment 
-summary: 在 NetApp Ransomware Resilience 中执行干净恢复之前，您必须创建一个隔离的恢复环境，以隔离并清理该环境。 
+summary: 在 NetApp Ransomware Resilience 中创建一个隔离的恢复环境，以隔离和清理工作负载，查看支持的配置，并为干净恢复做好准备。 
 ---
 = 在 NetApp Ransomware Resilience 中配置环境以进行干净恢复
 :hardbreaks:
@@ -98,7 +98,7 @@ NOTE: 在基于云的环境中执行干净恢复可能会产生云提供商的�
 == 注意事项
 
 * 只能对基于加密的攻击（包括用户行为和熵）以及可疑的用户行为攻击执行干净还原。数据泄露和数据销毁攻击不支持干净还原。
-* 如果隔离恢复环境没有新操作的容量，它将排队，直到有可用性。
+* 如果隔离恢复环境没有新操作的容量，则该操作将排队，直到容量可用。
 +
 ** 您可以随时在 Ransomware Resilience Recovery 控制面板中监控活动和排队的清除恢复操作的状态。
 
@@ -111,7 +111,7 @@ NOTE: 在基于云的环境中执行干净恢复可能会产生云提供商的�
 [[additional-considerations-for-on-premises-environments]]
 === 本地环境的其他注意事项
 
-如果要部署本地 IRE，则在干净还原中为恢复分析克隆 Windows VM 时，克隆的 VM 将保留与源相同的配置。这可能会导致冲突：
+如果您要部署本地 IRE，则在干净还原中为恢复分析克隆 Windows VM 时，克隆的 VM 将保留与源相同的配置。这种重复可能会导致冲突：
 
 * 使用相同的安全标识符 (SID) 会导致身份验证和安全冲突。
 * 使用相同的计算机名 (CN) 会导致网络冲突。
@@ -125,7 +125,7 @@ NOTE: 在基于云的环境中执行干净恢复可能会产生云提供商的�
 [[secondary-sources]]
 === 辅助来源
 
-创建 IRE 时，您可以选择添加辅助源。
+创建 IRE 时，您可以添加二级源。
 
 如果主源不可用，并且您已配置辅助源，则数据将还原到辅助源。
 
@@ -151,7 +151,7 @@ NOTE: 在基于云的环境中执行干净恢复可能会产生云提供商的�
 [[prerequisites]]
 == 前提条件
 
-确保已完成所选干净还原部署类型的先决条件。选择所选 IRE 配置的选项卡。
+确认您已完成所选清理还原部署类型的先决条件。选择所选 IRE 配置的选项卡。
 
 
 NOTE: 创建 IRE 时，必须在系统选择步骤中添加要用于分析的每个系统（主要或次要）。
@@ -216,8 +216,8 @@ NOTE: 如果要配置源位于 Amazon FSx for NetApp ONTAP 中的 IRE，请跳�
 .虚拟私有云 (VPC)
 * 对于 IRE，请在生产环境的 IP 地址范围内配置 VPC。IP 地址不应与任何现有的 IP 地址冲突。
 +
-** VPC 的最小容量应为 64 个 IP 地址（a /26 网络掩码）。
-** VPC 必须允许公共互联网访问。否则，Console 代理将无法工作
+** VPC 的最小容量应为 64 个 IP 地址（/26 网络掩码）。
+** VPC 必须允许公共互联网访问。否则，Console 代理将无法工作。
 
 
 
@@ -355,8 +355,8 @@ NOTE: 如果要配置源位于 Amazon FSx for NetApp ONTAP 中的 IRE，请跳�
 .虚拟私有云 (VPC)
 * 对于 IRE，请在生产环境的 IP 地址范围内配置 VPC。IP 地址不应与任何现有的 IP 地址冲突。
 +
-** VPC 的最小容量应为 64 个 IP 地址（a /26 网络掩码）。
-** VPC 必须允许公共互联网访问。否则，Console 代理将无法工作
+** VPC 的最小容量应为 64 个 IP 地址（/26 网络掩码）。
+** VPC 必须允许公共互联网访问。否则，Console 代理将无法工作。
 
 
 
@@ -475,7 +475,7 @@ image:diagram-clean-recovery-on-prem.png["本地到本地干净还原示意图"]
 ** 必须安装并运行 VMware Tools。
 ** 必须启用 WinRM。
 ** 必须配置该 IP。
-** 请确保您拥有允许克隆基本虚拟机的相应许可证。
+** 您必须具有相应的许可证才能允许克隆基础 VMs。
 ** 必须打开 VM 电源。
 
 
@@ -519,6 +519,9 @@ NFS 访问：* Production Console agent * Console agent VLAN * Clean room VLAN
 在进行干净还原之前，您必须创建一个隔离的恢复环境。
 
 如果环境位于云端或本地，则创建隔离恢复环境的过程会有所不同。请确保遵循正确位置的说明。
+
+
+TIP: link:https://www.netapp.com/video/6Vj0Ijo3mno/netapp-ransomware-resilience-clean-restore/["观看指导您完成孤立恢复部署的视频。"^]
 
 [role="tabbed-block"]
 ====
@@ -616,4 +619,12 @@ IMPORTANT: 如果您删除了 IRE，它也会删除洁净室 SVM 和元数据卷
 . 在隔离清洁和恢复卡中，选择**管理**。
 . 确定要删除的无尘室。选择 IRE 的操作菜单 (`...`），然后选择**删除**。
 . 在对话框中，选择 **Delete** 以确认操作。
+
+
+
+
+[[more-information]]
+== 更多信息
+
+* link:https://www.youtube.com/watch?v=6Vj0Ijo3mno&t=6s["视频：隔离恢复环境部署"]
 

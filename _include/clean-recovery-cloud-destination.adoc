@@ -54,8 +54,8 @@ NOTE: 如果要配置源位于 Amazon FSx for NetApp ONTAP 中的 IRE，请跳�
 .虚拟私有云 (VPC)
 * 对于 IRE，请在生产环境的 IP 地址范围内配置 VPC。IP 地址不应与任何现有的 IP 地址冲突。
 +
-** VPC 的最小容量应为 64 个 IP 地址（a /26 网络掩码）。
-** VPC 必须允许公共互联网访问。否则，Console 代理将无法工作
+** VPC 的最小容量应为 64 个 IP 地址（/26 网络掩码）。
+** VPC 必须允许公共互联网访问。否则，Console 代理将无法工作。
 
 
 

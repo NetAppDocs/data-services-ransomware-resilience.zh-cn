@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-start-prerequisites.html 
 keywords: bluexp ransomware protection, ransomware protection prerequisites, resilience 
-summary: 通过验证对您的环境、网络访问、登录和 Web 浏览器的支持，开始使用NetApp Ransomware Resilience。 
+summary: 在部署 NetApp Ransomware Resilience 之前，请验证系统、NetApp Console、ONTAP、备份和用户行为检测要求。 
 ---
 = NetApp Ransomware Resilience前提条件
 :hardbreaks:
@@ -12,7 +12,7 @@ summary: 通过验证对您的环境、网络访问、登录和 Web 浏览器的
 
 
 [role="lead"]
-在部署 NetApp Ransomware Resilience 之前，请验证您的环境、网络访问和浏览器是否符合要求。
+在部署 NetApp Ransomware Resilience 之前，请验证您的系统、NetApp Console 配置、ONTAP 版本和备份目标是否符合要求。
 
 查看以下要求。
 
@@ -21,7 +21,7 @@ summary: 通过验证对您的环境、网络访问、登录和 Web 浏览器的
 [[supported-systems]]
 == 支持的系统
 
-请确保您使用的是受支持的系统：
+请确认您使用的是受支持的系统：
 
 |===
 | 环境 | 协议 | 支持的版本 
@@ -75,7 +75,7 @@ NOTE: Azure NetApp Files 或 Google Cloud NetApp Volumes 不支持用户活动�
 ** 如果您的本地 ONTAP 集群或 Cloud Volumes ONTAP 系统未在 Console 中设置，请参阅 link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html["了解如何配置控制台代理"^] 和 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["标准控制台要求"^]。
 +
 
-NOTE: 如果单个 Console 组织中有多个 Console 代理，则 Ransomware Resilience 将在 Console UI 中当前选择的代理之外的所有 Console 代理中扫描 ONTAP 资源。
+NOTE: 如果单个控制台组织中有多个控制台代理，则 Ransomware Resilience 会扫描所有控制台代理的 ONTAP 资源，而不仅仅是当前在控制台 UI 中选择的代理。
 
 
 
@@ -119,14 +119,14 @@ NOTE: 您可以link:task-backup-destination.html["在 Ransomware Resilience 中�
 [[user-behavior-detection-requirements]]
 == 用户行为检测要求
 
-要使 Ransomware Resilience 提供有关用户行为的警报，必须配置用户活动代理。要安装用户活动代理，请确保您的系统满足 link:reference-user-activity-requirements.html["要求"]。
+要使 Ransomware Resilience 提供有关用户行为的警报，必须配置用户活动代理。要安装用户活动代理，请确认您的系统满足 link:reference-user-activity-requirements.html["要求"]。
 
 
 
 [[clean-restore-prerequisites]]
 == 清理还原先决条件
 
-Ransomware Resilience 提供干净的恢复，它提供了一个发现最佳恢复路径的指导恢复过程。要使用干净还原，link:task-clean-restore.html["确保满足先决条件"]。
+Ransomware Resilience 提供干净的恢复，它提供了一个发现最佳恢复路径的指导恢复过程。要使用干净还原，link:task-clean-restore.html["请确认您符合先决条件"]。
 
 
 

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-custom-restore.html 
 keywords: ransomware protection recovery, recover from a ransomware attack, recovery point, RPA 
-summary: '遭受攻击后， NetApp Ransomware Resilience会验证二级存储上的备份数据是否干净，推荐实际恢复点 (RPA)，并协调防崩溃恢复的工作流程。' 
+summary: 在勒索软件攻击后，使用推荐或首选的还原点在卷、文件或虚拟机级别还原工作负载，而无需先清理文件。 
 ---
-= 使用 NetApp Ransomware Resilience 中的自定义还原从勒索软件攻击中恢复
+= 使用 NetApp Ransomware Resilience 中的自定义恢复功能恢复工作负载
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: '遭受攻击后， NetApp Ransomware Resilience会验证二级存储�
 
 
 [role="lead"]
-借助 Ransomware Resilience，存储管理员可以确定如何最好地从推荐的还原点或首选还原点还原工作负载。
+通过使用 NetApp Ransomware Resilience 中的自定义还原，在勒索软件攻击后恢复您的工作负载。选择建议的还原点或首选还原点以还原数据，而无需先清理文件。
 
 
 TIP: Ransomware Resilience 还支持 xref:task-clean-restore.html[clean restore 选项]，它提供引导式恢复和高级功能，以确保仅恢复干净和未加密的数据。
@@ -27,7 +27,7 @@ TIP: Ransomware Resilience 还支持 xref:task-clean-restore.html[clean restore 
 安全存储管理员可以恢复不同级别的数据：
 
 * 恢复所有卷
-* 在卷级别、目录或文件级别恢复文件共享。
+* 在卷、目录或文件级别恢复文件共享。
 * 从虚拟机级别的数据存储中恢复。
 
 
@@ -143,7 +143,7 @@ TIP: 新的卷名称显示为原始卷名称+备份名称+备份日期。
 [[restore-a-workload-at-the-file-level]]
 === 在文件级别还原工作负载
 
-在文件级别还原工作负载之前，您可以查看受影响文件的列表。您可以访问"提醒"页面，下载受影响文件的列表。然后使用恢复页面上传列表并选择要还原的文件。
+在文件级别还原工作负载之前，您可以从“警报”页面下载受影响文件的列表。使用“恢复”页面上传列表并选择要还原的文件。
 
 您可以将工作负载在文件级别恢复到相同或不同的系统。
 
@@ -198,7 +198,7 @@ image:screen-recovery-app-by-file-select-files.png["手动选择要恢复的文�
 
 +
 
-NOTE: 如果无法使用所选还原点还原任何文件，则会出现一条消息，指示无法还原的文件数量，并允许您通过选择“下载受影响文件的列表”来下载这些文件的列表。
+NOTE: 如果无法使用所选还原点还原任何文件，则会显示一条消息，指示无法还原多少个文件。要下载这些文件的列表，请选择*下载受影响文件的列表*。
 
 
 
@@ -207,7 +207,7 @@ NOTE: 如果无法使用所选还原点还原任何文件，则会出现一条�
 .. 选择恢复数据的位置：原始源位置或您可以指定的备用位置。
 +
 
-TIP: 虽然原始文件或目录将被恢复的数据覆盖，但原始文件和文件夹名称将保持不变，除非您指定新名称。
+TIP: 还原的数据将覆盖原始文件或目录，但除非指定新名称，否则原始文件和文件夹名称将保持不变。
 
 .. 选择系统。
 .. 选择存储虚拟机。
@@ -216,7 +216,7 @@ TIP: 虽然原始文件或目录将被恢复的数据覆盖，但原始文件和
 
 TIP: 如果您没有指定还原路径，文件将被还原到顶级目录的新卷。
 
-.. 选择是否希望恢复的文件或目录的名称与当前位置的名称相同或不同。
+.. 选择是保留当前名称，还是对还原的文件或目录使用不同的名称。
 
 
 . 选择“下一步”。
@@ -271,7 +271,7 @@ TIP: 如果您没有指定还原路径，文件将被还原到顶级目录的新
 [[restore-a-vm-file-share-at-the-vm-level]]
 === 在 VM 级别还原 VM 文件共享
 
-在选择要还原的虚拟机后，在“恢复”页面上继续执行以下步骤。
+在“恢复”页面上，选择要恢复的虚拟机后，请继续执行这些步骤。
 
 . *来源*：选择来源旁边的向下箭头查看详细信息。
 +
