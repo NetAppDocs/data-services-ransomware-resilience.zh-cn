@@ -176,7 +176,7 @@ Ransomware Resilience 可识别五种攻击类型：
 不可以，您无法修改由 Backup and Recovery from Ransomware Resilience 管理的策略。您可以在 Backup and Recovery 中管理对这些策略的任何更改。
 
 .如果 ONTAP 中存在策略（例如 ARP、FPolicy 和快照），勒索软件弹性是否会更改它们？
-Ransomware Resilience 不会修改 ONTAP 中的任何现有检测策略（ARP、FPolicy 设置）。如果您修改 Ransomware Resilience 中的任何设置，则可以覆盖 ONTAP 设置。
+不会自动执行。Ransomware Resilience 不会修改 ONTAP 的任何现有检测策略（ARP、FPolicy 设置），除非您在 Ransomware Resilience 中手动更改这些设置。
 
 .注册 Ransomware Resilience 后，如果在 Backup and Recovery 中添加新策略，会发生什么情况？
 Ransomware Resilience 可识别 Backup and Recovery 中新创建的策略和策略更改。

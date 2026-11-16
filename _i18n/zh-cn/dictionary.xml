@@ -664,7 +664,6 @@
   <block id="a49a95f9a293b47d316bebea16d14e29" category="list-text">*使用其他NetApp产品或服务中管理的现有快照和备份策略为工作负载创建检测策略。*</block>
   <block id="b7caa7f3615aea01fd626561bb13bda1" category="paragraph">检测策略不会改变其他产品中管理的策略。</block>
   <block id="f05ea9e0c9ccffc58a546b5b7a0d8608" category="inline-link-macro">备份和恢复</block>
-  <block id="0d8d979e8f1f220e1b4ca41afbe9262e" category="paragraph">如果已在其他服务中激活了自主勒索软件保护和 FPolicy 保护，则检测策略将启用它们。详细了解<block ref="1b5ca5e6db0400e20efef2d18e2ed058" category="inline-link-macro-rx"></block>，<block ref="746471c5fd2aae723f0f1e69c0304862" category="inline-link-macro-rx"></block> ， 和<block ref="e579faf0a14efb59aa4bfe357406413f" category="inline-link-macro-rx"></block>。</block>
   <block id="1b49dfb35b7ec360208537cc7e5a9d62" category="section-title">创建勒索软件保护策略（如果您没有快照或备份策略）</block>
   <block id="7161176fcf3200a6f1029cbb10969d7b" category="paragraph">如果工作负载上不存在快照或备份策略，您可以创建勒索软件保护策略，其中可以包括您在勒索软件恢复中创建的以下策略：</block>
   <block id="f23b77237fe3a13c45d11aeb7e85a8cb" category="list-title">创建勒索软件保护策略的步骤[[步骤]]</block>
@@ -675,7 +674,6 @@
   <block id="a5be5d648ce22c25337cedcc760abd3c" category="inline-image-macro">添加显示快照部分的策略页面</block>
   <block id="3c47a09fd51a5bf078b6b75c88195ad8" category="paragraph"><block ref="3c47a09fd51a5bf078b6b75c88195ad8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e4574be2aa1d855d0a159fa734c028b7" category="list-text">对于每个项目，选择*向下箭头*。</block>
-  <block id="7c06fadd4f73e4b63eb519df7d9880fc" category="paragraph">如果您想更改被阻止的文件扩展名，请在系统管理器中编辑它们。</block>
   <block id="fa12509cfb8e8ccded16e2a254e988c4" category="list-text">选择“*添加*”。</block>
   <block id="1a068d6a85d666ea306209409d3e8bca" category="section-title">向具有现有备份或快照策略的工作负载添加检测策略</block>
   <block id="8ffd4321390a5a9174c14e023f8f68f8" category="inline-xref">利用勒索软件抵御能力进行保护</block>
@@ -688,7 +686,6 @@
   <block id="783a386314b7dc75416c1abf94fcf70f" category="section-title">用勒索软件保护策略替换现有的备份或快照策略</block>
   <block id="cc8bf7105e0bf7256578c2b5c24f9ebf" category="paragraph">您可以用勒索软件保护策略替换现有的备份或快照策略。这种方法会删除外部管理的保护，并在勒索软件恢复中配置检测和保护。</block>
   <block id="df03f91b3a74d5ec2baa41276e3a16de" category="inline-xref">创建保护策略</block>
-  <block id="6254fbe0af1c355b3b21ba0edff9f802" category="list-text">选择保护策略。如果不存在保护策略，请选择**添加**来创建新策略。有关创建策略的信息，请参阅<block ref="176be3a772dd966966fe67b132b5ec7b" category="inline-xref-macro-rx"></block>。选择**下一步**。</block>
   <block id="375396793fa0187dd9b04e12d4a0a7b3" category="list-text">选择备份目标或创建一个新的备份目标。选择**下一步**。</block>
   <block id="bd320a2d0a55e1edf2c57054719c7c15" category="list-text">查看新的保护策略，然后选择**保护**来应用它。</block>
   <block id="82f3ca7fa2e1f82d7f077e15af9747a4" category="section-title">分配不同的策略</block>
@@ -709,7 +706,6 @@
   <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">选择“下一步”。</block>
   <block id="f7ba12bb96df2ae9d69ffbf1bc2af6bb" category="inline-image-macro">添加保护组 - 策略页面</block>
   <block id="a739b6145911af1f850b745cae737475" category="paragraph"><block ref="a739b6145911af1f850b745cae737475" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f724f66c90177c8dac8336038a0778c0" category="list-text">如果您的检测策略包括用户行为检测，请选择您想要使用的数据收集器，然后单击**下一步**。</block>
   <block id="0fc76de5572d1186f1358665dff6076f" category="list-text">检查保护组的选择。</block>
   <block id="eda3b9c0a863dbdeae5ac8cceaa9106b" category="section-title">编辑组保护</block>
   <block id="ecfb3b2431beb33b5fe2ef7c83f7fb1b" category="list-text">在“保护”页面中，选择“保护组”选项卡，然后选择要修改其策略的组。</block>
@@ -1622,7 +1618,6 @@
   <block id="8c600f29f899b74aad0eea00b5927162" category="inline-link-macro">连接到 SIEM</block>
   <block id="4640cffe8cecf29a2e28eccc89d62e54" category="cell">输入 SIEM/XDR 服务器详细信息以启用威胁检测。请参阅<block ref="ffa7fd2a3621d8607d19220a5312c79a" category="inline-link-macro-rx"></block>。</block>
   <block id="384ff6974e7af6bfbb47b5f1a1e8a8ef" category="cell">将备份目标添加到此工作负载以对其进行保护。请参阅 <block ref="e25a1b60993d45f33b0deea2ae726330" category="inline-link-macro-rx"></block>。</block>
-  <block id="b6ac186c730d3951ea5f7795e32f0554" category="admonition">要启用辅助存储上的备份锁定，请使用 *Settings* 选项配置备份目标。有关详细信息，请参见 <block ref="33c35db19b883807eccfb2734290ae91" category="inline-link-macro-rx"></block>。</block>
   <block id="bcecace85f7c3d476feccac24d9db3eb" category="list-text">在控制面板或其他页面中，选择右上角的 *刷新* <block ref="94d384894f036157c348eadc55c40952" category="inline-image-macro-rx" type="image"></block> 选项以刷新报告中显示的数据。</block>
   <block id="cc3ae719c12cc9e21d1f9b6b919eb818" category="summary">在 NetApp Ransomware Resilience 中添加备份目标，以提高网络弹性。</block>
   <block id="162cbc2e55bba363e404fc5b076b5396" category="doc">在 NetApp Ransomware Resilience 中添加备份目标</block>
@@ -2156,7 +2151,6 @@
   <block id="5e37428a91a220042e4764361ae6e656" category="list-text">*加密检测*：启用 Ransomware Resilience 以检测基于加密的攻击。</block>
   <block id="83b90da4f4a4213417bbdd607b6813c9" category="list-text">*可疑用户行为检测*：启用用户行为检测，将用户活动事件传输到 Ransomware Resilience，并检测数据泄露或数据销毁等可疑事件。</block>
   <block id="8d9e80b9523ae8e43c09fee979fbfe13" category="list-text">*阻止文件扩展名*：启用 Ransomware Resilience 以阻止已知的可疑文件扩展名。</block>
-  <block id="87c5b70bcda4f0448400bb7245e5d975" category="admonition">您可以选择检测策略的任意组合。检测策略必须包括加密检测或可疑用户行为检测。</block>
   <block id="1c2f725024e8db3f57c9ffb6c1869a4f" category="list-text">*进行中*：正在应用策略，但操作尚未完成。</block>
   <block id="7f2fe4ecc84891950d87f953f70363aa" category="list-text">*Failed*：已配置策略，但出现错误。</block>
   <block id="ed3c60417302240ba271d87f011c0f32" category="paragraph">在 Ransomware Resilience 中启用 AWS Security Hub 之前，需要在 AWS Security Hub 中执行安全配置：</block>
@@ -2724,7 +2718,6 @@
   <block id="c5571d2bd805b9ff90a236b8f97f4b2a" category="paragraph">工作负载必须具有启用了加密检测或用户行为检测的勒索软件保护策略，才能被视为受保护。如果没有这些检测策略中的至少一种，工作负载将被标记为存在风险。如果工作负载具有备份或快照策略，但未启用加密检测或用户行为检测，则会被视为存在风险。</block>
   <block id="25ef6c177ba76101d5903dc7639808a9" category="paragraph">是的，如果您在 Backup and Recovery 中管理工作负载，则这些策略将被纳入 Ransomware Resilience。</block>
   <block id="ad454ecef2b040909651d7af492e42ff" category="paragraph-title">如果 ONTAP 中存在策略（例如 ARP、FPolicy 和快照），勒索软件弹性是否会更改它们？</block>
-  <block id="33770507195ff31d97a8192589460055" category="paragraph">Ransomware Resilience 不会修改 ONTAP 中的任何现有检测策略（ARP、FPolicy 设置）。如果您修改 Ransomware Resilience 中的任何设置，则可以覆盖 ONTAP 设置。</block>
   <block id="73f9341af639bb7291bbf568f90c32a7" category="list-text">每个控制台代理的工作负载限制为 3,000 个。您可以申请提高此限制。</block>
   <block id="450c303d7338ae99abb9140e57f1802f" category="paragraph">部署 Console agent 和分配权限需要 _Super admin_ 或 _Organization admin_ 角色。</block>
   <block id="8c6998a19384eedc205556ec1d5a77b6" category="paragraph-title">勒索软件弹性许可证是否包含 NetApp 其他产品？</block>
@@ -2805,20 +2798,8 @@
   <block id="344f7e8a6617b537a56be4e2326d7628" category="list-text">（可选）选择现有的保护策略作为新策略的基础。在*从现有 Ransomware Resilience 策略复制*中，选择*选择*。选择现有策略，然后选择*复制*。</block>
   <block id="b99ea56cd0937e71402758b90941afba" category="list-text">选择*检测策略*设置：</block>
   <block id="368cc5f046a5decdd8a63b189def027d" category="inline-link-macro">预定义策略</block>
-  <block id="35818e1bdf8572310be62fbe70d83fbd" category="list-text">设置 *Snapshot 策略*。要从 <block ref="acb8cd429652c09fe35d5de4c302f2ae" category="inline-link-macro-rx"></block> 导入快照设置，请选择 *选择* 单选按钮，然后从下拉列表中选择策略。如果导入策略，则不需要其他快照配置。</block>
-  <block id="cb67299b59d7a0a794b01e3933723fc2" category="paragraph">要配置自己的设置，请选择*创建*，然后输入*快照基准名称*。基准名称是附加到每个快照的前缀。</block>
-  <block id="3f1b170bc65d3a2a562b87c762c823cf" category="list-text">如果您正在配置自己的快照设置，则可以启用*快照锁定*。如果启用快照锁定，请设置*锁定保留天数*的值（即快照锁定的时间）。</block>
-  <block id="227b3727877936fe36a5c3408d154e37" category="paragraph">快照锁定通过锁定主存储上的快照副本来创建不可变存储，这样即使勒索软件攻击侵入备份存储目标，在一段时间内也无法修改或删除这些副本。这样可以缩短恢复时间。当快照被锁定时，卷过期时间将设置为快照副本的过期时间。</block>
   <block id="70f359f752aadf5bf7a021c260016eae" category="inline-link-macro">适用于 SnapLock 的 ONTAP 文档</block>
-  <block id="e2c8c1fbfb2e418d03e83af4d5e791b3" category="paragraph">Snapshot 副本锁定在 ONTAP 9.12.1 及更高版本中可用。要了解有关 SnapLock 的更多信息，请参阅 <block ref="4ca7d4cccee9eba6047bb73bae1d4bb0" category="inline-link-macro-rx"></block>。</block>
-  <block id="d07faab816e99d4553ba7bf5cb72f7bd" category="paragraph">如果要配置自己的快照设置，请设置快照计划选项。选择是以分钟、小时、天、周还是月为频率创建快照。对于除每天以外的所有选项，请选择在一天、一周或一月中的什么时间创建快照。此外，在*保留*字段中选择要保留的每种快照类型的副本数。</block>
   <block id="99cf9bfc9df3b53a2612d01dea4a5f59" category="inline-image-macro">Snapshot 策略选项的屏幕截图。</block>
-  <block id="b0a1cedd2277ba2ec3327d537c1e0a4b" category="paragraph"><block ref="b0a1cedd2277ba2ec3327d537c1e0a4b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="199641835a7fed0b2247051b07a065cc" category="list-text">对于本地工作负载，您可以选择设置*复制策略*以将工作负载复制到 ONTAP 存储。</block>
-  <block id="4978e3b9001301d839fc0946f4ba3f67" category="paragraph">要导入系统定义的策略，请选择*选择*单选按钮，然后从下拉菜单中选择 <block ref="acb8cd429652c09fe35d5de4c302f2ae" category="inline-link-macro-rx"></block>。</block>
-  <block id="60e573bc37b98bd9fd792830cf42a815" category="paragraph">要创建自己的复制设置，请选择*创建*，然后输入*复制策略基本名称*，这是附加到所有快照的前缀。设置*复制计划*。切换要启用的频率（每小时、每天、每周或每月），并为启用的每个计划设置保留值（要保留的复制快照数）。</block>
-  <block id="0ac700a6fce8da97bdad86b3f0e2e13d" category="list-text">（可选）设置*备份策略*。要导入现有策略，请选择*选择*单选按钮，然后从下拉菜单中选择 <block ref="acb8cd429652c09fe35d5de4c302f2ae" category="inline-link-macro-rx"></block>。</block>
-  <block id="c7915346ee91e7b7da0689c8b96c3c65" category="paragraph">要创建自己的策略，请选择*创建*并输入*备份策略基本名称*。通过切换不同的频率（每小时、每天、每周和每月）来设置*备份计划*，然后为每个频率设置保留计数。</block>
   <block id="9830c7d8e813511d60d4ac7532561b5d" category="list-text">如果您的保护策略包括用户行为检测，请在您的环境中选择一个*用户活动代理*来托管新的数据收集器。Ransomware Resilience 会自动创建数据收集器，将用户活动事件传输到 Ransomware Resilience，以检测异常的用户行为。</block>
   <block id="9e22bb022357fb45ccf2d21570594214" category="inline-link-macro">了解保护策略</block>
   <block id="ca8c59331fa4e2672fad0627fd8a1afc" category="list-text"><block ref="ca8c59331fa4e2672fad0627fd8a1afc" category="inline-link-macro-rx"></block></block>
@@ -2925,4 +2906,126 @@
   <block id="59655d8f0a9a94d51aad5343b7a96d2c" category="admonition">还原的数据将覆盖原始文件或目录，但除非指定新名称，否则原始文件和文件夹名称将保持不变。</block>
   <block id="247c5c536f5e56eaa250c0e6dcf8a8a7" category="list-text">选择是保留当前名称，还是对还原的文件或目录使用不同的名称。</block>
   <block id="a947a5d59495e6e276343dca4c52dee5" category="paragraph">在“恢复”页面上，选择要恢复的虚拟机后，请继续执行这些步骤。</block>
+  <block id="bcf5049df7714af1ba42f40c51aee631" category="inline-link-macro">使用自定义列表</block>
+  <block id="9900d28238084ad9c308f011a9c140a0" category="paragraph">阻止可疑文件扩展名选项使用您为组织配置的默认列表。要<block ref="4adb6ba3c4216e526dbd9a0fc52ab461" category="inline-link-macro-rx"></block>您创建的内容，请选择铅笔图标。</block>
+  <block id="a914cb406bfedd0ff4a4c2892ad21daa" category="paragraph">+ 如果您已在 ONTAP 中配置了阻止的文件扩展名列表，则可以通过选择 *使用 Ransomware Resilience 列表替换 ONTAP 列表* 来覆盖这些列表。然后选择您是希望 SVM *允许除阻止列表之外的所有文件扩展名* 还是 *阻止除允许列表之外的所有文件扩展名*。然后，从下拉菜单中选择该列表。工作负载上的所有存储虚拟机（SVM）都将使用该列表；您稍后可以将不同的列表应用于工作负载上的不同 SVM。</block>
+  <block id="6607faee2b9ec1c5d1cd49893a3ba90f" category="list-text">当前不支持对 MetroCluster 或 SAN 工作负载进行干净还原。</block>
+  <block id="c4d3491ad5baf6cb6ea2a67196542971" category="doc">受管被阻止的文件扩展名</block>
+  <block id="c8e63e51c8e0acaacf08d2ec2d4a9f72" category="paragraph">启用 *阻止可疑文件扩展名* 保护选项后，Ransomware Resilience 现在可以自定义工作负载上允许或阻止的文件扩展名列表。通过此增强功能，您可以将工作负载配置为仅允许存储虚拟机（SVM）上的特定文件类型或阻止特定文件扩展名。如果您使用 FPolicy 迁移现有工作负载以通过 Ransomware Resilience 阻止可疑文件扩展名，则默认情况下会使用更精心策划的扩展名列表，但您可以自定义该列表。此增强功能支持对文件扩展名选项进行更精细的控制，还允许您为不同的 SVM 创建不同的列表。</block>
+  <block id="714e7021c144cf0abe82a4c6f2c4f93e" category="inline-link-macro">在 Ransomware Resilience 中管理被阻止的文件扩展名</block>
+  <block id="746947620a1677afde977abf37019b8c" category="paragraph">有关详细信息，请参见<block ref="c1197af6ca574421271b30600de07a8f" category="inline-link-macro-rx"></block>。</block>
+  <block id="c6afc2a7c10cd55aed74c7ec88063113" category="doc">MetroCluster 支持</block>
+  <block id="881339c26c28107ef981b5584762672c" category="paragraph">Ransomware Resilience 现在支持 MetroCluster，可为镜像的 MetroCluster 配置提供勒索软件保护、检测和恢复功能。在 MetroCluster 配置上启用勒索软件保护时，必须将 MetroCluster 配对中的两个系统都添加到控制台。当您在配对的一侧发现并启用保护时，另一侧会自动启用。</block>
+  <block id="135aafefd6672672bf413096190820a9" category="paragraph">在 MetroCluster 工作负载遭受勒索软件攻击后进行恢复时，当前只能使用自定义还原。</block>
+  <block id="200ccc515e5c41e28e5dae9b2b257c4a" category="inline-link-macro">MetroCluster 发现</block>
+  <block id="adea9837f77c1d23d23d90ecaab16a70" category="paragraph">有关详细信息，请参见<block ref="e384f8b7351cc9f72a02208e7b2a1112" category="inline-link-macro-rx"></block>。</block>
+  <block id="11d95859bf4855e61cea7be3a95b9052" category="section-title">MetroCluster 限制</block>
+  <block id="046a31db0a00ef596ac52b7dc914bc98" category="list-text">当前不支持对 MetroCluster 工作负载进行干净还原。</block>
+  <block id="7a00acc88e7547d072c23fdaf37adeb6" category="paragraph">Ransomware Resilience 会自动加载 MetroCluster 配置以进行发现。要成功执行发现，您必须已将 MetroCluster 配对中的两个系统都添加到控制平台（Console）。</block>
+  <block id="9ad2daada059b3fa43b0de8c9116a89d" category="paragraph">如果该 MetroCluster 对中的两个系统都已成功添加到控制台组织中，则两个系统都将在发现选择中可见。您只需要选择一个系统进行发现；镜像对将自动添加。</block>
+  <block id="a319571571d753c367d68f3d03c398c9" category="admonition">MetroCluster 系统在 Discovery 控制面板中标记为 **+1**。将鼠标悬停在 **+1** 上以查看该对中的所有系统。</block>
+  <block id="b094ab0b58425164c5fac4c6a0f6df11" category="paragraph">不会自动执行。Ransomware Resilience 不会修改 ONTAP 的任何现有检测策略（ARP、FPolicy 设置），除非您在 Ransomware Resilience 中手动更改这些设置。</block>
+  <block id="7e8586636f8dc7209e3007694c7d5eab" category="list-text">对于 MetroCluster 工作负载，您只能在配对中的活动系统上执行就绪性演练。</block>
+  <block id="8ad7f908a877f4cbdfbf52b968ccb6ee" category="inline-link-macro">以修改允许的文件扩展名列表</block>
+  <block id="864b8c2f26b57f3d1792a7650337cb6a" category="admonition">如果警报是由可疑文件扩展名触发的，您可以阻止存储 VM 再次允许该文件类型。在警报中，选择*从允许列表中删除扩展名* <block ref="c0fb3c77fec538a6275a3b747d9cc0a7" category="inline-link-macro-rx"></block>。</block>
+  <block id="9d710e8874b82a90107c10683350b48a" category="paragraph">勒索软件防护策略包括_检测_、_保护_和_复制_策略。</block>
+  <block id="a1c735fa1a87c7cfca09d994cfe02048" category="inline-link-macro">可疑用户活动（需要额外配置）</block>
+  <block id="ff6085a183ab93b3167275ad53b1a0ae" category="list-text">**检测策略**识别勒索软件威胁。您的检测策略可以包括所有三种类型的检测或其组合。它必须包括加密检测或 <block ref="0c1271458a5eed3dcf0b345a743161db" category="inline-link-macro-rx"></block>。</block>
+  <block id="726456f4aa978f5aab7b42f5693842c8" category="inline-link-macro">选择已阻止文件扩展名的自定义列表</block>
+  <block id="a0484b540f781dc07d702b994be49261" category="paragraph">当您启用阻止可疑文件扩展名的检测时，将鼠标悬停在工具提示上，然后选择 **管理** 以<block ref="20e6104240e80c2d300c39897c1e47b4" category="inline-link-macro-rx"></block>。</block>
+  <block id="0e468f869572effeac4af4bbea21ed06" category="list-text">使用勒索软件检测策略，并继续使用其他 NetApp 工具创建的快照和备份策略，或</block>
+  <block id="47751183709636889e320f1a849dd584" category="list-text">使用 Ransomware Resilience 来管理检测、快照和备份。</block>
+  <block id="0270ec13158ac8d81c5022ad41a38235" category="admonition">如果要为 Amazon FSx for NetApp ONTAP 和 Azure NetApp Files 配置保护策略，请参阅 <block ref="f35eaad9edb95ec2be22c4403bf0d360" category="inline-link-macro-rx"></block>。</block>
+  <block id="c35d66439764aa49afc7babd31dd817e" category="admonition">为了增强对数据资产的管理和保护，您可以创建<block ref="f976640ede437bd07da0e62885caa3e9" category="inline-link-macro-rx"></block>来在一个策略下共同保护卷。</block>
+  <block id="4c4b20b259d81cdd23662b65770f2987" category="paragraph">除了 Ransomware Resilience 之外，您还可以使用 NetApp Backup and Recovery 来管理文件共享和 VM 文件共享的保护。</block>
+  <block id="5ba2007b374d9edaa510176dec2e85e5" category="paragraph">来自 Backup and Recovery 服务的保护信息显示在 Ransomware Resilience 中。您可以使用 Ransomware Resilience 向这些服务添加检测策略。使用 Ransomware Resilience 添加保护策略将取代现有的保护策略。</block>
+  <block id="da4aa80a5402fe8991327699e5421e28" category="section-title">预定义的检测策略</block>
+  <block id="f642b6f4e49c47514e5e24cda6578784" category="admonition">**Encryption user extension** 策略是唯一支持可疑用户行为检测的预定义策略。+ **关键复制策略**是唯一支持将快照复制到 ONTAP 的预定义策略。</block>
+  <block id="a99b6d6970ec523cbdaf4eef268b8c6f" category="cell">每 30 分钟</block>
+  <block id="f4e76e01f80db61a6180d7fa5d9656c3" category="cell">每 30 分钟</block>
+  <block id="61c12e4225ffb3d9ba371ccd0d6f4b98" category="paragraph">如果已在其他服务中激活，则检测策略会启用 Autonomous Ransomware Protection 和 FPolicy 保护。</block>
+  <block id="7fcf0fb196f152953c892650d95af7fc" category="paragraph">详细了解：</block>
+  <block id="1b5ca5e6db0400e20efef2d18e2ed058" category="list-text"><block ref="1b5ca5e6db0400e20efef2d18e2ed058" category="inline-link-macro-rx"></block></block>
+  <block id="746471c5fd2aae723f0f1e69c0304862" category="list-text"><block ref="746471c5fd2aae723f0f1e69c0304862" category="inline-link-macro-rx"></block></block>
+  <block id="e579faf0a14efb59aa4bfe357406413f" category="list-text"><block ref="e579faf0a14efb59aa4bfe357406413f" category="inline-link-macro-rx"></block></block>
+  <block id="3ac077541548a9dae2af7af31c54f692" category="inline-link-macro">自定义列表</block>
+  <block id="c903892c173d6572907a19a65b5448fb" category="paragraph">您可以使用阻止的文件扩展名的默认列表或创建<block ref="e61973ac756e6febed4d545e48c5030b" category="inline-link-macro-rx"></block>。</block>
+  <block id="b39d65802baef2411b7654e00e38d5ef" category="admonition">您可以选择检测策略的任意组合。检测策略必须包括加密检测或可疑用户行为检测。。设置 *Snapshot 策略*。要从 <block ref="acb8cd429652c09fe35d5de4c302f2ae" category="inline-link-macro-rx"></block> 导入快照设置，请选择 *选择* 单选按钮，然后从下拉列表中选择策略。如果导入策略，则不需要其他快照配置。</block>
+  <block id="167c0a6fdb3d8c00d6e9c55229021081" category="paragraph">+ 要配置自己的设置，请选择 *创建*，然后输入 *快照基准名称*。基准名称是附加到每个快照的前缀。如果您要配置自己的快照设置，则可以启用 *快照锁定*。如果启用快照锁定，请设置 *锁定保留天数* 的值（即快照锁定的时间）。</block>
+  <block id="67867edc407747e5ef70cbdc9e2cddea" category="paragraph">+ 快照锁定通过锁定主存储上的快照副本来创建不可变存储，因此即使勒索软件攻击设法到达备份存储目标，这些副本在一段时间内也无法被修改或删除。这可实现更快的恢复时间。当快照被锁定时，卷过期时间将设置为快照副本的过期时间。</block>
+  <block id="bb8643867e38c4c64f812f56479486f8" category="paragraph">+ 快照副本锁定在 ONTAP 9.12.1 及更高版本中可用。要了解有关 SnapLock 的更多信息，请参阅 <block ref="4ca7d4cccee9eba6047bb73bae1d4bb0" category="inline-link-macro-rx"></block>。</block>
+  <block id="d78633b6bbf7cd6c12cd257c1c07715b" category="paragraph">+ 如果要配置自己的快照设置，请设置快照计划选项。选择是以分钟、小时、天、周还是月为频率拍摄快照。对于除每天以外的所有选项，请选择在一天、一周或一月中的什么时间拍摄快照。此外，在 *保留* 字段中选择要保留的每种快照类型的副本数。</block>
+  <block id="796cf6309b7ee3c1a2ea7ffbff8559c8" category="paragraph">+ <block ref="b0a1cedd2277ba2ec3327d537c1e0a4b" category="inline-image-macro-rx" type="image"></block> 。对于本地工作负载，您可以选择设置*复制策略*以将工作负载复制到 ONTAP 存储。</block>
+  <block id="694522047e854a1886a73b8035b88553" category="paragraph">+ 要导入系统定义的策略，请选择 *选择* 单选按钮，然后从下拉菜单中选择 <block ref="acb8cd429652c09fe35d5de4c302f2ae" category="inline-link-macro-rx"></block>。</block>
+  <block id="ebe1f823666cc3c987431ab08cad3e77" category="paragraph">+ 要创建自己的复制设置，请选择 *创建*，然后输入 *复制策略基名称*，这是附加到所有快照的前缀。设置 *复制计划*。切换要启用的频率（每小时、每天、每周或每月），并为启用的每个计划设置保留值（要保留的复制快照数）。（可选）设置 *备份策略*。要导入现有策略，请选择 *选择* 单选按钮，然后从下拉菜单中选择 <block ref="acb8cd429652c09fe35d5de4c302f2ae" category="inline-link-macro-rx"></block>。</block>
+  <block id="55f160b39232d3cdf22e1fe945f77013" category="paragraph">+ 要创建自己的策略，请选择 *创建* 并输入 *备份策略基准名称*。通过切换不同的频率（每小时、每天、每周和每月）来设置 *备份计划*，然后为每个频率设置保留计数。</block>
+  <block id="53c01f52ff2c119e9be8d2bbff43fe18" category="paragraph">+ 提示：要启用辅助存储上的备份锁定，请使用 *设置* 选项配置备份目标。有关详细信息，请参见 <block ref="33c35db19b883807eccfb2734290ae91" category="inline-link-macro-rx"></block>。。选择 *添加*。</block>
+  <block id="5c79457361e7f981067af694b31e1ca1" category="paragraph">如果您已在 ONTAP 中配置了阻止的文件扩展名列表，则可以通过选择 *用 Ransomware Resilience 列表替换 ONTAP 列表* 来覆盖这些列表。然后选择是否希望 SVM *允许除阻止列表之外的所有文件扩展名* 或 *阻止除允许列表之外的所有文件扩展名*。然后，从下拉菜单中选择列表。工作负载上的所有存储虚拟机（SVM）都将使用该列表；您可以稍后将不同的列表应用于工作负载上的不同 SVM。</block>
+  <block id="8f961a3aa7d167d34c5cfff5448e35cc" category="list-text">选择保护策略。如果不存在保护策略，请选择 **添加** 以创建新策略。有关创建策略的信息，请参见 <block ref="176be3a772dd966966fe67b132b5ec7b" category="inline-xref-macro-rx"></block>。</block>
+  <block id="0f943d25204e62b21c4a737532199227" category="inline-link-macro">管理被阻止或允许的文件扩展名</block>
+  <block id="bc12914f7c07229471c4bbd2820348c0" category="list-text"><block ref="bc12914f7c07229471c4bbd2820348c0" category="inline-link-macro-rx"></block></block>
+  <block id="56429daef20ebac0c2b98002f6d61934" category="list-text"><block ref="56429daef20ebac0c2b98002f6d61934" category="inline-link-macro-rx"></block></block>
+  <block id="43967ca7f7379783a36a21c9372ff96d" category="list-text">在为 MetroCluster 配置设置自动响应时，只需在 MetroCluster 对中选择一个工作负载。自动响应会自动应用于整个 MetroCluster 配置。</block>
+  <block id="ab8da75ef54f835244e0cc741b41365a" category="summary">在 NetApp Ransomware Resilience 中配置支持或阻止的文件扩展名列表，以自定义您的保护配置文件。</block>
+  <block id="4a65f367204ffd6fd4ab926ea37d53e6" category="doc">在 NetApp Ransomware Resilience 中管理被阻止或允许的文件扩展名</block>
+  <block id="0c664bcb6179de48322aa9935b70cc86" category="paragraph">NetApp Ransomware Resilience 支持配置阻止可疑文件扩展名的保护策略。Ransomware Resilience 提供了已知可疑文件扩展名的默认列表，以阻止勒索软件攻击。您可以自定义文件扩展名列表，根据需要添加或删除条目。</block>
+  <block id="2799a437c4f4049d0b8275dee5d6566f" category="paragraph">当您使用可疑文件扩展名阻止配置保护时，它设置在工作负载级别。但是，您可以在存储虚拟机（SVM）级别自定义哪些文件扩展名，这意味着同一工作负载中的不同 SVM 可以使用不同的列表。</block>
+  <block id="94b03a907598af455bb0ecbf1a55643c" category="section-title">文件扩展名拦截的工作原理</block>
+  <block id="e7d014a4c27dbcb74d2ae4f414c5c59d" category="paragraph">配置文件扩展名列表有两种方法：</block>
+  <block id="bb2ef45a4d6652611b702059d867b0ed" category="list-text">*阻止文件扩展名* - 列表中包含的所有文件扩展名都将被阻止并标记为勒索软件威胁。</block>
+  <block id="db806b600e53b706978ac2b0d72f803c" category="list-text">*允许文件扩展名* - 仅允许使用此列表中扩展名的文件。任何扩展名不在列表中的文件都将被阻止，并被视为勒索软件威胁。</block>
+  <block id="fd1a22c57931d6eb055b9a14e08085f6" category="section-title">来自 ONTAP 的文件扩展名阻止</block>
+  <block id="4996212a318d706569e3c987f2959c1e" category="paragraph">如果您在 ONTAP 中设置了要阻止的特定文件扩展名，Ransomware Resilience 会识别这些设置。如果您在 Ransomware Resilience 中配置 <block ref="7fe4ee5a6fb50faf1d1032b2174bc3d8" category="inline-link-macro-rx"></block> 以阻止可疑文件扩展名，Ransomware Resilience 将转换为使用默认的、更精心策划的文件扩展名列表，除非您配置了不同的默认值。</block>
+  <block id="5eb7d90dee7d59509c11a98fc25eafc7" category="section-title">默认文件扩展名</block>
+  <block id="629611abd14f29d5927f077a0cab10a7" category="paragraph">Ransomware Resilience 提供了一个被阻止的文件扩展名的默认列表，称为“NetApp”。默认情况下，所有启用了 _阻止_ 可疑文件扩展名的工作负载都使用此列表，其中包含 3,900 多个已知的恶意文件扩展名。您可以修改此列表或复制它以用作自定义列表的基础。</block>
+  <block id="17a19323b32464dcac5cf1db4948f8de" category="paragraph">您可以将不同的列表设置为默认值。将列表设置为默认值后，除非您手动选择其他列表，否则随后启用文件阻止的所有工作负载都将使用该列表。</block>
+  <block id="7e8010136fa515dd066c9b0cb70278a6" category="section-title">创建文件扩展名列表</block>
+  <block id="7573f5768a565ed9afd948f97fc7a3a0" category="list-text">在文件扩展名标题下，选择**管理**。</block>
+  <block id="70360a69b59acee42a6a9ff305127bce" category="list-text">为列表输入*名称*。</block>
+  <block id="b0dfbe61374a62d5f3d055c3565c097a" category="list-text">选择列表的运作方式：</block>
+  <block id="263ef959735e66d8ec5e18d94f228673" category="list-text">选择*阻止扩展名*可自动将列表中的任何文件扩展名标记为勒索软件威胁。</block>
+  <block id="5ae3e87d8c97bddf4ad846a71ce8ecf0" category="list-text">选择*允许扩展名*以仅允许来自列表中文件扩展名的请求。</block>
+  <block id="fbf576bdb9ef857e6b04e3d42a9831d1" category="list-text">选择创建列表的方式：</block>
+  <block id="a938b7a7cf0540d4f93c3a1b26a872ac" category="list-text">选择*复制列表*选项卡以从现有列表中构建。</block>
+  <block id="303672b4703844b946a73d360bf29e1f" category="paragraph">查看文件扩展名列表。选择文件扩展名类型旁边的 "X" 以删除扩展名。选择 *+ 添加到列表* 以添加其他扩展名；此选项会将您带到 *手动输入* 选项卡。</block>
+  <block id="7b1d5b2fcb741d6a8a6c84da928854a8" category="list-text">选择 *上传* 选项卡，以从 CSV 文件中添加文件扩展名列表。</block>
+  <block id="7765dbbb015ea64aebe448e16be9ff88" category="paragraph">选择*上传*，然后选择包含要阻止或允许的文件扩展名列表的 CSV 文件。</block>
+  <block id="82759c88e82b056c26665205466b28ce" category="list-text">选择*手动输入*以在列表中键入。将列表作为一组以逗号分隔的值输入，例如 "vvv, xyz, zzz"。</block>
+  <block id="22cabf87797850825ab95a31d290b25c" category="list-text">查看文件扩展名列表，然后选择*添加*以创建新列表。</block>
+  <block id="8af750587aefed18451823d6acd997cf" category="inline-image-macro">被阻止的文件扩展名的屏幕截图。</block>
+  <block id="955f680b4a481a7e4a65bb37bd6832db" category="paragraph"><block ref="955f680b4a481a7e4a65bb37bd6832db" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2baa53ac51d9ae25d4a0bc17475268a5" category="section-title">将文件扩展名列表应用于 SVM</block>
+  <block id="a951322414e62a3bd1fad9bf4db515f9" category="paragraph">当您使用阻止可疑文件扩展名策略分配勒索软件保护策略时，您可以为整个工作负载指定特定的文件扩展名列表。应用保护策略后，您可以对不同的 SVM 应用不同的列表。</block>
+  <block id="6d992eefa47db0ab0f860dd18b04902c" category="inline-link-macro">配置勒索软件防护策略</block>
+  <block id="e52cc9f572c9c2f2fd02284925ceff5e" category="paragraph">在执行此任务之前，工作负载必须包含阻止可疑文件扩展名的检测策略。了解如何<block ref="0b739c8831a5afcaed3f6a6b877079c9" category="inline-link-macro-rx"></block>。您只能为每个 SVM 分配一个文件扩展名列表。</block>
+  <block id="43fb91a088ff411781a83737cf7e1a16" category="list-text">选择 *Storage VM* 选项卡。</block>
+  <block id="fe2e034319847cfd6789329192101680" category="list-text">查看启用了阻止可疑文件扩展名保护的 SVM 列表。您可以查看哪个 SVM 使用哪个列表。要更改列表，请选择*更改列表*。</block>
+  <block id="69ba23031fb23bdbcd001de43a287072" category="list-text">在对话框中，从下拉菜单中选择新列表，然后选择*保存*。</block>
+  <block id="2df05df26eaab6725098e57e6e1731f3" category="section-title">管理文件扩展名列表</block>
+  <block id="b2bf97e43ad5c99c7df0ffb5d4cba62d" category="paragraph">您可以随时修改文件扩展名列表的内容。您可以删除列表或将列表更改为启用可疑文件拦截时的默认值。</block>
+  <block id="398f480c65827e5bbd592e17ce80bcea" category="list-title">修改文件扩展名列表</block>
+  <block id="ee49eeb3cf4c8b54fa2c588ab509059c" category="list-text">确定要修改的文件扩展名列表。</block>
+  <block id="47e3b5f38a18021c8d70621a03a7cac7" category="list-text">要将文件扩展名添加到列表，请选择操作菜单，然后选择*添加文件扩展名*。</block>
+  <block id="a3fc99b76b7db95971c48c96c2150bc1" category="list-text">选择要用于修改列表的方法的选项卡。选择*复制列表*以导入现有列表；选择*上传*以从 CSV 文件导入文件扩展名；选择*手动输入*以手动提交文件扩展名。</block>
+  <block id="10e66cad189bdb3419a7b7e12abfd98a" category="list-text">选择 *Add* 以保存更改。</block>
+  <block id="80081aa15793eca0ace9ef18b51fb6bb" category="list-text">要删除文件扩展名，请从“文件扩展名”菜单中选择要修改的列表的名称。</block>
+  <block id="4d53ec0dc91e9a742b7426a0fffeaada" category="list-text">在文件扩展名列表中，选中要删除的每个文件扩展名旁边的复选框。在列表顶部，选择**删除**。</block>
+  <block id="7d1e4011eeab217bd38ea1453f58631c" category="paragraph">或者，选择要删除的单个文件扩展名所在行末尾的操作菜单，然后选择*删除*。</block>
+  <block id="c075c78a1f96015a57a909ea12d48a0e" category="list-text">选择*保存*以修改此列表。</block>
+  <block id="109e9f3b58f252f25bb385383ea013f9" category="list-title">将文件扩展名列表设置为默认值</block>
+  <block id="a4ef8dc97d5273de3477602510217663" category="list-text">选择要设为默认值的列表的操作菜单，然后选择*标记为默认列表*。</block>
+  <block id="3e10b870e9cd64a845f38223f73d75cf" category="list-text">然后将该列表标记为默认值。受阻止的文件扩展名列表保护且尚未标记特定列表的工作负载，将根据新的默认值阻止或允许文件扩展名。</block>
+  <block id="dd4befc74292fbe20fe2db73037ca880" category="paragraph-title">删除文件扩展名列表</block>
+  <block id="db5eae2b9c9dbfbd47823e0986e11353" category="inline-xref">更改与 SVM 关联的列表</block>
+  <block id="45fbdc6507efb6d3257035fdf838a02e" category="paragraph">您不能删除应用于 SVM 的列表。您必须首先<block ref="90336a7b5ebc96973344e57563a353c4" category="inline-xref-macro-rx"></block>。</block>
+  <block id="1c4059bb733b0c09e63fea5c68654a4e" category="paragraph">无法删除此 NetApp 列表。</block>
+  <block id="c70d3f3a3fcd26cbae1f885a784375b0" category="list-text">选择要删除的列表的操作菜单，然后选择*删除列表*。</block>
+  <block id="eb071099d30ab98da5cdb525a72d67e1" category="list-text">在对话框中确认删除。</block>
+  <block id="436ec310622ce3582750b040e6a74f96" category="inline-link-macro">配置勒索软件防护策略</block>
+  <block id="a1945f021a4993fd73edf8c762ba17c3" category="list-text"><block ref="a1945f021a4993fd73edf8c762ba17c3" category="inline-link-macro-rx"></block></block>
+  <block id="550a44b22538c8edb024c86fd25ab732" category="list-text">如果您的策略包含阻止可疑文件扩展名，请选择铅笔图标以进行包含文件扩展名阻止的可选配置。</block>
+  <block id="6c64ef0df1d0bca73e6aaa5b892e3b57" category="list-text">如果策略包含用户行为检测，请选择要使用的数据收集器，然后选择**下一步**。</block>
+  <block id="444d7501b3cc1feab5560e903adad61c" category="section-title">2026年11月16日</block>
+  <block id="e370f8f4d5db9e4f93257ac02adddec3" category="section-title">2026年11月9日</block>
+  <block id="156671b1191174246bb45697a8cff8a4" category="sidebar">管理被阻止的文件扩展名</block>
 </blocks>

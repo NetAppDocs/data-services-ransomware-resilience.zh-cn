@@ -18,6 +18,36 @@ summary: 了解NetApp Ransomware Resilience的新功能。
 
 
 
+[[16-november-2026]]
+== 2026年11月16日
+
+
+
+[[metrocluster-support]]
+=== MetroCluster 支持
+
+Ransomware Resilience 现在支持 MetroCluster，可为镜像的 MetroCluster 配置提供勒索软件保护、检测和恢复功能。在 MetroCluster 配置上启用勒索软件保护时，必须将 MetroCluster 配对中的两个系统都添加到控制台。当您在配对的一侧发现并启用保护时，另一侧会自动启用。
+
+在 MetroCluster 工作负载遭受勒索软件攻击后进行恢复时，当前只能使用自定义还原。
+
+有关详细信息，请参见link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-discover.html#metrocluster-discovery["MetroCluster 发现"]。
+
+
+
+[[09-november-2026]]
+== 2026年11月9日
+
+
+
+[[managed-blocked-file-extensions]]
+=== 受管被阻止的文件扩展名
+
+启用 *阻止可疑文件扩展名* 保护选项后，Ransomware Resilience 现在可以自定义工作负载上允许或阻止的文件扩展名列表。通过此增强功能，您可以将工作负载配置为仅允许存储虚拟机（SVM）上的特定文件类型或阻止特定文件扩展名。如果您使用 FPolicy 迁移现有工作负载以通过 Ransomware Resilience 阻止可疑文件扩展名，则默认情况下会使用更精心策划的扩展名列表，但您可以自定义该列表。此增强功能支持对文件扩展名选项进行更精细的控制，还允许您为不同的 SVM 创建不同的列表。
+
+有关详细信息，请参见link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-file-extensions.html["在 Ransomware Resilience 中管理被阻止的文件扩展名"]。
+
+
+
 [[26-october-2026]]
 == 2026年10月26日
 

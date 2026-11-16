@@ -25,6 +25,18 @@ Ransomware Resilience 会检查您当前的备份保护、快照副本和 NetApp
 
 
 
+[[metrocluster-discovery]]
+== MetroCluster 发现
+
+Ransomware Resilience 会自动加载 MetroCluster 配置以进行发现。要成功执行发现，您必须已将 MetroCluster 配对中的两个系统都添加到控制平台（Console）。
+
+如果该 MetroCluster 对中的两个系统都已成功添加到控制台组织中，则两个系统都将在发现选择中可见。您只需要选择一个系统进行发现；镜像对将自动添加。
+
+
+TIP: MetroCluster 系统在 Discovery 控制面板中标记为 **+1**。将鼠标悬停在 **+1** 上以查看该对中的所有系统。
+
+
+
 [[select-workloads-to-discover]]
 == 选择要发现的工作负载
 

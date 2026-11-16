@@ -64,6 +64,8 @@ sidebar:
           url: "/troubleshoot-user-activity.html"
       - title: 管理保护组
         url: "/task-protection-group.html"
+      - title: 管理被阻止的文件扩展名
+        url: "/task-file-extensions.html"
       - title: 扫描个人身份信息
         url: "/task-classify.html"
     - title: 响应和恢复
