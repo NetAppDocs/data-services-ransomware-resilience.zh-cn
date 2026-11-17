@@ -42,7 +42,7 @@ Ransomware Resilience 现在支持 MetroCluster，可为镜像的 MetroCluster �
 [[managed-blocked-file-extensions]]
 === 受管被阻止的文件扩展名
 
-启用 *阻止可疑文件扩展名* 保护选项后，Ransomware Resilience 现在可以自定义工作负载上允许或阻止的文件扩展名列表。通过此增强功能，您可以将工作负载配置为仅允许存储虚拟机（SVM）上的特定文件类型或阻止特定文件扩展名。如果您使用 FPolicy 迁移现有工作负载以通过 Ransomware Resilience 阻止可疑文件扩展名，则默认情况下会使用更精心策划的扩展名列表，但您可以自定义该列表。此增强功能支持对文件扩展名选项进行更精细的控制，还允许您为不同的 SVM 创建不同的列表。
+启用 *阻止可疑文件扩展名* 保护选项后，Ransomware Resilience 现在可以自定义工作负载上允许或阻止的文件扩展名列表。通过此增强功能，您可以将工作负载配置为仅允许存储虚拟机（SVM）上的特定文件类型或阻止特定文件扩展名。此增强功能支持对文件扩展名选项进行更精细的控制，还允许您为不同的 SVM 创建不同的列表。
 
 有关详细信息，请参见link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-file-extensions.html["在 Ransomware Resilience 中管理被阻止的文件扩展名"]。
 
