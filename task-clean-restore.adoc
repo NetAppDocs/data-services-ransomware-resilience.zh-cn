@@ -54,7 +54,6 @@ NetApp Ransomware Resilience 提供干净的恢复，在勒索软件攻击后提
 
 * 每个 Ransomware Resilience 帐户只能创建一个 IRE。每个 IRE 可以有三个干净的房间。
 * 当前仅支持 NAS 文件共享（NFS/CIFS）的清除恢复。
-* 使用干净还原，您只能还原到源环境。
 * 您可以在云中或本地创建 IRE。目前，支持以下配置：
 +
 |===
