@@ -987,10 +987,8 @@
   <block id="fdcd362ac5f5f9817e70642dd2a48bfd" category="cell">Oracle Linux</block>
   <block id="d33305ae6335b0a9106e226ed71ca60f" category="cell">8.10（64 位）、9.1（64 位）至 9.6（64 位）和 10（64 位），包括 SELinux</block>
   <block id="d405e3063aac76a254e44386c961b24c" category="cell">洛基</block>
-  <block id="92ceb02e8fd413288d949e40d8ca4832" category="cell">SUSE 企业 Linux</block>
   <block id="ce370a856bc8592a8206af596cace9ea" category="cell">15 SP4（64 位）至 15 SP6（64 位），包括 SELinux</block>
   <block id="3d945423f8e9496c429a5d8c65b4604f" category="cell">Ubuntu</block>
-  <block id="6072b01d67af0366830f2fef13cdf0da" category="cell">20.04 LTS（64 位）、22.04 LTS（64 位）和 24.04 LTS（64 位）</block>
   <block id="fd9b966c1c6f66e7c4f38e133767c880" category="paragraph">服务器必须满足以下最低要求：</block>
   <block id="604a864dab990debb57e02cc6550cb0b" category="list-text">提供用户活动代理详细信息：</block>
   <block id="b023c42f6578a2febd3d77169ecb00ef" category="list-text">*VM DNS 名称或 IP 地址*</block>
@@ -1286,8 +1284,6 @@
   <block id="897c29783a147c6c7b7844f2d4a9e81a" category="paragraph">预览版服务可保护BlueXP组织内各个组织中 Oracle、VM 数据存储和本地 NAS 存储上的文件共享以及 AWS 上的Cloud Volumes ONTAP （使用 NFS 协议）上的应用程序工作负载，并将数据备份到 Amazon Web Services 云存储。</block>
   <block id="f075180c986e3a7a8e0bad4fcec7c485" category="cell">15.3（64 位）至 15.6（64 位）</block>
   <block id="32d094cff0ab508ab383051555e7844b" category="cell">8.10（64 位）、9.1（64 位）至 9.6（64 位），包括 SELinux</block>
-  <block id="1d9fc183665bd1e195391190be506894" category="cell">Red Hat</block>
-  <block id="40a4866844a145aa0d01d094ea38e0d3" category="cell">Rocky 9.4 (64 位) 至 9.6 (64 位)，包括 SELinux</block>
   <block id="ec0c7e841d2f0e7a16a6b4b47a57ecd8" category="list-text">CPU：4 核</block>
   <block id="177d9a4926538bc7d9bcbb8ad6ca3f0f" category="list-text">**内存**：16GB 内存</block>
   <block id="191a3f30ab05799955dc06c5f394b591" category="list-text">配置连接。请在每个字段中填写所需信息。</block>
@@ -1339,7 +1335,6 @@
   <block id="b9300e15e3fa20c1dc3ecfabbbb96a7b" category="section-title">操作系统要求</block>
   <block id="afea8c44acd019a3a489f7a3ddeb5c8e" category="admonition">用于用户活动代理的计算机不应运行其他应用程序级软件。建议使用专用服务器。</block>
   <block id="a54c13ad42512dbfec4e8a44d793a52e" category="section-title">服务器要求</block>
-  <block id="34af15b56c0def7a2806fd4b03537e12" category="list-text">**磁盘空间**：36 GB 可用磁盘空间</block>
   <block id="52554f7429cd5c72cd3c3e9561412160" category="admonition">建议您使用网络时间协议 (NTP) 或简单网络时间协议 (SNTP) 同步ONTAP系统和用户活动代理计算机上的时间。</block>
   <block id="77469c598ab2b5984e8dafd3d15a2315" category="section-title">云网络访问规则</block>
   <block id="c793f078b8fd1dcce9dfd5ae57f2a51c" category="paragraph">查看您所在地区（亚太地区、欧洲或美国）的云网络访问规则。</block>
@@ -1351,15 +1346,11 @@
   <block id="f2ca52b87225d79d40f899aebabeec45" category="cell">用户活动代理</block>
   <block id="b7169d36c5259a3a051359ca51dbd682" category="cell">获得勒索软件恢复能力</block>
   <block id="0cd58d8585970b5311e84ca2c34ba5ef" category="section-title">网络内规则</block>
-  <block id="84caee864977bc98db0b0df24853f63c" category="cell">LDAP Server URL</block>
   <block id="b272c206ad7d80ebc1e17385c8d4450c" category="cell">连接到 LDAP</block>
   <block id="3e1d4f7104327b6aa02e8d988c873b86" category="cell">集群或SVM管理IP地址（取决于SVM收集器配置）</block>
   <block id="9bf305870fa281c6eff0d16d2e8d6b6d" category="cell">API 与ONTAP进行通信</block>
-  <block id="c1d0965e767c67506aa60bc80d5b716e" category="cell">35000 - 55000</block>
   <block id="4f1eb19420b75b94e053a805cd0feb1d" category="paragraph">SVM 数据 LIF IP 地址</block>
   <block id="3756ac460c094adc890ad7f26460010b" category="cell">35000-55000</block>
-  <block id="0e948943e8277507eeeec08bbb91d3b4" category="cell">集群管理 IP</block>
-  <block id="f41a23af01b3d7e16d16141a3f6003df" category="cell">ONTAP集群管理 IP 与用户活动代理之间关于 *EMS 事件* 的通信。为了让ONTAP能够向用户活动代理发送 EMS 事件，必须向用户活动代理开放这些端口，包括用户活动代理本身上的任何防火墙。+ **注意：**您不需要预留*所有*这些端口，但您为此预留的端口必须在此范围内。建议您先预留 100 个端口，如有必要再增加。</block>
   <block id="765553e6c7ac8592c389acb9878a050a" category="cell">SSH</block>
   <block id="b6d767d2f8ed5d21a44b0e5886680cb9" category="cell">22</block>
   <block id="1eb5ae63609e68a11106494d272615bf" category="cell">集群管理</block>
@@ -1451,7 +1442,6 @@
   <block id="58fad0abcf1e493b911b1fec13e0ad03" category="inline-link-macro">DII 端点</block>
   <block id="75a6a9319b6e0275c06122285e74cd15" category="inline-link-macro">创建所需的代理和收集器，并启用适当的勒索软件保护策略</block>
   <block id="cce78dc6ebbec7385a01f2146d6d01c8" category="section-title">后续步骤</block>
-  <block id="92df6f183b2e1cfcc696af23c1edd4cb" category="summary">在创建用户活动代理和其他收集器之前，必须确保满足概述的操作系统、服务器和网络要求。</block>
   <block id="3156b4b992dec700b60fedaa2eca010c" category="paragraph">以下操作系统支持可疑用户行为检测：</block>
   <block id="92adf790b863484fc83be969039ec890" category="section-title">服务器建议</block>
   <block id="b81a18d778d8d2491614ae90532db84f" category="admonition">在初始安装期间，将<block ref="50cff7c5933e29331b88e32e4f2a101d" prefix=" " category="inline-code"></block>替换为通配符<block ref="3389dae361af79b04c9c8e7057f60cc6" prefix="(" category="inline-code"></block>）权限。激活代理并完全运行后，您可以将权限替换为站点名称。有关站点名称，请联系您的 NetApp 代表。</block>
@@ -1535,7 +1525,6 @@
   <block id="c83e802b0c338d35c6b87847e7c32f3b" category="inline-image-macro">用户活动设置的屏幕截图。</block>
   <block id="d30589c83707b077a1cb3dec5d118521" category="paragraph"><block ref="d30589c83707b077a1cb3dec5d118521" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d64f95921199e6f185b7d45fa5313dc7" category="paragraph">Ransomware Resilience 报告现在可以在**摘要**报告中捕获有关受支持和不受支持卷的信息。使用此信息可诊断系统中的卷可能不符合勒索软件保护条件的原因。</block>
-  <block id="56ea37444fe804f14e803d34221ed604" category="paragraph">NetApp Ransomware Resilience 用户行为检测使您能够对用户级别的勒索软件事件做出响应。您必须创建一组代理才能启用用户行为检测。在启用检测之前，您必须确保满足概述的操作系统、服务器和网络要求，以便 Ransomware Resilience 能够正确检测和报告事件。</block>
   <block id="dc63ea1172fd494feb979a5719e55127" category="doc">在 NetApp Ransomware Resilience 中监控工作负载运行状况</block>
   <block id="43cf481327dfdef7257dfcd2239c1c16" category="list-text">*加密检测*</block>
   <block id="b2a1cab5712cdb105f101f829159956b" category="list-text">*可疑用户行为检测*</block>
@@ -2049,25 +2038,18 @@
   <block id="3bfca6a430fa87d8630a8459fe8a4aa1" category="section-title">2026 年 5 月 18 日</block>
   <block id="2e16025a0775d82fdc475daeb18a1fe1" category="list-text">帮助您监控结果。</block>
   <block id="b39c809eea98a8d210feb1830518c4e1" category="section-title">规模建议</block>
-  <block id="00a0542d454a2c3d33aa384b663f57ae" category="paragraph">收集用户事件时，请确保托管用户活动代理的计算机大小能够适应您的事件率。这意味着确保在托管用户活动代理的计算机上有足够的数据收集器和足够的 CPU 和 RAM 来容忍每秒的事件数。要增加数据收集器的数量，您可能需要增加 RAM 或 CPU 容量。Ransomware Resilience 每个用户活动代理最多支持 50 个数据收集器。</block>
   <block id="6be806c9e81235cc334525899e24ce6d" category="paragraph">下表提供了尺寸调整的一般指导：</block>
   <block id="b8ba9599bd38d83618d773a0942a64b8" category="cell">用户活动代理机器配置</block>
   <block id="3999d93ad3d5c74655af6243f558b8c2" category="cell">数据收集器数量</block>
   <block id="18d4395da7ff8f089039a4b405433d06" category="cell">最大事件率</block>
-  <block id="b5de202e9046a5a5b8fefd0d5db9cad4" category="cell">4 核、16GB</block>
   <block id="23c89b5a97c4b2cdaa4c2463c212461a" category="cell">10 个数据收集器</block>
   <block id="269caf37ed3e8cf3c1e0fedca333dc67" category="cell">20,000 个事件/秒</block>
-  <block id="4abe7d5f36e50b61122614a74ed19547" category="cell">4 核、32GB</block>
   <block id="4e562f558044748b7be8a4092faa6075" category="cell">20 个数据收集器</block>
   <block id="9f4dd2227b035f32e343309b777f9a0f" category="paragraph">您还可以计算您的具体要求。在计算合适的大小时，建议您使用 30% 的缓冲率进行限定。使用此公式来确定您的配置是否可以处理负载。</block>
-  <block id="ad126668a8b9ef5079623e9949eca426" category="example-title">Ransomware Resilience 提供了一个用于计算事件数据速率的脚本。了解如何在 Ransomware Resilience 中计算事件数据速率。</block>
-  <block id="05ad069676a9f89984541497cb4b503a" category="paragraph">Ransomware Resilience 提供了一个可以在系统上运行的脚本来计算事件数据速率。默认情况下，该脚本最多可运行五个存储虚拟机。如果您的环境包含 5 个以上的 SVM，则可以相应地修改脚本。无论 SVM 的数量有多少，该脚本大约需要五分钟才能获得平均事件率读数。在运行脚本之前，您必须：</block>
   <block id="a8addc595422085e1668bb3064c9e3c2" category="inline-link-macro">已配置用户活动代理</block>
   <block id="ee4ff3935e64f4bc766cf7c778ecf035" category="list-text"><block ref="ee4ff3935e64f4bc766cf7c778ecf035" category="inline-link-macro-rx"></block></block>
   <block id="b824ffb71459288c7a3f5b876e2c6648" category="list-text">集群 IP 地址</block>
   <block id="3b35700f5db77466b9829093b579bafc" category="list-text">集群管理员用户名和密码</block>
-  <block id="8357c5714e49295e422957fed4ec2caa" category="list-text">安装<block ref="2fa62e05d832f87969a8d99226be5a74" prefix=" " category="inline-code"></block>在 Linux 机器上（可以使用命令安装<block ref="bd20ec476e804fab40ab36d6175d1936" prefix=" " category="inline-code"></block>）</block>
-  <block id="361ccd8284c6f49a106851d9aeaab8b2" category="list-text">从托管用户活动代理的集群中，以管理员身份运行脚本：<block ref="3b9c122b681f59f04f03105e338591ce" prefix=" " category="inline-code"></block></block>
   <block id="2757451d7ac78a3fd169d2600d54a8ad" category="list-text">脚本运行大约需要五分钟。完成后，命令行将显示事件速率，例如"Svm svm_rate 正在生成 100 个事件/秒"。</block>
   <block id="73e368716ffe1eef8733ba4acf297472" category="paragraph">使用事件率来计算您的规模。</block>
   <block id="672477287a4b419cc52d69608af63375" category="admonition">Azure NetApp Files 或 Google Cloud NetApp Volumes 不支持用户活动检测。有关支持用户活动检测的详细信息，请参见 <block ref="69d552b440ad08cbfe2c75fd459bcf87" category="inline-link-macro-rx"></block>。</block>
@@ -2360,17 +2342,8 @@
   <block id="d17b23053b2c8905a1374dfbb3177a6c" category="list-text">选择*连接*以启动与 Ransomware Resilience 的连接。</block>
   <block id="256edba68011601436675d5223414692" category="admonition">您可以在创建 SIEM 配置后对其进行编辑。您可以编辑除名称以外的所有字段。</block>
   <block id="ac750267020c9b3c0e32de825d9b57fc" category="section-title">2026年7月20日</block>
-  <block id="65e105b8a7c994c340c0237dcf7e5970" category="section-title">用户活动代理云提供商支持</block>
-  <block id="9ebc4352a5afdb84f0bff93ebd15df5b" category="paragraph">要启用用户行为检测，必须创建用户活动代理。用户活动代理是数据收集器的可执行环境，它与 Ransomware Resilience 共享用户活动事件。</block>
-  <block id="b176415a669a2bcfa34dd5a6868e1756" category="paragraph">可以在以下区域的 AWS 和 Azure 中部署用户活动代理：</block>
-  <block id="6cf349ef77d3b894c407f147f9b0f9a7" category="admonition">用户活动代理的区域部署对控制台代理没有影响。控制台代理部署独立于这些区域。</block>
-  <block id="a17da1e1013a5f5e4cb001153fe98736" category="paragraph">安装需要<block ref="0a342b59ecdcede0571340b9ed11633f" prefix=" " category="inline-code"></block>命令。安装、运行脚本和卸载需要<block ref="beb493211c3135923a11284ef26bf909" prefix=" " category="inline-code"></block>命令。</block>
-  <block id="c9636848fc1b9b62740a33de6f0bad1f" category="list-text">分配额外的磁盘空间以允许创建文件系统。请确保文件系统中至少有 35 GB 的可用空间。+ 如果<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block>是来自 NAS 存储的已挂载文件夹，则本地用户必须能够访问此文件夹。如果本地用户没有必要的权限，则用户活动代理的创建可能会失败。</block>
-  <block id="1a283fc89a251e8e273bf67b6e692071" category="list-text">建议您在与勒索软件弹性环境分开的系统上安装用户活动代理。如果您确实在同一台计算机上安装了代理和勒索软件弹性，请预留 50 至 55 GB 的磁盘空间。对于 Linux，请为<block ref="4bf2f0d069734974e4d76e679433aa07" prefix=" " category="inline-code"></block>分配 25 至 30 GB 的空间，为<block ref="ea5f88360fb7c06d3270b165b4dad226" prefix=" " category="inline-code"></block>分配 25 GB 的空间。</block>
   <block id="ccde7d5f2c38977ff57bfa0294ad83d7" category="list-text">出现提示时，请提供集群 IP 地址、管理员用户名和管理员密码。</block>
-  <block id="2c04ca6afac47fae351d7176c354ba9b" category="admonition">用户活动代理使用 NetApp Data Infrastructure Insights 技术，因此使用<block ref="08f7b82cf54cd7bdcab171ad9bd445cc" prefix=" " category="inline-code"></block>端点。有关详细信息，请参见<block ref="12c485f306c08c5a6939aa54065b62ed" category="inline-link-macro-rx"></block>。</block>
   <block id="012f0abca78822d24d27455403c3d089" category="list-text">agentlogin.cs01-ap-1.cloudinsights.netapp.com/cn</block>
-  <block id="dcac1ae04e45c773239f95ecd0c5f082" category="cell">389(LDAP) 636 (LDAPS / start-tls)</block>
   <block id="752cfb7f100699ed10b934470fc8824c" category="doc">根据工作负载和系统类型标准化保护组</block>
   <block id="3a53d7e702e0596f76d0deb9f8cc03ea" category="paragraph">Ransomware Resilience 现在强制要求保护组仅包含一种工作负载类型和系统类型。创建新的保护组时，必须指定工作负载类型（文件系统或块）以及工作负载的系统。此增强功能可确保为保护组选择的勒索软件保护策略能够成功应用于组中的所有工作负载。</block>
   <block id="372c0699ee751a2658f1b4a897349a47" category="paragraph">如果现有的保护组混合使用系统和工作负载类型，则可以继续使用它们，但无法将工作负载添加到保护组。</block>
@@ -2608,7 +2581,6 @@
   <block id="dc33acebba1d27abf28977cc5a12db48" category="admonition">如果警报是由可疑的用户行为触发的，则只能拍摄快照。阻止用户不能作为对可疑用户行为的自动响应。</block>
   <block id="15033b064af1493a291f43131186f596" category="paragraph"><block ref="15033b064af1493a291f43131186f596" category="inline-link-macro-rx"></block></block>
   <block id="9d26347bf9049c082d482aa87b79d702" category="section-title">2026年9月16日</block>
-  <block id="f162f526fe9a4312ce833ccc6262c43c" category="cell">从 ONTAP 到 FPolicy 事件的用户活动代理的通信。这些端口必须向用户活动代理开放，以便 ONTAP 向其发送事件，包括用户活动代理本身的任何防火墙（如果存在）。+ **注意：** 您无需预留*所有*这些端口，但为此预留的端口必须在此范围内。建议您首先预留 100 个端口，并在必要时增加。</block>
   <block id="836e56ef7ecb008a36ab89b0620d32b3" category="list-text">在 Ransomware Resilience 控制面板中，查看 Alerts 窗格。</block>
   <block id="2bf784d30957b3ec7d6ebc12ece51af1" category="paragraph">当 Ransomware Resilience 检测到潜在的攻击时，它会根据在 NetApp Console 设置中配置的订阅通知首选项向订阅用户发送电子邮件通知。电子邮件包含有关警报的信息，包括严重程度和受影响的资源。</block>
   <block id="a7cc27b78a2a959c7d443e41e9734a78" category="cell">由于权限错误，无法在 /home 目录下创建用户的登录目录。使用命令<block ref="d5ba9a9474fc171d7c8d8e0ad71f99d9" prefix=" " category="inline-code"></block>创建 cssys 用户并手动添加其登录目录。在此命令中，<block ref="67dd1c0d4e68c367b980f8723c781cb1" prefix=" " category="inline-code"></block>用于在主目录不存在时创建主目录；<block ref="9b017020b9d48d433ec90c548e6b5c70" prefix=" " category="inline-code"></block>将 HOME_DIR 指定为登录目录。</block>
@@ -2745,7 +2717,6 @@
   <block id="b79c3e2214dfd55d5e8b57ef1d6ae5bb" category="inline-link-macro">保护工作负载</block>
   <block id="233adc8ca42f7a8097ed29533bfab815" category="list-text">**分析**：在洁净室中，Ransomware Resilience 会分析所有快照，以查看是否存在加密。干净恢复会确定具有最佳恢复计划的恢复映射。</block>
   <block id="3cfd0b2a1a1f7eb6f8f17ddc0f73fc96" category="paragraph">您还可以在规划步骤中查看文件历史记录，以了解勒索软件事件何时影响了文件，以及恢复点与该事件的时间关系。</block>
-  <block id="2167a2d55f36099e0735c5707e3b71bb" category="list-text">使用干净还原，您只能还原到源环境。</block>
   <block id="b1210ce3e5b669a69cc79e2b0ee6c53f" category="paragraph">为了避免这些冲突，Ransomware Resilience 会对克隆的虚拟机执行 sysprep，从而重置 SID、CN 和机器身份。重置这些值可确保克隆的虚拟机作为唯一且独立的实例运行，而不会干扰源虚拟机。</block>
   <block id="24026e872b9b407496cb872d2956b369" category="paragraph">如果主源不可用，并且您已配置辅助源，则数据将还原到辅助源。</block>
   <block id="170723e001c3b4c37b841a3f81011c7c" category="admonition">创建 IRE 时，必须在系统选择步骤中添加要用于分析的每个系统（主要或次要）。</block>
@@ -3030,4 +3001,32 @@
   <block id="c0062521587f0627efacd75f75346a70" category="list-text">查看启用了阻止可疑文件扩展名保护的 SVM 列表。您可以查看哪个 SVM 使用哪个列表。要更改列表，请选择*更改列表*。</block>
   <block id="0838f82be2f27550128e5538479f4329" category="paragraph">您不能删除应用于 SVM 的列表。您必须首先 <block ref="90336a7b5ebc96973344e57563a353c4" category="inline-xref-macro-rx"></block>。</block>
   <block id="ce60d8ca89677d54bbe0ffc235212685" category="paragraph">您无法删除 NetApp 列表。</block>
+  <block id="d1911ce26de45f2d2605b10b84369117" category="summary">在创建用户活动代理之前，必须确保满足概述的操作系统、服务器和网络要求。</block>
+  <block id="16c57e5f4f0b7d7b3708ae5054805ed5" category="paragraph">NetApp Ransomware Resilience 用户行为检测使您能够对用户级别的勒索软件事件做出响应。您必须创建租户和一组代理才能启用用户行为检测。在启用检测之前，您必须确保满足概述的操作系统、服务器和网络要求，以便 Ransomware Resilience 能够正确检测和报告事件。</block>
+  <block id="fc36a1ad1399ea3c897ac2b166f590bc" category="section-title">云提供商支持</block>
+  <block id="46d0eaec023b0432189234ee0117aefe" category="paragraph">要启用用户行为检测，您必须为数据收集器创建一个可执行环境，这些数据收集器与 Ransomware Resilience 共享用户活动事件。</block>
+  <block id="c754f70b24546d3b7ea308ec0a266819" category="admonition">租户的区域部署对 Console 代理没有影响。Console 代理部署独立于这些区域。</block>
+  <block id="c4e4893f8021b34fa3230fef41affd05" category="paragraph">可以在以下区域的 AWS 和 Azure 中部署租户：</block>
+  <block id="c73bbd3786350b0a8d3577d82afdf489" category="cell">Red Hat Enterprise Linux</block>
+  <block id="46f920779c70ad11c81d2a88305df5ae" category="cell">9.4（64 位）至 9.6（64 位），包括 SELinux</block>
+  <block id="4ae0b3e9c82d7212e106b8d937d888f9" category="cell">SUSE Linux Enterprise Server</block>
+  <block id="41ae405edf25cef7a892f03a0d4a0e69" category="cell">20.04 LTS（64位）、22.04 LTS（64位）和24.04 LTS（64位）</block>
+  <block id="acd32e9f7be5d0139bf41001adc3748f" category="paragraph">安装需要 <block ref="0a342b59ecdcede0571340b9ed11633f" prefix=" " category="inline-code"></block> 命令。安装、运行脚本和卸载需要 <block ref="beb493211c3135923a11284ef26bf909" prefix=" " category="inline-code"></block> 命令。</block>
+  <block id="347df1f5ce2f4c9ac5d171603123d70b" category="list-text">**磁盘空间**：36 GB 可用</block>
+  <block id="f03113ecfe5eec30d7fa0c6e772ee333" category="list-text">分配额外的磁盘空间以允许创建文件系统。请确保文件系统中至少有 35 GB 的可用空间。+ 如果 <block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block> 是从 NAS 存储挂载的文件夹，则本地用户必须能够访问此文件夹。如果本地用户没有必要的权限，则用户活动代理的创建可能会失败。</block>
+  <block id="180d287450c45d52e0d974a3b9615eb5" category="list-text">在与您的 Ransomware Resilience 环境独立的系统上安装用户活动代理。如果您确实在同一台计算机上安装了代理和 Ransomware Resilience，请预留 50 到 55 GB 的磁盘空间。对于 Linux，请为<block ref="4bf2f0d069734974e4d76e679433aa07" prefix=" " category="inline-code"></block>分配 25 到 30 GB 的空间，并为<block ref="16643b27340306e64b23df0f54664963" prefix=" " category="inline-code"></block>分配 25 GB 的空间。</block>
+  <block id="11a1b759509cbc306f2770f25a884b8c" category="paragraph">收集用户事件时，请确保托管用户活动代理的计算机大小能够适应您的事件率。这意味着确保在托管用户活动代理的计算机上有足够的数据收集器和足够的 CPU 和 RAM 来处理每秒的事件数。要增加数据收集器数量，您可能需要增加 RAM 或 CPU 容量。Ransomware Resilience 每个用户活动代理最多支持 50 个数据收集器。</block>
+  <block id="9e307da13f4fbc1f93630e31169402ff" category="cell">4 核、16GB</block>
+  <block id="d8eb539beebfd86b0e5458fd6893fe26" category="cell">4 核、32GB</block>
+  <block id="fc6f065ae34f83ecff5902aa52ae5b24" category="example-title">在 Ransomware Resilience 中计算事件数据速率。</block>
+  <block id="a9648406f04c3e2716ce48b7fa2d5192" category="paragraph">Ransomware Resilience 提供了一个可以在系统上运行的脚本来计算事件数据速率。默认情况下，脚本最多可运行五个 SVM。如果您的环境包含五个以上的 SVM，则可以相应地修改脚本。无论 SVM 数量多少，脚本都需要大约五分钟才能获得平均事件率读数。在运行脚本之前，您必须：</block>
+  <block id="c1b56e09cd3b4327ae7a5af63c46a8e4" category="list-text">已在 Linux 机器上安装<block ref="2fa62e05d832f87969a8d99226be5a74" prefix=" " category="inline-code"></block>（您可以使用命令<block ref="bd20ec476e804fab40ab36d6175d1936" prefix=" " category="inline-code"></block>进行安装）</block>
+  <block id="6d7d602708c503dfdb5b58c7cfb129ef" category="list-text">从托管用户活动代理的计算机中，以管理员身份运行脚本：<block ref="3b9c122b681f59f04f03105e338591ce" prefix=" " category="inline-code"></block></block>
+  <block id="1bd4b8d2f4802d1f84efe680d238becb" category="admonition">用户活动代理使用 NetApp Data Infrastructure Insights 技术，因此使用 <block ref="08f7b82cf54cd7bdcab171ad9bd445cc" prefix=" " category="inline-code"></block> 端点。有关详细信息，请参见 <block ref="12c485f306c08c5a6939aa54065b62ed" category="inline-link-macro-rx"></block>。</block>
+  <block id="d135604ac9e98972c83595fe18ccf0c7" category="cell">389 （LDAP） 636 （LDAPS / StartTLS）</block>
+  <block id="549c6c5676384145c78e433cd7a72102" category="cell">LDAP 服务器 URL</block>
+  <block id="f88c8d37a06873c6731c6109773db908" category="cell">从 ONTAP 到用户活动代理的 FPolicy 事件通信。必须向用户活动代理开放这些端口，以便 ONTAP 可以向其发送事件，包括用户活动代理本身上的任何防火墙（如果存在）。+ **注意：** 您无需保留*所有*这些端口，但为此保留的端口必须在此范围内。建议您首先保留 100 个端口，并在必要时增加。</block>
+  <block id="b0e8f71425f234ca2f061a0c485640c3" category="cell">集群管理 IP</block>
+  <block id="a1b557c5fe6dcfec9f24e02db3bf04ef" category="cell">用户活动代理</block>
+  <block id="5e845144086b1a54c1c4dd3a9e2169d7" category="cell">从 ONTAP 集群管理 IP 到用户活动代理的通信（用于 *EMS 事件*）。必须向用户活动代理开放这些端口，以便 ONTAP 向其发送 EMS 事件，包括用户活动代理本身的任何防火墙。+ **注意：**您无需预留*所有*这些端口，但为此预留的端口必须在此范围内。建议您从预留 100 个端口开始，并在必要时增加。</block>
 </blocks>

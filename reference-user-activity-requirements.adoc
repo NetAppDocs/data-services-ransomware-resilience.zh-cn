@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-user-activity-requirements.html 
 keywords: data breach detection, data breach, user activity, suspicious, anomalous, requirements, endpoints, operating systems, networking 
-summary: 在创建用户活动代理和其他收集器之前，必须确保满足概述的操作系统、服务器和网络要求。 
+summary: 在创建用户活动代理之前，必须确保满足概述的操作系统、服务器和网络要求。 
 ---
 = NetApp Ransomware Resilience 的用户活动检测要求
 :hardbreaks:
@@ -12,16 +12,19 @@ summary: 在创建用户活动代理和其他收集器之前，必须确保满�
 
 
 [role="lead"]
-NetApp Ransomware Resilience 用户行为检测使您能够对用户级别的勒索软件事件做出响应。您必须创建一组代理才能启用用户行为检测。在启用检测之前，您必须确保满足概述的操作系统、服务器和网络要求，以便 Ransomware Resilience 能够正确检测和报告事件。
+NetApp Ransomware Resilience 用户行为检测使您能够对用户级别的勒索软件事件做出响应。您必须创建租户和一组代理才能启用用户行为检测。在启用检测之前，您必须确保满足概述的操作系统、服务器和网络要求，以便 Ransomware Resilience 能够正确检测和报告事件。
 
 
 
-[[user-activity-agent-cloud-provider-support]]
-== 用户活动代理云提供商支持
+[[cloud-provider-support]]
+== 云提供商支持
 
-要启用用户行为检测，必须创建用户活动代理。用户活动代理是数据收集器的可执行环境，它与 Ransomware Resilience 共享用户活动事件。
+要启用用户行为检测，您必须为数据收集器创建一个可执行环境，这些数据收集器与 Ransomware Resilience 共享用户活动事件。
 
-可以在以下区域的 AWS 和 Azure 中部署用户活动代理：
+
+NOTE: 租户的区域部署对 Console 代理没有影响。Console 代理部署独立于这些区域。
+
+可以在以下区域的 AWS 和 Azure 中部署租户：
 
 |===
 | 云提供商 | 地区 
@@ -37,9 +40,6 @@ NetApp Ransomware Resilience 用户行为检测使您能够对用户级别的勒
 
 | Azure | 美国东部 
 |===
-
-NOTE: 用户活动代理的区域部署对控制台代理没有影响。控制台代理部署独立于这些区域。
-
 
 
 [[operating-system-requirements]]
@@ -67,21 +67,21 @@ NOTE: 用户活动代理的区域部署对控制台代理没有影响。控制�
 | Oracle Linux | 8.10（64 位）、9.1（64 位）至 9.6（64 位），包括 SELinux 
 
 
-| Red Hat | 8.10（64 位）、9.1（64 位）至 9.6（64 位）和 10（64 位），包括 SELinux 
+| Red Hat Enterprise Linux | 8.10（64 位）、9.1（64 位）至 9.6（64 位）和 10（64 位），包括 SELinux 
 
 
-| 洛基 | Rocky 9.4 (64 位) 至 9.6 (64 位)，包括 SELinux 
+| 洛基 | 9.4（64 位）至 9.6（64 位），包括 SELinux 
 
 
-| SUSE 企业 Linux | 15 SP4（64 位）至 15 SP6（64 位），包括 SELinux 
+| SUSE Linux Enterprise Server | 15 SP4（64 位）至 15 SP6（64 位），包括 SELinux 
 
 
-| Ubuntu | 20.04 LTS（64 位）、22.04 LTS（64 位）和 24.04 LTS（64 位） 
+| Ubuntu | 20.04 LTS（64位）、22.04 LTS（64位）和24.04 LTS（64位） 
 |===
 
 NOTE: 用于用户活动代理的计算机不应运行其他应用程序级软件。建议使用专用服务器。
 
-安装需要 `unzip`命令。安装、运行脚本和卸载需要 `sudo su -`命令。
+安装需要  `unzip` 命令。安装、运行脚本和卸载需要  `sudo su -` 命令。
 
 
 
@@ -92,7 +92,7 @@ NOTE: 用于用户活动代理的计算机不应运行其他应用程序级软�
 
 * CPU：4 核
 * **内存**：16GB 内存
-* **磁盘空间**：36 GB 可用磁盘空间
+* **磁盘空间**：36 GB 可用
 
 
 
@@ -100,8 +100,8 @@ NOTE: 用于用户活动代理的计算机不应运行其他应用程序级软�
 [[server-recommendations]]
 === 服务器建议
 
-* 分配额外的磁盘空间以允许创建文件系统。请确保文件系统中至少有 35 GB 的可用空间。+ 如果 `/opt`是来自 NAS 存储的已挂载文件夹，则本地用户必须能够访问此文件夹。如果本地用户没有必要的权限，则用户活动代理的创建可能会失败。
-* 建议您在与勒索软件弹性环境分开的系统上安装用户活动代理。如果您确实在同一台计算机上安装了代理和勒索软件弹性，请预留 50 至 55 GB 的磁盘空间。对于 Linux，请为 `/opt/netapp`分配 25 至 30 GB 的空间，为 `var/log/netapp`分配 25 GB 的空间。
+* 分配额外的磁盘空间以允许创建文件系统。请确保文件系统中至少有 35 GB 的可用空间。+ 如果  `/opt` 是从 NAS 存储挂载的文件夹，则本地用户必须能够访问此文件夹。如果本地用户没有必要的权限，则用户活动代理的创建可能会失败。
+* 在与您的 Ransomware Resilience 环境独立的系统上安装用户活动代理。如果您确实在同一台计算机上安装了代理和 Ransomware Resilience，请预留 50 到 55 GB 的磁盘空间。对于 Linux，请为 `/opt/netapp`分配 25 到 30 GB 的空间，并为 `/var/log/netapp`分配 25 GB 的空间。
 * 建议您使用网络时间协议 (NTP) 或简单网络时间协议 (SNTP) 同步ONTAP系统和用户活动代理计算机上的时间。
 
 
@@ -110,7 +110,7 @@ NOTE: 用于用户活动代理的计算机不应运行其他应用程序级软�
 [[sizing-recommendations]]
 === 规模建议
 
-收集用户事件时，请确保托管用户活动代理的计算机大小能够适应您的事件率。这意味着确保在托管用户活动代理的计算机上有足够的数据收集器和足够的 CPU 和 RAM 来容忍每秒的事件数。要增加数据收集器的数量，您可能需要增加 RAM 或 CPU 容量。Ransomware Resilience 每个用户活动代理最多支持 50 个数据收集器。
+收集用户事件时，请确保托管用户活动代理的计算机大小能够适应您的事件率。这意味着确保在托管用户活动代理的计算机上有足够的数据收集器和足够的 CPU 和 RAM 来处理每秒的事件数。要增加数据收集器数量，您可能需要增加 RAM 或 CPU 容量。Ransomware Resilience 每个用户活动代理最多支持 50 个数据收集器。
 
 下表提供了尺寸调整的一般指导：
 
@@ -131,19 +131,19 @@ Where E is the sum of all events per second across all data collectors:
 
 E + (0.3 x E) < 20,000 events/second
 ----
-.Ransomware Resilience 提供了一个用于计算事件数据速率的脚本。了解如何在 Ransomware Resilience 中计算事件数据速率。
+.在 Ransomware Resilience 中计算事件数据速率。
 [%collapsible]
 ====
-Ransomware Resilience 提供了一个可以在系统上运行的脚本来计算事件数据速率。默认情况下，该脚本最多可运行五个存储虚拟机。如果您的环境包含 5 个以上的 SVM，则可以相应地修改脚本。无论 SVM 的数量有多少，该脚本大约需要五分钟才能获得平均事件率读数。在运行脚本之前，您必须：
+Ransomware Resilience 提供了一个可以在系统上运行的脚本来计算事件数据速率。默认情况下，脚本最多可运行五个 SVM。如果您的环境包含五个以上的 SVM，则可以相应地修改脚本。无论 SVM 数量多少，脚本都需要大约五分钟才能获得平均事件率读数。在运行脚本之前，您必须：
 
 * link:suspicious-user-activity.html["已配置用户活动代理"]
 * 集群 IP 地址
 * 集群管理员用户名和密码
-* 安装 `sshpass`在 Linux 机器上（可以使用命令安装 `sudo yum install -y sshpass`）
+* 已在 Linux 机器上安装 `sshpass`（您可以使用命令 `sudo yum install -y sshpass`进行安装）
 
 
 .步骤
-. 从托管用户活动代理的集群中，以管理员身份运行脚本： `/opt/netapp/cloudsecure/agent/install/svm_event_rate_checker.sh`
+. 从托管用户活动代理的计算机中，以管理员身份运行脚本： `/opt/netapp/cloudsecure/agent/install/svm_event_rate_checker.sh`
 . 出现提示时，请提供集群 IP 地址、管理员用户名和管理员密码。
 . 脚本运行大约需要五分钟。完成后，命令行将显示事件速率，例如"Svm svm_rate 正在生成 100 个事件/秒"。
 +
@@ -163,7 +163,7 @@ Ransomware Resilience 提供了一个可以在系统上运行的脚本来计算�
 IMPORTANT: 在初始安装期间，将 `<site_name>`替换为通配符(`*`）权限。激活代理并完全运行后，您可以将权限替换为站点名称。有关站点名称，请联系您的 NetApp 代表。
 
 
-NOTE: 用户活动代理使用 NetApp Data Infrastructure Insights 技术，因此使用 `cloudinsights`端点。有关详细信息，请参见link:concept-user-behavior.html#user-activity-forensics["Ransomware Resilience 和 Data Infrastructure Insights"]。
+NOTE: 用户活动代理使用 NetApp Data Infrastructure Insights 技术，因此使用  `cloudinsights` 端点。有关详细信息，请参见 link:concept-user-behavior.html#user-activity-forensics["Ransomware Resilience 和 Data Infrastructure Insights"]。
 
 
 
@@ -229,18 +229,18 @@ NOTE: 用户活动代理使用 NetApp Data Infrastructure Insights 技术，因�
 | 协议 | 端口 | 源 | 目标 | 描述 
 
 
-| TCP | 389(LDAP) 636 (LDAPS / start-tls) | 用户活动代理 | LDAP Server URL | 连接到 LDAP 
+| TCP | 389 （LDAP） 636 （LDAPS / StartTLS） | 用户活动代理 | LDAP 服务器 URL | 连接到 LDAP 
 
 
 | HTTPS（TCP） | 443 | 用户活动代理 | 集群或SVM管理IP地址（取决于SVM收集器配置） | API 与ONTAP进行通信 
 
 
-| TCP | 35000 - 55000  a| 
+| TCP | 35000-55000  a| 
 SVM 数据 LIF IP 地址
-| 用户活动代理 | 从 ONTAP 到 FPolicy 事件的用户活动代理的通信。这些端口必须向用户活动代理开放，以便 ONTAP 向其发送事件，包括用户活动代理本身的任何防火墙（如果存在）。+ **注意：** 您无需预留*所有*这些端口，但为此预留的端口必须在此范围内。建议您首先预留 100 个端口，并在必要时增加。 
+| 用户活动代理 | 从 ONTAP 到用户活动代理的 FPolicy 事件通信。必须向用户活动代理开放这些端口，以便 ONTAP 可以向其发送事件，包括用户活动代理本身上的任何防火墙（如果存在）。+ **注意：** 您无需保留*所有*这些端口，但为此保留的端口必须在此范围内。建议您首先保留 100 个端口，并在必要时增加。 
 
 
-| TCP | 35000-55000 | 集群管理 IP | 用户活动代理 | ONTAP集群管理 IP 与用户活动代理之间关于 *EMS 事件* 的通信。为了让ONTAP能够向用户活动代理发送 EMS 事件，必须向用户活动代理开放这些端口，包括用户活动代理本身上的任何防火墙。+ **注意：**您不需要预留*所有*这些端口，但您为此预留的端口必须在此范围内。建议您先预留 100 个端口，如有必要再增加。 
+| TCP | 35000-55000 | 集群管理 IP | 用户活动代理 | 从 ONTAP 集群管理 IP 到用户活动代理的通信（用于 *EMS 事件*）。必须向用户活动代理开放这些端口，以便 ONTAP 向其发送 EMS 事件，包括用户活动代理本身的任何防火墙。+ **注意：**您无需预留*所有*这些端口，但为此预留的端口必须在此范围内。建议您从预留 100 个端口开始，并在必要时增加。 
 
 
 | SSH | 22 | 用户活动代理 | 集群管理 | 需要 CIFS/SMB 用户阻止。 
