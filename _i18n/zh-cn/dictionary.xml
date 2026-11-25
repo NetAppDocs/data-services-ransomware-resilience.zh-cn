@@ -1445,7 +1445,6 @@
   <block id="3156b4b992dec700b60fedaa2eca010c" category="paragraph">以下操作系统支持可疑用户行为检测：</block>
   <block id="92adf790b863484fc83be969039ec890" category="section-title">服务器建议</block>
   <block id="b81a18d778d8d2491614ae90532db84f" category="admonition">在初始安装期间，将<block ref="50cff7c5933e29331b88e32e4f2a101d" prefix=" " category="inline-code"></block>替换为通配符<block ref="3389dae361af79b04c9c8e7057f60cc6" prefix="(" category="inline-code"></block>）权限。激活代理并完全运行后，您可以将权限替换为站点名称。有关站点名称，请联系您的 NetApp 代表。</block>
-  <block id="c4f09ee186bb94e99b8c3f938adf8816" category="section-title">基于 APAC 的用户活动代理部署</block>
   <block id="869af1b4577e081268bf8ee592a6018e" category="section-title">基于欧洲的用户活动代理部署</block>
   <block id="ae6cc9c44044939bcbbefd693857f742" category="section-title">基于美国的用户活动代理部署</block>
   <block id="c290a5941ad6eb0d5fe8752c15c5fd78" category="section-title">下一步</block>
@@ -3002,9 +3001,6 @@
   <block id="0838f82be2f27550128e5538479f4329" category="paragraph">您不能删除应用于 SVM 的列表。您必须首先 <block ref="90336a7b5ebc96973344e57563a353c4" category="inline-xref-macro-rx"></block>。</block>
   <block id="ce60d8ca89677d54bbe0ffc235212685" category="paragraph">您无法删除 NetApp 列表。</block>
   <block id="d1911ce26de45f2d2605b10b84369117" category="summary">在创建用户活动代理之前，必须确保满足概述的操作系统、服务器和网络要求。</block>
-  <block id="16c57e5f4f0b7d7b3708ae5054805ed5" category="paragraph">NetApp Ransomware Resilience 用户行为检测使您能够对用户级别的勒索软件事件做出响应。您必须创建租户和一组代理才能启用用户行为检测。在启用检测之前，您必须确保满足概述的操作系统、服务器和网络要求，以便 Ransomware Resilience 能够正确检测和报告事件。</block>
-  <block id="fc36a1ad1399ea3c897ac2b166f590bc" category="section-title">云提供商支持</block>
-  <block id="46d0eaec023b0432189234ee0117aefe" category="paragraph">要启用用户行为检测，您必须为数据收集器创建一个可执行环境，这些数据收集器与 Ransomware Resilience 共享用户活动事件。</block>
   <block id="c754f70b24546d3b7ea308ec0a266819" category="admonition">租户的区域部署对 Console 代理没有影响。Console 代理部署独立于这些区域。</block>
   <block id="c4e4893f8021b34fa3230fef41affd05" category="paragraph">可以在以下区域的 AWS 和 Azure 中部署租户：</block>
   <block id="c73bbd3786350b0a8d3577d82afdf489" category="cell">Red Hat Enterprise Linux</block>
@@ -3018,7 +3014,6 @@
   <block id="11a1b759509cbc306f2770f25a884b8c" category="paragraph">收集用户事件时，请确保托管用户活动代理的计算机大小能够适应您的事件率。这意味着确保在托管用户活动代理的计算机上有足够的数据收集器和足够的 CPU 和 RAM 来处理每秒的事件数。要增加数据收集器数量，您可能需要增加 RAM 或 CPU 容量。Ransomware Resilience 每个用户活动代理最多支持 50 个数据收集器。</block>
   <block id="9e307da13f4fbc1f93630e31169402ff" category="cell">4 核、16GB</block>
   <block id="d8eb539beebfd86b0e5458fd6893fe26" category="cell">4 核、32GB</block>
-  <block id="fc6f065ae34f83ecff5902aa52ae5b24" category="example-title">在 Ransomware Resilience 中计算事件数据速率。</block>
   <block id="a9648406f04c3e2716ce48b7fa2d5192" category="paragraph">Ransomware Resilience 提供了一个可以在系统上运行的脚本来计算事件数据速率。默认情况下，脚本最多可运行五个 SVM。如果您的环境包含五个以上的 SVM，则可以相应地修改脚本。无论 SVM 数量多少，脚本都需要大约五分钟才能获得平均事件率读数。在运行脚本之前，您必须：</block>
   <block id="c1b56e09cd3b4327ae7a5af63c46a8e4" category="list-text">已在 Linux 机器上安装<block ref="2fa62e05d832f87969a8d99226be5a74" prefix=" " category="inline-code"></block>（您可以使用命令<block ref="bd20ec476e804fab40ab36d6175d1936" prefix=" " category="inline-code"></block>进行安装）</block>
   <block id="6d7d602708c503dfdb5b58c7cfb129ef" category="list-text">从托管用户活动代理的计算机中，以管理员身份运行脚本：<block ref="3b9c122b681f59f04f03105e338591ce" prefix=" " category="inline-code"></block></block>
@@ -3029,4 +3024,12 @@
   <block id="b0e8f71425f234ca2f061a0c485640c3" category="cell">集群管理 IP</block>
   <block id="a1b557c5fe6dcfec9f24e02db3bf04ef" category="cell">用户活动代理</block>
   <block id="5e845144086b1a54c1c4dd3a9e2169d7" category="cell">从 ONTAP 集群管理 IP 到用户活动代理的通信（用于 *EMS 事件*）。必须向用户活动代理开放这些端口，以便 ONTAP 向其发送 EMS 事件，包括用户活动代理本身的任何防火墙。+ **注意：**您无需预留*所有*这些端口，但为此预留的端口必须在此范围内。建议您从预留 100 个端口开始，并在必要时增加。</block>
+  <block id="07e4c03c13f6b5da296dfd1e6b67c352" category="paragraph">NetApp Ransomware Resilience 用户活动检测使您能够对用户级别的勒索软件事件做出响应。您必须创建一个租户和一组代理才能启用用户活动检测。在启用检测之前，您必须确保满足概述的操作系统、服务器和网络要求，以便 Ransomware Resilience 能够正确检测和报告事件。</block>
+  <block id="f451214989539191fc4ce664be56280d" category="section-title">用户活动租户</block>
+  <block id="a573617370c0046fea2fc1d6d3e124fd" category="paragraph">为了启用用户活动检测，将设置一个租户，允许与 Ransomware Resilience 共享用户活动事件。您可以选择希望 Ransomware Resilience 部署租户的区域和云提供商。</block>
+  <block id="660bab89ad300bad0bf7f20f46e5c3a3" category="section-title">用户活动代理要求</block>
+  <block id="f431152e4d18e6c70ad5859550b7dbfc" category="paragraph">创建租户后，必须创建用户活动代理以启用用户活动检测。用户活动代理不是控制台代理；需要将用户活动代理部署为单独的计算实例。</block>
+  <block id="a49273673c8a9345469d7e992d85038e" category="paragraph">确保您的用户活动代理满足以下要求并遵循建议。</block>
+  <block id="a543ceb615fbbd830a521dc1f498b0c6" category="example-title">在 Ransomware Resilience 中计算事件数据速率</block>
+  <block id="6617d9fa7ab8a50760603157d306a320" category="section-title">基于亚太地区的用户活动代理部署</block>
 </blocks>
